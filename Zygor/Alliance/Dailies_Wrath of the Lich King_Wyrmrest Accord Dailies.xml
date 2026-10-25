@@ -1,0 +1,379 @@
+<HBProfile>
+	<Name>Zygor Dailies\Wrath of the Lich King\Wyrmrest Accord Dailies</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Librarian Serrah" Entry="26110" Type="Food" X="3576.48" Y="6640.39" Z="195.176" />
+		<Vendor Name="Demestrasz" Entry="27950" Type="Food" X="3546.74" Y="273.062" Z="45.6634" />
+		<Vendor Name="Naohain" Entry="27052" Type="Food" X="3477.54" Y="2006.68" Z="64.9457" />
+		<Vendor Name="Sentinel Amberline" Entry="27055" Type="Repair" X="3514.7" Y="1999.16" Z="64.9693" />
+		<Vendor Name="Archmage Berinand" Entry="25314" Type="Repair" X="3575.61" Y="6671.72" Z="195.267" />
+		<Vendor Name="Dalormi" Entry="27943" Type="Repair" X="3520.08" Y="296.558" Z="47.4002" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="12004" Name="Prevent the Accord">
+		<Objective Type="CollectItem" ItemId="35800" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Wind Trader Mu'fah" Id="26496" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3372.72" Y="2594.67" Z="40.3785" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="35801" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Goramosh" Id="26349" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3401.72" Y="2532.42" Z="59.4827" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12083" Name="Atop the Woodlands">
+		<Objective Type="KillMob" MobId="26831" KillCount="1">
+			<Hotspots>
+				<Hotspot X="2896.58" Y="1817.61" Z="135.334" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12107" Name="The End of the Line">
+		<Objective Type="KillMob" MobId="26887" KillCount="1">
+			<Hotspots>
+				<Hotspot X="3056.53" Y="1400.98" Z="121.901" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12416" Name="Heated Battle">
+		<Objective Type="KillMob" MobId="27531" KillCount="1">
+			<Hotspots>
+				<Hotspot X="3682.4" Y="897.881" Z="56.3034" />
+				<Hotspot X="3731.04" Y="844.972" Z="57.1548" />
+				<Hotspot X="3631.1" Y="827.101" Z="62.9253" />
+				<Hotspot X="3655.12" Y="1102.84" Z="75.2968" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="27686" KillCount="8">
+			<Hotspots>
+				<Hotspot X="3636.04" Y="830.935" Z="62.2159" />
+				<Hotspot X="3757.71" Y="766.167" Z="62.8902" />
+				<Hotspot X="3788.1" Y="738.983" Z="60.4355" />
+				<Hotspot X="3815.83" Y="709.949" Z="60.218" />
+				<Hotspot X="3845.44" Y="670.174" Z="58.7671" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12417" Name="Return to the Earth">
+		<Objective Type="KillMob" MobId="27530" KillCount="6">
+			<Hotspots>
+				<Hotspot X="3770.26" Y="749.045" Z="94.1753" />
+				<Hotspot X="3813.84" Y="865.602" Z="57.5398" />
+				<Hotspot X="3907.35" Y="866.472" Z="56.2255" />
+				<Hotspot X="3830.08" Y="958.533" Z="55.6804" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12418" Name="Through Fields of Flame">
+		<Objective Type="KillMob" MobId="27539" KillCount="6">
+			<Hotspots>
+				<Hotspot X="3743.72" Y="1015.14" Z="64.2497" />
+				<Hotspot X="3799.92" Y="974.13" Z="59.7191" />
+				<Hotspot X="3783.59" Y="920.945" Z="60.9722" />
+				<Hotspot X="3702.85" Y="927.352" Z="54.0018" />
+				<Hotspot X="3668.19" Y="984.643" Z="56.2522" />
+				<Hotspot X="3613.74" Y="1007.56" Z="57.4262" />
+				<Hotspot X="3669.36" Y="1089.64" Z="67.9123" />
+				<Hotspot X="3808.35" Y="1082.22" Z="57.0994" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="27680" KillCount="1">
+			<Hotspots>
+				<Hotspot X="3743.79" Y="955.309" Z="53.8455" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12372" Name="Defending Wyrmrest Temple" Daily="True">
+		<Objective Type="KillMob" MobId="27608" KillCount="3">
+			<Hotspots>
+				<Hotspot X="3424.55" Y="257.635" Z="132.423" />
+				<Hotspot X="3485.54" Y="172.443" Z="356.967" />
+				<Hotspot X="3542.25" Y="134.148" Z="169.694" />
+				<Hotspot X="3723.93" Y="203.807" Z="149.416" />
+				<Hotspot X="3737.25" Y="441.447" Z="163.152" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="27682" KillCount="5">
+			<Hotspots>
+				<Hotspot X="3639.79" Y="321.911" Z="195.744" />
+				<Hotspot X="3691.68" Y="352.093" Z="342.225" />
+				<Hotspot X="3748.95" Y="236.754" Z="178.641" />
+				<Hotspot X="3433.35" Y="274.121" Z="192.735" />
+				<Hotspot X="3419.56" Y="219.467" Z="185.801" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11918" Name="Basic Training">
+		<Objective Type="KillMob" MobId="25722" KillCount="10">
+			<Hotspots>
+				<Hotspot X="3711.85" Y="6760.1" Z="158.97" />
+				<Hotspot X="3782.96" Y="6811.22" Z="150.895" />
+				<Hotspot X="3808.75" Y="6706.58" Z="150.773" />
+				<Hotspot X="3808.53" Y="6664.88" Z="150.623" />
+				<Hotspot X="3849.53" Y="6664.4" Z="150.623" />
+				<Hotspot X="3911.38" Y="6748.12" Z="150.754" />
+				<Hotspot X="3695.22" Y="6587.65" Z="181.336" />
+				<Hotspot X="3643.8" Y="6857.33" Z="160.64" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11936" Name="Hatching a Plan">
+		<Objective Type="UseObject" ObjectId="188133" UseCount="5">
+			<Hotspots>
+				<Hotspot X="3764.96" Y="6935.17" Z="108.931" />
+				<Hotspot X="3772.46" Y="6978.29" Z="104.15" />
+				<Hotspot X="3817.44" Y="6877.6" Z="103.905" />
+				<Hotspot X="3877.98" Y="6865.35" Z="103.211" />
+				<Hotspot X="3907.4" Y="6902.92" Z="104.702" />
+				<Hotspot X="3951.6" Y="6926.54" Z="103.753" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="13413" Name="Aces High!">
+		<Objective Type="KillMob" MobId="32534" KillCount="5">
+			<Hotspots>
+				<Hotspot X="3883.4" Y="7004.77" Z="618.483" />
+				<Hotspot X="3914.48" Y="6965.59" Z="628.926" />
+				<Hotspot X="3951.94" Y="6998.62" Z="684.699" />
+				<Hotspot X="3974.02" Y="6949.82" Z="640.446" />
+				<Hotspot X="3902.25" Y="6904.83" Z="665.2" />
+				<Hotspot X="3796.81" Y="6914.38" Z="619.713" />
+				<Hotspot X="3821.9" Y="6974.08" Z="671.741" />
+				<Hotspot X="3789.29" Y="7007.11" Z="646.844" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11940" Name="Drake Hunt" Daily="True" />
+	<Quest Id="13414" Name="Aces High!" Daily="True">
+		<Objective Type="KillMob" MobId="32534" KillCount="5">
+			<Hotspots>
+				<Hotspot X="3883.4" Y="7004.77" Z="618.483" />
+				<Hotspot X="3914.48" Y="6965.59" Z="628.926" />
+				<Hotspot X="3951.94" Y="6998.62" Z="684.699" />
+				<Hotspot X="3974.02" Y="6949.82" Z="640.446" />
+				<Hotspot X="3902.25" Y="6904.83" Z="665.2" />
+				<Hotspot X="3796.81" Y="6914.38" Z="619.713" />
+				<Hotspot X="3821.9" Y="6974.08" Z="671.741" />
+				<Hotspot X="3789.29" Y="7007.11" Z="646.844" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Retail/Dailies/ZygorDailiesAllianceCLASSIC.lua: Dailies Guides\Wrath of the Lich King\Wyrmrest Accord Dailies -->
+		<!-- Daily quests count as done only while they are in today's daily slots; load the profile again after the daily reset. -->
+		<If Condition="Me.MapId != 571">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Dailies_Wrath of the Lich King_Wyrmrest Accord Dailies");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Northrend" />
+		</If>
+		<If Condition="(Me.Level &gt;= 71)">
+			<PickUp QuestName="Rifle the Bodies" QuestId="12000" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<If Condition="(Me.Level &gt;= 71)">
+			<PickUp QuestName="Rifle the Bodies" QuestId="12000" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<!-- REVIEW Q12000 Rifle the Bodies: item 35783 Moonrest Gardens Plans has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12000)) &amp;&amp; (IsQuestCompleted(12000)))">
+			<TurnIn QuestName="Rifle the Bodies" QuestId="12000" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<If Condition="((HasQuest(12000)) &amp;&amp; (!IsQuestCompleted(12000)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12000" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12000)">
+			<PickUp QuestName="Prevent the Accord" QuestId="12004" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<Objective QuestName="Prevent the Accord" QuestId="12004" Type="CollectItem" ItemId="35800" CollectCount="1" />
+		<Objective QuestName="Prevent the Accord" QuestId="12004" Type="CollectItem" ItemId="35801" CollectCount="1" />
+		<If Condition="HasItem(36742) &amp;&amp; !HasQuest(12055) &amp;&amp; !IsQuestCompleted(12055) &amp;&amp; (Me.Level &gt;= 71)">
+			<PickUp QuestName="A Strange Device" QuestId="12055" GiverName="Goramosh's Strange Device" GiverId="36742" GiverType="Item" />
+		</If>
+		<TurnIn QuestName="A Strange Device" QuestId="12055" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		<TurnIn QuestName="Prevent the Accord" QuestId="12004" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12055)">
+			<PickUp QuestName="Projections and Plans" QuestId="12060" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<!-- REVIEW Q12060 Projections and Plans: objective 27853 Projections and Plans Kill Credit Bunny x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12060)) &amp;&amp; (IsQuestCompleted(12060)))">
+			<TurnIn QuestName="Projections and Plans" QuestId="12060" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<If Condition="((HasQuest(12060)) &amp;&amp; (!IsQuestCompleted(12060)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12060" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12060)">
+			<PickUp QuestName="The Focus on the Beach" QuestId="12065" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<If Condition="HasItem(36756) &amp;&amp; !HasQuest(12067) &amp;&amp; !IsQuestCompleted(12067) &amp;&amp; (Me.Level &gt;= 71)">
+			<PickUp QuestName="A Letter for Home" QuestId="12067" GiverName="Captain Malin's Letter" GiverId="36756" GiverType="Item" />
+		</If>
+		<!-- REVIEW Q12065 The Focus on the Beach: collect 26773 The Focus on the Beach Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12065)) &amp;&amp; (IsQuestCompleted(12065)))">
+			<TurnIn QuestName="The Focus on the Beach" QuestId="12065" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<If Condition="((HasQuest(12065)) &amp;&amp; (!IsQuestCompleted(12065)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12065" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12065)">
+			<PickUp QuestName="Atop the Woodlands" QuestId="12083" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<TurnIn QuestName="A Letter for Home" QuestId="12067" TurnInName="Commander Saia Azuresteel" TurnInId="26459" X="3502.47" Y="1998.22" Z="64.9457" />
+		<Objective QuestName="Atop the Woodlands" QuestId="12083" Type="KillMob" MobId="26831" KillCount="1" />
+		<TurnIn QuestName="Atop the Woodlands" QuestId="12083" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12083)">
+			<PickUp QuestName="Search Indu'le Village" QuestId="12098" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<TurnIn QuestName="Search Indu'le Village" QuestId="12098" TurnInName="Mage-Commander Evenstar" TurnInId="26873" X="3074.45" Y="1369.6" Z="130.074" />
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12098)">
+			<PickUp QuestName="The End of the Line" QuestId="12107" GiverName="Mage-Commander Evenstar" GiverId="26873" X="3074.45" Y="1369.6" Z="130.074" />
+		</If>
+		<Objective QuestName="The End of the Line" QuestId="12107" Type="KillMob" MobId="26887" KillCount="1" />
+		<!-- REVIEW Q12107 The End of the Line: objective 26889 The End of the Line Area Trigger Kill Credit Bunny x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12107)) &amp;&amp; (IsQuestCompleted(12107)))">
+			<TurnIn QuestName="The End of the Line" QuestId="12107" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<If Condition="((HasQuest(12107)) &amp;&amp; (!IsQuestCompleted(12107)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12107" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12107)">
+			<PickUp QuestName="Gaining an Audience" QuestId="12119" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<TurnIn QuestName="Gaining an Audience" QuestId="12119" TurnInName="Tariolstrasz" TurnInId="26443" X="3549.37" Y="379.35" Z="52.3397" />
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12119)">
+			<PickUp QuestName="Speak with your Ambassador" QuestId="12766" GiverName="Tariolstrasz" GiverId="26443" X="3549.37" Y="379.35" Z="52.3397" />
+		</If>
+		<TurnIn QuestName="Speak with your Ambassador" QuestId="12766" TurnInName="Lauriel Trueblade" TurnInId="27803" X="3514.94" Y="262.123" Z="47.4003" />
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12766)">
+			<PickUp QuestName="Report to the Ruby Dragonshrine" QuestId="12460" GiverName="Lauriel Trueblade" GiverId="27803" X="3514.94" Y="262.123" Z="47.4003" />
+		</If>
+		<TurnIn QuestName="Report to the Ruby Dragonshrine" QuestId="12460" TurnInName="Ceristrasz" TurnInId="27506" X="3703.88" Y="699.021" Z="89.2857" />
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12460)">
+			<PickUp QuestName="Heated Battle" QuestId="12416" GiverName="Ceristrasz" GiverId="27506" X="3703.88" Y="699.021" Z="89.2857" />
+		</If>
+		<Objective QuestName="Heated Battle" QuestId="12416" Type="KillMob" MobId="27531" KillCount="1" />
+		<Objective QuestName="Heated Battle" QuestId="12416" Type="KillMob" MobId="27686" KillCount="8" />
+		<!-- REVIEW Q12416 Heated Battle: kill 27685 Frigid Ghoul Attacker x12: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12416)) &amp;&amp; (IsQuestCompleted(12416)))">
+			<TurnIn QuestName="Heated Battle" QuestId="12416" TurnInName="Ceristrasz" TurnInId="27506" X="3703.88" Y="699.021" Z="89.2857" />
+		</If>
+		<If Condition="((HasQuest(12416)) &amp;&amp; (!IsQuestCompleted(12416)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12416" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12416)">
+			<PickUp QuestName="Return to the Earth" QuestId="12417" GiverName="Ceristrasz" GiverId="27506" X="3703.88" Y="699.021" Z="89.2857" />
+		</If>
+		<Objective QuestName="Return to the Earth" QuestId="12417" Type="KillMob" MobId="27530" KillCount="6" />
+		<TurnIn QuestName="Return to the Earth" QuestId="12417" TurnInName="Ceristrasz" TurnInId="27506" X="3703.88" Y="699.021" Z="89.2857" />
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12417)">
+			<PickUp QuestName="Through Fields of Flame" QuestId="12418" GiverName="Ceristrasz" GiverId="27506" X="3703.88" Y="699.021" Z="89.2857" />
+		</If>
+		<Objective QuestName="Through Fields of Flame" QuestId="12418" Type="KillMob" MobId="27539" KillCount="6" />
+		<If Condition="HasItem(37833) &amp;&amp; !HasQuest(12419) &amp;&amp; !IsQuestCompleted(12419) &amp;&amp; (Me.Level &gt;= 71)">
+			<PickUp QuestName="The Fate of the Ruby Dragonshrine" QuestId="12419" GiverName="Ruby Brooch" GiverId="37833" GiverType="Item" />
+		</If>
+		<Objective QuestName="Through Fields of Flame" QuestId="12418" Type="KillMob" MobId="27680" KillCount="1" />
+		<TurnIn QuestName="Through Fields of Flame" QuestId="12418" TurnInName="Ceristrasz" TurnInId="27506" X="3703.88" Y="699.021" Z="89.2857" />
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12418)">
+			<PickUp QuestName="The Steward of Wyrmrest Temple" QuestId="12768" GiverName="Ceristrasz" GiverId="27506" X="3703.88" Y="699.021" Z="89.2857" />
+		</If>
+		<TurnIn QuestName="The Steward of Wyrmrest Temple" QuestId="12768" TurnInName="Tariolstrasz" TurnInId="26443" X="3549.37" Y="379.35" Z="52.3397" />
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12768)">
+			<PickUp QuestName="Informing the Queen" QuestId="12123" GiverName="Tariolstrasz" GiverId="26443" X="3549.37" Y="379.35" Z="52.3397" />
+		</If>
+		<TurnIn QuestName="The Fate of the Ruby Dragonshrine" QuestId="12419" TurnInName="Krasus" TurnInId="27990" X="3529.38" Y="273.873" Z="342.804" />
+		<TurnIn QuestName="Informing the Queen" QuestId="12123" TurnInName="Alexstrasza the Life-Binder" TurnInId="26917" X="3531.02" Y="271.403" Z="342.804" />
+		<If Condition="(Me.Level &gt;= 71)">
+			<PickUp QuestName="Report to Lord Afrasastrasz" QuestId="12435" GiverName="Alexstrasza the Life-Binder" GiverId="26917" X="3531.02" Y="271.403" Z="342.804" />
+		</If>
+		<TurnIn QuestName="Report to Lord Afrasastrasz" QuestId="12435" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12435)">
+			<PickUp QuestName="Defending Wyrmrest Temple" QuestId="12372" GiverName="Lord Afrasastrasz" GiverId="27575" X="3543.63" Y="304.604" Z="117.083" />
+		</If>
+		<Objective QuestName="Defending Wyrmrest Temple" QuestId="12372" Type="KillMob" MobId="27608" KillCount="3" />
+		<Objective QuestName="Defending Wyrmrest Temple" QuestId="12372" Type="KillMob" MobId="27682" KillCount="5" />
+		<!-- REVIEW Q12372 Defending Wyrmrest Temple: objective 27698 Defending Wyrmrest Temple Kill Credit Bunny x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12372)) &amp;&amp; (IsQuestCompleted(12372)))">
+			<TurnIn QuestName="Defending Wyrmrest Temple" QuestId="12372" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />
+		</If>
+		<If Condition="((HasQuest(12372)) &amp;&amp; (!IsQuestCompleted(12372)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q12372 Defending Wyrmrest Temple: objective 27698 Defending Wyrmrest Temple Kill Credit Bunny x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12372)) &amp;&amp; (IsQuestCompleted(12372)))">
+			<TurnIn QuestName="Defending Wyrmrest Temple" QuestId="12372" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />
+		</If>
+		<If Condition="((HasQuest(12372)) &amp;&amp; (!IsQuestCompleted(12372)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 69)">
+			<PickUp QuestName="Basic Training" QuestId="11918" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		</If>
+		<Objective QuestName="Basic Training" QuestId="11918" Type="KillMob" MobId="25722" KillCount="10" />
+		<TurnIn QuestName="Basic Training" QuestId="11918" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11918)">
+			<PickUp QuestName="Hatching a Plan" QuestId="11936" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		</If>
+		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
+		<TurnIn QuestName="Hatching a Plan" QuestId="11936" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11936)">
+			<PickUp QuestName="Drake Hunt" QuestId="11919" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		</If>
+		<!-- REVIEW Q11919 Drake Hunt: objective 26175 Coldarra - Drake Hunt Invisman x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11919)) &amp;&amp; (IsQuestCompleted(11919)))">
+			<TurnIn QuestName="Drake Hunt" QuestId="11919" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		</If>
+		<If Condition="((HasQuest(11919)) &amp;&amp; (!IsQuestCompleted(11919)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11919" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 80)">
+			<PickUp QuestName="Corastrasza" QuestId="13412" GiverName="Librarian Serrah" GiverId="26110" X="3576.48" Y="6640.39" Z="195.176" />
+		</If>
+		<TurnIn QuestName="Corastrasza" QuestId="13412" TurnInName="Corastrasza" TurnInId="32548" X="3944.48" Y="6870.9" Z="527.405" />
+		<If Condition="(Me.Level &gt;= 80) &amp;&amp; IsQuestCompleted(13412)">
+			<PickUp QuestName="Aces High!" QuestId="13413" GiverName="Corastrasza" GiverId="32548" X="3944.48" Y="6870.9" Z="527.405" />
+		</If>
+		<Objective QuestName="Aces High!" QuestId="13413" Type="KillMob" MobId="32534" KillCount="5" />
+		<TurnIn QuestName="Aces High!" QuestId="13413" TurnInName="Corastrasza" TurnInId="32548" X="3944.48" Y="6870.9" Z="527.405" />
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11919)">
+			<PickUp QuestName="Drake Hunt" QuestId="11940" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		</If>
+		<!-- REVIEW Q11940 Drake Hunt: objective 26175 Coldarra - Drake Hunt Invisman x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11940)) &amp;&amp; (IsQuestCompleted(11940)))">
+			<TurnIn QuestName="Drake Hunt" QuestId="11940" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		</If>
+		<If Condition="((HasQuest(11940)) &amp;&amp; (!IsQuestCompleted(11940)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11940" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 80) &amp;&amp; IsQuestCompleted(13413)">
+			<PickUp QuestName="Aces High!" QuestId="13414" GiverName="Corastrasza" GiverId="32548" X="3944.48" Y="6870.9" Z="527.405" />
+		</If>
+		<Objective QuestName="Aces High!" QuestId="13414" Type="KillMob" MobId="32534" KillCount="5" />
+		<TurnIn QuestName="Aces High!" QuestId="13414" TurnInName="Corastrasza" TurnInId="32548" X="3944.48" Y="6870.9" Z="527.405" />
+		<CustomBehavior File="Message" Text="Zygor Dailies\Wrath of the Lich King\Wyrmrest Accord Dailies: done for today" LogColor="Green" />
+	</QuestOrder>
+</HBProfile>

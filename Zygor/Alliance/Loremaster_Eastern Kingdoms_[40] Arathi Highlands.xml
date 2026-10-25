@@ -1,0 +1,575 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Eastern Kingdoms\[40] Arathi Highlands</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Narj Deepslice" Entry="2814" Type="Food" X="-1275.9" Y="-2506.19" Z="21.9792" />
+		<Vendor Name="Vikki Lonsav" Entry="2808" Type="Food" X="-1275.75" Y="-2538.73" Z="21.6325" />
+		<Vendor Name="Nixxrax Fillamug" Entry="2832" Type="Food" X="-14451.7" Y="495.417" Z="15.1901" />
+		<Vendor Name="Innkeeper Skindle" Entry="6807" Type="Food" X="-14457.7" Y="495.348" Z="15.2129" />
+		<Vendor Name="Neema" Entry="2364" Type="Food" X="-863.837" Y="-569.354" Z="11.3463" />
+		<Vendor Name="Jannos Ironwill" Entry="1471" Type="Repair" X="-1278.57" Y="-2522" Z="21.4577" />
+		<Vendor Name="Jutak" Entry="2843" Type="Repair" X="-14467.8" Y="468.374" Z="15.1064" />
+		<Vendor Name="Hjoldir Stoneblade" Entry="5170" Type="Repair" X="-4605.08" Y="-1069.33" Z="503.673" />
+		<Vendor Name="Samuel Hawke" Entry="15127" Type="Repair" X="-1218.48" Y="-2521.56" Z="22.0432" />
+		<Vendor Name="Robert Aebischer" Entry="3543" Type="Repair" X="-815.529" Y="-572.187" Z="15.3116" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="681" Name="Northfold Manor">
+		<Objective Type="KillMob" MobId="2586" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-842.455" Y="-2090.78" Z="35.3338" />
+				<Hotspot X="-888.559" Y="-2073.09" Z="35.1964" />
+				<Hotspot X="-893.874" Y="-2114.54" Z="45.949" />
+				<Hotspot X="-882.313" Y="-2003.83" Z="34.2652" />
+				<Hotspot X="-848.401" Y="-1981.73" Z="35.9706" />
+				<Hotspot X="-804.614" Y="-1957.49" Z="34.2652" />
+				<Hotspot X="-744.846" Y="-1990.65" Z="34.3902" />
+				<Hotspot X="-769.643" Y="-2087.32" Z="34.3055" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2589" KillCount="6">
+			<Hotspots>
+				<Hotspot X="-775.245" Y="-2035.73" Z="34.1738" />
+				<Hotspot X="-789.401" Y="-2081.5" Z="34.9836" />
+				<Hotspot X="-835.366" Y="-2076.21" Z="34.3338" />
+				<Hotspot X="-878.305" Y="-2055.3" Z="34.8076" />
+				<Hotspot X="-854.12" Y="-2002.11" Z="34.7652" />
+				<Hotspot X="-803.064" Y="-1981.05" Z="34.0347" />
+				<Hotspot X="-761.055" Y="-1979.22" Z="34.7042" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="684" Name="Wanted!  Marez Cowl">
+		<Objective Type="CollectItem" ItemId="4515" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Marez Cowl" Id="2783" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1644.56" Y="-1933.05" Z="68.1722" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="685" Name="Wanted!  Otto and Falconcrest">
+		<Objective Type="CollectItem" ItemId="4516" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Otto" Id="2599" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1706.6" Y="-1810.7" Z="101.791" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4517" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Lord Falconcrest" Id="2597" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1709.68" Y="-1803.8" Z="101.791" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="691" Name="Worth Its Weight in Gold">
+		<Objective Type="CollectItem" ItemId="4503" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Witherbark Troll" Id="2552" />
+				<Mob Name="Witherbark Shadowcaster" Id="2553" />
+				<Mob Name="Witherbark Axe Thrower" Id="2554" />
+				<Mob Name="Witherbark Witch Doctor" Id="2555" />
+				<Mob Name="Witherbark Headhunter" Id="2556" />
+				<Mob Name="Witherbark Shadow Hunter" Id="2557" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1645.89" Y="-3454.44" Z="53.653" />
+				<Hotspot X="-1679.58" Y="-3483.1" Z="54.1774" />
+				<Hotspot X="-1663.56" Y="-3520.08" Z="72.1269" />
+				<Hotspot X="-1702.96" Y="-3532.49" Z="68.1043" />
+				<Hotspot X="-1715.15" Y="-3429.85" Z="45.4451" />
+				<Hotspot X="-1613.14" Y="-3417.97" Z="43.7392" />
+				<Hotspot X="-1552.85" Y="-3459.97" Z="57.1583" />
+				<Hotspot X="-1581.15" Y="-3502.02" Z="64.8895" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4522" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Witherbark Witch Doctor" Id="2555" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1617.39" Y="-3444.12" Z="50.8936" />
+				<Hotspot X="-1612.23" Y="-3384.3" Z="34.3492" />
+				<Hotspot X="-1682.86" Y="-3449.78" Z="50.3428" />
+				<Hotspot X="-1701.51" Y="-3503.55" Z="59.3543" />
+				<Hotspot X="-1743.89" Y="-3442.71" Z="52.4415" />
+				<Hotspot X="-1793.47" Y="-3424.43" Z="47.1484" />
+				<Hotspot X="-1781.99" Y="-3362.81" Z="33.5837" />
+				<Hotspot X="-1731.55" Y="-3372.45" Z="32.3185" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5040" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Witherbark Shadow Hunter" Id="2557" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2022.13" Y="-3292.49" Z="53.1674" />
+				<Hotspot X="-2065.54" Y="-3297.58" Z="67.6664" />
+				<Hotspot X="-2064.82" Y="-3252.97" Z="65.5721" />
+				<Hotspot X="-2109.19" Y="-3278.29" Z="67.1551" />
+				<Hotspot X="-2090.04" Y="-3346.53" Z="41.5335" />
+				<Hotspot X="-2024.19" Y="-3382.05" Z="59.3607" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="642" Name="The Princess Trapped">
+		<Objective Type="CollectItem" ItemId="4435" CollectCount="12">
+			<CollectFrom>
+				<Mob Name="Drywhisker Kobold" Id="2572" />
+				<Mob Name="Drywhisker Surveyor" Id="2573" />
+				<Mob Name="Drywhisker Digger" Id="2574" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-996.711" Y="-3846.9" Z="149.212" />
+				<Hotspot X="-1025.66" Y="-3815.28" Z="142.818" />
+				<Hotspot X="-1065.84" Y="-3836.19" Z="132.583" />
+				<Hotspot X="-952.787" Y="-3886.93" Z="153.802" />
+				<Hotspot X="-957.172" Y="-3927.99" Z="145.278" />
+				<Hotspot X="-887.565" Y="-3911.44" Z="135.023" />
+				<Hotspot X="-902.786" Y="-3869.73" Z="139.22" />
+				<Hotspot X="-988.332" Y="-3718.31" Z="93.5581" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="651" Name="Stones of Binding">
+		<Objective Type="CollectItem" ItemId="4484" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Stone of East Binding" Id="2691" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-846.582" Y="-3268.04" Z="78.024" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4485" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Stone of Outer Binding" Id="2690" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1350.81" Y="-2740.07" Z="59.1623" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4483" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Stone of West Binding" Id="2689" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-855.908" Y="-1783.29" Z="39.6135" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="658" Name="Hints of a New Plague?">
+		<Objective Type="CollectItem" ItemId="4482" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Forsaken Courier" Id="2714" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1552.43" Y="-3029.31" Z="13.7449" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="693" Name="Wand over Fist">
+		<Objective Type="CollectItem" ItemId="4525" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Kor'gresh Coldrage" Id="2793" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2098.22" Y="-2837.68" Z="79.1394" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="652" Name="Breaking the Keystone">
+		<Objective Type="CollectItem" ItemId="4469" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Fozruk" Id="2611" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-799.488" Y="-3187.84" Z="81.9862" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="694" Name="Trelane's Defenses">
+		<Objective Type="CollectItem" ItemId="4527" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Boulderfist Shaman" Id="2570" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1740.46" Y="-1643.3" Z="52.0271" />
+				<Hotspot X="-1709.54" Y="-1617.86" Z="60.373" />
+				<Hotspot X="-1753.47" Y="-1585.43" Z="51.8045" />
+				<Hotspot X="-1792.71" Y="-1594.79" Z="53.4594" />
+				<Hotspot X="-1730.41" Y="-1538.98" Z="55.8754" />
+				<Hotspot X="-1684.29" Y="-1568.41" Z="56.2981" />
+				<Hotspot X="-1792.11" Y="-1508.03" Z="90.7093" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="682" Name="Stromgarde Badges">
+		<Objective Type="CollectItem" ItemId="4506" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Syndicate Prowler" Id="2588" />
+				<Mob Name="Syndicate Conjuror" Id="2590" />
+				<Mob Name="Syndicate Magus" Id="2591" />
+				<Mob Name="Syndicate Thief" Id="24477" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1577.1" Y="-1836.56" Z="67.7967" />
+				<Hotspot X="-1586.96" Y="-1881.76" Z="68.6423" />
+				<Hotspot X="-1605.55" Y="-1918.79" Z="67.6552" />
+				<Hotspot X="-1647.47" Y="-1866.89" Z="80.7533" />
+				<Hotspot X="-1625.24" Y="-1831.54" Z="81.1616" />
+				<Hotspot X="-1624.48" Y="-1790.6" Z="80.6915" />
+				<Hotspot X="-1663.5" Y="-1803.53" Z="83.0723" />
+				<Hotspot X="-1703.68" Y="-1801.47" Z="101.708" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="662" Name="Deep Sea Salvage">
+		<Objective Type="CollectItem" ItemId="4489" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Maiden's Folly Log" Id="2709" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2175.47" Y="-1708.77" Z="-40.3075" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4487" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Maiden's Folly Charts" Id="2707" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2161.57" Y="-1696.34" Z="-35.108" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4488" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Spirit of Silverpine Charts" Id="2708" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2188.06" Y="-1603.06" Z="-40.6469" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4490" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Spirit of Silverpine Log" Id="2710" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2175.81" Y="-1610.09" Z="-48.3808" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="664" Name="Drowned Sorrows">
+		<Objective Type="KillMob" MobId="2595" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-2178.85" Y="-1781.72" Z="-57.4926" />
+				<Hotspot X="-2213.2" Y="-1748.48" Z="-32.8292" />
+				<Hotspot X="-2231.71" Y="-1784.73" Z="-60.8044" />
+				<Hotspot X="-2279.74" Y="-1771.47" Z="-29.0504" />
+				<Hotspot X="-2257.57" Y="-1735.6" Z="-64.9007" />
+				<Hotspot X="-2215.47" Y="-1680.55" Z="-55.3374" />
+				<Hotspot X="-2172.15" Y="-1712.25" Z="-46.9012" />
+				<Hotspot X="-2147.36" Y="-1656.12" Z="-45.1224" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2596" KillCount="3">
+			<Hotspots>
+				<Hotspot X="-2169.48" Y="-1721.63" Z="-39.6034" />
+				<Hotspot X="-2157.72" Y="-1674.73" Z="-41.2976" />
+				<Hotspot X="-2151.36" Y="-1632.39" Z="-38.9054" />
+				<Hotspot X="-2221.49" Y="-1520.33" Z="-35.9927" />
+				<Hotspot X="-2288.97" Y="-1652.69" Z="-61.5139" />
+				<Hotspot X="-2289.71" Y="-1722.61" Z="-60.2961" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="666" Name="Sunken Treasure">
+		<Objective Type="CollectItem" ItemId="4492" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Calcified Elven Gem" Id="2712" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2165.82" Y="-1741.98" Z="-52.3526" />
+				<Hotspot X="-2208.79" Y="-1749.48" Z="-64.7426" />
+				<Hotspot X="-2278.12" Y="-1764" Z="-29.885" />
+				<Hotspot X="-2292.4" Y="-1676.4" Z="-62.0808" />
+				<Hotspot X="-2298.33" Y="-1623.97" Z="-65.0526" />
+				<Hotspot X="-2294.67" Y="-1563.63" Z="-39.7692" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="696" Name="Attack on the Tower">
+		<Objective Type="CollectItem" ItemId="4530" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Trelane's Footlocker" Id="2717" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1768.74" Y="-1521.21" Z="75.2377" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4532" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Trelane's Lockbox" Id="2718" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1762.31" Y="-1515.68" Z="90.6093" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4531" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Trelane's Chest" Id="2716" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1792.98" Y="-1520.95" Z="99.3942" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="692" Name="The Lost Fragments">
+		<Objective Type="CollectItem" ItemId="4518" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Enraged Rock Elemental" Id="2791" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7309.3" Y="-3454.39" Z="312.392" />
+				<Hotspot X="-7281.08" Y="-3419.07" Z="296.809" />
+				<Hotspot X="-7308.36" Y="-3387.34" Z="296.057" />
+				<Hotspot X="-7262.07" Y="-3473.31" Z="315.787" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4519" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Enraged Rock Elemental" Id="2791" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7309.3" Y="-3454.39" Z="312.392" />
+				<Hotspot X="-7281.08" Y="-3419.07" Z="296.809" />
+				<Hotspot X="-7308.36" Y="-3387.34" Z="296.057" />
+				<Hotspot X="-7262.07" Y="-3473.31" Z="315.787" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4520" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Enraged Rock Elemental" Id="2791" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7309.3" Y="-3454.39" Z="312.392" />
+				<Hotspot X="-7281.08" Y="-3419.07" Z="296.809" />
+				<Hotspot X="-7308.36" Y="-3387.34" Z="296.057" />
+				<Hotspot X="-7262.07" Y="-3473.31" Z="315.787" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-EasternKingdoms.lua: Ding80's Loremaster Alliance Guides\Eastern Kingdoms\[40] Arathi Highlands -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Eastern Kingdoms_[40] Arathi Highlands");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Malin's Request" QuestId="690" GiverName="Archmage Malin" GiverId="2708" X="-9009" Y="846.395" Z="105.942" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Hints of a New Plague?" QuestId="659" GiverName="Phin Odelic" GiverId="2711" X="-859.667" Y="-544.376" Z="10.1443" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Northfold Manor" QuestId="681" GiverName="Captain Nials" GiverId="2700" X="-1274.69" Y="-2516.63" Z="21.4792" />
+		</If>
+		<If Condition="(Me.Level &gt;= 29)">
+			<PickUp QuestName="Wanted!  Marez Cowl" QuestId="684" GiverName="Wanted Board" GiverId="2713" GiverType="Object" X="-1279.63" Y="-2524.15" Z="22.7172" />
+		</If>
+		<If Condition="(Me.Level &gt;= 29)">
+			<PickUp QuestName="Wanted!  Otto and Falconcrest" QuestId="685" GiverName="Wanted Board" GiverId="2713" GiverType="Object" X="-1279.63" Y="-2524.15" Z="22.7172" />
+		</If>
+		<TurnIn QuestName="Malin's Request" QuestId="690" TurnInName="Skuerto" TurnInId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Worth Its Weight in Gold" QuestId="691" GiverName="Apprentice Kryten" GiverId="2788" X="-1279.41" Y="-2529.77" Z="21.5095" />
+		</If>
+		<Objective QuestName="Northfold Manor" QuestId="681" Type="KillMob" MobId="2586" KillCount="10" />
+		<Objective QuestName="Northfold Manor" QuestId="681" Type="KillMob" MobId="2589" KillCount="6" />
+		<TurnIn QuestName="Northfold Manor" QuestId="681" TurnInName="Captain Nials" TurnInId="2700" X="-1274.69" Y="-2516.63" Z="21.4792" />
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="The Princess Trapped" QuestId="642" GiverName="Shards of Myzrael" GiverId="138492" GiverType="Object" X="-942.842" Y="-3116.75" Z="48.4206" />
+		</If>
+		<Objective QuestName="The Princess Trapped" QuestId="642" Type="CollectItem" ItemId="4435" CollectCount="12" />
+		<TurnIn QuestName="The Princess Trapped" QuestId="642" TurnInName="Iridescent Shards" TurnInId="2701" TurnInType="Object" X="-876.186" Y="-3901.82" Z="143.1" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(642)">
+			<PickUp QuestName="Stones of Binding" QuestId="651" GiverName="Iridescent Shards" GiverId="2701" GiverType="Object" X="-876.186" Y="-3901.82" Z="143.1" />
+		</If>
+		<Objective QuestName="Stones of Binding" QuestId="651" Type="CollectItem" ItemId="4484" CollectCount="1" />
+		<Objective QuestName="Stones of Binding" QuestId="651" Type="CollectItem" ItemId="4485" CollectCount="1" />
+		<TurnIn QuestName="Hints of a New Plague?" QuestId="659" TurnInName="Quae" TurnInId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(659)">
+			<PickUp QuestName="Hints of a New Plague?" QuestId="658" GiverName="Quae" GiverId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
+		</If>
+		<Objective QuestName="Worth Its Weight in Gold" QuestId="691" Type="CollectItem" ItemId="4503" CollectCount="10" />
+		<Objective QuestName="Worth Its Weight in Gold" QuestId="691" Type="CollectItem" ItemId="4522" CollectCount="4" />
+		<Objective QuestName="Worth Its Weight in Gold" QuestId="691" Type="CollectItem" ItemId="5040" CollectCount="1" />
+		<Objective QuestName="Hints of a New Plague?" QuestId="658" Type="CollectItem" ItemId="4482" CollectCount="1" />
+		<Objective QuestName="Stones of Binding" QuestId="651" Type="CollectItem" ItemId="4483" CollectCount="1" />
+		<TurnIn QuestName="Worth Its Weight in Gold" QuestId="691" TurnInName="Apprentice Kryten" TurnInId="2788" X="-1279.41" Y="-2529.77" Z="21.5095" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(691)">
+			<PickUp QuestName="Wand over Fist" QuestId="693" GiverName="Skuerto" GiverId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
+		</If>
+		<TurnIn QuestName="Stones of Binding" QuestId="651" TurnInName="Stone of Inner Binding" TurnInId="2702" TurnInType="Object" X="-1510.34" Y="-2170.79" Z="17.263" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(651)">
+			<PickUp QuestName="Breaking the Keystone" QuestId="652" GiverName="Stone of Inner Binding" GiverId="2702" GiverType="Object" X="-1510.34" Y="-2170.79" Z="17.263" />
+		</If>
+		<Objective QuestName="Breaking the Keystone" QuestId="652" Type="CollectItem" ItemId="4469" CollectCount="1" />
+		<TurnIn QuestName="Hints of a New Plague?" QuestId="658" TurnInName="Quae" TurnInId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(658)">
+			<PickUp QuestName="Hints of a New Plague?" QuestId="657" GiverName="Quae" GiverId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
+		</If>
+		<TurnIn QuestName="Hints of a New Plague?" QuestId="657" TurnInName="Kinelory" TurnInId="2713" X="-1427.4" Y="-3035.18" Z="32.268" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(657)">
+			<PickUp QuestName="Hints of a New Plague?" QuestId="660" GiverName="Kinelory" GiverId="2713" X="-1427.4" Y="-3035.18" Z="32.268" />
+		</If>
+		<!-- REVIEW Q660 Hints of a New Plague?: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(660)) &amp;&amp; (IsQuestCompleted(660)))">
+			<TurnIn QuestName="Hints of a New Plague?" QuestId="660" TurnInName="Quae" TurnInId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
+		</If>
+		<If Condition="((HasQuest(660)) &amp;&amp; (!IsQuestCompleted(660)))">
+			<CustomBehavior File="AbandonQuest" QuestId="660" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(660)">
+			<PickUp QuestName="Hints of a New Plague?" QuestId="661" GiverName="Quae" GiverId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
+		</If>
+		<Objective QuestName="Wand over Fist" QuestId="693" Type="CollectItem" ItemId="4525" CollectCount="1" />
+		<TurnIn QuestName="Wand over Fist" QuestId="693" TurnInName="Skuerto" TurnInId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(693)">
+			<PickUp QuestName="Trelane's Defenses" QuestId="694" GiverName="Skuerto" GiverId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(681)">
+			<PickUp QuestName="Stromgarde Badges" QuestId="682" GiverName="Captain Nials" GiverId="2700" X="-1274.69" Y="-2516.63" Z="21.4792" />
+		</If>
+		<TurnIn QuestName="Breaking the Keystone" QuestId="652" TurnInName="Keystone" TurnInId="2688" TurnInType="Object" X="-1527.51" Y="-2165.45" Z="17.1488" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(652)">
+			<PickUp QuestName="Myzrael's Allies" QuestId="653" GiverName="Keystone" GiverId="2688" GiverType="Object" X="-1527.51" Y="-2165.45" Z="17.1488" />
+		</If>
+		<Objective QuestName="Wanted!  Marez Cowl" QuestId="684" Type="CollectItem" ItemId="4515" CollectCount="1" />
+		<Objective QuestName="Wanted!  Otto and Falconcrest" QuestId="685" Type="CollectItem" ItemId="4516" CollectCount="1" />
+		<Objective QuestName="Wanted!  Otto and Falconcrest" QuestId="685" Type="CollectItem" ItemId="4517" CollectCount="1" />
+		<Objective QuestName="Stromgarde Badges" QuestId="682" Type="CollectItem" ItemId="4506" CollectCount="7" />
+		<Objective QuestName="Trelane's Defenses" QuestId="694" Type="CollectItem" ItemId="4527" CollectCount="1" />
+		<If Condition="(Me.Level &gt;= 35)">
+			<PickUp QuestName="Land Ho!" QuestId="663" GiverName="Lolo the Lookout" GiverId="2766" X="-2117.71" Y="-2010.82" Z="6.2998" />
+		</If>
+		<TurnIn QuestName="Land Ho!" QuestId="663" TurnInName="Shakes O'Breen" TurnInId="2610" X="-2086.35" Y="-2028.79" Z="3.3717" />
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(663)">
+			<PickUp QuestName="Deep Sea Salvage" QuestId="662" GiverName="First Mate Nilzlix" GiverId="2767" X="-2088.96" Y="-2047.39" Z="3.4974" />
+		</If>
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(663)">
+			<PickUp QuestName="Drowned Sorrows" QuestId="664" GiverName="Captain Steelgut" GiverId="2769" X="-2072.44" Y="-2090.78" Z="9.2663" />
+		</If>
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(663)">
+			<PickUp QuestName="Sunken Treasure" QuestId="665" GiverName="Professor Phizzlethorpe" GiverId="2768" X="-2066.46" Y="-2085.97" Z="9.0825" />
+		</If>
+		<!-- REVIEW Q665 Sunken Treasure: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(665)) &amp;&amp; (IsQuestCompleted(665)))">
+			<TurnIn QuestName="Sunken Treasure" QuestId="665" TurnInName="Doctor Draxlegauge" TurnInId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
+		</If>
+		<If Condition="((HasQuest(665)) &amp;&amp; (!IsQuestCompleted(665)))">
+			<CustomBehavior File="AbandonQuest" QuestId="665" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(665)">
+			<PickUp QuestName="Sunken Treasure" QuestId="666" GiverName="Doctor Draxlegauge" GiverId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
+		</If>
+		<Objective QuestName="Deep Sea Salvage" QuestId="662" Type="CollectItem" ItemId="4489" CollectCount="1" />
+		<Objective QuestName="Deep Sea Salvage" QuestId="662" Type="CollectItem" ItemId="4487" CollectCount="1" />
+		<Objective QuestName="Deep Sea Salvage" QuestId="662" Type="CollectItem" ItemId="4488" CollectCount="1" />
+		<Objective QuestName="Deep Sea Salvage" QuestId="662" Type="CollectItem" ItemId="4490" CollectCount="1" />
+		<Objective QuestName="Sunken Treasure" QuestId="666" Type="CollectItem" ItemId="4492" CollectCount="10" />
+		<Objective QuestName="Drowned Sorrows" QuestId="664" Type="KillMob" MobId="2595" KillCount="10" />
+		<Objective QuestName="Drowned Sorrows" QuestId="664" Type="KillMob" MobId="2596" KillCount="3" />
+		<TurnIn QuestName="Deep Sea Salvage" QuestId="662" TurnInName="First Mate Nilzlix" TurnInId="2767" X="-2088.96" Y="-2047.39" Z="3.4974" />
+		<TurnIn QuestName="Sunken Treasure" QuestId="666" TurnInName="Doctor Draxlegauge" TurnInId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(666)">
+			<PickUp QuestName="Sunken Treasure" QuestId="668" GiverName="Doctor Draxlegauge" GiverId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
+		</If>
+		<TurnIn QuestName="Drowned Sorrows" QuestId="664" TurnInName="Captain Steelgut" TurnInId="2769" X="-2072.44" Y="-2090.78" Z="9.2663" />
+		<TurnIn QuestName="Sunken Treasure" QuestId="668" TurnInName="Shakes O'Breen" TurnInId="2610" X="-2086.35" Y="-2028.79" Z="3.3717" />
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(668)">
+			<PickUp QuestName="Sunken Treasure" QuestId="669" GiverName="Shakes O'Breen" GiverId="2610" X="-2086.35" Y="-2028.79" Z="3.3717" />
+		</If>
+		<TurnIn QuestName="Stromgarde Badges" QuestId="682" TurnInName="Captain Nials" TurnInId="2700" X="-1274.69" Y="-2516.63" Z="21.4792" />
+		<TurnIn QuestName="Wanted!  Marez Cowl" QuestId="684" TurnInName="Captain Nials" TurnInId="2700" X="-1274.69" Y="-2516.63" Z="21.4792" />
+		<TurnIn QuestName="Wanted!  Otto and Falconcrest" QuestId="685" TurnInName="Captain Nials" TurnInId="2700" X="-1274.69" Y="-2516.63" Z="21.4792" />
+		<TurnIn QuestName="Trelane's Defenses" QuestId="694" TurnInName="Apprentice Kryten" TurnInId="2788" X="-1279.41" Y="-2529.77" Z="21.5095" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(694)">
+			<PickUp QuestName="An Apprentice's Enchantment" QuestId="695" GiverName="Apprentice Kryten" GiverId="2788" X="-1279.41" Y="-2529.77" Z="21.5095" />
+		</If>
+		<TurnIn QuestName="An Apprentice's Enchantment" QuestId="695" TurnInName="Skuerto" TurnInId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(695)">
+			<PickUp QuestName="Attack on the Tower" QuestId="696" GiverName="Skuerto" GiverId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
+		</If>
+		<Objective QuestName="Attack on the Tower" QuestId="696" Type="CollectItem" ItemId="4530" CollectCount="1" />
+		<Objective QuestName="Attack on the Tower" QuestId="696" Type="CollectItem" ItemId="4532" CollectCount="1" />
+		<Objective QuestName="Attack on the Tower" QuestId="696" Type="CollectItem" ItemId="4531" CollectCount="1" />
+		<TurnIn QuestName="Attack on the Tower" QuestId="696" TurnInName="Skuerto" TurnInId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(696)">
+			<PickUp QuestName="Malin's Request" QuestId="697" GiverName="Skuerto" GiverId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
+		</If>
+		<TurnIn QuestName="Hints of a New Plague?" QuestId="661" TurnInName="Phin Odelic" TurnInId="2711" X="-859.667" Y="-544.376" Z="10.1443" />
+		<TurnIn QuestName="Myzrael's Allies" QuestId="653" TurnInName="Gerrig Bonegrip" TurnInId="2786" X="-4598.87" Y="-1115.45" Z="505.022" />
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Theldurin the Lost" QuestId="687" GiverName="Gerrig Bonegrip" GiverId="2786" X="-4598.87" Y="-1115.45" Z="505.022" />
+		</If>
+		<TurnIn QuestName="Malin's Request" QuestId="697" TurnInName="Archmage Malin" TurnInId="2708" X="-9009" Y="846.395" Z="105.942" />
+		<TurnIn QuestName="Sunken Treasure" QuestId="669" TurnInName="Fleet Master Seahorn" TurnInId="2487" X="-14444.8" Y="486.81" Z="28.809" />
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(669)">
+			<PickUp QuestName="Sunken Treasure" QuestId="670" GiverName="Fleet Master Seahorn" GiverId="2487" X="-14444.8" Y="486.81" Z="28.809" />
+		</If>
+		<TurnIn QuestName="Theldurin the Lost" QuestId="687" TurnInName="Theldurin the Lost" TurnInId="2785" X="-7164.42" Y="-3357.41" Z="244.933" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(687)">
+			<PickUp QuestName="The Lost Fragments" QuestId="692" GiverName="Theldurin the Lost" GiverId="2785" X="-7164.42" Y="-3357.41" Z="244.933" />
+		</If>
+		<Objective QuestName="The Lost Fragments" QuestId="692" Type="CollectItem" ItemId="4518" CollectCount="1" />
+		<Objective QuestName="The Lost Fragments" QuestId="692" Type="CollectItem" ItemId="4519" CollectCount="1" />
+		<Objective QuestName="The Lost Fragments" QuestId="692" Type="CollectItem" ItemId="4520" CollectCount="1" />
+		<TurnIn QuestName="The Lost Fragments" QuestId="692" TurnInName="Theldurin the Lost" TurnInId="2785" X="-7164.42" Y="-3357.41" Z="244.933" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(692)">
+			<PickUp QuestName="Summoning the Princess" QuestId="656" GiverName="Theldurin the Lost" GiverId="2785" X="-7164.42" Y="-3357.41" Z="244.933" />
+		</If>
+		<!-- REVIEW Q656 Summoning the Princess: item 4473 Eldritch Shackles has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(656)) &amp;&amp; (IsQuestCompleted(656)))">
+			<TurnIn QuestName="Summoning the Princess" QuestId="656" TurnInName="Shards of Myzrael" TurnInId="138492" TurnInType="Object" X="-942.842" Y="-3116.75" Z="48.4206" />
+		</If>
+		<If Condition="((HasQuest(656)) &amp;&amp; (!IsQuestCompleted(656)))">
+			<CustomBehavior File="AbandonQuest" QuestId="656" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Sunken Treasure" QuestId="670" TurnInName="Shakes O'Breen" TurnInId="2610" X="-2086.35" Y="-2028.79" Z="3.3717" />
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(670)">
+			<PickUp QuestName="Death From Below" QuestId="667" GiverName="Shakes O'Breen" GiverId="2610" X="-2086.35" Y="-2028.79" Z="3.3717" />
+		</If>
+		<!-- REVIEW Q667 Death From Below: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(667)) &amp;&amp; (IsQuestCompleted(667)))">
+			<TurnIn QuestName="Death From Below" QuestId="667" TurnInName="Shakes O'Breen" TurnInId="2610" X="-2086.35" Y="-2028.79" Z="3.3717" />
+		</If>
+		<If Condition="((HasQuest(667)) &amp;&amp; (!IsQuestCompleted(667)))">
+			<CustomBehavior File="AbandonQuest" QuestId="667" Type="Incomplete" />
+		</If>
+	</QuestOrder>
+</HBProfile>

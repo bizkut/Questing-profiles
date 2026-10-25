@@ -1,0 +1,634 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Eastern Kingdoms\[25] Redridge Mountains</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Bartender Wental" Entry="5620" Type="Food" X="-9210.83" Y="-2150.71" Z="64.4372" />
+		<Vendor Name="Gretchen Vogel" Entry="3086" Type="Food" X="-9215.79" Y="-2066.68" Z="82.9563" />
+		<Vendor Name="Vernon Hale" Entry="1678" Type="Food" X="-9267.56" Y="-2167.64" Z="62.6756" />
+		<Vendor Name="Gloria Femmel" Entry="3085" Type="Food" X="-9204.98" Y="-2149.53" Z="64.4441" />
+		<Vendor Name="Innkeeper Brianna" Entry="6727" Type="Food" X="-9223.98" Y="-2157.12" Z="64.0168" />
+		<Vendor Name="Andrew Krighton" Entry="2046" Type="Repair" X="-9462.29" Y="87.8151" Z="58.4211" />
+		<Vendor Name="Corina Steele" Entry="54" Type="Repair" X="-9464.87" Y="93.9896" Z="58.5271" />
+		<Vendor Name="Kurran Steele" Entry="74" Type="Repair" X="-9457.64" Y="99.6884" Z="58.4271" />
+		<Vendor Name="Dorin Songblade" Entry="956" Type="Repair" X="-9247.4" Y="-2241.15" Z="64.0584" />
+		<Vendor Name="Kimberly Hiett" Entry="789" Type="Repair" X="-9234.49" Y="-2158.75" Z="64.4407" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="246" Name="Assessing the Threat">
+		<Objective Type="KillMob" MobId="423" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-9621.85" Y="-2534.61" Z="59.3034" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="424" KillCount="6">
+			<Hotspots>
+				<Hotspot X="-9606.94" Y="-2511.6" Z="59.3492" />
+				<Hotspot X="-9622.57" Y="-2470.48" Z="60.2736" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="128" Name="Blackrock Bounty">
+		<Objective Type="KillMob" MobId="435" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-8672.24" Y="-2318.15" Z="156.041" />
+				<Hotspot X="-8656.91" Y="-2253.53" Z="154.088" />
+				<Hotspot X="-8702.55" Y="-2232.12" Z="154.532" />
+				<Hotspot X="-8749.44" Y="-2207.81" Z="153.564" />
+				<Hotspot X="-8760.77" Y="-2253.44" Z="152.291" />
+				<Hotspot X="-8798.71" Y="-2234.86" Z="146.048" />
+				<Hotspot X="-8798" Y="-2190.77" Z="141.994" />
+				<Hotspot X="-8719.21" Y="-2162.26" Z="157.949" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="20" Name="Blackrock Menace">
+		<Objective Type="CollectItem" ItemId="3014" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Blackrock Champion" Id="435" />
+				<Mob Name="Blackrock Shadowcaster" Id="436" />
+				<Mob Name="Blackrock Renegade" Id="437" />
+				<Mob Name="Blackrock Grunt" Id="440" />
+				<Mob Name="Blackrock Outrunner" Id="485" />
+				<Mob Name="Blackrock Tracker" Id="615" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8677.03" Y="-2269.45" Z="155.398" />
+				<Hotspot X="-8711.74" Y="-2247.49" Z="154.723" />
+				<Hotspot X="-8737.43" Y="-2213.5" Z="149.96" />
+				<Hotspot X="-8760.77" Y="-2253.44" Z="152.291" />
+				<Hotspot X="-8718.67" Y="-2342.11" Z="156" />
+				<Hotspot X="-8757.97" Y="-2367.63" Z="157.606" />
+				<Hotspot X="-8672.24" Y="-2318.15" Z="156.041" />
+				<Hotspot X="-8697.62" Y="-2166.55" Z="157.133" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="125" Name="The Lost Tools">
+		<Objective Type="CollectItem" ItemId="1309" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Sunken Chest" Id="32" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9366.48" Y="-2472.26" Z="17.0271" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="347" Name="Rethban Ore">
+		<Objective Type="CollectItem" ItemId="2798" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Redridge Drudger" Id="580" />
+				<GameObject Name="Copper Vein" Id="2055" />
+				<GameObject Name="Tin Vein" Id="2054" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8972.89" Y="-2004.04" Z="135.57" />
+				<Hotspot X="-8926.91" Y="-1979.36" Z="140.028" />
+				<Hotspot X="-8879.73" Y="-2011.24" Z="124.55" />
+				<Hotspot X="-8872.49" Y="-2056.09" Z="126.55" />
+				<Hotspot X="-8917.21" Y="-2040.44" Z="129.415" />
+				<Hotspot X="-8826.46" Y="-2032.74" Z="129.648" />
+				<Hotspot X="-8834.44" Y="-1940.76" Z="132.951" />
+				<Hotspot X="-8881.47" Y="-1915.72" Z="133.726" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="127" Name="Selling Fish">
+		<Objective Type="CollectItem" ItemId="1467" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Murloc Flesheater" Id="422" />
+				<Mob Name="Murloc Nightcrawler" Id="544" />
+				<Mob Name="Murloc Tidecaller" Id="545" />
+				<Mob Name="Murloc Minor Tidecaller" Id="548" />
+				<Mob Name="Murloc Scout" Id="578" />
+				<Mob Name="Murloc Shorestriker" Id="1083" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9469.64" Y="-2818.11" Z="69.6798" />
+				<Hotspot X="-9435.85" Y="-2841.01" Z="61.21" />
+				<Hotspot X="-9464.83" Y="-2870.54" Z="85.2708" />
+				<Hotspot X="-9521.19" Y="-2823.86" Z="79.7058" />
+				<Hotspot X="-9444.55" Y="-2785.03" Z="52.986" />
+				<Hotspot X="-9377.07" Y="-2792.06" Z="54.227" />
+				<Hotspot X="-9381" Y="-2751.87" Z="54.7918" />
+				<Hotspot X="-9348.54" Y="-2835.57" Z="60.8664" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="150" Name="Murloc Poachers">
+		<Objective Type="CollectItem" ItemId="1468" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Murloc Flesheater" Id="422" />
+				<Mob Name="Murloc Nightcrawler" Id="544" />
+				<Mob Name="Murloc Tidecaller" Id="545" />
+				<Mob Name="Murloc Minor Tidecaller" Id="548" />
+				<Mob Name="Murloc Scout" Id="578" />
+				<Mob Name="Murloc Shorestriker" Id="1083" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9469.64" Y="-2818.11" Z="69.6798" />
+				<Hotspot X="-9435.85" Y="-2841.01" Z="61.21" />
+				<Hotspot X="-9464.83" Y="-2870.54" Z="85.2708" />
+				<Hotspot X="-9521.19" Y="-2823.86" Z="79.7058" />
+				<Hotspot X="-9444.55" Y="-2785.03" Z="52.986" />
+				<Hotspot X="-9377.07" Y="-2792.06" Z="54.227" />
+				<Hotspot X="-9381" Y="-2751.87" Z="54.7918" />
+				<Hotspot X="-9348.54" Y="-2835.57" Z="60.8664" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="92" Name="Redridge Goulash">
+		<Objective Type="CollectItem" ItemId="2296" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Bellygrub" Id="345" />
+				<Mob Name="Great Goretusk" Id="547" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9604.07" Y="-1959.59" Z="64.5037" />
+				<Hotspot X="-9628.7" Y="-1992.81" Z="61.6545" />
+				<Hotspot X="-9710.89" Y="-2107.72" Z="60.6661" />
+				<Hotspot X="-9724.1" Y="-2153.24" Z="59.8127" />
+				<Hotspot X="-9666.22" Y="-2172.84" Z="60.6417" />
+				<Hotspot X="-9636.79" Y="-2200.59" Z="69.9214" />
+				<Hotspot X="-9451.39" Y="-2122.71" Z="69.88" />
+				<Hotspot X="-9375.17" Y="-1954.55" Z="59.1294" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="1081" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Venom Web Spider" Id="217" />
+				<Mob Name="Tarantula" Id="442" />
+				<Mob Name="Greater Tarantula" Id="505" />
+				<Mob Name="Pygmy Venom Web Spider" Id="539" />
+				<Mob Name="Green Recluse" Id="569" />
+				<Mob Name="Naraxis" Id="574" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9673.07" Y="-2147.73" Z="61.8108" />
+				<Hotspot X="-9680.27" Y="-2065.72" Z="65.4408" />
+				<Hotspot X="-9613.06" Y="-1994.43" Z="64.1733" />
+				<Hotspot X="-9548.67" Y="-2053.15" Z="69.8158" />
+				<Hotspot X="-9522.01" Y="-2008.15" Z="77.827" />
+				<Hotspot X="-9670.91" Y="-1877.15" Z="56.6459" />
+				<Hotspot X="-9764.31" Y="-1869.49" Z="47.6708" />
+				<Hotspot X="-9662.16" Y="-2331.09" Z="69.1524" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="1080" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Dire Condor" Id="428" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9681.44" Y="-2962.72" Z="51.9669" />
+				<Hotspot X="-9681.56" Y="-2906.01" Z="51.5517" />
+				<Hotspot X="-9678.88" Y="-2809.53" Z="51.9944" />
+				<Hotspot X="-9637.81" Y="-2770.34" Z="58.7076" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="34" Name="An Unwelcome Guest">
+		<Objective Type="CollectItem" ItemId="3631" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bellygrub" Id="345" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9288.95" Y="-1911.28" Z="74.9346" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3741" Name="Hilary's Necklace">
+		<Objective Type="CollectItem" ItemId="10958" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Glinting Mud" Id="154357" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9386.96" Y="-2175.24" Z="41.9997" />
+				<Hotspot X="-9357.17" Y="-2129.56" Z="42.3378" />
+				<Hotspot X="-9316.16" Y="-2146.72" Z="45.9883" />
+				<Hotspot X="-9360.17" Y="-2243.55" Z="45.4954" />
+				<Hotspot X="-9375.87" Y="-2303.81" Z="45.5523" />
+				<Hotspot X="-9360.54" Y="-2372.21" Z="40.8664" />
+				<Hotspot X="-9344.8" Y="-2042.31" Z="40.9412" />
+				<Hotspot X="-9324.1" Y="-1986.69" Z="43.5814" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="89" Name="The Everstill Bridge">
+		<Objective Type="CollectItem" ItemId="2856" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Redridge Brute" Id="426" />
+				<Mob Name="Redridge Mystic" Id="430" />
+				<Mob Name="Redridge Basher" Id="446" />
+				<Mob Name="Redridge Drudger" Id="580" />
+				<Mob Name="Ribchaser" Id="14271" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9123.46" Y="-2211.76" Z="123.6" />
+				<Hotspot X="-9114" Y="-2156.62" Z="127.833" />
+				<Hotspot X="-9115" Y="-2092.94" Z="124.588" />
+				<Hotspot X="-9034.54" Y="-2108.23" Z="135.29" />
+				<Hotspot X="-9030.87" Y="-2190.52" Z="131.859" />
+				<Hotspot X="-8986.68" Y="-2184.29" Z="132.714" />
+				<Hotspot X="-9001.13" Y="-2267.11" Z="142.432" />
+				<Hotspot X="-9116.26" Y="-2354.29" Z="121.452" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="1013" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Redridge Brute" Id="426" />
+				<Mob Name="Redridge Mystic" Id="430" />
+				<Mob Name="Redridge Basher" Id="446" />
+				<Mob Name="Redridge Drudger" Id="580" />
+				<Mob Name="Ribchaser" Id="14271" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9123.46" Y="-2211.76" Z="123.6" />
+				<Hotspot X="-9114" Y="-2156.62" Z="127.833" />
+				<Hotspot X="-9115" Y="-2092.94" Z="124.588" />
+				<Hotspot X="-9034.54" Y="-2108.23" Z="135.29" />
+				<Hotspot X="-9030.87" Y="-2190.52" Z="131.859" />
+				<Hotspot X="-8986.68" Y="-2184.29" Z="132.714" />
+				<Hotspot X="-9001.13" Y="-2267.11" Z="142.432" />
+				<Hotspot X="-9116.26" Y="-2354.29" Z="121.452" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="122" Name="Underbelly Scales">
+		<Objective Type="CollectItem" ItemId="1221" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Black Dragon Whelp" Id="441" />
+				<Mob Name="Snarlflare" Id="14272" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9060.64" Y="-2606.6" Z="126.409" />
+				<Hotspot X="-9087.18" Y="-2575.17" Z="126.816" />
+				<Hotspot X="-9057.79" Y="-2531.08" Z="127.008" />
+				<Hotspot X="-9053.15" Y="-2491.32" Z="126.266" />
+				<Hotspot X="-9048" Y="-2443.42" Z="128.797" />
+				<Hotspot X="-9004.7" Y="-2524.84" Z="134.931" />
+				<Hotspot X="-9054.55" Y="-2648.11" Z="129.626" />
+				<Hotspot X="-9166.64" Y="-2518.35" Z="110.678" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="124" Name="A Baying of Gnolls">
+		<Objective Type="KillMob" MobId="426" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-9123.46" Y="-2211.76" Z="123.6" />
+				<Hotspot X="-9115" Y="-2092.94" Z="124.588" />
+				<Hotspot X="-9099.5" Y="-2037.44" Z="128.835" />
+				<Hotspot X="-9056.48" Y="-2008.05" Z="146.581" />
+				<Hotspot X="-9047.37" Y="-2094.47" Z="130.774" />
+				<Hotspot X="-9154.67" Y="-2023.23" Z="120.341" />
+				<Hotspot X="-9034.69" Y="-2407.47" Z="129.734" />
+				<Hotspot X="-9081.85" Y="-2446.57" Z="123.615" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="430" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-9114" Y="-2156.62" Z="127.833" />
+				<Hotspot X="-9114.83" Y="-2092.02" Z="124.509" />
+				<Hotspot X="-9085.82" Y="-2041.06" Z="129.401" />
+				<Hotspot X="-9034.54" Y="-2108.23" Z="135.29" />
+				<Hotspot X="-8971.16" Y="-2077.71" Z="132.642" />
+				<Hotspot X="-8993.24" Y="-2179.93" Z="133.105" />
+				<Hotspot X="-9001.13" Y="-2267.11" Z="142.432" />
+				<Hotspot X="-9116.26" Y="-2354.29" Z="121.452" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="117" Name="Thunderbrew Lager">
+		<Objective Type="CollectItem" ItemId="1274" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Harvest Golem" Id="36" />
+				<Mob Name="Harvest Watcher" Id="114" />
+				<Mob Name="Harvest Reaper" Id="115" />
+				<Mob Name="Rusty Harvest Golem" Id="480" />
+				<Mob Name="Foe Reaper 4000" Id="573" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10846.7" Y="861.362" Z="32.9449" />
+				<Hotspot X="-10803.3" Y="872.987" Z="32.8531" />
+				<Hotspot X="-10781.4" Y="836.458" Z="33.0699" />
+				<Hotspot X="-10745.8" Y="812.736" Z="32.7199" />
+				<Hotspot X="-10789.4" Y="784.537" Z="32.806" />
+				<Hotspot X="-10847.1" Y="798.228" Z="33.3781" />
+				<Hotspot X="-10843.4" Y="755.434" Z="33.8382" />
+				<Hotspot X="-10825.6" Y="715.884" Z="37.8314" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="126" Name="Howling in the Hills">
+		<Objective Type="CollectItem" ItemId="3614" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Yowler" Id="518" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8884.59" Y="-2171.12" Z="132.569" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="19" Name="Tharil'zun">
+		<Objective Type="CollectItem" ItemId="1260" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Tharil'zun" Id="486" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9442.19" Y="-3074.29" Z="136.676" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="115" Name="Shadow Magic">
+		<Objective Type="CollectItem" ItemId="1261" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Blackrock Shadowcaster" Id="436" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9390.71" Y="-3053.79" Z="156.861" />
+				<Hotspot X="-9360.73" Y="-3081.39" Z="155.48" />
+				<Hotspot X="-9358.32" Y="-3027.09" Z="136.758" />
+				<Hotspot X="-9399.29" Y="-3006.63" Z="136.81" />
+				<Hotspot X="-9430.26" Y="-2953.52" Z="115.942" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="91" Name="Solomon's Law">
+		<Objective Type="CollectItem" ItemId="1075" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Shadowhide Darkweaver" Id="429" />
+				<Mob Name="Shadowhide Slayer" Id="431" />
+				<Mob Name="Shadowhide Brute" Id="432" />
+				<Mob Name="Shadowhide Gnoll" Id="433" />
+				<Mob Name="Rabid Shadowhide Gnoll" Id="434" />
+				<Mob Name="Shadowhide Warrior" Id="568" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9111.58" Y="-3311.35" Z="102.705" />
+				<Hotspot X="-9162.64" Y="-3314.33" Z="105.371" />
+				<Hotspot X="-9142.97" Y="-3267.64" Z="102.015" />
+				<Hotspot X="-9116.21" Y="-3232.83" Z="100.599" />
+				<Hotspot X="-9138.18" Y="-3196.13" Z="107.447" />
+				<Hotspot X="-9178.1" Y="-3230.13" Z="105.545" />
+				<Hotspot X="-9215.73" Y="-3306.54" Z="100.277" />
+				<Hotspot X="-9078.26" Y="-3257.91" Z="114.709" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="169" Name="Wanted: Gath'Ilzogg">
+		<Objective Type="CollectItem" ItemId="3633" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Gath'Ilzogg" Id="334" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9382.84" Y="-3082.02" Z="158.155" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="180" Name="Wanted: Lieutenant Fangore">
+		<Objective Type="CollectItem" ItemId="3632" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Lieutenant Fangore" Id="703" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9111.58" Y="-3311.35" Z="102.705" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="249" Name="Morganth">
+		<Objective Type="CollectItem" ItemId="3617" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Morganth" Id="397" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9291.54" Y="-3309.94" Z="150.233" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-EasternKingdoms.lua: Ding80's Loremaster Alliance Guides\Eastern Kingdoms\[25] Redridge Mountains -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Eastern Kingdoms_[25] Redridge Mountains");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="Speaking of Fortitude" QuestId="343" GiverName="Brother Kristoff" GiverId="1444" X="-8623.24" Y="766.655" Z="97.4033" />
+		</If>
+		<TurnIn QuestName="Speaking of Fortitude" QuestId="343" TurnInName="Milton Sheaf" TurnInId="1440" X="-8346" Y="383.928" Z="122.374" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(343)">
+			<PickUp QuestName="Brother Paxton" QuestId="344" GiverName="Milton Sheaf" GiverId="1440" X="-8346" Y="383.928" Z="122.374" />
+		</If>
+		<TurnIn QuestName="Brother Paxton" QuestId="344" TurnInName="Brother Paxton" TurnInId="951" X="-8874.87" Y="-186.332" Z="82.1206" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(344)">
+			<PickUp QuestName="Ink Supplies" QuestId="345" GiverName="Brother Paxton" GiverId="951" X="-8874.87" Y="-186.332" Z="82.1206" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="A Watchful Eye" QuestId="94" GiverName="Theocritus" GiverId="313" X="-9553.08" Y="-728.152" Z="99.2522" />
+		</If>
+		<If Condition="(Me.Level &gt;= 11)">
+			<PickUp QuestName="Encroaching Gnolls" QuestId="244" GiverName="Guard Parker" GiverId="464" X="-9609.64" Y="-1902.4" Z="59.8859" />
+		</If>
+		<TurnIn QuestName="Encroaching Gnolls" QuestId="244" TurnInName="Deputy Feldon" TurnInId="1070" X="-9443.69" Y="-2238" Z="70.6904" />
+		<If Condition="(Me.Level &gt;= 11) &amp;&amp; IsQuestCompleted(244)">
+			<PickUp QuestName="Assessing the Threat" QuestId="246" GiverName="Deputy Feldon" GiverId="1070" X="-9443.69" Y="-2238" Z="70.6904" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="Blackrock Bounty" QuestId="128" GiverName="Guard Howe" GiverId="903" X="-9412.65" Y="-2255.45" Z="67.6043" />
+		</If>
+		<If Condition="(Me.Level &gt;= 18)">
+			<PickUp QuestName="Blackrock Menace" QuestId="20" GiverName="Marshal Marris" GiverId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
+		</If>
+		<TurnIn QuestName="Ink Supplies" QuestId="345" TurnInName="Foreman Oslow" TurnInId="341" X="-9279.22" Y="-2268.53" Z="67.6306" />
+		<If Condition="(Me.Level &gt;= 15)">
+			<PickUp QuestName="The Lost Tools" QuestId="125" GiverName="Foreman Oslow" GiverId="341" X="-9279.22" Y="-2268.53" Z="67.6306" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(345)">
+			<PickUp QuestName="Rethban Ore" QuestId="347" GiverName="Foreman Oslow" GiverId="341" X="-9279.22" Y="-2268.53" Z="67.6306" />
+		</If>
+		<If Condition="(Me.Level &gt;= 14)">
+			<PickUp QuestName="The Price of Shoes" QuestId="118" GiverName="Verner Osgood" GiverId="415" X="-9259.44" Y="-2243.22" Z="64.0584" />
+		</If>
+		<If Condition="(Me.Level &gt;= 14)">
+			<PickUp QuestName="Messenger to Stormwind" QuestId="120" GiverName="Magistrate Solomon" GiverId="344" X="-9218.61" Y="-2221.8" Z="67.6227" />
+		</If>
+		<If Condition="(Me.Level &gt;= 16)">
+			<PickUp QuestName="Selling Fish" QuestId="127" GiverName="Dockmaster Baren" GiverId="381" X="-9261.03" Y="-2172.66" Z="64.2033" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="Murloc Poachers" QuestId="150" GiverName="Dockmaster Baren" GiverId="381" X="-9261.03" Y="-2172.66" Z="64.2033" />
+		</If>
+		<If Condition="(Me.Level &gt;= 12)">
+			<PickUp QuestName="A Free Lunch" QuestId="129" GiverName="Darcy" GiverId="379" X="-9218.02" Y="-2148.62" Z="64.3548" />
+		</If>
+		<If Condition="(Me.Level &gt;= 12)">
+			<PickUp QuestName="Dry Times" QuestId="116" GiverName="Barkeep Daniels" GiverId="346" X="-9211.5" Y="-2145.7" Z="64.4372" />
+		</If>
+		<If Condition="(Me.Level &gt;= 15)">
+			<PickUp QuestName="Redridge Goulash" QuestId="92" GiverName="Chef Breanna" GiverId="343" X="-9209.71" Y="-2063.14" Z="78.2817" />
+		</If>
+		<If Condition="(Me.Level &gt;= 18)">
+			<PickUp QuestName="An Unwelcome Guest" QuestId="34" GiverName="Martie Jainrose" GiverId="342" X="-9245.81" Y="-2045.33" Z="77.1861" />
+		</If>
+		<Objective QuestName="An Unwelcome Guest" QuestId="34" Type="CollectItem" ItemId="3631" CollectCount="1" />
+		<Objective QuestName="Redridge Goulash" QuestId="92" Type="CollectItem" ItemId="2296" CollectCount="5" />
+		<TurnIn QuestName="A Free Lunch" QuestId="129" TurnInName="Guard Parker" TurnInId="464" X="-9609.64" Y="-1902.4" Z="59.8859" />
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(129)">
+			<PickUp QuestName="Visit the Herbalist" QuestId="130" GiverName="Guard Parker" GiverId="464" X="-9609.64" Y="-1902.4" Z="59.8859" />
+		</If>
+		<Objective QuestName="Redridge Goulash" QuestId="92" Type="CollectItem" ItemId="1081" CollectCount="5" />
+		<Objective QuestName="Assessing the Threat" QuestId="246" Type="KillMob" MobId="423" KillCount="10" />
+		<Objective QuestName="Assessing the Threat" QuestId="246" Type="KillMob" MobId="424" KillCount="6" />
+		<Objective QuestName="Redridge Goulash" QuestId="92" Type="CollectItem" ItemId="1080" CollectCount="5" />
+		<TurnIn QuestName="Assessing the Threat" QuestId="246" TurnInName="Deputy Feldon" TurnInId="1070" X="-9443.69" Y="-2238" Z="70.6904" />
+		<TurnIn QuestName="Redridge Goulash" QuestId="92" TurnInName="Chef Breanna" TurnInId="343" X="-9209.71" Y="-2063.14" Z="78.2817" />
+		<TurnIn QuestName="An Unwelcome Guest" QuestId="34" TurnInName="Martie Jainrose" TurnInId="342" X="-9245.81" Y="-2045.33" Z="77.1861" />
+		<TurnIn QuestName="Visit the Herbalist" QuestId="130" TurnInName="Martie Jainrose" TurnInId="342" X="-9245.81" Y="-2045.33" Z="77.1861" />
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(130)">
+			<PickUp QuestName="Delivering Daffodils" QuestId="131" GiverName="Martie Jainrose" GiverId="342" X="-9245.81" Y="-2045.33" Z="77.1861" />
+		</If>
+		<TurnIn QuestName="Delivering Daffodils" QuestId="131" TurnInName="Darcy" TurnInId="379" X="-9218.02" Y="-2148.62" Z="64.3548" />
+		<If Condition="(Me.Level &gt;= 12)">
+			<PickUp QuestName="Hilary's Necklace" QuestId="3741" GiverName="Shawn" GiverId="8965" X="-9351.62" Y="-2207.26" Z="62.1803" />
+		</If>
+		<Objective QuestName="Hilary's Necklace" QuestId="3741" Type="CollectItem" ItemId="10958" CollectCount="1" />
+		<Objective QuestName="The Lost Tools" QuestId="125" Type="CollectItem" ItemId="1309" CollectCount="1" />
+		<Objective QuestName="Selling Fish" QuestId="127" Type="CollectItem" ItemId="1467" CollectCount="10" />
+		<Objective QuestName="Murloc Poachers" QuestId="150" Type="CollectItem" ItemId="1468" CollectCount="8" />
+		<TurnIn QuestName="The Lost Tools" QuestId="125" TurnInName="Foreman Oslow" TurnInId="341" X="-9279.22" Y="-2268.53" Z="67.6306" />
+		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(125)">
+			<PickUp QuestName="The Everstill Bridge" QuestId="89" GiverName="Foreman Oslow" GiverId="341" X="-9279.22" Y="-2268.53" Z="67.6306" />
+		</If>
+		<TurnIn QuestName="Hilary's Necklace" QuestId="3741" TurnInName="Hilary" TurnInId="8962" X="-9351.52" Y="-2205.56" Z="62.1914" />
+		<TurnIn QuestName="Selling Fish" QuestId="127" TurnInName="Dockmaster Baren" TurnInId="381" X="-9261.03" Y="-2172.66" Z="64.2033" />
+		<TurnIn QuestName="Murloc Poachers" QuestId="150" TurnInName="Dockmaster Baren" TurnInId="381" X="-9261.03" Y="-2172.66" Z="64.2033" />
+		<TurnIn QuestName="Messenger to Stormwind" QuestId="120" TurnInName="General Marcus Jonathan" TurnInId="466" X="-8953.95" Y="521.019" Z="96.5399" />
+		<If Condition="(Me.Level &gt;= 14) &amp;&amp; IsQuestCompleted(120)">
+			<PickUp QuestName="Messenger to Stormwind" QuestId="121" GiverName="General Marcus Jonathan" GiverId="466" X="-8953.95" Y="521.019" Z="96.5399" />
+		</If>
+		<TurnIn QuestName="The Price of Shoes" QuestId="118" TurnInName="Smith Argus" TurnInId="514" X="-9456.65" Y="87.8553" Z="58.4271" />
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(118)">
+			<PickUp QuestName="Return to Verner" QuestId="119" GiverName="Smith Argus" GiverId="514" X="-9456.65" Y="87.8553" Z="58.4271" />
+		</If>
+		<TurnIn QuestName="Return to Verner" QuestId="119" TurnInName="Verner Osgood" TurnInId="415" X="-9259.44" Y="-2243.22" Z="64.0584" />
+		<If Condition="(Me.Level &gt;= 14) &amp;&amp; IsQuestCompleted(119)">
+			<PickUp QuestName="Underbelly Scales" QuestId="122" GiverName="Verner Osgood" GiverId="415" X="-9259.44" Y="-2243.22" Z="64.0584" />
+		</If>
+		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(119)">
+			<PickUp QuestName="A Baying of Gnolls" QuestId="124" GiverName="Verner Osgood" GiverId="415" X="-9259.44" Y="-2243.22" Z="64.0584" />
+		</If>
+		<TurnIn QuestName="Messenger to Stormwind" QuestId="121" TurnInName="Magistrate Solomon" TurnInId="344" X="-9218.61" Y="-2221.8" Z="67.6227" />
+		<If Condition="(Me.Level &gt;= 14) &amp;&amp; IsQuestCompleted(121)">
+			<PickUp QuestName="Messenger to Westfall" QuestId="143" GiverName="Magistrate Solomon" GiverId="344" X="-9218.61" Y="-2221.8" Z="67.6227" />
+		</If>
+		<TurnIn QuestName="Messenger to Westfall" QuestId="143" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<If Condition="(Me.Level &gt;= 14) &amp;&amp; IsQuestCompleted(143)">
+			<PickUp QuestName="Messenger to Westfall" QuestId="144" GiverName="Gryan Stoutmantle" GiverId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		</If>
+		<PickUp QuestName="Thunderbrew Lager" QuestId="117" GiverName="Grimbooze Thunderbrew" GiverId="239" X="-11272.6" Y="1455.03" Z="89.6325" />
+		<Objective QuestName="Thunderbrew Lager" QuestId="117" Type="CollectItem" ItemId="1274" CollectCount="5" />
+		<TurnIn QuestName="Thunderbrew Lager" QuestId="117" TurnInName="Grimbooze Thunderbrew" TurnInId="239" X="-11272.6" Y="1455.03" Z="89.6325" />
+		<TurnIn QuestName="Messenger to Westfall" QuestId="144" TurnInName="Magistrate Solomon" TurnInId="344" X="-9218.61" Y="-2221.8" Z="67.6227" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(144)">
+			<PickUp QuestName="Messenger to Darkshire" QuestId="145" GiverName="Magistrate Solomon" GiverId="344" X="-9218.61" Y="-2221.8" Z="67.6227" />
+		</If>
+		<TurnIn QuestName="Messenger to Darkshire" QuestId="145" TurnInName="Lord Ello Ebonlocke" TurnInId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(145)">
+			<PickUp QuestName="Messenger to Darkshire" QuestId="146" GiverName="Lord Ello Ebonlocke" GiverId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
+		</If>
+		<TurnIn QuestName="Messenger to Darkshire" QuestId="146" TurnInName="Magistrate Solomon" TurnInId="344" X="-9218.61" Y="-2221.8" Z="67.6227" />
+		<!-- REVIEW Q116 Dry Times: item 1941 Cask of Merlot has no drop or chest near the guide coordinates; item 1939 Skin of Sweet Rum has no drop or chest near the guide coordinates; item 1942 Bottle of Moonshine has no drop or chest near the guide coordinates; item 1262 Keg of Thunderbrew Lager has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(116)) &amp;&amp; (IsQuestCompleted(116)))">
+			<TurnIn QuestName="Dry Times" QuestId="116" TurnInName="Barkeep Daniels" TurnInId="346" X="-9211.5" Y="-2145.7" Z="64.4372" />
+		</If>
+		<If Condition="((HasQuest(116)) &amp;&amp; (!IsQuestCompleted(116)))">
+			<CustomBehavior File="AbandonQuest" QuestId="116" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Underbelly Scales" QuestId="122" Type="CollectItem" ItemId="1221" CollectCount="6" />
+		<Objective QuestName="A Baying of Gnolls" QuestId="124" Type="KillMob" MobId="426" KillCount="10" />
+		<Objective QuestName="A Baying of Gnolls" QuestId="124" Type="KillMob" MobId="430" KillCount="8" />
+		<Objective QuestName="The Everstill Bridge" QuestId="89" Type="CollectItem" ItemId="2856" CollectCount="5" />
+		<Objective QuestName="The Everstill Bridge" QuestId="89" Type="CollectItem" ItemId="1013" CollectCount="5" />
+		<TurnIn QuestName="The Everstill Bridge" QuestId="89" TurnInName="Foreman Oslow" TurnInId="341" X="-9279.22" Y="-2268.53" Z="67.6306" />
+		<TurnIn QuestName="Underbelly Scales" QuestId="122" TurnInName="Verner Osgood" TurnInId="415" X="-9259.44" Y="-2243.22" Z="64.0584" />
+		<TurnIn QuestName="A Baying of Gnolls" QuestId="124" TurnInName="Verner Osgood" TurnInId="415" X="-9259.44" Y="-2243.22" Z="64.0584" />
+		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(124)">
+			<PickUp QuestName="Howling in the Hills" QuestId="126" GiverName="Verner Osgood" GiverId="415" X="-9259.44" Y="-2243.22" Z="64.0584" />
+		</If>
+		<Objective QuestName="Rethban Ore" QuestId="347" Type="CollectItem" ItemId="2798" CollectCount="5" />
+		<Objective QuestName="Howling in the Hills" QuestId="126" Type="CollectItem" ItemId="3614" CollectCount="1" />
+		<Objective QuestName="Blackrock Bounty" QuestId="128" Type="KillMob" MobId="435" KillCount="15" />
+		<Objective QuestName="Blackrock Menace" QuestId="20" Type="CollectItem" ItemId="3014" CollectCount="10" />
+		<If Condition="(Me.Level &gt;= 19)">
+			<PickUp QuestName="Missing In Action" QuestId="219" GiverName="Corporal Keeshan" GiverId="349" X="-8756.77" Y="-2187.12" Z="139.975" />
+		</If>
+		<TurnIn QuestName="Blackrock Menace" QuestId="20" TurnInName="Marshal Marris" TurnInId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
+		<!-- REVIEW Q219 Missing In Action: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(219)) &amp;&amp; (IsQuestCompleted(219)))">
+			<TurnIn QuestName="Missing In Action" QuestId="219" TurnInName="Marshal Marris" TurnInId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
+		</If>
+		<If Condition="((HasQuest(219)) &amp;&amp; (!IsQuestCompleted(219)))">
+			<CustomBehavior File="AbandonQuest" QuestId="219" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(20)">
+			<PickUp QuestName="Tharil'zun" QuestId="19" GiverName="Marshal Marris" GiverId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
+		</If>
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(20)">
+			<PickUp QuestName="Shadow Magic" QuestId="115" GiverName="Marshal Marris" GiverId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
+		</If>
+		<TurnIn QuestName="Howling in the Hills" QuestId="126" TurnInName="Verner Osgood" TurnInId="415" X="-9259.44" Y="-2243.22" Z="64.0584" />
+		<If Condition="(Me.Level &gt;= 17)">
+			<PickUp QuestName="Solomon's Law" QuestId="91" GiverName="Bailiff Conacher" GiverId="900" X="-9215.92" Y="-2215.91" Z="66.5231" />
+		</If>
+		<If Condition="(Me.Level &gt;= 11)">
+			<PickUp QuestName="Wanted: Gath'Ilzogg" QuestId="169" GiverName="Wanted: Gath'Ilzogg" GiverId="60" GiverType="Object" X="-9243.42" Y="-2213.92" Z="67.6241" />
+		</If>
+		<If Condition="(Me.Level &gt;= 11)">
+			<PickUp QuestName="Wanted: Lieutenant Fangore" QuestId="180" GiverName="Wanted: Lieutenant Fangore" GiverId="47" GiverType="Object" X="-9247.36" Y="-2151.6" Z="63.9334" />
+		</If>
+		<TurnIn QuestName="Blackrock Bounty" QuestId="128" TurnInName="Guard Howe" TurnInId="903" X="-9412.65" Y="-2255.45" Z="67.6043" />
+		<Objective QuestName="Tharil'zun" QuestId="19" Type="CollectItem" ItemId="1260" CollectCount="1" />
+		<Objective QuestName="Wanted: Gath'Ilzogg" QuestId="169" Type="CollectItem" ItemId="3633" CollectCount="1" />
+		<Objective QuestName="Shadow Magic" QuestId="115" Type="CollectItem" ItemId="1261" CollectCount="3" />
+		<TurnIn QuestName="A Watchful Eye" QuestId="94" TurnInName="Old Lion Statue" TurnInId="31" TurnInType="Object" X="-9253.08" Y="-3404.9" Z="104.348" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(94)">
+			<PickUp QuestName="Looking Further" QuestId="248" GiverName="Old Lion Statue" GiverId="31" GiverType="Object" X="-9253.08" Y="-3404.9" Z="104.348" />
+		</If>
+		<Objective QuestName="Wanted: Lieutenant Fangore" QuestId="180" Type="CollectItem" ItemId="3632" CollectCount="1" />
+		<Objective QuestName="Solomon's Law" QuestId="91" Type="CollectItem" ItemId="1075" CollectCount="10" />
+		<TurnIn QuestName="Looking Further" QuestId="248" TurnInName="An Empty Jar" TurnInId="76" TurnInType="Object" X="-9296.65" Y="-2943.81" Z="164.84" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(248)">
+			<PickUp QuestName="Morganth" QuestId="249" GiverName="Theocritus" GiverId="313" X="-9553.08" Y="-728.152" Z="99.2522" />
+		</If>
+		<Objective QuestName="Morganth" QuestId="249" Type="CollectItem" ItemId="3617" CollectCount="1" />
+		<TurnIn QuestName="Tharil'zun" QuestId="19" TurnInName="Marshal Marris" TurnInId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
+		<TurnIn QuestName="Shadow Magic" QuestId="115" TurnInName="Marshal Marris" TurnInId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
+		<TurnIn QuestName="Solomon's Law" QuestId="91" TurnInName="Bailiff Conacher" TurnInId="900" X="-9215.92" Y="-2215.91" Z="66.5231" />
+		<TurnIn QuestName="Wanted: Gath'Ilzogg" QuestId="169" TurnInName="Magistrate Solomon" TurnInId="344" X="-9218.61" Y="-2221.8" Z="67.6227" />
+		<TurnIn QuestName="Wanted: Lieutenant Fangore" QuestId="180" TurnInName="Magistrate Solomon" TurnInId="344" X="-9218.61" Y="-2221.8" Z="67.6227" />
+		<TurnIn QuestName="Morganth" QuestId="249" TurnInName="Theocritus" TurnInId="313" X="-9553.08" Y="-728.152" Z="99.2522" />
+		<TurnIn QuestName="Rethban Ore" QuestId="347" TurnInName="Brother Paxton" TurnInId="951" X="-8874.87" Y="-186.332" Z="82.1206" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(347)">
+			<PickUp QuestName="Return to Kristoff" QuestId="346" GiverName="Brother Paxton" GiverId="951" X="-8874.87" Y="-186.332" Z="82.1206" />
+		</If>
+		<TurnIn QuestName="Return to Kristoff" QuestId="346" TurnInName="Brother Kristoff" TurnInId="1444" X="-8623.24" Y="766.655" Z="97.4033" />
+	</QuestOrder>
+</HBProfile>

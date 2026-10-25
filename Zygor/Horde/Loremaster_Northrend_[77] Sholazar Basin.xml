@@ -1,0 +1,1173 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Northrend\[77] Sholazar Basin</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Korg the Cleaver" Entry="28046" Type="Food" X="5559.11" Y="5765.43" Z="-77.5637" />
+		<Vendor Name="Tanak" Entry="31911" Type="Food" X="5282.91" Y="4527.32" Z="-80.3901" />
+		<Vendor Name="Geen" Entry="31910" Type="Food" X="5657.65" Y="4551.35" Z="-135.679" />
+		<Vendor Name="Purser Boulian" Entry="28038" Type="Food" X="5566.25" Y="5763.71" Z="-75.1425" />
+		<Vendor Name="Rarkag" Entry="29122" Type="Food" X="5270.16" Y="4532.59" Z="-82.9533" />
+		<Vendor Name="Mardan Thunderhoof" Entry="28040" Type="Repair" X="5552.26" Y="5738.88" Z="-76.134" />
+		<Vendor Name="Grakjek" Entry="29014" Type="Repair" X="5244.74" Y="4493.28" Z="-84.2947" />
+		<Vendor Name="Loomee" Entry="29035" Type="Repair" X="5664.41" Y="4597.69" Z="-137.365" />
+		<Vendor Name="Gibbert" Entry="3000" Type="Repair" X="-6144.07" Y="-1098.52" Z="-202.844" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="12524" Name="Venture Co. Misadventure">
+		<Objective Type="KillMob" MobId="28123" KillCount="15">
+			<Hotspots>
+				<Hotspot X="5862.56" Y="5403.64" Z="-88.4125" />
+				<Hotspot X="5919.11" Y="5428.42" Z="-91.6922" />
+				<Hotspot X="5965.01" Y="5454.48" Z="-91.0167" />
+				<Hotspot X="5958.83" Y="5390.18" Z="-97.7749" />
+				<Hotspot X="5918.33" Y="5372.91" Z="-98.7709" />
+				<Hotspot X="5913.34" Y="5326.48" Z="-95.9935" />
+				<Hotspot X="5957.79" Y="5324.41" Z="-100.275" />
+				<Hotspot X="5894.83" Y="5488.33" Z="-77.2053" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12624" Name="It Could Be Anywhere!">
+		<Objective Type="CollectItem" ItemId="38642" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dreadsaber" Id="28001" />
+				<Mob Name="Mangal Crocolisk" Id="28002" />
+				<Mob Name="Bittertide Hydra" Id="28003" />
+				<Mob Name="Shardhorn Rhino" Id="28009" />
+				<Mob Name="Stranded Thresher" Id="28010" />
+				<Mob Name="Emperor Cobra" Id="28011" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5494.03" Y="5760.67" Z="-89.6221" />
+				<Hotspot X="5461.43" Y="5785.27" Z="-78.4447" />
+				<Hotspot X="5470.03" Y="5676.59" Z="-102.745" />
+				<Hotspot X="5540.49" Y="5681.65" Z="-81.7046" />
+				<Hotspot X="5551.77" Y="5850.34" Z="-72.6773" />
+				<Hotspot X="5517.75" Y="5905.36" Z="-61.136" />
+				<Hotspot X="5664.23" Y="5834.93" Z="-65.0066" />
+				<Hotspot X="5734.54" Y="5819.91" Z="-62.7879" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12522" Name="Need an Engine, Take an Engine">
+		<Objective Type="CollectItem" ItemId="38334" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Flying Machine Engine" Id="190447" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5640.34" Y="5243.94" Z="-134.804" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12525" Name="Wipe That Grin Off His Face">
+		<Objective Type="KillMob" MobId="28188" KillCount="1">
+			<Hotspots>
+				<Hotspot X="5831.19" Y="5367.35" Z="-74.7741" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28186" KillCount="1">
+			<Hotspots>
+				<Hotspot X="5824.16" Y="5368.46" Z="-67.629" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12523" Name="Have a Part, Give a Part">
+		<Objective Type="CollectItem" ItemId="38349" CollectCount="7">
+			<CollectFrom>
+				<GameObject Name="Venture Co. Spare Parts" Id="190453" />
+				<GameObject Name="Venture Co. Spare Parts" Id="190454" />
+				<GameObject Name="Venture Co. Spare Parts" Id="190455" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5910.69" Y="5383.97" Z="-106.31" />
+				<Hotspot X="5953.18" Y="5404.57" Z="-95.4361" />
+				<Hotspot X="5964.48" Y="5365.4" Z="-99.2739" />
+				<Hotspot X="5893.36" Y="5319.34" Z="-95.5363" />
+				<Hotspot X="5828.4" Y="5379.13" Z="-67.9777" />
+				<Hotspot X="5860.98" Y="5408.45" Z="-88.7434" />
+				<Hotspot X="5901.88" Y="5438.01" Z="-91.3293" />
+				<Hotspot X="5934.92" Y="5462.31" Z="-93.6108" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12592" Name="The Great Hunter's Challenge">
+		<Objective Type="KillMob" MobId="28566" KillCount="60">
+			<Hotspots>
+				<Hotspot X="5545.45" Y="5767.53" Z="-77.8042" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12549" Name="Dreadsaber Mastery: Becoming a Predator">
+		<Objective Type="KillMob" MobId="28001" KillCount="15">
+			<Hotspots>
+				<Hotspot X="5734.54" Y="5819.91" Z="-62.7879" />
+				<Hotspot X="5746.95" Y="5888.96" Z="-54.6346" />
+				<Hotspot X="5694.91" Y="5935.99" Z="-47.5762" />
+				<Hotspot X="5817.46" Y="5941.21" Z="-34.8104" />
+				<Hotspot X="5857.09" Y="5872.48" Z="-42.9086" />
+				<Hotspot X="5880.44" Y="5823.47" Z="-44.6349" />
+				<Hotspot X="5907.6" Y="5780.23" Z="-51.9625" />
+				<Hotspot X="5835.16" Y="5690.8" Z="-63.2592" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12520" Name="Rhino Mastery: The Test">
+		<Objective Type="KillMob" MobId="28009" KillCount="15">
+			<Hotspots>
+				<Hotspot X="5664.23" Y="5834.93" Z="-65.0066" />
+				<Hotspot X="5659.31" Y="5917.26" Z="-51.7555" />
+				<Hotspot X="5729.86" Y="5925.84" Z="-47.5183" />
+				<Hotspot X="5806.79" Y="5908.08" Z="-40.8294" />
+				<Hotspot X="5833.35" Y="5834.25" Z="-51.6881" />
+				<Hotspot X="5815.02" Y="5729.04" Z="-67.3623" />
+				<Hotspot X="5618.47" Y="5537.62" Z="-88.3028" />
+				<Hotspot X="5540.49" Y="5681.65" Z="-81.7046" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12550" Name="Dreadsaber Mastery: Stalking the Prey">
+		<Objective Type="UseObject" ObjectId="190700" UseCount="3">
+			<Hotspots>
+				<Hotspot X="6106.04" Y="5581.19" Z="-56.157" />
+				<Hotspot X="6168.08" Y="5565.53" Z="-44.2229" />
+				<Hotspot X="6201.63" Y="5509.87" Z="-60.2683" />
+				<Hotspot X="6236.02" Y="5536.28" Z="-35.6706" />
+				<Hotspot X="6152.14" Y="5474.6" Z="-74.7083" />
+				<Hotspot X="6077.51" Y="5478.87" Z="-80.4582" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12804" Name="A Steak Fit for a Hunter">
+		<Objective Type="CollectItem" ItemId="40394" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Longneck Grazer" Id="28129" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5324.77" Y="5631.49" Z="-92.9727" />
+				<Hotspot X="5294.88" Y="5604.29" Z="-93.3408" />
+				<Hotspot X="5310.89" Y="5565.04" Z="-96.1476" />
+				<Hotspot X="5313.5" Y="5690.08" Z="-87.6664" />
+				<Hotspot X="5296.25" Y="5806.18" Z="-78.7886" />
+				<Hotspot X="5215.14" Y="5804.59" Z="-73.5731" />
+				<Hotspot X="5406.08" Y="5816.31" Z="-74.7013" />
+				<Hotspot X="5462.01" Y="5783.15" Z="-78.6587" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12551" Name="Crocolisk Mastery: The Trial">
+		<Objective Type="KillMob" MobId="28002" KillCount="15">
+			<Hotspots>
+				<Hotspot X="5586.4" Y="5320.54" Z="-135.986" />
+				<Hotspot X="5575.04" Y="5359.11" Z="-135.987" />
+				<Hotspot X="5561.77" Y="5248.42" Z="-134.446" />
+				<Hotspot X="5627.5" Y="5162.23" Z="-132.962" />
+				<Hotspot X="5679.37" Y="5129.93" Z="-133.194" />
+				<Hotspot X="5695.33" Y="5172.03" Z="-134.428" />
+				<Hotspot X="5732.08" Y="5222.24" Z="-134.422" />
+				<Hotspot X="5486.46" Y="5146.88" Z="-134.979" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12543" Name="An Offering for Soo-rahm">
+		<Objective Type="CollectItem" ItemId="38505" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Emperor Cobra" Id="28011" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5308.39" Y="5088.28" Z="-133.629" />
+				<Hotspot X="5322.45" Y="5028.19" Z="-135.632" />
+				<Hotspot X="5354.23" Y="4965.04" Z="-131.866" />
+				<Hotspot X="5251.73" Y="5016.65" Z="-134.837" />
+				<Hotspot X="5223.97" Y="4962.39" Z="-130.91" />
+				<Hotspot X="5151.93" Y="5060.23" Z="-133.214" />
+				<Hotspot X="5191.9" Y="5123.99" Z="-135.353" />
+				<Hotspot X="5229.83" Y="5092.76" Z="-136.115" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12558" Name="Dreadsaber Mastery: Ready to Pounce">
+		<Objective Type="CollectItem" ItemId="38523" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Shango" Id="28297" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6203.81" Y="5528.57" Z="-51.8231" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12560" Name="Crocolisk Mastery: The Plan">
+		<Objective Type="CollectItem" ItemId="38553" CollectCount="5">
+			<CollectFrom>
+				<GameObject Name="Sandfern" Id="190533" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5526.47" Y="4862.25" Z="-197.342" />
+				<Hotspot X="5550.12" Y="4822.51" Z="-198.363" />
+				<Hotspot X="5501.14" Y="4902.43" Z="-197.396" />
+				<Hotspot X="5411.1" Y="4908.53" Z="-194.152" />
+				<Hotspot X="5337.37" Y="4958.92" Z="-131.694" />
+				<Hotspot X="5312.1" Y="4914.01" Z="-129.987" />
+				<Hotspot X="5307.76" Y="4851.25" Z="-130.869" />
+				<Hotspot X="5293.39" Y="4780.71" Z="-138.311" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12556" Name="Rhino Mastery: The Kill">
+		<Objective Type="CollectItem" ItemId="38522" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Farunn" Id="28288" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6043.49" Y="4893.72" Z="-94.0956" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12699" Name="An Embarassing Incident">
+		<Objective Type="CollectItem" ItemId="39264" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Raised Mud" Id="190778" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5438.22" Y="4824.9" Z="-220.352" />
+				<Hotspot X="5443.53" Y="4867.83" Z="-211.713" />
+				<Hotspot X="5482.05" Y="4816.4" Z="-217.098" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12654" Name="The Part-time Hunter">
+		<Objective Type="CollectItem" ItemId="38703" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Pitch" Id="28097" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5044.78" Y="4728.17" Z="-131.206" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12603" Name="Sharpening Your Talons">
+		<Objective Type="KillMob" MobId="28378" KillCount="6">
+			<Hotspots>
+				<Hotspot X="6536.72" Y="4865.49" Z="-28.619" />
+				<Hotspot X="6468.02" Y="4851.96" Z="-63.2193" />
+				<Hotspot X="6462.64" Y="4798.01" Z="-38.2898" />
+				<Hotspot X="6420.57" Y="4898.15" Z="-51" />
+				<Hotspot X="6432.62" Y="4951.51" Z="-40.5353" />
+				<Hotspot X="6461.71" Y="4999.4" Z="-41.1412" />
+				<Hotspot X="6587.44" Y="4921.66" Z="-43.5939" />
+				<Hotspot X="6593" Y="4804.33" Z="-30" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12683" Name="Burning to Help">
+		<Objective Type="KillMob" MobId="28003" KillCount="5">
+			<Hotspots>
+				<Hotspot X="6076.6" Y="5141.28" Z="-127.115" />
+				<Hotspot X="6037.29" Y="5129.3" Z="-119.812" />
+				<Hotspot X="6077.04" Y="5083.99" Z="-122.923" />
+				<Hotspot X="6025.73" Y="5062.74" Z="-123.534" />
+				<Hotspot X="5999.95" Y="4997.17" Z="-106.357" />
+				<Hotspot X="6125.46" Y="5177.13" Z="-124.501" />
+				<Hotspot X="6164.23" Y="5193.24" Z="-125.026" />
+				<Hotspot X="6143.65" Y="5243.2" Z="-124.776" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12681" Name="Reagent Agent">
+		<Objective Type="CollectItem" ItemId="39161" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Goretalon Roc" Id="28004" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6521.99" Y="4438.36" Z="-23.3188" />
+				<Hotspot X="6523.01" Y="4390.44" Z="-32.4983" />
+				<Hotspot X="6518.66" Y="4346.77" Z="-36.4723" />
+				<Hotspot X="6473.84" Y="4357.38" Z="-41.1347" />
+				<Hotspot X="6457.47" Y="4414.32" Z="-42.9636" />
+				<Hotspot X="6413.84" Y="4409.61" Z="-28.7758" />
+				<Hotspot X="6485.67" Y="4487.93" Z="-49.0885" />
+				<Hotspot X="6554.18" Y="4493.84" Z="-46.6764" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12658" Name="My Pet Roc">
+		<Objective Type="CollectItem" ItemId="38705" CollectCount="7">
+			<CollectFrom>
+				<GameObject Name="Roc Egg" Id="190660" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6480.72" Y="4476.31" Z="-58.0771" />
+				<Hotspot X="6477.37" Y="4516.27" Z="-63.127" />
+				<Hotspot X="6438.85" Y="4466.86" Z="-57.6817" />
+				<Hotspot X="6445.37" Y="4419.02" Z="-52.9471" />
+				<Hotspot X="6427.52" Y="4361.32" Z="-49.4156" />
+				<Hotspot X="6533.12" Y="4383.97" Z="-45.3206" />
+				<Hotspot X="6575.41" Y="4420.96" Z="-21.5937" />
+				<Hotspot X="6548.76" Y="4495.22" Z="-51.7251" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12614" Name="Post-partum Aggression">
+		<Objective Type="KillMob" MobId="28467" KillCount="1">
+			<Hotspots>
+				<Hotspot X="6668.33" Y="4878.36" Z="-10.8776" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12561" Name="An Issue of Trust">
+		<Objective Type="KillMob" MobId="28101" KillCount="6">
+			<Hotspots>
+				<Hotspot X="5805.49" Y="3862.64" Z="-55.5122" />
+				<Hotspot X="5758.34" Y="3888.65" Z="-67.0252" />
+				<Hotspot X="5725.11" Y="3820.33" Z="-58.4528" />
+				<Hotspot X="5757.18" Y="3777.65" Z="-42.1917" />
+				<Hotspot X="5805.96" Y="3755.04" Z="-31.6887" />
+				<Hotspot X="5786.08" Y="3713.16" Z="-28.3128" />
+				<Hotspot X="5875.8" Y="3812.03" Z="-30.6901" />
+				<Hotspot X="5943.31" Y="3755.11" Z="4.0656" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28108" KillCount="10">
+			<Hotspots>
+				<Hotspot X="5848.62" Y="3814.86" Z="-38.9371" />
+				<Hotspot X="5814.69" Y="3849.79" Z="-52.2647" />
+				<Hotspot X="5762.04" Y="3821.53" Z="-53.9092" />
+				<Hotspot X="5870.47" Y="3760.99" Z="-17.5009" />
+				<Hotspot X="5850.4" Y="3726.02" Z="-15.9046" />
+				<Hotspot X="5912.65" Y="3778.75" Z="-10.5684" />
+				<Hotspot X="5880.04" Y="3876.74" Z="-41.2042" />
+				<Hotspot X="5845.85" Y="3920.74" Z="-59.6771" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12617" Name="Exterminate the Intruders">
+		<Objective Type="KillMob" MobId="28373" KillCount="8">
+			<Hotspots>
+				<Hotspot X="6061.32" Y="4451.85" Z="-80.4758" />
+				<Hotspot X="6111.56" Y="4446.5" Z="-85.0655" />
+				<Hotspot X="6106.34" Y="4499.75" Z="-80.7419" />
+				<Hotspot X="6053.49" Y="4517.93" Z="-87.4313" />
+				<Hotspot X="5997.92" Y="4508.09" Z="-87.2351" />
+				<Hotspot X="5964.91" Y="4477.69" Z="-94.2995" />
+				<Hotspot X="6003.56" Y="4453.97" Z="-90.282" />
+				<Hotspot X="6166.21" Y="4501.37" Z="-85.59" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12660" Name="Weapons of Destruction">
+		<Objective Type="UseObject" ObjectId="190590" UseCount="4">
+			<Hotspots>
+				<Hotspot X="5988.04" Y="4473.78" Z="-87.3617" />
+				<Hotspot X="6012.03" Y="4517.3" Z="-86.8614" />
+				<Hotspot X="6073.83" Y="4463.66" Z="-84.9872" />
+				<Hotspot X="6092.64" Y="4425.49" Z="-83.9704" />
+				<Hotspot X="6130.8" Y="4462.61" Z="-84.544" />
+				<Hotspot X="6102.15" Y="4497.03" Z="-81.3401" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12613" Name="Powering the Waygate - The Maker's Overlook">
+		<Objective Type="UseObject" ObjectId="190509" UseCount="1">
+			<Hotspots>
+				<Hotspot X="5751.16" Y="3048.88" Z="287.986" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12691" Name="A Timeworn Coffer">
+		<Objective Type="CollectItem" ItemId="39227" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sholazar Guardian" Id="28069" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5704.08" Y="3429.4" Z="300.942" />
+				<Hotspot X="5706.99" Y="3306.82" Z="299.718" />
+				<Hotspot X="5738.87" Y="3156.67" Z="293.833" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12547" Name="The Activation Rune">
+		<Objective Type="CollectItem" ItemId="38708" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="High Cultist Herenn" Id="28601" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6028.08" Y="-1249.02" Z="-146.764" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12529" Name="The Ape Hunter's Slave">
+		<Objective Type="KillMob" MobId="28098" KillCount="8">
+			<Hotspots>
+				<Hotspot X="5096.29" Y="4453.94" Z="-96.4596" />
+				<Hotspot X="5053.57" Y="4470.27" Z="-94.6789" />
+				<Hotspot X="5078.84" Y="4518.86" Z="-99.0146" />
+				<Hotspot X="5162.48" Y="4515.83" Z="-95.966" />
+				<Hotspot X="5156.22" Y="4469.42" Z="-96.6659" />
+				<Hotspot X="5182.36" Y="4421.38" Z="-93.9554" />
+				<Hotspot X="5238.84" Y="4309.44" Z="-95.7011" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28096" KillCount="6">
+			<Hotspots>
+				<Hotspot X="5135.57" Y="4003.82" Z="-61.5899" />
+				<Hotspot X="5155.32" Y="4040.78" Z="-60.8399" />
+				<Hotspot X="5183.86" Y="3976.66" Z="-60.4579" />
+				<Hotspot X="5227.07" Y="3953.88" Z="-55.0194" />
+				<Hotspot X="5215.8" Y="3883.85" Z="-42.785" />
+				<Hotspot X="5125.52" Y="3891.78" Z="-7.0399" />
+				<Hotspot X="5183.48" Y="4130.31" Z="-80.9349" />
+				<Hotspot X="5234.52" Y="4153.57" Z="-86.8308" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12533" Name="The Wasp Hunter's Apprentice">
+		<Objective Type="KillMob" MobId="28086" KillCount="6">
+			<Hotspots>
+				<Hotspot X="4977.65" Y="4257.21" Z="-81.9297" />
+				<Hotspot X="4978.74" Y="4313.81" Z="-61.7428" />
+				<Hotspot X="5025.27" Y="4325.17" Z="-79.8963" />
+				<Hotspot X="5039.67" Y="4248.6" Z="-80.7639" />
+				<Hotspot X="5085.57" Y="4253.44" Z="-69.6155" />
+				<Hotspot X="4916" Y="4220.11" Z="-36.2149" />
+				<Hotspot X="4913.07" Y="4171.23" Z="-40.2014" />
+				<Hotspot X="4885.8" Y="4293.31" Z="-43.2089" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28085" KillCount="9">
+			<Hotspots>
+				<Hotspot X="4991.39" Y="4234.98" Z="-49.972" />
+				<Hotspot X="5036.99" Y="4230.29" Z="-47.2019" />
+				<Hotspot X="5080.37" Y="4269.65" Z="-75.4662" />
+				<Hotspot X="5033.19" Y="4298.49" Z="-49.1119" />
+				<Hotspot X="4916.45" Y="4290.37" Z="-82.9264" />
+				<Hotspot X="4882.85" Y="4266.47" Z="-24.3805" />
+				<Hotspot X="4937.36" Y="4221.33" Z="-81.233" />
+				<Hotspot X="4877.19" Y="4357.2" Z="-57.3108" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12534" Name="The Sapphire Queen">
+		<Objective Type="CollectItem" ItemId="38477" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sapphire Hive Queen" Id="28087" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4975.34" Y="4447.26" Z="-130.139" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12531" Name="The Underground Menace">
+		<Objective Type="CollectItem" ItemId="38473" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Serfex the Reaver" Id="28083" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4828.27" Y="4759.1" Z="-75.66" />
+				<Hotspot X="4767.1" Y="4694.61" Z="-67.2428" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12535" Name="Mischief in the Making">
+		<Objective Type="CollectItem" ItemId="38504" CollectCount="8">
+			<CollectFrom>
+				<GameObject Name="Skyreach Crystal Formation" Id="190500" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4890.12" Y="4826.26" Z="-100.963" />
+				<Hotspot X="4938.87" Y="4859.63" Z="-94.9213" />
+				<Hotspot X="4897.9" Y="4892.41" Z="-110.475" />
+				<Hotspot X="4795.33" Y="4784.33" Z="-81.6026" />
+				<Hotspot X="4788.75" Y="4740.78" Z="-78.5895" />
+				<Hotspot X="4831.02" Y="4692.83" Z="-67.9981" />
+				<Hotspot X="4867.84" Y="4648.72" Z="-68.6589" />
+				<Hotspot X="4849.33" Y="4604.23" Z="-67.9236" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12538" Name="The Mist Isn't Listening">
+		<Objective Type="KillMob" MobId="28109" KillCount="12">
+			<Hotspots>
+				<Hotspot X="6010.31" Y="5008.06" Z="-103.607" />
+				<Hotspot X="6049.85" Y="5022.84" Z="-97.1357" />
+				<Hotspot X="6031.8" Y="5066.51" Z="-122.279" />
+				<Hotspot X="6113.74" Y="5045.9" Z="-96.1121" />
+				<Hotspot X="6118.95" Y="4952.66" Z="-97.783" />
+				<Hotspot X="6060.37" Y="4952.1" Z="-94.5864" />
+				<Hotspot X="6173.33" Y="4910.8" Z="-86.9626" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12571" Name="Make the Bad Snake Go Away">
+		<Objective Type="KillMob" MobId="28358" KillCount="1">
+			<Hotspots>
+				<Hotspot X="5767.67" Y="4452.68" Z="-136.107" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28011" KillCount="10">
+			<Hotspots>
+				<Hotspot X="5871.93" Y="4607.6" Z="-135.881" />
+				<Hotspot X="5834.55" Y="4509.78" Z="-133.655" />
+				<Hotspot X="5773.47" Y="4517.24" Z="-134.249" />
+				<Hotspot X="5769.48" Y="4453.65" Z="-135.578" />
+				<Hotspot X="5679.28" Y="4479.31" Z="-135.653" />
+				<Hotspot X="5671.94" Y="4663.37" Z="-134.483" />
+				<Hotspot X="5810.76" Y="4765.11" Z="-134.336" />
+				<Hotspot X="5890.1" Y="4759.39" Z="-131.982" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12575" Name="The Lost Mistwhisper Treasure">
+		<Objective Type="CollectItem" ItemId="38601" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Mistwhisper Treasure" Id="190578" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6721.81" Y="5112.9" Z="-14.3648" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12576" Name="Forced Hand">
+		<Objective Type="KillMob" MobId="28080" KillCount="8">
+			<Hotspots>
+				<Hotspot X="6630.12" Y="5180.35" Z="-40.8894" />
+				<Hotspot X="6579.11" Y="5160.23" Z="-45.6312" />
+				<Hotspot X="6542.12" Y="5176.71" Z="-54.9706" />
+				<Hotspot X="6539.96" Y="5135.16" Z="-52.7691" />
+				<Hotspot X="6546.56" Y="5080.02" Z="-53.6362" />
+				<Hotspot X="6619.78" Y="5111.64" Z="-36.4903" />
+				<Hotspot X="6628.38" Y="5068.67" Z="-38.0097" />
+				<Hotspot X="6707.16" Y="5156.77" Z="-19.4783" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28081" KillCount="6">
+			<Hotspots>
+				<Hotspot X="6605.46" Y="5138.35" Z="-35.9772" />
+				<Hotspot X="6619.93" Y="5190.54" Z="-41.4014" />
+				<Hotspot X="6665.5" Y="5135.03" Z="-35.3874" />
+				<Hotspot X="6605.75" Y="5079.89" Z="-39.5242" />
+				<Hotspot X="6571.05" Y="5059.18" Z="-47.3356" />
+				<Hotspot X="6528" Y="5115.81" Z="-52.6574" />
+				<Hotspot X="6539.81" Y="5196.24" Z="-52.2772" />
+				<Hotspot X="6686.64" Y="5218.41" Z="-17.8379" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12546" Name="Reclamation">
+		<Objective Type="KillMob" MobId="28212" KillCount="1">
+			<Hotspots>
+				<Hotspot X="6124.73" Y="3782.15" Z="98.2121" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28103" KillCount="1">
+			<Hotspots>
+				<Hotspot X="6208.47" Y="3873.8" Z="132.398" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28208" KillCount="1">
+			<Hotspots>
+				<Hotspot X="6300.65" Y="3879.63" Z="173.767" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12579" Name="Lifeblood of the Mosswalker Shrine">
+		<Objective Type="CollectItem" ItemId="39063" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Lifeblood Shard" Id="190702" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5678.33" Y="3875.49" Z="-78.2068" />
+				<Hotspot X="5679.4" Y="3917.62" Z="-86.1293" />
+				<Hotspot X="5720.31" Y="3939.39" Z="-84.0102" />
+				<Hotspot X="5658.79" Y="3977.03" Z="-87.6628" />
+				<Hotspot X="5531.28" Y="3938.42" Z="-57.8859" />
+				<Hotspot X="5515.26" Y="3776.24" Z="-54.3724" />
+				<Hotspot X="5581.4" Y="3741.28" Z="-9.4512" />
+				<Hotspot X="5722.12" Y="3838.14" Z="-60.7598" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12581" Name="A Hero's Burden">
+		<Objective Type="KillMob" MobId="28659" KillCount="1">
+			<Hotspots>
+				<Hotspot X="5613.98" Y="3787.84" Z="-91.9357" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12689" Name="Hand of the Oracles" Daily="True" />
+	<Quest Id="12582" Name="Frenzyheart Champion" Daily="True" />
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/H-Loremaster-Northrend.lua: Horde Loremaster Guides\Northrend\[77] Sholazar Basin -->
+		<!-- Daily quests count as done only while they are in today's daily slots; load the profile again after the daily reset. -->
+		<If Condition="Me.MapId != 571">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Horde\Loremaster_Northrend_[77] Sholazar Basin");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Northrend" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="Where in the World is Hemet Nesingwary?" QuestId="12521" GiverName="Archmage Pentarus" GiverId="28160" X="5833.99" Y="483.519" Z="658.261" />
+		</If>
+		<TurnIn QuestName="Where in the World is Hemet Nesingwary?" QuestId="12521" TurnInName="Monte Muzzleshot" TurnInId="27987" X="5584.02" Y="5200.42" Z="-129.298" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12521)">
+			<PickUp QuestName="Welcome to Sholazar Basin" QuestId="12489" GiverName="Monte Muzzleshot" GiverId="27987" X="5584.02" Y="5200.42" Z="-129.298" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="Venture Co. Misadventure" QuestId="12524" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="It Could Be Anywhere!" QuestId="12624" GiverName="Chad" GiverId="28497" X="5575.85" Y="5758.88" Z="-75.117" />
+		</If>
+		<TurnIn QuestName="Welcome to Sholazar Basin" QuestId="12489" TurnInName="Hemet Nesingwary" TurnInId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="Need an Engine, Take an Engine" QuestId="12522" GiverName="Weslex Quickwrench" GiverId="28033" X="5589.35" Y="5824.71" Z="-68.4405" />
+		</If>
+		<Objective QuestName="Need an Engine, Take an Engine" QuestId="12522" Type="CollectItem" ItemId="38334" CollectCount="1" />
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="Engineering a Disaster" QuestId="12688" GiverName="Engineer Helice" GiverId="28787" X="5910.23" Y="5380.47" Z="-98.8115" />
+		</If>
+		<Objective QuestName="Venture Co. Misadventure" QuestId="12524" Type="KillMob" MobId="28123" KillCount="15" />
+		<TurnIn QuestName="Venture Co. Misadventure" QuestId="12524" TurnInName="Debaar" TurnInId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12524)">
+			<PickUp QuestName="Wipe That Grin Off His Face" QuestId="12525" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		</If>
+		<Objective QuestName="It Could Be Anywhere!" QuestId="12624" Type="CollectItem" ItemId="38642" CollectCount="1" />
+		<TurnIn QuestName="It Could Be Anywhere!" QuestId="12624" TurnInName="Chad" TurnInId="28497" X="5575.85" Y="5758.88" Z="-75.117" />
+		<!-- REVIEW Q12688 Engineering a Disaster: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12688)) &amp;&amp; (IsQuestCompleted(12688)))">
+			<TurnIn QuestName="Engineering a Disaster" QuestId="12688" TurnInName="Hemet Nesingwary" TurnInId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		</If>
+		<If Condition="((HasQuest(12688)) &amp;&amp; (!IsQuestCompleted(12688)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12688" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Need an Engine, Take an Engine" QuestId="12522" TurnInName="Weslex Quickwrench" TurnInId="28033" X="5589.35" Y="5824.71" Z="-68.4405" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12522)">
+			<PickUp QuestName="Have a Part, Give a Part" QuestId="12523" GiverName="Weslex Quickwrench" GiverId="28033" X="5589.35" Y="5824.71" Z="-68.4405" />
+		</If>
+		<Objective QuestName="Wipe That Grin Off His Face" QuestId="12525" Type="KillMob" MobId="28188" KillCount="1" />
+		<Objective QuestName="Wipe That Grin Off His Face" QuestId="12525" Type="KillMob" MobId="28186" KillCount="1" />
+		<Objective QuestName="Have a Part, Give a Part" QuestId="12523" Type="CollectItem" ItemId="38349" CollectCount="7" />
+		<TurnIn QuestName="Have a Part, Give a Part" QuestId="12523" TurnInName="Weslex Quickwrench" TurnInId="28033" X="5589.35" Y="5824.71" Z="-68.4405" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12523)">
+			<PickUp QuestName="Aerial Surveillance" QuestId="12696" GiverName="Professor Calvert" GiverId="28266" X="5589.55" Y="5822.47" Z="-68.7008" />
+		</If>
+		<TurnIn QuestName="It Could Be Anywhere!" QuestId="12624" TurnInName="Chad" TurnInId="28497" X="5575.85" Y="5758.88" Z="-75.117" />
+		<TurnIn QuestName="Wipe That Grin Off His Face" QuestId="12525" TurnInName="Debaar" TurnInId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12525)">
+			<PickUp QuestName="Kick, What Kick?" QuestId="12589" GiverName="Drostan" GiverId="28328" X="5547.83" Y="5749.53" Z="-77.6173" />
+		</If>
+		<!-- REVIEW Q12589 Kick, What Kick?: objective 28053 Apple x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12589)) &amp;&amp; (IsQuestCompleted(12589)))">
+			<TurnIn QuestName="Kick, What Kick?" QuestId="12589" TurnInName="Drostan" TurnInId="28328" X="5547.83" Y="5749.53" Z="-77.6173" />
+		</If>
+		<If Condition="((HasQuest(12589)) &amp;&amp; (!IsQuestCompleted(12589)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12589" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12589)">
+			<PickUp QuestName="The Great Hunter's Challenge" QuestId="12592" GiverName="Drostan" GiverId="28328" X="5547.83" Y="5749.53" Z="-77.6173" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12525)">
+			<PickUp QuestName="Dreadsaber Mastery: Becoming a Predator" QuestId="12549" GiverName="Buck Cantwell" GiverId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12525)">
+			<PickUp QuestName="Rhino Mastery: The Test" QuestId="12520" GiverName="Hemet Nesingwary" GiverId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		</If>
+		<Objective QuestName="Dreadsaber Mastery: Becoming a Predator" QuestId="12549" Type="KillMob" MobId="28001" KillCount="15" />
+		<Objective QuestName="Rhino Mastery: The Test" QuestId="12520" Type="KillMob" MobId="28009" KillCount="15" />
+		<TurnIn QuestName="Rhino Mastery: The Test" QuestId="12520" TurnInName="Hemet Nesingwary" TurnInId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12520)">
+			<PickUp QuestName="Rhino Mastery: The Chase" QuestId="12526" GiverName="Hemet Nesingwary" GiverId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		</If>
+		<TurnIn QuestName="It Could Be Anywhere!" QuestId="12624" TurnInName="Chad" TurnInId="28497" X="5575.85" Y="5758.88" Z="-75.117" />
+		<TurnIn QuestName="Dreadsaber Mastery: Becoming a Predator" QuestId="12549" TurnInName="Buck Cantwell" TurnInId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12549)">
+			<PickUp QuestName="Dreadsaber Mastery: Stalking the Prey" QuestId="12550" GiverName="Buck Cantwell" GiverId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="A Steak Fit for a Hunter" QuestId="12804" GiverName="Korg the Cleaver" GiverId="28046" X="5559.11" Y="5765.43" Z="-77.5637" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="Some Make Lemonade, Some Make Liquor" QuestId="12634" GiverName="Grimbooze Thunderbrew" GiverId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12520)">
+			<PickUp QuestName="Crocolisk Mastery: The Trial" QuestId="12551" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		</If>
+		<TurnIn QuestName="Rhino Mastery: The Chase" QuestId="12526" TurnInName="Oracle Soo-rahm" TurnInId="28191" X="5355.12" Y="5814.42" Z="-74.0425" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12526)">
+			<PickUp QuestName="An Offering for Soo-rahm" QuestId="12543" GiverName="Oracle Soo-rahm" GiverId="28191" X="5355.12" Y="5814.42" Z="-74.0425" />
+		</If>
+		<Objective QuestName="A Steak Fit for a Hunter" QuestId="12804" Type="CollectItem" ItemId="40394" CollectCount="5" />
+		<Objective QuestName="An Offering for Soo-rahm" QuestId="12543" Type="CollectItem" ItemId="38505" CollectCount="5" />
+		<Objective QuestName="Crocolisk Mastery: The Trial" QuestId="12551" Type="KillMob" MobId="28002" KillCount="15" />
+		<Objective QuestName="The Great Hunter's Challenge" QuestId="12592" Type="KillMob" MobId="28566" KillCount="60" />
+		<TurnIn QuestName="It Could Be Anywhere!" QuestId="12624" TurnInName="Chad" TurnInId="28497" X="5575.85" Y="5758.88" Z="-75.117" />
+		<Objective QuestName="Dreadsaber Mastery: Stalking the Prey" QuestId="12550" Type="UseObject" ObjectId="190700" UseCount="3" />
+		<TurnIn QuestName="Dreadsaber Mastery: Stalking the Prey" QuestId="12550" TurnInName="Buck Cantwell" TurnInId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12550)">
+			<PickUp QuestName="Dreadsaber Mastery: Ready to Pounce" QuestId="12558" GiverName="Buck Cantwell" GiverId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		</If>
+		<TurnIn QuestName="A Steak Fit for a Hunter" QuestId="12804" TurnInName="Korg the Cleaver" TurnInId="28046" X="5559.11" Y="5765.43" Z="-77.5637" />
+		<!-- REVIEW Q12634 Some Make Lemonade, Some Make Liquor: item 38656 Orange has no drop or chest near the guide coordinates; item 38653 Banana Bunch has no drop or chest near the guide coordinates; item 38655 Papaya has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12634)) &amp;&amp; (IsQuestCompleted(12634)))">
+			<TurnIn QuestName="Some Make Lemonade, Some Make Liquor" QuestId="12634" TurnInName="Grimbooze Thunderbrew" TurnInId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		</If>
+		<If Condition="((HasQuest(12634)) &amp;&amp; (!IsQuestCompleted(12634)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12634" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12634)">
+			<PickUp QuestName="Still At It" QuestId="12644" GiverName="Grimbooze Thunderbrew" GiverId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		</If>
+		<!-- REVIEW Q12644 Still At It: item 38688 Thunderbrew's Jungle Punch has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12644)) &amp;&amp; (IsQuestCompleted(12644)))">
+			<TurnIn QuestName="Still At It" QuestId="12644" TurnInName="Grimbooze Thunderbrew" TurnInId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		</If>
+		<If Condition="((HasQuest(12644)) &amp;&amp; (!IsQuestCompleted(12644)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12644" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12644)">
+			<PickUp QuestName="The Taste Test" QuestId="12645" GiverName="Grimbooze Thunderbrew" GiverId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		</If>
+		<TurnIn QuestName="The Great Hunter's Challenge" QuestId="12592" TurnInName="Drostan" TurnInId="28328" X="5547.83" Y="5749.53" Z="-77.6173" />
+		<TurnIn QuestName="Crocolisk Mastery: The Trial" QuestId="12551" TurnInName="Debaar" TurnInId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12551)">
+			<PickUp QuestName="Crocolisk Mastery: The Plan" QuestId="12560" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		</If>
+		<TurnIn QuestName="An Offering for Soo-rahm" QuestId="12543" TurnInName="Oracle Soo-rahm" TurnInId="28191" X="5355.12" Y="5814.42" Z="-74.0425" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12543)">
+			<PickUp QuestName="The Bones of Nozronn" QuestId="12544" GiverName="Oracle Soo-rahm" GiverId="28191" X="5355.12" Y="5814.42" Z="-74.0425" />
+		</If>
+		<!-- REVIEW Q12544 The Bones of Nozronn: use item 38519: target 28256 Voice of Nozronn has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12544)) &amp;&amp; (IsQuestCompleted(12544)))">
+			<TurnIn QuestName="The Bones of Nozronn" QuestId="12544" TurnInName="Hemet Nesingwary" TurnInId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		</If>
+		<If Condition="((HasQuest(12544)) &amp;&amp; (!IsQuestCompleted(12544)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12544" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12544)">
+			<PickUp QuestName="Rhino Mastery: The Kill" QuestId="12556" GiverName="Hemet Nesingwary" GiverId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		</If>
+		<Objective QuestName="Crocolisk Mastery: The Plan" QuestId="12560" Type="CollectItem" ItemId="38553" CollectCount="5" />
+		<TurnIn QuestName="Aerial Surveillance" QuestId="12696" TurnInName="Pilot Vic" TurnInId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="An Embarassing Incident" QuestId="12699" GiverName="Pilot Vic" GiverId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="Force of Nature" QuestId="12803" GiverName="Pilot Vic" GiverId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="The Part-time Hunter" QuestId="12654" GiverName="Tamara Wobblesprocket" GiverId="28568" X="5483.16" Y="4730.05" Z="-194.283" />
+		</If>
+		<Objective QuestName="An Embarassing Incident" QuestId="12699" Type="CollectItem" ItemId="39264" CollectCount="1" />
+		<TurnIn QuestName="An Embarassing Incident" QuestId="12699" TurnInName="Pilot Vic" TurnInId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12699)">
+			<PickUp QuestName="Reconnaissance Flight" QuestId="12671" GiverName="Pilot Vic" GiverId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		</If>
+		<!-- REVIEW Q12671 Reconnaissance Flight: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12671)) &amp;&amp; (IsQuestCompleted(12671)))">
+			<TurnIn QuestName="Reconnaissance Flight" QuestId="12671" TurnInName="Pilot Vic" TurnInId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		</If>
+		<If Condition="((HasQuest(12671)) &amp;&amp; (!IsQuestCompleted(12671)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12671" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q12645 The Taste Test: objective 27986 Hemet Nesingwary x1: not attackable; objective 28047 Hadrius Harlowe x1: not attackable; objective 28568 Tamara Wobblesprocket x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12645)) &amp;&amp; (IsQuestCompleted(12645)))">
+			<TurnIn QuestName="The Taste Test" QuestId="12645" TurnInName="Grimbooze Thunderbrew" TurnInId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		</If>
+		<If Condition="((HasQuest(12645)) &amp;&amp; (!IsQuestCompleted(12645)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12645" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Crocolisk Mastery: The Plan" QuestId="12560" TurnInName="Debaar" TurnInId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12560)">
+			<PickUp QuestName="Crocolisk Mastery: The Ambush" QuestId="12569" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		</If>
+		<Objective QuestName="Dreadsaber Mastery: Ready to Pounce" QuestId="12558" Type="CollectItem" ItemId="38523" CollectCount="1" />
+		<Objective QuestName="Rhino Mastery: The Kill" QuestId="12556" Type="CollectItem" ItemId="38522" CollectCount="1" />
+		<Objective QuestName="The Part-time Hunter" QuestId="12654" Type="CollectItem" ItemId="38703" CollectCount="1" />
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="Playing Along" QuestId="12528" GiverName="Tracker Gekgek" GiverId="28095" X="5063.25" Y="4727.75" Z="-132.109" />
+		</If>
+		<TurnIn QuestName="The Part-time Hunter" QuestId="12654" TurnInName="Tamara Wobblesprocket" TurnInId="28568" X="5483.16" Y="4730.05" Z="-194.283" />
+		<TurnIn QuestName="Rhino Mastery: The Kill" QuestId="12556" TurnInName="Hemet Nesingwary" TurnInId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		<TurnIn QuestName="Dreadsaber Mastery: Ready to Pounce" QuestId="12558" TurnInName="Buck Cantwell" TurnInId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		<!-- REVIEW Q12569 Crocolisk Mastery: The Ambush: item 38559 Bushwhacker's Jaw has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12569)) &amp;&amp; (IsQuestCompleted(12569)))">
+			<TurnIn QuestName="Crocolisk Mastery: The Ambush" QuestId="12569" TurnInName="Debaar" TurnInId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		</If>
+		<If Condition="((HasQuest(12569)) &amp;&amp; (!IsQuestCompleted(12569)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12569" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12556)">
+			<PickUp QuestName="In Search of Bigger Game" QuestId="12595" GiverName="Hemet Nesingwary" GiverId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		</If>
+		<TurnIn QuestName="In Search of Bigger Game" QuestId="12595" TurnInName="Dorian Drakestalker" TurnInId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12595)">
+			<PickUp QuestName="Sharpening Your Talons" QuestId="12603" GiverName="Dorian Drakestalker" GiverId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12595)">
+			<PickUp QuestName="Securing the Bait" QuestId="12605" GiverName="Dorian Drakestalker" GiverId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="Burning to Help" QuestId="12683" GiverName="Colvin Norrington" GiverId="28771" X="6455.09" Y="5096.63" Z="-64.4071" />
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="12683" ItemId="39164" MobId="28771" NumOfTimes="5" Range="5" CollectionDistance="200" X="6455.09" Y="5096.63" Z="-64.4071" />
+		<Objective QuestName="Burning to Help" QuestId="12683" Type="KillMob" MobId="28003" KillCount="5" />
+		<Objective QuestName="Sharpening Your Talons" QuestId="12603" Type="KillMob" MobId="28378" KillCount="6" />
+		<TurnIn QuestName="Sharpening Your Talons" QuestId="12603" TurnInName="Dorian Drakestalker" TurnInId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		<!-- REVIEW Q12605 Securing the Bait: item 38600 Primordial Hatchling has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12605)) &amp;&amp; (IsQuestCompleted(12605)))">
+			<TurnIn QuestName="Securing the Bait" QuestId="12605" TurnInName="Dorian Drakestalker" TurnInId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		</If>
+		<If Condition="((HasQuest(12605)) &amp;&amp; (!IsQuestCompleted(12605)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12605" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q12683 Burning to Help: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12683)) &amp;&amp; (IsQuestCompleted(12683)))">
+			<TurnIn QuestName="Burning to Help" QuestId="12683" TurnInName="Colvin Norrington" TurnInId="28771" X="6455.09" Y="5096.63" Z="-64.4071" />
+		</If>
+		<If Condition="((HasQuest(12683)) &amp;&amp; (!IsQuestCompleted(12683)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12683" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12603)">
+			<PickUp QuestName="Reagent Agent" QuestId="12681" GiverName="Colvin Norrington" GiverId="28771" X="6455.09" Y="5096.63" Z="-64.4071" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12603)">
+			<PickUp QuestName="A Mammoth Undertaking" QuestId="12607" GiverName="Zootfizzle" GiverId="28374" X="6448.37" Y="5094.66" Z="-63.9814" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12603)">
+			<PickUp QuestName="My Pet Roc" QuestId="12658" GiverName="Zootfizzle" GiverId="28374" X="6448.37" Y="5094.66" Z="-63.9814" />
+		</If>
+		<!-- REVIEW Q12607 A Mammoth Undertaking: objective 28374 Zootfizzle x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12607)) &amp;&amp; (IsQuestCompleted(12607)))">
+			<TurnIn QuestName="A Mammoth Undertaking" QuestId="12607" TurnInName="Zootfizzle" TurnInId="28374" X="6448.37" Y="5094.66" Z="-63.9814" />
+		</If>
+		<If Condition="((HasQuest(12607)) &amp;&amp; (!IsQuestCompleted(12607)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12607" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12607)">
+			<PickUp QuestName="Post-partum Aggression" QuestId="12614" GiverName="Dorian Drakestalker" GiverId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		</If>
+		<Objective QuestName="Post-partum Aggression" QuestId="12614" Type="KillMob" MobId="28467" KillCount="1" />
+		<Objective QuestName="My Pet Roc" QuestId="12658" Type="CollectItem" ItemId="38705" CollectCount="7" />
+		<Objective QuestName="Reagent Agent" QuestId="12681" Type="CollectItem" ItemId="39161" CollectCount="5" />
+		<TurnIn QuestName="Post-partum Aggression" QuestId="12614" TurnInName="Dorian Drakestalker" TurnInId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		<TurnIn QuestName="Reagent Agent" QuestId="12681" TurnInName="Colvin Norrington" TurnInId="28771" X="6455.09" Y="5096.63" Z="-64.4071" />
+		<TurnIn QuestName="My Pet Roc" QuestId="12658" TurnInName="Zootfizzle" TurnInId="28374" X="6448.37" Y="5094.66" Z="-63.9814" />
+		<TurnIn QuestName="Force of Nature" QuestId="12803" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12803)">
+			<PickUp QuestName="An Issue of Trust" QuestId="12561" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<Objective QuestName="An Issue of Trust" QuestId="12561" Type="KillMob" MobId="28101" KillCount="6" />
+		<Objective QuestName="An Issue of Trust" QuestId="12561" Type="KillMob" MobId="28108" KillCount="10" />
+		<TurnIn QuestName="An Issue of Trust" QuestId="12561" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12561)">
+			<PickUp QuestName="Returned Sevenfold" QuestId="12611" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="12611" ItemId="38657" MobId="28443" NumOfTimes="1" Range="5" CollectionDistance="200" X="6006.05" Y="4023.68" Z="-44.8432" />
+		<!-- REVIEW Q12611 Returned Sevenfold: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12611)) &amp;&amp; (IsQuestCompleted(12611)))">
+			<TurnIn QuestName="Returned Sevenfold" QuestId="12611" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<If Condition="((HasQuest(12611)) &amp;&amp; (!IsQuestCompleted(12611)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12611" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12611)">
+			<PickUp QuestName="The Fallen Pillar" QuestId="12612" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12611)">
+			<PickUp QuestName="Salvaging Life's Strength" QuestId="12805" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<TurnIn QuestName="The Fallen Pillar" QuestId="12612" TurnInName="Cultist Corpse" TurnInId="28464" X="5535.28" Y="4094.13" Z="43.2149" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12612)">
+			<PickUp QuestName="Cultist Incursion" QuestId="12608" GiverName="Cultist Corpse" GiverId="28464" X="5535.28" Y="4094.13" Z="43.2149" />
+		</If>
+		<!-- REVIEW Q12805 Salvaging Life's Strength: objective 29303 Lifeblood Elemental Credit x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12805)) &amp;&amp; (IsQuestCompleted(12805)))">
+			<TurnIn QuestName="Salvaging Life's Strength" QuestId="12805" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<If Condition="((HasQuest(12805)) &amp;&amp; (!IsQuestCompleted(12805)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12805" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Cultist Incursion" QuestId="12608" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12608)">
+			<PickUp QuestName="Exterminate the Intruders" QuestId="12617" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12608)">
+			<PickUp QuestName="Weapons of Destruction" QuestId="12660" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<Objective QuestName="Exterminate the Intruders" QuestId="12617" Type="KillMob" MobId="28373" KillCount="8" />
+		<TurnIn QuestName="Exterminate the Intruders" QuestId="12617" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<Objective QuestName="Weapons of Destruction" QuestId="12660" Type="UseObject" ObjectId="190590" UseCount="4" />
+		<TurnIn QuestName="Weapons of Destruction" QuestId="12660" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12617)">
+			<PickUp QuestName="The Lifewarden's Wrath" QuestId="12620" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<!-- REVIEW Q12620 The Lifewarden's Wrath: objective 28595 Freya's Horn Credit x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12620)) &amp;&amp; (IsQuestCompleted(12620)))">
+			<TurnIn QuestName="The Lifewarden's Wrath" QuestId="12620" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<If Condition="((HasQuest(12620)) &amp;&amp; (!IsQuestCompleted(12620)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12620" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12620)">
+			<PickUp QuestName="Freya's Pact" QuestId="12621" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<!-- REVIEW Q12621 Freya's Pact: objective 28482 Avatar of Freya Conversation Credit x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12621)) &amp;&amp; (IsQuestCompleted(12621)))">
+			<TurnIn QuestName="Freya's Pact" QuestId="12621" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<If Condition="((HasQuest(12621)) &amp;&amp; (!IsQuestCompleted(12621)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12621" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12621)">
+			<PickUp QuestName="Powering the Waygate - The Maker's Perch" QuestId="12559" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<!-- REVIEW Q12559 Powering the Waygate - The Maker's Perch: object 190508 Activation Switch Gamma has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12559)) &amp;&amp; (IsQuestCompleted(12559)))">
+			<TurnIn QuestName="Powering the Waygate - The Maker's Perch" QuestId="12559" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<If Condition="((HasQuest(12559)) &amp;&amp; (!IsQuestCompleted(12559)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12559" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12559)">
+			<PickUp QuestName="Powering the Waygate - The Maker's Overlook" QuestId="12613" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="A Timeworn Coffer" QuestId="12691" GiverName="Timeworn Coffer" GiverId="190768" GiverType="Object" X="5666.69" Y="3426.17" Z="300.843" />
+		</If>
+		<Objective QuestName="A Timeworn Coffer" QuestId="12691" Type="CollectItem" ItemId="39227" CollectCount="1" />
+		<TurnIn QuestName="A Timeworn Coffer" QuestId="12691" TurnInName="Timeworn Coffer" TurnInId="190768" TurnInType="Object" X="5666.69" Y="3426.17" Z="300.843" />
+		<Objective QuestName="Powering the Waygate - The Maker's Overlook" QuestId="12613" Type="UseObject" ObjectId="190509" UseCount="1" />
+		<TurnIn QuestName="Powering the Waygate - The Maker's Overlook" QuestId="12613" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12613)">
+			<PickUp QuestName="The Etymidian" QuestId="12548" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<TurnIn QuestName="The Etymidian" QuestId="12548" TurnInName="The Etymidian" TurnInId="28092" X="-6193.86" Y="-1219.55" Z="-160.768" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12548)">
+			<PickUp QuestName="The Activation Rune" QuestId="12547" GiverName="The Etymidian" GiverId="28092" X="-6193.86" Y="-1219.55" Z="-160.768" />
+		</If>
+		<Objective QuestName="The Activation Rune" QuestId="12547" Type="CollectItem" ItemId="38708" CollectCount="1" />
+		<TurnIn QuestName="The Activation Rune" QuestId="12547" TurnInName="The Etymidian" TurnInId="28092" X="-6193.86" Y="-1219.55" Z="-160.768" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12547)">
+			<PickUp QuestName="Back Through the Waygate" QuestId="12797" GiverName="The Etymidian" GiverId="28092" X="-6193.86" Y="-1219.55" Z="-160.768" />
+		</If>
+		<TurnIn QuestName="Playing Along" QuestId="12528" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12528)">
+			<PickUp QuestName="The Ape Hunter's Slave" QuestId="12529" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		</If>
+		<!-- SKIP pickup Q12530 Tormenting the Softknuckles: no quest giver with a spawn in the database -->
+		<Objective QuestName="The Ape Hunter's Slave" QuestId="12529" Type="KillMob" MobId="28098" KillCount="8" />
+		<CustomBehavior File="UseItemOn" QuestId="12530" ItemId="38467" MobId="28213" NumOfTimes="1" Range="5" CollectionDistance="200" X="5128.56" Y="3980.97" Z="-61.5905" />
+		<Objective QuestName="The Ape Hunter's Slave" QuestId="12529" Type="KillMob" MobId="28096" KillCount="6" />
+		<TurnIn QuestName="The Ape Hunter's Slave" QuestId="12529" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<!-- REVIEW Q12530 Tormenting the Softknuckles: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12530)) &amp;&amp; (IsQuestCompleted(12530)))">
+			<TurnIn QuestName="Tormenting the Softknuckles" QuestId="12530" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		</If>
+		<If Condition="((HasQuest(12530)) &amp;&amp; (!IsQuestCompleted(12530)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12530" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12530)">
+			<PickUp QuestName="The Wasp Hunter's Apprentice" QuestId="12533" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12529)">
+			<PickUp QuestName="The Sapphire Queen" QuestId="12534" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
+		</If>
+		<Objective QuestName="The Sapphire Queen" QuestId="12534" Type="CollectItem" ItemId="38477" CollectCount="1" />
+		<Objective QuestName="The Wasp Hunter's Apprentice" QuestId="12533" Type="KillMob" MobId="28086" KillCount="6" />
+		<Objective QuestName="The Wasp Hunter's Apprentice" QuestId="12533" Type="KillMob" MobId="28085" KillCount="9" />
+		<TurnIn QuestName="The Wasp Hunter's Apprentice" QuestId="12533" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<TurnIn QuestName="The Sapphire Queen" QuestId="12534" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="Flown the Coop!" QuestId="12532" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
+		</If>
+		<!-- REVIEW Q12532 Flown the Coop!: item 38483 Captured Chicken has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12532)) &amp;&amp; (IsQuestCompleted(12532)))">
+			<TurnIn QuestName="Flown the Coop!" QuestId="12532" TurnInName="Elder Harkek" TurnInId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
+		</If>
+		<If Condition="((HasQuest(12532)) &amp;&amp; (!IsQuestCompleted(12532)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12532" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12532)">
+			<PickUp QuestName="The Underground Menace" QuestId="12531" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12532)">
+			<PickUp QuestName="Mischief in the Making" QuestId="12535" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		</If>
+		<Objective QuestName="The Underground Menace" QuestId="12531" Type="CollectItem" ItemId="38473" CollectCount="1" />
+		<Objective QuestName="Mischief in the Making" QuestId="12535" Type="CollectItem" ItemId="38504" CollectCount="8" />
+		<TurnIn QuestName="The Underground Menace" QuestId="12531" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<TurnIn QuestName="Mischief in the Making" QuestId="12535" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="A Rough Ride" QuestId="12536" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		</If>
+		<!-- SKIP turn-in Q12536 A Rough Ride: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(12536)) &amp;&amp; (!IsQuestCompleted(12536)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12536" Type="Incomplete" />
+		</If>
+		<!-- SKIP pickup Q12537 Lightning Definitely Strikes Twice: no quest giver with a spawn in the database -->
+		<!-- SKIP pickup Q12538 The Mist Isn't Listening: no quest giver with a spawn in the database -->
+		<Objective QuestName="The Mist Isn't Listening" QuestId="12538" Type="KillMob" MobId="28109" KillCount="12" />
+		<!-- SKIP turn-in Q12537 Lightning Definitely Strikes Twice: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(12537)) &amp;&amp; (!IsQuestCompleted(12537)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12537" Type="Incomplete" />
+		</If>
+		<!-- SKIP turn-in Q12538 The Mist Isn't Listening: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(12538)) &amp;&amp; (!IsQuestCompleted(12538)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12538" Type="Incomplete" />
+		</If>
+		<!-- SKIP pickup Q12539 Hoofing It: no quest giver with a spawn in the database -->
+		<!-- REVIEW Q12539 Hoofing It: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12539)) &amp;&amp; (IsQuestCompleted(12539)))">
+			<TurnIn QuestName="Hoofing It" QuestId="12539" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		</If>
+		<If Condition="((HasQuest(12539)) &amp;&amp; (!IsQuestCompleted(12539)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12539" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12539)">
+			<PickUp QuestName="Just Following Orders" QuestId="12540" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		</If>
+		<!-- REVIEW Q12540 Just Following Orders: objective 28325 Ravenous Mangal Crocolisk x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12540)) &amp;&amp; (IsQuestCompleted(12540)))">
+			<TurnIn QuestName="Just Following Orders" QuestId="12540" TurnInName="Injured Rainspeaker Oracle" TurnInId="28217" X="5400.44" Y="4502.65" Z="-130.794" />
+		</If>
+		<If Condition="((HasQuest(12540)) &amp;&amp; (!IsQuestCompleted(12540)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12540" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12540)">
+			<PickUp QuestName="Fortunate Misunderstandings" QuestId="12570" GiverName="Injured Rainspeaker Oracle" GiverId="28217" X="5400.44" Y="4502.65" Z="-130.794" />
+		</If>
+		<!-- REVIEW Q12570 Fortunate Misunderstandings: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12570)) &amp;&amp; (IsQuestCompleted(12570)))">
+			<TurnIn QuestName="Fortunate Misunderstandings" QuestId="12570" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		</If>
+		<If Condition="((HasQuest(12570)) &amp;&amp; (!IsQuestCompleted(12570)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12570" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12570)">
+			<PickUp QuestName="Make the Bad Snake Go Away" QuestId="12571" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		</If>
+		<!-- SKIP pickup Q12572 Gods like Shiny Things: no quest giver with a spawn in the database -->
+		<Objective QuestName="Make the Bad Snake Go Away" QuestId="12571" Type="KillMob" MobId="28358" KillCount="1" />
+		<Objective QuestName="Make the Bad Snake Go Away" QuestId="12571" Type="KillMob" MobId="28011" KillCount="10" />
+		<TurnIn QuestName="Make the Bad Snake Go Away" QuestId="12571" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<!-- REVIEW Q12572 Gods like Shiny Things: no quest giver in the database; item 38575 Shiny Treasures has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12572)) &amp;&amp; (IsQuestCompleted(12572)))">
+			<TurnIn QuestName="Gods like Shiny Things" QuestId="12572" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		</If>
+		<If Condition="((HasQuest(12572)) &amp;&amp; (!IsQuestCompleted(12572)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12572" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="Making Peace" QuestId="12573" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		</If>
+		<!-- REVIEW Q12573 Making Peace: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12573)) &amp;&amp; (IsQuestCompleted(12573)))">
+			<TurnIn QuestName="Making Peace" QuestId="12573" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		</If>
+		<If Condition="((HasQuest(12573)) &amp;&amp; (!IsQuestCompleted(12573)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12573" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12573)">
+			<PickUp QuestName="Back So Soon?" QuestId="12574" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		</If>
+		<TurnIn QuestName="Back So Soon?" QuestId="12574" TurnInName="Mistcaller Soo-gan" TurnInId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12574)">
+			<PickUp QuestName="The Lost Mistwhisper Treasure" QuestId="12575" GiverName="Mistcaller Soo-gan" GiverId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		</If>
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12574)">
+			<PickUp QuestName="Forced Hand" QuestId="12576" GiverName="Mistcaller Soo-gan" GiverId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		</If>
+		<Objective QuestName="The Lost Mistwhisper Treasure" QuestId="12575" Type="CollectItem" ItemId="38601" CollectCount="1" />
+		<If Condition="((HasQuest(12575)) &amp;&amp; (!IsQuestCompleted(12575)))">
+			<RunTo X="6721.12" Y="5113.89" Z="-15.0462" />
+		</If>
+		<Objective QuestName="Forced Hand" QuestId="12576" Type="KillMob" MobId="28080" KillCount="8" />
+		<Objective QuestName="Forced Hand" QuestId="12576" Type="KillMob" MobId="28081" KillCount="6" />
+		<!-- REVIEW Q12575 The Lost Mistwhisper Treasure: kill 28105 Warlord Tartek x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12575)) &amp;&amp; (IsQuestCompleted(12575)))">
+			<TurnIn QuestName="The Lost Mistwhisper Treasure" QuestId="12575" TurnInName="Mistcaller Soo-gan" TurnInId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		</If>
+		<If Condition="((HasQuest(12575)) &amp;&amp; (!IsQuestCompleted(12575)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12575" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Forced Hand" QuestId="12576" TurnInName="Mistcaller Soo-gan" TurnInId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		<If Condition="(Me.Level &gt;= 76)">
+			<PickUp QuestName="Home Time!" QuestId="12577" GiverName="Mistcaller Soo-gan" GiverId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		</If>
+		<TurnIn QuestName="Home Time!" QuestId="12577" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12577)">
+			<PickUp QuestName="The Angry Gorloc" QuestId="12578" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		</If>
+		<TurnIn QuestName="Back Through the Waygate" QuestId="12797" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12797)">
+			<PickUp QuestName="Reclamation" QuestId="12546" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<Objective QuestName="Reclamation" QuestId="12546" Type="KillMob" MobId="28212" KillCount="1" />
+		<Objective QuestName="Reclamation" QuestId="12546" Type="KillMob" MobId="28103" KillCount="1" />
+		<Objective QuestName="Reclamation" QuestId="12546" Type="KillMob" MobId="28208" KillCount="1" />
+		<!-- REVIEW Q12546 Reclamation: objective 28271 Glacial Breach Scourge Credit x200: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12546)) &amp;&amp; (IsQuestCompleted(12546)))">
+			<TurnIn QuestName="Reclamation" QuestId="12546" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		</If>
+		<If Condition="((HasQuest(12546)) &amp;&amp; (!IsQuestCompleted(12546)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12546" Type="Incomplete" />
+		</If>
+		<!-- SKIP turn-in Q12578 The Angry Gorloc: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(12578)) &amp;&amp; (!IsQuestCompleted(12578)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12578" Type="Incomplete" />
+		</If>
+		<!-- SKIP pickup Q12580 The Mosswalker Savior: no quest giver with a spawn in the database -->
+		<!-- SKIP pickup Q12579 Lifeblood of the Mosswalker Shrine: no quest giver with a spawn in the database -->
+		<!-- SKIP turn-in Q12580 The Mosswalker Savior: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(12580)) &amp;&amp; (!IsQuestCompleted(12580)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12580" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Lifeblood of the Mosswalker Shrine" QuestId="12579" Type="CollectItem" ItemId="39063" CollectCount="10" />
+		<!-- SKIP turn-in Q12579 Lifeblood of the Mosswalker Shrine: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(12579)) &amp;&amp; (!IsQuestCompleted(12579)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12579" Type="Incomplete" />
+		</If>
+		<!-- SKIP Q12581 A Hero's Burden: group quest (3 players) -->
+		<Objective QuestName="A Hero's Burden" QuestId="12581" Type="KillMob" MobId="28659" KillCount="1" />
+		<!-- SKIP turn-in Q12581 A Hero's Burden: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(12581)) &amp;&amp; (!IsQuestCompleted(12581)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12581" Type="Incomplete" />
+		</If>
+		<!-- SKIP pickup Q12689 Hand of the Oracles: no quest giver with a spawn in the database -->
+		<!-- SKIP pickup Q12695 Return of the Friendly Dryskin: no quest giver with a spawn in the database -->
+		<!-- SKIP pickup Q12582 Frenzyheart Champion: no quest giver with a spawn in the database -->
+		<!-- SKIP pickup Q12692 Return of the Lich Hunter: no quest giver with a spawn in the database -->
+		<!-- REVIEW Q12695 Return of the Friendly Dryskin: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12695)) &amp;&amp; (IsQuestCompleted(12695)))">
+			<TurnIn QuestName="Return of the Friendly Dryskin" QuestId="12695" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		</If>
+		<If Condition="((HasQuest(12695)) &amp;&amp; (!IsQuestCompleted(12695)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12695" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q12692 Return of the Lich Hunter: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12692)) &amp;&amp; (IsQuestCompleted(12692)))">
+			<TurnIn QuestName="Return of the Lich Hunter" QuestId="12692" TurnInName="Elder Harkek" TurnInId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
+		</If>
+		<If Condition="((HasQuest(12692)) &amp;&amp; (!IsQuestCompleted(12692)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12692" Type="Incomplete" />
+		</If>
+		<CustomBehavior File="Message" Text="Zygor Loremaster\Northrend\[77] Sholazar Basin: done for today" LogColor="Green" />
+	</QuestOrder>
+</HBProfile>

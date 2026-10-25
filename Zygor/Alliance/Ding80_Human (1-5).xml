@@ -1,0 +1,245 @@
+<HBProfile>
+	<Name>Zygor Ding80\Human (1-5)</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Brother Danil" Entry="152" Type="Food" X="-8901.59" Y="-112.716" Z="82.0314" />
+		<Vendor Name="[DND] TAR Pedestal - Trainer, Priest" Entry="26755" Type="Repair" X="-8941.99" Y="-157.029" Z="81.9415" />
+		<Vendor Name="[DND] TAR Pedestal - Trainer, Hunter" Entry="26752" Type="Repair" X="-8928.83" Y="-147.713" Z="81.7991" />
+		<Vendor Name="[DND] TAR Pedestal - Beastmaster" Entry="26748" Type="Repair" X="-8931.29" Y="-150.839" Z="82.0391" />
+		<Vendor Name="[DND] TAR Pedestal - Trainer, Rogue" Entry="26756" Type="Repair" X="-8946.19" Y="-158.145" Z="82.0022" />
+		<Vendor Name="[DND] TAR Pedestal - Trainer, Mage" Entry="26753" Type="Repair" X="-8934.39" Y="-153.62" Z="81.8587" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="7" Name="Kobold Camp Cleanup">
+		<Objective Type="KillMob" MobId="6" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-8794.96" Y="-134.15" Z="83.0352" />
+				<Hotspot X="-8752.95" Y="-160.776" Z="84.377" />
+				<Hotspot X="-8779.8" Y="-195.355" Z="84.0514" />
+				<Hotspot X="-8806.91" Y="-226.327" Z="82.8712" />
+				<Hotspot X="-8765.42" Y="-256.049" Z="80.6917" />
+				<Hotspot X="-8765.28" Y="-93.41" Z="89.8321" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="33" Name="Wolves Across the Border">
+		<Objective Type="CollectItem" ItemId="50432" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Diseased Timber Wolf" Id="69" />
+				<Mob Name="Diseased Young Wolf" Id="299" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8854.87" Y="-106.428" Z="80.9344" />
+				<Hotspot X="-8820.37" Y="-79.6791" Z="86.4006" />
+				<Hotspot X="-8781.32" Y="-59.8318" Z="91.9924" />
+				<Hotspot X="-8872.65" Y="-57.9788" Z="86.311" />
+				<Hotspot X="-8918.72" Y="-73.92" Z="88.3627" />
+				<Hotspot X="-8953.62" Y="-48.5983" Z="92.078" />
+				<Hotspot X="-8826.85" Y="-159.473" Z="80.208" />
+				<Hotspot X="-8805.37" Y="-205.46" Z="82.6964" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="15" Name="Investigate Echo Ridge">
+		<Objective Type="KillMob" MobId="257" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-8786.94" Y="-105.911" Z="83.4065" />
+				<Hotspot X="-8763.31" Y="-159.256" Z="82.9625" />
+				<Hotspot X="-8741.43" Y="-193.606" Z="86.2892" />
+				<Hotspot X="-8762.35" Y="-235.236" Z="85.3167" />
+				<Hotspot X="-8817.24" Y="-228.768" Z="82.9962" />
+				<Hotspot X="-8727.35" Y="-133.797" Z="86.9388" />
+				<Hotspot X="-8713.42" Y="-90.302" Z="89.5737" />
+				<Hotspot X="-8680.79" Y="-120.071" Z="90.8183" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="18" Name="Brotherhood of Thieves">
+		<Objective Type="CollectItem" ItemId="752" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Defias Thug" Id="38" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9045.05" Y="-324.702" Z="73.5767" />
+				<Hotspot X="-9071.87" Y="-355.235" Z="73.5757" />
+				<Hotspot X="-9086.48" Y="-314.165" Z="73.4716" />
+				<Hotspot X="-9030.79" Y="-285.642" Z="75.5096" />
+				<Hotspot X="-8994.59" Y="-312.364" Z="71.9033" />
+				<Hotspot X="-9003.3" Y="-363.304" Z="75.0033" />
+				<Hotspot X="-8963.1" Y="-370.271" Z="73.0808" />
+				<Hotspot X="-9034.19" Y="-397.809" Z="72.6381" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1598" Name="The Stolen Tome">
+		<Objective Type="CollectItem" ItemId="6785" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Stolen Books" Id="83763" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8957.04" Y="-432.748" Z="64.7194" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="21" Name="Skirmish at Echo Ridge">
+		<Objective Type="KillMob" MobId="80" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-8671.83" Y="-123.34" Z="92.1135" />
+				<Hotspot X="-8632.33" Y="-143.753" Z="86.3842" />
+				<Hotspot X="-8588.97" Y="-147.395" Z="89.6137" />
+				<Hotspot X="-8550.41" Y="-163.072" Z="86.6575" />
+				<Hotspot X="-8564.94" Y="-203.695" Z="84.3839" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6" Name="Bounty on Garrick Padfoot">
+		<Objective Type="CollectItem" ItemId="182" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Garrick Padfoot" Id="103" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9056.48" Y="-460.903" Z="72.8318" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3904" Name="Milly's Harvest">
+		<Objective Type="CollectItem" ItemId="11119" CollectCount="8">
+			<CollectFrom>
+				<GameObject Name="Milly's Harvest" Id="161557" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9092.74" Y="-345.37" Z="73.4517" />
+				<Hotspot X="-9054.42" Y="-358.9" Z="73.4667" />
+				<Hotspot X="-9064.08" Y="-312.041" Z="73.4517" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Leveling/Ding80GuidesAllianceTBCduo.lua: Ding80's Alliance Leveling Guides TBC duo\Human (1-5) -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Ding80_Human (1-5)");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<PickUp QuestName="A Threat Within" QuestId="783" GiverName="Deputy Willem" GiverId="823" X="-8947.64" Y="-132.319" Z="83.7199" />
+		<TurnIn QuestName="A Threat Within" QuestId="783" TurnInName="Marshal McBride" TurnInId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		<If Condition="IsQuestCompleted(783)">
+			<PickUp QuestName="Kobold Camp Cleanup" QuestId="7" GiverName="Marshal McBride" GiverId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		</If>
+		<If Condition="IsQuestCompleted(783)">
+			<PickUp QuestName="Eagan Peltskinner" QuestId="5261" GiverName="Deputy Willem" GiverId="823" X="-8947.64" Y="-132.319" Z="83.7199" />
+		</If>
+		<TurnIn QuestName="Eagan Peltskinner" QuestId="5261" TurnInName="Eagan Peltskinner" TurnInId="196" X="-8869.22" Y="-163.237" Z="80.9719" />
+		<If Condition="IsQuestCompleted(5261)">
+			<PickUp QuestName="Wolves Across the Border" QuestId="33" GiverName="Eagan Peltskinner" GiverId="196" X="-8869.22" Y="-163.237" Z="80.9719" />
+		</If>
+		<Objective QuestName="Wolves Across the Border" QuestId="33" Type="CollectItem" ItemId="50432" CollectCount="8" />
+		<Objective QuestName="Kobold Camp Cleanup" QuestId="7" Type="KillMob" MobId="6" KillCount="8" />
+		<TurnIn QuestName="Wolves Across the Border" QuestId="33" TurnInName="Eagan Peltskinner" TurnInId="196" X="-8869.22" Y="-163.237" Z="80.9719" />
+		<TurnIn QuestName="Kobold Camp Cleanup" QuestId="7" TurnInName="Marshal McBride" TurnInId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		<If Condition="IsQuestCompleted(7)">
+			<PickUp QuestName="Investigate Echo Ridge" QuestId="15" GiverName="Marshal McBride" GiverId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human)) &amp;&amp; ((Me.Class == WoWClass.Mage)) &amp;&amp; IsQuestCompleted(7)">
+			<PickUp QuestName="Glyphic Letter" QuestId="3104" GiverName="Marshal McBride" GiverId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human)) &amp;&amp; ((Me.Class == WoWClass.Warrior)) &amp;&amp; IsQuestCompleted(7)">
+			<PickUp QuestName="Simple Letter" QuestId="3100" GiverName="Marshal McBride" GiverId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human)) &amp;&amp; ((Me.Class == WoWClass.Warlock)) &amp;&amp; IsQuestCompleted(7)">
+			<PickUp QuestName="Tainted Letter" QuestId="3105" GiverName="Marshal McBride" GiverId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human)) &amp;&amp; ((Me.Class == WoWClass.Rogue)) &amp;&amp; IsQuestCompleted(7)">
+			<PickUp QuestName="Encrypted Letter" QuestId="3102" GiverName="Marshal McBride" GiverId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human)) &amp;&amp; ((Me.Class == WoWClass.Priest)) &amp;&amp; IsQuestCompleted(7)">
+			<PickUp QuestName="Hallowed Letter" QuestId="3103" GiverName="Marshal McBride" GiverId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human)) &amp;&amp; ((Me.Class == WoWClass.Paladin)) &amp;&amp; IsQuestCompleted(7)">
+			<PickUp QuestName="Consecrated Letter" QuestId="3101" GiverName="Marshal McBride" GiverId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Human) &amp;&amp; (Me.Class == WoWClass.Mage)))">
+			<TurnIn QuestName="Glyphic Letter" QuestId="3104" TurnInName="Khelden Bremen" TurnInId="198" X="-8851.57" Y="-188.234" Z="89.4958" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Human) &amp;&amp; (Me.Class == WoWClass.Warrior)))">
+			<TurnIn QuestName="Simple Letter" QuestId="3100" TurnInName="Llane Beshere" TurnInId="911" X="-8918.36" Y="-208.411" Z="82.3088" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Human) &amp;&amp; (Me.Class == WoWClass.Priest)))">
+			<TurnIn QuestName="Hallowed Letter" QuestId="3103" TurnInName="Priestess Anetta" TurnInId="375" X="-8853.59" Y="-193.336" Z="82.1157" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Human) &amp;&amp; (Me.Class == WoWClass.Paladin)))">
+			<TurnIn QuestName="Consecrated Letter" QuestId="3101" TurnInName="Brother Sammuel" TurnInId="925" X="-8914.57" Y="-215.016" Z="82.2996" />
+		</If>
+		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(783)">
+			<PickUp QuestName="Brotherhood of Thieves" QuestId="18" GiverName="Deputy Willem" GiverId="823" X="-8947.64" Y="-132.319" Z="83.7199" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Human) &amp;&amp; (Me.Class == WoWClass.Warlock)))">
+			<TurnIn QuestName="Tainted Letter" QuestId="3105" TurnInName="Drusilla La Salle" TurnInId="459" X="-8926.74" Y="-195.589" Z="80.7714" />
+			<!-- SKIP pickup Q1598 The Stolen Tome: no quest giver with a spawn in the database -->
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Human) &amp;&amp; (Me.Class == WoWClass.Rogue)))">
+			<TurnIn QuestName="Encrypted Letter" QuestId="3102" TurnInName="Jorik Kerridan" TurnInId="915" X="-8863.47" Y="-210.905" Z="80.755" />
+		</If>
+		<Objective QuestName="Investigate Echo Ridge" QuestId="15" Type="KillMob" MobId="257" KillCount="8" />
+		<TurnIn QuestName="Investigate Echo Ridge" QuestId="15" TurnInName="Marshal McBride" TurnInId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		<If Condition="IsQuestCompleted(15)">
+			<PickUp QuestName="Skirmish at Echo Ridge" QuestId="21" GiverName="Marshal McBride" GiverId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		</If>
+		<Objective QuestName="Skirmish at Echo Ridge" QuestId="21" Type="KillMob" MobId="80" KillCount="8" />
+		<Objective QuestName="Brotherhood of Thieves" QuestId="18" Type="CollectItem" ItemId="752" CollectCount="8" />
+		<TurnIn QuestName="Skirmish at Echo Ridge" QuestId="21" TurnInName="Marshal McBride" TurnInId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		<If Condition="IsQuestCompleted(21)">
+			<PickUp QuestName="Report to Goldshire" QuestId="54" GiverName="Marshal McBride" GiverId="197" X="-8902.59" Y="-162.606" Z="82.0223" />
+		</If>
+		<TurnIn QuestName="Brotherhood of Thieves" QuestId="18" TurnInName="Deputy Willem" TurnInId="823" X="-8947.64" Y="-132.319" Z="83.7199" />
+		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(33)">
+			<PickUp QuestName="Milly Osworth" QuestId="3903" GiverName="Deputy Willem" GiverId="823" X="-8947.64" Y="-132.319" Z="83.7199" />
+		</If>
+		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(18)">
+			<PickUp QuestName="Bounty on Garrick Padfoot" QuestId="6" GiverName="Deputy Willem" GiverId="823" X="-8947.64" Y="-132.319" Z="83.7199" />
+		</If>
+		<TurnIn QuestName="Milly Osworth" QuestId="3903" TurnInName="Milly Osworth" TurnInId="9296" X="-8850.29" Y="-224.03" Z="81.7778" />
+		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(3903)">
+			<PickUp QuestName="Milly's Harvest" QuestId="3904" GiverName="Milly Osworth" GiverId="9296" X="-8850.29" Y="-224.03" Z="81.7778" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Human) &amp;&amp; (Me.Class == WoWClass.Warlock)))">
+			<Objective QuestName="The Stolen Tome" QuestId="1598" Type="CollectItem" ItemId="6785" CollectCount="1" />
+		</If>
+		<Objective QuestName="Bounty on Garrick Padfoot" QuestId="6" Type="CollectItem" ItemId="182" CollectCount="1" />
+		<Objective QuestName="Milly's Harvest" QuestId="3904" Type="CollectItem" ItemId="11119" CollectCount="8" />
+		<TurnIn QuestName="Milly's Harvest" QuestId="3904" TurnInName="Milly Osworth" TurnInId="9296" X="-8850.29" Y="-224.03" Z="81.7778" />
+		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(3904)">
+			<PickUp QuestName="Grape Manifest" QuestId="3905" GiverName="Milly Osworth" GiverId="9296" X="-8850.29" Y="-224.03" Z="81.7778" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Human) &amp;&amp; (Me.Class == WoWClass.Warlock)))">
+			<!-- SKIP turn-in Q1598 The Stolen Tome: no turn-in NPC with a spawn in the database -->
+			<If Condition="((HasQuest(1598)) &amp;&amp; (!IsQuestCompleted(1598)))">
+				<CustomBehavior File="AbandonQuest" QuestId="1598" Type="Incomplete" />
+			</If>
+		</If>
+		<TurnIn QuestName="Grape Manifest" QuestId="3905" TurnInName="Brother Neals" TurnInId="952" X="-8902.13" Y="-181.646" Z="113.24" />
+		<TurnIn QuestName="Bounty on Garrick Padfoot" QuestId="6" TurnInName="Deputy Willem" TurnInId="823" X="-8947.64" Y="-132.319" Z="83.7199" />
+		<PickUp QuestName="Rest and Relaxation" QuestId="2158" GiverName="Falkhaan Isenstrider" GiverId="6774" X="-9044.56" Y="-45.9817" Z="88.4193" />
+		<CustomBehavior File="LoadProfile" ProfileName="Ding80_Main Guide (5-10)" />
+	</QuestOrder>
+</HBProfile>

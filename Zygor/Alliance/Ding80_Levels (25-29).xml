@@ -1,0 +1,1265 @@
+<HBProfile>
+	<Name>Zygor Ding80\Levels (25-29)</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Innkeeper Farley" Entry="295" Type="Food" X="-9462.66" Y="16.1915" Z="57.0459" />
+		<Vendor Name="Brog Hamfist" Entry="151" Type="Food" X="-9465.29" Y="9.6331" Z="57.1459" />
+		<Vendor Name="Barkeep Dobbins" Entry="465" Type="Food" X="-9459.98" Y="8.4114" Z="57.1459" />
+		<Vendor Name="Innkeeper Trelayne" Entry="6790" Type="Food" X="-10516" Y="-1161.21" Z="28.1161" />
+		<Vendor Name="Barkeep Hann" Entry="274" Type="Food" X="-10509.3" Y="-1155.51" Z="28.1995" />
+		<Vendor Name="Jennabink Powerseam" Entry="1454" Type="Repair" X="-3687.1" Y="-725.396" Z="16.0801" />
+		<Vendor Name="Morley Eberlein" Entry="959" Type="Repair" X="-9548.45" Y="-709.983" Z="90.5103" />
+		<Vendor Name="Murndan Derth" Entry="1461" Type="Repair" X="-3790.13" Y="-858.467" Z="11.5981" />
+		<Vendor Name="Morg Gnarltree" Entry="226" Type="Repair" X="-10596.6" Y="-1163.85" Z="30.0597" />
+		<Vendor Name="Brak Durnad" Entry="1441" Type="Repair" X="-3793.04" Y="-862.698" Z="11.6981" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="90" Name="Seasoned Wolf Kabobs">
+		<Objective Type="CollectItem" ItemId="1015" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Starving Dire Wolf" Id="213" />
+				<Mob Name="Lupos" Id="521" />
+				<Mob Name="Rabid Dire Wolf" Id="565" />
+				<Mob Name="Black Ravager" Id="628" />
+				<Mob Name="Young Black Ravager" Id="923" />
+				<Mob Name="Black Ravager Mastiff" Id="1258" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10404.8" Y="-1043.11" Z="51.784" />
+				<Hotspot X="-10354.1" Y="-1056.08" Z="50.0961" />
+				<Hotspot X="-10316" Y="-1012.54" Z="44.9533" />
+				<Hotspot X="-10348.6" Y="-982.089" Z="48.3296" />
+				<Hotspot X="-10307.6" Y="-948.075" Z="40.1439" />
+				<Hotspot X="-10271.3" Y="-1042.27" Z="44.1629" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="156" Name="Gather Rot Blossoms">
+		<Objective Type="CollectItem" ItemId="1598" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Skeletal Horror" Id="202" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10565.2" Y="356.918" Z="30.9462" />
+				<Hotspot X="-10586.6" Y="391.76" Z="32.1795" />
+				<Hotspot X="-10579" Y="440.923" Z="35.3432" />
+				<Hotspot X="-10536.4" Y="393.403" Z="31.3655" />
+				<Hotspot X="-10487.3" Y="394.844" Z="36.3066" />
+				<Hotspot X="-10489.4" Y="259.269" Z="30.3502" />
+				<Hotspot X="-10571.7" Y="277.592" Z="29.9497" />
+				<Hotspot X="-10573.2" Y="231.416" Z="30.7439" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="57" Name="The Night Watch">
+		<Objective Type="KillMob" MobId="202" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-10565.2" Y="356.918" Z="30.9462" />
+				<Hotspot X="-10586.6" Y="391.76" Z="32.1795" />
+				<Hotspot X="-10579" Y="440.923" Z="35.3432" />
+				<Hotspot X="-10536.4" Y="393.403" Z="31.3655" />
+				<Hotspot X="-10487.3" Y="394.844" Z="36.3066" />
+				<Hotspot X="-10489.4" Y="259.269" Z="30.3502" />
+				<Hotspot X="-10571.7" Y="277.592" Z="29.9497" />
+				<Hotspot X="-10573.2" Y="231.416" Z="30.7439" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="70" Name="The Legend of Stalvan">
+		<Objective Type="CollectItem" ItemId="910" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Storage Chest" Id="1560" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9463.14" Y="-2.2252" Z="63.8205" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="75" Name="The Legend of Stalvan">
+		<Objective Type="CollectItem" ItemId="921" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Marshal Haggard's Chest" Id="1562" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9549.08" Y="-1439.21" Z="62.2936" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="19" Name="Tharil'zun">
+		<Objective Type="CollectItem" ItemId="1260" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Tharil'zun" Id="486" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9442.19" Y="-3074.29" Z="136.676" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="169" Name="Wanted: Gath'Ilzogg">
+		<Objective Type="CollectItem" ItemId="3633" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Gath'Ilzogg" Id="334" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9382.84" Y="-3082.02" Z="158.155" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="115" Name="Shadow Magic">
+		<Objective Type="CollectItem" ItemId="1261" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Blackrock Shadowcaster" Id="436" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9358.32" Y="-3027.09" Z="136.758" />
+				<Hotspot X="-9390.71" Y="-3053.79" Z="156.861" />
+				<Hotspot X="-9360.73" Y="-3081.39" Z="155.48" />
+				<Hotspot X="-9399.29" Y="-3006.63" Z="136.81" />
+				<Hotspot X="-9430.26" Y="-2953.52" Z="115.942" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="180" Name="Wanted: Lieutenant Fangore">
+		<Objective Type="CollectItem" ItemId="3632" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Lieutenant Fangore" Id="703" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9111.58" Y="-3311.35" Z="102.705" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="91" Name="Solomon's Law">
+		<Objective Type="CollectItem" ItemId="1075" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Shadowhide Darkweaver" Id="429" />
+				<Mob Name="Shadowhide Slayer" Id="431" />
+				<Mob Name="Shadowhide Brute" Id="432" />
+				<Mob Name="Shadowhide Gnoll" Id="433" />
+				<Mob Name="Rabid Shadowhide Gnoll" Id="434" />
+				<Mob Name="Shadowhide Warrior" Id="568" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9111.58" Y="-3311.35" Z="102.705" />
+				<Hotspot X="-9162.64" Y="-3314.33" Z="105.371" />
+				<Hotspot X="-9142.97" Y="-3267.64" Z="102.015" />
+				<Hotspot X="-9116.21" Y="-3232.83" Z="100.599" />
+				<Hotspot X="-9138.18" Y="-3196.13" Z="107.447" />
+				<Hotspot X="-9178.1" Y="-3230.13" Z="105.545" />
+				<Hotspot X="-9215.73" Y="-3306.54" Z="100.277" />
+				<Hotspot X="-9078.26" Y="-3257.91" Z="114.709" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="249" Name="Morganth">
+		<Objective Type="CollectItem" ItemId="3617" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Morganth" Id="397" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9291.54" Y="-3309.94" Z="150.233" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="58" Name="The Night Watch">
+		<Objective Type="KillMob" MobId="604" KillCount="20">
+			<Hotspots>
+				<Hotspot X="-10347.1" Y="201.353" Z="32.7877" />
+				<Hotspot X="-10334.9" Y="137.397" Z="4.1742" />
+				<Hotspot X="-10268.3" Y="146.103" Z="1.204" />
+				<Hotspot X="-10212" Y="182.438" Z="1.6331" />
+				<Hotspot X="-10224.9" Y="226.357" Z="2.8994" />
+				<Hotspot X="-10227.5" Y="289.973" Z="2.7994" />
+				<Hotspot X="-10332.4" Y="350.98" Z="59.0401" />
+				<Hotspot X="-10340.2" Y="407.272" Z="59.7126" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="98" Name="The Legend of Stalvan">
+		<Objective Type="CollectItem" ItemId="3629" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Stalvan Mistmantle" Id="315" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10368" Y="-1254.99" Z="35.9218" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="173" Name="Worgen in the Woods">
+		<Objective Type="KillMob" MobId="533" KillCount="6">
+			<Hotspots>
+				<Hotspot X="-10540.1" Y="-920.256" Z="46.7445" />
+				<Hotspot X="-10512.5" Y="-878.195" Z="47.8963" />
+				<Hotspot X="-10488.2" Y="-913.482" Z="45.4971" />
+				<Hotspot X="-10412.2" Y="-924.673" Z="45.631" />
+				<Hotspot X="-10385.7" Y="-880.085" Z="46.321" />
+				<Hotspot X="-10576.5" Y="-840.75" Z="50.7704" />
+				<Hotspot X="-10653.6" Y="-839.113" Z="61.383" />
+				<Hotspot X="-10667.1" Y="-779.636" Z="65.9586" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="133" Name="Ghoulish Effigy">
+		<Objective Type="CollectItem" ItemId="884" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Flesh Eater" Id="3" />
+				<Mob Name="Bone Chewer" Id="210" />
+				<Mob Name="Brain Eater" Id="570" />
+				<Mob Name="Plague Spreader" Id="604" />
+				<Mob Name="Rotted One" Id="948" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10347.1" Y="201.353" Z="32.7877" />
+				<Hotspot X="-10306.8" Y="206.455" Z="34.2484" />
+				<Hotspot X="-10330.2" Y="243.43" Z="34.3995" />
+				<Hotspot X="-10381.9" Y="234.047" Z="33.3069" />
+				<Hotspot X="-10420.2" Y="217.386" Z="34.1388" />
+				<Hotspot X="-10392.4" Y="176.114" Z="35.1059" />
+				<Hotspot X="-10340.8" Y="157.929" Z="7.0671" />
+				<Hotspot X="-10264.6" Y="172.465" Z="0.6197" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="323" Name="Proving Your Worth">
+		<Objective Type="KillMob" MobId="1110" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-10406.3" Y="422.916" Z="47.715" />
+				<Hotspot X="-10368.4" Y="445.35" Z="24.9339" />
+				<Hotspot X="-10317.6" Y="464.207" Z="15.8576" />
+				<Hotspot X="-10280.7" Y="377.227" Z="15.6853" />
+				<Hotspot X="-10332.7" Y="362.263" Z="60.5037" />
+				<Hotspot X="-10382.6" Y="359.137" Z="48.7595" />
+				<Hotspot X="-10426.2" Y="343.543" Z="42.0242" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="787" KillCount="3">
+			<Hotspots>
+				<Hotspot X="-10396.1" Y="383.551" Z="46.9751" />
+				<Hotspot X="-10444.2" Y="378.12" Z="44.1067" />
+				<Hotspot X="-10445.1" Y="429.635" Z="43.1775" />
+				<Hotspot X="-10372.2" Y="456.447" Z="25.1028" />
+				<Hotspot X="-10331.8" Y="430.925" Z="15.8676" />
+				<Hotspot X="-10295.3" Y="393.907" Z="15.6853" />
+				<Hotspot X="-10346.6" Y="376.899" Z="16.0736" />
+				<Hotspot X="-10238.4" Y="378.578" Z="10.5134" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="785" KillCount="3">
+			<Hotspots>
+				<Hotspot X="-10387.7" Y="399.898" Z="29.1795" />
+				<Hotspot X="-10340.3" Y="402.548" Z="16.1547" />
+				<Hotspot X="-10355.7" Y="363.335" Z="16.0736" />
+				<Hotspot X="-10281.4" Y="398.006" Z="15.6853" />
+				<Hotspot X="-10231.3" Y="378.876" Z="10.5134" />
+				<Hotspot X="-10317.6" Y="469.852" Z="15.8267" />
+				<Hotspot X="-10367.6" Y="462.576" Z="25.1028" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="101" Name="The Totem of Infliction">
+		<Objective Type="CollectItem" ItemId="2378" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Skeletal Horror" Id="202" />
+				<Mob Name="Skeletal Warder" Id="785" />
+				<Mob Name="Skeletal Healer" Id="787" />
+				<Mob Name="Skeletal Raider" Id="1110" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10406.3" Y="422.916" Z="47.715" />
+				<Hotspot X="-10396.1" Y="383.551" Z="46.9751" />
+				<Hotspot X="-10355.7" Y="363.335" Z="16.0736" />
+				<Hotspot X="-10340.3" Y="402.548" Z="16.1547" />
+				<Hotspot X="-10368.4" Y="445.35" Z="24.9339" />
+				<Hotspot X="-10317.6" Y="464.207" Z="15.8576" />
+				<Hotspot X="-10455.4" Y="404.736" Z="42.3885" />
+				<Hotspot X="-10426.2" Y="343.543" Z="42.0242" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="1129" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Flesh Eater" Id="3" />
+				<Mob Name="Bone Chewer" Id="210" />
+				<Mob Name="Brain Eater" Id="570" />
+				<Mob Name="Plague Spreader" Id="604" />
+				<Mob Name="Rotted One" Id="948" />
+				<Mob Name="Fetid Corpse" Id="1270" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10347.1" Y="201.353" Z="32.7877" />
+				<Hotspot X="-10306.8" Y="206.455" Z="34.2484" />
+				<Hotspot X="-10330.2" Y="243.43" Z="34.3995" />
+				<Hotspot X="-10381.9" Y="234.047" Z="33.3069" />
+				<Hotspot X="-10420.2" Y="217.386" Z="34.1388" />
+				<Hotspot X="-10392.4" Y="176.114" Z="35.1059" />
+				<Hotspot X="-10340.8" Y="157.929" Z="7.0671" />
+				<Hotspot X="-10264.6" Y="172.465" Z="0.6197" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="1130" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Venom Web Spider" Id="217" />
+				<Mob Name="Pygmy Venom Web Spider" Id="539" />
+				<Mob Name="Green Recluse" Id="569" />
+				<Mob Name="Naraxis" Id="574" />
+				<Mob Name="Black Widow Hatchling" Id="930" />
+				<Mob Name="Carrion Recluse" Id="949" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10642.4" Y="-1307.47" Z="45.0681" />
+				<Hotspot X="-10691" Y="-1337.15" Z="48.4064" />
+				<Hotspot X="-10654.2" Y="-1370.83" Z="55.104" />
+				<Hotspot X="-10647.8" Y="-1474.88" Z="90.8654" />
+				<Hotspot X="-10573" Y="-1498.31" Z="91.5757" />
+				<Hotspot X="-10767" Y="-1267.6" Z="35.2845" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="134" Name="Ogre Thieves">
+		<Objective Type="CollectItem" ItemId="1349" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Abercrombie's Crate" Id="119" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11091" Y="-68.9618" Z="15.4935" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="228" Name="Mor'Ladim">
+		<Objective Type="CollectItem" ItemId="3514" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Mor'Ladim" Id="522" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10363.4" Y="359.383" Z="53.171" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="221" Name="Worgen in the Woods">
+		<Objective Type="KillMob" MobId="205" KillCount="12">
+			<Hotspots>
+				<Hotspot X="-10576.1" Y="-955.146" Z="48.4027" />
+				<Hotspot X="-10609.6" Y="-979.199" Z="62.4861" />
+				<Hotspot X="-10650.4" Y="-912.464" Z="52.1801" />
+				<Hotspot X="-10613.6" Y="-894.087" Z="48.9565" />
+				<Hotspot X="-10523.8" Y="-956.97" Z="44.9973" />
+				<Hotspot X="-10452.8" Y="-890.506" Z="44.148" />
+				<Hotspot X="-10485.9" Y="-844.425" Z="51.9406" />
+				<Hotspot X="-10530.9" Y="-786.683" Z="57.4378" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="335" Name="A Noble Brew">
+		<Objective Type="CollectItem" ItemId="2784" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Musquash Root" Id="2084" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4223.8" Y="-3068.66" Z="8.3656" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2779" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Tear of Tilloa" Id="321" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10363.7" Y="-1282.15" Z="35.3959" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="324" Name="The Lost Ingots">
+		<Objective Type="CollectItem" ItemId="2702" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Bluegill Raider" Id="1418" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3945.32" Y="-901.314" Z="0.4914" />
+				<Hotspot X="-3954.51" Y="-857.452" Z="-13.8065" />
+				<Hotspot X="-3975.57" Y="-812.086" Z="-14.587" />
+				<Hotspot X="-4018.35" Y="-783.367" Z="-14.4094" />
+				<Hotspot X="-4049.84" Y="-746.692" Z="-13.3935" />
+				<Hotspot X="-4088.19" Y="-810.431" Z="2.2206" />
+				<Hotspot X="-4120.97" Y="-845.95" Z="16.0536" />
+				<Hotspot X="-3901.76" Y="-923.839" Z="-11.0153" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="464" Name="War Banners">
+		<Objective Type="CollectItem" ItemId="3337" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Dragonmaw Raider" Id="1034" />
+				<Mob Name="Dragonmaw Swamprunner" Id="1035" />
+				<Mob Name="Dragonmaw Centurion" Id="1036" />
+				<Mob Name="Dragonmaw Battlemaster" Id="1037" />
+				<Mob Name="Dragonmaw Shadowwarder" Id="1038" />
+				<Mob Name="Dragonmaw Bonewarder" Id="1057" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3275.76" Y="-2177.27" Z="31.9013" />
+				<Hotspot X="-3328.94" Y="-2196.34" Z="41.0129" />
+				<Hotspot X="-3354.55" Y="-2234.26" Z="50.6573" />
+				<Hotspot X="-3306.63" Y="-2244.11" Z="53.136" />
+				<Hotspot X="-3323.53" Y="-2143.74" Z="37.0919" />
+				<Hotspot X="-3376.76" Y="-2133.07" Z="58.7149" />
+				<Hotspot X="-3267.82" Y="-2121.21" Z="40.4349" />
+				<Hotspot X="-3249.32" Y="-2084.92" Z="26.9734" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="289" Name="The Cursed Crew">
+		<Objective Type="CollectItem" ItemId="3619" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="First Mate Snellig" Id="1159" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2979.71" Y="-959.726" Z="-7.1871" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1157" KillCount="13">
+			<Hotspots>
+				<Hotspot X="-2956.03" Y="-972.967" Z="4.5546" />
+				<Hotspot X="-2989.6" Y="-950.5" Z="3.2637" />
+				<Hotspot X="-2802.3" Y="-1011.06" Z="4.3896" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1158" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-2946.88" Y="-973.204" Z="1.8863" />
+				<Hotspot X="-3000.9" Y="-948.685" Z="-0.9009" />
+				<Hotspot X="-2834.3" Y="-971.43" Z="-12.9049" />
+				<Hotspot X="-2808.35" Y="-1012.68" Z="3.608" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="290" Name="Lifting the Curse">
+		<Objective Type="CollectItem" ItemId="2629" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Captain Halyndor" Id="1160" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2798.54" Y="-1028.4" Z="7.5142" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="471" Name="Apprentice's Duties">
+		<Objective Type="CollectItem" ItemId="3348" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Giant Wetlands Crocolisk" Id="2089" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2893.1" Y="-1149.15" Z="9.5025" />
+				<Hotspot X="-2888.13" Y="-1091.87" Z="8.1758" />
+				<Hotspot X="-2950.27" Y="-1117.76" Z="9.4623" />
+				<Hotspot X="-2953.41" Y="-1020.38" Z="10.0086" />
+				<Hotspot X="-2796.87" Y="-1112.82" Z="1.564" />
+				<Hotspot X="-2831.14" Y="-1176.66" Z="6.5397" />
+				<Hotspot X="-2780.53" Y="-1184.59" Z="6.4691" />
+				<Hotspot X="-2814.2" Y="-1240.65" Z="6.2125" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="275" Name="Blisters on The Land">
+		<Objective Type="KillMob" MobId="1040" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-2912.45" Y="-1155.48" Z="6.3309" />
+				<Hotspot X="-2929.39" Y="-1249.22" Z="6.2125" />
+				<Hotspot X="-2974.8" Y="-1318.68" Z="6.3087" />
+				<Hotspot X="-3029.99" Y="-1364.51" Z="3.2989" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="294" Name="Ormer's Revenge">
+		<Objective Type="KillMob" MobId="1020" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-3420.3" Y="-1616.64" Z="10.3352" />
+				<Hotspot X="-3436.82" Y="-1514.93" Z="11.9798" />
+				<Hotspot X="-3456.24" Y="-1464.93" Z="10.6347" />
+				<Hotspot X="-3437.04" Y="-1405.65" Z="10.6577" />
+				<Hotspot X="-3519.68" Y="-1432.48" Z="9.5134" />
+				<Hotspot X="-3346.43" Y="-1513.6" Z="9.7824" />
+				<Hotspot X="-3316.88" Y="-1582.54" Z="9.271" />
+				<Hotspot X="-3308.28" Y="-1692.74" Z="9.677" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1021" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-3398.36" Y="-1604.39" Z="10.0856" />
+				<Hotspot X="-3362.33" Y="-1638.55" Z="11.2151" />
+				<Hotspot X="-3486.69" Y="-1469.99" Z="9.271" />
+				<Hotspot X="-3595.69" Y="-1391.35" Z="10.1277" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="295" Name="Ormer's Revenge">
+		<Objective Type="KillMob" MobId="1022" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-3409.11" Y="-1814.36" Z="17.5763" />
+				<Hotspot X="-3377.73" Y="-1779.3" Z="33.6594" />
+				<Hotspot X="-3351.6" Y="-1813.42" Z="24.747" />
+				<Hotspot X="-3346.03" Y="-1872.59" Z="26.1311" />
+				<Hotspot X="-3480.99" Y="-1880.51" Z="23.4294" />
+				<Hotspot X="-3528.41" Y="-1853.26" Z="24.3207" />
+				<Hotspot X="-3551.23" Y="-1813.87" Z="25.3162" />
+				<Hotspot X="-3440.66" Y="-1706.21" Z="57.2935" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1023" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-3423.08" Y="-1844.35" Z="18.0564" />
+				<Hotspot X="-3421.09" Y="-1779.82" Z="24.8787" />
+				<Hotspot X="-3478.4" Y="-1789.35" Z="17.335" />
+				<Hotspot X="-3513.64" Y="-1809.07" Z="25.7241" />
+				<Hotspot X="-3478.14" Y="-1748.96" Z="23.9907" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="299" Name="Uncovering the Past">
+		<Objective Type="CollectItem" ItemId="2658" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Ancient Relic" Id="35252" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3444.59" Y="-1833.84" Z="24.9106" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2659" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Ancient Relic" Id="334" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3373.47" Y="-1810.15" Z="16.2407" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2660" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Ancient Relic" Id="333" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3371.96" Y="-1846.54" Z="16.5207" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2661" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Loose Soil" Id="331" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3308.06" Y="-1899.06" Z="31.7356" />
+				<Hotspot X="-3563.83" Y="-1767.35" Z="79.1001" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="296" Name="Ormer's Revenge">
+		<Objective Type="CollectItem" ItemId="3638" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sarltooth" Id="1353" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3567.61" Y="-1765.01" Z="80.8668" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="474" Name="Defeat Nek'rosh">
+		<Objective Type="CollectItem" ItemId="3625" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Chieftain Nek'rosh" Id="2091" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3654.34" Y="-2600.74" Z="52.0236" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="304" Name="A Grim Task">
+		<Objective Type="CollectItem" ItemId="3639" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Balgaras the Foul" Id="1364" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2931.11" Y="-2973.81" Z="30.6708" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="303" Name="The Dark Iron War">
+		<Objective Type="KillMob" MobId="1051" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-2937.96" Y="-2953.86" Z="31.8491" />
+				<Hotspot X="-2962.81" Y="-2995.52" Z="37.1024" />
+				<Hotspot X="-2833.24" Y="-2889.64" Z="34.0047" />
+				<Hotspot X="-2802.98" Y="-2849.65" Z="41.8773" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1053" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-2899.07" Y="-2935.4" Z="34.0578" />
+				<Hotspot X="-2859.92" Y="-2973.38" Z="40.3179" />
+				<Hotspot X="-2827.15" Y="-2875.44" Z="32.7418" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1052" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-2907.68" Y="-2955.41" Z="33.1593" />
+				<Hotspot X="-2863.89" Y="-2948.53" Z="33.7424" />
+				<Hotspot X="-2822.17" Y="-2868.12" Z="32.7418" />
+				<Hotspot X="-2941.24" Y="-3006.21" Z="39.5239" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1054" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-2919.98" Y="-2960.97" Z="30.7631" />
+				<Hotspot X="-2880.25" Y="-2946.53" Z="34.3791" />
+				<Hotspot X="-2819.34" Y="-2875.17" Z="32.7418" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2746" Name="Items of Some Consequence">
+		<Objective Type="CollectItem" ItemId="8683" CollectCount="2">
+			<CollectFrom>
+				<GameObject Name="Clara's Fresh Apples" Id="142076" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9262.57" Y="356.955" Z="77.8105" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4306" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Flesh Eater" Id="3" />
+				<Mob Name="Bone Chewer" Id="210" />
+				<Mob Name="Grave Robber" Id="218" />
+				<Mob Name="Lord Malathrom" Id="503" />
+				<Mob Name="Mor'Ladim" Id="522" />
+				<Mob Name="Brain Eater" Id="570" />
+				<GameObject Name="Solid Chest" Id="2850" />
+				<GameObject Name="Solid Chest" Id="2852" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10192.6" Y="312.351" Z="6.9174" />
+				<Hotspot X="-10222.3" Y="369.688" Z="10.5134" />
+				<Hotspot X="-10205.6" Y="476.661" Z="27.0559" />
+				<Hotspot X="-10324.5" Y="489.261" Z="12.8491" />
+				<Hotspot X="-10369.9" Y="358.59" Z="15.9736" />
+				<Hotspot X="-10202.3" Y="237.301" Z="0.931" />
+				<Hotspot X="-10212" Y="182.438" Z="1.6331" />
+				<Hotspot X="-8334" Y="394.722" Z="122.374" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="434" Name="The Attack!">
+		<Objective Type="KillMob" MobId="1754" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-8334" Y="394.722" Z="122.374" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1244" Name="The Missing Diplomat">
+		<Objective Type="CollectItem" ItemId="5947" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Defias Strongbox" Id="21052" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11014" Y="187.361" Z="28.7922" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="222" Name="Worgen in the Woods">
+		<Objective Type="KillMob" MobId="206" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-10969.1" Y="-1122.76" Z="40.1916" />
+				<Hotspot X="-11014.3" Y="-1135.9" Z="38.7108" />
+				<Hotspot X="-11003.4" Y="-1085.17" Z="47.6069" />
+				<Hotspot X="-11061.5" Y="-1111.64" Z="39.1481" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="920" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-11077.6" Y="-1140.17" Z="42.8358" />
+				<Hotspot X="-11133.2" Y="-1167.76" Z="43.105" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="181" Name="Look To The Stars">
+		<Objective Type="CollectItem" ItemId="1968" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Zzarc' Vul" Id="300" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11224.8" Y="-160.547" Z="5.9639" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Leveling/Ding80GuidesAllianceTBCduo.lua: Ding80's Alliance Leveling Guides TBC duo\Levels (25-29) -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Ding80_Levels (25-29)");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<Objective QuestName="Seasoned Wolf Kabobs" QuestId="90" Type="CollectItem" ItemId="1015" CollectCount="10" />
+		<!-- REVIEW Q90 Seasoned Wolf Kabobs: item 2665 Stormwind Seasoning Herbs has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(90)) &amp;&amp; (IsQuestCompleted(90)))">
+			<TurnIn QuestName="Seasoned Wolf Kabobs" QuestId="90" TurnInName="Chef Grual" TurnInId="272" X="-10507.7" Y="-1161.96" Z="28.1995" />
+		</If>
+		<If Condition="((HasQuest(90)) &amp;&amp; (!IsQuestCompleted(90)))">
+			<CustomBehavior File="AbandonQuest" QuestId="90" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Zombie Juice" QuestId="158" TurnInName="Tavernkeep Smitts" TurnInId="273" X="-10517.4" Y="-1158.66" Z="28.1995" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(158)">
+			<PickUp QuestName="Gather Rot Blossoms" QuestId="156" GiverName="Tavernkeep Smitts" GiverId="273" X="-10517.4" Y="-1158.66" Z="28.1995" />
+		</If>
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="68" TurnInName="Clerk Daltry" TurnInId="267" X="-10560" Y="-1124.98" Z="30.071" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(68)">
+			<PickUp QuestName="The Legend of Stalvan" QuestId="69" GiverName="Clerk Daltry" GiverId="267" X="-10560" Y="-1124.98" Z="30.071" />
+		</If>
+		<TurnIn QuestName="Sven's Revenge" QuestId="95" TurnInName="Mound of loose dirt" TurnInId="59" TurnInType="Object" X="-11115.5" Y="-512.672" Z="32.6047" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(95)">
+			<PickUp QuestName="Sven's Camp" QuestId="230" GiverName="Mound of loose dirt" GiverId="59" GiverType="Object" X="-11115.5" Y="-512.672" Z="32.6047" />
+		</If>
+		<Objective QuestName="The Night Watch" QuestId="57" Type="KillMob" MobId="202" KillCount="15" />
+		<Objective QuestName="Gather Rot Blossoms" QuestId="156" Type="CollectItem" ItemId="1598" CollectCount="8" />
+		<TurnIn QuestName="Sven's Camp" QuestId="230" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(230)">
+			<PickUp QuestName="The Shadowy Figure" QuestId="262" GiverName="Sven Yorgen" GiverId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		</If>
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="69" TurnInName="Innkeeper Farley" TurnInId="295" X="-9462.66" Y="16.1915" Z="57.0459" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(69)">
+			<PickUp QuestName="The Legend of Stalvan" QuestId="70" GiverName="Innkeeper Farley" GiverId="295" X="-9462.66" Y="16.1915" Z="57.0459" />
+		</If>
+		<Objective QuestName="The Legend of Stalvan" QuestId="70" Type="CollectItem" ItemId="910" CollectCount="1" />
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="70" TurnInName="Caretaker Folsom" TurnInId="297" X="-8834" Y="983.482" Z="98.47" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(70)">
+			<PickUp QuestName="The Legend of Stalvan" QuestId="72" GiverName="Caretaker Folsom" GiverId="297" X="-8834" Y="983.482" Z="98.47" />
+		</If>
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="72" TurnInName="Sealed Crate" TurnInId="1561" TurnInType="Object" X="-8830.35" Y="985.121" Z="98.8379" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(72)">
+			<PickUp QuestName="The Legend of Stalvan" QuestId="74" GiverName="Sealed Crate" GiverId="1561" GiverType="Object" X="-8830.35" Y="985.121" Z="98.8379" />
+		</If>
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="74" TurnInName="Marshal Haggard" TurnInId="294" X="-9545.33" Y="-1401.1" Z="54.1478" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(74)">
+			<PickUp QuestName="The Legend of Stalvan" QuestId="75" GiverName="Marshal Haggard" GiverId="294" X="-9545.33" Y="-1401.1" Z="54.1478" />
+		</If>
+		<Objective QuestName="The Legend of Stalvan" QuestId="75" Type="CollectItem" ItemId="921" CollectCount="1" />
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="75" TurnInName="Marshal Haggard" TurnInId="294" X="-9545.33" Y="-1401.1" Z="54.1478" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(75)">
+			<PickUp QuestName="The Legend of Stalvan" QuestId="78" GiverName="Marshal Haggard" GiverId="294" X="-9545.33" Y="-1401.1" Z="54.1478" />
+		</If>
+		<Objective QuestName="Tharil'zun" QuestId="19" Type="CollectItem" ItemId="1260" CollectCount="1" />
+		<Objective QuestName="Wanted: Gath'Ilzogg" QuestId="169" Type="CollectItem" ItemId="3633" CollectCount="1" />
+		<Objective QuestName="Shadow Magic" QuestId="115" Type="CollectItem" ItemId="1261" CollectCount="3" />
+		<Objective QuestName="Wanted: Lieutenant Fangore" QuestId="180" Type="CollectItem" ItemId="3632" CollectCount="1" />
+		<Objective QuestName="Solomon's Law" QuestId="91" Type="CollectItem" ItemId="1075" CollectCount="10" />
+		<TurnIn QuestName="A Watchful Eye" QuestId="94" TurnInName="Old Lion Statue" TurnInId="31" TurnInType="Object" X="-9253.08" Y="-3404.9" Z="104.348" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(94)">
+			<PickUp QuestName="Looking Further" QuestId="248" GiverName="Old Lion Statue" GiverId="31" GiverType="Object" X="-9253.08" Y="-3404.9" Z="104.348" />
+		</If>
+		<TurnIn QuestName="Looking Further" QuestId="248" TurnInName="An Empty Jar" TurnInId="76" TurnInType="Object" X="-9296.65" Y="-2943.81" Z="164.84" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(248)">
+			<PickUp QuestName="Morganth" QuestId="249" GiverName="Theocritus" GiverId="313" X="-9553.08" Y="-728.152" Z="99.2522" />
+		</If>
+		<Objective QuestName="Morganth" QuestId="249" Type="CollectItem" ItemId="3617" CollectCount="1" />
+		<If Condition="(Me.Level &gt;= 22)">
+			<PickUp QuestName="What Comes Around..." QuestId="386" GiverName="Guard Berton" GiverId="859" X="-9249.39" Y="-2140.79" Z="64.2329" />
+		</If>
+		<TurnIn QuestName="Wanted: Gath'Ilzogg" QuestId="169" TurnInName="Magistrate Solomon" TurnInId="344" X="-9218.61" Y="-2221.8" Z="67.6227" />
+		<TurnIn QuestName="Wanted: Lieutenant Fangore" QuestId="180" TurnInName="Magistrate Solomon" TurnInId="344" X="-9218.61" Y="-2221.8" Z="67.6227" />
+		<TurnIn QuestName="Solomon's Law" QuestId="91" TurnInName="Bailiff Conacher" TurnInId="900" X="-9215.92" Y="-2215.91" Z="66.5231" />
+		<TurnIn QuestName="Tharil'zun" QuestId="19" TurnInName="Marshal Marris" TurnInId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
+		<TurnIn QuestName="Shadow Magic" QuestId="115" TurnInName="Marshal Marris" TurnInId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
+		<TurnIn QuestName="Morganth" QuestId="249" TurnInName="Theocritus" TurnInId="313" X="-9553.08" Y="-728.152" Z="99.2522" />
+		<If Condition="HasItem(1962) &amp;&amp; !HasQuest(178) &amp;&amp; !IsQuestCompleted(178) &amp;&amp; (Me.Level &gt;= 15)">
+			<PickUp QuestName="Theocritus' Retrieval" QuestId="178" GiverName="Glowing Shadowhide Pendant" GiverId="1962" GiverType="Item" />
+		</If>
+		<TurnIn QuestName="Theocritus' Retrieval" QuestId="178" TurnInName="Theocritus" TurnInId="313" X="-9553.08" Y="-728.152" Z="99.2522" />
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="78" TurnInName="Tavernkeep Smitts" TurnInId="273" X="-10517.4" Y="-1158.66" Z="28.1995" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(78)">
+			<PickUp QuestName="The Legend of Stalvan" QuestId="79" GiverName="Tavernkeep Smitts" GiverId="273" X="-10517.4" Y="-1158.66" Z="28.1995" />
+		</If>
+		<TurnIn QuestName="Gather Rot Blossoms" QuestId="156" TurnInName="Tavernkeep Smitts" TurnInId="273" X="-10517.4" Y="-1158.66" Z="28.1995" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(156)">
+			<PickUp QuestName="Juice Delivery" QuestId="159" GiverName="Tavernkeep Smitts" GiverId="273" X="-10517.4" Y="-1158.66" Z="28.1995" />
+		</If>
+		<TurnIn QuestName="The Shadowy Figure" QuestId="262" TurnInName="Madame Eva" TurnInId="265" X="-10532" Y="-1213.64" Z="28.2175" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(262)">
+			<PickUp QuestName="The Shadowy Search Continues" QuestId="265" GiverName="Madame Eva" GiverId="265" X="-10532" Y="-1213.64" Z="28.2175" />
+		</If>
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="79" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(79)">
+			<PickUp QuestName="The Legend of Stalvan" QuestId="80" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		</If>
+		<!-- REVIEW Q57 The Night Watch: kill 531 Skeletal Fiend x15: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(57)) &amp;&amp; (IsQuestCompleted(57)))">
+			<TurnIn QuestName="The Night Watch" QuestId="57" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		</If>
+		<If Condition="((HasQuest(57)) &amp;&amp; (!IsQuestCompleted(57)))">
+			<CustomBehavior File="AbandonQuest" QuestId="57" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(57)">
+			<PickUp QuestName="The Night Watch" QuestId="58" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		</If>
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="80" TurnInName="Clerk Daltry" TurnInId="267" X="-10560" Y="-1124.98" Z="30.071" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(80)">
+			<PickUp QuestName="The Legend of Stalvan" QuestId="97" GiverName="Clerk Daltry" GiverId="267" X="-10560" Y="-1124.98" Z="30.071" />
+		</If>
+		<TurnIn QuestName="The Shadowy Search Continues" QuestId="265" TurnInName="Clerk Daltry" TurnInId="267" X="-10560" Y="-1124.98" Z="30.071" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(265)">
+			<PickUp QuestName="Inquire at the Inn" QuestId="266" GiverName="Clerk Daltry" GiverId="267" X="-10560" Y="-1124.98" Z="30.071" />
+		</If>
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="97" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(97)">
+			<PickUp QuestName="The Legend of Stalvan" QuestId="98" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		</If>
+		<TurnIn QuestName="Inquire at the Inn" QuestId="266" TurnInName="Tavernkeep Smitts" TurnInId="273" X="-10517.4" Y="-1158.66" Z="28.1995" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(266)">
+			<PickUp QuestName="Finding the Shadowy Figure" QuestId="453" GiverName="Tavernkeep Smitts" GiverId="273" X="-10517.4" Y="-1158.66" Z="28.1995" />
+		</If>
+		<If Condition="(Me.Level &gt;= 23)">
+			<PickUp QuestName="Worgen in the Woods" QuestId="173" GiverName="Calor" GiverId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		</If>
+		<Objective QuestName="Worgen in the Woods" QuestId="173" Type="KillMob" MobId="533" KillCount="6" />
+		<TurnIn QuestName="Juice Delivery" QuestId="159" TurnInName="Abercrombie" TurnInId="289" X="-10283" Y="74.4014" Z="38.9313" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(159)">
+			<PickUp QuestName="Ghoulish Effigy" QuestId="133" GiverName="Abercrombie" GiverId="289" X="-10283" Y="74.4014" Z="38.9313" />
+		</If>
+		<TurnIn QuestName="Finding the Shadowy Figure" QuestId="453" TurnInName="Jitters" TurnInId="288" X="-10731.4" Y="337.138" Z="38.4686" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(453)">
+			<PickUp QuestName="Return to Sven" QuestId="268" GiverName="Jitters" GiverId="288" X="-10731.4" Y="337.138" Z="38.4686" />
+		</If>
+		<TurnIn QuestName="Return to Sven" QuestId="268" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(268)">
+			<PickUp QuestName="Proving Your Worth" QuestId="323" GiverName="Sven Yorgen" GiverId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		</If>
+		<Objective QuestName="Proving Your Worth" QuestId="323" Type="KillMob" MobId="1110" KillCount="15" />
+		<Objective QuestName="Proving Your Worth" QuestId="323" Type="KillMob" MobId="787" KillCount="3" />
+		<Objective QuestName="Proving Your Worth" QuestId="323" Type="KillMob" MobId="785" KillCount="3" />
+		<Objective QuestName="The Totem of Infliction" QuestId="101" Type="CollectItem" ItemId="2378" CollectCount="10" />
+		<Objective QuestName="The Night Watch" QuestId="58" Type="KillMob" MobId="604" KillCount="20" />
+		<Objective QuestName="The Totem of Infliction" QuestId="101" Type="CollectItem" ItemId="1129" CollectCount="10" />
+		<Objective QuestName="Ghoulish Effigy" QuestId="133" Type="CollectItem" ItemId="884" CollectCount="7" />
+		<TurnIn QuestName="Ghoulish Effigy" QuestId="133" TurnInName="Abercrombie" TurnInId="289" X="-10283" Y="74.4014" Z="38.9313" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(133)">
+			<PickUp QuestName="Ogre Thieves" QuestId="134" GiverName="Abercrombie" GiverId="289" X="-10283" Y="74.4014" Z="38.9313" />
+		</If>
+		<If Condition="(Me.Level &gt;= 25)">
+			<PickUp QuestName="The Weathered Grave" QuestId="225" GiverName="A Weathered Grave" GiverId="61" GiverType="Object" X="-10240.1" Y="354.663" Z="50.3859" />
+		</If>
+		<TurnIn QuestName="Proving Your Worth" QuestId="323" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(323)">
+			<PickUp QuestName="Seeking Wisdom" QuestId="269" GiverName="Sven Yorgen" GiverId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		</If>
+		<Objective QuestName="The Totem of Infliction" QuestId="101" Type="CollectItem" ItemId="1130" CollectCount="5" />
+		<TurnIn QuestName="The Totem of Infliction" QuestId="101" TurnInName="Madame Eva" TurnInId="265" X="-10532" Y="-1213.64" Z="28.2175" />
+		<TurnIn QuestName="The Weathered Grave" QuestId="225" TurnInName="Sirra Von'Indi" TurnInId="268" X="-10573.7" Y="-1128" Z="29.1669" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(225)">
+			<PickUp QuestName="Morgan Ladimore" QuestId="227" GiverName="Sirra Von'Indi" GiverId="268" X="-10573.7" Y="-1128" Z="29.1669" />
+		</If>
+		<If Condition="(Me.Level &gt;= 22)">
+			<PickUp QuestName="Crime and Punishment" QuestId="377" GiverName="Councilman Millstipe" GiverId="270" X="-10577" Y="-1108.37" Z="30.0693" />
+		</If>
+		<TurnIn QuestName="Morgan Ladimore" QuestId="227" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(227)">
+			<PickUp QuestName="Mor'Ladim" QuestId="228" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		</If>
+		<TurnIn QuestName="The Night Watch" QuestId="58" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<TurnIn QuestName="Worgen in the Woods" QuestId="173" TurnInName="Calor" TurnInId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		<If Condition="(Me.Level &gt;= 23) &amp;&amp; IsQuestCompleted(173)">
+			<PickUp QuestName="Worgen in the Woods" QuestId="221" GiverName="Calor" GiverId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		</If>
+		<If Condition="((Me.Class == WoWClass.Warlock))">
+			<If Condition="(Me.Level &gt;= 25)">
+				<PickUp QuestName="A Noble Brew" QuestId="335" GiverName="Zardeth of the Black Claw" GiverId="1435" X="-8984" Y="1025.49" Z="101.587" />
+			</If>
+		</If>
+		<TurnIn QuestName="Seeking Wisdom" QuestId="269" TurnInName="Bishop Farthing" TurnInId="1212" X="-8529" Y="855.316" Z="106.619" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(269)">
+			<PickUp QuestName="The Doomed Fleet" QuestId="270" GiverName="Bishop Farthing" GiverId="1212" X="-8529" Y="855.316" Z="106.619" />
+		</If>
+		<If Condition="((Me.Class == WoWClass.Warlock))">
+			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 20)">
+				<PickUp QuestName="Gakin's Summons" QuestId="1717" GiverName="Lago Blackwrench" GiverId="6120" X="-4618.12" Y="-1090.13" Z="501.452" />
+			</If>
+		</If>
+		<TurnIn QuestName="The Doomed Fleet" QuestId="270" TurnInName="Glorin Steelbrow" TurnInId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(270)">
+			<PickUp QuestName="Lightforge Iron" QuestId="321" GiverName="Glorin Steelbrow" GiverId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		</If>
+		<TurnIn QuestName="Lightforge Iron" QuestId="321" TurnInName="Waterlogged Chest" TurnInId="2734" TurnInType="Object" X="-3917.21" Y="-890.293" Z="0.3229" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(321)">
+			<PickUp QuestName="The Lost Ingots" QuestId="324" GiverName="Waterlogged Chest" GiverId="2734" GiverType="Object" X="-3917.21" Y="-890.293" Z="0.3229" />
+		</If>
+		<Objective QuestName="The Lost Ingots" QuestId="324" Type="CollectItem" ItemId="2702" CollectCount="5" />
+		<TurnIn QuestName="The Lost Ingots" QuestId="324" TurnInName="Glorin Steelbrow" TurnInId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(324)">
+			<PickUp QuestName="Blessed Arm" QuestId="322" GiverName="Glorin Steelbrow" GiverId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		</If>
+		<If Condition="(Me.Level &gt;= 25)">
+			<PickUp QuestName="Fall of Dun Modr" QuestId="472" GiverName="Harlo Barnaby" GiverId="2097" X="-3688.57" Y="-838.11" Z="11.2478" />
+		</If>
+		<If Condition="(Me.Level &gt;= 23)">
+			<PickUp QuestName="Report to Captain Stoutfist" QuestId="473" GiverName="Valstag Ironjaw" GiverId="2086" X="-3716.14" Y="-807.058" Z="10.0639" />
+		</If>
+		<TurnIn QuestName="Report to Captain Stoutfist" QuestId="473" TurnInName="Captain Stoutfist" TurnInId="2104" X="-3732.46" Y="-797.345" Z="26.7802" />
+		<If Condition="(Me.Level &gt;= 23) &amp;&amp; IsQuestCompleted(473)">
+			<PickUp QuestName="War Banners" QuestId="464" GiverName="Captain Stoutfist" GiverId="2104" X="-3732.46" Y="-797.345" Z="26.7802" />
+		</If>
+		<TurnIn QuestName="Reclaiming Goods" QuestId="281" TurnInName="Damaged Crate" TurnInId="261" TurnInType="Object" X="-3288.32" Y="-948.694" Z="8.9405" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(281)">
+			<PickUp QuestName="The Search Continues" QuestId="284" GiverName="Damaged Crate" GiverId="261" GiverType="Object" X="-3288.32" Y="-948.694" Z="8.9405" />
+		</If>
+		<TurnIn QuestName="The Search Continues" QuestId="284" TurnInName="Sealed Barrel" TurnInId="142151" TurnInType="Object" X="-3201.4" Y="-952.171" Z="8.45" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(284)">
+			<PickUp QuestName="Search More Hovels" QuestId="285" GiverName="Sealed Barrel" GiverId="142151" GiverType="Object" X="-3201.4" Y="-952.171" Z="8.45" />
+		</If>
+		<TurnIn QuestName="Search More Hovels" QuestId="285" TurnInName="Half-buried Barrel" TurnInId="259" TurnInType="Object" X="-3107.43" Y="-966.177" Z="7.8842" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(285)">
+			<PickUp QuestName="Return the Statuette" QuestId="286" GiverName="Half-buried Barrel" GiverId="259" GiverType="Object" X="-3107.43" Y="-966.177" Z="7.8842" />
+		</If>
+		<Objective QuestName="The Cursed Crew" QuestId="289" Type="CollectItem" ItemId="3619" CollectCount="1" />
+		<Objective QuestName="The Cursed Crew" QuestId="289" Type="KillMob" MobId="1157" KillCount="13" />
+		<Objective QuestName="The Cursed Crew" QuestId="289" Type="KillMob" MobId="1158" KillCount="5" />
+		<Objective QuestName="War Banners" QuestId="464" Type="CollectItem" ItemId="3337" CollectCount="8" />
+		<TurnIn QuestName="The Cursed Crew" QuestId="289" TurnInName="First Mate Fitzsimmons" TurnInId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(289)">
+			<PickUp QuestName="Lifting the Curse" QuestId="290" GiverName="First Mate Fitzsimmons" GiverId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
+		</If>
+		<TurnIn QuestName="Return the Statuette" QuestId="286" TurnInName="Karl Boran" TurnInId="1242" X="-3761.23" Y="-733.229" Z="8.0497" />
+		<TurnIn QuestName="War Banners" QuestId="464" TurnInName="Captain Stoutfist" TurnInId="2104" X="-3732.46" Y="-797.345" Z="26.7802" />
+		<If Condition="(Me.Level &gt;= 23) &amp;&amp; IsQuestCompleted(464)">
+			<PickUp QuestName="Nek'rosh's Gambit" QuestId="465" GiverName="Captain Stoutfist" GiverId="2104" X="-3732.46" Y="-797.345" Z="26.7802" />
+		</If>
+		<Objective QuestName="Lifting the Curse" QuestId="290" Type="CollectItem" ItemId="2629" CollectCount="1" />
+		<TurnIn QuestName="Lifting the Curse" QuestId="290" TurnInName="Intrepid's Locked Strongbox" TurnInId="112948" TurnInType="Object" X="-2810.56" Y="-984.148" Z="-13.3295" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(290)">
+			<PickUp QuestName="The Eye of Paleth" QuestId="292" GiverName="Intrepid's Locked Strongbox" GiverId="112948" GiverType="Object" X="-2810.56" Y="-984.148" Z="-13.3295" />
+		</If>
+		<Objective QuestName="Apprentice's Duties" QuestId="471" Type="CollectItem" ItemId="3348" CollectCount="6" />
+		<Objective QuestName="Blisters on The Land" QuestId="275" Type="KillMob" MobId="1040" KillCount="8" />
+		<Objective QuestName="Ormer's Revenge" QuestId="294" Type="KillMob" MobId="1020" KillCount="10" />
+		<Objective QuestName="Ormer's Revenge" QuestId="294" Type="KillMob" MobId="1021" KillCount="10" />
+		<TurnIn QuestName="Ormer's Revenge" QuestId="294" TurnInName="Ormer Ironbraid" TurnInId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(294)">
+			<PickUp QuestName="Ormer's Revenge" QuestId="295" GiverName="Ormer Ironbraid" GiverId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		</If>
+		<If Condition="(Me.Level &gt;= 25)">
+			<PickUp QuestName="Uncovering the Past" QuestId="299" GiverName="Prospector Whelgar" GiverId="1077" X="-3591.81" Y="-1994.5" Z="116.97" />
+		</If>
+		<Objective QuestName="Ormer's Revenge" QuestId="295" Type="KillMob" MobId="1022" KillCount="10" />
+		<Objective QuestName="Ormer's Revenge" QuestId="295" Type="KillMob" MobId="1023" KillCount="10" />
+		<Objective QuestName="Uncovering the Past" QuestId="299" Type="CollectItem" ItemId="2658" CollectCount="1" />
+		<Objective QuestName="Uncovering the Past" QuestId="299" Type="CollectItem" ItemId="2659" CollectCount="1" />
+		<Objective QuestName="Uncovering the Past" QuestId="299" Type="CollectItem" ItemId="2660" CollectCount="1" />
+		<Objective QuestName="Uncovering the Past" QuestId="299" Type="CollectItem" ItemId="2661" CollectCount="1" />
+		<TurnIn QuestName="Ormer's Revenge" QuestId="295" TurnInName="Ormer Ironbraid" TurnInId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(295)">
+			<PickUp QuestName="Ormer's Revenge" QuestId="296" GiverName="Ormer Ironbraid" GiverId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		</If>
+		<TurnIn QuestName="Uncovering the Past" QuestId="299" TurnInName="Prospector Whelgar" TurnInId="1077" X="-3591.81" Y="-1994.5" Z="116.97" />
+		<Objective QuestName="Ormer's Revenge" QuestId="296" Type="CollectItem" ItemId="3638" CollectCount="1" />
+		<TurnIn QuestName="Ormer's Revenge" QuestId="296" TurnInName="Ormer Ironbraid" TurnInId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		<TurnIn QuestName="Nek'rosh's Gambit" QuestId="465" TurnInName="Dragonmaw Catapult" TurnInId="1609" TurnInType="Object" X="-3443.71" Y="-2352.21" Z="51.9211" />
+		<If Condition="(Me.Level &gt;= 23) &amp;&amp; IsQuestCompleted(465)">
+			<PickUp QuestName="Defeat Nek'rosh" QuestId="474" GiverName="Dragonmaw Catapult" GiverId="1609" GiverType="Object" X="-3443.71" Y="-2352.21" Z="51.9211" />
+		</If>
+		<Objective QuestName="Defeat Nek'rosh" QuestId="474" Type="CollectItem" ItemId="3625" CollectCount="1" />
+		<If Condition="((Me.Class == WoWClass.Warlock))">
+			<Objective QuestName="A Noble Brew" QuestId="335" Type="CollectItem" ItemId="2784" CollectCount="1" />
+		</If>
+		<TurnIn QuestName="Blisters on The Land" QuestId="275" TurnInName="Rethiel the Greenwarden" TurnInId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
+		<TurnIn QuestName="Fall of Dun Modr" QuestId="472" TurnInName="Longbraid the Grim" TurnInId="1071" X="-2651.19" Y="-2449.16" Z="80.1164" />
+		<If Condition="(Me.Level &gt;= 26)">
+			<PickUp QuestName="A Grim Task" QuestId="304" GiverName="Longbraid the Grim" GiverId="1071" X="-2651.19" Y="-2449.16" Z="80.1164" />
+		</If>
+		<If Condition="(Me.Level &gt;= 25)">
+			<PickUp QuestName="The Dark Iron War" QuestId="303" GiverName="Motley Garmason" GiverId="1074" X="-2650.41" Y="-2443.47" Z="80.1627" />
+		</If>
+		<Objective QuestName="The Dark Iron War" QuestId="303" Type="KillMob" MobId="1051" KillCount="10" />
+		<Objective QuestName="The Dark Iron War" QuestId="303" Type="KillMob" MobId="1053" KillCount="5" />
+		<Objective QuestName="The Dark Iron War" QuestId="303" Type="KillMob" MobId="1052" KillCount="5" />
+		<Objective QuestName="The Dark Iron War" QuestId="303" Type="KillMob" MobId="1054" KillCount="5" />
+		<Objective QuestName="A Grim Task" QuestId="304" Type="CollectItem" ItemId="3639" CollectCount="1" />
+		<TurnIn QuestName="A Grim Task" QuestId="304" TurnInName="Longbraid the Grim" TurnInId="1071" X="-2651.19" Y="-2449.16" Z="80.1164" />
+		<TurnIn QuestName="The Dark Iron War" QuestId="303" TurnInName="Motley Garmason" TurnInId="1074" X="-2650.41" Y="-2443.47" Z="80.1627" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(303)">
+			<PickUp QuestName="The Fury Runs Deep" QuestId="378" GiverName="Motley Garmason" GiverId="1074" X="-2650.41" Y="-2443.47" Z="80.1627" />
+		</If>
+		<If Condition="HasItem(4433) &amp;&amp; !HasQuest(637) &amp;&amp; !IsQuestCompleted(637) &amp;&amp; (Me.Level &gt;= 25)">
+			<PickUp QuestName="Sully Balloo's Letter" QuestId="637" GiverName="Waterlogged Envelope" GiverId="4433" GiverType="Item" />
+		</If>
+		<TurnIn QuestName="The Eye of Paleth" QuestId="292" TurnInName="Glorin Steelbrow" TurnInId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(292)">
+			<PickUp QuestName="Cleansing the Eye" QuestId="293" GiverName="Glorin Steelbrow" GiverId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		</If>
+		<TurnIn QuestName="Apprentice's Duties" QuestId="471" TurnInName="James Halloran" TurnInId="2094" X="-3684.2" Y="-743.032" Z="10.2493" />
+		<TurnIn QuestName="Defeat Nek'rosh" QuestId="474" TurnInName="Captain Stoutfist" TurnInId="2104" X="-3732.46" Y="-797.345" Z="26.7802" />
+		<If Condition="(Me.Level &gt;= 22)">
+			<PickUp QuestName="The Color of Blood" QuestId="388" GiverName="Nikova Raskol" GiverId="1721" X="-8696.33" Y="391.153" Z="102.385" />
+		</If>
+		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(389)">
+			<PickUp QuestName="The Stockade Riots" QuestId="391" GiverName="Warden Thelwater" GiverId="1719" X="-8799.57" Y="828.396" Z="97.754" />
+		</If>
+		<If Condition="(Me.Level &gt;= 22)">
+			<PickUp QuestName="Quell The Uprising" QuestId="387" GiverName="Warden Thelwater" GiverId="1719" X="-8799.57" Y="828.396" Z="97.754" />
+		</If>
+		<!-- REVIEW Q387 Quell The Uprising: kill 1706 Defias Prisoner x10: kill credit or scripted event; kill 1711 Defias Convict x8: kill credit or scripted event; kill 1715 Defias Insurgent x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(387)) &amp;&amp; (IsQuestCompleted(387)))">
+			<TurnIn QuestName="Quell The Uprising" QuestId="387" TurnInName="Warden Thelwater" TurnInId="1719" X="-8799.57" Y="828.396" Z="97.754" />
+		</If>
+		<If Condition="((HasQuest(387)) &amp;&amp; (!IsQuestCompleted(387)))">
+			<CustomBehavior File="AbandonQuest" QuestId="387" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q391 The Stockade Riots: item 2926 Head of Bazil Thredd has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(391)) &amp;&amp; (IsQuestCompleted(391)))">
+			<TurnIn QuestName="The Stockade Riots" QuestId="391" TurnInName="Warden Thelwater" TurnInId="1719" X="-8799.57" Y="828.396" Z="97.754" />
+		</If>
+		<If Condition="((HasQuest(391)) &amp;&amp; (!IsQuestCompleted(391)))">
+			<CustomBehavior File="AbandonQuest" QuestId="391" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(391)">
+			<PickUp QuestName="The Curious Visitor" QuestId="392" GiverName="Warden Thelwater" GiverId="1719" X="-8799.57" Y="828.396" Z="97.754" />
+		</If>
+		<TurnIn QuestName="Cleansing the Eye" QuestId="293" TurnInName="Archbishop Benedictus" TurnInId="1284" X="-8523" Y="848.783" Z="106.702" />
+		<If Condition="(Me.Level &gt;= 28)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1274" GiverName="Thomas" GiverId="4982" X="-8511" Y="860.464" Z="109.939" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="Tinkmaster Overspark" QuestId="2923" GiverName="Brother Sarno" GiverId="7917" X="-8556" Y="835.86" Z="106.602" />
+		</If>
+		<TurnIn QuestName="The Curious Visitor" QuestId="392" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
+		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(392)">
+			<PickUp QuestName="Shadow of the Past" QuestId="393" GiverName="Baros Alexston" GiverId="1646" X="-8550.24" Y="719.661" Z="101.802" />
+		</If>
+		<TurnIn QuestName="Blessed Arm" QuestId="322" TurnInName="Grimand Elmore" TurnInId="1416" X="-8387" Y="685.202" Z="95.356" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(322)">
+			<PickUp QuestName="Armed and Ready" QuestId="325" GiverName="Grimand Elmore" GiverId="1416" X="-8387" Y="685.202" Z="95.356" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="Gyrodrillmatic Excavationators" QuestId="2928" GiverName="Shoni the Shilent" GiverId="6579" X="-8391" Y="634.764" Z="94.89" />
+		</If>
+		<!-- REVIEW Q388 The Color of Blood: item 2909 Red Wool Bandana has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(388)) &amp;&amp; (IsQuestCompleted(388)))">
+			<TurnIn QuestName="The Color of Blood" QuestId="388" TurnInName="Nikova Raskol" TurnInId="1721" X="-8696.33" Y="391.153" Z="102.385" />
+		</If>
+		<If Condition="((HasQuest(388)) &amp;&amp; (!IsQuestCompleted(388)))">
+			<CustomBehavior File="AbandonQuest" QuestId="388" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Shadow of the Past" QuestId="393" TurnInName="Master Mathias Shaw" TurnInId="332" X="-8815.27" Y="362.3" Z="109.604" />
+		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(393)">
+			<PickUp QuestName="Look to an Old Friend" QuestId="350" GiverName="Master Mathias Shaw" GiverId="332" X="-8815.27" Y="362.3" Z="109.604" />
+		</If>
+		<TurnIn QuestName="Look to an Old Friend" QuestId="350" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(350)">
+			<PickUp QuestName="Infiltrating the Castle" QuestId="2745" GiverName="Elling Trias" GiverId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		</If>
+		<TurnIn QuestName="Infiltrating the Castle" QuestId="2745" TurnInName="Tyrion" TurnInId="7766" X="-8409" Y="450.793" Z="123.76" />
+		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(2745)">
+			<PickUp QuestName="Items of Some Consequence" QuestId="2746" GiverName="Tyrion" GiverId="7766" X="-8409" Y="450.793" Z="123.76" />
+		</If>
+		<If Condition="HasItem(2794) &amp;&amp; !HasQuest(337) &amp;&amp; !IsQuestCompleted(337) &amp;&amp; (Me.Level &gt;= 20)">
+			<PickUp QuestName="An Old History Book" QuestId="337" GiverName="An Old History Book" GiverId="2794" GiverType="Item" />
+		</If>
+		<TurnIn QuestName="An Old History Book" QuestId="337" TurnInName="Milton Sheaf" TurnInId="1440" X="-8346" Y="383.928" Z="122.374" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(337)">
+			<PickUp QuestName="Southshore" QuestId="538" GiverName="Milton Sheaf" GiverId="1440" X="-8346" Y="383.928" Z="122.374" />
+		</If>
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1274" TurnInName="Bishop DeLavey" TurnInId="4960" X="-8507" Y="328.347" Z="120.986" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1274)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1241" GiverName="Bishop DeLavey" GiverId="4960" X="-8507" Y="328.347" Z="120.986" />
+		</If>
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1241" TurnInName="Jorgen" TurnInId="4959" X="-8981.78" Y="397.36" Z="75.9548" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1241)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1242" GiverName="Jorgen" GiverId="4959" X="-8981.78" Y="397.36" Z="75.9548" />
+		</If>
+		<Objective QuestName="Items of Some Consequence" QuestId="2746" Type="CollectItem" ItemId="8683" CollectCount="2" />
+		<Objective QuestName="Items of Some Consequence" QuestId="2746" Type="CollectItem" ItemId="4306" CollectCount="3" />
+		<TurnIn QuestName="Items of Some Consequence" QuestId="2746" TurnInName="Tyrion" TurnInId="7766" X="-8409" Y="450.793" Z="123.76" />
+		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(2746)">
+			<PickUp QuestName="The Attack!" QuestId="434" GiverName="Tyrion" GiverId="7766" X="-8409" Y="450.793" Z="123.76" />
+		</If>
+		<Objective QuestName="The Attack!" QuestId="434" Type="KillMob" MobId="1754" KillCount="1" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1242" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1242)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1243" GiverName="Elling Trias" GiverId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		</If>
+		<!-- REVIEW Q434 The Attack!: kill 1755 Marzon the Silent Blade x1: kill credit or scripted event; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(434)) &amp;&amp; (IsQuestCompleted(434)))">
+			<TurnIn QuestName="The Attack!" QuestId="434" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		</If>
+		<If Condition="((HasQuest(434)) &amp;&amp; (!IsQuestCompleted(434)))">
+			<CustomBehavior File="AbandonQuest" QuestId="434" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(434)">
+			<PickUp QuestName="The Head of the Beast" QuestId="394" GiverName="Elling Trias" GiverId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		</If>
+		<TurnIn QuestName="The Head of the Beast" QuestId="394" TurnInName="Master Mathias Shaw" TurnInId="332" X="-8815.27" Y="362.3" Z="109.604" />
+		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(394)">
+			<PickUp QuestName="Brotherhood's End" QuestId="395" GiverName="Master Mathias Shaw" GiverId="332" X="-8815.27" Y="362.3" Z="109.604" />
+		</If>
+		<TurnIn QuestName="Brotherhood's End" QuestId="395" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
+		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(395)">
+			<PickUp QuestName="An Audience with the King" QuestId="396" GiverName="Baros Alexston" GiverId="1646" X="-8550.24" Y="719.661" Z="101.802" />
+		</If>
+		<TurnIn QuestName="An Audience with the King" QuestId="396" TurnInName="King Varian Wrynn" TurnInId="29611" X="-8441.42" Y="333.102" Z="122.679" />
+		<!-- REVIEW Q386 What Comes Around...: item 3630 Head of Targorr has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(386)) &amp;&amp; (IsQuestCompleted(386)))">
+			<TurnIn QuestName="What Comes Around..." QuestId="386" TurnInName="Guard Berton" TurnInId="859" X="-9249.39" Y="-2140.79" Z="64.2329" />
+		</If>
+		<If Condition="((HasQuest(386)) &amp;&amp; (!IsQuestCompleted(386)))">
+			<CustomBehavior File="AbandonQuest" QuestId="386" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q377 Crime and Punishment: item 3628 Hand of Dextren Ward has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(377)) &amp;&amp; (IsQuestCompleted(377)))">
+			<TurnIn QuestName="Crime and Punishment" QuestId="377" TurnInName="Councilman Millstipe" TurnInId="270" X="-10577" Y="-1108.37" Z="30.0693" />
+		</If>
+		<If Condition="((HasQuest(377)) &amp;&amp; (!IsQuestCompleted(377)))">
+			<CustomBehavior File="AbandonQuest" QuestId="377" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Worgen in the Woods" QuestId="221" Type="KillMob" MobId="205" KillCount="12" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1243" TurnInName="Watcher Backus" TurnInId="840" X="-10512.2" Y="-1186.84" Z="28.2674" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1243)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1244" GiverName="Watcher Backus" GiverId="840" X="-10512.2" Y="-1186.84" Z="28.2674" />
+		</If>
+		<TurnIn QuestName="Worgen in the Woods" QuestId="221" TurnInName="Calor" TurnInId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		<If Condition="(Me.Level &gt;= 23) &amp;&amp; IsQuestCompleted(221)">
+			<PickUp QuestName="Worgen in the Woods" QuestId="222" GiverName="Calor" GiverId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		</If>
+		<Objective QuestName="Ogre Thieves" QuestId="134" Type="CollectItem" ItemId="1349" CollectCount="1" />
+		<Objective QuestName="Look To The Stars" QuestId="181" Type="CollectItem" ItemId="1968" CollectCount="1" />
+		<Objective QuestName="The Missing Diplomat" QuestId="1244" Type="CollectItem" ItemId="5947" CollectCount="1" />
+		<TurnIn QuestName="Ogre Thieves" QuestId="134" TurnInName="Abercrombie" TurnInId="289" X="-10283" Y="74.4014" Z="38.9313" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(134)">
+			<PickUp QuestName="Note to the Mayor" QuestId="160" GiverName="Abercrombie" GiverId="289" X="-10283" Y="74.4014" Z="38.9313" />
+		</If>
+		<TurnIn QuestName="Armed and Ready" QuestId="325" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(325)">
+			<PickUp QuestName="Morbent Fel" QuestId="55" GiverName="Sven Yorgen" GiverId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		</If>
+		<Objective QuestName="Mor'Ladim" QuestId="228" Type="CollectItem" ItemId="3514" CollectCount="1" />
+		<TurnIn QuestName="Mor'Ladim" QuestId="228" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(228)">
+			<PickUp QuestName="The Daughter Who Lived" QuestId="229" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		</If>
+		<TurnIn QuestName="The Daughter Who Lived" QuestId="229" TurnInName="Watcher Ladimore" TurnInId="576" X="-10577.5" Y="-1165.16" Z="28.1497" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(229)">
+			<PickUp QuestName="A Daughter's Love" QuestId="231" GiverName="Watcher Ladimore" GiverId="576" X="-10577.5" Y="-1165.16" Z="28.1497" />
+		</If>
+		<TurnIn QuestName="Note to the Mayor" QuestId="160" TurnInName="Lord Ello Ebonlocke" TurnInId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(160)">
+			<PickUp QuestName="Translate Abercrombie's Note" QuestId="251" GiverName="Lord Ello Ebonlocke" GiverId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
+		</If>
+		<TurnIn QuestName="Translate Abercrombie's Note" QuestId="251" TurnInName="Sirra Von'Indi" TurnInId="268" X="-10573.7" Y="-1128" Z="29.1669" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(251)">
+			<PickUp QuestName="Wait for Sirra to Finish" QuestId="401" GiverName="Sirra Von'Indi" GiverId="268" X="-10573.7" Y="-1128" Z="29.1669" />
+		</If>
+		<TurnIn QuestName="Wait for Sirra to Finish" QuestId="401" TurnInName="Sirra Von'Indi" TurnInId="268" X="-10573.7" Y="-1128" Z="29.1669" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(401)">
+			<PickUp QuestName="Translation to Ello" QuestId="252" GiverName="Sirra Von'Indi" GiverId="268" X="-10573.7" Y="-1128" Z="29.1669" />
+		</If>
+		<TurnIn QuestName="Translation to Ello" QuestId="252" TurnInName="Lord Ello Ebonlocke" TurnInId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(252)">
+			<PickUp QuestName="Bride of the Embalmer" QuestId="253" GiverName="Lord Ello Ebonlocke" GiverId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
+		</If>
+		<TurnIn QuestName="Look To The Stars" QuestId="181" TurnInName="Viktori Prism'Antras" TurnInId="276" X="-10581.1" Y="-1321.31" Z="50.3933" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1244" TurnInName="Watcher Backus" TurnInId="840" X="-10512.2" Y="-1186.84" Z="28.2674" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1244)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1245" GiverName="Watcher Backus" GiverId="840" X="-10512.2" Y="-1186.84" Z="28.2674" />
+		</If>
+		<Objective QuestName="The Legend of Stalvan" QuestId="98" Type="CollectItem" ItemId="3629" CollectCount="1" />
+		<If Condition="((Me.Class == WoWClass.Warlock))">
+			<Objective QuestName="A Noble Brew" QuestId="335" Type="CollectItem" ItemId="2779" CollectCount="1" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; HasQuest(253)">
+			<PickUp QuestName="Digging Through the Dirt" QuestId="254" GiverName="Eliza's Grave Dirt" GiverId="51708" GiverType="Object" X="-10270.2" Y="53.8742" Z="41.8359" />
+		</If>
+		<TurnIn QuestName="A Daughter's Love" QuestId="231" TurnInName="A Weathered Grave" TurnInId="61" TurnInType="Object" X="-10240.1" Y="354.663" Z="50.3859" />
+		<!-- REVIEW Q55 Morbent Fel: goal 24782 Weakened Morbent Fel x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(55)) &amp;&amp; (IsQuestCompleted(55)))">
+			<TurnIn QuestName="Morbent Fel" QuestId="55" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		</If>
+		<If Condition="((HasQuest(55)) &amp;&amp; (!IsQuestCompleted(55)))">
+			<CustomBehavior File="AbandonQuest" QuestId="55" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Worgen in the Woods" QuestId="222" Type="KillMob" MobId="206" KillCount="8" />
+		<Objective QuestName="Worgen in the Woods" QuestId="222" Type="KillMob" MobId="920" KillCount="8" />
+		<TurnIn QuestName="Worgen in the Woods" QuestId="222" TurnInName="Calor" TurnInId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		<If Condition="(Me.Level &gt;= 23) &amp;&amp; IsQuestCompleted(222)">
+			<PickUp QuestName="Worgen in the Woods" QuestId="223" GiverName="Calor" GiverId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		</If>
+		<TurnIn QuestName="Worgen in the Woods" QuestId="223" TurnInName="Jonathan Carevin" TurnInId="661" X="-10599.1" Y="-1200.37" Z="28.4932" />
+		<!-- REVIEW Q253 Bride of the Embalmer: item 2382 The Embalmer's Heart has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(253)) &amp;&amp; (IsQuestCompleted(253)))">
+			<TurnIn QuestName="Bride of the Embalmer" QuestId="253" TurnInName="Lord Ello Ebonlocke" TurnInId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
+		</If>
+		<If Condition="((HasQuest(253)) &amp;&amp; (!IsQuestCompleted(253)))">
+			<CustomBehavior File="AbandonQuest" QuestId="253" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="98" TurnInName="Madame Eva" TurnInId="265" X="-10532" Y="-1213.64" Z="28.2175" />
+		<If Condition="((Me.Class == WoWClass.Warlock))">
+			<TurnIn QuestName="A Noble Brew" QuestId="335" TurnInName="Zardeth of the Black Claw" TurnInId="1435" X="-8984" Y="1025.49" Z="101.587" />
+			<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(335)">
+				<PickUp QuestName="A Noble Brew" QuestId="336" GiverName="Zardeth of the Black Claw" GiverId="1435" X="-8984" Y="1025.49" Z="101.587" />
+			</If>
+		</If>
+		<If Condition="((Me.Class == WoWClass.Warlock))">
+			<TurnIn QuestName="Gakin's Summons" QuestId="1717" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
+			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 20)">
+				<PickUp QuestName="Devourer of Souls" QuestId="1716" GiverName="Gakin the Darkbinder" GiverId="6122" X="-8983" Y="1041.52" Z="101.487" />
+			</If>
+		</If>
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1245" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1245)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1246" GiverName="Elling Trias" GiverId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		</If>
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1246" TurnInName="Dashel Stonefist" TurnInId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1246)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1447" GiverName="Dashel Stonefist" GiverId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
+		</If>
+		<!-- REVIEW Q1447 The Missing Diplomat: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1447)) &amp;&amp; (IsQuestCompleted(1447)))">
+			<TurnIn QuestName="The Missing Diplomat" QuestId="1447" TurnInName="Dashel Stonefist" TurnInId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
+		</If>
+		<If Condition="((HasQuest(1447)) &amp;&amp; (!IsQuestCompleted(1447)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1447" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1447)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1247" GiverName="Dashel Stonefist" GiverId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
+		</If>
+		<If Condition="((Me.Class == WoWClass.Warlock))">
+			<TurnIn QuestName="A Noble Brew" QuestId="336" TurnInName="Lord Baurles K. Wishock" TurnInId="1439" X="-8562.78" Y="369.692" Z="108.569" />
+		</If>
+		<If Condition="HasItem(2794) &amp;&amp; !HasQuest(337) &amp;&amp; !IsQuestCompleted(337) &amp;&amp; (Me.Level &gt;= 20)">
+			<PickUp QuestName="An Old History Book" QuestId="337" GiverName="An Old History Book" GiverId="2794" GiverType="Item" />
+		</If>
+		<TurnIn QuestName="An Old History Book" QuestId="337" TurnInName="Milton Sheaf" TurnInId="1440" X="-8346" Y="383.928" Z="122.374" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(337)">
+			<PickUp QuestName="Southshore" QuestId="538" GiverName="Milton Sheaf" GiverId="1440" X="-8346" Y="383.928" Z="122.374" />
+		</If>
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1247" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1247)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1248" GiverName="Elling Trias" GiverId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		</If>
+		<If Condition="((Me.Class == WoWClass.Warlock))">
+			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(336)">
+				<PickUp QuestName="You Have Served Us Well" QuestId="397" GiverName="Zardeth of the Black Claw" GiverId="1435" X="-8984" Y="1025.49" Z="101.587" />
+			</If>
+		</If>
+		<If Condition="((Me.Class == WoWClass.Warlock))">
+			<TurnIn QuestName="You Have Served Us Well" QuestId="397" TurnInName="Zggi" TurnInId="1733" X="-8984" Y="1024.26" Z="101.587" />
+		</If>
+		<CustomBehavior File="LoadProfile" ProfileName="Ding80_Levels (30-34)" />
+	</QuestOrder>
+</HBProfile>

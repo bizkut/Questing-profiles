@@ -1,0 +1,251 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Eastern Kingdoms\[45] Swamp of Sorrows</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Bernie Heisten" Entry="3546" Type="Food" X="-10946.6" Y="-3369.31" Z="66.5809" />
+		<Vendor Name="Roberto Pupellyverbos" Entry="277" Type="Food" X="-8886.15" Y="679.911" Z="100.18" />
+		<Vendor Name="Julia Gallina" Entry="1301" Type="Food" X="-8895.82" Y="681.648" Z="100.163" />
+		<Vendor Name="Innkeeper Allison" Entry="6740" Type="Food" X="-8867.79" Y="673.673" Z="97.9864" />
+		<Vendor Name="Ardwyn Cailen" Entry="1312" Type="Repair" X="-8863" Y="805.137" Z="97.5224" />
+		<Vendor Name="Allan Hafgan" Entry="1315" Type="Repair" X="-8863.45" Y="801.819" Z="97.5057" />
+		<Vendor Name="Strumner Flintheel" Entry="5508" Type="Repair" X="-10949.8" Y="-3455.49" Z="66.7557" />
+		<Vendor Name="Duncan Cullen" Entry="1314" Type="Repair" X="-8946.15" Y="798.843" Z="91.0251" />
+		<Vendor Name="Wynne Larson" Entry="1309" Type="Repair" X="-8963" Y="822.517" Z="109.447" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="1364" Name="Mazen's Behest">
+		<Objective Type="CollectItem" ItemId="6065" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Swampwalker" Id="764" />
+				<Mob Name="Swampwalker Elder" Id="765" />
+				<Mob Name="Tangled Horror" Id="766" />
+				<Mob Name="Mire Lord" Id="1081" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10187.2" Y="-2521.16" Z="29.5772" />
+				<Hotspot X="-10212" Y="-2484.98" Z="27.5489" />
+				<Hotspot X="-10180.3" Y="-2454.81" Z="28.0161" />
+				<Hotspot X="-10152" Y="-2486.47" Z="24.9236" />
+				<Hotspot X="-10117.9" Y="-2519.37" Z="28.3392" />
+				<Hotspot X="-10151.6" Y="-2552.57" Z="24.9238" />
+				<Hotspot X="-10179.8" Y="-2585.65" Z="28.4571" />
+				<Hotspot X="-10090.9" Y="-2480.16" Z="28.2487" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9610" Name="Pool of Tears">
+		<Objective Type="CollectItem" ItemId="6175" CollectCount="5">
+			<CollectFrom>
+				<GameObject Name="Atal'ai Artifact" Id="30854" />
+				<GameObject Name="Atal'ai Artifact" Id="30855" />
+				<GameObject Name="Atal'ai Artifact" Id="30856" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10396.3" Y="-3836.55" Z="31.63" />
+				<Hotspot X="-10355.9" Y="-3825.43" Z="-3.56" />
+				<Hotspot X="-10323.6" Y="-3792.94" Z="-16.9" />
+				<Hotspot X="-10384.1" Y="-3777.46" Z="10.5" />
+				<Hotspot X="-10428.9" Y="-3783.61" Z="19.57" />
+				<Hotspot X="-10486.5" Y="-3843.2" Z="20.2" />
+				<Hotspot X="-10433" Y="-3886.55" Z="10.58" />
+				<Hotspot X="-10376.2" Y="-3875.26" Z="10.91" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9448" Name="Mercy for the Cursed">
+		<Objective Type="KillMob" MobId="17115" KillCount="3">
+			<Hotspots>
+				<Hotspot X="-9931.62" Y="-3667.48" Z="22.3381" />
+				<Hotspot X="-9911.51" Y="-3711.97" Z="22.0424" />
+				<Hotspot X="-9854.77" Y="-3721.43" Z="21.8028" />
+				<Hotspot X="-9994.91" Y="-3743.22" Z="21.3832" />
+				<Hotspot X="-10007.7" Y="-3665.62" Z="23.1004" />
+				<Hotspot X="-10015.3" Y="-3594.82" Z="23.0443" />
+				<Hotspot X="-9942.39" Y="-3586.22" Z="22.7243" />
+				<Hotspot X="-10065.9" Y="-3519.39" Z="22.3573" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1389" Name="Draenethyst Crystals">
+		<Objective Type="CollectItem" ItemId="6071" CollectCount="6">
+			<CollectFrom>
+				<GameObject Name="Draenethyst Crystals" Id="22550" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9964.19" Y="-3646.9" Z="22.1477" />
+				<Hotspot X="-9960.04" Y="-3603" Z="22.2479" />
+				<Hotspot X="-10002.2" Y="-3539.66" Z="22.9176" />
+				<Hotspot X="-10063.3" Y="-3501.32" Z="23.0662" />
+				<Hotspot X="-9968" Y="-3708.24" Z="22.1812" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1396" Name="Encroaching Wildlife">
+		<Objective Type="KillMob" MobId="1084" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-10404.2" Y="-3085.55" Z="17.4991" />
+				<Hotspot X="-10412.5" Y="-3012.2" Z="17.6155" />
+				<Hotspot X="-10342.3" Y="-2957" Z="17.4634" />
+				<Hotspot X="-10458.3" Y="-2918.47" Z="18.119" />
+				<Hotspot X="-10476.6" Y="-2878.82" Z="17.6811" />
+				<Hotspot X="-10215.7" Y="-2973.4" Z="18.9678" />
+				<Hotspot X="-10184.5" Y="-3042.27" Z="17.4803" />
+				<Hotspot X="-10160.2" Y="-3108.58" Z="19.7073" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="858" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-10393.7" Y="-2947.81" Z="21.9482" />
+				<Hotspot X="-10435.3" Y="-2895.97" Z="23.0737" />
+				<Hotspot X="-10364.6" Y="-2836.59" Z="24.6476" />
+				<Hotspot X="-10322.6" Y="-2829.52" Z="24.1977" />
+				<Hotspot X="-10284.1" Y="-2857.58" Z="27.1629" />
+				<Hotspot X="-10464.2" Y="-3013.86" Z="23.4454" />
+				<Hotspot X="-10569.6" Y="-2872.95" Z="22.0878" />
+				<Hotspot X="-10528.1" Y="-2805.01" Z="23.0528" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="767" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-10539.6" Y="-2761.46" Z="22.8229" />
+				<Hotspot X="-10506.2" Y="-2737.25" Z="23.5591" />
+				<Hotspot X="-10549.5" Y="-2826.77" Z="22.3757" />
+				<Hotspot X="-10598.9" Y="-2845.86" Z="25.3261" />
+				<Hotspot X="-10423.5" Y="-2911.57" Z="23.5899" />
+				<Hotspot X="-10452.3" Y="-2993.14" Z="22.137" />
+				<Hotspot X="-10345.9" Y="-2829.23" Z="24.1687" />
+				<Hotspot X="-10540.4" Y="-2606.91" Z="24.0652" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1421" Name="The Lost Caravan">
+		<Objective Type="CollectItem" ItemId="6170" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Caravan Chest" Id="28024" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9900.72" Y="-3701.58" Z="22.5485" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1398" Name="Driftwood">
+		<Objective Type="CollectItem" ItemId="6146" CollectCount="8">
+			<CollectFrom>
+				<GameObject Name="Sundried Driftwood" Id="24798" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10982.5" Y="-4142.48" Z="4.3163" />
+				<Hotspot X="-11032.1" Y="-4111.75" Z="2.3667" />
+				<Hotspot X="-10902.7" Y="-4162.44" Z="5.6835" />
+				<Hotspot X="-10920.1" Y="-4198.96" Z="2.1933" />
+				<Hotspot X="-10866.3" Y="-4203.48" Z="4.9409" />
+				<Hotspot X="-10815.3" Y="-4229.25" Z="4.9243" />
+				<Hotspot X="-10753.7" Y="-4282.67" Z="2.3598" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-EasternKingdoms.lua: Ding80's Loremaster Alliance Guides\Eastern Kingdoms\[45] Swamp of Sorrows -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Eastern Kingdoms_[45] Swamp of Sorrows");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<If Condition="(Me.Level &gt;= 38)">
+			<PickUp QuestName="In Search of The Temple" QuestId="1448" GiverName="Brohann Caskbelly" GiverId="5384" X="-8464" Y="516.193" Z="100.639" />
+		</If>
+		<If Condition="(Me.Level &gt;= 37)">
+			<PickUp QuestName="Mazen's Behest" QuestId="1363" GiverName="Mazen Mac'Nadir" GiverId="338" X="-8856" Y="822.813" Z="98.4" />
+		</If>
+		<TurnIn QuestName="Mazen's Behest" QuestId="1363" TurnInName="Acolyte Dellis" TurnInId="5386" X="-8851" Y="830.246" Z="104.796" />
+		<If Condition="(Me.Level &gt;= 37) &amp;&amp; IsQuestCompleted(1363)">
+			<PickUp QuestName="Mazen's Behest" QuestId="1364" GiverName="Acolyte Dellis" GiverId="5386" X="-8851" Y="830.246" Z="104.796" />
+		</If>
+		<If Condition="(Me.Level &gt;= 38)">
+			<PickUp QuestName="Pool of Tears" QuestId="9610" GiverName="Holaaru" GiverId="18221" X="-10116.6" Y="-2816.33" Z="22.1116" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Help Watcher Biggs" QuestId="9609" GiverName="Anchorite Avuun" GiverId="17127" X="-10106.9" Y="-2813.62" Z="22.1961" />
+		</If>
+		<If Condition="(Me.Level &gt;= 35)">
+			<PickUp QuestName="Mercy for the Cursed" QuestId="9448" GiverName="Anchorite Avuun" GiverId="17127" X="-10106.9" Y="-2813.62" Z="22.1961" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Draenethyst Crystals" QuestId="1389" GiverName="Magtoor" GiverId="1776" X="-10101" Y="-2818.9" Z="22.1149" />
+		</If>
+		<Objective QuestName="Mazen's Behest" QuestId="1364" Type="CollectItem" ItemId="6065" CollectCount="1" />
+		<TurnIn QuestName="Help Watcher Biggs" QuestId="9609" TurnInName="Watcher Biggs" TurnInId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Encroaching Wildlife" QuestId="1396" GiverName="Watcher Biggs" GiverId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		</If>
+		<Objective QuestName="Encroaching Wildlife" QuestId="1396" Type="KillMob" MobId="1084" KillCount="8" />
+		<Objective QuestName="Encroaching Wildlife" QuestId="1396" Type="KillMob" MobId="858" KillCount="10" />
+		<Objective QuestName="Encroaching Wildlife" QuestId="1396" Type="KillMob" MobId="767" KillCount="10" />
+		<TurnIn QuestName="Encroaching Wildlife" QuestId="1396" TurnInName="Watcher Biggs" TurnInId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1396)">
+			<PickUp QuestName="The Lost Caravan" QuestId="1421" GiverName="Watcher Biggs" GiverId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		</If>
+		<If Condition="((HasQuest(1448)) &amp;&amp; (!IsQuestCompleted(1448)))">
+			<RunTo X="-10429.4" Y="-3828.84" Z="-31.6296" />
+		</If>
+		<Objective QuestName="Pool of Tears" QuestId="9610" Type="CollectItem" ItemId="6175" CollectCount="5" />
+		<If Condition="HasItem(6172) &amp;&amp; !HasQuest(1423) &amp;&amp; !IsQuestCompleted(1423) &amp;&amp; (Me.Level &gt;= 30)">
+			<PickUp QuestName="The Lost Supplies" QuestId="1423" GiverName="Lost Supplies" GiverId="6172" GiverType="Item" />
+		</If>
+		<Objective QuestName="Draenethyst Crystals" QuestId="1389" Type="CollectItem" ItemId="6071" CollectCount="6" />
+		<Objective QuestName="Mercy for the Cursed" QuestId="9448" Type="KillMob" MobId="17115" KillCount="3" />
+		<Objective QuestName="The Lost Caravan" QuestId="1421" Type="CollectItem" ItemId="6170" CollectCount="1" />
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Galen's Escape" QuestId="1393" GiverName="Galen Goodward" GiverId="5391" X="-9898.53" Y="-3724.63" Z="22.4164" />
+		</If>
+		<!-- REVIEW Q1393 Galen's Escape: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1393)) &amp;&amp; (IsQuestCompleted(1393)))">
+			<TurnIn QuestName="Galen's Escape" QuestId="1393" TurnInName="Galen's Strongbox" TurnInId="32569" TurnInType="Object" X="-10228.8" Y="-3319.46" Z="22.3632" />
+		</If>
+		<If Condition="((HasQuest(1393)) &amp;&amp; (!IsQuestCompleted(1393)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1393" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="The Lost Caravan" QuestId="1421" TurnInName="Watcher Biggs" TurnInId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1421)">
+			<PickUp QuestName="Driftwood" QuestId="1398" GiverName="Watcher Biggs" GiverId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		</If>
+		<TurnIn QuestName="Pool of Tears" QuestId="9610" TurnInName="Holaaru" TurnInId="18221" X="-10116.6" Y="-2816.33" Z="22.1116" />
+		<TurnIn QuestName="Mercy for the Cursed" QuestId="9448" TurnInName="Anchorite Avuun" TurnInId="17127" X="-10106.9" Y="-2813.62" Z="22.1961" />
+		<TurnIn QuestName="Draenethyst Crystals" QuestId="1389" TurnInName="Magtoor" TurnInId="1776" X="-10101" Y="-2818.9" Z="22.1149" />
+		<Objective QuestName="Driftwood" QuestId="1398" Type="CollectItem" ItemId="6146" CollectCount="8" />
+		<TurnIn QuestName="Driftwood" QuestId="1398" TurnInName="Watcher Biggs" TurnInId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1398)">
+			<PickUp QuestName="Deliver the Shipment" QuestId="1425" GiverName="Watcher Biggs" GiverId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		</If>
+		<TurnIn QuestName="Mazen's Behest" QuestId="1364" TurnInName="Watcher Mahar Ba" TurnInId="5385" X="-10994.7" Y="-3507.89" Z="103.225" />
+		<TurnIn QuestName="The Lost Supplies" QuestId="1423" TurnInName="Quartermaster Lungertz" TurnInId="5393" X="-11044.3" Y="-3470.16" Z="65.0376" />
+		<TurnIn QuestName="Deliver the Shipment" QuestId="1425" TurnInName="Quartermaster Lungertz" TurnInId="5393" X="-11044.3" Y="-3470.16" Z="65.0376" />
+		<!-- REVIEW Q1448 In Search of The Temple: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1448)) &amp;&amp; (IsQuestCompleted(1448)))">
+			<TurnIn QuestName="In Search of The Temple" QuestId="1448" TurnInName="Brohann Caskbelly" TurnInId="5384" X="-8464" Y="516.193" Z="100.639" />
+		</If>
+		<If Condition="((HasQuest(1448)) &amp;&amp; (!IsQuestCompleted(1448)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1448" Type="Incomplete" />
+		</If>
+	</QuestOrder>
+</HBProfile>

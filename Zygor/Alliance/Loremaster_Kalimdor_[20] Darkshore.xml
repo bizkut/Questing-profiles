@@ -1,0 +1,900 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Kalimdor\[20] Darkshore</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Innkeeper Shaussiy" Entry="6737" Type="Food" X="6406.51" Y="515.367" Z="8.7257" />
+		<Vendor Name="Allyndia" Entry="4191" Type="Food" X="6428.75" Y="510.32" Z="8.7334" />
+		<Vendor Name="Taldan" Entry="4192" Type="Food" X="6415.99" Y="529.098" Z="8.7366" />
+		<Vendor Name="Maliynn" Entry="3961" Type="Food" X="2751.84" Y="-412.033" Z="111.542" />
+		<Vendor Name="Innkeeper Helbrek" Entry="1464" Type="Food" X="-3827.93" Y="-831.901" Z="10.0906" />
+		<Vendor Name="Elisa Steelhand" Entry="6300" Type="Repair" X="6538.29" Y="443.297" Z="7.224" />
+		<Vendor Name="Naram Longclaw" Entry="4183" Type="Repair" X="6571.59" Y="480.527" Z="8.3326" />
+		<Vendor Name="Harlon Thornguard" Entry="4187" Type="Repair" X="6528.26" Y="515.126" Z="9.1427" />
+		<Vendor Name="Murndan Derth" Entry="1461" Type="Repair" X="-3790.13" Y="-858.467" Z="11.5981" />
+		<Vendor Name="Brak Durnad" Entry="1441" Type="Repair" X="-3793.04" Y="-862.698" Z="11.6981" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="3524" Name="Washed Ashore">
+		<Objective Type="CollectItem" ItemId="12242" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Beached Sea Creature" Id="175207" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6109.95" Y="559.668" Z="0.6467" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="983" Name="Buzzbox 827">
+		<Objective Type="CollectItem" ItemId="5385" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Pygmy Tide Crawler" Id="2231" />
+				<Mob Name="Tide Crawler" Id="2232" />
+				<Mob Name="Encrusted Tide Crawler" Id="2233" />
+				<Mob Name="Young Reef Crawler" Id="2234" />
+				<Mob Name="Reef Crawler" Id="2235" />
+				<Mob Name="Raging Reef Crawler" Id="2236" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5884.12" Y="645.211" Z="-1.295" />
+				<Hotspot X="5957.33" Y="634.988" Z="0.6438" />
+				<Hotspot X="5990.25" Y="591.47" Z="-1.4428" />
+				<Hotspot X="6034.25" Y="633.265" Z="-5.5436" />
+				<Hotspot X="6099.47" Y="620.175" Z="-8.0773" />
+				<Hotspot X="6146.14" Y="583.713" Z="-1.8923" />
+				<Hotspot X="6054.01" Y="551.915" Z="2.6477" />
+				<Hotspot X="5987.9" Y="681.392" Z="-9.4929" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1001" Name="Buzzbox 411">
+		<Objective Type="CollectItem" ItemId="5412" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Darkshore Thresher" Id="2185" />
+				<Mob Name="Elder Darkshore Thresher" Id="2187" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6778" Y="740.203" Z="-34.5273" />
+				<Hotspot X="6789.42" Y="680.604" Z="-27.909" />
+				<Hotspot X="6841.69" Y="719.27" Z="-33.6214" />
+				<Hotspot X="6848.51" Y="652.003" Z="-14.2022" />
+				<Hotspot X="6909.76" Y="744.666" Z="-14.07" />
+				<Hotspot X="6853.41" Y="812.37" Z="-24.4938" />
+				<Hotspot X="6764.31" Y="801.469" Z="-18.2074" />
+				<Hotspot X="6716.05" Y="688.357" Z="-15.5645" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4681" Name="Washed Ashore">
+		<Objective Type="CollectItem" ItemId="12289" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Skeletal Sea Turtle" Id="176189" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6311.27" Y="857.436" Z="-14.0184" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2138" Name="Cleansing of the Infected">
+		<Objective Type="KillMob" MobId="2164" KillCount="20">
+			<Hotspots>
+				<Hotspot X="6981.47" Y="-226.466" Z="39.3266" />
+				<Hotspot X="6969.87" Y="-146.264" Z="34.9754" />
+				<Hotspot X="6919.34" Y="-146.04" Z="32.2637" />
+				<Hotspot X="6890.36" Y="-175.174" Z="36.1546" />
+				<Hotspot X="6873.61" Y="-230.556" Z="38.5052" />
+				<Hotspot X="6980.51" Y="-337.852" Z="34.5561" />
+				<Hotspot X="7054.81" Y="-282.581" Z="42.5628" />
+				<Hotspot X="7088.42" Y="-166.975" Z="30.0149" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="985" Name="How Big a Threat?">
+		<Objective Type="KillMob" MobId="2167" KillCount="8">
+			<Hotspots>
+				<Hotspot X="6001.66" Y="333.823" Z="21.8611" />
+				<Hotspot X="5959.84" Y="344.082" Z="23.0414" />
+				<Hotspot X="6001.03" Y="381.789" Z="23.6302" />
+				<Hotspot X="6052.02" Y="364.6" Z="21.9454" />
+				<Hotspot X="5874.7" Y="349.144" Z="21.0463" />
+				<Hotspot X="5874.57" Y="306.466" Z="21.0411" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2324" KillCount="5">
+			<Hotspots>
+				<Hotspot X="6028.08" Y="313.77" Z="27.5519" />
+				<Hotspot X="5982.48" Y="313.692" Z="21.5339" />
+				<Hotspot X="5993.11" Y="352.683" Z="21.5993" />
+				<Hotspot X="6034.99" Y="383.143" Z="24.7284" />
+				<Hotspot X="5909.25" Y="325.439" Z="20.9471" />
+				<Hotspot X="5858.15" Y="363.54" Z="21.261" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="947" Name="Cave Mushrooms">
+		<Objective Type="CollectItem" ItemId="5270" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Death Cap" Id="11713" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6758.94" Y="-698.873" Z="69.731" />
+				<Hotspot X="6794.09" Y="-750.826" Z="69.6737" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5271" CollectCount="5">
+			<CollectFrom>
+				<GameObject Name="Scaber Stalk" Id="11714" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6877.56" Y="-663.554" Z="84.1859" />
+				<Hotspot X="6822.92" Y="-669.145" Z="64.3505" />
+				<Hotspot X="6826.27" Y="-709.839" Z="80.9735" />
+				<Hotspot X="6822.92" Y="-753.834" Z="58.9879" />
+				<Hotspot X="6857.62" Y="-795.148" Z="62.6664" />
+				<Hotspot X="6779.85" Y="-680.777" Z="89.2358" />
+				<Hotspot X="6735.58" Y="-703.063" Z="69.8868" />
+				<Hotspot X="6726.14" Y="-661.745" Z="68.2791" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="982" Name="Deep Ocean, Vast Sea">
+		<Objective Type="CollectItem" ItemId="12192" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Mist Veil's Lockbox" Id="175166" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="7134.26" Y="345.874" Z="-41.9849" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="12191" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Silver Dawning's Lockbox" Id="175165" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="7075.84" Y="437.263" Z="-21.348" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="955" Name="Bashal'Aran">
+		<Objective Type="CollectItem" ItemId="5336" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Vile Sprite" Id="2189" />
+				<Mob Name="Wild Grell" Id="2190" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6710.18" Y="14.2073" Z="42.948" />
+				<Hotspot X="6752.08" Y="6.25" Z="40.2259" />
+				<Hotspot X="6754.57" Y="-43.6185" Z="43.3769" />
+				<Hotspot X="6678.29" Y="-14.7127" Z="43.0639" />
+				<Hotspot X="6640.83" Y="-44.5692" Z="35.7518" />
+				<Hotspot X="6631.41" Y="2.8359" Z="35.4222" />
+				<Hotspot X="6669.33" Y="32.5651" Z="43.3069" />
+				<Hotspot X="6678.39" Y="-84.9567" Z="22.8487" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="956" Name="Bashal'Aran">
+		<Objective Type="CollectItem" ItemId="5338" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Deth'ryll Satyr" Id="2212" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6732.49" Y="-168.291" Z="32.1132" />
+				<Hotspot X="6688.06" Y="-155.065" Z="31.9239" />
+				<Hotspot X="6622.05" Y="-113.395" Z="33.254" />
+				<Hotspot X="6598.28" Y="-32.0527" Z="34.4785" />
+				<Hotspot X="6739.34" Y="-35.7338" Z="43.1269" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="957" Name="Bashal'Aran">
+		<Objective Type="UseObject" ObjectId="16393" UseCount="1">
+			<Hotspots>
+				<Hotspot X="5633.84" Y="166.193" Z="32.2765" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1002" Name="Buzzbox 323">
+		<Objective Type="CollectItem" ItemId="5413" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Moonstalker" Id="2069" />
+				<Mob Name="Moonstalker Runt" Id="2070" />
+				<Mob Name="Moonstalker Matriarch" Id="2071" />
+				<Mob Name="Shadowclaw" Id="2175" />
+				<Mob Name="Moonstalker Sire" Id="2237" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6915.75" Y="-280.625" Z="43.8465" />
+				<Hotspot X="7086.13" Y="-384.541" Z="40.9672" />
+				<Hotspot X="7152.39" Y="-369.127" Z="40.8371" />
+				<Hotspot X="7169.48" Y="-291.372" Z="33.4397" />
+				<Hotspot X="7121.61" Y="-266.708" Z="36.5763" />
+				<Hotspot X="7221.32" Y="-259.505" Z="26.1202" />
+				<Hotspot X="6948.25" Y="-50.9259" Z="19.871" />
+				<Hotspot X="6880.28" Y="-37.9276" Z="24.0953" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1003" Name="Buzzbox 525">
+		<Objective Type="CollectItem" ItemId="5414" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Grizzled Thistle Bear" Id="2165" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4751.34" Y="483.056" Z="27.4332" />
+				<Hotspot X="4733.5" Y="412.839" Z="40.2516" />
+				<Hotspot X="4780.62" Y="367.483" Z="45.1961" />
+				<Hotspot X="4750.36" Y="339.867" Z="54.1263" />
+				<Hotspot X="4806.22" Y="335.029" Z="50.648" />
+				<Hotspot X="4818.6" Y="413.45" Z="40.3145" />
+				<Hotspot X="4847.65" Y="474.197" Z="29.2328" />
+				<Hotspot X="4900.6" Y="463.742" Z="31.1504" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="963" Name="For Love Eternal">
+		<Objective Type="CollectItem" ItemId="5382" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Anaya Dawnrunner" Id="3667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5681.28" Y="203.113" Z="26.7769" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1138" Name="Fruit of the Sea">
+		<Objective Type="CollectItem" ItemId="12237" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Encrusted Tide Crawler" Id="2233" />
+				<Mob Name="Reef Crawler" Id="2235" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4947.26" Y="618.213" Z="-3.0033" />
+				<Hotspot X="5050.06" Y="583.091" Z="1.2791" />
+				<Hotspot X="5121.14" Y="606.425" Z="-0.7813" />
+				<Hotspot X="4809.2" Y="842.942" Z="-8.7043" />
+				<Hotspot X="4778.52" Y="799.762" Z="1.9412" />
+				<Hotspot X="4714.18" Y="783.671" Z="0.8864" />
+				<Hotspot X="4678.15" Y="824.061" Z="-1.4005" />
+				<Hotspot X="4756.58" Y="863.255" Z="-0.4183" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4740" Name="WANTED: Murkdeep!">
+		<Objective Type="KillMob" MobId="10323" KillCount="1">
+			<Hotspots>
+				<Hotspot X="4986" Y="604" Z="-0.964" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2139" Name="Tharnariun's Hope">
+		<Objective Type="KillMob" MobId="6788" KillCount="1">
+			<Hotspots>
+				<Hotspot X="6662.71" Y="-430.466" Z="75.2149" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="986" Name="A Lost Master">
+		<Objective Type="CollectItem" ItemId="5386" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Moonstalker Matriarch" Id="2071" />
+				<Mob Name="Moonstalker Sire" Id="2237" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4669.49" Y="478.692" Z="33.3969" />
+				<Hotspot X="4747.72" Y="572.731" Z="27.4772" />
+				<Hotspot X="4780.74" Y="328.672" Z="50.7063" />
+				<Hotspot X="4714.76" Y="312.52" Z="51.7135" />
+				<Hotspot X="4693.96" Y="212.418" Z="57.8889" />
+				<Hotspot X="4963.71" Y="432.011" Z="31.6837" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="958" Name="Tools of the Highborne">
+		<Objective Type="CollectItem" ItemId="5360" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Cursed Highborne" Id="2176" />
+				<Mob Name="Writhing Highborne" Id="2177" />
+				<Mob Name="Wailing Highborne" Id="2178" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5748.9" Y="211.481" Z="30.0383" />
+				<Hotspot X="5782.12" Y="187.381" Z="36.0202" />
+				<Hotspot X="5830.17" Y="196.53" Z="31.0919" />
+				<Hotspot X="5811.14" Y="143.961" Z="31.0387" />
+				<Hotspot X="5729.38" Y="145.837" Z="34.3068" />
+				<Hotspot X="5686.32" Y="165.072" Z="29.2256" />
+				<Hotspot X="5702.23" Y="205.098" Z="26.3253" />
+				<Hotspot X="5655.01" Y="215.821" Z="27.9185" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="966" Name="The Tower of Althalaxx">
+		<Objective Type="CollectItem" ItemId="5348" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Dark Strand Fanatic" Id="2336" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="7173.92" Y="-673.713" Z="43.1123" />
+				<Hotspot X="7190.87" Y="-711.852" Z="58.1453" />
+				<Hotspot X="7223.87" Y="-735.52" Z="54.8445" />
+				<Hotspot X="7152.41" Y="-738.498" Z="54.5828" />
+				<Hotspot X="7160.57" Y="-777.683" Z="56.1397" />
+				<Hotspot X="7183.43" Y="-811.752" Z="39.8938" />
+				<Hotspot X="7206.52" Y="-845.26" Z="36.204" />
+				<Hotspot X="7122.69" Y="-659.712" Z="46.0255" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="953" Name="The Fall of Ameth'Aran">
+		<Objective Type="UseObject" ObjectId="17189" UseCount="1">
+			<Hotspots>
+				<Hotspot X="5576.07" Y="147.814" Z="28.9071" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="17188" UseCount="1">
+			<Hotspots>
+				<Hotspot X="5771.17" Y="105.759" Z="35.0185" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="951" Name="Mathystra Relics">
+		<Objective Type="CollectItem" ItemId="5273" CollectCount="6">
+			<CollectFrom>
+				<GameObject Name="Mathystra Relic" Id="12654" />
+				<GameObject Name="Mathystra Relic" Id="13360" />
+				<GameObject Name="Mathystra Relic" Id="13872" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="7378.4" Y="-874.377" Z="21.1998" />
+				<Hotspot X="7430.48" Y="-864.879" Z="3.5503" />
+				<Hotspot X="7483.87" Y="-839.69" Z="13.0221" />
+				<Hotspot X="7490.88" Y="-887.406" Z="16.7593" />
+				<Hotspot X="7384.89" Y="-1008.86" Z="31.5059" />
+				<Hotspot X="7299.35" Y="-862.117" Z="29.8426" />
+				<Hotspot X="7240.45" Y="-887.029" Z="34.7443" />
+				<Hotspot X="7351.27" Y="-772.621" Z="7.9471" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5321" Name="The Sleeper Has Awakened">
+		<Objective Type="CollectItem" ItemId="13536" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Kerlonian's Chest" Id="176634" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5001.34" Y="34.4409" Z="50.7119" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="970" Name="The Tower of Althalaxx">
+		<Objective Type="CollectItem" ItemId="5366" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dark Strand Cultist" Id="3725" />
+				<Mob Name="Dark Strand Enforcer" Id="3727" />
+				<Mob Name="Dark Strand Adept" Id="3728" />
+				<Mob Name="Dark Strand Excavator" Id="3730" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3546.22" Y="-179.142" Z="5.1186" />
+				<Hotspot X="3542.71" Y="-136.809" Z="0.3188" />
+				<Hotspot X="3493.56" Y="-123.427" Z="1.3018" />
+				<Hotspot X="3458.02" Y="-76.4076" Z="5.2658" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="973" Name="The Tower of Althalaxx">
+		<Objective Type="CollectItem" ItemId="5533" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ilkrud Magthrull" Id="3664" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2340.17" Y="242.212" Z="154.548" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2098" Name="Gyromast's Retrieval">
+		<Objective Type="CollectItem" ItemId="7500" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Encrusted Tide Crawler" Id="2233" />
+				<Mob Name="Raging Reef Crawler" Id="2236" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="7480.8" Y="-517.403" Z="2.4431" />
+				<Hotspot X="7523.01" Y="-551.681" Z="1.507" />
+				<Hotspot X="7558.02" Y="-519.46" Z="-6.7681" />
+				<Hotspot X="7522.8" Y="-479.126" Z="-4.1845" />
+				<Hotspot X="7421.35" Y="-480.235" Z="0.6477" />
+				<Hotspot X="7349.17" Y="-446.684" Z="0.9291" />
+				<Hotspot X="7506.1" Y="-597.448" Z="0.6634" />
+				<Hotspot X="7534.89" Y="-645.374" Z="3.9657" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="7498" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Giant Foreststrider" Id="2323" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="7883.13" Y="-1045.51" Z="30.4041" />
+				<Hotspot X="7945.35" Y="-1094.61" Z="34.4843" />
+				<Hotspot X="7929.43" Y="-1160.12" Z="42.5069" />
+				<Hotspot X="7811.43" Y="-1107.65" Z="44.3659" />
+				<Hotspot X="7712.71" Y="-1095.75" Z="44.3643" />
+				<Hotspot X="7782.48" Y="-955.146" Z="33.0796" />
+				<Hotspot X="7752.15" Y="-916.563" Z="24.5972" />
+				<Hotspot X="7712.82" Y="-883.953" Z="15.3808" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="7499" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Greymist Coastrunner" Id="2202" />
+				<Mob Name="Greymist Seer" Id="2203" />
+				<Mob Name="Greymist Netter" Id="2204" />
+				<Mob Name="Greymist Warrior" Id="2205" />
+				<Mob Name="Greymist Oracle" Id="2207" />
+				<Mob Name="Greymist Tidehunter" Id="2208" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="7784.09" Y="-679.191" Z="-11.6741" />
+				<Hotspot X="7815.03" Y="-653.185" Z="-21.7243" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="943" Name="The Absent Minded Prospector">
+		<Objective Type="CollectItem" ItemId="5234" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Flagongut's Fossil" Id="9630" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3586.88" Y="-1996.54" Z="116.154" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5233" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Mottled Raptor" Id="1020" />
+				<Mob Name="Mottled Screecher" Id="1021" />
+				<Mob Name="Mottled Scytheclaw" Id="1022" />
+				<Mob Name="Mottled Razormaw" Id="1023" />
+				<Mob Name="Chieftain Nek'rosh" Id="2091" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3445.97" Y="-1823.6" Z="24.0593" />
+				<Hotspot X="-3478.4" Y="-1789.35" Z="17.335" />
+				<Hotspot X="-3513.64" Y="-1809.07" Z="25.7241" />
+				<Hotspot X="-3528.41" Y="-1853.26" Z="24.3207" />
+				<Hotspot X="-3480.99" Y="-1880.51" Z="23.4294" />
+				<Hotspot X="-3421.09" Y="-1779.82" Z="24.8787" />
+				<Hotspot X="-3377.73" Y="-1779.3" Z="33.6594" />
+				<Hotspot X="-3478.14" Y="-1748.96" Z="23.9907" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-Kalimdor.lua: Ding80's Loremaster Alliance Guides\Kalimdor\[20] Darkshore -->
+		<If Condition="Me.MapId != 1">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Kalimdor_[20] Darkshore");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Kalimdor" />
+		</If>
+		<If Condition="(Me.Level &gt;= 14)">
+			<PickUp QuestName="Trouble In Darkshore?" QuestId="730" GiverName="Chief Archaeologist Greywhisker" GiverId="2912" X="9641.92" Y="2607.69" Z="1337.38" />
+		</If>
+		<If Condition="(Me.Level &gt;= 11)">
+			<PickUp QuestName="Washed Ashore" QuestId="3524" GiverName="Gwennyth Bly'Leggonde" GiverId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		</If>
+		<If Condition="(Me.Level &gt;= 7)">
+			<PickUp QuestName="Buzzbox 827" QuestId="983" GiverName="Wizbang Cranktoggle" GiverId="3666" X="6406.11" Y="519.815" Z="23.9674" />
+		</If>
+		<TurnIn QuestName="Trouble In Darkshore?" QuestId="730" TurnInName="Archaeologist Hollee" TurnInId="2913" X="6506.35" Y="489.304" Z="6.8245" />
+		<Objective QuestName="Washed Ashore" QuestId="3524" Type="CollectItem" ItemId="12242" CollectCount="1" />
+		<Objective QuestName="Buzzbox 827" QuestId="983" Type="CollectItem" ItemId="5385" CollectCount="6" />
+		<TurnIn QuestName="Buzzbox 827" QuestId="983" TurnInName="Buzzbox 827" TurnInId="17182" TurnInType="Object" X="6313.35" Y="541.665" Z="13.2845" />
+		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(983)">
+			<PickUp QuestName="Buzzbox 411" QuestId="1001" GiverName="Buzzbox 827" GiverId="17182" GiverType="Object" X="6313.35" Y="541.665" Z="13.2845" />
+		</If>
+		<TurnIn QuestName="Washed Ashore" QuestId="3524" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<If Condition="(Me.Level &gt;= 11) &amp;&amp; IsQuestCompleted(3524)">
+			<PickUp QuestName="Washed Ashore" QuestId="4681" GiverName="Gwennyth Bly'Leggonde" GiverId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		</If>
+		<Objective QuestName="Washed Ashore" QuestId="4681" Type="CollectItem" ItemId="12289" CollectCount="1" />
+		<Objective QuestName="Buzzbox 411" QuestId="1001" Type="CollectItem" ItemId="5412" CollectCount="3" />
+		<TurnIn QuestName="Washed Ashore" QuestId="4681" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<If Condition="(Me.Level &gt;= 12)">
+			<PickUp QuestName="The Red Crystal" QuestId="4811" GiverName="Sentinel Glynda Nal'Shea" GiverId="2930" X="6438.62" Y="471.896" Z="8.1251" />
+		</If>
+		<If Condition="(Me.Level &gt;= 10)">
+			<PickUp QuestName="Plagued Lands" QuestId="2118" GiverName="Tharnariun Treetender" GiverId="3701" X="6437.48" Y="397.48" Z="11.7883" />
+		</If>
+		<If Condition="(Me.Level &gt;= 10)">
+			<PickUp QuestName="How Big a Threat?" QuestId="984" GiverName="Terenthis" GiverId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		</If>
+		<If Condition="((HasQuest(984)) &amp;&amp; (!IsQuestCompleted(984)))">
+			<RunTo X="5996.56" Y="365.21" Z="21.8661" />
+		</If>
+		<If Condition="((HasQuest(4811)) &amp;&amp; (!IsQuestCompleted(4811)))">
+			<RunTo X="6207.5" Y="-152.833" Z="79.8185" />
+		</If>
+		<!-- REVIEW Q2118 Plagued Lands: use item 7586: target 11836 Captured Rabid Thistle Bear has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(2118)) &amp;&amp; (IsQuestCompleted(2118)))">
+			<TurnIn QuestName="Plagued Lands" QuestId="2118" TurnInName="Tharnariun Treetender" TurnInId="3701" X="6437.48" Y="397.48" Z="11.7883" />
+		</If>
+		<If Condition="((HasQuest(2118)) &amp;&amp; (!IsQuestCompleted(2118)))">
+			<CustomBehavior File="AbandonQuest" QuestId="2118" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(2118)">
+			<PickUp QuestName="Cleansing of the Infected" QuestId="2138" GiverName="Tharnariun Treetender" GiverId="3701" X="6437.48" Y="397.48" Z="11.7883" />
+		</If>
+		<!-- REVIEW Q984 How Big a Threat?: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(984)) &amp;&amp; (IsQuestCompleted(984)))">
+			<TurnIn QuestName="How Big a Threat?" QuestId="984" TurnInName="Terenthis" TurnInId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		</If>
+		<If Condition="((HasQuest(984)) &amp;&amp; (!IsQuestCompleted(984)))">
+			<CustomBehavior File="AbandonQuest" QuestId="984" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(984)">
+			<PickUp QuestName="How Big a Threat?" QuestId="985" GiverName="Terenthis" GiverId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		</If>
+		<!-- REVIEW Q4811 The Red Crystal: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4811)) &amp;&amp; (IsQuestCompleted(4811)))">
+			<TurnIn QuestName="The Red Crystal" QuestId="4811" TurnInName="Sentinel Glynda Nal'Shea" TurnInId="2930" X="6438.62" Y="471.896" Z="8.1251" />
+		</If>
+		<If Condition="((HasQuest(4811)) &amp;&amp; (!IsQuestCompleted(4811)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4811" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(4811)">
+			<PickUp QuestName="As Water Cascades" QuestId="4812" GiverName="Sentinel Glynda Nal'Shea" GiverId="2930" X="6438.62" Y="471.896" Z="8.1251" />
+		</If>
+		<Objective QuestName="How Big a Threat?" QuestId="985" Type="KillMob" MobId="2167" KillCount="8" />
+		<Objective QuestName="How Big a Threat?" QuestId="985" Type="KillMob" MobId="2324" KillCount="5" />
+		<!-- REVIEW Q4812 As Water Cascades: item 14339 Moonwell Water Tube has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4812)) &amp;&amp; (IsQuestCompleted(4812)))">
+			<TurnIn QuestName="As Water Cascades" QuestId="4812" TurnInName="Mysterious Red Crystal" TurnInId="175524" TurnInType="Object" X="6207.82" Y="-157.763" Z="80.9614" />
+		</If>
+		<If Condition="((HasQuest(4812)) &amp;&amp; (!IsQuestCompleted(4812)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4812" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(4812)">
+			<PickUp QuestName="The Fragments Within" QuestId="4813" GiverName="Mysterious Red Crystal" GiverId="175524" GiverType="Object" X="6207.82" Y="-157.763" Z="80.9614" />
+		</If>
+		<TurnIn QuestName="How Big a Threat?" QuestId="985" TurnInName="Terenthis" TurnInId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		<If Condition="(Me.Level &gt;= 11) &amp;&amp; IsQuestCompleted(984)">
+			<PickUp QuestName="Thundris Windweaver" QuestId="4761" GiverName="Terenthis" GiverId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		</If>
+		<TurnIn QuestName="The Fragments Within" QuestId="4813" TurnInName="Sentinel Glynda Nal'Shea" TurnInId="2930" X="6438.62" Y="471.896" Z="8.1251" />
+		<If Condition="(Me.Level &gt;= 12)">
+			<PickUp QuestName="Cave Mushrooms" QuestId="947" GiverName="Barithras Moonshade" GiverId="3583" X="6427.71" Y="497.148" Z="8.1049" />
+		</If>
+		<TurnIn QuestName="Thundris Windweaver" QuestId="4761" TurnInName="Thundris Windweaver" TurnInId="3649" X="6580.97" Y="492.292" Z="8.3174" />
+		<If Condition="(Me.Level &gt;= 11) &amp;&amp; IsQuestCompleted(4761)">
+			<PickUp QuestName="The Cliffspring River" QuestId="4762" GiverName="Thundris Windweaver" GiverId="3649" X="6580.97" Y="492.292" Z="8.3174" />
+		</If>
+		<If Condition="(Me.Level &gt;= 7)">
+			<PickUp QuestName="Bashal'Aran" QuestId="954" GiverName="Thundris Windweaver" GiverId="3649" X="6580.97" Y="492.292" Z="8.3174" />
+		</If>
+		<If Condition="(Me.Level &gt;= 13)">
+			<PickUp QuestName="Deep Ocean, Vast Sea" QuestId="982" GiverName="Gorbold Steelhand" GiverId="6301" X="6535.77" Y="445.551" Z="7.1276" />
+		</If>
+		<If Condition="((HasQuest(954)) &amp;&amp; (!IsQuestCompleted(954)))">
+			<RunTo X="6744.98" Y="41.1164" Z="47.6041" />
+		</If>
+		<!-- REVIEW Q954 Bashal'Aran: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(954)) &amp;&amp; (IsQuestCompleted(954)))">
+			<TurnIn QuestName="Bashal'Aran" QuestId="954" TurnInName="Asterion" TurnInId="3650" X="6748.64" Y="48.6158" Z="48.7179" />
+		</If>
+		<If Condition="((HasQuest(954)) &amp;&amp; (!IsQuestCompleted(954)))">
+			<CustomBehavior File="AbandonQuest" QuestId="954" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(954)">
+			<PickUp QuestName="Bashal'Aran" QuestId="955" GiverName="Asterion" GiverId="3650" X="6748.64" Y="48.6158" Z="48.7179" />
+		</If>
+		<Objective QuestName="Bashal'Aran" QuestId="955" Type="CollectItem" ItemId="5336" CollectCount="8" />
+		<TurnIn QuestName="Bashal'Aran" QuestId="955" TurnInName="Asterion" TurnInId="3650" X="6748.64" Y="48.6158" Z="48.7179" />
+		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(955)">
+			<PickUp QuestName="Bashal'Aran" QuestId="956" GiverName="Asterion" GiverId="3650" X="6748.64" Y="48.6158" Z="48.7179" />
+		</If>
+		<Objective QuestName="Bashal'Aran" QuestId="956" Type="CollectItem" ItemId="5338" CollectCount="1" />
+		<TurnIn QuestName="Bashal'Aran" QuestId="956" TurnInName="Asterion" TurnInId="3650" X="6748.64" Y="48.6158" Z="48.7179" />
+		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(956)">
+			<PickUp QuestName="Bashal'Aran" QuestId="957" GiverName="Asterion" GiverId="3650" X="6748.64" Y="48.6158" Z="48.7179" />
+		</If>
+		<If Condition="(Me.Level &gt;= 11) &amp;&amp; IsQuestCompleted(4681)">
+			<PickUp QuestName="Beached Sea Creature" QuestId="4723" GiverName="Beached Sea Creature" GiverId="175233" GiverType="Object" X="6956.49" Y="195.473" Z="0.46" />
+		</If>
+		<TurnIn QuestName="Buzzbox 411" QuestId="1001" TurnInName="Buzzbox 411" TurnInId="17183" TurnInType="Object" X="7083.71" Y="193.24" Z="0.8208" />
+		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(1001)">
+			<PickUp QuestName="Buzzbox 323" QuestId="1002" GiverName="Buzzbox 411" GiverId="17183" GiverType="Object" X="7083.71" Y="193.24" Z="0.8208" />
+		</If>
+		<Objective QuestName="Deep Ocean, Vast Sea" QuestId="982" Type="CollectItem" ItemId="12192" CollectCount="1" />
+		<Objective QuestName="Deep Ocean, Vast Sea" QuestId="982" Type="CollectItem" ItemId="12191" CollectCount="1" />
+		<Objective QuestName="Cave Mushrooms" QuestId="947" Type="CollectItem" ItemId="5270" CollectCount="1" />
+		<Objective QuestName="Cave Mushrooms" QuestId="947" Type="CollectItem" ItemId="5271" CollectCount="5" />
+		<Objective QuestName="Cleansing of the Infected" QuestId="2138" Type="KillMob" MobId="2164" KillCount="20" />
+		<Objective QuestName="Buzzbox 323" QuestId="1002" Type="CollectItem" ItemId="5413" CollectCount="6" />
+		<TurnIn QuestName="Buzzbox 323" QuestId="1002" TurnInName="Buzzbox 323" TurnInId="17184" TurnInType="Object" X="7260.43" Y="-417.558" Z="26.7562" />
+		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(1002)">
+			<PickUp QuestName="Buzzbox 525" QuestId="1003" GiverName="Buzzbox 323" GiverId="17184" GiverType="Object" X="7260.43" Y="-417.558" Z="26.7562" />
+		</If>
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(4681)">
+			<PickUp QuestName="Beached Sea Turtle" QuestId="4725" GiverName="Beached Sea Turtle" GiverId="176197" GiverType="Object" X="7433.73" Y="47.2668" Z="2.4793" />
+		</If>
+		<If Condition="(Me.Level &gt;= 11)">
+			<PickUp QuestName="For Love Eternal" QuestId="963" GiverName="Cerellean Whiteclaw" GiverId="3644" X="6424.76" Y="600.451" Z="9.6531" />
+		</If>
+		<TurnIn QuestName="Beached Sea Creature" QuestId="4723" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<TurnIn QuestName="Beached Sea Turtle" QuestId="4725" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<If Condition="(Me.Level &gt;= 15)">
+			<PickUp QuestName="Fruit of the Sea" QuestId="1138" GiverName="Gubber Blump" GiverId="10216" X="6371.34" Y="577.405" Z="0.1624" />
+		</If>
+		<If Condition="(Me.Level &gt;= 9)">
+			<PickUp QuestName="WANTED: Murkdeep!" QuestId="4740" GiverName="WANTED: Murkdeep!" GiverId="175320" GiverType="Object" X="6402.21" Y="503.891" Z="8.1252" />
+		</If>
+		<TurnIn QuestName="Cave Mushrooms" QuestId="947" TurnInName="Barithras Moonshade" TurnInId="3583" X="6427.71" Y="497.148" Z="8.1049" />
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(947)">
+			<PickUp QuestName="Onu" QuestId="948" GiverName="Barithras Moonshade" GiverId="3583" X="6427.71" Y="497.148" Z="8.1049" />
+		</If>
+		<TurnIn QuestName="Cleansing of the Infected" QuestId="2138" TurnInName="Tharnariun Treetender" TurnInId="3701" X="6437.48" Y="397.48" Z="11.7883" />
+		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(2138)">
+			<PickUp QuestName="Tharnariun's Hope" QuestId="2139" GiverName="Tharnariun Treetender" GiverId="3701" X="6437.48" Y="397.48" Z="11.7883" />
+		</If>
+		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(985)">
+			<PickUp QuestName="A Lost Master" QuestId="986" GiverName="Terenthis" GiverId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		</If>
+		<If Condition="(Me.Level &gt;= 13)">
+			<PickUp QuestName="The Tower of Althalaxx" QuestId="965" GiverName="Sentinel Elissa Starbreeze" GiverId="3657" X="6431.5" Y="384.179" Z="23.4134" />
+		</If>
+		<TurnIn QuestName="Deep Ocean, Vast Sea" QuestId="982" TurnInName="Gorbold Steelhand" TurnInId="6301" X="6535.77" Y="445.551" Z="7.1276" />
+		<!-- REVIEW Q4762 The Cliffspring River: item 12349 Cliffspring River Sample has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4762)) &amp;&amp; (IsQuestCompleted(4762)))">
+			<TurnIn QuestName="The Cliffspring River" QuestId="4762" TurnInName="Thundris Windweaver" TurnInId="3649" X="6580.97" Y="492.292" Z="8.3174" />
+		</If>
+		<If Condition="((HasQuest(4762)) &amp;&amp; (!IsQuestCompleted(4762)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4762" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 9)">
+			<PickUp QuestName="Tools of the Highborne" QuestId="958" GiverName="Thundris Windweaver" GiverId="3649" X="6580.97" Y="492.292" Z="8.3174" />
+		</If>
+		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(4762)">
+			<PickUp QuestName="The Blackwood Corrupted" QuestId="4763" GiverName="Thundris Windweaver" GiverId="3649" X="6580.97" Y="492.292" Z="8.3174" />
+		</If>
+		<Objective QuestName="Tharnariun's Hope" QuestId="2139" Type="KillMob" MobId="6788" KillCount="1" />
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="965" TurnInName="Balthule Shadowstrike" TurnInId="3661" X="7246.63" Y="-658.966" Z="34.622" />
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(965)">
+			<PickUp QuestName="The Tower of Althalaxx" QuestId="966" GiverName="Balthule Shadowstrike" GiverId="3661" X="7246.63" Y="-658.966" Z="34.622" />
+		</If>
+		<Objective QuestName="The Tower of Althalaxx" QuestId="966" Type="CollectItem" ItemId="5348" CollectCount="4" />
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="966" TurnInName="Balthule Shadowstrike" TurnInId="3661" X="7246.63" Y="-658.966" Z="34.622" />
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(966)">
+			<PickUp QuestName="The Tower of Althalaxx" QuestId="967" GiverName="Balthule Shadowstrike" GiverId="3661" X="7246.63" Y="-658.966" Z="34.622" />
+		</If>
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(4681)">
+			<PickUp QuestName="Beached Sea Turtle" QuestId="4727" GiverName="Beached Sea Turtle" GiverId="176196" GiverType="Object" X="7543.85" Y="-537.257" Z="0.6169" />
+		</If>
+		<!-- REVIEW Q4763 The Blackwood Corrupted: item 12355 Talisman of Corruption has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4763)) &amp;&amp; (IsQuestCompleted(4763)))">
+			<TurnIn QuestName="The Blackwood Corrupted" QuestId="4763" TurnInName="Thundris Windweaver" TurnInId="3649" X="6580.97" Y="492.292" Z="8.3174" />
+		</If>
+		<If Condition="((HasQuest(4763)) &amp;&amp; (!IsQuestCompleted(4763)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4763" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 18)">
+			<PickUp QuestName="Onward to Ashenvale" QuestId="10752" GiverName="Thundris Windweaver" GiverId="3649" X="6580.97" Y="492.292" Z="8.3174" />
+		</If>
+		<TurnIn QuestName="Beached Sea Turtle" QuestId="4727" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<TurnIn QuestName="Tharnariun's Hope" QuestId="2139" TurnInName="Tharnariun Treetender" TurnInId="3701" X="6437.48" Y="397.48" Z="11.7883" />
+		<If Condition="(Me.Level &gt;= 9)">
+			<PickUp QuestName="The Fall of Ameth'Aran" QuestId="953" GiverName="Sentinel Tysha Moonblade" GiverId="3639" X="5725.03" Y="301.931" Z="21.0405" />
+		</If>
+		<Objective QuestName="Bashal'Aran" QuestId="957" Type="UseObject" ObjectId="16393" UseCount="1" />
+		<Objective QuestName="The Fall of Ameth'Aran" QuestId="953" Type="UseObject" ObjectId="17189" UseCount="1" />
+		<Objective QuestName="For Love Eternal" QuestId="963" Type="CollectItem" ItemId="5382" CollectCount="1" />
+		<Objective QuestName="The Fall of Ameth'Aran" QuestId="953" Type="UseObject" ObjectId="17188" UseCount="1" />
+		<Objective QuestName="Tools of the Highborne" QuestId="958" Type="CollectItem" ItemId="5360" CollectCount="7" />
+		<TurnIn QuestName="The Fall of Ameth'Aran" QuestId="953" TurnInName="Sentinel Tysha Moonblade" TurnInId="3639" X="5725.03" Y="301.931" Z="21.0405" />
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(4681)">
+			<PickUp QuestName="Beached Sea Creature" QuestId="4728" GiverName="Beached Sea Creature" GiverId="175226" GiverType="Object" X="5238.3" Y="583.046" Z="0.2674" />
+		</If>
+		<Objective QuestName="WANTED: Murkdeep!" QuestId="4740" Type="KillMob" MobId="10323" KillCount="1" />
+		<Objective QuestName="Fruit of the Sea" QuestId="1138" Type="CollectItem" ItemId="12237" CollectCount="6" />
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(4681)">
+			<PickUp QuestName="Beached Sea Turtle" QuestId="4731" GiverName="Beached Sea Turtle" GiverId="176198" GiverType="Object" X="4679.33" Y="866.985" Z="1.9593" />
+		</If>
+		<Objective QuestName="Buzzbox 525" QuestId="1003" Type="CollectItem" ItemId="5414" CollectCount="4" />
+		<Objective QuestName="A Lost Master" QuestId="986" Type="CollectItem" ItemId="5386" CollectCount="5" />
+		<TurnIn QuestName="Buzzbox 525" QuestId="1003" TurnInName="Buzzbox 525" TurnInId="17185" TurnInType="Object" X="4815.38" Y="230.723" Z="49.1618" />
+		<If Condition="(Me.Level &gt;= 11) &amp;&amp; IsQuestCompleted(4681)">
+			<PickUp QuestName="Beached Sea Turtle" QuestId="4722" GiverName="Beached Sea Turtle" GiverId="176190" GiverType="Object" X="5618.26" Y="512.222" Z="3.0379" />
+		</If>
+		<TurnIn QuestName="Beached Sea Turtle" QuestId="4722" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<TurnIn QuestName="Beached Sea Creature" QuestId="4728" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<TurnIn QuestName="Beached Sea Turtle" QuestId="4731" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<TurnIn QuestName="Fruit of the Sea" QuestId="1138" TurnInName="Gubber Blump" TurnInId="10216" X="6371.34" Y="577.405" Z="0.1624" />
+		<TurnIn QuestName="For Love Eternal" QuestId="963" TurnInName="Cerellean Whiteclaw" TurnInId="3644" X="6424.76" Y="600.451" Z="9.6531" />
+		<TurnIn QuestName="WANTED: Murkdeep!" QuestId="4740" TurnInName="Sentinel Glynda Nal'Shea" TurnInId="2930" X="6438.62" Y="471.896" Z="8.1251" />
+		<TurnIn QuestName="A Lost Master" QuestId="986" TurnInName="Terenthis" TurnInId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(986)">
+			<PickUp QuestName="A Lost Master" QuestId="993" GiverName="Terenthis" GiverId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		</If>
+		<TurnIn QuestName="Tools of the Highborne" QuestId="958" TurnInName="Thundris Windweaver" TurnInId="3649" X="6580.97" Y="492.292" Z="8.3174" />
+		<If Condition="(Me.Level &gt;= 15)">
+			<PickUp QuestName="The Absent Minded Prospector" QuestId="729" GiverName="Archaeologist Hollee" GiverId="2913" X="6506.35" Y="489.304" Z="6.8245" />
+		</If>
+		<TurnIn QuestName="Bashal'Aran" QuestId="957" TurnInName="Asterion" TurnInId="3650" X="6748.64" Y="48.6158" Z="48.7179" />
+		<TurnIn QuestName="Onu" QuestId="948" TurnInName="Onu" TurnInId="3616" X="5002.01" Y="88.8183" Z="52.7788" />
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(948)">
+			<PickUp QuestName="The Master's Glaive" QuestId="944" GiverName="Onu" GiverId="3616" X="5002.01" Y="88.8183" Z="52.7788" />
+		</If>
+		<If Condition="((HasQuest(944)) &amp;&amp; (!IsQuestCompleted(944)))">
+			<RunTo X="4558.36" Y="421.446" Z="33.7425" />
+		</If>
+		<!-- SKIP turn-in Q944 The Master's Glaive: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(944)) &amp;&amp; (!IsQuestCompleted(944)))">
+			<CustomBehavior File="AbandonQuest" QuestId="944" Type="Incomplete" />
+		</If>
+		<!-- SKIP pickup Q949 The Twilight Camp: no quest giver with a spawn in the database -->
+		<!-- REVIEW Q949 The Twilight Camp: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(949)) &amp;&amp; (IsQuestCompleted(949)))">
+			<TurnIn QuestName="The Twilight Camp" QuestId="949" TurnInName="Twilight Tome" TurnInId="12666" TurnInType="Object" X="4575.75" Y="417.029" Z="34.9274" />
+		</If>
+		<If Condition="((HasQuest(949)) &amp;&amp; (!IsQuestCompleted(949)))">
+			<CustomBehavior File="AbandonQuest" QuestId="949" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(949)">
+			<PickUp QuestName="Return to Onu" QuestId="950" GiverName="Twilight Tome" GiverId="12666" GiverType="Object" X="4575.75" Y="417.029" Z="34.9274" />
+		</If>
+		<If Condition="(Me.Level &gt;= 10)">
+			<PickUp QuestName="Therylune's Escape" QuestId="945" GiverName="Therylune" GiverId="3584" X="4519.74" Y="410.481" Z="33.8577" />
+		</If>
+		<If Condition="HasItem(5352) &amp;&amp; !HasQuest(968) &amp;&amp; !IsQuestCompleted(968) &amp;&amp; (Me.Level &gt;= 10)">
+			<PickUp QuestName="The Powers Below" QuestId="968" GiverName="Book: The Powers Below" GiverId="5352" GiverType="Item" />
+		</If>
+		<TurnIn QuestName="The Absent Minded Prospector" QuestId="729" TurnInName="Prospector Remtravel" TurnInId="2917" X="4678.63" Y="601.614" Z="18.4972" />
+		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(729)">
+			<PickUp QuestName="The Absent Minded Prospector" QuestId="731" GiverName="Prospector Remtravel" GiverId="2917" X="4678.63" Y="601.614" Z="18.4972" />
+		</If>
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(4681)">
+			<PickUp QuestName="Beached Sea Creature" QuestId="4730" GiverName="Beached Sea Creature" GiverId="175227" GiverType="Object" X="4805.52" Y="800.445" Z="0.0695" />
+		</If>
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(4681)">
+			<PickUp QuestName="Beached Sea Turtle" QuestId="4732" GiverName="Beached Sea Turtle" GiverId="176191" GiverType="Object" X="4595.65" Y="896.41" Z="2.3453" />
+		</If>
+		<TurnIn QuestName="A Lost Master" QuestId="993" TurnInName="Volcor" TurnInId="3692" X="4608.44" Y="-6.3259" Z="69.7473" />
+		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(993) &amp;&amp; !IsQuestCompleted(995) &amp;&amp; !HasQuest(995)">
+			<PickUp QuestName="Escape Through Force" QuestId="994" GiverName="Volcor" GiverId="3692" X="4608.44" Y="-6.3259" Z="69.7473" />
+		</If>
+		<TurnIn QuestName="Return to Onu" QuestId="950" TurnInName="Onu" TurnInId="3616" X="5002.01" Y="88.8183" Z="52.7788" />
+		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(950)">
+			<PickUp QuestName="Mathystra Relics" QuestId="951" GiverName="Onu" GiverId="3616" X="5002.01" Y="88.8183" Z="52.7788" />
+		</If>
+		<If Condition="(Me.Level &gt;= 17)">
+			<PickUp QuestName="The Sleeper Has Awakened" QuestId="5321" GiverName="Kerlonian Evershade" GiverId="11218" X="4995.83" Y="33.5645" Z="51.5915" />
+		</If>
+		<Objective QuestName="The Sleeper Has Awakened" QuestId="5321" Type="CollectItem" ItemId="13536" CollectCount="1" />
+		<!-- REVIEW Q5321 The Sleeper Has Awakened: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(5321)) &amp;&amp; (IsQuestCompleted(5321)))">
+			<TurnIn QuestName="The Sleeper Has Awakened" QuestId="5321" TurnInName="Liladris Moonriver" TurnInId="11219" X="3305.22" Y="127.885" Z="16.1994" />
+		</If>
+		<If Condition="((HasQuest(5321)) &amp;&amp; (!IsQuestCompleted(5321)))">
+			<CustomBehavior File="AbandonQuest" QuestId="5321" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="967" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(967)">
+			<PickUp QuestName="The Tower of Althalaxx" QuestId="970" GiverName="Delgren the Purifier" GiverId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		</If>
+		<Objective QuestName="The Tower of Althalaxx" QuestId="970" Type="CollectItem" ItemId="5366" CollectCount="1" />
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="970" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(970)">
+			<PickUp QuestName="The Tower of Althalaxx" QuestId="973" GiverName="Delgren the Purifier" GiverId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		</If>
+		<!-- REVIEW Q945 Therylune's Escape: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(945)) &amp;&amp; (IsQuestCompleted(945)))">
+			<TurnIn QuestName="Therylune's Escape" QuestId="945" TurnInName="Therysil" TurnInId="3585" X="2677.34" Y="394.207" Z="69.8261" />
+		</If>
+		<If Condition="((HasQuest(945)) &amp;&amp; (!IsQuestCompleted(945)))">
+			<CustomBehavior File="AbandonQuest" QuestId="945" Type="Incomplete" />
+		</If>
+		<Objective QuestName="The Tower of Althalaxx" QuestId="973" Type="CollectItem" ItemId="5533" CollectCount="1" />
+		<TurnIn QuestName="Onward to Ashenvale" QuestId="10752" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="973" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(973)">
+			<PickUp QuestName="The Tower of Althalaxx" QuestId="1140" GiverName="Delgren the Purifier" GiverId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		</If>
+		<!-- REVIEW Q1140 The Tower of Althalaxx: object 19901 Circle of Imprisonment has no spawn near the guide coordinates; object 20352 Circle of Imprisonment has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1140)) &amp;&amp; (IsQuestCompleted(1140)))">
+			<TurnIn QuestName="The Tower of Althalaxx" QuestId="1140" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		</If>
+		<If Condition="((HasQuest(1140)) &amp;&amp; (!IsQuestCompleted(1140)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1140" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(1140)">
+			<PickUp QuestName="The Tower of Althalaxx" QuestId="1167" GiverName="Delgren the Purifier" GiverId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		</If>
+		<TurnIn QuestName="Beached Sea Creature" QuestId="4730" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<TurnIn QuestName="Beached Sea Turtle" QuestId="4732" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<!-- REVIEW Q731 The Absent Minded Prospector: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(731)) &amp;&amp; (IsQuestCompleted(731)))">
+			<TurnIn QuestName="The Absent Minded Prospector" QuestId="731" TurnInName="Archaeologist Hollee" TurnInId="2913" X="6506.35" Y="489.304" Z="6.8245" />
+		</If>
+		<If Condition="((HasQuest(731)) &amp;&amp; (!IsQuestCompleted(731)))">
+			<CustomBehavior File="AbandonQuest" QuestId="731" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(731)">
+			<PickUp QuestName="The Absent Minded Prospector" QuestId="741" GiverName="Archaeologist Hollee" GiverId="2913" X="6506.35" Y="489.304" Z="6.8245" />
+		</If>
+		<!-- REVIEW Q994 Escape Through Force: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(994)) &amp;&amp; (IsQuestCompleted(994)))">
+			<TurnIn QuestName="Escape Through Force" QuestId="994" TurnInName="Terenthis" TurnInId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		</If>
+		<If Condition="((HasQuest(994)) &amp;&amp; (!IsQuestCompleted(994)))">
+			<CustomBehavior File="AbandonQuest" QuestId="994" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="1167" TurnInName="Balthule Shadowstrike" TurnInId="3661" X="7246.63" Y="-658.966" Z="34.622" />
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(1167)">
+			<PickUp QuestName="The Tower of Althalaxx" QuestId="1143" GiverName="Balthule Shadowstrike" GiverId="3661" X="7246.63" Y="-658.966" Z="34.622" />
+		</If>
+		<!-- REVIEW Q1143 The Tower of Althalaxx: item 5383 Athrikus Narassin's Head has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1143)) &amp;&amp; (IsQuestCompleted(1143)))">
+			<TurnIn QuestName="The Tower of Althalaxx" QuestId="1143" TurnInName="Balthule Shadowstrike" TurnInId="3661" X="7246.63" Y="-658.966" Z="34.622" />
+		</If>
+		<If Condition="((HasQuest(1143)) &amp;&amp; (!IsQuestCompleted(1143)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1143" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(1143)">
+			<PickUp QuestName="The Tower of Althalaxx" QuestId="981" GiverName="Balthule Shadowstrike" GiverId="3661" X="7246.63" Y="-658.966" Z="34.622" />
+		</If>
+		<If Condition="(Me.Level &gt;= 14)">
+			<PickUp QuestName="Gyromast's Retrieval" QuestId="2098" GiverName="Gelkak Gyromast" GiverId="6667" X="7744.51" Y="-769.238" Z="5.4445" />
+		</If>
+		<Objective QuestName="Gyromast's Retrieval" QuestId="2098" Type="CollectItem" ItemId="7500" CollectCount="1" />
+		<Objective QuestName="Gyromast's Retrieval" QuestId="2098" Type="CollectItem" ItemId="7498" CollectCount="1" />
+		<Objective QuestName="Gyromast's Retrieval" QuestId="2098" Type="CollectItem" ItemId="7499" CollectCount="1" />
+		<TurnIn QuestName="Gyromast's Retrieval" QuestId="2098" TurnInName="Gelkak Gyromast" TurnInId="6667" X="7744.51" Y="-769.238" Z="5.4445" />
+		<If Condition="(Me.Level &gt;= 14) &amp;&amp; IsQuestCompleted(2098)">
+			<PickUp QuestName="Gyromast's Revenge" QuestId="2078" GiverName="Gelkak Gyromast" GiverId="6667" X="7744.51" Y="-769.238" Z="5.4445" />
+		</If>
+		<!-- REVIEW Q2078 Gyromast's Revenge: objective 6669 The Threshwackonator 4100 x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(2078)) &amp;&amp; (IsQuestCompleted(2078)))">
+			<TurnIn QuestName="Gyromast's Revenge" QuestId="2078" TurnInName="Gelkak Gyromast" TurnInId="6667" X="7744.51" Y="-769.238" Z="5.4445" />
+		</If>
+		<If Condition="((HasQuest(2078)) &amp;&amp; (!IsQuestCompleted(2078)))">
+			<CustomBehavior File="AbandonQuest" QuestId="2078" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Mathystra Relics" QuestId="951" Type="CollectItem" ItemId="5273" CollectCount="6" />
+		<TurnIn QuestName="Mathystra Relics" QuestId="951" TurnInName="Onu" TurnInId="3616" X="5002.01" Y="88.8183" Z="52.7788" />
+		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(4681)">
+			<PickUp QuestName="Beached Sea Creature" QuestId="4733" GiverName="Beached Sea Creature" GiverId="175230" GiverType="Object" X="4515.08" Y="894.139" Z="4.4148" />
+		</If>
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="981" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		<TurnIn QuestName="Beached Sea Creature" QuestId="4733" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
+		<TurnIn QuestName="The Absent Minded Prospector" QuestId="741" TurnInName="Chief Archaeologist Greywhisker" TurnInId="2912" X="9641.92" Y="2607.69" Z="1337.38" />
+		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(741)">
+			<PickUp QuestName="The Absent Minded Prospector" QuestId="942" GiverName="Chief Archaeologist Greywhisker" GiverId="2912" X="9641.92" Y="2607.69" Z="1337.38" />
+		</If>
+		<TurnIn QuestName="The Powers Below" QuestId="968" TurnInName="Gerrig Bonegrip" TurnInId="2786" X="-4598.87" Y="-1115.45" Z="505.022" />
+		<TurnIn QuestName="The Absent Minded Prospector" QuestId="942" TurnInName="Archaeologist Flagongut" TurnInId="2911" X="-3813.62" Y="-837.888" Z="17.1641" />
+		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(942)">
+			<PickUp QuestName="The Absent Minded Prospector" QuestId="943" GiverName="Archaeologist Flagongut" GiverId="2911" X="-3813.62" Y="-837.888" Z="17.1641" />
+		</If>
+		<Objective QuestName="The Absent Minded Prospector" QuestId="943" Type="CollectItem" ItemId="5234" CollectCount="1" />
+		<Objective QuestName="The Absent Minded Prospector" QuestId="943" Type="CollectItem" ItemId="5233" CollectCount="1" />
+		<TurnIn QuestName="The Absent Minded Prospector" QuestId="943" TurnInName="Archaeologist Flagongut" TurnInId="2911" X="-3813.62" Y="-837.888" Z="17.1641" />
+	</QuestOrder>
+</HBProfile>

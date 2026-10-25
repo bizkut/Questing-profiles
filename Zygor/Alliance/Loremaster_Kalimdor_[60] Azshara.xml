@@ -1,0 +1,534 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Kalimdor\[60] Azshara</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Lunar Festival Vendor" Entry="15898" Type="Food" X="-4644.21" Y="-950.137" Z="501.744" />
+		<Vendor Name="Bimble Longberry" Entry="7978" Type="Food" X="-4640.13" Y="-1014.64" Z="501.65" />
+		<Vendor Name="Bruuk Barleybeard" Entry="5570" Type="Food" X="-4975.23" Y="-1286.97" Z="502.053" />
+		<Vendor Name="Edris Barleybeard" Entry="5140" Type="Food" X="-4969.12" Y="-1284.82" Z="510.386" />
+		<Vendor Name="Sognar Cliffbeard" Entry="5124" Type="Food" X="-4981" Y="-1163" Z="501.746" />
+		<Vendor Name="Brinna Valanaar" Entry="14301" Type="Repair" X="2691.34" Y="-3885.63" Z="109.247" />
+		<Vendor Name="Ingrys Stonebrow" Entry="5155" Type="Repair" X="-4596.43" Y="-1016.03" Z="512.041" />
+		<Vendor Name="Maeva Snowbraid" Entry="5156" Type="Repair" X="-4600.87" Y="-1019.38" Z="505.372" />
+		<Vendor Name="Strumner Flintheel" Entry="5508" Type="Repair" X="-10949.8" Y="-3455.49" Z="66.7557" />
+		<Vendor Name="Kelomir Ironhand" Entry="5121" Type="Repair" X="-5037.28" Y="-1208.09" Z="508.986" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="5246" Name="Fragments of the Past">
+		<Objective Type="CollectItem" ItemId="13313" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Sacred Highborne Writings" Id="176356" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3565.31" Y="-5382.17" Z="107.714" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2681" Name="The Stones That Bind Us">
+		<Objective Type="KillMob" MobId="7669" KillCount="3">
+			<Hotspots>
+				<Hotspot X="-10804.2" Y="-2694.91" Z="8.7607" />
+				<Hotspot X="-10888.9" Y="-2622.51" Z="10.8857" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="7671" KillCount="3">
+			<Hotspots>
+				<Hotspot X="-11462.1" Y="-2614.81" Z="44.3686" />
+				<Hotspot X="-11476.3" Y="-2692.11" Z="7.0646" />
+				<Hotspot X="-11323.3" Y="-2522.83" Z="93.9779" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="7668" KillCount="9">
+			<Hotspots>
+				<Hotspot X="-11650.9" Y="-3085.76" Z="20.1169" />
+				<Hotspot X="-11739" Y="-3053.84" Z="18.4111" />
+				<Hotspot X="-11842.3" Y="-2974.43" Z="10.0113" />
+				<Hotspot X="-11880.3" Y="-3026.19" Z="18.5392" />
+				<Hotspot X="-11709.4" Y="-3311.69" Z="16.9198" />
+				<Hotspot X="-11811.4" Y="-3355.22" Z="6.9649" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="7670" KillCount="3">
+			<Hotspots>
+				<Hotspot X="-11331.6" Y="-3398.19" Z="7.5927" />
+				<Hotspot X="-11478.5" Y="-3363.06" Z="7.3894" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3449" Name="Arcane Runes">
+		<Objective Type="CollectItem" ItemId="10566" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Rune of Sael'hai" Id="149483" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3172.75" Y="-5426.29" Z="90.5842" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10565" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Rune of Markri" Id="149482" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3465.71" Y="-5272.91" Z="89.2001" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10564" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Rune of Jin'yael" Id="149480" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3642.44" Y="-5283.04" Z="90.2832" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10563" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Rune of Beth'Amara" Id="149481" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3543.91" Y="-5148.91" Z="82.9136" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5535" Name="Spiritual Unrest">
+		<Objective Type="KillMob" MobId="6116" KillCount="6">
+			<Hotspots>
+				<Hotspot X="2950.91" Y="-4152.91" Z="100.174" />
+				<Hotspot X="2995.09" Y="-4117.54" Z="100.019" />
+				<Hotspot X="3013.74" Y="-4184.4" Z="99.3006" />
+				<Hotspot X="3114.76" Y="-4145.25" Z="103.617" />
+				<Hotspot X="2882.41" Y="-4116.16" Z="95.7186" />
+				<Hotspot X="2852.99" Y="-4079.29" Z="114.656" />
+				<Hotspot X="2857.27" Y="-4022.44" Z="139.656" />
+				<Hotspot X="2897.16" Y="-4012.72" Z="134.024" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="6117" KillCount="6">
+			<Hotspots>
+				<Hotspot X="2948.44" Y="-4122.4" Z="104.186" />
+				<Hotspot X="2976.22" Y="-4182.46" Z="100.52" />
+				<Hotspot X="3023.85" Y="-4153.2" Z="102.921" />
+				<Hotspot X="3051.62" Y="-4113.75" Z="101.499" />
+				<Hotspot X="3082.4" Y="-4176.7" Z="98.6494" />
+				<Hotspot X="2886.11" Y="-4016.66" Z="137.25" />
+				<Hotspot X="2867.18" Y="-3960.38" Z="102.039" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5536" Name="A Land Filled with Hatred">
+		<Objective Type="KillMob" MobId="6125" KillCount="6">
+			<Hotspots>
+				<Hotspot X="3222.77" Y="-4251.91" Z="103.91" />
+				<Hotspot X="3282.01" Y="-4285.86" Z="126.09" />
+				<Hotspot X="3252.23" Y="-4341.69" Z="131.114" />
+				<Hotspot X="3298.17" Y="-4356.99" Z="125.354" />
+				<Hotspot X="3188.1" Y="-4311.78" Z="104.616" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="6126" KillCount="2">
+			<Hotspots>
+				<Hotspot X="3251.6" Y="-4258.48" Z="116.472" />
+				<Hotspot X="3237.43" Y="-4305.15" Z="131.106" />
+				<Hotspot X="3183.02" Y="-4275.75" Z="100.544" />
+				<Hotspot X="3317.23" Y="-4336.92" Z="131.377" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="6127" KillCount="2">
+			<Hotspots>
+				<Hotspot X="3282.71" Y="-4252.87" Z="117.315" />
+				<Hotspot X="3272.26" Y="-4318.78" Z="132.295" />
+				<Hotspot X="3176.16" Y="-4245.36" Z="98.2849" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3601" Name="Kim'jael Indeed!">
+		<Objective Type="CollectItem" ItemId="10717" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Kim'jael's Equipment" Id="153123" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4369.16" Y="-6131.61" Z="122.726" />
+				<Hotspot X="4384.8" Y="-6168.82" Z="128.815" />
+				<Hotspot X="4320.38" Y="-6121.56" Z="127.928" />
+				<Hotspot X="4359.46" Y="-6245.76" Z="96.7805" />
+				<Hotspot X="4295.74" Y="-6299.57" Z="96.0124" />
+				<Hotspot X="4497.24" Y="-6244.04" Z="102.322" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10715" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Kim'jael's Equipment" Id="153123" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4369.16" Y="-6131.61" Z="122.726" />
+				<Hotspot X="4384.8" Y="-6168.82" Z="128.815" />
+				<Hotspot X="4320.38" Y="-6121.56" Z="127.928" />
+				<Hotspot X="4359.46" Y="-6245.76" Z="96.7805" />
+				<Hotspot X="4295.74" Y="-6299.57" Z="96.0124" />
+				<Hotspot X="4497.24" Y="-6244.04" Z="102.322" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10722" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Kim'jael's Equipment" Id="153123" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4369.16" Y="-6131.61" Z="122.726" />
+				<Hotspot X="4384.8" Y="-6168.82" Z="128.815" />
+				<Hotspot X="4320.38" Y="-6121.56" Z="127.928" />
+				<Hotspot X="4359.46" Y="-6245.76" Z="96.7805" />
+				<Hotspot X="4295.74" Y="-6299.57" Z="96.0124" />
+				<Hotspot X="4497.24" Y="-6244.04" Z="102.322" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10718" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Kim'jael's Equipment" Id="153123" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4369.16" Y="-6131.61" Z="122.726" />
+				<Hotspot X="4384.8" Y="-6168.82" Z="128.815" />
+				<Hotspot X="4320.38" Y="-6121.56" Z="127.928" />
+				<Hotspot X="4359.46" Y="-6245.76" Z="96.7805" />
+				<Hotspot X="4295.74" Y="-6299.57" Z="96.0124" />
+				<Hotspot X="4497.24" Y="-6244.04" Z="102.322" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5534" Name="Kim'jael's &quot;Missing&quot; Equipment">
+		<Objective Type="CollectItem" ItemId="13815" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Spitelash Siren" Id="6195" />
+				<Mob Name="Spitelash Myrmidon" Id="6196" />
+				<Mob Name="Spitelash Battlemaster" Id="7885" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3887.43" Y="-5691.69" Z="16.332" />
+				<Hotspot X="3852.57" Y="-5730.47" Z="13.351" />
+				<Hotspot X="3885.26" Y="-5760.4" Z="12.0857" />
+				<Hotspot X="3810.6" Y="-5695.11" Z="6.8518" />
+				<Hotspot X="3850.77" Y="-5644.56" Z="14.5973" />
+				<Hotspot X="3887.25" Y="-5619.04" Z="21.1011" />
+				<Hotspot X="3921.13" Y="-5581.75" Z="35.5548" />
+				<Hotspot X="3945.93" Y="-5651.75" Z="25.9342" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3510" Name="The Name of the Beast">
+		<Objective Type="CollectItem" ItemId="10599" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Hetaera" Id="6140" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3827.25" Y="-6153.95" Z="4.5462" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10598" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Hetaera" Id="6140" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3827.25" Y="-6153.95" Z="4.5462" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10600" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Hetaera" Id="6140" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3827.25" Y="-6153.95" Z="4.5462" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3602" Name="Azsharite">
+		<Objective Type="CollectItem" ItemId="10714" CollectCount="20">
+			<CollectFrom>
+				<GameObject Name="Azsharite Formation" Id="152622" />
+				<GameObject Name="Azsharite Formation" Id="152631" />
+				<GameObject Name="Azsharite Formation" Id="152620" />
+				<GameObject Name="Azsharite Formation" Id="152621" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2568.2" Y="-6044.43" Z="101.809" />
+				<Hotspot X="2524.7" Y="-6099" Z="104.747" />
+				<Hotspot X="2400.9" Y="-6095.08" Z="104.625" />
+				<Hotspot X="2399.99" Y="-6180.49" Z="100.596" />
+				<Hotspot X="2477.72" Y="-5963.47" Z="96.5236" />
+				<Hotspot X="2452.77" Y="-5903.56" Z="107.472" />
+				<Hotspot X="2673.61" Y="-6006.06" Z="99.1625" />
+				<Hotspot X="2678.63" Y="-6121.11" Z="105.745" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6805" Name="Stormers and Rumblers">
+		<Objective Type="KillMob" MobId="11744" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-6474.89" Y="1876.75" Z="4.027" />
+				<Hotspot X="-6420.58" Y="1885.21" Z="5.5227" />
+				<Hotspot X="-6381.03" Y="1844.37" Z="4.1672" />
+				<Hotspot X="-6494.02" Y="1824.12" Z="3.2407" />
+				<Hotspot X="-6550.36" Y="1814.8" Z="3.7029" />
+				<Hotspot X="-6549.77" Y="1890.73" Z="2.6954" />
+				<Hotspot X="-6576.05" Y="1924.09" Z="5.9116" />
+				<Hotspot X="-6505.6" Y="1923.67" Z="6.5756" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="11746" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-6188.41" Y="1713.74" Z="18.0305" />
+				<Hotspot X="-6221.19" Y="1680.12" Z="6.2762" />
+				<Hotspot X="-6182.5" Y="1657.98" Z="12.7254" />
+				<Hotspot X="-6278.17" Y="1681.24" Z="5.2139" />
+				<Hotspot X="-6294.12" Y="1746.85" Z="4.5114" />
+				<Hotspot X="-6283.58" Y="1812.41" Z="6.3661" />
+				<Hotspot X="-6228.19" Y="1769.88" Z="14.0261" />
+				<Hotspot X="-6190.84" Y="1784.27" Z="22.457" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3627" Name="Uniting the Shattered Amulet">
+		<Objective Type="CollectItem" ItemId="10753" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Grol the Destroyer" Id="7665" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10857.3" Y="-2667.71" Z="7.8842" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10754" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Lady Sevine" Id="7667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11236.1" Y="-2606.81" Z="95.7706" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10755" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Archmage Allistarj" Id="7666" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11219.6" Y="-3475.74" Z="9.85" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-Kalimdor.lua: Ding80's Loremaster Alliance Guides\Kalimdor\[60] Azshara -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Kalimdor_[60] Azshara");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(5245)">
+			<PickUp QuestName="Fragments of the Past" QuestId="5246" GiverName="Aurora Skycaller" GiverId="10304" X="3232.15" Y="-4256.49" Z="98.206" />
+		</If>
+		<If Condition="(Me.Level &gt;= 50)">
+			<PickUp QuestName="Petty Squabbles" QuestId="2783" GiverName="Ambassador Ardalan" GiverId="7826" X="-10997.5" Y="-3505.23" Z="103.211" />
+		</If>
+		<TurnIn QuestName="Petty Squabbles" QuestId="2783" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		<If Condition="(Me.Level &gt;= 45)">
+			<PickUp QuestName="A Tale of Sorrow" QuestId="2801" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		</If>
+		<!-- REVIEW Q2801 A Tale of Sorrow: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(2801)) &amp;&amp; (IsQuestCompleted(2801)))">
+			<TurnIn QuestName="A Tale of Sorrow" QuestId="2801" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		</If>
+		<If Condition="((HasQuest(2801)) &amp;&amp; (!IsQuestCompleted(2801)))">
+			<CustomBehavior File="AbandonQuest" QuestId="2801" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2801)">
+			<PickUp QuestName="The Stones That Bind Us" QuestId="2681" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		</If>
+		<Objective QuestName="The Stones That Bind Us" QuestId="2681" Type="KillMob" MobId="7669" KillCount="3" />
+		<Objective QuestName="The Stones That Bind Us" QuestId="2681" Type="KillMob" MobId="7671" KillCount="3" />
+		<Objective QuestName="The Stones That Bind Us" QuestId="2681" Type="KillMob" MobId="7668" KillCount="9" />
+		<Objective QuestName="The Stones That Bind Us" QuestId="2681" Type="KillMob" MobId="7670" KillCount="3" />
+		<TurnIn QuestName="The Stones That Bind Us" QuestId="2681" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2681)">
+			<PickUp QuestName="Heroes of Old" QuestId="2702" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		</If>
+		<TurnIn QuestName="Heroes of Old" QuestId="2702" TurnInName="Corporal Thund Splithoof" TurnInId="7750" X="-10630.2" Y="-2988.19" Z="28.8757" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2702)">
+			<PickUp QuestName="Heroes of Old" QuestId="2701" GiverName="Corporal Thund Splithoof" GiverId="7750" X="-10630.2" Y="-2988.19" Z="28.8757" />
+		</If>
+		<TurnIn QuestName="Heroes of Old" QuestId="2701" TurnInName="Corporal Thund Splithoof" TurnInId="7750" X="-10630.2" Y="-2988.19" Z="28.8757" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2701)">
+			<PickUp QuestName="Kirith" QuestId="2721" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		</If>
+		<!-- SKIP turn-in Q2721 Kirith: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(2721)) &amp;&amp; (!IsQuestCompleted(2721)))">
+			<CustomBehavior File="AbandonQuest" QuestId="2721" Type="Incomplete" />
+		</If>
+		<!-- SKIP pickup Q2743 The Cover of Darkness: no quest giver with a spawn in the database -->
+		<!-- REVIEW Q2743 The Cover of Darkness: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(2743)) &amp;&amp; (IsQuestCompleted(2743)))">
+			<TurnIn QuestName="The Cover of Darkness" QuestId="2743" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		</If>
+		<If Condition="((HasQuest(2743)) &amp;&amp; (!IsQuestCompleted(2743)))">
+			<CustomBehavior File="AbandonQuest" QuestId="2743" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2743)">
+			<PickUp QuestName="The Demon Hunter" QuestId="2744" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		</If>
+		<If Condition="(Me.Level &gt;= 45)">
+			<PickUp QuestName="Passing the Burden" QuestId="3448" GiverName="Historian Karnik" GiverId="2916" X="-4631.63" Y="-1326.66" Z="503.465" />
+		</If>
+		<TurnIn QuestName="Passing the Burden" QuestId="3448" TurnInName="Tymor" TurnInId="8507" X="-4594.7" Y="-958.391" Z="508.962" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3448)">
+			<PickUp QuestName="Arcane Runes" QuestId="3449" GiverName="Tymor" GiverId="8507" X="-4594.7" Y="-958.391" Z="508.962" />
+		</If>
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3448)">
+			<PickUp QuestName="An Easy Pickup" QuestId="3450" GiverName="Tymor" GiverId="8507" X="-4594.7" Y="-958.391" Z="508.962" />
+		</If>
+		<TurnIn QuestName="An Easy Pickup" QuestId="3450" TurnInName="Xiggs Fuselighter" TurnInId="8517" X="-5068.16" Y="-1273.87" Z="502.047" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3450)">
+			<PickUp QuestName="Signal for Pickup" QuestId="3451" GiverName="Xiggs Fuselighter" GiverId="8517" X="-5068.16" Y="-1273.87" Z="502.047" />
+		</If>
+		<TurnIn QuestName="Signal for Pickup" QuestId="3451" TurnInName="Xiggs Fuselighter" TurnInId="8517" X="-5068.16" Y="-1273.87" Z="502.047" />
+		<If Condition="(Me.Level &gt;= 45)">
+			<PickUp QuestName="Spiritual Unrest" QuestId="5535" GiverName="Loh'atu" GiverId="11548" X="2698.67" Y="-3853.54" Z="102.836" />
+		</If>
+		<If Condition="(Me.Level &gt;= 45)">
+			<PickUp QuestName="A Land Filled with Hatred" QuestId="5536" GiverName="Loh'atu" GiverId="11548" X="2698.67" Y="-3853.54" Z="102.836" />
+		</If>
+		<Objective QuestName="Spiritual Unrest" QuestId="5535" Type="KillMob" MobId="6116" KillCount="6" />
+		<Objective QuestName="Spiritual Unrest" QuestId="5535" Type="KillMob" MobId="6117" KillCount="6" />
+		<Objective QuestName="A Land Filled with Hatred" QuestId="5536" Type="KillMob" MobId="6125" KillCount="6" />
+		<Objective QuestName="A Land Filled with Hatred" QuestId="5536" Type="KillMob" MobId="6126" KillCount="2" />
+		<Objective QuestName="A Land Filled with Hatred" QuestId="5536" Type="KillMob" MobId="6127" KillCount="2" />
+		<TurnIn QuestName="Spiritual Unrest" QuestId="5535" TurnInName="Loh'atu" TurnInId="11548" X="2698.67" Y="-3853.54" Z="102.836" />
+		<TurnIn QuestName="A Land Filled with Hatred" QuestId="5536" TurnInName="Loh'atu" TurnInId="11548" X="2698.67" Y="-3853.54" Z="102.836" />
+		<Objective QuestName="Arcane Runes" QuestId="3449" Type="CollectItem" ItemId="10566" CollectCount="1" />
+		<Objective QuestName="Arcane Runes" QuestId="3449" Type="CollectItem" ItemId="10565" CollectCount="1" />
+		<Objective QuestName="Arcane Runes" QuestId="3449" Type="CollectItem" ItemId="10564" CollectCount="1" />
+		<Objective QuestName="Arcane Runes" QuestId="3449" Type="CollectItem" ItemId="10563" CollectCount="1" />
+		<Objective QuestName="Fragments of the Past" QuestId="5246" Type="CollectItem" ItemId="13313" CollectCount="1" />
+		<If Condition="(Me.Level &gt;= 47)">
+			<PickUp QuestName="Kim'jael Indeed!" QuestId="3601" GiverName="Kim'jael" GiverId="8420" X="4603.83" Y="-5987.55" Z="169.724" />
+		</If>
+		<Objective QuestName="Kim'jael Indeed!" QuestId="3601" Type="CollectItem" ItemId="10717" CollectCount="1" />
+		<Objective QuestName="Kim'jael Indeed!" QuestId="3601" Type="CollectItem" ItemId="10715" CollectCount="1" />
+		<Objective QuestName="Kim'jael Indeed!" QuestId="3601" Type="CollectItem" ItemId="10722" CollectCount="1" />
+		<Objective QuestName="Kim'jael Indeed!" QuestId="3601" Type="CollectItem" ItemId="10718" CollectCount="1" />
+		<TurnIn QuestName="Kim'jael Indeed!" QuestId="3601" TurnInName="Kim'jael" TurnInId="8420" X="4603.83" Y="-5987.55" Z="169.724" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3601)">
+			<PickUp QuestName="Kim'jael's &quot;Missing&quot; Equipment" QuestId="5534" GiverName="Kim'jael" GiverId="8420" X="4603.83" Y="-5987.55" Z="169.724" />
+		</If>
+		<Objective QuestName="Kim'jael's &quot;Missing&quot; Equipment" QuestId="5534" Type="CollectItem" ItemId="13815" CollectCount="1" />
+		<TurnIn QuestName="Kim'jael's &quot;Missing&quot; Equipment" QuestId="5534" TurnInName="Kim'jael" TurnInId="8420" X="4603.83" Y="-5987.55" Z="169.724" />
+		<!-- REVIEW Q2744 The Demon Hunter: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(2744)) &amp;&amp; (IsQuestCompleted(2744)))">
+			<TurnIn QuestName="The Demon Hunter" QuestId="2744" TurnInName="Loramus Thalipedes" TurnInId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
+		</If>
+		<If Condition="((HasQuest(2744)) &amp;&amp; (!IsQuestCompleted(2744)))">
+			<CustomBehavior File="AbandonQuest" QuestId="2744" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2744)">
+			<PickUp QuestName="Loramus" QuestId="3141" GiverName="Loramus Thalipedes" GiverId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
+		</If>
+		<!-- REVIEW Q3141 Loramus: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(3141)) &amp;&amp; (IsQuestCompleted(3141)))">
+			<TurnIn QuestName="Loramus" QuestId="3141" TurnInName="Loramus Thalipedes" TurnInId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
+		</If>
+		<If Condition="((HasQuest(3141)) &amp;&amp; (!IsQuestCompleted(3141)))">
+			<CustomBehavior File="AbandonQuest" QuestId="3141" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3141)">
+			<PickUp QuestName="Breaking the Ward" QuestId="3508" GiverName="Loramus Thalipedes" GiverId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
+		</If>
+		<TurnIn QuestName="Breaking the Ward" QuestId="3508" TurnInName="Loramus Thalipedes" TurnInId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3508)">
+			<PickUp QuestName="The Name of the Beast" QuestId="3509" GiverName="Loramus Thalipedes" GiverId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
+		</If>
+		<TurnIn QuestName="The Name of the Beast" QuestId="3509" TurnInName="Lord Arkkoroc" TurnInId="6134" X="3894.71" Y="-7188.03" Z="50.8848" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3509)">
+			<PickUp QuestName="The Name of the Beast" QuestId="3510" GiverName="Lord Arkkoroc" GiverId="6134" X="3894.71" Y="-7188.03" Z="50.8848" />
+		</If>
+		<Objective QuestName="The Name of the Beast" QuestId="3510" Type="CollectItem" ItemId="10599" CollectCount="1" />
+		<Objective QuestName="The Name of the Beast" QuestId="3510" Type="CollectItem" ItemId="10598" CollectCount="1" />
+		<Objective QuestName="The Name of the Beast" QuestId="3510" Type="CollectItem" ItemId="10600" CollectCount="1" />
+		<TurnIn QuestName="The Name of the Beast" QuestId="3510" TurnInName="Lord Arkkoroc" TurnInId="6134" X="3894.71" Y="-7188.03" Z="50.8848" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3510)">
+			<PickUp QuestName="The Name of the Beast" QuestId="3511" GiverName="Lord Arkkoroc" GiverId="6134" X="3894.71" Y="-7188.03" Z="50.8848" />
+		</If>
+		<TurnIn QuestName="The Name of the Beast" QuestId="3511" TurnInName="Loramus Thalipedes" TurnInId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3511)">
+			<PickUp QuestName="Azsharite" QuestId="3602" GiverName="Loramus Thalipedes" GiverId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
+		</If>
+		<Objective QuestName="Azsharite" QuestId="3602" Type="CollectItem" ItemId="10714" CollectCount="20" />
+		<TurnIn QuestName="Azsharite" QuestId="3602" TurnInName="Loramus Thalipedes" TurnInId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3602)">
+			<PickUp QuestName="The Formation of Felbane" QuestId="3621" GiverName="Loramus Thalipedes" GiverId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
+		</If>
+		<If Condition="(Me.Level &gt;= 55)">
+			<PickUp QuestName="Stormers and Rumblers" QuestId="6805" GiverName="Duke Hydraxis" GiverId="13278" X="2849.59" Y="-7297.15" Z="20.3987" />
+		</If>
+		<!-- SKIP turn-in Q3449 Arcane Runes: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(3449)) &amp;&amp; (!IsQuestCompleted(3449)))">
+			<CustomBehavior File="AbandonQuest" QuestId="3449" Type="Incomplete" />
+		</If>
+		<!-- SKIP pickup Q3461 Return to Tymor: no quest giver with a spawn in the database -->
+		<Objective QuestName="Stormers and Rumblers" QuestId="6805" Type="KillMob" MobId="11744" KillCount="15" />
+		<Objective QuestName="Stormers and Rumblers" QuestId="6805" Type="KillMob" MobId="11746" KillCount="15" />
+		<TurnIn QuestName="Stormers and Rumblers" QuestId="6805" TurnInName="Duke Hydraxis" TurnInId="13278" X="2849.59" Y="-7297.15" Z="20.3987" />
+		<!-- REVIEW Q3461 Return to Tymor: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(3461)) &amp;&amp; (IsQuestCompleted(3461)))">
+			<TurnIn QuestName="Return to Tymor" QuestId="3461" TurnInName="Tymor" TurnInId="8507" X="-4594.7" Y="-958.391" Z="508.962" />
+		</If>
+		<If Condition="((HasQuest(3461)) &amp;&amp; (!IsQuestCompleted(3461)))">
+			<CustomBehavior File="AbandonQuest" QuestId="3461" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="The Formation of Felbane" QuestId="3621" TurnInName="Galvan the Ancient" TurnInId="7802" X="-12033.4" Y="-1003.86" Z="49.8796" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3621)">
+			<PickUp QuestName="Enchanted Azsharite Fel Weaponry" QuestId="3625" GiverName="Galvan the Ancient" GiverId="7802" X="-12033.4" Y="-1003.86" Z="49.8796" />
+		</If>
+		<!-- REVIEW Q3625 Enchanted Azsharite Fel Weaponry: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(3625)) &amp;&amp; (IsQuestCompleted(3625)))">
+			<TurnIn QuestName="Enchanted Azsharite Fel Weaponry" QuestId="3625" TurnInName="Galvan the Ancient" TurnInId="7802" X="-12033.4" Y="-1003.86" Z="49.8796" />
+		</If>
+		<If Condition="((HasQuest(3625)) &amp;&amp; (!IsQuestCompleted(3625)))">
+			<CustomBehavior File="AbandonQuest" QuestId="3625" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3625)">
+			<PickUp QuestName="Return to the Blasted Lands" QuestId="3626" GiverName="Galvan the Ancient" GiverId="7802" X="-12033.4" Y="-1003.86" Z="49.8796" />
+		</If>
+		<TurnIn QuestName="Return to the Blasted Lands" QuestId="3626" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3626)">
+			<PickUp QuestName="Uniting the Shattered Amulet" QuestId="3627" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		</If>
+		<Objective QuestName="Uniting the Shattered Amulet" QuestId="3627" Type="CollectItem" ItemId="10753" CollectCount="1" />
+		<Objective QuestName="Uniting the Shattered Amulet" QuestId="3627" Type="CollectItem" ItemId="10754" CollectCount="1" />
+		<Objective QuestName="Uniting the Shattered Amulet" QuestId="3627" Type="CollectItem" ItemId="10755" CollectCount="1" />
+		<TurnIn QuestName="Uniting the Shattered Amulet" QuestId="3627" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3627)">
+			<PickUp QuestName="You Are Rakh'likh, Demon" QuestId="3628" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		</If>
+		<!-- REVIEW Q3628 You Are Rakh'likh, Demon: item 10759 Severed Horn of the Defiler has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(3628)) &amp;&amp; (IsQuestCompleted(3628)))">
+			<TurnIn QuestName="You Are Rakh'likh, Demon" QuestId="3628" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
+		</If>
+		<If Condition="((HasQuest(3628)) &amp;&amp; (!IsQuestCompleted(3628)))">
+			<CustomBehavior File="AbandonQuest" QuestId="3628" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Fragments of the Past" QuestId="5246" TurnInName="Aurora Skycaller" TurnInId="10304" X="3232.15" Y="-4256.49" Z="98.206" />
+	</QuestOrder>
+</HBProfile>

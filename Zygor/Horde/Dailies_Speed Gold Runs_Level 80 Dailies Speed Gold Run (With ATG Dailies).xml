@@ -1,0 +1,610 @@
+<HBProfile>
+	<Name>Zygor Dailies\Speed Gold Runs\Level 80 Dailies Speed Gold Run (With ATG Dailies)</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Shambles" Entry="30309" Type="Food" X="8379.06" Y="2777.93" Z="655.18" />
+		<Vendor Name="Ellia Moondancer" Entry="33644" Type="Food" X="8579.53" Y="750.263" Z="547.396" />
+		<Vendor Name="Jenna Thunderbrew" Entry="33645" Type="Food" X="8579.87" Y="749.856" Z="547.376" />
+		<Vendor Name="Makuli" Entry="33865" Type="Food" X="8450.27" Y="747.071" Z="547.476" />
+		<Vendor Name="Mera Mistrunner" Entry="33595" Type="Food" X="8549.8" Y="902.12" Z="547.488" />
+		<Vendor Name="Blast Thunderbomb" Entry="31781" Type="Repair" X="7018.92" Y="2186.58" Z="628.258" />
+		<Vendor Name="Fizzix Blastbolt" Entry="33594" Type="Repair" X="8553.43" Y="915.627" Z="547.474" />
+		<Vendor Name="Runesmith Balehammer" Entry="30336" Type="Repair" X="8478.34" Y="2631.42" Z="653.388" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="14143" Name="A Leg Up" Daily="True">
+		<Objective Type="CollectItem" ItemId="46859" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Kvaldir Reaver" Id="34838" />
+				<Mob Name="Kvaldir Mist Binder" Id="34839" />
+				<GameObject Name="Stolen Tallstrider Leg" Id="195274" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="10110.9" Y="1218.41" Z="78.9978" />
+				<Hotspot X="10051.3" Y="1216.9" Z="69.6857" />
+				<Hotspot X="10025.6" Y="1184.96" Z="60.5205" />
+				<Hotspot X="9998.99" Y="1218.63" Z="60.7685" />
+				<Hotspot X="9951.68" Y="1201.5" Z="52.6994" />
+				<Hotspot X="9991.07" Y="1153.53" Z="39.4657" />
+				<Hotspot X="9998.88" Y="1098.61" Z="30.4584" />
+				<Hotspot X="10185" Y="1189.2" Z="76.159" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="14136" Name="Rescue at Sea" Daily="True">
+		<Objective Type="KillMob" MobId="34947" KillCount="8">
+			<Hotspots>
+				<Hotspot X="9429.25" Y="1192.45" Z="2.1136" />
+				<Hotspot X="9487.53" Y="1226.41" Z="1.3297" />
+				<Hotspot X="9554.08" Y="970.196" Z="1.6932" />
+				<Hotspot X="9602.27" Y="932.437" Z="0.3513" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="34907" KillCount="3">
+			<Hotspots>
+				<Hotspot X="9428.33" Y="1190.03" Z="0.197" />
+				<Hotspot X="9484.2" Y="1216.99" Z="1.3292" />
+				<Hotspot X="9551.43" Y="966.751" Z="1.697" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="14140" Name="Stop The Aggressors" Daily="True" />
+	<Quest Id="14144" Name="The Light's Mercy" Daily="True" />
+	<Quest Id="14142" Name="You've Really Done It This Time, Kul" Daily="True">
+		<Objective Type="KillMob" MobId="34956" KillCount="1">
+			<Hotspots>
+				<Hotspot X="8458.98" Y="1631.73" Z="671.157" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="34716" KillCount="4">
+			<Hotspots>
+				<Hotspot X="8493.42" Y="1419.66" Z="642.722" />
+				<Hotspot X="8547.06" Y="1382.13" Z="642.262" />
+				<Hotspot X="8532.68" Y="1492.51" Z="642.117" />
+				<Hotspot X="8574.84" Y="1508" Z="642.916" />
+				<Hotspot X="8550.08" Y="1543.92" Z="642.182" />
+				<Hotspot X="8545.87" Y="1591.2" Z="642.182" />
+				<Hotspot X="8515.85" Y="1626.35" Z="642.677" />
+				<Hotspot X="8606.21" Y="1604.1" Z="642.851" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="14092" Name="Breakfast Of Champions" Daily="True" />
+	<Quest Id="14141" Name="Gormok Wants His Snobolds" Daily="True" />
+	<Quest Id="14145" Name="What Do You Feed a Yeti, Anyway?" Daily="True" />
+	<Quest Id="13813" Name="Taking Battle To The Enemy" Daily="True" />
+	<Quest Id="13812" Name="Threat From Above" Daily="True">
+		<Objective Type="KillMob" MobId="33687" KillCount="1">
+			<Hotspots>
+				<Hotspot X="8026.11" Y="2686.62" Z="550.965" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="13863" Name="Battle Before The Citadel" Daily="True">
+		<Objective Type="KillMob" MobId="34127" KillCount="3">
+			<Hotspots>
+				<Hotspot X="6243.79" Y="2348.67" Z="489.706" />
+				<Hotspot X="6216.22" Y="2377.72" Z="496.689" />
+				<Hotspot X="6159.58" Y="2342.3" Z="504.398" />
+				<Hotspot X="6182.63" Y="2276.84" Z="499.385" />
+				<Hotspot X="6225.5" Y="2275.37" Z="492.385" />
+				<Hotspot X="6245.94" Y="2186.6" Z="499.307" />
+				<Hotspot X="6393.4" Y="2307.66" Z="474.965" />
+				<Hotspot X="6383.61" Y="2380.81" Z="470.901" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="13814" Name="Among the Champions" Daily="True" />
+	<Quest Id="13811" Name="Among the Champions" Daily="True" />
+	<Quest Id="13809" Name="Threat From Above" Daily="True">
+		<Objective Type="KillMob" MobId="33687" KillCount="1">
+			<Hotspots>
+				<Hotspot X="8026.11" Y="2686.62" Z="550.965" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="13862" Name="Battle Before The Citadel" Daily="True">
+		<Objective Type="KillMob" MobId="34127" KillCount="3">
+			<Hotspots>
+				<Hotspot X="6243.79" Y="2348.67" Z="489.706" />
+				<Hotspot X="6216.22" Y="2377.72" Z="496.689" />
+				<Hotspot X="6159.58" Y="2342.3" Z="504.398" />
+				<Hotspot X="6182.63" Y="2276.84" Z="499.385" />
+				<Hotspot X="6225.5" Y="2275.37" Z="492.385" />
+				<Hotspot X="6245.94" Y="2186.6" Z="499.307" />
+				<Hotspot X="6393.4" Y="2307.66" Z="474.965" />
+				<Hotspot X="6383.61" Y="2380.81" Z="470.901" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="13810" Name="Taking Battle To The Enemy" Daily="True" />
+	<Quest Id="14105" Name="Deathspeaker Kharos" Daily="True">
+		<Objective Type="KillMob" MobId="34808" KillCount="1">
+			<Hotspots>
+				<Hotspot X="8530.89" Y="1416.05" Z="638.376" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="14101" Name="Drottinn Hrothgar" Daily="True" />
+	<Quest Id="14102" Name="Mistcaller Yngvar" Daily="True" />
+	<Quest Id="14104" Name="Ornolf The Scarred" Daily="True" />
+	<Quest Id="14108" Name="Get Kraken!" Daily="True">
+		<Objective Type="KillMob" MobId="35009" KillCount="6">
+			<Hotspots>
+				<Hotspot X="9277.8" Y="1090.92" Z="18.9007" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="14107" Name="The Fate Of The Fallen" Daily="True" />
+	<Quest Id="13353" Name="Drag and Drop" Daily="True" />
+	<Quest Id="13365" Name="Not a Bug" Daily="True" />
+	<Quest Id="13276" Name="That's Abominable!" Daily="True" />
+	<Quest Id="13331" Name="Keeping the Alliance Blind" Daily="True">
+		<Objective Type="KillMob" MobId="32189" KillCount="6">
+			<Hotspots>
+				<Hotspot X="7752.41" Y="2148.94" Z="409.605" />
+				<Hotspot X="7736.85" Y="2191.07" Z="409.605" />
+				<Hotspot X="7779.72" Y="2195.55" Z="434.186" />
+				<Hotspot X="7732.2" Y="2238.19" Z="444.663" />
+				<Hotspot X="7713.82" Y="2284.39" Z="441.144" />
+				<Hotspot X="7618.74" Y="2205.38" Z="415.836" />
+				<Hotspot X="7843.17" Y="2270.17" Z="422.18" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="13330" Name="Blood of the Chosen" Daily="True">
+		<Objective Type="KillMob" MobId="31258" KillCount="20">
+			<Hotspots>
+				<Hotspot X="7072.28" Y="1778.91" Z="527.673" />
+				<Hotspot X="7138.47" Y="1762.13" Z="490.206" />
+				<Hotspot X="7188.16" Y="1779.84" Z="487.149" />
+				<Hotspot X="7143.95" Y="1887.51" Z="536.686" />
+				<Hotspot X="7172.35" Y="1933.67" Z="596.982" />
+				<Hotspot X="6946.09" Y="1761.58" Z="511.526" />
+				<Hotspot X="6899.72" Y="1748.73" Z="537.376" />
+				<Hotspot X="6999.71" Y="1691.08" Z="555.963" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="13302" Name="Slaves to Saronite" Daily="True" />
+	<Quest Id="13261" Name="Volatility" Daily="True" />
+	<Quest Id="13357" Name="Retest Now" Daily="True" />
+	<Quest Id="13310" Name="Assault by Air" Daily="True" />
+	<Quest Id="13301" Name="Assault by Ground" Daily="True" />
+	<Quest Id="13283" Name="King of the Mountain" Daily="True" />
+	<Quest Id="13406" Name="Riding the Wavelength: The Bombardment" Daily="True" />
+	<Quest Id="13376" Name="Total Ohmage: The Valley of Lost Hope!" Daily="True">
+		<Objective Type="KillMob" MobId="32154" KillCount="12">
+			<Hotspots>
+				<Hotspot X="7851.09" Y="1955.81" Z="367.002" />
+				<Hotspot X="7741.72" Y="1968.48" Z="367.526" />
+				<Hotspot X="7795.76" Y="1835.98" Z="362.766" />
+				<Hotspot X="7842.81" Y="1840.36" Z="365.721" />
+				<Hotspot X="7826.99" Y="1768.44" Z="358.238" />
+				<Hotspot X="7600.73" Y="2060.82" Z="500.068" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12995" Name="Leave Our Mark" Daily="True" />
+	<Quest Id="13069" Name="Shoot 'Em Up" Daily="True">
+		<Objective Type="KillMob" MobId="30330" KillCount="15">
+			<Hotspots>
+				<Hotspot X="8400.75" Y="3238.86" Z="625.312" />
+				<Hotspot X="8413.86" Y="3287.8" Z="625.803" />
+				<Hotspot X="8498.65" Y="3262.24" Z="611.597" />
+				<Hotspot X="8608.77" Y="3337.04" Z="652.167" />
+				<Hotspot X="8585.11" Y="3480.38" Z="627.666" />
+				<Hotspot X="8529.38" Y="3532.05" Z="628.62" />
+				<Hotspot X="8452.57" Y="3404.11" Z="614.097" />
+				<Hotspot X="8338.51" Y="3475.34" Z="683.146" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="13071" Name="Vile Like Fire!" Daily="True" />
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Dailies/ZygorDailiesHorde.lua: Zygor's Horde Dailies Guides\Speed Gold Runs\Level 80 Dailies Speed Gold Run (With ATG Dailies) -->
+		<!-- Daily quests count as done only while they are in today's daily slots; load the profile again after the daily reset. -->
+		<If Condition="Me.MapId != 571">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Horde\Dailies_Speed Gold Runs_Level 80 Dailies Speed Gold Run (With ATG Dailies)");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Northrend" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="A Leg Up" QuestId="14143" GiverName="Girana the Blooded" GiverId="34771" X="8420.01" Y="674.24" Z="550.462" />
+		</If>
+		<If Condition="(Me.Level &gt;= 78)">
+			<PickUp QuestName="Rescue at Sea" QuestId="14136" GiverName="Girana the Blooded" GiverId="34771" X="8420.01" Y="674.24" Z="550.462" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="Stop The Aggressors" QuestId="14140" GiverName="Girana the Blooded" GiverId="34771" X="8420.01" Y="674.24" Z="550.462" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="The Light's Mercy" QuestId="14144" GiverName="Girana the Blooded" GiverId="34771" X="8420.01" Y="674.24" Z="550.462" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="You've Really Done It This Time, Kul" QuestId="14142" GiverName="Girana the Blooded" GiverId="34771" X="8420.01" Y="674.24" Z="550.462" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="Breakfast Of Champions" QuestId="14092" GiverName="Tylos Dawnrunner" GiverId="34914" X="8422.19" Y="673.261" Z="550.554" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="Gormok Wants His Snobolds" QuestId="14141" GiverName="Tylos Dawnrunner" GiverId="34914" X="8422.19" Y="673.261" Z="550.554" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="What Do You Feed a Yeti, Anyway?" QuestId="14145" GiverName="Tylos Dawnrunner" GiverId="34914" X="8422.19" Y="673.261" Z="550.554" />
+		</If>
+		<If Condition="((Me.Class == WoWClass.DeathKnight))">
+			<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13795)">
+				<PickUp QuestName="Taking Battle To The Enemy" QuestId="13813" GiverName="Zor'be the Bloodletter" GiverId="33769" X="8613.75" Y="815.734" Z="547.637" />
+			</If>
+		</If>
+		<If Condition="((Me.Class == WoWClass.DeathKnight))">
+			<!-- SKIP Q13812 Threat From Above: group quest (3 players) -->
+			<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13795)">
+				<PickUp QuestName="Battle Before The Citadel" QuestId="13863" GiverName="Crok Scourgebane" GiverId="33762" X="8588.21" Y="816.003" Z="547.637" />
+			</If>
+		</If>
+		<If Condition="((Me.Class == WoWClass.DeathKnight))">
+			<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13795)">
+				<PickUp QuestName="Among the Champions" QuestId="13814" GiverName="Illyrie Nightfall" GiverId="33770" X="8587.27" Y="829.251" Z="547.463" />
+			</If>
+		</If>
+		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
+			<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock) || (Me.Class == WoWClass.Druid)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13794)">
+				<PickUp QuestName="Among the Champions" QuestId="13811" GiverName="Luuri" GiverId="33771" X="8451.65" Y="1058.68" Z="554.493" />
+			</If>
+		</If>
+		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
+			<!-- SKIP Q13809 Threat From Above: group quest (3 players) -->
+			<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock) || (Me.Class == WoWClass.Druid)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13794)">
+				<PickUp QuestName="Battle Before The Citadel" QuestId="13862" GiverName="Eadric the Pure" GiverId="33759" X="8447.08" Y="1056.51" Z="554.423" />
+			</If>
+		</If>
+		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
+			<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock) || (Me.Class == WoWClass.Druid)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13794)">
+				<PickUp QuestName="Taking Battle To The Enemy" QuestId="13810" GiverName="Cellian Daybreak" GiverId="33763" X="8443.1" Y="1059.46" Z="554.4" />
+			</If>
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="Deathspeaker Kharos" QuestId="14105" GiverName="High Crusader Adelard" GiverId="34882" X="8460.23" Y="1087.09" Z="554.492" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="Drottinn Hrothgar" QuestId="14101" GiverName="High Crusader Adelard" GiverId="34882" X="8460.23" Y="1087.09" Z="554.492" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="Mistcaller Yngvar" QuestId="14102" GiverName="High Crusader Adelard" GiverId="34882" X="8460.23" Y="1087.09" Z="554.492" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="Ornolf The Scarred" QuestId="14104" GiverName="High Crusader Adelard" GiverId="34882" X="8460.23" Y="1087.09" Z="554.492" />
+		</If>
+		<If Condition="(Me.Level &gt;= 78)">
+			<PickUp QuestName="Get Kraken!" QuestId="14108" GiverName="Crusader Silverdawn" GiverId="35094" X="8461.79" Y="1084.64" Z="554.586" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="The Fate Of The Fallen" QuestId="14107" GiverName="Crusader Silverdawn" GiverId="35094" X="8461.79" Y="1084.64" Z="554.586" />
+		</If>
+		<Objective QuestName="Rescue at Sea" QuestId="14136" Type="KillMob" MobId="34947" KillCount="8" />
+		<Objective QuestName="Rescue at Sea" QuestId="14136" Type="KillMob" MobId="34907" KillCount="3" />
+		<Objective QuestName="A Leg Up" QuestId="14143" Type="CollectItem" ItemId="46859" CollectCount="10" />
+		<CustomBehavior File="UseItemOn" QuestId="14108" ItemId="46954" MobId="35092" NumOfTimes="3" Range="5" CollectionDistance="200" X="9537.79" Y="1077.07" Z="24.8948" />
+		<Objective QuestName="Deathspeaker Kharos" QuestId="14105" Type="KillMob" MobId="34808" KillCount="1" />
+		<Objective QuestName="You've Really Done It This Time, Kul" QuestId="14142" Type="KillMob" MobId="34956" KillCount="1" />
+		<Objective QuestName="You've Really Done It This Time, Kul" QuestId="14142" Type="KillMob" MobId="34716" KillCount="4" />
+		<If Condition="((Me.Class == WoWClass.DeathKnight))">
+			<CustomBehavior File="KillUntilComplete" QuestId="13813" MobId1="29717" MobId2="31731" MobId3="31738" MobId4="32236" MobId5="32238" MobId6="32250" X="8530.89" Y="1416.05" Z="638.376" />
+		</If>
+		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
+			<CustomBehavior File="KillUntilComplete" QuestId="13810" MobId1="29717" MobId2="31731" MobId3="31738" MobId4="32236" MobId5="32238" MobId6="32250" X="8530.89" Y="1416.05" Z="638.376" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13352)">
+			<PickUp QuestName="Drag and Drop" QuestId="13353" GiverName="Koltira Deathweaver" GiverId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13358)">
+			<PickUp QuestName="Not a Bug" QuestId="13365" GiverName="Koltira Deathweaver" GiverId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13264)">
+			<PickUp QuestName="That's Abominable!" QuestId="13276" GiverName="Koltira Deathweaver" GiverId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13313)">
+			<PickUp QuestName="Keeping the Alliance Blind" QuestId="13331" GiverName="Sky-Reaver Korm Blackscar" GiverId="30824" X="55.5028" Y="0.0804" Z="30.5268" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13224)">
+			<PickUp QuestName="Blood of the Chosen" QuestId="13330" GiverName="Warbringer Davos Rioht" GiverId="32301" X="-3.3771" Y="0.0075" Z="34.0151" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13224)">
+			<PickUp QuestName="Slaves to Saronite" QuestId="13302" GiverName="Brother Keltan" GiverId="31261" X="-24.084" Y="-22.2178" Z="24.3778" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13329)">
+			<PickUp QuestName="Volatility" QuestId="13261" GiverName="Chief Engineer Copperclaw" GiverId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13356)">
+			<PickUp QuestName="Retest Now" QuestId="13357" GiverName="Chief Engineer Copperclaw" GiverId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13340)">
+			<PickUp QuestName="Assault by Air" QuestId="13310" GiverName="Ground Commander Xutjja" GiverId="31834" X="7503.88" Y="1785.61" Z="356.887" />
+		</If>
+		<!-- REVIEW Q13310 Assault by Air: objective 31888 Horde Transport Controller Bunny x4: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13310)) &amp;&amp; (IsQuestCompleted(13310)))">
+			<TurnIn QuestName="Assault by Air" QuestId="13310" TurnInName="Ground Commander Xutjja" TurnInId="31834" X="7503.88" Y="1785.61" Z="356.887" />
+		</If>
+		<If Condition="((HasQuest(13310)) &amp;&amp; (!IsQuestCompleted(13310)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13310" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13340)">
+			<PickUp QuestName="Assault by Ground" QuestId="13301" GiverName="Kor'kron Squad Leader" GiverId="31833" X="7509.28" Y="1795.35" Z="356.713" />
+		</If>
+		<Objective QuestName="Blood of the Chosen" QuestId="13330" Type="KillMob" MobId="31258" KillCount="20" />
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13293)">
+			<PickUp QuestName="King of the Mountain" QuestId="13283" GiverName="Blast Thunderbomb" GiverId="31781" X="7018.92" Y="2186.58" Z="628.258" />
+		</If>
+		<!-- REVIEW Q13283 King of the Mountain: objective 31766 King of the Mountain Kill Credit x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13283)) &amp;&amp; (IsQuestCompleted(13283)))">
+			<TurnIn QuestName="King of the Mountain" QuestId="13283" TurnInName="Blast Thunderbomb" TurnInId="31781" X="7018.92" Y="2186.58" Z="628.258" />
+		</If>
+		<If Condition="((HasQuest(13283)) &amp;&amp; (!IsQuestCompleted(13283)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13283" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q13301 Assault by Ground: objective 31845 Horde Ground Force Bunny x4: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13301)) &amp;&amp; (IsQuestCompleted(13301)))">
+			<TurnIn QuestName="Assault by Ground" QuestId="13301" TurnInName="Ground Commander Xutjja" TurnInId="31834" X="7503.88" Y="1785.61" Z="356.887" />
+		</If>
+		<If Condition="((HasQuest(13301)) &amp;&amp; (!IsQuestCompleted(13301)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13301" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13373)">
+			<PickUp QuestName="Riding the Wavelength: The Bombardment" QuestId="13406" GiverName="Fringe Engineer Tezzla" GiverId="32430" X="7897.96" Y="2057.59" Z="600.36" />
+		</If>
+		<!-- REVIEW Q13406 Riding the Wavelength: The Bombardment: kill 32188 Gargoyle Ambusher x20: kill credit or scripted event; kill 32399 Bombardment Infantry x50: kill credit or scripted event; kill 32410 Bombardment Captain x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13406)) &amp;&amp; (IsQuestCompleted(13406)))">
+			<TurnIn QuestName="Riding the Wavelength: The Bombardment" QuestId="13406" TurnInName="Fringe Engineer Tezzla" TurnInId="32430" X="7897.96" Y="2057.59" Z="600.36" />
+		</If>
+		<If Condition="((HasQuest(13406)) &amp;&amp; (!IsQuestCompleted(13406)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13406" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13373)">
+			<PickUp QuestName="Total Ohmage: The Valley of Lost Hope!" QuestId="13376" GiverName="Fringe Engineer Tezzla" GiverId="32430" X="7897.96" Y="2057.59" Z="600.36" />
+		</If>
+		<Objective QuestName="Total Ohmage: The Valley of Lost Hope!" QuestId="13376" Type="KillMob" MobId="32154" KillCount="12" />
+		<!-- REVIEW Q13376 Total Ohmage: The Valley of Lost Hope!: kill 32188 Gargoyle Ambusher x20: kill credit or scripted event; kill 31721 Frostbrood Sentry x12: kill credit or scripted event; kill 32399 Bombardment Infantry x50: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13376)) &amp;&amp; (IsQuestCompleted(13376)))">
+			<TurnIn QuestName="Total Ohmage: The Valley of Lost Hope!" QuestId="13376" TurnInName="Fringe Engineer Tezzla" TurnInId="32430" X="7897.96" Y="2057.59" Z="600.36" />
+		</If>
+		<If Condition="((HasQuest(13376)) &amp;&amp; (!IsQuestCompleted(13376)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13376" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13084)">
+			<PickUp QuestName="Leave Our Mark" QuestId="12995" GiverName="Baron Sliver" GiverId="29343" X="8385.21" Y="2757.21" Z="656.702" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77)">
+			<PickUp QuestName="Shoot 'Em Up" QuestId="13069" GiverName="The Leaper" GiverId="30074" X="8380.47" Y="2717.56" Z="655.178" />
+		</If>
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12992)">
+			<PickUp QuestName="Vile Like Fire!" QuestId="13071" GiverName="Vile" GiverId="30216" X="8374.06" Y="2738.74" Z="655.211" />
+		</If>
+		<!-- REVIEW Q12995 Leave Our Mark: objective 30220 Leave Our Mark Kill Credit Bunny x15: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12995)) &amp;&amp; (IsQuestCompleted(12995)))">
+			<TurnIn QuestName="Leave Our Mark" QuestId="12995" TurnInName="Baron Sliver" TurnInId="29343" X="8385.21" Y="2757.21" Z="656.702" />
+		</If>
+		<If Condition="((HasQuest(12995)) &amp;&amp; (!IsQuestCompleted(12995)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12995" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Shoot 'Em Up" QuestId="13069" Type="KillMob" MobId="30330" KillCount="15" />
+		<TurnIn QuestName="Shoot 'Em Up" QuestId="13069" TurnInName="The Leaper" TurnInId="30074" X="8380.47" Y="2717.56" Z="655.178" />
+		<!-- REVIEW Q13071 Vile Like Fire!: objective 30576 Vile Like Fire! Kill Credit Bunny x8: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13071)) &amp;&amp; (IsQuestCompleted(13071)))">
+			<TurnIn QuestName="Vile Like Fire!" QuestId="13071" TurnInName="Vile" TurnInId="30216" X="8374.06" Y="2738.74" Z="655.211" />
+		</If>
+		<If Condition="((HasQuest(13071)) &amp;&amp; (!IsQuestCompleted(13071)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13071" Type="Incomplete" />
+		</If>
+		<If Condition="((Me.Class == WoWClass.DeathKnight))">
+			<Objective QuestName="Threat From Above" QuestId="13812" Type="KillMob" MobId="33687" KillCount="1" />
+		</If>
+		<If Condition="((Me.Class == WoWClass.DeathKnight))">
+			<Objective QuestName="Battle Before The Citadel" QuestId="13863" Type="KillMob" MobId="34127" KillCount="3" />
+		</If>
+		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
+			<Objective QuestName="Threat From Above" QuestId="13809" Type="KillMob" MobId="33687" KillCount="1" />
+		</If>
+		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
+			<Objective QuestName="Battle Before The Citadel" QuestId="13862" Type="KillMob" MobId="34127" KillCount="3" />
+		</If>
+		<!-- REVIEW Q13353 Drag and Drop: objective 32229 Drag Drop KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13353)) &amp;&amp; (IsQuestCompleted(13353)))">
+			<TurnIn QuestName="Drag and Drop" QuestId="13353" TurnInName="Koltira Deathweaver" TurnInId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
+		</If>
+		<If Condition="((HasQuest(13353)) &amp;&amp; (!IsQuestCompleted(13353)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13353" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q13365 Not a Bug: use item 44307: target 32314 Dark Messenger KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13365)) &amp;&amp; (IsQuestCompleted(13365)))">
+			<TurnIn QuestName="Not a Bug" QuestId="13365" TurnInName="Koltira Deathweaver" TurnInId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
+		</If>
+		<If Condition="((HasQuest(13365)) &amp;&amp; (!IsQuestCompleted(13365)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13365" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q13276 That's Abominable!: use item 43968: target 31743 Icy Ghoul KC Bunny has no spawn (kill credit or scripted event); use item 43968: target 32168 Vicious Geist KC Bunny has no spawn (kill credit or scripted event); use item 43968: target 32167 Risen Skeleton KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13276)) &amp;&amp; (IsQuestCompleted(13276)))">
+			<TurnIn QuestName="That's Abominable!" QuestId="13276" TurnInName="Koltira Deathweaver" TurnInId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
+		</If>
+		<If Condition="((HasQuest(13276)) &amp;&amp; (!IsQuestCompleted(13276)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13276" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Keeping the Alliance Blind" QuestId="13331" Type="KillMob" MobId="32189" KillCount="6" />
+		<TurnIn QuestName="Keeping the Alliance Blind" QuestId="13331" TurnInName="Sky-Reaver Korm Blackscar" TurnInId="30824" X="55.5028" Y="0.0804" Z="30.5268" />
+		<TurnIn QuestName="Blood of the Chosen" QuestId="13330" TurnInName="Warbringer Davos Rioht" TurnInId="32301" X="-3.3771" Y="0.0075" Z="34.0151" />
+		<!-- REVIEW Q13302 Slaves to Saronite: objective 31866 Slaves to Saronite Kill Credit Bunny x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13302)) &amp;&amp; (IsQuestCompleted(13302)))">
+			<TurnIn QuestName="Slaves to Saronite" QuestId="13302" TurnInName="Brother Keltan" TurnInId="31261" X="-24.084" Y="-22.2178" Z="24.3778" />
+		</If>
+		<If Condition="((HasQuest(13302)) &amp;&amp; (!IsQuestCompleted(13302)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13302" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q13261 Volatility: collect 31364 Frostbrood Skytalon KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13261)) &amp;&amp; (IsQuestCompleted(13261)))">
+			<TurnIn QuestName="Volatility" QuestId="13261" TurnInName="Chief Engineer Copperclaw" TurnInId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
+		</If>
+		<If Condition="((HasQuest(13261)) &amp;&amp; (!IsQuestCompleted(13261)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13261" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q13357 Retest Now: use item 44307: target 32266 Writhing Mass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13357)) &amp;&amp; (IsQuestCompleted(13357)))">
+			<TurnIn QuestName="Retest Now" QuestId="13357" TurnInName="Chief Engineer Copperclaw" TurnInId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
+		</If>
+		<If Condition="((HasQuest(13357)) &amp;&amp; (!IsQuestCompleted(13357)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13357" Type="Incomplete" />
+		</If>
+		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
+			<!-- REVIEW Q13811 Among the Champions: item 45500 Mark of the Champion has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(13811)) &amp;&amp; (IsQuestCompleted(13811)))">
+				<TurnIn QuestName="Among the Champions" QuestId="13811" TurnInName="Luuri" TurnInId="33771" X="8451.65" Y="1058.68" Z="554.493" />
+			</If>
+			<If Condition="((HasQuest(13811)) &amp;&amp; (!IsQuestCompleted(13811)))">
+				<CustomBehavior File="AbandonQuest" QuestId="13811" Type="Incomplete" />
+			</If>
+		</If>
+		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
+			<!-- REVIEW Q13809 Threat From Above: group quest (3 players); kill 33695 Cultist Bombardier x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(13809)) &amp;&amp; (IsQuestCompleted(13809)))">
+				<TurnIn QuestName="Threat From Above" QuestId="13809" TurnInName="Eadric the Pure" TurnInId="33759" X="8447.08" Y="1056.51" Z="554.423" />
+			</If>
+			<If Condition="((HasQuest(13809)) &amp;&amp; (!IsQuestCompleted(13809)))">
+				<CustomBehavior File="AbandonQuest" QuestId="13809" Type="Incomplete" />
+			</If>
+			<TurnIn QuestName="Battle Before The Citadel" QuestId="13862" TurnInName="Eadric the Pure" TurnInId="33759" X="8447.08" Y="1056.51" Z="554.423" />
+		</If>
+		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
+			<!-- REVIEW Q13810 Taking Battle To The Enemy: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(13810)) &amp;&amp; (IsQuestCompleted(13810)))">
+				<TurnIn QuestName="Taking Battle To The Enemy" QuestId="13810" TurnInName="Cellian Daybreak" TurnInId="33763" X="8443.1" Y="1059.46" Z="554.4" />
+			</If>
+			<If Condition="((HasQuest(13810)) &amp;&amp; (!IsQuestCompleted(13810)))">
+				<CustomBehavior File="AbandonQuest" QuestId="13810" Type="Incomplete" />
+			</If>
+		</If>
+		<TurnIn QuestName="Deathspeaker Kharos" QuestId="14105" TurnInName="High Crusader Adelard" TurnInId="34882" X="8460.23" Y="1087.09" Z="554.492" />
+		<!-- REVIEW Q14101 Drottinn Hrothgar: use item 47006: target 34980 Drottinn Hrothgar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(14101)) &amp;&amp; (IsQuestCompleted(14101)))">
+			<TurnIn QuestName="Drottinn Hrothgar" QuestId="14101" TurnInName="High Crusader Adelard" TurnInId="34882" X="8460.23" Y="1087.09" Z="554.492" />
+		</If>
+		<If Condition="((HasQuest(14101)) &amp;&amp; (!IsQuestCompleted(14101)))">
+			<CustomBehavior File="AbandonQuest" QuestId="14101" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q14102 Mistcaller Yngvar: use item 47009: target 34965 Mistcaller Yngvar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(14102)) &amp;&amp; (IsQuestCompleted(14102)))">
+			<TurnIn QuestName="Mistcaller Yngvar" QuestId="14102" TurnInName="High Crusader Adelard" TurnInId="34882" X="8460.23" Y="1087.09" Z="554.492" />
+		</If>
+		<If Condition="((HasQuest(14102)) &amp;&amp; (!IsQuestCompleted(14102)))">
+			<CustomBehavior File="AbandonQuest" QuestId="14102" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q14104 Ornolf The Scarred: use item 47029: target 35012 Ornolf the Scarred has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(14104)) &amp;&amp; (IsQuestCompleted(14104)))">
+			<TurnIn QuestName="Ornolf The Scarred" QuestId="14104" TurnInName="High Crusader Adelard" TurnInId="34882" X="8460.23" Y="1087.09" Z="554.492" />
+		</If>
+		<If Condition="((HasQuest(14104)) &amp;&amp; (!IsQuestCompleted(14104)))">
+			<CustomBehavior File="AbandonQuest" QuestId="14104" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Get Kraken!" QuestId="14108" Type="KillMob" MobId="35009" KillCount="6" />
+		<!-- REVIEW Q14108 Get Kraken!: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(14108)) &amp;&amp; (IsQuestCompleted(14108)))">
+			<TurnIn QuestName="Get Kraken!" QuestId="14108" TurnInName="Crusader Silverdawn" TurnInId="35094" X="8461.79" Y="1084.64" Z="554.586" />
+		</If>
+		<If Condition="((HasQuest(14108)) &amp;&amp; (!IsQuestCompleted(14108)))">
+			<CustomBehavior File="AbandonQuest" QuestId="14108" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q14107 The Fate Of The Fallen: objective 35055 Fallen Hero's Spirit Proxy x6: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(14107)) &amp;&amp; (IsQuestCompleted(14107)))">
+			<TurnIn QuestName="The Fate Of The Fallen" QuestId="14107" TurnInName="Crusader Silverdawn" TurnInId="35094" X="8461.79" Y="1084.64" Z="554.586" />
+		</If>
+		<If Condition="((HasQuest(14107)) &amp;&amp; (!IsQuestCompleted(14107)))">
+			<CustomBehavior File="AbandonQuest" QuestId="14107" Type="Incomplete" />
+		</If>
+		<If Condition="((Me.Class == WoWClass.DeathKnight))">
+			<!-- REVIEW Q13813 Taking Battle To The Enemy: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(13813)) &amp;&amp; (IsQuestCompleted(13813)))">
+				<TurnIn QuestName="Taking Battle To The Enemy" QuestId="13813" TurnInName="Zor'be the Bloodletter" TurnInId="33769" X="8613.75" Y="815.734" Z="547.637" />
+			</If>
+			<If Condition="((HasQuest(13813)) &amp;&amp; (!IsQuestCompleted(13813)))">
+				<CustomBehavior File="AbandonQuest" QuestId="13813" Type="Incomplete" />
+			</If>
+		</If>
+		<If Condition="((Me.Class == WoWClass.DeathKnight))">
+			<!-- REVIEW Q13812 Threat From Above: group quest (3 players); kill 33695 Cultist Bombardier x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(13812)) &amp;&amp; (IsQuestCompleted(13812)))">
+				<TurnIn QuestName="Threat From Above" QuestId="13812" TurnInName="Crok Scourgebane" TurnInId="33762" X="8588.21" Y="816.003" Z="547.637" />
+			</If>
+			<If Condition="((HasQuest(13812)) &amp;&amp; (!IsQuestCompleted(13812)))">
+				<CustomBehavior File="AbandonQuest" QuestId="13812" Type="Incomplete" />
+			</If>
+			<TurnIn QuestName="Battle Before The Citadel" QuestId="13863" TurnInName="Crok Scourgebane" TurnInId="33762" X="8588.21" Y="816.003" Z="547.637" />
+		</If>
+		<If Condition="((Me.Class == WoWClass.DeathKnight))">
+			<!-- REVIEW Q13814 Among the Champions: item 45500 Mark of the Champion has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(13814)) &amp;&amp; (IsQuestCompleted(13814)))">
+				<TurnIn QuestName="Among the Champions" QuestId="13814" TurnInName="Illyrie Nightfall" TurnInId="33770" X="8587.27" Y="829.251" Z="547.463" />
+			</If>
+			<If Condition="((HasQuest(13814)) &amp;&amp; (!IsQuestCompleted(13814)))">
+				<CustomBehavior File="AbandonQuest" QuestId="13814" Type="Incomplete" />
+			</If>
+		</If>
+		<TurnIn QuestName="A Leg Up" QuestId="14143" TurnInName="Girana the Blooded" TurnInId="34771" X="8420.01" Y="674.24" Z="550.462" />
+		<TurnIn QuestName="Rescue at Sea" QuestId="14136" TurnInName="Girana the Blooded" TurnInId="34771" X="8420.01" Y="674.24" Z="550.462" />
+		<!-- REVIEW Q14140 Stop The Aggressors: objective 34838 Kvaldir Reaver x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(14140)) &amp;&amp; (IsQuestCompleted(14140)))">
+			<TurnIn QuestName="Stop The Aggressors" QuestId="14140" TurnInName="Girana the Blooded" TurnInId="34771" X="8420.01" Y="674.24" Z="550.462" />
+		</If>
+		<If Condition="((HasQuest(14140)) &amp;&amp; (!IsQuestCompleted(14140)))">
+			<CustomBehavior File="AbandonQuest" QuestId="14140" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q14144 The Light's Mercy: objective 34852 Slain Tualiq Villager x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(14144)) &amp;&amp; (IsQuestCompleted(14144)))">
+			<TurnIn QuestName="The Light's Mercy" QuestId="14144" TurnInName="Girana the Blooded" TurnInId="34771" X="8420.01" Y="674.24" Z="550.462" />
+		</If>
+		<If Condition="((HasQuest(14144)) &amp;&amp; (!IsQuestCompleted(14144)))">
+			<CustomBehavior File="AbandonQuest" QuestId="14144" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="You've Really Done It This Time, Kul" QuestId="14142" TurnInName="Girana the Blooded" TurnInId="34771" X="8420.01" Y="674.24" Z="550.462" />
+		<!-- REVIEW Q14092 Breakfast Of Champions: item 46889 Jormungar Egg Sac has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(14092)) &amp;&amp; (IsQuestCompleted(14092)))">
+			<TurnIn QuestName="Breakfast Of Champions" QuestId="14092" TurnInName="Tylos Dawnrunner" TurnInId="34914" X="8422.19" Y="673.261" Z="550.554" />
+		</If>
+		<If Condition="((HasQuest(14092)) &amp;&amp; (!IsQuestCompleted(14092)))">
+			<CustomBehavior File="AbandonQuest" QuestId="14092" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q14141 Gormok Wants His Snobolds: objective 34899 Snowblind Follower Proxy x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(14141)) &amp;&amp; (IsQuestCompleted(14141)))">
+			<TurnIn QuestName="Gormok Wants His Snobolds" QuestId="14141" TurnInName="Tylos Dawnrunner" TurnInId="34914" X="8422.19" Y="673.261" Z="550.554" />
+		</If>
+		<If Condition="((HasQuest(14141)) &amp;&amp; (!IsQuestCompleted(14141)))">
+			<CustomBehavior File="AbandonQuest" QuestId="14141" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q14145 What Do You Feed a Yeti, Anyway?: item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(14145)) &amp;&amp; (IsQuestCompleted(14145)))">
+			<TurnIn QuestName="What Do You Feed a Yeti, Anyway?" QuestId="14145" TurnInName="Tylos Dawnrunner" TurnInId="34914" X="8422.19" Y="673.261" Z="550.554" />
+		</If>
+		<If Condition="((HasQuest(14145)) &amp;&amp; (!IsQuestCompleted(14145)))">
+			<CustomBehavior File="AbandonQuest" QuestId="14145" Type="Incomplete" />
+		</If>
+		<CustomBehavior File="Message" Text="Zygor Dailies\Speed Gold Runs\Level 80 Dailies Speed Gold Run (With ATG Dailies): done for today" LogColor="Green" />
+	</QuestOrder>
+</HBProfile>

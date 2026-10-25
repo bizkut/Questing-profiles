@@ -1,0 +1,755 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Kalimdor\[30] Ashenvale</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Maliynn" Entry="3961" Type="Food" X="2751.84" Y="-412.033" Z="111.542" />
+		<Vendor Name="Scott Carevin" Entry="3138" Type="Food" X="-10593.3" Y="-1214.02" Z="28.5822" />
+		<Vendor Name="Dalmond" Entry="4182" Type="Food" X="6564.99" Y="488.889" Z="8.3356" />
+		<Vendor Name="Ulthaan" Entry="3960" Type="Food" X="2111.36" Y="-1183.69" Z="101.861" />
+		<Vendor Name="Innkeeper Kimlya" Entry="6738" Type="Food" X="2781.16" Y="-432.997" Z="116.665" />
+		<Vendor Name="[DND] TAR Pedestal - Trainer, Druid" Entry="26751" Type="Repair" X="9963.89" Y="2282.99" Z="1341.48" />
+		<Vendor Name="[DND] TAR Pedestal - Trainer, Hunter" Entry="26752" Type="Repair" X="9967.38" Y="2282.98" Z="1341.48" />
+		<Vendor Name="[DND] TAR Pedestal - Arena Organizer" Entry="26747" Type="Repair" X="9955.84" Y="2283.01" Z="1341.48" />
+		<Vendor Name="[DND] TAR Pedestal - Beastmaster" Entry="26748" Type="Repair" X="9971.09" Y="2283.12" Z="1341.48" />
+		<Vendor Name="[DND] TAR Pedestal - Fight Promoter" Entry="26765" Type="Repair" X="9951.88" Y="2282.82" Z="1341.48" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="5321" Name="The Sleeper Has Awakened">
+		<Objective Type="CollectItem" ItemId="13536" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Kerlonian's Chest" Id="176634" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5001.34" Y="34.4409" Z="50.7119" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1010" Name="Bathran's Hair">
+		<Objective Type="CollectItem" ItemId="5437" CollectCount="5">
+			<CollectFrom>
+				<GameObject Name="Plant Bundle" Id="17282" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3763.18" Y="-68.0798" Z="-0.7551" />
+				<Hotspot X="3692.97" Y="-55.559" Z="-1.2975" />
+				<Hotspot X="3729.87" Y="-157.549" Z="6.1251" />
+				<Hotspot X="3769.16" Y="-149.361" Z="2.3355" />
+				<Hotspot X="3837.68" Y="-155.797" Z="0.3768" />
+				<Hotspot X="3866.55" Y="-83.8646" Z="6.6709" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1054" Name="Culling the Threat">
+		<Objective Type="CollectItem" ItemId="5544" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dal Bloodclaw" Id="3987" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3337.85" Y="-476.5" Z="154.489" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1008" Name="The Zoram Strand">
+		<Objective Type="CollectItem" ItemId="5490" CollectCount="20">
+			<CollectFrom>
+				<Mob Name="Wrathtail Myrmidon" Id="3711" />
+				<Mob Name="Wrathtail Razortail" Id="3712" />
+				<Mob Name="Wrathtail Wave Rider" Id="3713" />
+				<Mob Name="Wrathtail Sea Witch" Id="3715" />
+				<Mob Name="Wrathtail Sorceress" Id="3717" />
+				<Mob Name="Wrathtail Priestess" Id="3944" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3680.18" Y="880.982" Z="0.9979" />
+				<Hotspot X="3714.14" Y="822.712" Z="5.819" />
+				<Hotspot X="3654.37" Y="818.561" Z="5.9" />
+				<Hotspot X="3548.44" Y="921.137" Z="2.8236" />
+				<Hotspot X="3587.5" Y="954.167" Z="2.3241" />
+				<Hotspot X="3616.69" Y="988.471" Z="-2.3444" />
+				<Hotspot X="3652.6" Y="1017.44" Z="-0.9653" />
+				<Hotspot X="3548.84" Y="984.936" Z="1.3897" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1033" Name="Elune's Tear">
+		<Objective Type="CollectItem" ItemId="5493" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Elune's Tear" Id="19015" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2906.27" Y="-966.665" Z="201.539" />
+				<Hotspot X="2869.9" Y="-986.365" Z="196.672" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1034" Name="The Ruins of Stardust">
+		<Objective Type="CollectItem" ItemId="5494" CollectCount="5">
+			<CollectFrom>
+				<GameObject Name="Stardust Covered Bush" Id="19016" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2113.95" Y="-257.077" Z="97.4898" />
+				<Hotspot X="2072.58" Y="-270.353" Z="94.0163" />
+				<Hotspot X="2089.97" Y="-218.547" Z="97.064" />
+				<Hotspot X="2100.94" Y="-178.591" Z="96.8186" />
+				<Hotspot X="2034.09" Y="-227.392" Z="96.3745" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1035" Name="Fallen Sky Lake">
+		<Objective Type="CollectItem" ItemId="5508" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Shadethicket Oracle" Id="3931" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1514.01" Y="-2145.21" Z="88.5974" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1023" Name="Raene's Cleansing">
+		<Objective Type="CollectItem" ItemId="5463" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Saltspittle Puddlejumper" Id="3737" />
+				<Mob Name="Saltspittle Warrior" Id="3739" />
+				<Mob Name="Saltspittle Muckdweller" Id="3740" />
+				<Mob Name="Saltspittle Oracle" Id="3742" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3050.76" Y="512.394" Z="-4.9724" />
+				<Hotspot X="3010.68" Y="518.884" Z="-2.1123" />
+				<Hotspot X="2975.12" Y="541.709" Z="4.9968" />
+				<Hotspot X="2984.46" Y="591.689" Z="15.7224" />
+				<Hotspot X="3050.94" Y="584.337" Z="5.5129" />
+				<Hotspot X="3108.48" Y="513.987" Z="4.6355" />
+				<Hotspot X="3041.41" Y="441.825" Z="5.8081" />
+				<Hotspot X="2997.7" Y="472.758" Z="9.2318" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1007" Name="The Ancient Statuette">
+		<Objective Type="CollectItem" ItemId="5424" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Ancient Statuette" Id="17783" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3879.52" Y="880.966" Z="0.6902" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1009" Name="Ruuzel">
+		<Objective Type="CollectItem" ItemId="5445" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ruuzel" Id="3943" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4157.59" Y="1272.73" Z="3.3285" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1025" Name="An Aggressive Defense">
+		<Objective Type="KillMob" MobId="3746" KillCount="1">
+			<Hotspots>
+				<Hotspot X="2351.37" Y="-1195.21" Z="89.3388" />
+				<Hotspot X="2313.41" Y="-1424.84" Z="86.8939" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3749" KillCount="2">
+			<Hotspots>
+				<Hotspot X="2364.03" Y="-1197.31" Z="89.2138" />
+				<Hotspot X="2288.42" Y="-1401.9" Z="86.3668" />
+				<Hotspot X="2309.08" Y="-1451.35" Z="88.5189" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3750" KillCount="10">
+			<Hotspots>
+				<Hotspot X="2340.8" Y="-1220.58" Z="86.0913" />
+				<Hotspot X="2310.88" Y="-1148.44" Z="88.1777" />
+				<Hotspot X="2251.82" Y="-1355.87" Z="81.3688" />
+				<Hotspot X="2205.44" Y="-1413.11" Z="89.7045" />
+				<Hotspot X="2277.37" Y="-1486.46" Z="89.1755" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3743" KillCount="12">
+			<Hotspots>
+				<Hotspot X="2346.92" Y="-1247.77" Z="87.2102" />
+				<Hotspot X="2317.24" Y="-1181.17" Z="87.0228" />
+				<Hotspot X="2348.96" Y="-1144.79" Z="88.2138" />
+				<Hotspot X="2331.25" Y="-1384.5" Z="88.9072" />
+				<Hotspot X="2251.99" Y="-1420.98" Z="87.3919" />
+				<Hotspot X="2222.33" Y="-1351.58" Z="82.5548" />
+				<Hotspot X="2282.67" Y="-1511.86" Z="88.4101" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1026" Name="Raene's Cleansing">
+		<Objective Type="CollectItem" ItemId="5464" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Worn Chest" Id="19022" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3312.35" Y="-1438.02" Z="176.314" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1017" Name="Mage Summoner">
+		<Objective Type="CollectItem" ItemId="5537" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sarilus Foulborne" Id="3986" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="318.999" Y="-2263.8" Z="243.122" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1011" Name="Forsaken Diseases">
+		<Objective Type="CollectItem" ItemId="5440" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Bottle of Disease" Id="18036" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1896.83" Y="-2641.82" Z="83.8797" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9519" Name="The Lost Chalice">
+		<Objective Type="CollectItem" ItemId="23760" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Chalice of Elune" Id="181681" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2793.46" Y="-2994.22" Z="153.594" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9517" Name="A Shameful Waste">
+		<Objective Type="CollectItem" ItemId="24081" CollectCount="5">
+			<CollectFrom>
+				<GameObject Name="Tainted Wood" Id="181916" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2768.88" Y="-2943.1" Z="143.501" />
+				<Hotspot X="2766.35" Y="-2984.25" Z="146.828" />
+				<Hotspot X="2790.69" Y="-3030.88" Z="158.207" />
+				<Hotspot X="2825.96" Y="-3011.43" Z="159.926" />
+				<Hotspot X="2814.72" Y="-2963.26" Z="155.928" />
+				<Hotspot X="2711.03" Y="-2927.82" Z="140.275" />
+				<Hotspot X="2687.78" Y="-2975.13" Z="141.782" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="23776" CollectCount="15">
+			<CollectFrom>
+				<GameObject Name="Lumber Pile" Id="181687" />
+				<GameObject Name="Lumber Pile" Id="181686" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2668.58" Y="-3358.48" Z="120.03" />
+				<Hotspot X="2560.24" Y="-3307.61" Z="125.403" />
+				<Hotspot X="2514.54" Y="-3298.02" Z="120.083" />
+				<Hotspot X="2494.26" Y="-3364.92" Z="110.413" />
+				<Hotspot X="2542.95" Y="-3374.97" Z="102.275" />
+				<Hotspot X="2463.75" Y="-3423.16" Z="100.562" />
+				<Hotspot X="2471.21" Y="-3183.81" Z="119.55" />
+				<Hotspot X="2511.9" Y="-3168.57" Z="130.356" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1031" Name="The Branch of Cenarius">
+		<Objective Type="CollectItem" ItemId="5461" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Geltharis" Id="4619" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3042.52" Y="-2797.43" Z="196.595" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1045" Name="Raene's Cleansing">
+		<Objective Type="CollectItem" ItemId="5388" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ran Bloodtooth" Id="3696" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1612.51" Y="-1457.08" Z="156.712" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3932" KillCount="4">
+			<Hotspots>
+				<Hotspot X="1608.87" Y="-1452.78" Z="157.173" />
+				<Hotspot X="1686.69" Y="-1457.95" Z="143.447" />
+				<Hotspot X="1753.14" Y="-1467.47" Z="114.865" />
+				<Hotspot X="1782.52" Y="-1501.58" Z="96.7369" />
+				<Hotspot X="1743.76" Y="-1525.62" Z="99.0033" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3696" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1612.51" Y="-1457.08" Z="156.712" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9526" Name="Reclaiming Felfire Hill">
+		<Objective Type="UseObject" ObjectId="181690" UseCount="8">
+			<Hotspots>
+				<Hotspot X="2172.65" Y="-3030.6" Z="116.131" />
+				<Hotspot X="2106.15" Y="-3034.83" Z="109.937" />
+				<Hotspot X="2106.5" Y="-2970.95" Z="111.002" />
+				<Hotspot X="2114.57" Y="-2918.56" Z="114.529" />
+				<Hotspot X="2186.38" Y="-2918.52" Z="120.821" />
+				<Hotspot X="2123.07" Y="-3126.78" Z="104.993" />
+				<Hotspot X="2074.9" Y="-3153.93" Z="101.419" />
+				<Hotspot X="2050.83" Y="-3118.01" Z="101.439" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1012" Name="Insane Druids">
+		<Objective Type="KillMob" MobId="3940" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1829" Y="-2750.57" Z="83.1342" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3941" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1877.13" Y="-2795.66" Z="37.6753" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3942" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1820.95" Y="-2628.07" Z="61.2105" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9518" Name="Agents of Destruction">
+		<Objective Type="KillMob" MobId="17304" KillCount="1">
+			<Hotspots>
+				<Hotspot X="2383.96" Y="-3421.95" Z="113.658" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="11684" KillCount="2">
+			<Hotspots>
+				<Hotspot X="2532.49" Y="-3292.6" Z="123.646" />
+				<Hotspot X="2515.19" Y="-3094.04" Z="126.713" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="11681" KillCount="5">
+			<Hotspots>
+				<Hotspot X="2639.64" Y="-3384.18" Z="120.82" />
+				<Hotspot X="2479.57" Y="-3207.45" Z="121.266" />
+				<Hotspot X="2442.66" Y="-3150.71" Z="124.646" />
+				<Hotspot X="2473.58" Y="-3121.93" Z="123.149" />
+				<Hotspot X="2409.74" Y="-3183.15" Z="119.957" />
+				<Hotspot X="2411.24" Y="-3284.44" Z="105.134" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="11680" KillCount="10">
+			<Hotspots>
+				<Hotspot X="2612.16" Y="-3345.18" Z="129.271" />
+				<Hotspot X="2565.17" Y="-3285.56" Z="130.161" />
+				<Hotspot X="2509.56" Y="-3244.61" Z="125.857" />
+				<Hotspot X="2477.91" Y="-3282.14" Z="116.218" />
+				<Hotspot X="2575.85" Y="-3439.47" Z="104.686" />
+				<Hotspot X="2641.8" Y="-3451.1" Z="109.657" />
+				<Hotspot X="2706.68" Y="-3446.17" Z="114.798" />
+				<Hotspot X="2744.76" Y="-3412.63" Z="122.3" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9516" Name="Destroy the Legion">
+		<Objective Type="KillMob" MobId="11697" KillCount="6">
+			<Hotspots>
+				<Hotspot X="1983.6" Y="-3146.79" Z="101.819" />
+				<Hotspot X="1784.69" Y="-3181.21" Z="91.61" />
+				<Hotspot X="2124.86" Y="-2949.74" Z="113.585" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="6115" KillCount="6">
+			<Hotspots>
+				<Hotspot X="2039.74" Y="-3136.41" Z="103.619" />
+				<Hotspot X="2053.7" Y="-3084.85" Z="103.972" />
+				<Hotspot X="2076.39" Y="-3046.35" Z="109.48" />
+				<Hotspot X="2114.24" Y="-3078.28" Z="109.95" />
+				<Hotspot X="2117.47" Y="-3010.92" Z="112.084" />
+				<Hotspot X="1949.69" Y="-2986.14" Z="101.639" />
+				<Hotspot X="1941.7" Y="-3180.24" Z="101.233" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="6073" KillCount="6">
+			<Hotspots>
+				<Hotspot X="2074.18" Y="-3113.2" Z="104.347" />
+				<Hotspot X="2019.79" Y="-3056.88" Z="101.597" />
+				<Hotspot X="1986.65" Y="-3097.45" Z="113.78" />
+				<Hotspot X="1945.33" Y="-3056.74" Z="103.414" />
+				<Hotspot X="1915.31" Y="-3088.49" Z="110.881" />
+				<Hotspot X="1920.32" Y="-3152.29" Z="97.9181" />
+				<Hotspot X="2012.81" Y="-2998.05" Z="108.438" />
+				<Hotspot X="2147.13" Y="-2979.85" Z="116.112" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1032" Name="Satyr Slaying!">
+		<Objective Type="CollectItem" ItemId="5481" CollectCount="16">
+			<CollectFrom>
+				<Mob Name="Xavian Rogue" Id="3752" />
+				<Mob Name="Xavian Betrayer" Id="3754" />
+				<Mob Name="Xavian Felsworn" Id="3755" />
+				<Mob Name="Xavian Hellcaller" Id="3757" />
+				<Mob Name="Felmusk Satyr" Id="3758" />
+				<Mob Name="Felmusk Rogue" Id="3759" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2913.19" Y="-2851.23" Z="211.22" />
+				<Hotspot X="2889.27" Y="-2813.64" Z="206.229" />
+				<Hotspot X="2898.09" Y="-2773.81" Z="214.206" />
+				<Hotspot X="2951.62" Y="-2782.34" Z="217.673" />
+				<Hotspot X="2952.6" Y="-2827.6" Z="212.904" />
+				<Hotspot X="2993.55" Y="-2817.69" Z="207.843" />
+				<Hotspot X="2871.79" Y="-2891.05" Z="203.17" />
+				<Hotspot X="2847.92" Y="-2822.42" Z="199.336" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9522" Name="Never Again!">
+		<Objective Type="KillMob" MobId="17300" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1723.76" Y="-3478.09" Z="144.405" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="6072" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1418.35" Y="-2853" Z="133.351" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1038" Name="Velinde's Effects">
+		<Objective Type="CollectItem" ItemId="5520" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Velinde's Locker" Id="19877" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="9650.52" Y="2279.11" Z="1346.62" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1043" Name="The Scythe of Elune">
+		<Objective Type="UseObject" ObjectId="19030" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-11141.2" Y="-1151.89" Z="43.4364" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-Kalimdor.lua: Ding80's Loremaster Alliance Guides\Kalimdor\[30] Ashenvale -->
+		<If Condition="Me.MapId != 1">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Kalimdor_[30] Ashenvale");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Kalimdor" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
+			<If Condition="((Me.Race == WoWRace.Draenei)) &amp;&amp; (Me.Level &gt;= 18)">
+				<PickUp QuestName="Travel to Astranaar" QuestId="9432" GiverName="Emissary Valustraa" GiverId="17105" X="9664.36" Y="2528.67" Z="1360.08" />
+			</If>
+		</If>
+		<If Condition="(Me.Level &gt;= 18)">
+			<PickUp QuestName="Onward to Ashenvale" QuestId="10752" GiverName="Thundris Windweaver" GiverId="3649" X="6580.97" Y="492.292" Z="8.3174" />
+		</If>
+		<If Condition="(Me.Level &gt;= 10)">
+			<PickUp QuestName="Therylune's Escape" QuestId="945" GiverName="Therylune" GiverId="3584" X="4519.74" Y="410.481" Z="33.8577" />
+		</If>
+		<If Condition="(Me.Level &gt;= 17)">
+			<PickUp QuestName="The Sleeper Has Awakened" QuestId="5321" GiverName="Kerlonian Evershade" GiverId="11218" X="4995.83" Y="33.5645" Z="51.5915" />
+		</If>
+		<Objective QuestName="The Sleeper Has Awakened" QuestId="5321" Type="CollectItem" ItemId="13536" CollectCount="1" />
+		<!-- REVIEW Q5321 The Sleeper Has Awakened: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(5321)) &amp;&amp; (IsQuestCompleted(5321)))">
+			<TurnIn QuestName="The Sleeper Has Awakened" QuestId="5321" TurnInName="Liladris Moonriver" TurnInId="11219" X="3305.22" Y="127.885" Z="16.1994" />
+		</If>
+		<If Condition="((HasQuest(5321)) &amp;&amp; (!IsQuestCompleted(5321)))">
+			<CustomBehavior File="AbandonQuest" QuestId="5321" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="Bathran's Hair" QuestId="1010" GiverName="Orendil Broadleaf" GiverId="3847" X="3189.6" Y="175.47" Z="4.6855" />
+		</If>
+		<Objective QuestName="Bathran's Hair" QuestId="1010" Type="CollectItem" ItemId="5437" CollectCount="5" />
+		<TurnIn QuestName="Bathran's Hair" QuestId="1010" TurnInName="Orendil Broadleaf" TurnInId="3847" X="3189.6" Y="175.47" Z="4.6855" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(1010)">
+			<PickUp QuestName="Orendil's Cure" QuestId="1020" GiverName="Orendil Broadleaf" GiverId="3847" X="3189.6" Y="175.47" Z="4.6855" />
+		</If>
+		<If Condition="(Me.Level &gt;= 19) &amp;&amp; IsQuestCompleted(973)">
+			<PickUp QuestName="Supplies to Auberdine" QuestId="976" GiverName="Feero Ironhand" GiverId="4484" X="3178.51" Y="188.551" Z="3.9463" />
+		</If>
+		<!-- REVIEW Q976 Supplies to Auberdine: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(976)) &amp;&amp; (IsQuestCompleted(976)))">
+			<TurnIn QuestName="Supplies to Auberdine" QuestId="976" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		</If>
+		<If Condition="((HasQuest(976)) &amp;&amp; (!IsQuestCompleted(976)))">
+			<CustomBehavior File="AbandonQuest" QuestId="976" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q945 Therylune's Escape: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(945)) &amp;&amp; (IsQuestCompleted(945)))">
+			<TurnIn QuestName="Therylune's Escape" QuestId="945" TurnInName="Therysil" TurnInId="3585" X="2677.34" Y="394.207" Z="69.8261" />
+		</If>
+		<If Condition="((HasQuest(945)) &amp;&amp; (!IsQuestCompleted(945)))">
+			<CustomBehavior File="AbandonQuest" QuestId="945" Type="Incomplete" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
+			<TurnIn QuestName="Travel to Astranaar" QuestId="9432" TurnInName="Vindicator Palanaar" TurnInId="17106" X="2762.28" Y="-312.248" Z="110.858" />
+		</If>
+		<TurnIn QuestName="Onward to Ashenvale" QuestId="10752" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<If Condition="(Me.Level &gt;= 18)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="991" GiverName="Raene Wolfrunner" GiverId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		</If>
+		<If Condition="(Me.Level &gt;= 18)">
+			<PickUp QuestName="Culling the Threat" QuestId="1054" GiverName="Raene Wolfrunner" GiverId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		</If>
+		<If Condition="(Me.Level &gt;= 14)">
+			<PickUp QuestName="The Zoram Strand" QuestId="1008" GiverName="Shindrell Swiftfire" GiverId="3845" X="2795.75" Y="-299.374" Z="107.183" />
+		</If>
+		<TurnIn QuestName="Orendil's Cure" QuestId="1020" TurnInName="Pelturas Whitemoon" TurnInId="3894" X="2682.14" Y="-454.808" Z="109.333" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(1020)">
+			<PickUp QuestName="Elune's Tear" QuestId="1033" GiverName="Pelturas Whitemoon" GiverId="3894" X="2682.14" Y="-454.808" Z="109.333" />
+		</If>
+		<Objective QuestName="Elune's Tear" QuestId="1033" Type="CollectItem" ItemId="5493" CollectCount="1" />
+		<Objective QuestName="Culling the Threat" QuestId="1054" Type="CollectItem" ItemId="5544" CollectCount="1" />
+		<TurnIn QuestName="Culling the Threat" QuestId="1054" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<TurnIn QuestName="Elune's Tear" QuestId="1033" TurnInName="Pelturas Whitemoon" TurnInId="3894" X="2682.14" Y="-454.808" Z="109.333" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(1033)">
+			<PickUp QuestName="The Ruins of Stardust" QuestId="1034" GiverName="Pelturas Whitemoon" GiverId="3894" X="2682.14" Y="-454.808" Z="109.333" />
+		</If>
+		<Objective QuestName="The Ruins of Stardust" QuestId="1034" Type="CollectItem" ItemId="5494" CollectCount="5" />
+		<TurnIn QuestName="The Ruins of Stardust" QuestId="1034" TurnInName="Pelturas Whitemoon" TurnInId="3894" X="2682.14" Y="-454.808" Z="109.333" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(1034)">
+			<PickUp QuestName="Fallen Sky Lake" QuestId="1035" GiverName="Pelturas Whitemoon" GiverId="3894" X="2682.14" Y="-454.808" Z="109.333" />
+		</If>
+		<TurnIn QuestName="Raene's Cleansing" QuestId="991" TurnInName="Teronis' Corpse" TurnInId="3891" X="3045.78" Y="528.706" Z="4.9482" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(991)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="1023" GiverName="Teronis' Corpse" GiverId="3891" X="3045.78" Y="528.706" Z="4.9482" />
+		</If>
+		<Objective QuestName="Raene's Cleansing" QuestId="1023" Type="CollectItem" ItemId="5463" CollectCount="1" />
+		<If Condition="(Me.Level &gt;= 19)">
+			<PickUp QuestName="The Ancient Statuette" QuestId="1007" GiverName="Talen" GiverId="3846" X="3470.04" Y="847.092" Z="5.4588" />
+		</If>
+		<Objective QuestName="The Ancient Statuette" QuestId="1007" Type="CollectItem" ItemId="5424" CollectCount="1" />
+		<TurnIn QuestName="The Ancient Statuette" QuestId="1007" TurnInName="Talen" TurnInId="3846" X="3470.04" Y="847.092" Z="5.4588" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(1007)">
+			<PickUp QuestName="Ruuzel" QuestId="1009" GiverName="Talen" GiverId="3846" X="3470.04" Y="847.092" Z="5.4588" />
+		</If>
+		<Objective QuestName="Ruuzel" QuestId="1009" Type="CollectItem" ItemId="5445" CollectCount="1" />
+		<Objective QuestName="The Zoram Strand" QuestId="1008" Type="CollectItem" ItemId="5490" CollectCount="20" />
+		<TurnIn QuestName="Ruuzel" QuestId="1009" TurnInName="Talen" TurnInId="3846" X="3470.04" Y="847.092" Z="5.4588" />
+		<TurnIn QuestName="The Zoram Strand" QuestId="1008" TurnInName="Shindrell Swiftfire" TurnInId="3845" X="2795.75" Y="-299.374" Z="107.183" />
+		<If Condition="(Me.Level &gt;= 24)">
+			<PickUp QuestName="Kayneth Stillwind" QuestId="4581" GiverName="Shindrell Swiftfire" GiverId="3845" X="2795.75" Y="-299.374" Z="107.183" />
+		</If>
+		<If Condition="(Me.Level &gt;= 22)">
+			<PickUp QuestName="A Helping Hand" QuestId="9533" GiverName="Vindicator Palanaar" GiverId="17106" X="2762.28" Y="-312.248" Z="110.858" />
+		</If>
+		<TurnIn QuestName="Raene's Cleansing" QuestId="1023" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1023)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="1024" GiverName="Raene Wolfrunner" GiverId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		</If>
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1023)">
+			<PickUp QuestName="An Aggressive Defense" QuestId="1025" GiverName="Raene Wolfrunner" GiverId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		</If>
+		<TurnIn QuestName="Raene's Cleansing" QuestId="1024" TurnInName="Shael'dryn" TurnInId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1024)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="1026" GiverName="Shael'dryn" GiverId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
+		</If>
+		<Objective QuestName="An Aggressive Defense" QuestId="1025" Type="KillMob" MobId="3746" KillCount="1" />
+		<Objective QuestName="An Aggressive Defense" QuestId="1025" Type="KillMob" MobId="3749" KillCount="2" />
+		<Objective QuestName="An Aggressive Defense" QuestId="1025" Type="KillMob" MobId="3750" KillCount="10" />
+		<Objective QuestName="An Aggressive Defense" QuestId="1025" Type="KillMob" MobId="3743" KillCount="12" />
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="Elemental Bracers" QuestId="1016" GiverName="Sentinel Velene Starstrike" GiverId="3885" X="2089.5" Y="-1171.56" Z="101.876" />
+		</If>
+		<!-- REVIEW Q1016 Elemental Bracers: item 5455 Divined Scroll has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1016)) &amp;&amp; (IsQuestCompleted(1016)))">
+			<TurnIn QuestName="Elemental Bracers" QuestId="1016" TurnInName="Sentinel Velene Starstrike" TurnInId="3885" X="2089.5" Y="-1171.56" Z="101.876" />
+		</If>
+		<If Condition="((HasQuest(1016)) &amp;&amp; (!IsQuestCompleted(1016)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1016" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(1016)">
+			<PickUp QuestName="Mage Summoner" QuestId="1017" GiverName="Sentinel Velene Starstrike" GiverId="3885" X="2089.5" Y="-1171.56" Z="101.876" />
+		</If>
+		<Objective QuestName="Fallen Sky Lake" QuestId="1035" Type="CollectItem" ItemId="5508" CollectCount="1" />
+		<TurnIn QuestName="Kayneth Stillwind" QuestId="4581" TurnInName="Kayneth Stillwind" TurnInId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
+		<If Condition="(Me.Level &gt;= 24) &amp;&amp; IsQuestCompleted(4581)">
+			<PickUp QuestName="Forsaken Diseases" QuestId="1011" GiverName="Kayneth Stillwind" GiverId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
+		</If>
+		<If Condition="(Me.Level &gt;= 23)">
+			<PickUp QuestName="The Lost Chalice" QuestId="9519" GiverName="Kayneth Stillwind" GiverId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
+		</If>
+		<If Condition="(Me.Level &gt;= 25)">
+			<PickUp QuestName="The Howling Vale" QuestId="1022" GiverName="Sentinel Melyria Frostshadow" GiverId="3880" X="2977.16" Y="-3261.14" Z="160.496" />
+		</If>
+		<If Condition="(Me.Level &gt;= 21)">
+			<PickUp QuestName="Report from the Northern Front" QuestId="9521" GiverName="Sentinel Luciel Starwhisper" GiverId="17287" X="2967.73" Y="-3259.6" Z="160.411" />
+		</If>
+		<TurnIn QuestName="A Helping Hand" QuestId="9533" TurnInName="Architect Nemos" TurnInId="17291" X="2950.43" Y="-3307.5" Z="154.586" />
+		<If Condition="(Me.Level &gt;= 24)">
+			<PickUp QuestName="A Shameful Waste" QuestId="9517" GiverName="Architect Nemos" GiverId="17291" X="2950.43" Y="-3307.5" Z="154.586" />
+		</If>
+		<If Condition="(Me.Level &gt;= 26)">
+			<PickUp QuestName="Vile Satyr! Dryads in Danger!" QuestId="1021" GiverName="Illiyana" GiverId="3901" X="3001.16" Y="-3322.58" Z="152.267" />
+		</If>
+		<TurnIn QuestName="Vile Satyr! Dryads in Danger!" QuestId="1021" TurnInName="Anilia" TurnInId="3920" X="2950.1" Y="-2816.79" Z="212.652" />
+		<If Condition="(Me.Level &gt;= 26) &amp;&amp; IsQuestCompleted(1021)">
+			<PickUp QuestName="The Branch of Cenarius" QuestId="1031" GiverName="Anilia" GiverId="3920" X="2950.1" Y="-2816.79" Z="212.652" />
+		</If>
+		<Objective QuestName="The Branch of Cenarius" QuestId="1031" Type="CollectItem" ItemId="5461" CollectCount="1" />
+		<Objective QuestName="The Lost Chalice" QuestId="9519" Type="CollectItem" ItemId="23760" CollectCount="1" />
+		<Objective QuestName="A Shameful Waste" QuestId="9517" Type="CollectItem" ItemId="24081" CollectCount="5" />
+		<Objective QuestName="Forsaken Diseases" QuestId="1011" Type="CollectItem" ItemId="5440" CollectCount="1" />
+		<TurnIn QuestName="Report from the Northern Front" QuestId="9521" TurnInName="Sentinel Farsong" TurnInId="14733" X="1447.91" Y="-1866.85" Z="127.464" />
+		<Objective QuestName="Raene's Cleansing" QuestId="1026" Type="CollectItem" ItemId="5464" CollectCount="1" />
+		<TurnIn QuestName="Raene's Cleansing" QuestId="1026" TurnInName="Shael'dryn" TurnInId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1026)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="1027" GiverName="Shael'dryn" GiverId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
+		</If>
+		<!-- REVIEW Q1027 Raene's Cleansing: item 5519 Iron Pommel has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1027)) &amp;&amp; (IsQuestCompleted(1027)))">
+			<TurnIn QuestName="Raene's Cleansing" QuestId="1027" TurnInName="Shael'dryn" TurnInId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
+		</If>
+		<If Condition="((HasQuest(1027)) &amp;&amp; (!IsQuestCompleted(1027)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1027" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1027)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="1028" GiverName="Shael'dryn" GiverId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
+		</If>
+		<TurnIn QuestName="Raene's Cleansing" QuestId="1028" TurnInName="Hidden Shrine" TurnInId="19024" TurnInType="Object" X="2781.92" Y="-1549.56" Z="261.645" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1028)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="1055" GiverName="Hidden Shrine" GiverId="19024" GiverType="Object" X="2781.92" Y="-1549.56" Z="261.645" />
+		</If>
+		<TurnIn QuestName="Raene's Cleansing" QuestId="1055" TurnInName="Shael'dryn" TurnInId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1055)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="1029" GiverName="Shael'dryn" GiverId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
+		</If>
+		<TurnIn QuestName="Fallen Sky Lake" QuestId="1035" TurnInName="Pelturas Whitemoon" TurnInId="3894" X="2682.14" Y="-454.808" Z="109.333" />
+		<TurnIn QuestName="An Aggressive Defense" QuestId="1025" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<TurnIn QuestName="Raene's Cleansing" QuestId="1029" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1029)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="1030" GiverName="Raene Wolfrunner" GiverId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		</If>
+		<TurnIn QuestName="Raene's Cleansing" QuestId="1030" TurnInName="Krolg" TurnInId="3897" X="1787.09" Y="-1231.98" Z="150.916" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1030)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="1045" GiverName="Krolg" GiverId="3897" X="1787.09" Y="-1231.98" Z="150.916" />
+		</If>
+		<Objective QuestName="Raene's Cleansing" QuestId="1045" Type="CollectItem" ItemId="5388" CollectCount="1" />
+		<Objective QuestName="Raene's Cleansing" QuestId="1045" Type="KillMob" MobId="3932" KillCount="4" />
+		<Objective QuestName="Raene's Cleansing" QuestId="1045" Type="KillMob" MobId="3696" KillCount="1" />
+		<TurnIn QuestName="Raene's Cleansing" QuestId="1045" TurnInName="Krolg" TurnInId="3897" X="1787.09" Y="-1231.98" Z="150.916" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1045)">
+			<PickUp QuestName="Raene's Cleansing" QuestId="1046" GiverName="Krolg" GiverId="3897" X="1787.09" Y="-1231.98" Z="150.916" />
+		</If>
+		<TurnIn QuestName="Raene's Cleansing" QuestId="1046" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<If Condition="(Me.Level &gt;= 27)">
+			<PickUp QuestName="Reclaiming Felfire Hill" QuestId="9526" GiverName="Gnarl" GiverId="17310" X="2919.09" Y="-3154.22" Z="177.866" />
+		</If>
+		<TurnIn QuestName="Forsaken Diseases" QuestId="1011" TurnInName="Kayneth Stillwind" TurnInId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
+		<TurnIn QuestName="The Lost Chalice" QuestId="9519" TurnInName="Kayneth Stillwind" TurnInId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
+		<If Condition="(Me.Level &gt;= 24) &amp;&amp; IsQuestCompleted(1011)">
+			<PickUp QuestName="Insane Druids" QuestId="1012" GiverName="Kayneth Stillwind" GiverId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
+		</If>
+		<!-- REVIEW Q1022 The Howling Vale: object 19027 Tome of Mel'Thandris has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1022)) &amp;&amp; (IsQuestCompleted(1022)))">
+			<TurnIn QuestName="The Howling Vale" QuestId="1022" TurnInName="Sentinel Melyria Frostshadow" TurnInId="3880" X="2977.16" Y="-3261.14" Z="160.496" />
+		</If>
+		<If Condition="((HasQuest(1022)) &amp;&amp; (!IsQuestCompleted(1022)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1022" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1022)">
+			<PickUp QuestName="Velinde Starsong" QuestId="1037" GiverName="Sentinel Melyria Frostshadow" GiverId="3880" X="2977.16" Y="-3261.14" Z="160.496" />
+		</If>
+		<If Condition="(Me.Level &gt;= 24)">
+			<PickUp QuestName="Agents of Destruction" QuestId="9518" GiverName="Sentinel Luciel Starwhisper" GiverId="17287" X="2967.73" Y="-3259.6" Z="160.411" />
+		</If>
+		<If Condition="(Me.Level &gt;= 27)">
+			<PickUp QuestName="Destroy the Legion" QuestId="9516" GiverName="Vindicator Vedaar" GiverId="17303" X="2975.16" Y="-3287.29" Z="155.447" />
+		</If>
+		<TurnIn QuestName="The Branch of Cenarius" QuestId="1031" TurnInName="Illiyana" TurnInId="3901" X="3001.16" Y="-3322.58" Z="152.267" />
+		<If Condition="(Me.Level &gt;= 26) &amp;&amp; IsQuestCompleted(1031)">
+			<PickUp QuestName="Satyr Slaying!" QuestId="1032" GiverName="Illiyana" GiverId="3901" X="3001.16" Y="-3322.58" Z="152.267" />
+		</If>
+		<Objective QuestName="Satyr Slaying!" QuestId="1032" Type="CollectItem" ItemId="5481" CollectCount="16" />
+		<Objective QuestName="Agents of Destruction" QuestId="9518" Type="KillMob" MobId="17304" KillCount="1" />
+		<Objective QuestName="A Shameful Waste" QuestId="9517" Type="CollectItem" ItemId="23776" CollectCount="15" />
+		<Objective QuestName="Agents of Destruction" QuestId="9518" Type="KillMob" MobId="11684" KillCount="2" />
+		<Objective QuestName="Agents of Destruction" QuestId="9518" Type="KillMob" MobId="11681" KillCount="5" />
+		<Objective QuestName="Agents of Destruction" QuestId="9518" Type="KillMob" MobId="11680" KillCount="10" />
+		<Objective QuestName="Destroy the Legion" QuestId="9516" Type="KillMob" MobId="11697" KillCount="6" />
+		<Objective QuestName="Destroy the Legion" QuestId="9516" Type="KillMob" MobId="6115" KillCount="6" />
+		<Objective QuestName="Destroy the Legion" QuestId="9516" Type="KillMob" MobId="6073" KillCount="6" />
+		<If Condition="HasItem(23777) &amp;&amp; !HasQuest(9520) &amp;&amp; !IsQuestCompleted(9520) &amp;&amp; (Me.Level &gt;= 27)">
+			<PickUp QuestName="Diabolical Plans" QuestId="9520" GiverName="Diabolical Plans" GiverId="23777" GiverType="Item" />
+		</If>
+		<Objective QuestName="Insane Druids" QuestId="1012" Type="KillMob" MobId="3940" KillCount="1" />
+		<Objective QuestName="Insane Druids" QuestId="1012" Type="KillMob" MobId="3941" KillCount="1" />
+		<Objective QuestName="Insane Druids" QuestId="1012" Type="KillMob" MobId="3942" KillCount="1" />
+		<Objective QuestName="Mage Summoner" QuestId="1017" Type="CollectItem" ItemId="5537" CollectCount="1" />
+		<TurnIn QuestName="Mage Summoner" QuestId="1017" TurnInName="Sentinel Velene Starstrike" TurnInId="3885" X="2089.5" Y="-1171.56" Z="101.876" />
+		<TurnIn QuestName="A Shameful Waste" QuestId="9517" TurnInName="Gnarl" TurnInId="17310" X="2919.09" Y="-3154.22" Z="177.866" />
+		<Objective QuestName="Reclaiming Felfire Hill" QuestId="9526" Type="UseObject" ObjectId="181690" UseCount="8" />
+		<TurnIn QuestName="Reclaiming Felfire Hill" QuestId="9526" TurnInName="Gnarl" TurnInId="17310" X="2919.09" Y="-3154.22" Z="177.866" />
+		<TurnIn QuestName="Insane Druids" QuestId="1012" TurnInName="Kayneth Stillwind" TurnInId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
+		<TurnIn QuestName="Agents of Destruction" QuestId="9518" TurnInName="Sentinel Luciel Starwhisper" TurnInId="17287" X="2967.73" Y="-3259.6" Z="160.411" />
+		<TurnIn QuestName="Destroy the Legion" QuestId="9516" TurnInName="Vindicator Vedaar" TurnInId="17303" X="2975.16" Y="-3287.29" Z="155.447" />
+		<TurnIn QuestName="Diabolical Plans" QuestId="9520" TurnInName="Vindicator Vedaar" TurnInId="17303" X="2975.16" Y="-3287.29" Z="155.447" />
+		<If Condition="(Me.Level &gt;= 27) &amp;&amp; IsQuestCompleted(9520)">
+			<PickUp QuestName="Never Again!" QuestId="9522" GiverName="Vindicator Vedaar" GiverId="17303" X="2975.16" Y="-3287.29" Z="155.447" />
+		</If>
+		<TurnIn QuestName="Satyr Slaying!" QuestId="1032" TurnInName="Illiyana" TurnInId="3901" X="3001.16" Y="-3322.58" Z="152.267" />
+		<Objective QuestName="Never Again!" QuestId="9522" Type="KillMob" MobId="17300" KillCount="1" />
+		<Objective QuestName="Never Again!" QuestId="9522" Type="KillMob" MobId="6072" KillCount="1" />
+		<TurnIn QuestName="Never Again!" QuestId="9522" TurnInName="Vindicator Vedaar" TurnInId="17303" X="2975.16" Y="-3287.29" Z="155.447" />
+		<TurnIn QuestName="Velinde Starsong" QuestId="1037" TurnInName="Thyn'tel Bladeweaver" TurnInId="8026" X="9961.78" Y="2284.6" Z="1341.48" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1037)">
+			<PickUp QuestName="Velinde's Effects" QuestId="1038" GiverName="Thyn'tel Bladeweaver" GiverId="8026" X="9961.78" Y="2284.6" Z="1341.48" />
+		</If>
+		<Objective QuestName="Velinde's Effects" QuestId="1038" Type="CollectItem" ItemId="5520" CollectCount="1" />
+		<TurnIn QuestName="Velinde's Effects" QuestId="1038" TurnInName="Thyn'tel Bladeweaver" TurnInId="8026" X="9961.78" Y="2284.6" Z="1341.48" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1038)">
+			<PickUp QuestName="The Barrens Port" QuestId="1039" GiverName="Thyn'tel Bladeweaver" GiverId="8026" X="9961.78" Y="2284.6" Z="1341.48" />
+		</If>
+		<TurnIn QuestName="The Barrens Port" QuestId="1039" TurnInName="Wharfmaster Dizzywig" TurnInId="3453" X="-985.599" Y="-3796.71" Z="5.2093" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1039)">
+			<PickUp QuestName="Passage to Booty Bay" QuestId="1040" GiverName="Wharfmaster Dizzywig" GiverId="3453" X="-985.599" Y="-3796.71" Z="5.2093" />
+		</If>
+		<TurnIn QuestName="Passage to Booty Bay" QuestId="1040" TurnInName="Caravaneer Ruzzgot" TurnInId="3945" X="-14320.3" Y="474.437" Z="8.6146" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1040)">
+			<PickUp QuestName="The Caravan Road" QuestId="1041" GiverName="Caravaneer Ruzzgot" GiverId="3945" X="-14320.3" Y="474.437" Z="8.6146" />
+		</If>
+		<TurnIn QuestName="The Caravan Road" QuestId="1041" TurnInName="Clerk Daltry" TurnInId="267" X="-10560" Y="-1124.98" Z="30.071" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1041)">
+			<PickUp QuestName="The Carevin Family" QuestId="1042" GiverName="Clerk Daltry" GiverId="267" X="-10560" Y="-1124.98" Z="30.071" />
+		</If>
+		<TurnIn QuestName="The Carevin Family" QuestId="1042" TurnInName="Jonathan Carevin" TurnInId="661" X="-10599.1" Y="-1200.37" Z="28.4932" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1042)">
+			<PickUp QuestName="The Scythe of Elune" QuestId="1043" GiverName="Jonathan Carevin" GiverId="661" X="-10599.1" Y="-1200.37" Z="28.4932" />
+		</If>
+		<Objective QuestName="The Scythe of Elune" QuestId="1043" Type="UseObject" ObjectId="19030" UseCount="1" />
+		<TurnIn QuestName="The Scythe of Elune" QuestId="1043" TurnInName="Jonathan Carevin" TurnInId="661" X="-10599.1" Y="-1200.37" Z="28.4932" />
+		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1043)">
+			<PickUp QuestName="Answered Questions" QuestId="1044" GiverName="Jonathan Carevin" GiverId="661" X="-10599.1" Y="-1200.37" Z="28.4932" />
+		</If>
+		<TurnIn QuestName="Answered Questions" QuestId="1044" TurnInName="Thyn'tel Bladeweaver" TurnInId="8026" X="9961.78" Y="2284.6" Z="1341.48" />
+	</QuestOrder>
+</HBProfile>

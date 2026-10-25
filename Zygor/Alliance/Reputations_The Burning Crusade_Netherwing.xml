@@ -1,0 +1,391 @@
+<HBProfile>
+	<Name>Zygor Reputations\The Burning Crusade\Netherwing</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Nanomah" Entry="19528" Type="Food" X="-2983.09" Y="787.811" Z="-7.9718" />
+		<Vendor Name="Roldemar" Entry="21744" Type="Food" X="-4141.9" Y="1127.26" Z="44.6148" />
+		<Vendor Name="Horus" Entry="23143" Type="Food" X="-5142.57" Y="581.328" Z="84.1357" />
+		<Vendor Name="Feranin" Entry="19518" Type="Food" X="-4089.42" Y="1151.9" Z="44.5118" />
+		<Vendor Name="Caretaker Aluuro" Entry="21746" Type="Food" X="-2983.52" Y="863.391" Z="-7.4892" />
+		<Vendor Name="Gug" Entry="23144" Type="Repair" X="-5119.8" Y="624.766" Z="86.8275" />
+		<Vendor Name="Lelagar" Entry="19520" Type="Repair" X="-4122.7" Y="1171.88" Z="49.6649" />
+		<Vendor Name="Alorra" Entry="19517" Type="Repair" X="-4112.08" Y="1177.51" Z="49.6649" />
+		<Vendor Name="Dunaman" Entry="19526" Type="Repair" X="-3075.54" Y="745.644" Z="-10.063" />
+		<Vendor Name="Darmend" Entry="19530" Type="Repair" X="-3036.63" Y="865.463" Z="-9.8672" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="10837" Name="To Netherwing Ledge!">
+		<Objective Type="CollectItem" ItemId="31504" CollectCount="12">
+			<CollectFrom>
+				<GameObject Name="Nethervine Crystal" Id="185182" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4906.21" Y="699.878" Z="71.2891" />
+				<Hotspot X="-4976.12" Y="718.434" Z="81.9034" />
+				<Hotspot X="-5038.9" Y="691.959" Z="82.4971" />
+				<Hotspot X="-5056.39" Y="627.865" Z="86.6371" />
+				<Hotspot X="-4978.35" Y="616.3" Z="80.012" />
+				<Hotspot X="-4977.46" Y="574.995" Z="79.1318" />
+				<Hotspot X="-4888.37" Y="545.198" Z="44.4644" />
+				<Hotspot X="-4954.96" Y="787.358" Z="64.1565" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10866" Name="Zuluhed the Whacked">
+		<Objective Type="UseObject" ObjectId="185156" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-4195.12" Y="383.601" Z="117.927" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11049" Name="The Great Netherwing Egg Hunt">
+		<Objective Type="CollectItem" ItemId="32506" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Nethercite Deposit" Id="185877" />
+				<GameObject Name="Netherdust Bush" Id="185881" />
+				<GameObject Name="Netherwing Egg" Id="185915" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4190.31" Y="456.136" Z="30.5841" />
+				<Hotspot X="-4143.87" Y="458.85" Z="32.479" />
+				<Hotspot X="-4094.22" Y="456.977" Z="30.5805" />
+				<Hotspot X="-4162.69" Y="505.787" Z="28.9088" />
+				<Hotspot X="-4203.24" Y="510.76" Z="29.4429" />
+				<Hotspot X="-4231.1" Y="428.019" Z="49.7114" />
+				<Hotspot X="-4221.47" Y="370.147" Z="136.232" />
+				<Hotspot X="-4159.2" Y="369.727" Z="142.105" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11054" Name="Overseeing and You: Making the Right Choices">
+		<Objective Type="CollectItem" ItemId="32666" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Tyrantus" Id="20931" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5100.75" Y="2970.8" Z="80.0953" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11083" Name="Crazed and Confused">
+		<Objective Type="KillMob" MobId="23305" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-5223.8" Y="139.136" Z="-13.6459" />
+				<Hotspot X="-5247.99" Y="226.556" Z="-12.5696" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="23324" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-5178.91" Y="173.927" Z="-11.5406" />
+				<Hotspot X="-5192.22" Y="133.612" Z="-12.0078" />
+				<Hotspot X="-5210.28" Y="207.824" Z="-12.7915" />
+				<Hotspot X="-5254.5" Y="210.487" Z="-13.7562" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11041" Name="A Job Unfinished...">
+		<Objective Type="KillMob" MobId="23269" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-5028.41" Y="385.658" Z="171.015" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="23264" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-5107.16" Y="249.876" Z="148.291" />
+				<Hotspot X="-5167.71" Y="313.147" Z="74.8643" />
+				<Hotspot X="-5199.88" Y="260.577" Z="71.4691" />
+				<Hotspot X="-5181.54" Y="133.403" Z="73.2547" />
+				<Hotspot X="-5009.07" Y="130.602" Z="77.0179" />
+				<Hotspot X="-4922.88" Y="216.524" Z="63.3957" />
+				<Hotspot X="-4924.91" Y="375.725" Z="84.7087" />
+				<Hotspot X="-5033.75" Y="387.807" Z="170.647" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Retail/Reputations/ZygorReputationsAllianceCLASSIC.lua: Reputation Guides\The Burning Crusade\Netherwing -->
+		<If Condition="Me.MapId != 530">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Reputations_The Burning Crusade_Netherwing");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Outland" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70)">
+			<PickUp QuestName="Kindness" QuestId="10804" GiverName="Mordenai" GiverId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
+		</If>
+		<!-- REVIEW Q10804 Kindness: use item 31373: target 22131 Netherwing Event Pinger has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10804)) &amp;&amp; (IsQuestCompleted(10804)))">
+			<TurnIn QuestName="Kindness" QuestId="10804" TurnInName="Mordenai" TurnInId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
+		</If>
+		<If Condition="((HasQuest(10804)) &amp;&amp; (!IsQuestCompleted(10804)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10804" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10804)">
+			<PickUp QuestName="Seek Out Neltharaku" QuestId="10811" GiverName="Mordenai" GiverId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
+		</If>
+		<TurnIn QuestName="Seek Out Neltharaku" QuestId="10811" TurnInName="Neltharaku" TurnInId="21657" X="-4147.19" Y="852.921" Z="112.449" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10811)">
+			<PickUp QuestName="Neltharaku's Tale" QuestId="10814" GiverName="Neltharaku" GiverId="21657" X="-4147.19" Y="852.921" Z="112.449" />
+		</If>
+		<!-- REVIEW Q10814 Neltharaku's Tale: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10814)) &amp;&amp; (IsQuestCompleted(10814)))">
+			<TurnIn QuestName="Neltharaku's Tale" QuestId="10814" TurnInName="Neltharaku" TurnInId="21657" X="-4147.19" Y="852.921" Z="112.449" />
+		</If>
+		<If Condition="((HasQuest(10814)) &amp;&amp; (!IsQuestCompleted(10814)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10814" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10814)">
+			<PickUp QuestName="Infiltrating Dragonmaw Fortress" QuestId="10836" GiverName="Neltharaku" GiverId="21657" X="-4147.19" Y="852.921" Z="112.449" />
+		</If>
+		<!-- REVIEW Q10836 Infiltrating Dragonmaw Fortress: objective 22197 Dragonmaw Orc x15: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10836)) &amp;&amp; (IsQuestCompleted(10836)))">
+			<TurnIn QuestName="Infiltrating Dragonmaw Fortress" QuestId="10836" TurnInName="Neltharaku" TurnInId="21657" X="-4147.19" Y="852.921" Z="112.449" />
+		</If>
+		<If Condition="((HasQuest(10836)) &amp;&amp; (!IsQuestCompleted(10836)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10836" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10836)">
+			<PickUp QuestName="To Netherwing Ledge!" QuestId="10837" GiverName="Neltharaku" GiverId="21657" X="-4147.19" Y="852.921" Z="112.449" />
+		</If>
+		<Objective QuestName="To Netherwing Ledge!" QuestId="10837" Type="CollectItem" ItemId="31504" CollectCount="12" />
+		<TurnIn QuestName="To Netherwing Ledge!" QuestId="10837" TurnInName="Neltharaku" TurnInId="21657" X="-4147.19" Y="852.921" Z="112.449" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10837)">
+			<PickUp QuestName="The Force of Neltharaku" QuestId="10854" GiverName="Neltharaku" GiverId="21657" X="-4147.19" Y="852.921" Z="112.449" />
+		</If>
+		<!-- REVIEW Q10854 The Force of Neltharaku: objective 22316 Enslaved Netherwing Drake Kill Credit x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10854)) &amp;&amp; (IsQuestCompleted(10854)))">
+			<TurnIn QuestName="The Force of Neltharaku" QuestId="10854" TurnInName="Neltharaku" TurnInId="21657" X="-4147.19" Y="852.921" Z="112.449" />
+		</If>
+		<If Condition="((HasQuest(10854)) &amp;&amp; (!IsQuestCompleted(10854)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10854" Type="Incomplete" />
+		</If>
+		<!-- SKIP Q10858 Karynaku: group quest (5 players) -->
+		<!-- REVIEW Q10858 Karynaku: group quest (5 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10858)) &amp;&amp; (IsQuestCompleted(10858)))">
+			<TurnIn QuestName="Karynaku" QuestId="10858" TurnInName="Karynaku" TurnInId="22112" X="-4200.89" Y="382.464" Z="118.055" />
+		</If>
+		<If Condition="((HasQuest(10858)) &amp;&amp; (!IsQuestCompleted(10858)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10858" Type="Incomplete" />
+		</If>
+		<!-- SKIP Q10866 Zuluhed the Whacked: group quest (5 players) -->
+		<Objective QuestName="Zuluhed the Whacked" QuestId="10866" Type="UseObject" ObjectId="185156" UseCount="1" />
+		<!-- REVIEW Q10866 Zuluhed the Whacked: group quest (5 players); kill 11980 Zuluhed the Whacked x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10866)) &amp;&amp; (IsQuestCompleted(10866)))">
+			<TurnIn QuestName="Zuluhed the Whacked" QuestId="10866" TurnInName="Karynaku" TurnInId="22112" X="-4200.89" Y="382.464" Z="118.055" />
+		</If>
+		<If Condition="((HasQuest(10866)) &amp;&amp; (!IsQuestCompleted(10866)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10866" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10866)">
+			<PickUp QuestName="Ally of the Netherwing" QuestId="10870" GiverName="Karynaku" GiverId="22112" X="-4200.89" Y="382.464" Z="118.055" />
+		</If>
+		<TurnIn QuestName="Ally of the Netherwing" QuestId="10870" TurnInName="Mordenai" TurnInId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10870)">
+			<PickUp QuestName="Blood Oath of the Netherwing" QuestId="11012" GiverName="Mordenai" GiverId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11012)">
+			<PickUp QuestName="In Service of the Illidari" QuestId="11013" GiverName="Mordenai" GiverId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
+		</If>
+		<TurnIn QuestName="In Service of the Illidari" QuestId="11013" TurnInName="Overlord Mor'ghor" TurnInId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11013)">
+			<PickUp QuestName="Enter the Taskmaster" QuestId="11014" GiverName="Overlord Mor'ghor" GiverId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		</If>
+		<TurnIn QuestName="Enter the Taskmaster" QuestId="11014" TurnInName="Taskmaster Varkule Dragonbreath" TurnInId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014)">
+			<PickUp QuestName="Your Friend On The Inside" QuestId="11019" GiverName="Yarzill the Merc" GiverId="23141" X="-5117.53" Y="593.779" Z="85.1407" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11019)">
+			<PickUp QuestName="The Great Netherwing Egg Hunt" QuestId="11049" GiverName="Yarzill the Merc" GiverId="23141" X="-5117.53" Y="593.779" Z="85.1407" />
+		</If>
+		<Objective QuestName="The Great Netherwing Egg Hunt" QuestId="11049" Type="CollectItem" ItemId="32506" CollectCount="1" />
+		<TurnIn QuestName="The Great Netherwing Egg Hunt" QuestId="11049" TurnInName="Yarzill the Merc" TurnInId="23141" X="-5117.53" Y="593.779" Z="85.1407" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11019) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
+			<PickUp QuestName="Rise, Overseer!" QuestId="11053" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		</If>
+		<TurnIn QuestName="Rise, Overseer!" QuestId="11053" TurnInName="Overlord Mor'ghor" TurnInId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11053) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
+			<PickUp QuestName="The Netherwing Mines" QuestId="11075" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11053) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
+			<PickUp QuestName="Overseeing and You: Making the Right Choices" QuestId="11054" GiverName="Chief Overseer Mudlump" GiverId="23291" X="-5105.28" Y="548.874" Z="85.7276" />
+		</If>
+		<TurnIn QuestName="The Netherwing Mines" QuestId="11075" TurnInName="Mistress of the Mines" TurnInId="23149" X="-5254.18" Y="628.473" Z="48.9907" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11075) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
+			<PickUp QuestName="Crazed and Confused" QuestId="11083" GiverName="Ronag the Slave Driver" GiverId="23166" X="-5161.06" Y="288.167" Z="-27.1133" />
+		</If>
+		<Objective QuestName="Crazed and Confused" QuestId="11083" Type="KillMob" MobId="23305" KillCount="1" />
+		<Objective QuestName="Crazed and Confused" QuestId="11083" Type="KillMob" MobId="23324" KillCount="5" />
+		<TurnIn QuestName="Crazed and Confused" QuestId="11083" TurnInName="Ronag the Slave Driver" TurnInId="23166" X="-5161.06" Y="288.167" Z="-27.1133" />
+		<If Condition="HasItem(32726) &amp;&amp; !HasQuest(11081) &amp;&amp; !IsQuestCompleted(11081) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11075) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
+			<PickUp QuestName="The Great Murkblood Revolt" QuestId="11081" GiverName="Murkblood Escape Plans" GiverId="32726" GiverType="Item" />
+		</If>
+		<TurnIn QuestName="The Great Murkblood Revolt" QuestId="11081" TurnInName="Mistress of the Mines" TurnInId="23149" X="-5254.18" Y="628.473" Z="48.9907" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11081)">
+			<PickUp QuestName="Seeker of Truth" QuestId="11082" GiverName="Mistress of the Mines" GiverId="23149" X="-5254.18" Y="628.473" Z="48.9907" />
+		</If>
+		<!-- REVIEW Q11082 Seeker of Truth: item 32734 Hand of the Overseer has no drop or chest near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11082)) &amp;&amp; (IsQuestCompleted(11082)))">
+			<TurnIn QuestName="Seeker of Truth" QuestId="11082" TurnInName="Mistress of the Mines" TurnInId="23149" X="-5254.18" Y="628.473" Z="48.9907" />
+		</If>
+		<If Condition="((HasQuest(11082)) &amp;&amp; (!IsQuestCompleted(11082)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11082" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Overseeing and You: Making the Right Choices" QuestId="11054" Type="CollectItem" ItemId="32666" CollectCount="1" />
+		<!-- REVIEW Q11054 Overseeing and You: Making the Right Choices: item 21887 Knothide Leather has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11054)) &amp;&amp; (IsQuestCompleted(11054)))">
+			<TurnIn QuestName="Overseeing and You: Making the Right Choices" QuestId="11054" TurnInName="Chief Overseer Mudlump" TurnInId="23291" X="-5105.28" Y="548.874" Z="85.7276" />
+		</If>
+		<If Condition="((HasQuest(11054)) &amp;&amp; (!IsQuestCompleted(11054)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11054" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11053) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
+			<PickUp QuestName="Stand Tall, Captain!" QuestId="11084" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		</If>
+		<TurnIn QuestName="Stand Tall, Captain!" QuestId="11084" TurnInName="Overlord Mor'ghor" TurnInId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
+			<PickUp QuestName="Earning Your Wings..." QuestId="11063" GiverName="Ja'y Nosliw" GiverId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11063) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
+			<PickUp QuestName="Dragonmaw Race: The Ballad of Oldie McOld" QuestId="11064" GiverName='Murg "Oldie" Muckjaw' GiverId="23340" X="-5088.56" Y="640.836" Z="86.6143" />
+		</If>
+		<!-- REVIEW Q11064 Dragonmaw Race: The Ballad of Oldie McOld: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11064)) &amp;&amp; (IsQuestCompleted(11064)))">
+			<TurnIn QuestName="Dragonmaw Race: The Ballad of Oldie McOld" QuestId="11064" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
+		</If>
+		<If Condition="((HasQuest(11064)) &amp;&amp; (!IsQuestCompleted(11064)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11064" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11064) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
+			<PickUp QuestName="Dragonmaw Race: Trope the Filth-Belcher" QuestId="11067" GiverName="Trope the Filth-Belcher" GiverId="23342" X="-5081.62" Y="640.932" Z="86.6143" />
+		</If>
+		<!-- REVIEW Q11067 Dragonmaw Race: Trope the Filth-Belcher: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11067)) &amp;&amp; (IsQuestCompleted(11067)))">
+			<TurnIn QuestName="Dragonmaw Race: Trope the Filth-Belcher" QuestId="11067" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
+		</If>
+		<If Condition="((HasQuest(11067)) &amp;&amp; (!IsQuestCompleted(11067)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11067" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11067) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
+			<PickUp QuestName="Dragonmaw Race: Corlok the Vet" QuestId="11068" GiverName="Corlok the Vet" GiverId="23344" X="-5072.99" Y="640.034" Z="86.4893" />
+		</If>
+		<!-- REVIEW Q11068 Dragonmaw Race: Corlok the Vet: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11068)) &amp;&amp; (IsQuestCompleted(11068)))">
+			<TurnIn QuestName="Dragonmaw Race: Corlok the Vet" QuestId="11068" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
+		</If>
+		<If Condition="((HasQuest(11068)) &amp;&amp; (!IsQuestCompleted(11068)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11068" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11068) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
+			<PickUp QuestName="Dragonmaw Race: Wing Commander Ichman" QuestId="11069" GiverName="Wing Commander Ichman" GiverId="23345" X="-5066.31" Y="640.214" Z="86.4967" />
+		</If>
+		<!-- REVIEW Q11069 Dragonmaw Race: Wing Commander Ichman: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11069)) &amp;&amp; (IsQuestCompleted(11069)))">
+			<TurnIn QuestName="Dragonmaw Race: Wing Commander Ichman" QuestId="11069" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
+		</If>
+		<If Condition="((HasQuest(11069)) &amp;&amp; (!IsQuestCompleted(11069)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11069" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11069) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
+			<PickUp QuestName="Dragonmaw Race: Wing Commander Mulverick" QuestId="11070" GiverName="Wing Commander Mulverick" GiverId="23346" X="-5060.33" Y="640.436" Z="86.6616" />
+		</If>
+		<!-- REVIEW Q11070 Dragonmaw Race: Wing Commander Mulverick: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11070)) &amp;&amp; (IsQuestCompleted(11070)))">
+			<TurnIn QuestName="Dragonmaw Race: Wing Commander Mulverick" QuestId="11070" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
+		</If>
+		<If Condition="((HasQuest(11070)) &amp;&amp; (!IsQuestCompleted(11070)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11070" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11070) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
+			<PickUp QuestName="Dragonmaw Race: Captain Skyshatter" QuestId="11071" GiverName="Captain Skyshatter" GiverId="23348" X="-5074.88" Y="625.449" Z="85.9117" />
+		</If>
+		<!-- REVIEW Q11071 Dragonmaw Race: Captain Skyshatter: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11071)) &amp;&amp; (IsQuestCompleted(11071)))">
+			<TurnIn QuestName="Dragonmaw Race: Captain Skyshatter" QuestId="11071" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
+		</If>
+		<If Condition="((HasQuest(11071)) &amp;&amp; (!IsQuestCompleted(11071)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11071" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11084) &amp;&amp; (GetFactionReputation(1015) &gt;= 21000)">
+			<PickUp QuestName="Hail, Commander!" QuestId="11092" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		</If>
+		<TurnIn QuestName="Hail, Commander!" QuestId="11092" TurnInName="Overlord Mor'ghor" TurnInId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11092) &amp;&amp; (GetFactionReputation(934) &gt;= 1)">
+			<PickUp QuestName="Kill Them All!" QuestId="11094" GiverName="Overlord Mor'ghor" GiverId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11092) &amp;&amp; (GetFactionReputation(932) &gt;= 1)">
+			<PickUp QuestName="Kill Them All!" QuestId="11099" GiverName="Overlord Mor'ghor" GiverId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		</If>
+		<If Condition="HasItem(32621) &amp;&amp; !HasQuest(11041) &amp;&amp; !IsQuestCompleted(11041) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014)">
+			<PickUp QuestName="A Job Unfinished..." QuestId="11041" GiverName="Partially Digested Hand" GiverId="32621" GiverType="Item" />
+		</If>
+		<If Condition="!HasItem(32621) &amp;&amp; !HasQuest(11041) &amp;&amp; !IsQuestCompleted(11041)">
+			<CustomBehavior File="CollectThings" CollectItemId="32621" CollectItemCount="1" HuntingGroundRadius="120" MobId="23267" X="-5115.44" Y="144.561" Z="130.161">
+				<Hotspot X="-5115.44" Y="144.561" Z="130.161" />
+			</CustomBehavior>
+		</If>
+		<Objective QuestName="A Job Unfinished..." QuestId="11041" Type="KillMob" MobId="23269" KillCount="1" />
+		<Objective QuestName="A Job Unfinished..." QuestId="11041" Type="KillMob" MobId="23264" KillCount="10" />
+		<TurnIn QuestName="A Job Unfinished..." QuestId="11041" TurnInName="Overlord Mor'ghor" TurnInId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		<TurnIn QuestName="Kill Them All!" QuestId="11094" TurnInName="Arcanist Thelis" TurnInId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11094) &amp;&amp; (GetFactionReputation(934) &gt;= 1)">
+			<PickUp QuestName="Commander Hobb" QuestId="11095" GiverName="Arcanist Thelis" GiverId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
+		</If>
+		<TurnIn QuestName="Commander Hobb" QuestId="11095" TurnInName="Commander Hobb" TurnInId="23434" X="-4106.57" Y="1126.79" Z="43.6441" />
+		<TurnIn QuestName="Kill Them All!" QuestId="11099" TurnInName="Anchorite Ceyla" TurnInId="21402" X="-2988.39" Y="783.175" Z="-7.9718" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11099) &amp;&amp; (GetFactionReputation(932) &gt;= 1)">
+			<PickUp QuestName="Commander Arcus" QuestId="11100" GiverName="Anchorite Ceyla" GiverId="21402" X="-2988.39" Y="783.175" Z="-7.9718" />
+		</If>
+		<TurnIn QuestName="Commander Arcus" QuestId="11100" TurnInName="Commander Arcus" TurnInId="23452" X="-3023.1" Y="793.828" Z="-8.8214" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; (GetFactionReputation(1015) &gt;= 42000)">
+			<PickUp QuestName="Bow to the Highlord" QuestId="11107" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		</If>
+		<TurnIn QuestName="Bow to the Highlord" QuestId="11107" TurnInName="Overlord Mor'ghor" TurnInId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11107) &amp;&amp; (GetFactionReputation(1015) &gt;= 42000)">
+			<PickUp QuestName="Lord Illidan Stormrage" QuestId="11108" GiverName="Overlord Mor'ghor" GiverId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		</If>
+		<!-- REVIEW Q11108 Lord Illidan Stormrage: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11108)) &amp;&amp; (IsQuestCompleted(11108)))">
+			<TurnIn QuestName="Lord Illidan Stormrage" QuestId="11108" TurnInName="Barthamus" TurnInId="23433" X="-1615.71" Y="5265" Z="-40.6624" />
+		</If>
+		<If Condition="((HasQuest(11108)) &amp;&amp; (!IsQuestCompleted(11108)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11108" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11108) &amp;&amp; !IsQuestCompleted(11109) &amp;&amp; !HasQuest(11109) &amp;&amp; !IsQuestCompleted(11110) &amp;&amp; !HasQuest(11110) &amp;&amp; !IsQuestCompleted(11111) &amp;&amp; !HasQuest(11111) &amp;&amp; !IsQuestCompleted(11112) &amp;&amp; !HasQuest(11112) &amp;&amp; !IsQuestCompleted(11114) &amp;&amp; !HasQuest(11114) &amp;&amp; (GetFactionReputation(1015) &gt;= 42000)">
+			<PickUp QuestName="Voranaku the Violet Netherwing Drake" QuestId="11113" GiverName="Voranaku" GiverId="23466" X="-1623.18" Y="5272.59" Z="-40.898" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11108) &amp;&amp; !IsQuestCompleted(11109) &amp;&amp; !HasQuest(11109) &amp;&amp; !IsQuestCompleted(11110) &amp;&amp; !HasQuest(11110) &amp;&amp; !IsQuestCompleted(11111) &amp;&amp; !HasQuest(11111) &amp;&amp; !IsQuestCompleted(11112) &amp;&amp; !HasQuest(11112) &amp;&amp; !IsQuestCompleted(11113) &amp;&amp; !HasQuest(11113) &amp;&amp; (GetFactionReputation(1015) &gt;= 42000)">
+			<PickUp QuestName="Zoya the Veridian Netherwing Drake" QuestId="11114" GiverName="Zoya" GiverId="23465" X="-1641.66" Y="5276.35" Z="-41.0874" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11108) &amp;&amp; !IsQuestCompleted(11109) &amp;&amp; !HasQuest(11109) &amp;&amp; !IsQuestCompleted(11110) &amp;&amp; !HasQuest(11110) &amp;&amp; !IsQuestCompleted(11111) &amp;&amp; !HasQuest(11111) &amp;&amp; !IsQuestCompleted(11113) &amp;&amp; !HasQuest(11113) &amp;&amp; !IsQuestCompleted(11114) &amp;&amp; !HasQuest(11114) &amp;&amp; (GetFactionReputation(1015) &gt;= 42000)">
+			<PickUp QuestName="Suraku the Azure Netherwing Drake" QuestId="11112" GiverName="Suraku" GiverId="23461" X="-1640.89" Y="5262.55" Z="-41.0681" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11108) &amp;&amp; !IsQuestCompleted(11109) &amp;&amp; !HasQuest(11109) &amp;&amp; !IsQuestCompleted(11110) &amp;&amp; !HasQuest(11110) &amp;&amp; !IsQuestCompleted(11112) &amp;&amp; !HasQuest(11112) &amp;&amp; !IsQuestCompleted(11113) &amp;&amp; !HasQuest(11113) &amp;&amp; !IsQuestCompleted(11114) &amp;&amp; !HasQuest(11114) &amp;&amp; (GetFactionReputation(1015) &gt;= 42000)">
+			<PickUp QuestName="Onyxien the Onyx Netherwing Drake" QuestId="11111" GiverName="Onyxien" GiverId="23463" X="-1639.32" Y="5252.63" Z="-40.889" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11108) &amp;&amp; !IsQuestCompleted(11109) &amp;&amp; !HasQuest(11109) &amp;&amp; !IsQuestCompleted(11111) &amp;&amp; !HasQuest(11111) &amp;&amp; !IsQuestCompleted(11112) &amp;&amp; !HasQuest(11112) &amp;&amp; !IsQuestCompleted(11113) &amp;&amp; !HasQuest(11113) &amp;&amp; !IsQuestCompleted(11114) &amp;&amp; !HasQuest(11114) &amp;&amp; (GetFactionReputation(1015) &gt;= 42000)">
+			<PickUp QuestName="Malfas the Purple Netherwing Drake" QuestId="11110" GiverName="Malfas" GiverId="23464" X="-1633.4" Y="5243.43" Z="-40.6774" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11108) &amp;&amp; !IsQuestCompleted(11110) &amp;&amp; !HasQuest(11110) &amp;&amp; !IsQuestCompleted(11111) &amp;&amp; !HasQuest(11111) &amp;&amp; !IsQuestCompleted(11112) &amp;&amp; !HasQuest(11112) &amp;&amp; !IsQuestCompleted(11113) &amp;&amp; !HasQuest(11113) &amp;&amp; !IsQuestCompleted(11114) &amp;&amp; !HasQuest(11114) &amp;&amp; (GetFactionReputation(1015) &gt;= 42000)">
+			<PickUp QuestName="Jorus the Cobalt Netherwing Drake" QuestId="11109" GiverName="Jorus" GiverId="23462" X="-1622.1" Y="5246.98" Z="-40.7013" />
+		</If>
+	</QuestOrder>
+</HBProfile>

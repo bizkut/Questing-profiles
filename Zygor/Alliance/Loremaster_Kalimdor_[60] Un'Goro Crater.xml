@@ -1,0 +1,684 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Kalimdor\[60] Un'Goro Crater</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Innkeeper Saelienne" Entry="6735" Type="Food" X="10127.9" Y="2224.79" Z="1328.81" />
+		<Vendor Name="Nergal" Entry="12959" Type="Food" X="-6157.44" Y="-1067.73" Z="-194.862" />
+		<Vendor Name="Lunar Festival Vendor" Entry="15898" Type="Food" X="10148" Y="2572.63" Z="1320.7" />
+		<Vendor Name="Dendrythis" Entry="4167" Type="Food" X="10126" Y="2582.53" Z="1326.08" />
+		<Vendor Name="Kilxx" Entry="3497" Type="Food" X="-971.109" Y="-3737.66" Z="5.8957" />
+		<Vendor Name="Gibbert" Entry="3000" Type="Repair" X="-6144.07" Y="-1098.52" Z="-202.844" />
+		<Vendor Name="Grazlix" Entry="3493" Type="Repair" X="-982.713" Y="-3680.53" Z="9.6378" />
+		<Vendor Name="Vexspindle" Entry="3492" Type="Repair" X="-985.328" Y="-3675.99" Z="9.6293" />
+		<Vendor Name="Nixxrak" Entry="11182" Type="Repair" X="6740.85" Y="-4691.69" Z="721.453" />
+		<Vendor Name="Blizrik Buckshot" Entry="8131" Type="Repair" X="-7141.49" Y="-3719.69" Z="8.5781" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="4502" Name="Volcanic Activity">
+		<Objective Type="CollectItem" ItemId="11829" CollectCount="9">
+			<CollectFrom>
+				<Mob Name="Scorching Elemental" Id="6520" />
+				<Mob Name="Living Blaze" Id="6521" />
+				<Mob Name="Blazerunner" Id="9376" />
+				<Mob Name="Blazing Invader" Id="14460" />
+				<Mob Name="Baron Charr" Id="14461" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7127.91" Y="-1345.4" Z="-193.916" />
+				<Hotspot X="-7106.56" Y="-1311.51" Z="-188.261" />
+				<Hotspot X="-7144.95" Y="-1296.5" Z="-184.36" />
+				<Hotspot X="-7185.91" Y="-1352.12" Z="-184.374" />
+				<Hotspot X="-7243.87" Y="-1374.66" Z="-231.352" />
+				<Hotspot X="-7094.46" Y="-1417.75" Z="-234.343" />
+				<Hotspot X="-7077.44" Y="-1357.61" Z="-223.61" />
+				<Hotspot X="-7053.18" Y="-1307.15" Z="-248.042" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4504" Name="Super Sticky">
+		<Objective Type="CollectItem" ItemId="11834" CollectCount="12">
+			<CollectFrom>
+				<Mob Name="Tar Beast" Id="6517" />
+				<Mob Name="Tar Lurker" Id="6518" />
+				<Mob Name="Tar Lord" Id="6519" />
+				<Mob Name="Tar Creeper" Id="6527" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6549.13" Y="-1814.89" Z="-273.668" />
+				<Hotspot X="-6562.6" Y="-1854.97" Z="-273.537" />
+				<Hotspot X="-6514.67" Y="-1844.68" Z="-275.047" />
+				<Hotspot X="-6547.52" Y="-1722.29" Z="-273.964" />
+				<Hotspot X="-6529.73" Y="-1682.45" Z="-270.319" />
+				<Hotspot X="-6582.18" Y="-1685.83" Z="-270.953" />
+				<Hotspot X="-6714.53" Y="-1683.38" Z="-272.239" />
+				<Hotspot X="-6722.67" Y="-1745.83" Z="-271.272" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4289" Name="The Apes of Un'Goro">
+		<Objective Type="CollectItem" ItemId="11478" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Un'Goro Gorilla" Id="6514" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6381.47" Y="-1809.51" Z="-265.868" />
+				<Hotspot X="-6376.59" Y="-1879.31" Z="-259.233" />
+				<Hotspot X="-6318.32" Y="-1921.89" Z="-271.027" />
+				<Hotspot X="-6306.32" Y="-1972.93" Z="-268.546" />
+				<Hotspot X="-6359.1" Y="-1986.65" Z="-276.089" />
+				<Hotspot X="-6451.92" Y="-1783.8" Z="-273.542" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11479" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Un'Goro Stomper" Id="6513" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6412.21" Y="-1808.5" Z="-270.792" />
+				<Hotspot X="-6414.01" Y="-1745.68" Z="-272.456" />
+				<Hotspot X="-6379.64" Y="-1701.56" Z="-273.073" />
+				<Hotspot X="-6328.86" Y="-1895.59" Z="-263.834" />
+				<Hotspot X="-6390.52" Y="-1959.96" Z="-259.691" />
+				<Hotspot X="-6401.87" Y="-2021.37" Z="-262.978" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11480" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Un'Goro Thunderer" Id="6516" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6368.61" Y="-1839.66" Z="-259.881" />
+				<Hotspot X="-6394" Y="-1916.77" Z="-262.575" />
+				<Hotspot X="-6376.58" Y="-1970.12" Z="-257.085" />
+				<Hotspot X="-6343.42" Y="-1947.7" Z="-272.317" />
+				<Hotspot X="-6316.92" Y="-2005.26" Z="-260.1" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4290" Name="The Fare of Lar'korwi">
+		<Objective Type="CollectItem" ItemId="11504" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Fresh Threshadon Carcass" Id="166863" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7365.4" Y="-2009.94" Z="-270.042" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4141" Name="Muigin and Larion">
+		<Objective Type="CollectItem" ItemId="11316" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Bloodpetal Lasher" Id="6509" />
+				<Mob Name="Bloodpetal Flayer" Id="6510" />
+				<Mob Name="Bloodpetal Thresher" Id="6511" />
+				<Mob Name="Bloodpetal Trapper" Id="6512" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6854.13" Y="-1561.97" Z="-267.501" />
+				<Hotspot X="-6881.82" Y="-1611.27" Z="-271.717" />
+				<Hotspot X="-6837.14" Y="-1656.04" Z="-271.611" />
+				<Hotspot X="-6869.73" Y="-1682.87" Z="-271.525" />
+				<Hotspot X="-6784.35" Y="-1564.31" Z="-271.503" />
+				<Hotspot X="-6718.19" Y="-1541.53" Z="-272.097" />
+				<Hotspot X="-6680.75" Y="-1569.34" Z="-272.097" />
+				<Hotspot X="-6734.08" Y="-1456.81" Z="-270.741" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3881" Name="Expedition Salvation">
+		<Objective Type="CollectItem" ItemId="11112" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Research Equipment" Id="161521" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7596.07" Y="-889.445" Z="-271.754" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11113" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Crate of Foodstuffs" Id="161526" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6867.92" Y="-2002.76" Z="-272.212" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4284" Name="Crystals of Power">
+		<Objective Type="CollectItem" ItemId="11186" CollectCount="7">
+			<CollectFrom>
+				<GameObject Name="Red Power Crystal" Id="164660" />
+				<GameObject Name="Red Power Crystal" Id="164780" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6284.52" Y="-1218.43" Z="-266.022" />
+				<Hotspot X="-6338.23" Y="-1199.65" Z="-272.24" />
+				<Hotspot X="-6350.66" Y="-1315.25" Z="-272.222" />
+				<Hotspot X="-6300.73" Y="-1373.72" Z="-267.309" />
+				<Hotspot X="-6233.27" Y="-1623.96" Z="-199.562" />
+				<Hotspot X="-6630.66" Y="-936.302" Z="-272.375" />
+				<Hotspot X="-6805.85" Y="-1040.07" Z="-265.826" />
+				<Hotspot X="-6999.32" Y="-875.527" Z="-265.823" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11188" CollectCount="7">
+			<CollectFrom>
+				<GameObject Name="Yellow Power Crystal" Id="164661" />
+				<GameObject Name="Yellow Power Crystal" Id="164781" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6474.13" Y="-863.778" Z="-274.336" />
+				<Hotspot X="-6489.23" Y="-580.307" Z="-269.356" />
+				<Hotspot X="-6958.06" Y="-322.734" Z="-219.932" />
+				<Hotspot X="-6923.18" Y="-1454.5" Z="-274.357" />
+				<Hotspot X="-6424.27" Y="-1541.21" Z="-269.143" />
+				<Hotspot X="-6339.74" Y="-1721.6" Z="-240.356" />
+				<Hotspot X="-6182.74" Y="-1618.7" Z="-190.076" />
+				<Hotspot X="-6487.32" Y="-1915.33" Z="-271.38" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11185" CollectCount="7">
+			<CollectFrom>
+				<GameObject Name="Green Power Crystal" Id="164659" />
+				<GameObject Name="Green Power Crystal" Id="164779" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6300.73" Y="-1373.72" Z="-267.309" />
+				<Hotspot X="-6269.98" Y="-1557.91" Z="-229.209" />
+				<Hotspot X="-6376.93" Y="-1782.19" Z="-267.039" />
+				<Hotspot X="-6449.88" Y="-1177.48" Z="-273.333" />
+				<Hotspot X="-6786.19" Y="-750.179" Z="-271.548" />
+				<Hotspot X="-6695.89" Y="-687.558" Z="-272.152" />
+				<Hotspot X="-6686.33" Y="-445.27" Z="-241.658" />
+				<Hotspot X="-6423.42" Y="-623.835" Z="-231.14" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11184" CollectCount="7">
+			<CollectFrom>
+				<GameObject Name="Blue Power Crystal" Id="164658" />
+				<GameObject Name="Blue Power Crystal" Id="164778" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6323.31" Y="-922.84" Z="-231.76" />
+				<Hotspot X="-6382.26" Y="-1086.21" Z="-272.265" />
+				<Hotspot X="-6495.31" Y="-1090.01" Z="-274.716" />
+				<Hotspot X="-6920.72" Y="-1145.22" Z="-272.181" />
+				<Hotspot X="-6466.14" Y="-1658.19" Z="-275.04" />
+				<Hotspot X="-6537.55" Y="-1812.25" Z="-271.912" />
+				<Hotspot X="-6216.75" Y="-1588.22" Z="-210.317" />
+				<Hotspot X="-6161.68" Y="-1527.1" Z="-218.162" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3882" Name="Roll the Bones">
+		<Objective Type="CollectItem" ItemId="11114" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Stegodon" Id="6501" />
+				<Mob Name="Plated Stegodon" Id="6502" />
+				<Mob Name="Spiked Stegodon" Id="6503" />
+				<Mob Name="Thunderstomp Stegodon" Id="6504" />
+				<Mob Name="Young Diemetradon" Id="9162" />
+				<Mob Name="Diemetradon" Id="9163" />
+				<GameObject Name="Dinosaur Bone" Id="161527" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7380.72" Y="-1038.9" Z="-271.217" />
+				<Hotspot X="-7351.23" Y="-947.729" Z="-271.455" />
+				<Hotspot X="-7420.49" Y="-918.51" Z="-268.919" />
+				<Hotspot X="-7482.27" Y="-916.145" Z="-272.201" />
+				<Hotspot X="-7476.64" Y="-860.848" Z="-269.498" />
+				<Hotspot X="-7482.42" Y="-1066.68" Z="-272.733" />
+				<Hotspot X="-7196.04" Y="-1035.7" Z="-271.273" />
+				<Hotspot X="-7204.91" Y="-968.018" Z="-271.908" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4501" Name="Beware of Pterrordax">
+		<Objective Type="KillMob" MobId="9167" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-7081.45" Y="-621.983" Z="-271.543" />
+				<Hotspot X="-7049.35" Y="-654.996" Z="-271.231" />
+				<Hotspot X="-7016.81" Y="-686.878" Z="-270.76" />
+				<Hotspot X="-7089.09" Y="-771.007" Z="-271.945" />
+				<Hotspot X="-7021.06" Y="-817.961" Z="-271.86" />
+				<Hotspot X="-6884.73" Y="-687.308" Z="-272.003" />
+				<Hotspot X="-7113.46" Y="-522.287" Z="-269.698" />
+				<Hotspot X="-7081.08" Y="-483.357" Z="-273.513" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4503" Name="Shizzle's Flyer">
+		<Objective Type="CollectItem" ItemId="11830" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Young Diemetradon" Id="9162" />
+				<Mob Name="Diemetradon" Id="9163" />
+				<Mob Name="Elder Diemetradon" Id="9164" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7380.72" Y="-1038.9" Z="-271.217" />
+				<Hotspot X="-7351.23" Y="-947.729" Z="-271.455" />
+				<Hotspot X="-7482.27" Y="-916.145" Z="-272.201" />
+				<Hotspot X="-7482.42" Y="-1066.68" Z="-272.733" />
+				<Hotspot X="-7575.65" Y="-1058.84" Z="-266.682" />
+				<Hotspot X="-7513.8" Y="-1181.09" Z="-270.008" />
+				<Hotspot X="-7196.04" Y="-1035.7" Z="-271.273" />
+				<Hotspot X="-7204.91" Y="-968.018" Z="-271.908" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11831" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Fledgling Pterrordax" Id="9165" />
+				<Mob Name="Pterrordax" Id="9166" />
+				<Mob Name="Frenzied Pterrordax" Id="9167" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7081.45" Y="-621.983" Z="-271.543" />
+				<Hotspot X="-7049.35" Y="-654.996" Z="-271.231" />
+				<Hotspot X="-7016.81" Y="-686.878" Z="-270.76" />
+				<Hotspot X="-7089.09" Y="-771.007" Z="-271.945" />
+				<Hotspot X="-7021.06" Y="-817.961" Z="-271.86" />
+				<Hotspot X="-6884.73" Y="-687.308" Z="-272.003" />
+				<Hotspot X="-7113.46" Y="-522.287" Z="-269.698" />
+				<Hotspot X="-7081.08" Y="-483.357" Z="-273.513" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4301" Name="The Mighty U'cha">
+		<Objective Type="CollectItem" ItemId="11476" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="U'cha" Id="9622" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6276.53" Y="-1987.97" Z="-261.845" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4084" Name="Silver Heart">
+		<Objective Type="CollectItem" ItemId="11172" CollectCount="11">
+			<CollectFrom>
+				<Mob Name="Angerclaw Bear" Id="8956" />
+				<Mob Name="Angerclaw Mauler" Id="8958" />
+				<Mob Name="Felpaw Wolf" Id="8959" />
+				<Mob Name="Felpaw Scavenger" Id="8960" />
+				<Mob Name="Death Howl" Id="14339" />
+				<Mob Name="Mongress" Id="14344" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3845.47" Y="-1522.34" Z="225.428" />
+				<Hotspot X="3859.64" Y="-1470.9" Z="215.928" />
+				<Hotspot X="3908.96" Y="-1450.97" Z="218.493" />
+				<Hotspot X="3937.82" Y="-1417.09" Z="233.15" />
+				<Hotspot X="3920.73" Y="-1516.46" Z="244.905" />
+				<Hotspot X="3924.16" Y="-1591.73" Z="259.49" />
+				<Hotspot X="3879.24" Y="-1623.65" Z="251.758" />
+				<Hotspot X="3713.24" Y="-1526.82" Z="196.109" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11173" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Irontree Wanderer" Id="7138" />
+				<Mob Name="Irontree Stomper" Id="7139" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6303.59" Y="-1166.12" Z="371.056" />
+				<Hotspot X="6360.44" Y="-1189.23" Z="379.082" />
+				<Hotspot X="6426.08" Y="-1191.06" Z="391.624" />
+				<Hotspot X="6419.94" Y="-1252.67" Z="382.517" />
+				<Hotspot X="6393.12" Y="-1291.56" Z="377.599" />
+				<Hotspot X="6337.84" Y="-1265.63" Z="375.366" />
+				<Hotspot X="6257.05" Y="-1065.37" Z="374.9" />
+				<Hotspot X="6212.95" Y="-1059.89" Z="383.06" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3962" Name="It's Dangerous to Go Alone">
+		<Objective Type="CollectItem" ItemId="11179" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Ornate Chest" Id="164910" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7199.38" Y="-1327.03" Z="-180.773" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="9376" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-7183.41" Y="-1294.81" Z="-183.114" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-Kalimdor.lua: Ding80's Loremaster Alliance Guides\Kalimdor\[60] Un'Goro Crater -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code="AppDomain.CurrentDomain.SetData(&quot;BackToProfile&quot;, @&quot;..\Zygor\Alliance\Loremaster_Kalimdor_[60] Un'Goro Crater&quot;);" />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(4512)">
+			<PickUp QuestName="A Little Slime Goes a Long Way" QuestId="4513" GiverName="Laris Geardawdle" GiverId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47)">
+			<PickUp QuestName="Assisting Arch Druid Staghelm" QuestId="3763" GiverName="Innkeeper Saelienne" GiverId="6735" X="10127.9" Y="2224.79" Z="1328.81" />
+		</If>
+		<TurnIn QuestName="Assisting Arch Druid Staghelm" QuestId="3763" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" X="10173" Y="2569.92" Z="1366.96" />
+		<If Condition="(Me.Level &gt;= 47)">
+			<PickUp QuestName="Un'Goro Soil" QuestId="3764" GiverName="Arch Druid Fandral Staghelm" GiverId="3516" X="10173" Y="2569.92" Z="1366.96" />
+		</If>
+		<If Condition="(Me.Level &gt;= 49)">
+			<PickUp QuestName="Volcanic Activity" QuestId="4502" GiverName="Liv Rizzlefix" GiverId="8496" X="-1004.47" Y="-3705.17" Z="4.6417" />
+		</If>
+		<If Condition="(Me.Level &gt;= 48)">
+			<PickUp QuestName="Super Sticky" QuestId="4504" GiverName="Tran'rek" GiverId="7876" X="-7105.84" Y="-3776.83" Z="8.7922" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47)">
+			<PickUp QuestName="The Apes of Un'Goro" QuestId="4289" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		</If>
+		<If Condition="(Me.Level &gt;= 48)">
+			<PickUp QuestName="The Fare of Lar'korwi" QuestId="4290" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47)">
+			<PickUp QuestName="It's a Secret to Everybody" QuestId="3844" GiverName="A Wrecked Raft" GiverId="161505" GiverType="Object" X="-7658.82" Y="-1798.54" Z="-272.077" />
+		</If>
+		<TurnIn QuestName="It's a Secret to Everybody" QuestId="3844" TurnInName="A Small Pack" TurnInId="161504" TurnInType="Object" X="-7670.07" Y="-1801.72" Z="-278.489" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3844)">
+			<PickUp QuestName="It's a Secret to Everybody" QuestId="3845" GiverName="A Small Pack" GiverId="161504" GiverType="Object" X="-7670.07" Y="-1801.72" Z="-278.489" />
+		</If>
+		<Objective QuestName="The Fare of Lar'korwi" QuestId="4290" Type="CollectItem" ItemId="11504" CollectCount="1" />
+		<TurnIn QuestName="The Fare of Lar'korwi" QuestId="4290" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(4290)">
+			<PickUp QuestName="The Scent of Lar'korwi" QuestId="4291" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		</If>
+		<!-- REVIEW Q4291 The Scent of Lar'korwi: item 11509 Ravasaur Pheromone Gland has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4291)) &amp;&amp; (IsQuestCompleted(4291)))">
+			<TurnIn QuestName="The Scent of Lar'korwi" QuestId="4291" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		</If>
+		<If Condition="((HasQuest(4291)) &amp;&amp; (!IsQuestCompleted(4291)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4291" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(4291)">
+			<PickUp QuestName="The Bait for Lar'korwi" QuestId="4292" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		</If>
+		<If Condition="(Me.Level &gt;= 48)">
+			<PickUp QuestName="Chasing A-Me 01" QuestId="4243" GiverName="Karna Remtravel" GiverId="9618" X="-6298.29" Y="-1182.65" Z="-269.101" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47)">
+			<PickUp QuestName="Muigin and Larion" QuestId="4141" GiverName="Muigin" GiverId="9119" X="-6204.39" Y="-1055.46" Z="-197.748" />
+		</If>
+		<!-- REVIEW Q3845 It's a Secret to Everybody: item 11104 Large Compass has no drop or chest near the guide coordinates; item 11105 Curled Map Parchment has no drop or chest near the guide coordinates; item 11106 Lion-headed Key has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(3845)) &amp;&amp; (IsQuestCompleted(3845)))">
+			<TurnIn QuestName="It's a Secret to Everybody" QuestId="3845" TurnInName="Linken" TurnInId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
+		</If>
+		<If Condition="((HasQuest(3845)) &amp;&amp; (!IsQuestCompleted(3845)))">
+			<CustomBehavior File="AbandonQuest" QuestId="3845" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3845)">
+			<PickUp QuestName="It's a Secret to Everybody" QuestId="3908" GiverName="Linken" GiverId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
+		</If>
+		<TurnIn QuestName="Chasing A-Me 01" QuestId="4243" TurnInName="A-Me 01" TurnInId="9623" X="-6380.13" Y="-1970" Z="-257.195" />
+		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(4243)">
+			<PickUp QuestName="Chasing A-Me 01" QuestId="4244" GiverName="A-Me 01" GiverId="9623" X="-6380.13" Y="-1970" Z="-257.195" />
+		</If>
+		<!-- REVIEW Q4244 Chasing A-Me 01: item 10561 Mithril Casing has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4244)) &amp;&amp; (IsQuestCompleted(4244)))">
+			<TurnIn QuestName="Chasing A-Me 01" QuestId="4244" TurnInName="A-Me 01" TurnInId="9623" X="-6380.13" Y="-1970" Z="-257.195" />
+		</If>
+		<If Condition="((HasQuest(4244)) &amp;&amp; (!IsQuestCompleted(4244)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4244" Type="Incomplete" />
+		</If>
+		<Objective QuestName="The Apes of Un'Goro" QuestId="4289" Type="CollectItem" ItemId="11478" CollectCount="2" />
+		<Objective QuestName="The Apes of Un'Goro" QuestId="4289" Type="CollectItem" ItemId="11479" CollectCount="2" />
+		<Objective QuestName="The Apes of Un'Goro" QuestId="4289" Type="CollectItem" ItemId="11480" CollectCount="2" />
+		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(4244)">
+			<PickUp QuestName="Chasing A-Me 01" QuestId="4245" GiverName="A-Me 01" GiverId="9623" X="-6380.13" Y="-1970" Z="-257.195" />
+		</If>
+		<!-- REVIEW Q4245 Chasing A-Me 01: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4245)) &amp;&amp; (IsQuestCompleted(4245)))">
+			<TurnIn QuestName="Chasing A-Me 01" QuestId="4245" TurnInName="Karna Remtravel" TurnInId="9618" X="-6298.29" Y="-1182.65" Z="-269.101" />
+		</If>
+		<If Condition="((HasQuest(4245)) &amp;&amp; (!IsQuestCompleted(4245)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4245" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Super Sticky" QuestId="4504" Type="CollectItem" ItemId="11834" CollectCount="12" />
+		<Objective QuestName="Muigin and Larion" QuestId="4141" Type="CollectItem" ItemId="11316" CollectCount="15" />
+		<If Condition="HasItem(11116) &amp;&amp; !HasQuest(3884) &amp;&amp; !IsQuestCompleted(3884) &amp;&amp; (Me.Level &gt;= 48)">
+			<PickUp QuestName="Williden's Journal" QuestId="3884" GiverName="A Mangled Journal" GiverId="11116" GiverType="Item" />
+		</If>
+		<TurnIn QuestName="Muigin and Larion" QuestId="4141" TurnInName="Muigin" TurnInId="9119" X="-6204.39" Y="-1055.46" Z="-197.748" />
+		<TurnIn QuestName="Williden's Journal" QuestId="3884" TurnInName="Williden Marshal" TurnInId="9270" X="-6142.71" Y="-1092.69" Z="-200.187" />
+		<If Condition="(Me.Level &gt;= 48)">
+			<PickUp QuestName="Expedition Salvation" QuestId="3881" GiverName="Williden Marshal" GiverId="9270" X="-6142.71" Y="-1092.69" Z="-200.187" />
+		</If>
+		<If Condition="(Me.Level &gt;= 48)">
+			<PickUp QuestName="Alien Ecology" QuestId="3883" GiverName="Hol'anyee Marshal" GiverId="9271" X="-6145.24" Y="-1090.56" Z="-200.204" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47)">
+			<PickUp QuestName="Crystals of Power" QuestId="4284" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<Objective QuestName="Crystals of Power" QuestId="4284" Type="CollectItem" ItemId="11186" CollectCount="7" />
+		<Objective QuestName="Crystals of Power" QuestId="4284" Type="CollectItem" ItemId="11188" CollectCount="7" />
+		<Objective QuestName="Crystals of Power" QuestId="4284" Type="CollectItem" ItemId="11185" CollectCount="7" />
+		<Objective QuestName="Crystals of Power" QuestId="4284" Type="CollectItem" ItemId="11184" CollectCount="7" />
+		<If Condition="(Me.Level &gt;= 49)">
+			<PickUp QuestName="Roll the Bones" QuestId="3882" GiverName="Spark Nilminer" GiverId="9272" X="-6149.73" Y="-1076.11" Z="-198.908" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47)">
+			<PickUp QuestName="Beware of Pterrordax" QuestId="4501" GiverName="Beware of Pterrordax" GiverId="174682" GiverType="Object" X="-6174.8" Y="-1077.27" Z="-202.574" />
+		</If>
+		<If Condition="(Me.Level &gt;= 50)">
+			<PickUp QuestName="Lost!" QuestId="4492" GiverName="Spraggle Frock" GiverId="9997" X="-6176.27" Y="-1080.49" Z="-203.81" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(4141)">
+			<PickUp QuestName="A Visit to Gregan" QuestId="4142" GiverName="Muigin" GiverId="9119" X="-6204.39" Y="-1055.46" Z="-197.748" />
+		</If>
+		<If Condition="(Me.Level &gt;= 49)">
+			<PickUp QuestName="Shizzle's Flyer" QuestId="4503" GiverName="Shizzle" GiverId="9998" X="-6252.45" Y="-1103.26" Z="-218.343" />
+		</If>
+		<If Condition="(Me.Level &gt;= 51)">
+			<PickUp QuestName="Finding the Source" QuestId="974" GiverName="Krakle" GiverId="10302" X="-7210.81" Y="-610.991" Z="-269.081" />
+		</If>
+		<Objective QuestName="Expedition Salvation" QuestId="3881" Type="CollectItem" ItemId="11112" CollectCount="1" />
+		<Objective QuestName="Volcanic Activity" QuestId="4502" Type="CollectItem" ItemId="11829" CollectCount="9" />
+		<TurnIn QuestName="Lost!" QuestId="4492" TurnInName="Ringo" TurnInId="9999" X="-7196.18" Y="-1387.11" Z="-231.449" />
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(4492)">
+			<PickUp QuestName="A Little Help From My Friends" QuestId="4491" GiverName="Ringo" GiverId="9999" X="-7196.18" Y="-1387.11" Z="-231.449" />
+		</If>
+		<!-- REVIEW Q4491 A Little Help From My Friends: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4491)) &amp;&amp; (IsQuestCompleted(4491)))">
+			<TurnIn QuestName="A Little Help From My Friends" QuestId="4491" TurnInName="Spraggle Frock" TurnInId="9997" X="-6176.27" Y="-1080.49" Z="-203.81" />
+		</If>
+		<If Condition="((HasQuest(4491)) &amp;&amp; (!IsQuestCompleted(4491)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4491" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Expedition Salvation" QuestId="3881" Type="CollectItem" ItemId="11113" CollectCount="1" />
+		<TurnIn QuestName="The Apes of Un'Goro" QuestId="4289" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		<!-- REVIEW Q4292 The Bait for Lar'korwi: item 11510 Lar'korwi's Head has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4292)) &amp;&amp; (IsQuestCompleted(4292)))">
+			<TurnIn QuestName="The Bait for Lar'korwi" QuestId="4292" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		</If>
+		<If Condition="((HasQuest(4292)) &amp;&amp; (!IsQuestCompleted(4292)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4292" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(4289)">
+			<PickUp QuestName="The Mighty U'cha" QuestId="4301" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		</If>
+		<Objective QuestName="Roll the Bones" QuestId="3882" Type="CollectItem" ItemId="11114" CollectCount="8" />
+		<Objective QuestName="Shizzle's Flyer" QuestId="4503" Type="CollectItem" ItemId="11830" CollectCount="8" />
+		<!-- REVIEW Q974 Finding the Source: objective 10541 Krakle's Thermometer x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(974)) &amp;&amp; (IsQuestCompleted(974)))">
+			<TurnIn QuestName="Finding the Source" QuestId="974" TurnInName="Krakle" TurnInId="10302" X="-7210.81" Y="-610.991" Z="-269.081" />
+		</If>
+		<If Condition="((HasQuest(974)) &amp;&amp; (!IsQuestCompleted(974)))">
+			<CustomBehavior File="AbandonQuest" QuestId="974" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 51) &amp;&amp; IsQuestCompleted(974)">
+			<PickUp QuestName="The New Springs" QuestId="980" GiverName="Krakle" GiverId="10302" X="-7210.81" Y="-610.991" Z="-269.081" />
+		</If>
+		<Objective QuestName="Beware of Pterrordax" QuestId="4501" Type="KillMob" MobId="9167" KillCount="10" />
+		<Objective QuestName="Shizzle's Flyer" QuestId="4503" Type="CollectItem" ItemId="11831" CollectCount="8" />
+		<TurnIn QuestName="Shizzle's Flyer" QuestId="4503" TurnInName="Shizzle" TurnInId="9998" X="-6252.45" Y="-1103.26" Z="-218.343" />
+		<TurnIn QuestName="Beware of Pterrordax" QuestId="4501" TurnInName="Spraggle Frock" TurnInId="9997" X="-6176.27" Y="-1080.49" Z="-203.81" />
+		<TurnIn QuestName="Roll the Bones" QuestId="3882" TurnInName="Spark Nilminer" TurnInId="9272" X="-6149.73" Y="-1076.11" Z="-198.908" />
+		<!-- REVIEW Q3883 Alien Ecology: item 11131 Hive Wall Sample has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(3883)) &amp;&amp; (IsQuestCompleted(3883)))">
+			<TurnIn QuestName="Alien Ecology" QuestId="3883" TurnInName="Hol'anyee Marshal" TurnInId="9271" X="-6145.24" Y="-1090.56" Z="-200.204" />
+		</If>
+		<If Condition="((HasQuest(3883)) &amp;&amp; (!IsQuestCompleted(3883)))">
+			<CustomBehavior File="AbandonQuest" QuestId="3883" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Expedition Salvation" QuestId="3881" TurnInName="Williden Marshal" TurnInId="9270" X="-6142.71" Y="-1092.69" Z="-200.187" />
+		<Objective QuestName="The Mighty U'cha" QuestId="4301" Type="CollectItem" ItemId="11476" CollectCount="1" />
+		<TurnIn QuestName="The Mighty U'cha" QuestId="4301" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		<TurnIn QuestName="Crystals of Power" QuestId="4284" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(4284)">
+			<PickUp QuestName="The Northern Pylon" QuestId="4285" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(4284)">
+			<PickUp QuestName="The Eastern Pylon" QuestId="4287" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(4284)">
+			<PickUp QuestName="The Western Pylon" QuestId="4288" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<!-- REVIEW Q4285 The Northern Pylon: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4285)) &amp;&amp; (IsQuestCompleted(4285)))">
+			<TurnIn QuestName="The Northern Pylon" QuestId="4285" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<If Condition="((HasQuest(4285)) &amp;&amp; (!IsQuestCompleted(4285)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4285" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q4287 The Eastern Pylon: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4287)) &amp;&amp; (IsQuestCompleted(4287)))">
+			<TurnIn QuestName="The Eastern Pylon" QuestId="4287" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<If Condition="((HasQuest(4287)) &amp;&amp; (!IsQuestCompleted(4287)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4287" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q4288 The Western Pylon: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4288)) &amp;&amp; (IsQuestCompleted(4288)))">
+			<TurnIn QuestName="The Western Pylon" QuestId="4288" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<If Condition="((HasQuest(4288)) &amp;&amp; (!IsQuestCompleted(4288)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4288" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47)">
+			<PickUp QuestName="Making Sense of It" QuestId="4321" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<!-- REVIEW Q4321 Making Sense of It: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4321)) &amp;&amp; (IsQuestCompleted(4321)))">
+			<TurnIn QuestName="Making Sense of It" QuestId="4321" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<If Condition="((HasQuest(4321)) &amp;&amp; (!IsQuestCompleted(4321)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4321" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Super Sticky" QuestId="4504" TurnInName="Tran'rek" TurnInId="7876" X="-7105.84" Y="-3776.83" Z="8.7922" />
+		<TurnIn QuestName="Volcanic Activity" QuestId="4502" TurnInName="Liv Rizzlefix" TurnInId="8496" X="-1004.47" Y="-3705.17" Z="4.6417" />
+		<If Condition="(Me.Level &gt;= 52)">
+			<PickUp QuestName="Trouble in Winterspring!" QuestId="6603" GiverName="Meggi Peppinrocker" GiverId="11754" X="6712.42" Y="-4694.91" Z="721.402" />
+		</If>
+		<TurnIn QuestName="The New Springs" QuestId="980" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<TurnIn QuestName="It's a Secret to Everybody" QuestId="3908" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3908)">
+			<PickUp QuestName="The Videre Elixir" QuestId="3909" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<TurnIn QuestName="Trouble in Winterspring!" QuestId="6603" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<TurnIn QuestName="A Visit to Gregan" QuestId="4142" TurnInName="Gregan Brewspewer" TurnInId="7775" X="-3551.3" Y="2305.97" Z="62.8218" />
+		<!-- REVIEW Q3909 The Videre Elixir: item 11243 Videre Elixir has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(3909)) &amp;&amp; (IsQuestCompleted(3909)))">
+			<TurnIn QuestName="The Videre Elixir" QuestId="3909" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<If Condition="((HasQuest(3909)) &amp;&amp; (!IsQuestCompleted(3909)))">
+			<CustomBehavior File="AbandonQuest" QuestId="3909" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3909)">
+			<PickUp QuestName="Meet at the Grave" QuestId="3912" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<TurnIn QuestName="Meet at the Grave" QuestId="3912" TurnInName="Gaeriyan" TurnInId="9299" X="-6948.18" Y="-3939.48" Z="31.4876" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3912)">
+			<PickUp QuestName="A Grave Situation" QuestId="3913" GiverName="Gaeriyan" GiverId="9299" X="-6948.18" Y="-3939.48" Z="31.4876" />
+		</If>
+		<TurnIn QuestName="A Grave Situation" QuestId="3913" TurnInName="A Conspicuous Gravestone" TurnInId="148504" TurnInType="Object" X="-7211.86" Y="-3931.95" Z="8.9327" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3913)">
+			<PickUp QuestName="Linken's Sword" QuestId="3914" GiverName="A Conspicuous Gravestone" GiverId="148504" GiverType="Object" X="-7211.86" Y="-3931.95" Z="8.9327" />
+		</If>
+		<TurnIn QuestName="Linken's Sword" QuestId="3914" TurnInName="Linken" TurnInId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3914)">
+			<PickUp QuestName="A Gnome's Assistance" QuestId="3941" GiverName="Linken" GiverId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
+		</If>
+		<TurnIn QuestName="A Gnome's Assistance" QuestId="3941" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3941)">
+			<PickUp QuestName="Linken's Memory" QuestId="3942" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<TurnIn QuestName="Linken's Memory" QuestId="3942" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3942)">
+			<PickUp QuestName="Silver Heart" QuestId="4084" GiverName="Eridan Bluewind" GiverId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
+		</If>
+		<Objective QuestName="Silver Heart" QuestId="4084" Type="CollectItem" ItemId="11172" CollectCount="11" />
+		<Objective QuestName="Silver Heart" QuestId="4084" Type="CollectItem" ItemId="11173" CollectCount="1" />
+		<TurnIn QuestName="Silver Heart" QuestId="4084" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(4084)">
+			<PickUp QuestName="Aquementas" QuestId="4005" GiverName="Eridan Bluewind" GiverId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
+		</If>
+		<!-- REVIEW Q4005 Aquementas: item 11522 Silver Totem of Aquementas has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4005)) &amp;&amp; (IsQuestCompleted(4005)))">
+			<TurnIn QuestName="Aquementas" QuestId="4005" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<If Condition="((HasQuest(4005)) &amp;&amp; (!IsQuestCompleted(4005)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4005" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(4005)">
+			<PickUp QuestName="Linken's Adventure" QuestId="3961" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		</If>
+		<TurnIn QuestName="Linken's Adventure" QuestId="3961" TurnInName="Linken" TurnInId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3961)">
+			<PickUp QuestName="It's Dangerous to Go Alone" QuestId="3962" GiverName="Linken" GiverId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
+		</If>
+		<Objective QuestName="It's Dangerous to Go Alone" QuestId="3962" Type="CollectItem" ItemId="11179" CollectCount="1" />
+		<Objective QuestName="It's Dangerous to Go Alone" QuestId="3962" Type="KillMob" MobId="9376" KillCount="1" />
+		<TurnIn QuestName="It's Dangerous to Go Alone" QuestId="3962" TurnInName="Linken" TurnInId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
+		<!-- REVIEW Q3764 Un'Goro Soil: item 11018 Un'Goro Soil has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(3764)) &amp;&amp; (IsQuestCompleted(3764)))">
+			<TurnIn QuestName="Un'Goro Soil" QuestId="3764" TurnInName="Jenal" TurnInId="9047" X="10180.2" Y="2605.13" Z="1322.15" />
+		</If>
+		<If Condition="((HasQuest(3764)) &amp;&amp; (!IsQuestCompleted(3764)))">
+			<CustomBehavior File="AbandonQuest" QuestId="3764" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3764)">
+			<PickUp QuestName="Morrowgrain Research" QuestId="3781" GiverName="Arch Druid Fandral Staghelm" GiverId="3516" X="10173" Y="2569.92" Z="1366.96" />
+		</If>
+		<TurnIn QuestName="Morrowgrain Research" QuestId="3781" TurnInName="Mathrengyl Bearwalker" TurnInId="4217" X="10179" Y="2563.98" Z="1340.13" />
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3781)">
+			<PickUp QuestName="Morrowgrain Research" QuestId="3785" GiverName="Mathrengyl Bearwalker" GiverId="4217" X="10179" Y="2563.98" Z="1340.13" />
+		</If>
+		<!-- REVIEW Q3785 Morrowgrain Research: item 11040 Morrowgrain has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(3785)) &amp;&amp; (IsQuestCompleted(3785)))">
+			<TurnIn QuestName="Morrowgrain Research" QuestId="3785" TurnInName="Mathrengyl Bearwalker" TurnInId="4217" X="10179" Y="2563.98" Z="1340.13" />
+		</If>
+		<If Condition="((HasQuest(3785)) &amp;&amp; (!IsQuestCompleted(3785)))">
+			<CustomBehavior File="AbandonQuest" QuestId="3785" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q4513 A Little Slime Goes a Long Way: item 11954 Filled Pure Sample Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4513)) &amp;&amp; (IsQuestCompleted(4513)))">
+			<TurnIn QuestName="A Little Slime Goes a Long Way" QuestId="4513" TurnInName="Laris Geardawdle" TurnInId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
+		</If>
+		<If Condition="((HasQuest(4513)) &amp;&amp; (!IsQuestCompleted(4513)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4513" Type="Incomplete" />
+		</If>
+	</QuestOrder>
+</HBProfile>

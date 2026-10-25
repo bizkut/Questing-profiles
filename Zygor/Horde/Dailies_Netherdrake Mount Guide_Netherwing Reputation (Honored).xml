@@ -1,0 +1,234 @@
+<HBProfile>
+	<Name>Zygor Dailies\Netherdrake Mount Guide\Netherwing Reputation (Honored)</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Horus" Entry="23143" Type="Food" X="-5142.57" Y="581.328" Z="84.1357" />
+		<Vendor Name="Gug" Entry="23144" Type="Repair" X="-5119.8" Y="624.766" Z="86.8275" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="11020" Name="A Slow Death" Daily="True" />
+	<Quest Id="11035" Name="The Not-So-Friendly Skies..." Daily="True">
+		<Objective Type="CollectItem" ItemId="32509" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Dragonmaw Transporter" Id="23188" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4735.99" Y="122.249" Z="106.433" />
+				<Hotspot X="-4584.82" Y="56.0591" Z="260.312" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11015" Name="Netherwing Crystals" Daily="True">
+		<Objective Type="CollectItem" ItemId="32427" CollectCount="30">
+			<CollectFrom>
+				<Mob Name="Nethermine Flayer" Id="23169" />
+				<Mob Name="Overmine Flayer" Id="23264" />
+				<Mob Name="Arvoar the Rapacious" Id="23267" />
+				<Mob Name="Barash the Den Mother" Id="23269" />
+				<Mob Name="Nethermine Burster" Id="23285" />
+				<Mob Name="Black Blood of Draenor" Id="23286" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5014.13" Y="288.192" Z="1.7935" />
+				<Hotspot X="-5056.86" Y="296.118" Z="-7.939" />
+				<Hotspot X="-5077.74" Y="333.02" Z="5.2797" />
+				<Hotspot X="-5038.03" Y="350.875" Z="2.7299" />
+				<Hotspot X="-4965.88" Y="349.554" Z="-1.5365" />
+				<Hotspot X="-4973.03" Y="308.006" Z="-2.5992" />
+				<Hotspot X="-4991.77" Y="250.844" Z="-5.6813" />
+				<Hotspot X="-5038.44" Y="207.097" Z="-11.7582" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11016" Name="Nethermine Flayer Hide" Daily="True" />
+	<Quest Id="11018" Name="Nethercite Ore" Daily="True">
+		<Objective Type="CollectItem" ItemId="32464" CollectCount="40">
+			<CollectFrom>
+				<GameObject Name="Nethercite Deposit" Id="185877" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5299.56" Y="377.137" Z="51.0671" />
+				<Hotspot X="-5173.12" Y="374.285" Z="75.6265" />
+				<Hotspot X="-5115.18" Y="349.677" Z="-16.2853" />
+				<Hotspot X="-5140.78" Y="497.76" Z="-13.7" />
+				<Hotspot X="-5296.79" Y="525.401" Z="34.1438" />
+				<Hotspot X="-5414.32" Y="494.163" Z="48.9216" />
+				<Hotspot X="-5247.83" Y="245.788" Z="-9.8592" />
+				<Hotspot X="-5190.07" Y="205.77" Z="74.5371" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11017" Name="Netherdust Pollen" Daily="True">
+		<Objective Type="CollectItem" ItemId="32468" CollectCount="40">
+			<CollectFrom>
+				<GameObject Name="Netherdust Bush" Id="185881" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5109.26" Y="783.399" Z="58.1317" />
+				<Hotspot X="-5026.32" Y="816.846" Z="51.4761" />
+				<Hotspot X="-4988.35" Y="830.277" Z="37.5357" />
+				<Hotspot X="-5141.43" Y="922.585" Z="36.635" />
+				<Hotspot X="-5202.5" Y="821.386" Z="183.064" />
+				<Hotspot X="-5238.6" Y="754.771" Z="45.4299" />
+				<Hotspot X="-5163.42" Y="702.526" Z="73.9895" />
+				<Hotspot X="-5190.82" Y="672.716" Z="71.1034" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11055" Name="The Booterang: A Cure For The Common Worthless Peon" Daily="True">
+		<Objective Type="KillMob" MobId="23311" KillCount="20">
+			<Hotspots>
+				<Hotspot X="-5037.91" Y="538.488" Z="88.2079" />
+				<Hotspot X="-4993.51" Y="508.649" Z="85.8297" />
+				<Hotspot X="-4969.67" Y="576.404" Z="77.0522" />
+				<Hotspot X="-5073.18" Y="478.203" Z="84.0537" />
+				<Hotspot X="-5135.13" Y="472.366" Z="78.4078" />
+				<Hotspot X="-5172.18" Y="449.631" Z="76.7462" />
+				<Hotspot X="-5200.65" Y="414.947" Z="74.5614" />
+				<Hotspot X="-5200.69" Y="589.495" Z="60.425" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11086" Name="Disrupting the Twilight Portal" Daily="True" />
+	<Quest Id="11076" Name="Picking Up The Pieces..." Daily="True">
+		<Objective Type="CollectItem" ItemId="32723" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Nethermine Flayer" Id="23169" />
+				<GameObject Name="Nethermine Cargo" Id="185939" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4946.53" Y="565.818" Z="8.3956" />
+				<Hotspot X="-4967.99" Y="620.932" Z="15.9711" />
+				<Hotspot X="-5013.31" Y="639.056" Z="23.5544" />
+				<Hotspot X="-5010.13" Y="689.911" Z="18.9269" />
+				<Hotspot X="-4885.11" Y="529.774" Z="-0.0719" />
+				<Hotspot X="-4922.94" Y="501.758" Z="2.8495" />
+				<Hotspot X="-4970.95" Y="480.743" Z="4.0648" />
+				<Hotspot X="-4955.56" Y="438.111" Z="2.4532" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="11077" Name="Dragons are the Least of Our Problems" Daily="True">
+		<Objective Type="KillMob" MobId="23169" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-5001.91" Y="292.276" Z="-0.9095" />
+				<Hotspot X="-4991.77" Y="250.844" Z="-5.6813" />
+				<Hotspot X="-4954.41" Y="294.593" Z="-5.898" />
+				<Hotspot X="-4960.4" Y="355.089" Z="-1.7874" />
+				<Hotspot X="-4957.85" Y="405.278" Z="0.924" />
+				<Hotspot X="-5040.05" Y="317.909" Z="-4.0359" />
+				<Hotspot X="-5077.74" Y="333.02" Z="5.2797" />
+				<Hotspot X="-5058.35" Y="196.923" Z="-9.8415" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="23326" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-5014.13" Y="288.192" Z="1.7935" />
+				<Hotspot X="-4973.03" Y="308.006" Z="-2.5992" />
+				<Hotspot X="-4965.88" Y="349.554" Z="-1.5365" />
+				<Hotspot X="-4952.6" Y="401.475" Z="-0.3538" />
+				<Hotspot X="-4922.49" Y="300.925" Z="-12.9711" />
+				<Hotspot X="-4995.01" Y="236.348" Z="-7.4626" />
+				<Hotspot X="-5038.44" Y="207.097" Z="-11.7582" />
+				<Hotspot X="-5028.93" Y="162.433" Z="-14.6967" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Dailies/ZygorDailiesHorde.lua: Zygor's Horde Dailies Guides\Netherdrake Mount Guide\Netherwing Reputation (Honored) -->
+		<!-- Daily quests count as done only while they are in today's daily slots; load the profile again after the daily reset. -->
+		<If Condition="Me.MapId != 530">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Horde\Dailies_Netherdrake Mount Guide_Netherwing Reputation (Honored)");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Outland" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11019)">
+			<PickUp QuestName="A Slow Death" QuestId="11020" GiverName="Yarzill the Merc" GiverId="23141" X="-5117.53" Y="593.779" Z="85.1407" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11019)">
+			<PickUp QuestName="The Not-So-Friendly Skies..." QuestId="11035" GiverName="Yarzill the Merc" GiverId="23141" X="-5117.53" Y="593.779" Z="85.1407" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014)">
+			<PickUp QuestName="Netherwing Crystals" QuestId="11015" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014) &amp;&amp; !IsQuestCompleted(11017) &amp;&amp; !HasQuest(11017) &amp;&amp; !IsQuestCompleted(11018) &amp;&amp; !HasQuest(11018)">
+			<PickUp QuestName="Nethermine Flayer Hide" QuestId="11016" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014) &amp;&amp; !IsQuestCompleted(11016) &amp;&amp; !HasQuest(11016) &amp;&amp; !IsQuestCompleted(11017) &amp;&amp; !HasQuest(11017)">
+			<PickUp QuestName="Nethercite Ore" QuestId="11018" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014) &amp;&amp; !IsQuestCompleted(11016) &amp;&amp; !HasQuest(11016) &amp;&amp; !IsQuestCompleted(11018) &amp;&amp; !HasQuest(11018)">
+			<PickUp QuestName="Netherdust Pollen" QuestId="11017" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11054) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
+			<PickUp QuestName="The Booterang: A Cure For The Common Worthless Peon" QuestId="11055" GiverName="Chief Overseer Mudlump" GiverId="23291" X="-5105.28" Y="548.874" Z="85.7276" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11084) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
+			<PickUp QuestName="Disrupting the Twilight Portal" QuestId="11086" GiverName="Overlord Mor'ghor" GiverId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		</If>
+		<Objective QuestName="The Not-So-Friendly Skies..." QuestId="11035" Type="CollectItem" ItemId="32509" CollectCount="10" />
+		<Objective QuestName="Netherdust Pollen" QuestId="11017" Type="CollectItem" ItemId="32468" CollectCount="40" />
+		<Objective QuestName="Nethercite Ore" QuestId="11018" Type="CollectItem" ItemId="32464" CollectCount="40" />
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11075) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
+			<PickUp QuestName="Picking Up The Pieces..." QuestId="11076" GiverName="Mistress of the Mines" GiverId="23149" X="-5254.18" Y="628.473" Z="48.9907" />
+		</If>
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11075) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
+			<PickUp QuestName="Dragons are the Least of Our Problems" QuestId="11077" GiverName="Dragonmaw Foreman" GiverId="23376" X="-5129.35" Y="681.345" Z="40.0699" />
+		</If>
+		<Objective QuestName="Picking Up The Pieces..." QuestId="11076" Type="CollectItem" ItemId="32723" CollectCount="15" />
+		<Objective QuestName="Dragons are the Least of Our Problems" QuestId="11077" Type="KillMob" MobId="23169" KillCount="15" />
+		<Objective QuestName="Dragons are the Least of Our Problems" QuestId="11077" Type="KillMob" MobId="23326" KillCount="5" />
+		<Objective QuestName="Netherwing Crystals" QuestId="11015" Type="CollectItem" ItemId="32427" CollectCount="30" />
+		<TurnIn QuestName="Dragons are the Least of Our Problems" QuestId="11077" TurnInName="Dragonmaw Foreman" TurnInId="23376" X="-5129.35" Y="681.345" Z="40.0699" />
+		<TurnIn QuestName="Picking Up The Pieces..." QuestId="11076" TurnInName="Mistress of the Mines" TurnInId="23149" X="-5254.18" Y="628.473" Z="48.9907" />
+		<CustomBehavior File="KillUntilComplete" QuestId="11086" MobId1="22341" MobId2="22342" MobId3="22343" MobId4="22363" MobId5="22393" X="-1389.18" Y="9588.2" Z="205.576" />
+		<!-- REVIEW Q11020 A Slow Death: collect 23209 Dragonmaw Peon Kill Credit x12: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11020)) &amp;&amp; (IsQuestCompleted(11020)))">
+			<TurnIn QuestName="A Slow Death" QuestId="11020" TurnInName="Yarzill the Merc" TurnInId="23141" X="-5117.53" Y="593.779" Z="85.1407" />
+		</If>
+		<If Condition="((HasQuest(11020)) &amp;&amp; (!IsQuestCompleted(11020)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11020" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="The Not-So-Friendly Skies..." QuestId="11035" TurnInName="Yarzill the Merc" TurnInId="23141" X="-5117.53" Y="593.779" Z="85.1407" />
+		<TurnIn QuestName="Netherwing Crystals" QuestId="11015" TurnInName="Taskmaster Varkule Dragonbreath" TurnInId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		<!-- REVIEW Q11016 Nethermine Flayer Hide: item 32470 Nethermine Flayer Hide has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11016)) &amp;&amp; (IsQuestCompleted(11016)))">
+			<TurnIn QuestName="Nethermine Flayer Hide" QuestId="11016" TurnInName="Taskmaster Varkule Dragonbreath" TurnInId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		</If>
+		<If Condition="((HasQuest(11016)) &amp;&amp; (!IsQuestCompleted(11016)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11016" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Nethercite Ore" QuestId="11018" TurnInName="Taskmaster Varkule Dragonbreath" TurnInId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		<TurnIn QuestName="Netherdust Pollen" QuestId="11017" TurnInName="Taskmaster Varkule Dragonbreath" TurnInId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
+		<Objective QuestName="The Booterang: A Cure For The Common Worthless Peon" QuestId="11055" Type="KillMob" MobId="23311" KillCount="20" />
+		<TurnIn QuestName="The Booterang: A Cure For The Common Worthless Peon" QuestId="11055" TurnInName="Chief Overseer Mudlump" TurnInId="23291" X="-5105.28" Y="548.874" Z="85.7276" />
+		<!-- REVIEW Q11086 Disrupting the Twilight Portal: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11086)) &amp;&amp; (IsQuestCompleted(11086)))">
+			<TurnIn QuestName="Disrupting the Twilight Portal" QuestId="11086" TurnInName="Overlord Mor'ghor" TurnInId="23139" X="-5085" Y="578.657" Z="86.6483" />
+		</If>
+		<If Condition="((HasQuest(11086)) &amp;&amp; (!IsQuestCompleted(11086)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11086" Type="Incomplete" />
+		</If>
+		<CustomBehavior File="Message" Text="Zygor Dailies\Netherdrake Mount Guide\Netherwing Reputation (Honored): done for today" LogColor="Green" />
+	</QuestOrder>
+</HBProfile>

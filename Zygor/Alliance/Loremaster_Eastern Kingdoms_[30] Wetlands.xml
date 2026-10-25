@@ -1,0 +1,681 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Eastern Kingdoms\[30] Wetlands</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Innkeeper Helbrek" Entry="1464" Type="Food" X="-3827.93" Y="-831.901" Z="10.0906" />
+		<Vendor Name="Greishan Ironstove" Entry="3291" Type="Food" X="-5355.96" Y="-2941.26" Z="324.171" />
+		<Vendor Name="Ben Trias" Entry="4981" Type="Food" X="-8847.28" Y="569.955" Z="94.7707" />
+		<Vendor Name="Narj Deepslice" Entry="2814" Type="Food" X="-1275.9" Y="-2506.19" Z="21.9792" />
+		<Vendor Name="Gruham Rumdnul" Entry="1452" Type="Food" X="-3746.03" Y="-888.592" Z="11.0244" />
+		<Vendor Name="Kathrum Axehand" Entry="5509" Type="Repair" X="-8388" Y="692.506" Z="95.357" />
+		<Vendor Name="Jannos Ironwill" Entry="1471" Type="Repair" X="-1278.57" Y="-2522" Z="21.4577" />
+		<Vendor Name="Jennabink Powerseam" Entry="1454" Type="Repair" X="-3687.1" Y="-725.396" Z="16.0801" />
+		<Vendor Name="Murndan Derth" Entry="1461" Type="Repair" X="-3790.13" Y="-858.467" Z="11.5981" />
+		<Vendor Name="Brak Durnad" Entry="1441" Type="Repair" X="-3793.04" Y="-862.698" Z="11.6981" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="455" Name="The Algaz Gauntlet">
+		<Objective Type="KillMob" MobId="2103" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-4325.79" Y="-2442.2" Z="213.328" />
+				<Hotspot X="-4268.95" Y="-2428.3" Z="252.609" />
+				<Hotspot X="-4304.44" Y="-2384.4" Z="208.507" />
+				<Hotspot X="-4265.13" Y="-2360.76" Z="208.082" />
+				<Hotspot X="-4207.41" Y="-2384.15" Z="203.283" />
+				<Hotspot X="-4268" Y="-2486.26" Z="249.123" />
+				<Hotspot X="-4339.67" Y="-2506.99" Z="252.399" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2102" KillCount="6">
+			<Hotspots>
+				<Hotspot X="-4355.33" Y="-2421.2" Z="228.484" />
+				<Hotspot X="-4425.6" Y="-2427.09" Z="252.824" />
+				<Hotspot X="-4310.64" Y="-2519.36" Z="256.747" />
+				<Hotspot X="-4270.37" Y="-2456.72" Z="251.359" />
+				<Hotspot X="-4277.4" Y="-2404.28" Z="234.061" />
+				<Hotspot X="-4238.02" Y="-2382.77" Z="204.725" />
+				<Hotspot X="-4197.09" Y="-2368.17" Z="216.912" />
+				<Hotspot X="-4272.12" Y="-2340.12" Z="219.474" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="484" Name="Young Crocolisk Skins">
+		<Objective Type="CollectItem" ItemId="3397" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Young Wetlands Crocolisk" Id="1417" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3124.07" Y="-1782.43" Z="9.2943" />
+				<Hotspot X="-3137.97" Y="-1839.65" Z="7.4625" />
+				<Hotspot X="-3185.49" Y="-1814.78" Z="6.5443" />
+				<Hotspot X="-3142.84" Y="-1901.37" Z="7.2519" />
+				<Hotspot X="-3102.21" Y="-1932.39" Z="9.3639" />
+				<Hotspot X="-3221.88" Y="-1647.43" Z="8.5875" />
+				<Hotspot X="-3216.07" Y="-1590.1" Z="6.957" />
+				<Hotspot X="-3146.27" Y="-1574.95" Z="9.2462" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="279" Name="Claws from the Deep">
+		<Objective Type="CollectItem" ItemId="3618" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Gobbler" Id="1259" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3245.94" Y="-1136.65" Z="9.1511" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1024" KillCount="12">
+			<Hotspots>
+				<Hotspot X="-3306.93" Y="-948.141" Z="9.1608" />
+				<Hotspot X="-3270.44" Y="-968.283" Z="6.4001" />
+				<Hotspot X="-3238.57" Y="-1005.42" Z="5.596" />
+				<Hotspot X="-3272.26" Y="-1040.97" Z="9.436" />
+				<Hotspot X="-3248.29" Y="-1090.11" Z="6.6371" />
+				<Hotspot X="-3244.29" Y="-906.829" Z="4.4895" />
+				<Hotspot X="-3283.66" Y="-880.341" Z="-11.4841" />
+				<Hotspot X="-3246.6" Y="-842.02" Z="-15.1982" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="289" Name="The Cursed Crew">
+		<Objective Type="CollectItem" ItemId="3619" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="First Mate Snellig" Id="1159" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2979.71" Y="-959.726" Z="-7.1871" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1157" KillCount="13">
+			<Hotspots>
+				<Hotspot X="-2956.03" Y="-972.967" Z="4.5546" />
+				<Hotspot X="-2989.6" Y="-950.5" Z="3.2637" />
+				<Hotspot X="-2802.3" Y="-1011.06" Z="4.3896" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1158" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-2946.88" Y="-973.204" Z="1.8863" />
+				<Hotspot X="-3000.9" Y="-948.685" Z="-0.9009" />
+				<Hotspot X="-2834.3" Y="-971.43" Z="-12.9049" />
+				<Hotspot X="-2808.35" Y="-1012.68" Z="3.608" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="470" Name="Digging Through the Ooze">
+		<Objective Type="CollectItem" ItemId="3349" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Crimson Ooze" Id="1031" />
+				<Mob Name="Black Ooze" Id="1032" />
+				<Mob Name="Monstrous Ooze" Id="1033" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2848.96" Y="-2218.74" Z="31.4834" />
+				<Hotspot X="-2813.15" Y="-2200.87" Z="6.9276" />
+				<Hotspot X="-2819.52" Y="-2247.79" Z="43.284" />
+				<Hotspot X="-2878.69" Y="-2249.29" Z="26.716" />
+				<Hotspot X="-2884" Y="-2196.79" Z="24.9409" />
+				<Hotspot X="-2952.29" Y="-2176.22" Z="18.7521" />
+				<Hotspot X="-2881.36" Y="-2319.46" Z="30.2488" />
+				<Hotspot X="-2830.78" Y="-2309.33" Z="41.7878" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="464" Name="War Banners">
+		<Objective Type="CollectItem" ItemId="3337" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Dragonmaw Raider" Id="1034" />
+				<Mob Name="Dragonmaw Swamprunner" Id="1035" />
+				<Mob Name="Dragonmaw Centurion" Id="1036" />
+				<Mob Name="Dragonmaw Battlemaster" Id="1037" />
+				<Mob Name="Dragonmaw Shadowwarder" Id="1038" />
+				<Mob Name="Dragonmaw Bonewarder" Id="1057" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3275.76" Y="-2177.27" Z="31.9013" />
+				<Hotspot X="-3328.94" Y="-2196.34" Z="41.0129" />
+				<Hotspot X="-3354.55" Y="-2234.26" Z="50.6573" />
+				<Hotspot X="-3306.63" Y="-2244.11" Z="53.136" />
+				<Hotspot X="-3323.53" Y="-2143.74" Z="37.0919" />
+				<Hotspot X="-3376.76" Y="-2133.07" Z="58.7149" />
+				<Hotspot X="-3267.82" Y="-2121.21" Z="40.4349" />
+				<Hotspot X="-3249.32" Y="-2084.92" Z="26.9734" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="324" Name="The Lost Ingots">
+		<Objective Type="CollectItem" ItemId="2702" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Bluegill Raider" Id="1418" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4112.93" Y="-813.672" Z="5.5303" />
+				<Hotspot X="-4146.76" Y="-784.352" Z="0.404" />
+				<Hotspot X="-4114.43" Y="-748.462" Z="-12.7518" />
+				<Hotspot X="-4080.95" Y="-779.825" Z="-10.7" />
+				<Hotspot X="-4049.84" Y="-746.692" Z="-13.3935" />
+				<Hotspot X="-4018.35" Y="-783.367" Z="-14.4094" />
+				<Hotspot X="-3975.57" Y="-812.086" Z="-14.587" />
+				<Hotspot X="-3978.62" Y="-880.35" Z="7.4146" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="304" Name="A Grim Task">
+		<Objective Type="CollectItem" ItemId="3639" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Balgaras the Foul" Id="1364" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2931.11" Y="-2973.81" Z="30.6708" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="303" Name="The Dark Iron War">
+		<Objective Type="KillMob" MobId="1051" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-2615.77" Y="-2357.83" Z="80.9065" />
+				<Hotspot X="-2594.12" Y="-2393.93" Z="80.4513" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1053" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-2629.79" Y="-2336.43" Z="82.3376" />
+				<Hotspot X="-2605.17" Y="-2302.67" Z="90.2847" />
+				<Hotspot X="-2574.07" Y="-2355.85" Z="86.6012" />
+				<Hotspot X="-2667.45" Y="-2373.61" Z="87.6332" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1052" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-2592.45" Y="-2360.88" Z="84.2905" />
+				<Hotspot X="-2622.38" Y="-2322.33" Z="79.815" />
+				<Hotspot X="-2646.61" Y="-2378.7" Z="90.6888" />
+				<Hotspot X="-2374.99" Y="-2492.29" Z="82.2887" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1054" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-2561.05" Y="-2349.46" Z="79.9347" />
+				<Hotspot X="-2661.39" Y="-2320.36" Z="77.0608" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="633" Name="The Thandol Span">
+		<Objective Type="UseObject" ObjectId="2704" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-2246.43" Y="-2623.17" Z="77.6971" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="290" Name="Lifting the Curse">
+		<Objective Type="CollectItem" ItemId="2629" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Captain Halyndor" Id="1160" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2798.54" Y="-1028.4" Z="7.5142" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="471" Name="Apprentice's Duties">
+		<Objective Type="CollectItem" ItemId="3348" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Giant Wetlands Crocolisk" Id="2089" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2893.1" Y="-1149.15" Z="9.5025" />
+				<Hotspot X="-2888.13" Y="-1091.87" Z="8.1758" />
+				<Hotspot X="-2950.27" Y="-1117.76" Z="9.4623" />
+				<Hotspot X="-2953.41" Y="-1020.38" Z="10.0086" />
+				<Hotspot X="-2796.87" Y="-1112.82" Z="1.564" />
+				<Hotspot X="-2831.14" Y="-1176.66" Z="6.5397" />
+				<Hotspot X="-2780.53" Y="-1184.59" Z="6.4691" />
+				<Hotspot X="-2814.2" Y="-1240.65" Z="6.2125" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="294" Name="Ormer's Revenge">
+		<Objective Type="KillMob" MobId="1020" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-3519.68" Y="-1432.48" Z="9.5134" />
+				<Hotspot X="-3537.81" Y="-1386.58" Z="9.646" />
+				<Hotspot X="-3528.43" Y="-1339.03" Z="10.396" />
+				<Hotspot X="-3478.34" Y="-1388.82" Z="9.521" />
+				<Hotspot X="-3437.04" Y="-1405.65" Z="10.6577" />
+				<Hotspot X="-3456.24" Y="-1464.93" Z="10.6347" />
+				<Hotspot X="-3436.82" Y="-1514.93" Z="11.9798" />
+				<Hotspot X="-3639.27" Y="-1350.64" Z="11.5035" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1021" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-3494.26" Y="-1456.36" Z="10.146" />
+				<Hotspot X="-3595.69" Y="-1391.35" Z="10.1277" />
+				<Hotspot X="-3545.56" Y="-1331.21" Z="10.4109" />
+				<Hotspot X="-3679.07" Y="-1342.2" Z="12.819" />
+				<Hotspot X="-3813.99" Y="-1367.74" Z="26.58" />
+				<Hotspot X="-3398.36" Y="-1604.39" Z="10.0856" />
+				<Hotspot X="-3362.33" Y="-1638.55" Z="11.2151" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="299" Name="Uncovering the Past">
+		<Objective Type="CollectItem" ItemId="2658" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Ancient Relic" Id="35252" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3444.59" Y="-1833.84" Z="24.9106" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2659" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Ancient Relic" Id="334" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3373.47" Y="-1810.15" Z="16.2407" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2660" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Ancient Relic" Id="333" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3371.96" Y="-1846.54" Z="16.5207" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2661" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Loose Soil" Id="331" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3308.06" Y="-1899.06" Z="31.7356" />
+				<Hotspot X="-3563.83" Y="-1767.35" Z="79.1001" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="295" Name="Ormer's Revenge">
+		<Objective Type="KillMob" MobId="1022" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-3409.11" Y="-1814.36" Z="17.5763" />
+				<Hotspot X="-3377.73" Y="-1779.3" Z="33.6594" />
+				<Hotspot X="-3351.6" Y="-1813.42" Z="24.747" />
+				<Hotspot X="-3346.03" Y="-1872.59" Z="26.1311" />
+				<Hotspot X="-3480.99" Y="-1880.51" Z="23.4294" />
+				<Hotspot X="-3528.41" Y="-1853.26" Z="24.3207" />
+				<Hotspot X="-3551.23" Y="-1813.87" Z="25.3162" />
+				<Hotspot X="-3440.66" Y="-1706.21" Z="57.2935" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1023" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-3423.08" Y="-1844.35" Z="18.0564" />
+				<Hotspot X="-3421.09" Y="-1779.82" Z="24.8787" />
+				<Hotspot X="-3478.4" Y="-1789.35" Z="17.335" />
+				<Hotspot X="-3513.64" Y="-1809.07" Z="25.7241" />
+				<Hotspot X="-3478.14" Y="-1748.96" Z="23.9907" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="296" Name="Ormer's Revenge">
+		<Objective Type="CollectItem" ItemId="3638" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sarltooth" Id="1353" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3567.61" Y="-1765.01" Z="80.8668" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="276" Name="Tramping Paws">
+		<Objective Type="KillMob" MobId="1007" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-3868.23" Y="-3026.98" Z="12.6053" />
+				<Hotspot X="-3913.66" Y="-3045.47" Z="11.7577" />
+				<Hotspot X="-3988.22" Y="-2935.29" Z="11.8705" />
+				<Hotspot X="-4052.08" Y="-3002.08" Z="13.2592" />
+				<Hotspot X="-4129" Y="-2948.98" Z="12.0394" />
+				<Hotspot X="-4079.75" Y="-3146.84" Z="10.8422" />
+				<Hotspot X="-3904.01" Y="-2892.13" Z="9.9947" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1008" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-3815.94" Y="-3021.42" Z="12.0012" />
+				<Hotspot X="-3819.35" Y="-3077.35" Z="12.0321" />
+				<Hotspot X="-3889.16" Y="-3033.16" Z="11.3367" />
+				<Hotspot X="-3935.26" Y="-3095.5" Z="13.2071" />
+				<Hotspot X="-3841.69" Y="-2942.02" Z="11.6355" />
+				<Hotspot X="-3777.58" Y="-2934.21" Z="13.224" />
+				<Hotspot X="-3783.92" Y="-2891.24" Z="9.3931" />
+				<Hotspot X="-3920.36" Y="-2901.42" Z="12.1544" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="277" Name="Fire Taboo">
+		<Objective Type="CollectItem" ItemId="2611" CollectCount="9">
+			<CollectFrom>
+				<Mob Name="Mosshide Mistweaver" Id="1009" />
+				<Mob Name="Mosshide Fenrunner" Id="1010" />
+				<Mob Name="Mosshide Trapper" Id="1011" />
+				<Mob Name="Mosshide Brute" Id="1012" />
+				<Mob Name="Mosshide Mystic" Id="1013" />
+				<Mob Name="Mosshide Alpha" Id="1014" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3104.2" Y="-2288.1" Z="10.7212" />
+				<Hotspot X="-3043.41" Y="-2264.44" Z="9.0875" />
+				<Hotspot X="-3110.67" Y="-2209.49" Z="9.8259" />
+				<Hotspot X="-3054.1" Y="-2170.46" Z="10.4786" />
+				<Hotspot X="-3085.95" Y="-2081.94" Z="9.6836" />
+				<Hotspot X="-3031.08" Y="-2045.52" Z="9.9413" />
+				<Hotspot X="-2995.66" Y="-2083.72" Z="9.3249" />
+				<Hotspot X="-2999.13" Y="-2502.48" Z="11.504" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="275" Name="Blisters on The Land">
+		<Objective Type="KillMob" MobId="1040" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-2974.8" Y="-1318.68" Z="6.3087" />
+				<Hotspot X="-3029.99" Y="-1364.51" Z="3.2989" />
+				<Hotspot X="-3026.21" Y="-1458.46" Z="6.9465" />
+				<Hotspot X="-3126.84" Y="-1437.12" Z="5.6779" />
+				<Hotspot X="-3171.13" Y="-1522.04" Z="4.6881" />
+				<Hotspot X="-2929.39" Y="-1249.22" Z="6.2125" />
+				<Hotspot X="-2912.45" Y="-1155.48" Z="6.3309" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="474" Name="Defeat Nek'rosh">
+		<Objective Type="CollectItem" ItemId="3625" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Chieftain Nek'rosh" Id="2091" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3654.34" Y="-2600.74" Z="52.0236" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-EasternKingdoms.lua: Ding80's Loremaster Alliance Guides\Eastern Kingdoms\[30] Wetlands -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Eastern Kingdoms_[30] Wetlands");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(269)">
+			<PickUp QuestName="The Doomed Fleet" QuestId="270" GiverName="Bishop Farthing" GiverId="1212" X="-8529" Y="855.316" Z="106.619" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Malin's Request" QuestId="690" GiverName="Archmage Malin" GiverId="2708" X="-9009" Y="846.395" Z="105.942" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="James Hyal" QuestId="1301" GiverName="Connor Rivers" GiverId="5081" X="-9102.33" Y="834.774" Z="105.201" />
+		</If>
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1247)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1248" GiverName="Elling Trias" GiverId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		</If>
+		<If Condition="(Me.Level &gt;= 19)">
+			<PickUp QuestName="Report to Mountaineer Rockgar" QuestId="468" GiverName="Mountaineer Kadrell" GiverId="1340" X="-5365.12" Y="-2938.79" Z="326.76" />
+		</If>
+		<TurnIn QuestName="Report to Mountaineer Rockgar" QuestId="468" TurnInName="Mountaineer Rockgar" TurnInId="1342" X="-4678.5" Y="-2695.41" Z="319.614" />
+		<If Condition="(Me.Level &gt;= 19)">
+			<PickUp QuestName="The Algaz Gauntlet" QuestId="455" GiverName="Mountaineer Rockgar" GiverId="1342" X="-4678.5" Y="-2695.41" Z="319.614" />
+		</If>
+		<Objective QuestName="The Algaz Gauntlet" QuestId="455" Type="KillMob" MobId="2103" KillCount="8" />
+		<If Condition="((HasQuest(455)) &amp;&amp; (!IsQuestCompleted(455)))">
+			<RunTo X="-4086.36" Y="-2610.95" Z="46.0143" />
+		</If>
+		<Objective QuestName="The Algaz Gauntlet" QuestId="455" Type="KillMob" MobId="2102" KillCount="6" />
+		<If Condition="(Me.Level &gt;= 18)">
+			<PickUp QuestName="Daily Delivery" QuestId="469" GiverName="Einar Stonegrip" GiverId="2093" X="-3232.96" Y="-2453.78" Z="15.471" />
+		</If>
+		<If Condition="(Me.Level &gt;= 21)">
+			<PickUp QuestName="In Search of The Excavation Team" QuestId="305" GiverName="Tarrel Rockweaver" GiverId="2096" X="-3584.85" Y="-865.268" Z="13.0867" />
+		</If>
+		<If Condition="(Me.Level &gt;= 25)">
+			<PickUp QuestName="Fall of Dun Modr" QuestId="472" GiverName="Harlo Barnaby" GiverId="2097" X="-3688.57" Y="-838.11" Z="11.2478" />
+		</If>
+		<TurnIn QuestName="Daily Delivery" QuestId="469" TurnInName="James Halloran" TurnInId="2094" X="-3684.2" Y="-743.032" Z="10.2493" />
+		<If Condition="(Me.Level &gt;= 18)">
+			<PickUp QuestName="Young Crocolisk Skins" QuestId="484" GiverName="James Halloran" GiverId="2094" X="-3684.2" Y="-743.032" Z="10.2493" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="Claws from the Deep" QuestId="279" GiverName="Karl Boran" GiverId="1242" X="-3761.23" Y="-733.229" Z="8.0497" />
+		</If>
+		<TurnIn QuestName="James Hyal" QuestId="1301" TurnInName="Vincent Hyal" TurnInId="5082" X="-3849.96" Y="-736.444" Z="8.6635" />
+		<If Condition="(Me.Level &gt;= 22)">
+			<PickUp QuestName="The Third Fleet" QuestId="288" GiverName="First Mate Fitzsimmons" GiverId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
+		</If>
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="The Greenwarden" QuestId="463" GiverName="First Mate Fitzsimmons" GiverId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
+		</If>
+		<TurnIn QuestName="The Doomed Fleet" QuestId="270" TurnInName="Glorin Steelbrow" TurnInId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(270)">
+			<PickUp QuestName="Lightforge Iron" QuestId="321" GiverName="Glorin Steelbrow" GiverId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		</If>
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1248" TurnInName="Mikhail" TurnInId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1248)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1249" GiverName="Mikhail" GiverId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
+		</If>
+		<!-- REVIEW Q1249 The Missing Diplomat: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1249)) &amp;&amp; (IsQuestCompleted(1249)))">
+			<TurnIn QuestName="The Missing Diplomat" QuestId="1249" TurnInName="Mikhail" TurnInId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
+		</If>
+		<If Condition="((HasQuest(1249)) &amp;&amp; (!IsQuestCompleted(1249)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1249" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1249)">
+			<PickUp QuestName="The Missing Diplomat" QuestId="1250" GiverName='Tapoke "Slim" Jahn' GiverId="4962" X="-3808.82" Y="-825.612" Z="10.3019" />
+		</If>
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1250" TurnInName="Mikhail" TurnInId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
+		<!-- REVIEW Q288 The Third Fleet: item 2594 Flagon of Mead has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(288)) &amp;&amp; (IsQuestCompleted(288)))">
+			<TurnIn QuestName="The Third Fleet" QuestId="288" TurnInName="First Mate Fitzsimmons" TurnInId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
+		</If>
+		<If Condition="((HasQuest(288)) &amp;&amp; (!IsQuestCompleted(288)))">
+			<CustomBehavior File="AbandonQuest" QuestId="288" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(288)">
+			<PickUp QuestName="The Cursed Crew" QuestId="289" GiverName="First Mate Fitzsimmons" GiverId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
+		</If>
+		<If Condition="(Me.Level &gt;= 19)">
+			<PickUp QuestName="Digging Through the Ooze" QuestId="470" GiverName="Sida" GiverId="2111" X="-3746.29" Y="-877.423" Z="10.1325" />
+		</If>
+		<!-- REVIEW Q455 The Algaz Gauntlet: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(455)) &amp;&amp; (IsQuestCompleted(455)))">
+			<TurnIn QuestName="The Algaz Gauntlet" QuestId="455" TurnInName="Valstag Ironjaw" TurnInId="2086" X="-3716.14" Y="-807.058" Z="10.0639" />
+		</If>
+		<If Condition="((HasQuest(455)) &amp;&amp; (!IsQuestCompleted(455)))">
+			<CustomBehavior File="AbandonQuest" QuestId="455" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 23)">
+			<PickUp QuestName="Report to Captain Stoutfist" QuestId="473" GiverName="Valstag Ironjaw" GiverId="2086" X="-3716.14" Y="-807.058" Z="10.0639" />
+		</If>
+		<TurnIn QuestName="Report to Captain Stoutfist" QuestId="473" TurnInName="Captain Stoutfist" TurnInId="2104" X="-3732.46" Y="-797.345" Z="26.7802" />
+		<If Condition="(Me.Level &gt;= 23) &amp;&amp; IsQuestCompleted(473)">
+			<PickUp QuestName="War Banners" QuestId="464" GiverName="Captain Stoutfist" GiverId="2104" X="-3732.46" Y="-797.345" Z="26.7802" />
+		</If>
+		<TurnIn QuestName="Lightforge Iron" QuestId="321" TurnInName="Waterlogged Chest" TurnInId="2734" TurnInType="Object" X="-3917.21" Y="-890.293" Z="0.3229" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(321)">
+			<PickUp QuestName="The Lost Ingots" QuestId="324" GiverName="Waterlogged Chest" GiverId="2734" GiverType="Object" X="-3917.21" Y="-890.293" Z="0.3229" />
+		</If>
+		<Objective QuestName="The Lost Ingots" QuestId="324" Type="CollectItem" ItemId="2702" CollectCount="5" />
+		<Objective QuestName="Young Crocolisk Skins" QuestId="484" Type="CollectItem" ItemId="3397" CollectCount="4" />
+		<Objective QuestName="Claws from the Deep" QuestId="279" Type="CollectItem" ItemId="3618" CollectCount="1" />
+		<Objective QuestName="Claws from the Deep" QuestId="279" Type="KillMob" MobId="1024" KillCount="12" />
+		<Objective QuestName="The Cursed Crew" QuestId="289" Type="CollectItem" ItemId="3619" CollectCount="1" />
+		<Objective QuestName="The Cursed Crew" QuestId="289" Type="KillMob" MobId="1157" KillCount="13" />
+		<Objective QuestName="The Cursed Crew" QuestId="289" Type="KillMob" MobId="1158" KillCount="5" />
+		<Objective QuestName="Digging Through the Ooze" QuestId="470" Type="CollectItem" ItemId="3349" CollectCount="1" />
+		<TurnIn QuestName="Fall of Dun Modr" QuestId="472" TurnInName="Longbraid the Grim" TurnInId="1071" X="-2651.19" Y="-2449.16" Z="80.1164" />
+		<If Condition="(Me.Level &gt;= 26)">
+			<PickUp QuestName="A Grim Task" QuestId="304" GiverName="Longbraid the Grim" GiverId="1071" X="-2651.19" Y="-2449.16" Z="80.1164" />
+		</If>
+		<If Condition="(Me.Level &gt;= 28)">
+			<PickUp QuestName="The Thandol Span" QuestId="631" GiverName="Rhag Garmason" GiverId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
+		</If>
+		<If Condition="(Me.Level &gt;= 25)">
+			<PickUp QuestName="The Dark Iron War" QuestId="303" GiverName="Motley Garmason" GiverId="1074" X="-2650.41" Y="-2443.47" Z="80.1627" />
+		</If>
+		<Objective QuestName="A Grim Task" QuestId="304" Type="CollectItem" ItemId="3639" CollectCount="1" />
+		<Objective QuestName="The Dark Iron War" QuestId="303" Type="KillMob" MobId="1051" KillCount="10" />
+		<Objective QuestName="The Dark Iron War" QuestId="303" Type="KillMob" MobId="1053" KillCount="5" />
+		<Objective QuestName="The Dark Iron War" QuestId="303" Type="KillMob" MobId="1052" KillCount="5" />
+		<Objective QuestName="The Dark Iron War" QuestId="303" Type="KillMob" MobId="1054" KillCount="5" />
+		<TurnIn QuestName="A Grim Task" QuestId="304" TurnInName="Longbraid the Grim" TurnInId="1071" X="-2651.19" Y="-2449.16" Z="80.1164" />
+		<TurnIn QuestName="The Dark Iron War" QuestId="303" TurnInName="Motley Garmason" TurnInId="1074" X="-2650.41" Y="-2443.47" Z="80.1627" />
+		<TurnIn QuestName="The Thandol Span" QuestId="631" TurnInName="Ebenezer Rustlocke's Corpse" TurnInId="2652" TurnInType="Object" X="-2367.14" Y="-2510.34" Z="75.344" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(631)">
+			<PickUp QuestName="The Thandol Span" QuestId="632" GiverName="Ebenezer Rustlocke's Corpse" GiverId="2652" GiverType="Object" X="-2367.14" Y="-2510.34" Z="75.344" />
+		</If>
+		<TurnIn QuestName="The Thandol Span" QuestId="632" TurnInName="Rhag Garmason" TurnInId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(632)">
+			<PickUp QuestName="The Thandol Span" QuestId="633" GiverName="Rhag Garmason" GiverId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
+		</If>
+		<Objective QuestName="The Thandol Span" QuestId="633" Type="UseObject" ObjectId="2704" UseCount="1" />
+		<TurnIn QuestName="The Thandol Span" QuestId="633" TurnInName="Rhag Garmason" TurnInId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
+		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(633)">
+			<PickUp QuestName="Plea To The Alliance" QuestId="634" GiverName="Rhag Garmason" GiverId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
+		</If>
+		<TurnIn QuestName="Plea To The Alliance" QuestId="634" TurnInName="Captain Nials" TurnInId="2700" X="-1274.69" Y="-2516.63" Z="21.4792" />
+		<TurnIn QuestName="Malin's Request" QuestId="690" TurnInName="Skuerto" TurnInId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
+		<TurnIn QuestName="The Cursed Crew" QuestId="289" TurnInName="First Mate Fitzsimmons" TurnInId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(289)">
+			<PickUp QuestName="Lifting the Curse" QuestId="290" GiverName="First Mate Fitzsimmons" GiverId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
+		</If>
+		<TurnIn QuestName="The Lost Ingots" QuestId="324" TurnInName="Glorin Steelbrow" TurnInId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(324)">
+			<PickUp QuestName="Blessed Arm" QuestId="322" GiverName="Glorin Steelbrow" GiverId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		</If>
+		<TurnIn QuestName="Digging Through the Ooze" QuestId="470" TurnInName="Sida" TurnInId="2111" X="-3746.29" Y="-877.423" Z="10.1325" />
+		<TurnIn QuestName="Young Crocolisk Skins" QuestId="484" TurnInName="James Halloran" TurnInId="2094" X="-3684.2" Y="-743.032" Z="10.2493" />
+		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(484)">
+			<PickUp QuestName="Apprentice's Duties" QuestId="471" GiverName="James Halloran" GiverId="2094" X="-3684.2" Y="-743.032" Z="10.2493" />
+		</If>
+		<TurnIn QuestName="Claws from the Deep" QuestId="279" TurnInName="Karl Boran" TurnInId="1242" X="-3761.23" Y="-733.229" Z="8.0497" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(279)">
+			<PickUp QuestName="Reclaiming Goods" QuestId="281" GiverName="Karl Boran" GiverId="1242" X="-3761.23" Y="-733.229" Z="8.0497" />
+		</If>
+		<TurnIn QuestName="Reclaiming Goods" QuestId="281" TurnInName="Damaged Crate" TurnInId="261" TurnInType="Object" X="-3288.32" Y="-948.694" Z="8.9405" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(281)">
+			<PickUp QuestName="The Search Continues" QuestId="284" GiverName="Damaged Crate" GiverId="261" GiverType="Object" X="-3288.32" Y="-948.694" Z="8.9405" />
+		</If>
+		<TurnIn QuestName="The Search Continues" QuestId="284" TurnInName="Sealed Barrel" TurnInId="142151" TurnInType="Object" X="-3201.4" Y="-952.171" Z="8.45" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(284)">
+			<PickUp QuestName="Search More Hovels" QuestId="285" GiverName="Sealed Barrel" GiverId="142151" GiverType="Object" X="-3201.4" Y="-952.171" Z="8.45" />
+		</If>
+		<TurnIn QuestName="Search More Hovels" QuestId="285" TurnInName="Half-buried Barrel" TurnInId="259" TurnInType="Object" X="-3107.43" Y="-966.177" Z="7.8842" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(285)">
+			<PickUp QuestName="Return the Statuette" QuestId="286" GiverName="Half-buried Barrel" GiverId="259" GiverType="Object" X="-3107.43" Y="-966.177" Z="7.8842" />
+		</If>
+		<Objective QuestName="Lifting the Curse" QuestId="290" Type="CollectItem" ItemId="2629" CollectCount="1" />
+		<TurnIn QuestName="Lifting the Curse" QuestId="290" TurnInName="Intrepid's Locked Strongbox" TurnInId="112948" TurnInType="Object" X="-2810.56" Y="-984.148" Z="-13.3295" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(290)">
+			<PickUp QuestName="The Eye of Paleth" QuestId="292" GiverName="Intrepid's Locked Strongbox" GiverId="112948" GiverType="Object" X="-2810.56" Y="-984.148" Z="-13.3295" />
+		</If>
+		<Objective QuestName="Apprentice's Duties" QuestId="471" Type="CollectItem" ItemId="3348" CollectCount="6" />
+		<If Condition="(Me.Level &gt;= 22)">
+			<PickUp QuestName="Ormer's Revenge" QuestId="294" GiverName="Ormer Ironbraid" GiverId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		</If>
+		<TurnIn QuestName="In Search of The Excavation Team" QuestId="305" TurnInName="Merrin Rockweaver" TurnInId="1076" X="-3590.51" Y="-1998.6" Z="117.02" />
+		<If Condition="(Me.Level &gt;= 21) &amp;&amp; IsQuestCompleted(305)">
+			<PickUp QuestName="In Search of The Excavation Team" QuestId="306" GiverName="Merrin Rockweaver" GiverId="1076" X="-3590.51" Y="-1998.6" Z="117.02" />
+		</If>
+		<If Condition="(Me.Level &gt;= 25)">
+			<PickUp QuestName="Uncovering the Past" QuestId="299" GiverName="Prospector Whelgar" GiverId="1077" X="-3591.81" Y="-1994.5" Z="116.97" />
+		</If>
+		<Objective QuestName="Ormer's Revenge" QuestId="294" Type="KillMob" MobId="1020" KillCount="10" />
+		<Objective QuestName="Ormer's Revenge" QuestId="294" Type="KillMob" MobId="1021" KillCount="10" />
+		<TurnIn QuestName="Ormer's Revenge" QuestId="294" TurnInName="Ormer Ironbraid" TurnInId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(294)">
+			<PickUp QuestName="Ormer's Revenge" QuestId="295" GiverName="Ormer Ironbraid" GiverId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		</If>
+		<Objective QuestName="Ormer's Revenge" QuestId="295" Type="KillMob" MobId="1022" KillCount="10" />
+		<Objective QuestName="Ormer's Revenge" QuestId="295" Type="KillMob" MobId="1023" KillCount="10" />
+		<Objective QuestName="Uncovering the Past" QuestId="299" Type="CollectItem" ItemId="2658" CollectCount="1" />
+		<Objective QuestName="Uncovering the Past" QuestId="299" Type="CollectItem" ItemId="2659" CollectCount="1" />
+		<Objective QuestName="Uncovering the Past" QuestId="299" Type="CollectItem" ItemId="2660" CollectCount="1" />
+		<Objective QuestName="Uncovering the Past" QuestId="299" Type="CollectItem" ItemId="2661" CollectCount="1" />
+		<TurnIn QuestName="Ormer's Revenge" QuestId="295" TurnInName="Ormer Ironbraid" TurnInId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(295)">
+			<PickUp QuestName="Ormer's Revenge" QuestId="296" GiverName="Ormer Ironbraid" GiverId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		</If>
+		<TurnIn QuestName="Uncovering the Past" QuestId="299" TurnInName="Prospector Whelgar" TurnInId="1077" X="-3591.81" Y="-1994.5" Z="116.97" />
+		<Objective QuestName="Ormer's Revenge" QuestId="296" Type="CollectItem" ItemId="3638" CollectCount="1" />
+		<TurnIn QuestName="Ormer's Revenge" QuestId="296" TurnInName="Ormer Ironbraid" TurnInId="1078" X="-3550.55" Y="-1968.44" Z="114.889" />
+		<Objective QuestName="War Banners" QuestId="464" Type="CollectItem" ItemId="3337" CollectCount="8" />
+		<TurnIn QuestName="The Greenwarden" QuestId="463" TurnInName="Rethiel the Greenwarden" TurnInId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
+		<If Condition="(Me.Level &gt;= 20)">
+			<PickUp QuestName="Tramping Paws" QuestId="276" GiverName="Rethiel the Greenwarden" GiverId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
+		</If>
+		<Objective QuestName="Tramping Paws" QuestId="276" Type="KillMob" MobId="1007" KillCount="15" />
+		<Objective QuestName="Tramping Paws" QuestId="276" Type="KillMob" MobId="1008" KillCount="10" />
+		<TurnIn QuestName="Tramping Paws" QuestId="276" TurnInName="Rethiel the Greenwarden" TurnInId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(276)">
+			<PickUp QuestName="Fire Taboo" QuestId="277" GiverName="Rethiel the Greenwarden" GiverId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
+		</If>
+		<Objective QuestName="Fire Taboo" QuestId="277" Type="CollectItem" ItemId="2611" CollectCount="9" />
+		<TurnIn QuestName="Fire Taboo" QuestId="277" TurnInName="Rethiel the Greenwarden" TurnInId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(277)">
+			<PickUp QuestName="Blisters on The Land" QuestId="275" GiverName="Rethiel the Greenwarden" GiverId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
+		</If>
+		<Objective QuestName="Blisters on The Land" QuestId="275" Type="KillMob" MobId="1040" KillCount="8" />
+		<TurnIn QuestName="In Search of The Excavation Team" QuestId="306" TurnInName="Tarrel Rockweaver" TurnInId="2096" X="-3584.85" Y="-865.268" Z="13.0867" />
+		<TurnIn QuestName="War Banners" QuestId="464" TurnInName="Captain Stoutfist" TurnInId="2104" X="-3732.46" Y="-797.345" Z="26.7802" />
+		<If Condition="(Me.Level &gt;= 23) &amp;&amp; IsQuestCompleted(464)">
+			<PickUp QuestName="Nek'rosh's Gambit" QuestId="465" GiverName="Captain Stoutfist" GiverId="2104" X="-3732.46" Y="-797.345" Z="26.7802" />
+		</If>
+		<TurnIn QuestName="Apprentice's Duties" QuestId="471" TurnInName="James Halloran" TurnInId="2094" X="-3684.2" Y="-743.032" Z="10.2493" />
+		<TurnIn QuestName="Return the Statuette" QuestId="286" TurnInName="Karl Boran" TurnInId="1242" X="-3761.23" Y="-733.229" Z="8.0497" />
+		<TurnIn QuestName="The Eye of Paleth" QuestId="292" TurnInName="Glorin Steelbrow" TurnInId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(292)">
+			<PickUp QuestName="Cleansing the Eye" QuestId="293" GiverName="Glorin Steelbrow" GiverId="1217" X="-3818.05" Y="-827.299" Z="9.6752" />
+		</If>
+		<TurnIn QuestName="Nek'rosh's Gambit" QuestId="465" TurnInName="Dragonmaw Catapult" TurnInId="1609" TurnInType="Object" X="-3443.71" Y="-2352.21" Z="51.9211" />
+		<If Condition="(Me.Level &gt;= 23) &amp;&amp; IsQuestCompleted(465)">
+			<PickUp QuestName="Defeat Nek'rosh" QuestId="474" GiverName="Dragonmaw Catapult" GiverId="1609" GiverType="Object" X="-3443.71" Y="-2352.21" Z="51.9211" />
+		</If>
+		<Objective QuestName="Defeat Nek'rosh" QuestId="474" Type="CollectItem" ItemId="3625" CollectCount="1" />
+		<TurnIn QuestName="Blisters on The Land" QuestId="275" TurnInName="Rethiel the Greenwarden" TurnInId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
+		<TurnIn QuestName="Defeat Nek'rosh" QuestId="474" TurnInName="Captain Stoutfist" TurnInId="2104" X="-3732.46" Y="-797.345" Z="26.7802" />
+		<TurnIn QuestName="Cleansing the Eye" QuestId="293" TurnInName="Archbishop Benedictus" TurnInId="1284" X="-8523" Y="848.783" Z="106.702" />
+		<TurnIn QuestName="Blessed Arm" QuestId="322" TurnInName="Grimand Elmore" TurnInId="1416" X="-8387" Y="685.202" Z="95.356" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(322)">
+			<PickUp QuestName="Armed and Ready" QuestId="325" GiverName="Grimand Elmore" GiverId="1416" X="-8387" Y="685.202" Z="95.356" />
+		</If>
+		<TurnIn QuestName="Armed and Ready" QuestId="325" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(325)">
+			<PickUp QuestName="Morbent Fel" QuestId="55" GiverName="Sven Yorgen" GiverId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		</If>
+		<!-- REVIEW Q55 Morbent Fel: kill 24782 Weakened Morbent Fel x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(55)) &amp;&amp; (IsQuestCompleted(55)))">
+			<TurnIn QuestName="Morbent Fel" QuestId="55" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		</If>
+		<If Condition="((HasQuest(55)) &amp;&amp; (!IsQuestCompleted(55)))">
+			<CustomBehavior File="AbandonQuest" QuestId="55" Type="Incomplete" />
+		</If>
+	</QuestOrder>
+</HBProfile>

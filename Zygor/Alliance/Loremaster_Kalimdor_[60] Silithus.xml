@@ -1,0 +1,487 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Kalimdor\[60] Silithus</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Daeolyn Summerleaf" Entry="12021" Type="Food" X="7956.8" Y="-2424.43" Z="489.03" />
+		<Vendor Name="Calandrath" Entry="15174" Type="Food" X="-6868.04" Y="729.914" Z="45.7454" />
+		<Vendor Name="Sognar Cliffbeard" Entry="5124" Type="Food" X="-4981" Y="-1163" Z="501.746" />
+		<Vendor Name="Garon Hutchins" Entry="16543" Type="Food" X="-6856.12" Y="708.375" Z="43.5737" />
+		<Vendor Name="Lunar Festival Vendor" Entry="15898" Type="Food" X="10148" Y="2572.63" Z="1320.7" />
+		<Vendor Name="Vargus" Entry="15176" Type="Repair" X="-6860.93" Y="753.044" Z="42.5555" />
+		<Vendor Name="Olthran Craghelm" Entry="5126" Type="Repair" X="-5030.41" Y="-1147.3" Z="512.063" />
+		<Vendor Name="Lissyphus Finespindle" Entry="5129" Type="Repair" X="-5033.39" Y="-1146.08" Z="505.396" />
+		<Vendor Name="Dolkin Craghelm" Entry="5125" Type="Repair" X="-5032.96" Y="-1139.38" Z="505.396" />
+		<Vendor Name="Meliri" Entry="12024" Type="Repair" X="7840.32" Y="-2562.68" Z="489.369" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="5527" Name="A Reliquary of Purity">
+		<Objective Type="CollectItem" ItemId="22201" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Dusty Reliquary" Id="179565" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7244.06" Y="335.095" Z="46.3382" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1125" Name="The Spirits of Southwind">
+		<Objective Type="KillMob" MobId="12178" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-7217.3" Y="387.71" Z="24.4976" />
+				<Hotspot X="-7185.79" Y="355.09" Z="28.9946" />
+				<Hotspot X="-7141.85" Y="350.847" Z="26.3781" />
+				<Hotspot X="-7115.5" Y="417.452" Z="13.0916" />
+				<Hotspot X="-7183.99" Y="488.21" Z="13.89" />
+				<Hotspot X="-7215.96" Y="455.471" Z="13.692" />
+				<Hotspot X="-7274.24" Y="451.922" Z="16.359" />
+				<Hotspot X="-7224.28" Y="325.111" Z="46.3382" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="12179" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-7187.38" Y="384.263" Z="22.5013" />
+				<Hotspot X="-7216.28" Y="352.578" Z="38.4449" />
+				<Hotspot X="-7247.92" Y="377.084" Z="21.011" />
+				<Hotspot X="-7258.11" Y="328.817" Z="47.925" />
+				<Hotspot X="-7184.61" Y="322.523" Z="35.118" />
+				<Hotspot X="-7139.58" Y="352.873" Z="17.4297" />
+				<Hotspot X="-7184.3" Y="440.051" Z="26.7382" />
+				<Hotspot X="-7252.93" Y="444.01" Z="20.4438" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8280" Name="Securing the Supply Lines">
+		<Objective Type="KillMob" MobId="11740" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-6479.98" Y="497.192" Z="1.5577" />
+				<Hotspot X="-6475.5" Y="563.838" Z="4.3015" />
+				<Hotspot X="-6554.27" Y="545.433" Z="1.9297" />
+				<Hotspot X="-6578.73" Y="450.104" Z="0.0249" />
+				<Hotspot X="-6647.99" Y="502.577" Z="3.394" />
+				<Hotspot X="-6607.7" Y="361.861" Z="1.7728" />
+				<Hotspot X="-6467.49" Y="384.979" Z="2.1947" />
+				<Hotspot X="-6369.03" Y="467.862" Z="-0.5208" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8283" Name="Wanted - Deathclasp, Terror of the Sands">
+		<Objective Type="CollectItem" ItemId="20385" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Deathclasp" Id="15196" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8102.7" Y="967.628" Z="59.7207" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8277" Name="Deadly Desert Venom">
+		<Objective Type="CollectItem" ItemId="20373" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Stonelash Scorpid" Id="11735" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6552.17" Y="487.526" Z="4.7439" />
+				<Hotspot X="-6555.33" Y="429.945" Z="1.7266" />
+				<Hotspot X="-6576.19" Y="383.332" Z="-0.5084" />
+				<Hotspot X="-6607.28" Y="455.951" Z="1.2459" />
+				<Hotspot X="-6477.18" Y="412.941" Z="0.7046" />
+				<Hotspot X="-6411.42" Y="439.463" Z="1.7032" />
+				<Hotspot X="-6433.55" Y="490.209" Z="4.2168" />
+				<Hotspot X="-6477.79" Y="584.266" Z="2.1323" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20376" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Sand Skitterer" Id="11738" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6488.39" Y="506.968" Z="4.3715" />
+				<Hotspot X="-6436.9" Y="523.183" Z="2.494" />
+				<Hotspot X="-6377.21" Y="512.145" Z="5.3176" />
+				<Hotspot X="-6378.92" Y="384.836" Z="4.8489" />
+				<Hotspot X="-6551.25" Y="354.551" Z="1.0917" />
+				<Hotspot X="-6602.51" Y="501.122" Z="3.1955" />
+				<Hotspot X="-6599.05" Y="561.707" Z="0.1115" />
+				<Hotspot X="-6487.59" Y="601.866" Z="2.267" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8284" Name="The Twilight Mystery">
+		<Objective Type="CollectItem" ItemId="20378" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Dust Stormer" Id="11744" />
+				<Mob Name="Desert Rumbler" Id="11746" />
+				<Mob Name="Whirling Invader" Id="14455" />
+				<GameObject Name="Twilight Tablet Fragment" Id="180436" />
+				<GameObject Name="Twilight Tablet Fragment" Id="180501" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6221.19" Y="1680.12" Z="6.2762" />
+				<Hotspot X="-6182.5" Y="1657.98" Z="12.7254" />
+				<Hotspot X="-6188.41" Y="1713.74" Z="18.0305" />
+				<Hotspot X="-6228.19" Y="1769.88" Z="14.0261" />
+				<Hotspot X="-6294.12" Y="1746.85" Z="4.5114" />
+				<Hotspot X="-6278.17" Y="1681.24" Z="5.2139" />
+				<Hotspot X="-6310.45" Y="1651.13" Z="7.7417" />
+				<Hotspot X="-6289.05" Y="1615.21" Z="12.2278" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8320" Name="Twilight Geolords">
+		<Objective Type="KillMob" MobId="11881" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-7952.08" Y="1889.58" Z="1.3691" />
+				<Hotspot X="-7980.77" Y="1854.53" Z="4.6296" />
+				<Hotspot X="-8012.3" Y="1816.25" Z="3.7018" />
+				<Hotspot X="-7948.14" Y="1814.77" Z="3.1004" />
+				<Hotspot X="-7915.68" Y="1789" Z="2.8804" />
+				<Hotspot X="-7880.43" Y="1818.26" Z="1.4791" />
+				<Hotspot X="-7878.95" Y="1891.71" Z="5.5299" />
+				<Hotspot X="-7904.83" Y="1936.95" Z="4.8082" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8318" Name="Secret Communication">
+		<Objective Type="CollectItem" ItemId="20404" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Havunth" Id="11804" />
+				<Mob Name="Twilight Avenger" Id="11880" />
+				<Mob Name="Twilight Geolord" Id="11881" />
+				<Mob Name="Twilight Stonecaller" Id="11882" />
+				<Mob Name="Twilight Master" Id="11883" />
+				<Mob Name="Twilight Lord Everun" Id="14479" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7930.07" Y="1855.87" Z="5.6698" />
+				<Hotspot X="-7952.08" Y="1889.58" Z="1.3691" />
+				<Hotspot X="-7980.77" Y="1854.53" Z="4.6296" />
+				<Hotspot X="-7948.14" Y="1814.77" Z="3.1004" />
+				<Hotspot X="-7891.28" Y="1840.39" Z="3.5586" />
+				<Hotspot X="-7864.98" Y="1878.78" Z="4.3038" />
+				<Hotspot X="-7905.48" Y="1890.38" Z="9.2546" />
+				<Hotspot X="-7904.83" Y="1936.95" Z="4.8082" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8321" Name="Vyral the Vile">
+		<Objective Type="CollectItem" ItemId="20466" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Vyral the Vile" Id="15202" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6320.34" Y="15.9102" Z="6.3075" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8281" Name="Stepping Up Security">
+		<Objective Type="KillMob" MobId="11741" KillCount="20">
+			<Hotspots>
+				<Hotspot X="-7328.62" Y="524.828" Z="4.5384" />
+				<Hotspot X="-7278.44" Y="616.648" Z="-0.3199" />
+				<Hotspot X="-7366.65" Y="667.881" Z="-4.4287" />
+				<Hotspot X="-7415.04" Y="683.132" Z="-9.0523" />
+				<Hotspot X="-7382.6" Y="619.636" Z="-6.0336" />
+				<Hotspot X="-7483.41" Y="719.62" Z="-17.2628" />
+				<Hotspot X="-7286.73" Y="729.033" Z="0.6656" />
+				<Hotspot X="-7398.23" Y="344.692" Z="5.3284" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8278" Name="Noggle's Last Hope">
+		<Objective Type="CollectItem" ItemId="20375" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Stonelash Flayer" Id="11737" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7605.86" Y="1305.08" Z="0.8043" />
+				<Hotspot X="-7553.52" Y="1283.43" Z="2.101" />
+				<Hotspot X="-7583.31" Y="1251.15" Z="2.6717" />
+				<Hotspot X="-7664.58" Y="1323.26" Z="1.9195" />
+				<Hotspot X="-7675.13" Y="1367.77" Z="2.0963" />
+				<Hotspot X="-7613.34" Y="1375.01" Z="3.5305" />
+				<Hotspot X="-7534.3" Y="1388.25" Z="2.6397" />
+				<Hotspot X="-7716.32" Y="1282.54" Z="-0.3748" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20374" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Stonelash Pincer" Id="11736" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7380.28" Y="585.297" Z="-0.5213" />
+				<Hotspot X="-7327.42" Y="582.714" Z="1.8529" />
+				<Hotspot X="-7280.53" Y="548.464" Z="1.7337" />
+				<Hotspot X="-7355.14" Y="453.261" Z="6.726" />
+				<Hotspot X="-7427.4" Y="490.47" Z="-3.279" />
+				<Hotspot X="-7430.27" Y="544.937" Z="-8.1874" />
+				<Hotspot X="-7487.5" Y="504.166" Z="-10.0929" />
+				<Hotspot X="-7450.53" Y="617.684" Z="-16.6761" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20377" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Rock Stalker" Id="11739" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7580.29" Y="1314.65" Z="2.913" />
+				<Hotspot X="-7642.99" Y="1349.36" Z="-0.0209" />
+				<Hotspot X="-7677.62" Y="1287.87" Z="1.7057" />
+				<Hotspot X="-7757.71" Y="1343.44" Z="0.4622" />
+				<Hotspot X="-7707.48" Y="1382.11" Z="3.2104" />
+				<Hotspot X="-7517.09" Y="1353.9" Z="-0.8846" />
+				<Hotspot X="-7494.38" Y="1244.9" Z="1.4304" />
+				<Hotspot X="-7584.15" Y="1188.4" Z="0.7586" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8279" Name="The Twilight Lexicon">
+		<Objective Type="CollectItem" ItemId="20396" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Havunth" Id="11804" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6939.14" Y="1114.2" Z="0.8648" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20394" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Mayna" Id="15200" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6809.02" Y="1619.7" Z="1.7154" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20395" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Exeter" Id="11803" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7964.69" Y="1977.1" Z="7.0562" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8282" Name="Noggle's Lost Satchel">
+		<Objective Type="CollectItem" ItemId="20379" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Noggle's Satchel" Id="180435" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8080.96" Y="985.235" Z="48.2963" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8323" Name="True Believers">
+		<Objective Type="CollectItem" ItemId="20404" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Havunth" Id="11804" />
+				<Mob Name="Twilight Avenger" Id="11880" />
+				<Mob Name="Twilight Geolord" Id="11881" />
+				<Mob Name="Twilight Stonecaller" Id="11882" />
+				<Mob Name="Twilight Master" Id="11883" />
+				<Mob Name="Twilight Flamereaver" Id="15201" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6386.73" Y="180.874" Z="7.398" />
+				<Hotspot X="-6371.75" Y="223.475" Z="2.1131" />
+				<Hotspot X="-6416.07" Y="218.266" Z="4.8153" />
+				<Hotspot X="-6453.22" Y="192.772" Z="5.1888" />
+				<Hotspot X="-6418.02" Y="271.565" Z="8.1634" />
+				<Hotspot X="-6313.28" Y="222.236" Z="4.2625" />
+				<Hotspot X="-6316.11" Y="178.676" Z="8.7631" />
+				<Hotspot X="-6355.88" Y="147.31" Z="6.3178" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8306" Name="Into The Maw of Madness">
+		<Objective Type="KillMob" MobId="15215" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-8325.5" Y="727.582" Z="-66.985" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-Kalimdor.lua: Ding80's Loremaster Alliance Guides\Kalimdor\[60] Silithus -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Kalimdor_[60] Silithus");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; !IsQuestCompleted(1019) &amp;&amp; !HasQuest(1019) &amp;&amp; !IsQuestCompleted(1047) &amp;&amp; !HasQuest(1047)">
+			<PickUp QuestName="The New Frontier" QuestId="1015" GiverName="Crier Goodman" GiverId="2198" X="-8854" Y="743.15" Z="100.857" />
+		</If>
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; !IsQuestCompleted(1015) &amp;&amp; !HasQuest(1015) &amp;&amp; !IsQuestCompleted(1047) &amp;&amp; !HasQuest(1047)">
+			<PickUp QuestName="The New Frontier" QuestId="1019" GiverName="Courier Hammerfall" GiverId="10877" X="-4998.68" Y="-1155.7" Z="501.76" />
+		</If>
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; !IsQuestCompleted(1015) &amp;&amp; !HasQuest(1015) &amp;&amp; !IsQuestCompleted(1019) &amp;&amp; !HasQuest(1019)">
+			<PickUp QuestName="The New Frontier" QuestId="1047" GiverName="Herald Moonstalker" GiverId="10878" X="9659.84" Y="2432.42" Z="1335.68" />
+		</If>
+		<If Condition="(Me.Level &gt;= 54)">
+			<PickUp QuestName="Taking Back Silithus" QuestId="8275" GiverName="Cenarion Emissary Jademoon" GiverId="15187" X="-4818.88" Y="-1176.41" Z="502.278" />
+		</If>
+		<TurnIn QuestName="The New Frontier" QuestId="1015" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" X="10173" Y="2569.92" Z="1366.96" />
+		<TurnIn QuestName="The New Frontier" QuestId="1019" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" X="10173" Y="2569.92" Z="1366.96" />
+		<TurnIn QuestName="The New Frontier" QuestId="1047" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" X="10173" Y="2569.92" Z="1366.96" />
+		<If Condition="(Me.Level &gt;= 54)">
+			<PickUp QuestName="The New Frontier" QuestId="6761" GiverName="Arch Druid Fandral Staghelm" GiverId="3516" X="10173" Y="2569.92" Z="1366.96" />
+		</If>
+		<TurnIn QuestName="The New Frontier" QuestId="6761" TurnInName="Mathrengyl Bearwalker" TurnInId="4217" X="10179" Y="2563.98" Z="1340.13" />
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(6761)">
+			<PickUp QuestName="Rabine Saturna" QuestId="6762" GiverName="Mathrengyl Bearwalker" GiverId="4217" X="10179" Y="2563.98" Z="1340.13" />
+		</If>
+		<TurnIn QuestName="Rabine Saturna" QuestId="6762" TurnInName="Rabine Saturna" TurnInId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
+		<If Condition="(Me.Level &gt;= 54)">
+			<PickUp QuestName="Wasteland" QuestId="1124" GiverName="Rabine Saturna" GiverId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
+		</If>
+		<If Condition="(Me.Level &gt;= 56)">
+			<PickUp QuestName="A Reliquary of Purity" QuestId="5527" GiverName="Rabine Saturna" GiverId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
+		</If>
+		<TurnIn QuestName="Wasteland" QuestId="1124" TurnInName="Layo Starstrike" TurnInId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(1124)">
+			<PickUp QuestName="The Spirits of Southwind" QuestId="1125" GiverName="Layo Starstrike" GiverId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		</If>
+		<Objective QuestName="A Reliquary of Purity" QuestId="5527" Type="CollectItem" ItemId="22201" CollectCount="1" />
+		<Objective QuestName="The Spirits of Southwind" QuestId="1125" Type="KillMob" MobId="12178" KillCount="8" />
+		<Objective QuestName="The Spirits of Southwind" QuestId="1125" Type="KillMob" MobId="12179" KillCount="8" />
+		<TurnIn QuestName="The Spirits of Southwind" QuestId="1125" TurnInName="Layo Starstrike" TurnInId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(1125)">
+			<PickUp QuestName="Hive in the Tower" QuestId="1126" GiverName="Layo Starstrike" GiverId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		</If>
+		<TurnIn QuestName="Taking Back Silithus" QuestId="8275" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<If Condition="(Me.Level &gt;= 54)">
+			<PickUp QuestName="Securing the Supply Lines" QuestId="8280" GiverName="Windcaller Proudhorn" GiverId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		</If>
+		<If Condition="(Me.Level &gt;= 54)">
+			<PickUp QuestName="Wanted - Deathclasp, Terror of the Sands" QuestId="8283" GiverName="Wanted Poster: Deathclasp" GiverId="180448" GiverType="Object" X="-6847.41" Y="748.786" Z="42.5384" />
+		</If>
+		<If Condition="(Me.Level &gt;= 54)">
+			<PickUp QuestName="Deadly Desert Venom" QuestId="8277" GiverName="Beetix Ficklespragg" GiverId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		</If>
+		<If Condition="(Me.Level &gt;= 54)">
+			<PickUp QuestName="The Twilight Mystery" QuestId="8284" GiverName="Geologist Larksbane" GiverId="15183" X="-6828.49" Y="807.223" Z="52.0997" />
+		</If>
+		<If Condition="(Me.Level &gt;= 60)">
+			<PickUp QuestName="Twilight Geolords" QuestId="8320" GiverName="Huum Wildmane" GiverId="15270" X="-6838.07" Y="843.766" Z="49.0494" />
+		</If>
+		<If Condition="(Me.Level &gt;= 57)">
+			<PickUp QuestName="Secret Communication" QuestId="8318" GiverName="Bor Wildmane" GiverId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
+		</If>
+		<If Condition="(Me.Level &gt;= 58)">
+			<PickUp QuestName="Dearest Natalia" QuestId="8304" GiverName="Commander Mar'alith" GiverId="15181" X="-6752.38" Y="823.836" Z="57.4635" />
+		</If>
+		<If Condition="(Me.Level &gt;= 55)">
+			<PickUp QuestName="Report to Marshal Bluewall" QuestId="9415" GiverName="Rifleman Torrig" GiverId="17082" X="-6764.52" Y="772.218" Z="89.7278" />
+		</If>
+		<If Condition="HasItem(20461) &amp;&amp; !HasQuest(8308) &amp;&amp; !IsQuestCompleted(8308) &amp;&amp; (Me.Level &gt;= 58)">
+			<PickUp QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" GiverName="Brann Bronzebeard's Lost Letter" GiverId="20461" GiverType="Item" />
+		</If>
+		<!-- REVIEW Q1126 Hive in the Tower: item 17346 Encrusted Silithid Object has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1126)) &amp;&amp; (IsQuestCompleted(1126)))">
+			<TurnIn QuestName="Hive in the Tower" QuestId="1126" TurnInName="Layo Starstrike" TurnInId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		</If>
+		<If Condition="((HasQuest(1126)) &amp;&amp; (!IsQuestCompleted(1126)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1126" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(1126)">
+			<PickUp QuestName="Umber, Archivist" QuestId="6844" GiverName="Layo Starstrike" GiverId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		</If>
+		<Objective QuestName="Deadly Desert Venom" QuestId="8277" Type="CollectItem" ItemId="20373" CollectCount="8" />
+		<Objective QuestName="Deadly Desert Venom" QuestId="8277" Type="CollectItem" ItemId="20376" CollectCount="8" />
+		<Objective QuestName="Securing the Supply Lines" QuestId="8280" Type="KillMob" MobId="11740" KillCount="15" />
+		<Objective QuestName="The Twilight Mystery" QuestId="8284" Type="CollectItem" ItemId="20378" CollectCount="8" />
+		<TurnIn QuestName="Report to Marshal Bluewall" QuestId="9415" TurnInName="Marshal Bluewall" TurnInId="17080" X="-7144.34" Y="1377.83" Z="3.2566" />
+		<Objective QuestName="Twilight Geolords" QuestId="8320" Type="KillMob" MobId="11881" KillCount="10" />
+		<Objective QuestName="Secret Communication" QuestId="8318" Type="CollectItem" ItemId="20404" CollectCount="10" />
+		<TurnIn QuestName="Secret Communication" QuestId="8318" TurnInName="Bor Wildmane" TurnInId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
+		<TurnIn QuestName="Twilight Geolords" QuestId="8320" TurnInName="Huum Wildmane" TurnInId="15270" X="-6838.07" Y="843.766" Z="49.0494" />
+		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(8320)">
+			<PickUp QuestName="Vyral the Vile" QuestId="8321" GiverName="Huum Wildmane" GiverId="15270" X="-6838.07" Y="843.766" Z="49.0494" />
+		</If>
+		<TurnIn QuestName="The Twilight Mystery" QuestId="8284" TurnInName="Geologist Larksbane" TurnInId="15183" X="-6828.49" Y="807.223" Z="52.0997" />
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(8284)">
+			<PickUp QuestName="The Deserter" QuestId="8285" GiverName="Geologist Larksbane" GiverId="15183" X="-6828.49" Y="807.223" Z="52.0997" />
+		</If>
+		<TurnIn QuestName="Securing the Supply Lines" QuestId="8280" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(8280)">
+			<PickUp QuestName="Stepping Up Security" QuestId="8281" GiverName="Windcaller Proudhorn" GiverId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		</If>
+		<TurnIn QuestName="Deadly Desert Venom" QuestId="8277" TurnInName="Beetix Ficklespragg" TurnInId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(8277)">
+			<PickUp QuestName="Noggle's Last Hope" QuestId="8278" GiverName="Beetix Ficklespragg" GiverId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		</If>
+		<If Condition="(Me.Level &gt;= 60) &amp;&amp; (GetFactionReputation(609) &gt;= 3000)">
+			<PickUp QuestName="Aurel Goldleaf" QuestId="8331" GiverName="Huum Wildmane" GiverId="15270" X="-6838.07" Y="843.766" Z="49.0494" />
+		</If>
+		<TurnIn QuestName="Aurel Goldleaf" QuestId="8331" TurnInName="Aurel Goldleaf" TurnInId="15282" X="-6844.67" Y="727.634" Z="42.6185" />
+		<Objective QuestName="Vyral the Vile" QuestId="8321" Type="CollectItem" ItemId="20466" CollectCount="1" />
+		<TurnIn QuestName="The Deserter" QuestId="8285" TurnInName="Hermit Ortell" TurnInId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(8285)">
+			<PickUp QuestName="The Twilight Lexicon" QuestId="8279" GiverName="Hermit Ortell" GiverId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		</If>
+		<Objective QuestName="Noggle's Last Hope" QuestId="8278" Type="CollectItem" ItemId="20375" CollectCount="3" />
+		<Objective QuestName="Noggle's Last Hope" QuestId="8278" Type="CollectItem" ItemId="20374" CollectCount="3" />
+		<Objective QuestName="Noggle's Last Hope" QuestId="8278" Type="CollectItem" ItemId="20377" CollectCount="3" />
+		<Objective QuestName="Stepping Up Security" QuestId="8281" Type="KillMob" MobId="11741" KillCount="20" />
+		<TurnIn QuestName="Vyral the Vile" QuestId="8321" TurnInName="Huum Wildmane" TurnInId="15270" X="-6838.07" Y="843.766" Z="49.0494" />
+		<TurnIn QuestName="Stepping Up Security" QuestId="8281" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<TurnIn QuestName="Noggle's Last Hope" QuestId="8278" TurnInName="Beetix Ficklespragg" TurnInId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(8278)">
+			<PickUp QuestName="Noggle's Lost Satchel" QuestId="8282" GiverName="Noggle Ficklespragg" GiverId="15190" X="-6852.64" Y="739.226" Z="56.0303" />
+		</If>
+		<Objective QuestName="The Twilight Lexicon" QuestId="8279" Type="CollectItem" ItemId="20396" CollectCount="1" />
+		<Objective QuestName="The Twilight Lexicon" QuestId="8279" Type="CollectItem" ItemId="20394" CollectCount="1" />
+		<Objective QuestName="The Twilight Lexicon" QuestId="8279" Type="CollectItem" ItemId="20395" CollectCount="1" />
+		<TurnIn QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" TurnInName="Rutgar Glyphshaper" TurnInId="15170" X="-8013.06" Y="1099.65" Z="4.7188" />
+		<Objective QuestName="Noggle's Lost Satchel" QuestId="8282" Type="CollectItem" ItemId="20379" CollectCount="1" />
+		<Objective QuestName="Wanted - Deathclasp, Terror of the Sands" QuestId="8283" Type="CollectItem" ItemId="20385" CollectCount="1" />
+		<TurnIn QuestName="The Twilight Lexicon" QuestId="8279" TurnInName="Hermit Ortell" TurnInId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(8279)">
+			<PickUp QuestName="A Terrible Purpose" QuestId="8287" GiverName="Hermit Ortell" GiverId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		</If>
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(8279)">
+			<PickUp QuestName="True Believers" QuestId="8323" GiverName="Hermit Ortell" GiverId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		</If>
+		<TurnIn QuestName="Noggle's Lost Satchel" QuestId="8282" TurnInName="Noggle Ficklespragg" TurnInId="15190" X="-6852.64" Y="739.226" Z="56.0303" />
+		<TurnIn QuestName="A Terrible Purpose" QuestId="8287" TurnInName="Commander Mar'alith" TurnInId="15181" X="-6752.38" Y="823.836" Z="57.4635" />
+		<!-- REVIEW Q8304 Dearest Natalia: objective 15221 Frankal Invisible Trigger x1: not attackable; objective 15222 Rutgar Invisible Trigger x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8304)) &amp;&amp; (IsQuestCompleted(8304)))">
+			<TurnIn QuestName="Dearest Natalia" QuestId="8304" TurnInName="Commander Mar'alith" TurnInId="15181" X="-6752.38" Y="823.836" Z="57.4635" />
+		</If>
+		<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+			<CustomBehavior File="AbandonQuest" QuestId="8304" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(8304)">
+			<PickUp QuestName="Into The Maw of Madness" QuestId="8306" GiverName="Commander Mar'alith" GiverId="15181" X="-6752.38" Y="823.836" Z="57.4635" />
+		</If>
+		<TurnIn QuestName="Wanted - Deathclasp, Terror of the Sands" QuestId="8283" TurnInName="Vish Kozus" TurnInId="15182" X="-6740.08" Y="769.562" Z="128.521" />
+		<Objective QuestName="True Believers" QuestId="8323" Type="CollectItem" ItemId="20404" CollectCount="10" />
+		<Objective QuestName="Into The Maw of Madness" QuestId="8306" Type="KillMob" MobId="15215" KillCount="1" />
+		<TurnIn QuestName="True Believers" QuestId="8323" TurnInName="Hermit Ortell" TurnInId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		<TurnIn QuestName="Into The Maw of Madness" QuestId="8306" TurnInName="Commander Mar'alith" TurnInId="15181" X="-6752.38" Y="823.836" Z="57.4635" />
+		<TurnIn QuestName="Umber, Archivist" QuestId="6844" TurnInName="Umber" TurnInId="11939" X="7943.56" Y="-2417.24" Z="494.155" />
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(6844)">
+			<PickUp QuestName="Uncovering Past Secrets" QuestId="6845" GiverName="Umber" GiverId="11939" X="7943.56" Y="-2417.24" Z="494.155" />
+		</If>
+		<TurnIn QuestName="A Reliquary of Purity" QuestId="5527" TurnInName="Rabine Saturna" TurnInId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
+		<TurnIn QuestName="Uncovering Past Secrets" QuestId="6845" TurnInName="Rabine Saturna" TurnInId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
+	</QuestOrder>
+</HBProfile>

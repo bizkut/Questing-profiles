@@ -1,0 +1,503 @@
+<HBProfile>
+	<Name>Zygor Reputations\The Burning Crusade\The Kurenai</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Doba" Entry="20028" Type="Food" X="999.842" Y="7346.88" Z="36.625" />
+		<Vendor Name="Innkeeper Kerp" Entry="18908" Type="Food" X="1056.38" Y="7370.99" Z="39.6667" />
+		<Vendor Name="Caregiver Abidaar" Entry="18251" Type="Food" X="282.266" Y="6098.17" Z="132.571" />
+		<Vendor Name="Uriku" Entry="20096" Type="Food" X="-2659.33" Y="7189.98" Z="23.6825" />
+		<Vendor Name="Caregiver Isel" Entry="18914" Type="Food" X="-2761.41" Y="7300.42" Z="43.5535" />
+		<Vendor Name="Maktu" Entry="18010" Type="Repair" X="1020.84" Y="7383.45" Z="36.3243" />
+		<Vendor Name="Loolruna" Entry="19694" Type="Repair" X="252.279" Y="6030.79" Z="131.679" />
+		<Vendor Name="Sparik" Entry="19012" Type="Repair" X="-2539.58" Y="7356.25" Z="7.0472" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="9848" Name="Secrets of the Daggerfen">
+		<Objective Type="CollectItem" ItemId="24500" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Daggerfen Poison Vial" Id="182185" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1169.64" Y="8147.61" Z="19.4932" />
+				<Hotspot X="1098.58" Y="8199.51" Z="23.5049" />
+				<Hotspot X="1172.42" Y="8280.36" Z="18.6127" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="24499" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Daggerfen Poison Manual" Id="182184" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1030.49" Y="8248.48" Z="57.6407" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10116" Name="Wanted: Chieftain Mummaki">
+		<Objective Type="CollectItem" ItemId="27943" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Chieftain Mummaki" Id="19174" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1038.9" Y="8279.63" Z="57.7364" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9835" Name="Ango'rosh Encroachment">
+		<Objective Type="KillMob" MobId="18118" KillCount="5">
+			<Hotspots>
+				<Hotspot X="879.757" Y="7735.77" Z="24.1669" />
+				<Hotspot X="986.488" Y="7724.7" Z="21.4559" />
+				<Hotspot X="1026.03" Y="7752.1" Z="19.5052" />
+				<Hotspot X="985.97" Y="7837.71" Z="21.7641" />
+				<Hotspot X="940.475" Y="7914.06" Z="24.0965" />
+				<Hotspot X="811.414" Y="7821.9" Z="24.5459" />
+				<Hotspot X="770.132" Y="7774.85" Z="22.6732" />
+				<Hotspot X="772.929" Y="7908.65" Z="20.4256" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="18117" KillCount="10">
+			<Hotspots>
+				<Hotspot X="839.46" Y="7811.04" Z="23.2227" />
+				<Hotspot X="815.408" Y="7747.87" Z="23.1751" />
+				<Hotspot X="765.794" Y="7746.61" Z="23.1388" />
+				<Hotspot X="750.429" Y="7806.38" Z="22.3605" />
+				<Hotspot X="889.794" Y="7864.81" Z="23.4909" />
+				<Hotspot X="962.34" Y="7811.7" Z="23.4413" />
+				<Hotspot X="932.538" Y="7764.6" Z="21.4821" />
+				<Hotspot X="889.955" Y="7695.32" Z="22.5625" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10115" Name="Daggerfen Deviance">
+		<Objective Type="KillMob" MobId="18116" KillCount="3">
+			<Hotspots>
+				<Hotspot X="1114.67" Y="8177.17" Z="22.3743" />
+				<Hotspot X="1109.69" Y="8218.36" Z="28.8853" />
+				<Hotspot X="1055.49" Y="8243.23" Z="22.5908" />
+				<Hotspot X="1171.62" Y="8267.39" Z="24.9867" />
+				<Hotspot X="1198.93" Y="8314.51" Z="24.234" />
+				<Hotspot X="1236.81" Y="8293.36" Z="21.843" />
+				<Hotspot X="1182.41" Y="8154.07" Z="18.1759" />
+				<Hotspot X="1078.42" Y="8125.81" Z="19.4311" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="18115" KillCount="15">
+			<Hotspots>
+				<Hotspot X="1138.14" Y="8211.61" Z="18.1205" />
+				<Hotspot X="1099.64" Y="8180" Z="29.5108" />
+				<Hotspot X="1049.75" Y="8161.8" Z="23.6241" />
+				<Hotspot X="1083.68" Y="8116.53" Z="17.5015" />
+				<Hotspot X="1167.77" Y="8161.12" Z="24.1665" />
+				<Hotspot X="1191.67" Y="8208.33" Z="17.6609" />
+				<Hotspot X="1152.07" Y="8260.34" Z="18.7172" />
+				<Hotspot X="1038.15" Y="8218.2" Z="17.8668" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9839" Name="Overlord Gorefist">
+		<Objective Type="KillMob" MobId="18160" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1674.28" Y="8550.4" Z="2.6903" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="18120" KillCount="10">
+			<Hotspots>
+				<Hotspot X="1715.04" Y="8481.7" Z="-4.5534" />
+				<Hotspot X="1677.2" Y="8525.01" Z="-0.2607" />
+				<Hotspot X="1622.21" Y="8506.3" Z="-7.9152" />
+				<Hotspot X="1666.78" Y="8584.28" Z="5.4422" />
+				<Hotspot X="1793.71" Y="8615.6" Z="-3.0752" />
+				<Hotspot X="1807.64" Y="8515.62" Z="-16.3126" />
+				<Hotspot X="1762.23" Y="8419.85" Z="-13.0764" />
+				<Hotspot X="1714.45" Y="8396.25" Z="-26.6293" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9834" Name="Natural Armor">
+		<Objective Type="CollectItem" ItemId="24486" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Fenclaw Thrasher" Id="18214" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="650.309" Y="7016.1" Z="-33.1592" />
+				<Hotspot X="689.958" Y="6979.02" Z="-29.8021" />
+				<Hotspot X="680.179" Y="6905.6" Z="-20.1789" />
+				<Hotspot X="641.427" Y="6881.68" Z="-15.6094" />
+				<Hotspot X="593.901" Y="7018.57" Z="-32.8145" />
+				<Hotspot X="589.974" Y="7086.83" Z="-42.6203" />
+				<Hotspot X="515.956" Y="7027.14" Z="-43.5254" />
+				<Hotspot X="480.964" Y="7050.15" Z="-38.5842" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9830" Name="Stinger Venom">
+		<Objective Type="CollectItem" ItemId="24485" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Marshlight Bleeder" Id="18133" />
+				<Mob Name="Fenglow Stinger" Id="20198" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="857.67" Y="8415.57" Z="22.2127" />
+				<Hotspot X="891.999" Y="8375.21" Z="23.4096" />
+				<Hotspot X="886.729" Y="8320.09" Z="22.3133" />
+				<Hotspot X="870.755" Y="8247.3" Z="21.7104" />
+				<Hotspot X="1054.37" Y="8421.55" Z="21.8726" />
+				<Hotspot X="902.989" Y="8606.22" Z="23.3028" />
+				<Hotspot X="823.668" Y="8522.17" Z="22.8027" />
+				<Hotspot X="755.678" Y="8516.82" Z="22.5015" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9833" Name="Lines of Communication">
+		<Objective Type="KillMob" MobId="18131" KillCount="12">
+			<Hotspots>
+				<Hotspot X="52.2192" Y="8218.15" Z="22.4412" />
+				<Hotspot X="50.5233" Y="8164.24" Z="22.6342" />
+				<Hotspot X="80.2317" Y="8108.9" Z="23.0348" />
+				<Hotspot X="-85.6161" Y="8138" Z="24.8921" />
+				<Hotspot X="19.4461" Y="8313.17" Z="23.5563" />
+				<Hotspot X="60.9503" Y="8356.41" Z="22.1257" />
+				<Hotspot X="-15.5873" Y="8434.11" Z="22.95" />
+				<Hotspot X="-81.8278" Y="8443.04" Z="22.2084" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9902" Name="The Terror of Marshlight Lake">
+		<Objective Type="KillMob" MobId="20477" KillCount="1">
+			<Hotspots>
+				<Hotspot X="400.72" Y="8353.38" Z="22.6682" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9905" Name="Maktu's Revenge">
+		<Objective Type="KillMob" MobId="18286" KillCount="1">
+			<Hotspots>
+				<Hotspot X="546.99" Y="7351.98" Z="6.0346" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9928" Name="Armaments for Deception">
+		<Objective Type="CollectItem" ItemId="25554" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Kil'sorrow Cultist" Id="17147" />
+				<GameObject Name="Kil'sorrow Armaments" Id="182355" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2892.44" Y="6405.05" Z="81.9117" />
+				<Hotspot X="-2902.25" Y="6456.31" Z="82.7451" />
+				<Hotspot X="-2852.6" Y="6441.05" Z="82.7555" />
+				<Hotspot X="-2794.05" Y="6424.33" Z="62.2587" />
+				<Hotspot X="-2784.06" Y="6464.78" Z="64.8018" />
+				<Hotspot X="-2842.27" Y="6545.65" Z="37.6052" />
+				<Hotspot X="-2966.4" Y="6452.86" Z="85.1098" />
+				<Hotspot X="-2936.75" Y="6354.43" Z="88.3589" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9938" Name="Wanted: Durn the Hungerer">
+		<Objective Type="KillMob" MobId="18411" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-2228.97" Y="8474.81" Z="-21.2893" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Retail/Reputations/ZygorReputationsAllianceCLASSIC.lua: Reputation Guides\The Burning Crusade\The Kurenai -->
+		<If Condition="Me.MapId != 530">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Reputations_The Burning Crusade_The Kurenai");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Outland" />
+		</If>
+		<If Condition="(Me.Level &gt;= 62)">
+			<PickUp QuestName="The Orebor Harborage" QuestId="9776" GiverName="Anchorite Ahuurn" GiverId="18003" X="280.43" Y="6046.59" Z="130.391" />
+		</If>
+		<If Condition="(Me.Level &gt;= 62)">
+			<PickUp QuestName="Secrets of the Daggerfen" QuestId="9848" GiverName="Timothy Daniels" GiverId="18019" X="974.253" Y="7403.09" Z="29.6108" />
+		</If>
+		<If Condition="(Me.Level &gt;= 58)">
+			<PickUp QuestName="Wanted: Chieftain Mummaki" QuestId="10116" GiverName="Wanted Poster" GiverId="183284" GiverType="Object" X="1022.22" Y="7376.59" Z="36.2678" />
+		</If>
+		<TurnIn QuestName="The Orebor Harborage" QuestId="9776" TurnInName="Ikuti" TurnInId="18008" X="1024.03" Y="7366.4" Z="36.4186" />
+		<If Condition="(Me.Level &gt;= 62)">
+			<PickUp QuestName="Ango'rosh Encroachment" QuestId="9835" GiverName="Ikuti" GiverId="18008" X="1024.03" Y="7366.4" Z="36.4186" />
+		</If>
+		<If Condition="(Me.Level &gt;= 62)">
+			<PickUp QuestName="Daggerfen Deviance" QuestId="10115" GiverName="Ikuti" GiverId="18008" X="1024.03" Y="7366.4" Z="36.4186" />
+		</If>
+		<Objective QuestName="Ango'rosh Encroachment" QuestId="9835" Type="KillMob" MobId="18118" KillCount="5" />
+		<Objective QuestName="Ango'rosh Encroachment" QuestId="9835" Type="KillMob" MobId="18117" KillCount="10" />
+		<Objective QuestName="Secrets of the Daggerfen" QuestId="9848" Type="CollectItem" ItemId="24500" CollectCount="1" />
+		<Objective QuestName="Secrets of the Daggerfen" QuestId="9848" Type="CollectItem" ItemId="24499" CollectCount="1" />
+		<Objective QuestName="Wanted: Chieftain Mummaki" QuestId="10116" Type="CollectItem" ItemId="27943" CollectCount="1" />
+		<Objective QuestName="Daggerfen Deviance" QuestId="10115" Type="KillMob" MobId="18116" KillCount="3" />
+		<Objective QuestName="Daggerfen Deviance" QuestId="10115" Type="KillMob" MobId="18115" KillCount="15" />
+		<TurnIn QuestName="Secrets of the Daggerfen" QuestId="9848" TurnInName="Timothy Daniels" TurnInId="18019" X="974.253" Y="7403.09" Z="29.6108" />
+		<TurnIn QuestName="Ango'rosh Encroachment" QuestId="9835" TurnInName="Ikuti" TurnInId="18008" X="1024.03" Y="7366.4" Z="36.4186" />
+		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(9835)">
+			<PickUp QuestName="Overlord Gorefist" QuestId="9839" GiverName="Ikuti" GiverId="18008" X="1024.03" Y="7366.4" Z="36.4186" />
+		</If>
+		<TurnIn QuestName="Wanted: Chieftain Mummaki" QuestId="10116" TurnInName="Ikuti" TurnInId="18008" X="1024.03" Y="7366.4" Z="36.4186" />
+		<TurnIn QuestName="Daggerfen Deviance" QuestId="10115" TurnInName="Ikuti" TurnInId="18008" X="1024.03" Y="7366.4" Z="36.4186" />
+		<If Condition="(Me.Level &gt;= 62)">
+			<PickUp QuestName="Natural Armor" QuestId="9834" GiverName="Maktu" GiverId="18010" X="1020.84" Y="7383.45" Z="36.3243" />
+		</If>
+		<If Condition="(Me.Level &gt;= 62)">
+			<PickUp QuestName="Stinger Venom" QuestId="9830" GiverName="Puluu" GiverId="18009" X="974.863" Y="7421.65" Z="31.9895" />
+		</If>
+		<If Condition="(Me.Level &gt;= 62)">
+			<PickUp QuestName="Lines of Communication" QuestId="9833" GiverName="Puluu" GiverId="18009" X="974.863" Y="7421.65" Z="31.9895" />
+		</If>
+		<If Condition="(Me.Level &gt;= 62)">
+			<PickUp QuestName="The Terror of Marshlight Lake" QuestId="9902" GiverName="Puluu" GiverId="18009" X="974.863" Y="7421.65" Z="31.9895" />
+		</If>
+		<Objective QuestName="Natural Armor" QuestId="9834" Type="CollectItem" ItemId="24486" CollectCount="8" />
+		<Objective QuestName="The Terror of Marshlight Lake" QuestId="9902" Type="KillMob" MobId="20477" KillCount="1" />
+		<Objective QuestName="Lines of Communication" QuestId="9833" Type="KillMob" MobId="18131" KillCount="12" />
+		<Objective QuestName="Stinger Venom" QuestId="9830" Type="CollectItem" ItemId="24485" CollectCount="6" />
+		<Objective QuestName="Overlord Gorefist" QuestId="9839" Type="KillMob" MobId="18160" KillCount="1" />
+		<Objective QuestName="Overlord Gorefist" QuestId="9839" Type="KillMob" MobId="18120" KillCount="10" />
+		<TurnIn QuestName="Overlord Gorefist" QuestId="9839" TurnInName="Ikuti" TurnInId="18008" X="1024.03" Y="7366.4" Z="36.4186" />
+		<TurnIn QuestName="Stinger Venom" QuestId="9830" TurnInName="Puluu" TurnInId="18009" X="974.863" Y="7421.65" Z="31.9895" />
+		<TurnIn QuestName="Lines of Communication" QuestId="9833" TurnInName="Puluu" TurnInId="18009" X="974.863" Y="7421.65" Z="31.9895" />
+		<TurnIn QuestName="The Terror of Marshlight Lake" QuestId="9902" TurnInName="Puluu" TurnInId="18009" X="974.863" Y="7421.65" Z="31.9895" />
+		<TurnIn QuestName="Natural Armor" QuestId="9834" TurnInName="Maktu" TurnInId="18010" X="1020.84" Y="7383.45" Z="36.3243" />
+		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(9834)">
+			<PickUp QuestName="Maktu's Revenge" QuestId="9905" GiverName="Maktu" GiverId="18010" X="1020.84" Y="7383.45" Z="36.3243" />
+		</If>
+		<Objective QuestName="Maktu's Revenge" QuestId="9905" Type="KillMob" MobId="18286" KillCount="1" />
+		<TurnIn QuestName="Maktu's Revenge" QuestId="9905" TurnInName="Maktu" TurnInId="18010" X="1020.84" Y="7383.45" Z="36.3243" />
+		<If Condition="(Me.Level &gt;= 64)">
+			<PickUp QuestName="Stopping the Spread" QuestId="9874" GiverName="Otonbu the Sage" GiverId="18222" X="-2613.37" Y="7285.74" Z="20.815" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64)">
+			<PickUp QuestName="Solving the Problem" QuestId="9878" GiverName="Poli'lukluk the Wiser" GiverId="18224" X="-2621.6" Y="7286.53" Z="20.8803" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64)">
+			<PickUp QuestName="Do My Eyes Deceive Me" QuestId="9917" GiverName="Huntress Bintook" GiverId="18353" X="-2556.34" Y="7254.19" Z="15.2034" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64)">
+			<PickUp QuestName="Wanted: Giselda the Crone" QuestId="9936" GiverName="Telaar Bulletin Board" GiverId="182393" GiverType="Object" X="-2564.28" Y="7275.51" Z="15.4789" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64)">
+			<PickUp QuestName="Wanted: Zorbo the Advisor" QuestId="9940" GiverName="Telaar Bulletin Board" GiverId="182393" GiverType="Object" X="-2564.28" Y="7275.51" Z="15.4789" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65)">
+			<PickUp QuestName="Fierce Enemies" QuestId="10476" GiverName="Warden Moi'bff Jill" GiverId="18408" X="-2568.84" Y="7271.46" Z="15.4865" />
+		</If>
+		<TurnIn QuestName="A Message to Telaar" QuestId="9792" TurnInName="Nahuud" TurnInId="18097" X="-2574.31" Y="7270.19" Z="15.5622" />
+		<If Condition="(Me.Level &gt;= 65)">
+			<PickUp QuestName="The Ravaged Caravan" QuestId="9956" GiverName="Huntress Kima" GiverId="18416" X="-2552.39" Y="7337.85" Z="7.3699" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64)">
+			<PickUp QuestName="HELP!" QuestId="9923" GiverName="Corki" GiverId="18369" X="-2563.89" Y="6288.29" Z="15.295" />
+		</If>
+		<!-- REVIEW Q9956 The Ravaged Caravan: item 25647 Telaar Supply Crate has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9956)) &amp;&amp; (IsQuestCompleted(9956)))">
+			<TurnIn QuestName="The Ravaged Caravan" QuestId="9956" TurnInName="Huntress Kima" TurnInId="18416" X="-2552.39" Y="7337.85" Z="7.3699" />
+		</If>
+		<If Condition="((HasQuest(9956)) &amp;&amp; (!IsQuestCompleted(9956)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9956" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q9878 Solving the Problem: kill 18207 Murkblood Scavenger x10: kill credit or scripted event; kill 18203 Murkblood Raider x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9878)) &amp;&amp; (IsQuestCompleted(9878)))">
+			<TurnIn QuestName="Solving the Problem" QuestId="9878" TurnInName="Poli'lukluk the Wiser" TurnInId="18224" X="-2621.6" Y="7286.53" Z="20.8803" />
+		</If>
+		<If Condition="((HasQuest(9878)) &amp;&amp; (!IsQuestCompleted(9878)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9878" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q9874 Stopping the Spread: objective 18240 Sunspring Villager x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9874)) &amp;&amp; (IsQuestCompleted(9874)))">
+			<TurnIn QuestName="Stopping the Spread" QuestId="9874" TurnInName="Otonbu the Sage" TurnInId="18222" X="-2613.37" Y="7285.74" Z="20.815" />
+		</If>
+		<If Condition="((HasQuest(9874)) &amp;&amp; (!IsQuestCompleted(9874)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9874" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q10476 Fierce Enemies: item 25433 Obsidian Warbeads has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10476)) &amp;&amp; (IsQuestCompleted(10476)))">
+			<TurnIn QuestName="Fierce Enemies" QuestId="10476" TurnInName="Warden Moi'bff Jill" TurnInId="18408" X="-2568.84" Y="7271.46" Z="15.4865" />
+		</If>
+		<If Condition="((HasQuest(10476)) &amp;&amp; (!IsQuestCompleted(10476)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10476" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q9936 Wanted: Giselda the Crone: kill 18391 Giselda the Crone x1: kill credit or scripted event; objective 21276 Kil'sorrow Agent x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9936)) &amp;&amp; (IsQuestCompleted(9936)))">
+			<TurnIn QuestName="Wanted: Giselda the Crone" QuestId="9936" TurnInName="Warden Moi'bff Jill" TurnInId="18408" X="-2568.84" Y="7271.46" Z="15.4865" />
+		</If>
+		<If Condition="((HasQuest(9936)) &amp;&amp; (!IsQuestCompleted(9936)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9936" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q9940 Wanted: Zorbo the Advisor: kill 18413 Zorbo the Advisor x1: kill credit or scripted event; kill 18064 Warmaul Shaman x5: kill credit or scripted event; kill 17138 Warmaul Reaver x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9940)) &amp;&amp; (IsQuestCompleted(9940)))">
+			<TurnIn QuestName="Wanted: Zorbo the Advisor" QuestId="9940" TurnInName="Warden Moi'bff Jill" TurnInId="18408" X="-2568.84" Y="7271.46" Z="15.4865" />
+		</If>
+		<If Condition="((HasQuest(9940)) &amp;&amp; (!IsQuestCompleted(9940)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9940" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q9917 Do My Eyes Deceive Me: item 25468 Boulderfist Plans has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9917)) &amp;&amp; (IsQuestCompleted(9917)))">
+			<TurnIn QuestName="Do My Eyes Deceive Me" QuestId="9917" TurnInName="Huntress Bintook" TurnInId="18353" X="-2556.34" Y="7254.19" Z="15.2034" />
+		</If>
+		<If Condition="((HasQuest(9917)) &amp;&amp; (!IsQuestCompleted(9917)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9917" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9917)">
+			<PickUp QuestName="Not On My Watch!" QuestId="9918" GiverName="Huntress Bintook" GiverId="18353" X="-2556.34" Y="7254.19" Z="15.2034" />
+		</If>
+		<!-- REVIEW Q9923 HELP!: collect 18369 Corki x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9923)) &amp;&amp; (IsQuestCompleted(9923)))">
+			<TurnIn QuestName="HELP!" QuestId="9923" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
+		</If>
+		<If Condition="((HasQuest(9923)) &amp;&amp; (!IsQuestCompleted(9923)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9923" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9923)">
+			<PickUp QuestName="Corki's Gone Missing Again!" QuestId="9924" GiverName="Arechron" GiverId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
+		</If>
+		<TurnIn QuestName="Murkblood Invaders" QuestId="9871" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
+		<!-- REVIEW Q9918 Not On My Watch!: objective 18354 Lump's Quest Credit x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9918)) &amp;&amp; (IsQuestCompleted(9918)))">
+			<TurnIn QuestName="Not On My Watch!" QuestId="9918" TurnInName="Huntress Bintook" TurnInId="18353" X="-2556.34" Y="7254.19" Z="15.2034" />
+		</If>
+		<If Condition="((HasQuest(9918)) &amp;&amp; (!IsQuestCompleted(9918)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9918" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9918)">
+			<PickUp QuestName="Mo'mor the Breaker" QuestId="9920" GiverName="Huntress Bintook" GiverId="18353" X="-2556.34" Y="7254.19" Z="15.2034" />
+		</If>
+		<TurnIn QuestName="Mo'mor the Breaker" QuestId="9920" TurnInName="Mo'mor the Breaker" TurnInId="18223" X="-2618.18" Y="7278.46" Z="20.8077" />
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9920)">
+			<PickUp QuestName="The Ruins of Burning Blade" QuestId="9921" GiverName="Mo'mor the Breaker" GiverId="18223" X="-2618.18" Y="7278.46" Z="20.8077" />
+		</If>
+		<!-- REVIEW Q9921 The Ruins of Burning Blade: kill 17134 Boulderfist Crusher x8: kill credit or scripted event; kill 17135 Boulderfist Mystic x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9921)) &amp;&amp; (IsQuestCompleted(9921)))">
+			<TurnIn QuestName="The Ruins of Burning Blade" QuestId="9921" TurnInName="Mo'mor the Breaker" TurnInId="18223" X="-2618.18" Y="7278.46" Z="20.8077" />
+		</If>
+		<If Condition="((HasQuest(9921)) &amp;&amp; (!IsQuestCompleted(9921)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9921" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9921)">
+			<PickUp QuestName="The Twin Clefts of Nagrand" QuestId="9922" GiverName="Mo'mor the Breaker" GiverId="18223" X="-2618.18" Y="7278.46" Z="20.8077" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64)">
+			<PickUp QuestName="The Totem of Kar'dash" QuestId="9879" GiverName="Kurenai Captive" GiverId="18209" X="-1516.63" Y="8462.39" Z="-4.0194" />
+		</If>
+		<!-- REVIEW Q9922 The Twin Clefts of Nagrand: kill 17136 Boulderfist Warrior x10: kill credit or scripted event; kill 17137 Boulderfist Mage x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9922)) &amp;&amp; (IsQuestCompleted(9922)))">
+			<TurnIn QuestName="The Twin Clefts of Nagrand" QuestId="9922" TurnInName="Mo'mor the Breaker" TurnInId="18223" X="-2618.18" Y="7278.46" Z="20.8077" />
+		</If>
+		<If Condition="((HasQuest(9922)) &amp;&amp; (!IsQuestCompleted(9922)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9922" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9922)">
+			<PickUp QuestName="Diplomatic Measures" QuestId="10108" GiverName="Mo'mor the Breaker" GiverId="18223" X="-2618.18" Y="7278.46" Z="20.8077" />
+		</If>
+		<!-- REVIEW Q9879 The Totem of Kar'dash: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9879)) &amp;&amp; (IsQuestCompleted(9879)))">
+			<TurnIn QuestName="The Totem of Kar'dash" QuestId="9879" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
+		</If>
+		<If Condition="((HasQuest(9879)) &amp;&amp; (!IsQuestCompleted(9879)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9879" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q9924 Corki's Gone Missing Again!: collect 20812 Corki x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9924)) &amp;&amp; (IsQuestCompleted(9924)))">
+			<TurnIn QuestName="Corki's Gone Missing Again!" QuestId="9924" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
+		</If>
+		<If Condition="((HasQuest(9924)) &amp;&amp; (!IsQuestCompleted(9924)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9924" Type="Incomplete" />
+		</If>
+		<!-- SKIP Q9954 Corki's Ransom: group quest (3 players) -->
+		<!-- REVIEW Q10108 Diplomatic Measures: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10108)) &amp;&amp; (IsQuestCompleted(10108)))">
+			<TurnIn QuestName="Diplomatic Measures" QuestId="10108" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
+		</If>
+		<If Condition="((HasQuest(10108)) &amp;&amp; (!IsQuestCompleted(10108)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10108" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(10107)">
+			<PickUp QuestName="Armaments for Deception" QuestId="9928" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(10108)">
+			<PickUp QuestName="Ruthless Cunning" QuestId="9927" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
+		</If>
+		<Objective QuestName="Armaments for Deception" QuestId="9928" Type="CollectItem" ItemId="25554" CollectCount="10" />
+		<TurnIn QuestName="Armaments for Deception" QuestId="9928" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
+		<!-- REVIEW Q9927 Ruthless Cunning: objective 18388 Shadow Council Credit Marker x10: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9927)) &amp;&amp; (IsQuestCompleted(9927)))">
+			<TurnIn QuestName="Ruthless Cunning" QuestId="9927" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
+		</If>
+		<If Condition="((HasQuest(9927)) &amp;&amp; (!IsQuestCompleted(9927)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9927" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9927)">
+			<PickUp QuestName="Returning the Favor" QuestId="9931" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9927)">
+			<PickUp QuestName="Body of Evidence" QuestId="9932" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
+		</If>
+		<!-- REVIEW Q9931 Returning the Favor: objective 18393 Warmaul Ogre Credit Marker x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9931)) &amp;&amp; (IsQuestCompleted(9931)))">
+			<TurnIn QuestName="Returning the Favor" QuestId="9931" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
+		</If>
+		<If Condition="((HasQuest(9931)) &amp;&amp; (!IsQuestCompleted(9931)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9931" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q9932 Body of Evidence: objective 18395 Warmaul Pyre Credit Marker x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9932)) &amp;&amp; (IsQuestCompleted(9932)))">
+			<TurnIn QuestName="Body of Evidence" QuestId="9932" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
+		</If>
+		<If Condition="((HasQuest(9932)) &amp;&amp; (!IsQuestCompleted(9932)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9932" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9931)">
+			<PickUp QuestName="Message to Telaar" QuestId="9933" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
+		</If>
+		<TurnIn QuestName="Message to Telaar" QuestId="9933" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
+		<!-- REVIEW Q9954 Corki's Ransom: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9954)) &amp;&amp; (IsQuestCompleted(9954)))">
+			<TurnIn QuestName="Corki's Ransom" QuestId="9954" TurnInName="Corki" TurnInId="18445" X="-918.143" Y="8663.94" Z="172.542" />
+		</If>
+		<If Condition="((HasQuest(9954)) &amp;&amp; (!IsQuestCompleted(9954)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9954" Type="Incomplete" />
+		</If>
+		<!-- SKIP Q9955 Cho'war the Pillager: group quest (3 players) -->
+		<!-- REVIEW Q9955 Cho'war the Pillager: group quest (3 players); collect 18444 Corki Event Controller x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9955)) &amp;&amp; (IsQuestCompleted(9955)))">
+			<TurnIn QuestName="Cho'war the Pillager" QuestId="9955" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
+		</If>
+		<If Condition="((HasQuest(9955)) &amp;&amp; (!IsQuestCompleted(9955)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9955" Type="Incomplete" />
+		</If>
+		<!-- SKIP Q9938 Wanted: Durn the Hungerer: group quest (5 players) -->
+		<Objective QuestName="Wanted: Durn the Hungerer" QuestId="9938" Type="KillMob" MobId="18411" KillCount="1" />
+		<!-- REVIEW Q9938 Wanted: Durn the Hungerer: group quest (5 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9938)) &amp;&amp; (IsQuestCompleted(9938)))">
+			<TurnIn QuestName="Wanted: Durn the Hungerer" QuestId="9938" TurnInName="Warden Moi'bff Jill" TurnInId="18408" X="-2568.84" Y="7271.46" Z="15.4865" />
+		</If>
+		<If Condition="((HasQuest(9938)) &amp;&amp; (!IsQuestCompleted(9938)))">
+			<CustomBehavior File="AbandonQuest" QuestId="9938" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10476)">
+			<PickUp QuestName="More Warbeads" QuestId="10477" GiverName="Warden Moi'bff Jill" GiverId="18408" X="-2568.84" Y="7271.46" Z="15.4865" />
+		</If>
+	</QuestOrder>
+</HBProfile>

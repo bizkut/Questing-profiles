@@ -1,0 +1,764 @@
+<HBProfile>
+	<Name>Zygor Reputations\The Burning Crusade\The Scryers</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Roldemar" Entry="21744" Type="Food" X="-4141.9" Y="1127.26" Z="44.6148" />
+		<Vendor Name="Feranin" Entry="19518" Type="Food" X="-4089.42" Y="1151.9" Z="44.5118" />
+		<Vendor Name="Boots" Entry="19617" Type="Food" X="3080.51" Y="3684.4" Z="142.533" />
+		<Vendor Name="Oloraak" Entry="19045" Type="Food" X="-1605.95" Y="5377.85" Z="-40.1258" />
+		<Vendor Name="Gant" Entry="19572" Type="Food" X="3073.64" Y="3656.38" Z="143.174" />
+		<Vendor Name="Quelama Lightblade" Entry="19236" Type="Repair" X="-2138.24" Y="5558.26" Z="50.3583" />
+		<Vendor Name="Arodis Sunblade" Entry="20613" Type="Repair" X="-2264.65" Y="5566.87" Z="67.092" />
+		<Vendor Name="Blazzle" Entry="28344" Type="Repair" X="3063.41" Y="3677.57" Z="142.761" />
+		<Vendor Name="Alorra" Entry="19517" Type="Repair" X="-4112.08" Y="1177.51" Z="49.6649" />
+		<Vendor Name="Selanam the Blade" Entry="19240" Type="Repair" X="-2130.87" Y="5588.18" Z="50.3112" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="10412" Name="Firewing Signets">
+		<Objective Type="CollectItem" ItemId="29426" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Firewing Courier" Id="18548" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2081.44" Y="4168.19" Z="7.4626" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10656" Name="Sunfury Signets">
+		<Objective Type="CollectItem" ItemId="30810" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Chief Engineer Lorthander" Id="18697" />
+				<Mob Name="Sunfury Guardsman" Id="18850" />
+				<Mob Name="Sunfury Warp-Engineer" Id="18852" />
+				<Mob Name="Sunfury Bloodwarder" Id="18853" />
+				<Mob Name="Sunfury Magister" Id="18855" />
+				<Mob Name="Sunfury Warp-Master" Id="18857" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2823.21" Y="3998.62" Z="141.713" />
+				<Hotspot X="2798.09" Y="3957.93" Z="143.107" />
+				<Hotspot X="2771.18" Y="3988.5" Z="144.591" />
+				<Hotspot X="2759.63" Y="3944.19" Z="141.977" />
+				<Hotspot X="2852.1" Y="3933.84" Z="155.058" />
+				<Hotspot X="2894.35" Y="3992.06" Z="153.44" />
+				<Hotspot X="2850.49" Y="4043.18" Z="168.309" />
+				<Hotspot X="2796.02" Y="4068.31" Z="170.311" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10189" Name="Manaforge B'naar">
+		<Objective Type="CollectItem" ItemId="28376" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Captain Arathyn" Id="19635" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3024.03" Y="3964.66" Z="156.178" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10193" Name="High Value Targets">
+		<Objective Type="KillMob" MobId="19779" KillCount="8">
+			<Hotspots>
+				<Hotspot X="2830.87" Y="3900.17" Z="157.454" />
+				<Hotspot X="2789.19" Y="3920.31" Z="144.731" />
+				<Hotspot X="2754.48" Y="3891.33" Z="143.182" />
+				<Hotspot X="2705.45" Y="3878.66" Z="135.783" />
+				<Hotspot X="2758.24" Y="3953.7" Z="142.852" />
+				<Hotspot X="2798.4" Y="3970.08" Z="142.308" />
+				<Hotspot X="2828.62" Y="4017.78" Z="146.496" />
+				<Hotspot X="2727.57" Y="3990.82" Z="136.62" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="18857" KillCount="2">
+			<Hotspots>
+				<Hotspot X="2827.2" Y="4023.98" Z="148.458" />
+				<Hotspot X="2874.61" Y="4048.84" Z="157.104" />
+				<Hotspot X="2820.19" Y="4151.42" Z="162.599" />
+				<Hotspot X="2776.01" Y="4154.54" Z="181.336" />
+				<Hotspot X="2780.14" Y="4201.67" Z="178.93" />
+				<Hotspot X="2719.11" Y="4092.57" Z="191.749" />
+				<Hotspot X="2852.1" Y="3933.84" Z="155.058" />
+				<Hotspot X="2749.49" Y="3884.96" Z="141.417" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="18852" KillCount="6">
+			<Hotspots>
+				<Hotspot X="2775.36" Y="3881.58" Z="160.083" />
+				<Hotspot X="2900.88" Y="4175.57" Z="161.889" />
+				<Hotspot X="2796.7" Y="4209.6" Z="179.424" />
+				<Hotspot X="2765.98" Y="4242.09" Z="180.249" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10329" Name="Shutting Down Manaforge B'naar">
+		<Objective Type="CollectItem" ItemId="29366" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Overseer Theredis" Id="20416" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2828.02" Y="4154.67" Z="162.599" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10197" Name="A Convincing Disguise">
+		<Objective Type="CollectItem" ItemId="28635" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sunfury Arcanist" Id="20134" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2271.04" Y="2828.48" Z="131.715" />
+				<Hotspot X="2320.78" Y="2825.64" Z="131.988" />
+				<Hotspot X="2409" Y="2864.95" Z="132.493" />
+				<Hotspot X="2434.13" Y="2908.4" Z="130.624" />
+				<Hotspot X="2488.88" Y="2855.45" Z="137.485" />
+				<Hotspot X="2511.36" Y="2750.94" Z="132.168" />
+				<Hotspot X="2396.42" Y="2664.84" Z="133.039" />
+				<Hotspot X="2409.42" Y="2624.09" Z="134.4" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="28636" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sunfury Researcher" Id="20136" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2413.5" Y="2741.85" Z="132.97" />
+				<Hotspot X="2437.38" Y="2780.33" Z="134.564" />
+				<Hotspot X="2369.66" Y="2770.94" Z="134.576" />
+				<Hotspot X="2278.84" Y="2528.38" Z="115.49" />
+				<Hotspot X="2368.55" Y="2496.17" Z="141.336" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="28637" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sunfury Guardsman" Id="18850" />
+				<Mob Name="Sunfury Arch Mage" Id="20135" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2358.06" Y="2666.23" Z="131.254" />
+				<Hotspot X="2389.07" Y="2639.33" Z="133.058" />
+				<Hotspot X="2315.51" Y="2675.69" Z="127.633" />
+				<Hotspot X="2344.46" Y="2787.87" Z="133.168" />
+				<Hotspot X="2280.99" Y="2804.32" Z="131.564" />
+				<Hotspot X="2203.13" Y="2594.81" Z="91.9222" />
+				<Hotspot X="2317.61" Y="2460.32" Z="107.967" />
+				<Hotspot X="2503.1" Y="2707.09" Z="131.495" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10330" Name="Shutting Down Manaforge Coruu">
+		<Objective Type="CollectItem" ItemId="29396" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Overseer Seylanna" Id="20397" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2426.77" Y="2750.39" Z="133.243" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10341" Name="Kick Them While They're Down">
+		<Objective Type="KillMob" MobId="20207" KillCount="6">
+			<Hotspots>
+				<Hotspot X="3094.45" Y="2224.23" Z="156.244" />
+				<Hotspot X="3058.72" Y="2322.28" Z="149.506" />
+				<Hotspot X="3075.96" Y="2364" Z="144.572" />
+				<Hotspot X="2997.99" Y="2349.03" Z="156.176" />
+				<Hotspot X="2974.87" Y="2394.88" Z="154.732" />
+				<Hotspot X="2959.69" Y="2047.51" Z="157.573" />
+				<Hotspot X="2979.79" Y="2005.28" Z="143.395" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="20139" KillCount="8">
+			<Hotspots>
+				<Hotspot X="3082.74" Y="2305.09" Z="150.772" />
+				<Hotspot X="3068.13" Y="2251.53" Z="150.205" />
+				<Hotspot X="3096.2" Y="2193.6" Z="149.268" />
+				<Hotspot X="3139.07" Y="2194.45" Z="149.674" />
+				<Hotspot X="2997.41" Y="2305" Z="161.725" />
+				<Hotspot X="2959.12" Y="2275.65" Z="161.793" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="20140" KillCount="4">
+			<Hotspots>
+				<Hotspot X="3027.99" Y="2322.64" Z="138.637" />
+				<Hotspot X="2941.07" Y="2267.97" Z="161.794" />
+				<Hotspot X="2984.95" Y="2185.44" Z="163.32" />
+				<Hotspot X="2973.59" Y="2137.65" Z="165.411" />
+				<Hotspot X="3024.07" Y="2074.06" Z="162.089" />
+				<Hotspot X="3076.92" Y="2207.29" Z="161.24" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10338" Name="Shutting Down Manaforge Duro">
+		<Objective Type="CollectItem" ItemId="29397" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Overseer Athanel" Id="20435" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2910.09" Y="2138.74" Z="164.02" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10432" Name="Damning Evidence">
+		<Objective Type="CollectItem" ItemId="29797" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Daughter of Destiny" Id="18860" />
+				<Mob Name="Gan'arg Warp-Tinker" Id="20285" />
+				<Mob Name="Mo'arg Warp-Master" Id="20326" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4006.78" Y="3996.4" Z="121.389" />
+				<Hotspot X="4038.01" Y="4031.6" Z="194.326" />
+				<Hotspot X="3989.99" Y="4042.92" Z="194.301" />
+				<Hotspot X="3957.45" Y="4013.2" Z="115.489" />
+				<Hotspot X="3901.29" Y="3993.64" Z="119.732" />
+				<Hotspot X="3989.75" Y="3930.18" Z="124.783" />
+				<Hotspot X="4036.08" Y="3878.77" Z="191.878" />
+				<Hotspot X="4090.66" Y="3973.28" Z="118.24" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10508" Name="A Gift for Voren'thal">
+		<Objective Type="CollectItem" ItemId="29624" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Forgemaster Morug" Id="20800" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4473.89" Y="3468.09" Z="176.885" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="29625" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Silroth" Id="20801" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4729.85" Y="3204.72" Z="160.336" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10687" Name="Karabor Training Grounds">
+		<Objective Type="CollectItem" ItemId="30679" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Demon Hunter Supplicant" Id="21179" />
+				<Mob Name="Demon Hunter Initiate" Id="21180" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3848.7" Y="351.674" Z="120.38" />
+				<Hotspot X="-3888.72" Y="377.189" Z="120.186" />
+				<Hotspot X="-3892.26" Y="429.29" Z="104.633" />
+				<Hotspot X="-3837.22" Y="428.724" Z="104.157" />
+				<Hotspot X="-3789.93" Y="372.162" Z="120.642" />
+				<Hotspot X="-3828.73" Y="286.632" Z="120.695" />
+				<Hotspot X="-3869.16" Y="258.404" Z="137.23" />
+				<Hotspot X="-3890.87" Y="311.904" Z="137.174" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10824" Name="Sunfury Signets">
+		<Objective Type="CollectItem" ItemId="30810" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Eclipsion Centurion" Id="19792" />
+				<Mob Name="Eclipsion Blood Knight" Id="19795" />
+				<Mob Name="Eclipsion Archmage" Id="19796" />
+				<Mob Name="Eclipsion Bloodwarder" Id="19806" />
+				<Mob Name="Demon Hunter Supplicant" Id="21179" />
+				<Mob Name="Demon Hunter Initiate" Id="21180" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4366.69" Y="1403.16" Z="143.655" />
+				<Hotspot X="-4326.81" Y="1392.35" Z="144.007" />
+				<Hotspot X="-4356.69" Y="1360.72" Z="147.384" />
+				<Hotspot X="-4402.11" Y="1356.14" Z="139.413" />
+				<Hotspot X="-4418.94" Y="1398.98" Z="144.497" />
+				<Hotspot X="-4372.3" Y="1299.02" Z="86.8265" />
+				<Hotspot X="-4316.29" Y="1330.93" Z="75.4431" />
+				<Hotspot X="-4286.95" Y="1372.65" Z="144.491" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10683" Name="Tablets of Baa'ri">
+		<Objective Type="CollectItem" ItemId="30596" CollectCount="12">
+			<CollectFrom>
+				<Mob Name="Ashtongue Worker" Id="21455" />
+				<GameObject Name="Baa'ri Tablet Fragment" Id="184869" />
+				<GameObject Name="Baa'ri Tablet Fragment" Id="184870" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3286.3" Y="936.568" Z="38.737" />
+				<Hotspot X="-3282.25" Y="893.636" Z="16.7986" />
+				<Hotspot X="-3334.37" Y="884.651" Z="-9.4761" />
+				<Hotspot X="-3332.77" Y="930.19" Z="30.4088" />
+				<Hotspot X="-3346.71" Y="968.004" Z="29.8137" />
+				<Hotspot X="-3378.34" Y="935.224" Z="22.4447" />
+				<Hotspot X="-3315.88" Y="1002.01" Z="40.7047" />
+				<Hotspot X="-3224.45" Y="1020.85" Z="64.4435" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10807" Name="The Ashtongue Broken">
+		<Objective Type="KillMob" MobId="21803" KillCount="3">
+			<Hotspots>
+				<Hotspot X="-3302.98" Y="1145.53" Z="60.4108" />
+				<Hotspot X="-3299.35" Y="1068.8" Z="53.8977" />
+				<Hotspot X="-3225.85" Y="1050.9" Z="64.6319" />
+				<Hotspot X="-3195.7" Y="1131.32" Z="73.2427" />
+				<Hotspot X="-3290.59" Y="964.864" Z="40.6777" />
+				<Hotspot X="-3318.71" Y="909.786" Z="29.9918" />
+				<Hotspot X="-3369.78" Y="1010.37" Z="31.7977" />
+				<Hotspot X="-3384.89" Y="1189.49" Z="58.7735" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="21454" KillCount="4">
+			<Hotspots>
+				<Hotspot X="-3212.99" Y="1081.65" Z="65.9832" />
+				<Hotspot X="-3171.95" Y="1059.9" Z="71.8972" />
+				<Hotspot X="-3160.9" Y="1103.16" Z="75.1613" />
+				<Hotspot X="-3210.23" Y="1165.28" Z="53.2241" />
+				<Hotspot X="-3166.09" Y="1191.17" Z="36.7562" />
+				<Hotspot X="-3263.46" Y="1245.41" Z="73.5829" />
+				<Hotspot X="-3301.93" Y="995.007" Z="40.7887" />
+				<Hotspot X="-3151.73" Y="990.566" Z="-2.9313" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="21453" KillCount="6">
+			<Hotspots>
+				<Hotspot X="-3366.85" Y="1220.66" Z="67.3407" />
+				<Hotspot X="-3313.08" Y="1234.52" Z="73.0456" />
+				<Hotspot X="-3252.47" Y="1194.85" Z="61.6459" />
+				<Hotspot X="-3200.65" Y="1118.2" Z="73.2009" />
+				<Hotspot X="-3342.77" Y="1108.41" Z="54.6055" />
+				<Hotspot X="-3320.31" Y="1016.63" Z="48.8933" />
+				<Hotspot X="-3285.12" Y="984.013" Z="40.2919" />
+				<Hotspot X="-3388.94" Y="977.512" Z="24.6017" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10817" Name="The Great Retribution">
+		<Objective Type="KillMob" MobId="22082" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-3387.07" Y="467.889" Z="104.05" />
+				<Hotspot X="-3344.1" Y="478.365" Z="95.1408" />
+				<Hotspot X="-3354.55" Y="524.908" Z="77.1343" />
+				<Hotspot X="-3433.26" Y="464.86" Z="91.0997" />
+				<Hotspot X="-3415.93" Y="427.116" Z="104.064" />
+				<Hotspot X="-3432.41" Y="383.194" Z="91.0609" />
+				<Hotspot X="-3387.21" Y="381.548" Z="104.051" />
+				<Hotspot X="-3355.82" Y="417.362" Z="104.281" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="22084" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-3329.19" Y="444.084" Z="99.945" />
+				<Hotspot X="-3265.98" Y="460.908" Z="103.946" />
+				<Hotspot X="-3244.87" Y="421.909" Z="104.074" />
+				<Hotspot X="-3297.32" Y="385.104" Z="120.458" />
+				<Hotspot X="-3270.92" Y="336.851" Z="120.909" />
+				<Hotspot X="-3219.11" Y="336.641" Z="127.613" />
+				<Hotspot X="-3347.56" Y="307.103" Z="115.851" />
+				<Hotspot X="-3415.49" Y="395.264" Z="103.933" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="22081" KillCount="4">
+			<Hotspots>
+				<Hotspot X="-3416.19" Y="392.345" Z="104.016" />
+				<Hotspot X="-3376.73" Y="344.406" Z="104.063" />
+				<Hotspot X="-3415.74" Y="295.51" Z="104.504" />
+				<Hotspot X="-3377.74" Y="273.678" Z="104.109" />
+				<Hotspot X="-3329.3" Y="391.749" Z="120.663" />
+				<Hotspot X="-3285.26" Y="415.06" Z="104.066" />
+				<Hotspot X="-3265.39" Y="463.849" Z="104.026" />
+				<Hotspot X="-3416.39" Y="471.66" Z="104.01" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10684" Name="Oronu the Elder">
+		<Objective Type="CollectItem" ItemId="30649" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Oronu the Elder" Id="21663" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3153.27" Y="1079.43" Z="75.4661" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10685" Name="The Ashtongue Corruptors">
+		<Objective Type="CollectItem" ItemId="30691" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Haalum" Id="21711" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4648.44" Y="1085.26" Z="0.8377" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="30692" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Eykenen" Id="21709" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3884.68" Y="1410.31" Z="43.9757" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="30694" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Uylaru" Id="21710" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3396.21" Y="1568.68" Z="47.824" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="30693" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Lakaan" Id="21416" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2791.71" Y="1481.24" Z="10.1849" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10668" Name="Against the Illidari">
+		<Objective Type="KillMob" MobId="21928" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-3780.32" Y="2669.17" Z="101.36" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10692" Name="Varedis Must Be Stopped">
+		<Objective Type="KillMob" MobId="21164" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-3867.61" Y="430.104" Z="104.185" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="21171" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-3931.08" Y="398.582" Z="120.472" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="21168" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-3721.92" Y="245.168" Z="104.142" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="21178" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-3915.89" Y="256.112" Z="139.257" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Retail/Reputations/ZygorReputationsAllianceCLASSIC.lua: Reputation Guides\The Burning Crusade\The Scryers -->
+		<If Condition="Me.MapId != 530">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Reputations_The Burning Crusade_The Scryers");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Outland" />
+		</If>
+		<If Condition="(Me.Level &gt;= 60)">
+			<PickUp QuestName="A'dal" QuestId="10210" GiverName="Haggard War Veteran" GiverId="19684" X="-1560.23" Y="5327.7" Z="11.5866" />
+		</If>
+		<TurnIn QuestName="A'dal" QuestId="10210" TurnInName="A'dal" TurnInId="18481" X="-1863.68" Y="5430.04" Z="-9.6055" />
+		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(10210)">
+			<PickUp QuestName="City of Light" QuestId="10211" GiverName="Khadgar" GiverId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
+		</If>
+		<!-- REVIEW Q10211 City of Light: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10211)) &amp;&amp; (IsQuestCompleted(10211)))">
+			<TurnIn QuestName="City of Light" QuestId="10211" TurnInName="Khadgar" TurnInId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
+		</If>
+		<If Condition="((HasQuest(10211)) &amp;&amp; (!IsQuestCompleted(10211)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10211" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(10211) &amp;&amp; !IsQuestCompleted(10551) &amp;&amp; !HasQuest(10551)">
+			<PickUp QuestName="Allegiance to the Scryers" QuestId="10552" GiverName="Khadgar" GiverId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
+		</If>
+		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(10552) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Voren'thal the Seer" QuestId="10553" GiverName="Khadgar" GiverId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
+		</If>
+		<If Condition="(Me.Level &gt;= 62)">
+			<PickUp QuestName="Firewing Signets" QuestId="10412" GiverName="Magistrix Fyalenn" GiverId="18531" X="-2183.15" Y="5544.87" Z="64.1556" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68)">
+			<PickUp QuestName="Sunfury Signets" QuestId="10656" GiverName="Magistrix Fyalenn" GiverId="18531" X="-2183.15" Y="5544.87" Z="64.1556" />
+		</If>
+		<TurnIn QuestName="Voren'thal the Seer" QuestId="10553" TurnInName="Voren'thal the Seer" TurnInId="18530" X="-2272.61" Y="5576.36" Z="80.0374" />
+		<If Condition="(Me.Level &gt;= 64)">
+			<PickUp QuestName="Synthesis of Power" QuestId="10416" GiverName="Voren'thal the Seer" GiverId="18530" X="-2272.61" Y="5576.36" Z="80.0374" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="Report to Spymaster Thalodien" QuestId="11039" GiverName="Arcanist Savan" GiverId="23272" X="-1728.36" Y="5145.19" Z="-36.867" />
+		</If>
+		<TurnIn QuestName="Report to Spymaster Thalodien" QuestId="11039" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Manaforge B'naar" QuestId="10189" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<Objective QuestName="Manaforge B'naar" QuestId="10189" Type="CollectItem" ItemId="28376" CollectCount="1" />
+		<TurnIn QuestName="Manaforge B'naar" QuestId="10189" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10189) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="High Value Targets" QuestId="10193" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10189) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Bloodgem Crystals" QuestId="10204" GiverName="Magistrix Larynna" GiverId="19469" X="3077.69" Y="3696.48" Z="142.559" />
+		</If>
+		<Objective QuestName="High Value Targets" QuestId="10193" Type="KillMob" MobId="19779" KillCount="8" />
+		<Objective QuestName="High Value Targets" QuestId="10193" Type="KillMob" MobId="18857" KillCount="2" />
+		<Objective QuestName="High Value Targets" QuestId="10193" Type="KillMob" MobId="18852" KillCount="6" />
+		<Objective QuestName="Sunfury Signets" QuestId="10656" Type="CollectItem" ItemId="30810" CollectCount="10" />
+		<TurnIn QuestName="High Value Targets" QuestId="10193" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10193) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Shutting Down Manaforge B'naar" QuestId="10329" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<!-- REVIEW Q10204 Bloodgem Crystals: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10204)) &amp;&amp; (IsQuestCompleted(10204)))">
+			<TurnIn QuestName="Bloodgem Crystals" QuestId="10204" TurnInName="Magistrix Larynna" TurnInId="19469" X="3077.69" Y="3696.48" Z="142.559" />
+		</If>
+		<If Condition="((HasQuest(10204)) &amp;&amp; (!IsQuestCompleted(10204)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10204" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Shutting Down Manaforge B'naar" QuestId="10329" Type="CollectItem" ItemId="29366" CollectCount="1" />
+		<!-- REVIEW Q10329 Shutting Down Manaforge B'naar: objective 20209 B'naar Control Console x1: kill credit or scripted event; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10329)) &amp;&amp; (IsQuestCompleted(10329)))">
+			<TurnIn QuestName="Shutting Down Manaforge B'naar" QuestId="10329" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<If Condition="((HasQuest(10329)) &amp;&amp; (!IsQuestCompleted(10329)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10329" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10329) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Stealth Flight" QuestId="10194" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<TurnIn QuestName="Stealth Flight" QuestId="10194" TurnInName="Veronia" TurnInId="20162" X="3068.91" Y="3598.24" Z="144.157" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10194) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Behind Enemy Lines" QuestId="10652" GiverName="Veronia" GiverId="20162" X="3068.91" Y="3598.24" Z="144.157" />
+		</If>
+		<TurnIn QuestName="Behind Enemy Lines" QuestId="10652" TurnInName="Caledis Brightdawn" TurnInId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10652) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="A Convincing Disguise" QuestId="10197" GiverName="Caledis Brightdawn" GiverId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<Objective QuestName="A Convincing Disguise" QuestId="10197" Type="CollectItem" ItemId="28635" CollectCount="1" />
+		<Objective QuestName="A Convincing Disguise" QuestId="10197" Type="CollectItem" ItemId="28636" CollectCount="1" />
+		<Objective QuestName="A Convincing Disguise" QuestId="10197" Type="CollectItem" ItemId="28637" CollectCount="1" />
+		<TurnIn QuestName="A Convincing Disguise" QuestId="10197" TurnInName="Caledis Brightdawn" TurnInId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10197) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Information Gathering" QuestId="10198" GiverName="Caledis Brightdawn" GiverId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<!-- REVIEW Q10198 Information Gathering: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10198)) &amp;&amp; (IsQuestCompleted(10198)))">
+			<TurnIn QuestName="Information Gathering" QuestId="10198" TurnInName="Caledis Brightdawn" TurnInId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<If Condition="((HasQuest(10198)) &amp;&amp; (!IsQuestCompleted(10198)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10198" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10198) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Shutting Down Manaforge Coruu" QuestId="10330" GiverName="Caledis Brightdawn" GiverId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<Objective QuestName="Shutting Down Manaforge Coruu" QuestId="10330" Type="CollectItem" ItemId="29396" CollectCount="1" />
+		<!-- REVIEW Q10330 Shutting Down Manaforge Coruu: objective 20417 Coruu Control Console x1: kill credit or scripted event; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10330)) &amp;&amp; (IsQuestCompleted(10330)))">
+			<TurnIn QuestName="Shutting Down Manaforge Coruu" QuestId="10330" TurnInName="Caledis Brightdawn" TurnInId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<If Condition="((HasQuest(10330)) &amp;&amp; (!IsQuestCompleted(10330)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10330" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10330)">
+			<PickUp QuestName="Return to Thalodien" QuestId="10200" GiverName="Caledis Brightdawn" GiverId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<TurnIn QuestName="Return to Thalodien" QuestId="10200" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10330) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Kick Them While They're Down" QuestId="10341" GiverName="Magistrix Larynna" GiverId="19469" X="3077.69" Y="3696.48" Z="142.559" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10200) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Shutting Down Manaforge Duro" QuestId="10338" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<Objective QuestName="Shutting Down Manaforge Duro" QuestId="10338" Type="CollectItem" ItemId="29397" CollectCount="1" />
+		<Objective QuestName="Kick Them While They're Down" QuestId="10341" Type="KillMob" MobId="20207" KillCount="6" />
+		<Objective QuestName="Kick Them While They're Down" QuestId="10341" Type="KillMob" MobId="20139" KillCount="8" />
+		<Objective QuestName="Kick Them While They're Down" QuestId="10341" Type="KillMob" MobId="20140" KillCount="4" />
+		<!-- REVIEW Q10338 Shutting Down Manaforge Duro: objective 20418 Duro Control Console x1: kill credit or scripted event; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10338)) &amp;&amp; (IsQuestCompleted(10338)))">
+			<TurnIn QuestName="Shutting Down Manaforge Duro" QuestId="10338" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<If Condition="((HasQuest(10338)) &amp;&amp; (!IsQuestCompleted(10338)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10338" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Kick Them While They're Down" QuestId="10341" TurnInName="Magistrix Larynna" TurnInId="19469" X="3077.69" Y="3696.48" Z="142.559" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10341) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="A Defector" QuestId="10202" GiverName="Magistrix Larynna" GiverId="19469" X="3077.69" Y="3696.48" Z="142.559" />
+		</If>
+		<TurnIn QuestName="A Defector" QuestId="10202" TurnInName="Magister Theledorn" TurnInId="20920" X="3911.36" Y="4023.48" Z="189.869" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10202) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Damning Evidence" QuestId="10432" GiverName="Magister Theledorn" GiverId="20920" X="3911.36" Y="4023.48" Z="189.869" />
+		</If>
+		<Objective QuestName="Damning Evidence" QuestId="10432" Type="CollectItem" ItemId="29797" CollectCount="8" />
+		<TurnIn QuestName="Damning Evidence" QuestId="10432" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10432) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="A Gift for Voren'thal" QuestId="10508" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<Objective QuestName="A Gift for Voren'thal" QuestId="10508" Type="CollectItem" ItemId="29624" CollectCount="1" />
+		<Objective QuestName="A Gift for Voren'thal" QuestId="10508" Type="CollectItem" ItemId="29625" CollectCount="1" />
+		<TurnIn QuestName="A Gift for Voren'thal" QuestId="10508" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10508) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Bound for Glory" QuestId="10509" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<TurnIn QuestName="Bound for Glory" QuestId="10509" TurnInName="Voren'thal the Seer" TurnInId="18530" X="-2272.61" Y="5576.36" Z="80.0374" />
+		<!-- SKIP Q10507 Turning Point: group quest (5 players) -->
+		<CustomBehavior File="UseItemOn" QuestId="10507" ItemId="30259" MobId="20132" NumOfTimes="1" Range="5" CollectionDistance="200" X="4946.94" Y="3849.21" Z="211.577" />
+		<!-- REVIEW Q10507 Turning Point: group quest (5 players); item 30259 Voren'thal's Presence has no drop or chest near the guide coordinates; item 29796 Socrethar's Teleportation Stone has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10507)) &amp;&amp; (IsQuestCompleted(10507)))">
+			<TurnIn QuestName="Turning Point" QuestId="10507" TurnInName="Voren'thal the Seer" TurnInId="18530" X="-2272.61" Y="5576.36" Z="80.0374" />
+		</If>
+		<If Condition="((HasQuest(10507)) &amp;&amp; (!IsQuestCompleted(10507)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10507" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Karabor Training Grounds" QuestId="10687" GiverName="Larissa Sunstrike" GiverId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68)">
+			<PickUp QuestName="Sunfury Signets" QuestId="10824" GiverName="Battlemage Vyara" GiverId="22211" X="-4103.93" Y="1129.29" Z="43.2364" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; !IsQuestCompleted(10568) &amp;&amp; !HasQuest(10568) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Tablets of Baa'ri" QuestId="10683" GiverName="Arcanist Thelis" GiverId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; !IsQuestCompleted(10619) &amp;&amp; !HasQuest(10619) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="The Ashtongue Broken" QuestId="10807" GiverName="Varen the Reclaimer" GiverId="21953" X="-4081.72" Y="1214.84" Z="79.4043" />
+		</If>
+		<Objective QuestName="Sunfury Signets" QuestId="10824" Type="CollectItem" ItemId="30810" CollectCount="10" />
+		<TurnIn QuestName="Sunfury Signets" QuestId="10824" TurnInName="Battlemage Vyara" TurnInId="22211" X="-4103.93" Y="1129.29" Z="43.2364" />
+		<Objective QuestName="Karabor Training Grounds" QuestId="10687" Type="CollectItem" ItemId="30679" CollectCount="8" />
+		<TurnIn QuestName="Karabor Training Grounds" QuestId="10687" TurnInName="Larissa Sunstrike" TurnInId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10687) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="A Necessary Distraction" QuestId="10688" GiverName="Larissa Sunstrike" GiverId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
+		</If>
+		<!-- REVIEW Q10688 A Necessary Distraction: objective 21892 Azaloth Credit Marker x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10688)) &amp;&amp; (IsQuestCompleted(10688)))">
+			<TurnIn QuestName="A Necessary Distraction" QuestId="10688" TurnInName="Larissa Sunstrike" TurnInId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
+		</If>
+		<If Condition="((HasQuest(10688)) &amp;&amp; (!IsQuestCompleted(10688)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10688" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10688) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Altruis" QuestId="10689" GiverName="Larissa Sunstrike" GiverId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
+		</If>
+		<Objective QuestName="The Ashtongue Broken" QuestId="10807" Type="KillMob" MobId="21803" KillCount="3" />
+		<Objective QuestName="The Ashtongue Broken" QuestId="10807" Type="KillMob" MobId="21454" KillCount="4" />
+		<Objective QuestName="The Ashtongue Broken" QuestId="10807" Type="KillMob" MobId="21453" KillCount="6" />
+		<Objective QuestName="Tablets of Baa'ri" QuestId="10683" Type="CollectItem" ItemId="30596" CollectCount="12" />
+		<TurnIn QuestName="The Ashtongue Broken" QuestId="10807" TurnInName="Varen the Reclaimer" TurnInId="21953" X="-4081.72" Y="1214.84" Z="79.4043" />
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10807) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="The Great Retribution" QuestId="10817" GiverName="Varen the Reclaimer" GiverId="21953" X="-4081.72" Y="1214.84" Z="79.4043" />
+		</If>
+		<TurnIn QuestName="Tablets of Baa'ri" QuestId="10683" TurnInName="Arcanist Thelis" TurnInId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10683) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Oronu the Elder" QuestId="10684" GiverName="Arcanist Thelis" GiverId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
+		</If>
+		<Objective QuestName="Oronu the Elder" QuestId="10684" Type="CollectItem" ItemId="30649" CollectCount="1" />
+		<Objective QuestName="The Great Retribution" QuestId="10817" Type="KillMob" MobId="22082" KillCount="8" />
+		<Objective QuestName="The Great Retribution" QuestId="10817" Type="KillMob" MobId="22084" KillCount="8" />
+		<Objective QuestName="The Great Retribution" QuestId="10817" Type="KillMob" MobId="22081" KillCount="4" />
+		<TurnIn QuestName="Oronu the Elder" QuestId="10684" TurnInName="Arcanist Thelis" TurnInId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10684) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="The Ashtongue Corruptors" QuestId="10685" GiverName="Arcanist Thelis" GiverId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
+		</If>
+		<Objective QuestName="The Ashtongue Corruptors" QuestId="10685" Type="CollectItem" ItemId="30691" CollectCount="1" />
+		<Objective QuestName="The Ashtongue Corruptors" QuestId="10685" Type="CollectItem" ItemId="30692" CollectCount="1" />
+		<Objective QuestName="The Ashtongue Corruptors" QuestId="10685" Type="CollectItem" ItemId="30694" CollectCount="1" />
+		<Objective QuestName="The Ashtongue Corruptors" QuestId="10685" Type="CollectItem" ItemId="30693" CollectCount="1" />
+		<TurnIn QuestName="The Ashtongue Corruptors" QuestId="10685" TurnInName="Arcanist Thelis" TurnInId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10685) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="The Warden's Cage" QuestId="10686" GiverName="Arcanist Thelis" GiverId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
+		</If>
+		<TurnIn QuestName="The Warden's Cage" QuestId="10686" TurnInName="Sanoru" TurnInId="21826" X="-3765.8" Y="1071.98" Z="58.3175" />
+		<TurnIn QuestName="Altruis" QuestId="10640" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		<If Condition="(Me.Level &gt;= 68)">
+			<PickUp QuestName="Against All Odds" QuestId="10669" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68)">
+			<PickUp QuestName="Against the Illidari" QuestId="10668" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68)">
+			<PickUp QuestName="Against the Legion" QuestId="10641" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		</If>
+		<Objective QuestName="Against the Illidari" QuestId="10668" Type="KillMob" MobId="21928" KillCount="1" />
+		<!-- REVIEW Q10641 Against the Legion: use item 30850: target 21925 Avatar of Sathal has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10641)) &amp;&amp; (IsQuestCompleted(10641)))">
+			<TurnIn QuestName="Against the Legion" QuestId="10641" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		</If>
+		<If Condition="((HasQuest(10641)) &amp;&amp; (!IsQuestCompleted(10641)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10641" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Against the Illidari" QuestId="10668" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		<!-- REVIEW Q10669 Against All Odds: use item 30853: target 21894 Xeleth has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10669)) &amp;&amp; (IsQuestCompleted(10669)))">
+			<TurnIn QuestName="Against All Odds" QuestId="10669" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		</If>
+		<If Condition="((HasQuest(10669)) &amp;&amp; (!IsQuestCompleted(10669)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10669" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68)">
+			<PickUp QuestName="Illidan's Pupil" QuestId="10646" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		</If>
+		<!-- REVIEW Q10646 Illidan's Pupil: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10646)) &amp;&amp; (IsQuestCompleted(10646)))">
+			<TurnIn QuestName="Illidan's Pupil" QuestId="10646" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		</If>
+		<If Condition="((HasQuest(10646)) &amp;&amp; (!IsQuestCompleted(10646)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10646" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10646)">
+			<PickUp QuestName="The Book of Fel Names" QuestId="10649" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		</If>
+		<!-- REVIEW Q10649 The Book of Fel Names: item 30808 Book of Fel Names has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10649)) &amp;&amp; (IsQuestCompleted(10649)))">
+			<TurnIn QuestName="The Book of Fel Names" QuestId="10649" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		</If>
+		<If Condition="((HasQuest(10649)) &amp;&amp; (!IsQuestCompleted(10649)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10649" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10649) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Return to the Scryers" QuestId="10691" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
+		</If>
+		<TurnIn QuestName="Return to the Scryers" QuestId="10691" TurnInName="Larissa Sunstrike" TurnInId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
+		<!-- SKIP Q10692 Varedis Must Be Stopped: group quest (5 players) -->
+		<Objective QuestName="Varedis Must Be Stopped" QuestId="10692" Type="KillMob" MobId="21164" KillCount="1" />
+		<Objective QuestName="Varedis Must Be Stopped" QuestId="10692" Type="KillMob" MobId="21171" KillCount="1" />
+		<Objective QuestName="Varedis Must Be Stopped" QuestId="10692" Type="KillMob" MobId="21168" KillCount="1" />
+		<Objective QuestName="Varedis Must Be Stopped" QuestId="10692" Type="KillMob" MobId="21178" KillCount="1" />
+		<!-- REVIEW Q10692 Varedis Must Be Stopped: group quest (5 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10692)) &amp;&amp; (IsQuestCompleted(10692)))">
+			<TurnIn QuestName="Varedis Must Be Stopped" QuestId="10692" TurnInName="Larissa Sunstrike" TurnInId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
+		</If>
+		<If Condition="((HasQuest(10692)) &amp;&amp; (!IsQuestCompleted(10692)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10692" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Firewing Signets" QuestId="10412" Type="CollectItem" ItemId="29426" CollectCount="10" />
+		<TurnIn QuestName="Firewing Signets" QuestId="10412" TurnInName="Magistrix Fyalenn" TurnInId="18531" X="-2183.15" Y="5544.87" Z="64.1556" />
+		<TurnIn QuestName="Sunfury Signets" QuestId="10656" TurnInName="Magistrix Fyalenn" TurnInId="18531" X="-2183.15" Y="5544.87" Z="64.1556" />
+		<!-- REVIEW Q10416 Synthesis of Power: item 29739 Arcane Tome has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10416)) &amp;&amp; (IsQuestCompleted(10416)))">
+			<TurnIn QuestName="Synthesis of Power" QuestId="10416" TurnInName="Voren'thal the Seer" TurnInId="18530" X="-2272.61" Y="5576.36" Z="80.0374" />
+		</If>
+		<If Condition="((HasQuest(10416)) &amp;&amp; (!IsQuestCompleted(10416)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10416" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10656)">
+			<PickUp QuestName="More Sunfury Signets" QuestId="10658" GiverName="Magistrix Fyalenn" GiverId="18531" X="-2183.15" Y="5544.87" Z="64.1556" />
+		</If>
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(10416)">
+			<PickUp QuestName="Arcane Tomes" QuestId="10419" GiverName="Voren'thal the Seer" GiverId="18530" X="-2272.61" Y="5576.36" Z="80.0374" />
+		</If>
+	</QuestOrder>
+</HBProfile>

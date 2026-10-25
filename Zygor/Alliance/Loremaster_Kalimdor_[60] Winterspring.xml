@@ -1,0 +1,522 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Kalimdor\[60] Winterspring</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Innkeeper Vizzie" Entry="11118" Type="Food" X="6695.15" Y="-4673.04" Z="721.65" />
+		<Vendor Name="Lunar Festival Vendor" Entry="15898" Type="Food" X="10148" Y="2572.63" Z="1320.7" />
+		<Vendor Name="Himmik" Entry="11187" Type="Food" X="6679.62" Y="-4670.89" Z="721.797" />
+		<Vendor Name="Natheril Raincaller" Entry="2084" Type="Food" X="7073.94" Y="-3969.67" Z="745.713" />
+		<Vendor Name="Innkeeper Fizzgrimble" Entry="7733" Type="Food" X="-7158.96" Y="-3841.61" Z="8.8481" />
+		<Vendor Name="Argent Quartermaster Lightspark" Entry="10857" Type="Repair" X="966.826" Y="-1425.31" Z="65.3258" />
+		<Vendor Name="Wixxrak" Entry="11184" Type="Repair" X="6733.39" Y="-4699.04" Z="721.453" />
+		<Vendor Name="Leonard Porter" Entry="12942" Type="Repair" X="949.885" Y="-1435.65" Z="62.6731" />
+		<Vendor Name="Blixxrak" Entry="11183" Type="Repair" X="6742.89" Y="-4694.97" Z="721.453" />
+		<Vendor Name="Nixxrak" Entry="11182" Type="Repair" X="6740.85" Y="-4691.69" Z="721.453" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="3661" Name="Favored of Elune?">
+		<Objective Type="CollectItem" ItemId="10819" CollectCount="15">
+			<CollectFrom>
+				<GameObject Name="Wildkin Feather" Id="153239" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="364.282" Y="-2857" Z="117.484" />
+				<Hotspot X="362.094" Y="-2938.3" Z="119.806" />
+				<Hotspot X="284.176" Y="-3017.59" Z="118.026" />
+				<Hotspot X="332.095" Y="-3057.31" Z="121.807" />
+				<Hotspot X="177.208" Y="-3011.15" Z="125.567" />
+				<Hotspot X="229.179" Y="-2891.25" Z="107.297" />
+				<Hotspot X="251.461" Y="-2852.89" Z="111.913" />
+				<Hotspot X="107.49" Y="-2886.59" Z="114.365" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="978" Name="Moontouched Wildkin">
+		<Objective Type="CollectItem" ItemId="12383" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Moontouched Feather" Id="175407" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6488.51" Y="-2790.97" Z="578.171" />
+				<Hotspot X="6457.9" Y="-2842.83" Z="587.436" />
+				<Hotspot X="6366.6" Y="-2896.57" Z="606.388" />
+				<Hotspot X="6440.67" Y="-2969.9" Z="575.597" />
+				<Hotspot X="6509.34" Y="-2979.35" Z="591.862" />
+				<Hotspot X="6359.31" Y="-2789.68" Z="582.855" />
+				<Hotspot X="6450.06" Y="-2665.02" Z="546.88" />
+				<Hotspot X="6439.02" Y="-2589.94" Z="563.526" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8464" Name="Winterfall Activity">
+		<Objective Type="KillMob" MobId="7440" KillCount="8">
+			<Hotspots>
+				<Hotspot X="6484.93" Y="-3165.97" Z="570.215" />
+				<Hotspot X="6452.78" Y="-3114.61" Z="573.215" />
+				<Hotspot X="6513.49" Y="-3258.93" Z="574.014" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5082" Name="Threat of the Winterfall">
+		<Objective Type="KillMob" MobId="7442" KillCount="8">
+			<Hotspots>
+				<Hotspot X="6483.47" Y="-3250.01" Z="571.942" />
+				<Hotspot X="6450.34" Y="-3217.9" Z="574.931" />
+				<Hotspot X="6516.79" Y="-3214.06" Z="572.253" />
+				<Hotspot X="6518.05" Y="-3318.88" Z="578.841" />
+				<Hotspot X="6449.68" Y="-3319" Z="588.167" />
+				<Hotspot X="6418.15" Y="-3282.71" Z="594.632" />
+				<Hotspot X="6509.65" Y="-3083.66" Z="594.202" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="7440" KillCount="8">
+			<Hotspots>
+				<Hotspot X="6514.87" Y="-3270.09" Z="574.585" />
+				<Hotspot X="6453.81" Y="-3176.24" Z="572.284" />
+				<Hotspot X="6496.58" Y="-3139.26" Z="571.386" />
+				<Hotspot X="6452.78" Y="-3114.61" Z="573.215" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5086" Name="Toxic Horrors">
+		<Objective Type="CollectItem" ItemId="12822" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Toxic Horror" Id="7132" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6248.27" Y="-1202.01" Z="371.053" />
+				<Hotspot X="6219.77" Y="-1255.34" Z="366.847" />
+				<Hotspot X="6235.69" Y="-1294.39" Z="371.684" />
+				<Hotspot X="6272.76" Y="-1267.69" Z="367.443" />
+				<Hotspot X="6188.19" Y="-1170.89" Z="370.701" />
+				<Hotspot X="6220.18" Y="-1123.06" Z="370.754" />
+				<Hotspot X="6118.68" Y="-1214.41" Z="374.216" />
+				<Hotspot X="6097.2" Y="-1277.57" Z="383.126" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5087" Name="Winterfall Runners">
+		<Objective Type="CollectItem" ItemId="12829" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Winterfall Runner" Id="10916" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6912.84" Y="-1821.66" Z="570.909" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5054" Name="Ursius of the Shardtooth">
+		<Objective Type="KillMob" MobId="10806" KillCount="1">
+			<Hotspots>
+				<Hotspot X="7390.74" Y="-4861.3" Z="717.984" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5245" Name="Troubled Spirits of Kel'Theril">
+		<Objective Type="CollectItem" ItemId="12897" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Highborne Relic Fragment" Id="175891" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6558.83" Y="-3929.28" Z="659.249" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="12899" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Highborne Relic Fragment" Id="175893" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6568.88" Y="-4038.71" Z="659.201" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="12898" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Highborne Relic Fragment" Id="175892" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6477.24" Y="-4101.61" Z="659.443" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="12896" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Highborne Relic Fragment" Id="175888" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6498.79" Y="-4231.49" Z="659.381" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3783" Name="Are We There, Yeti?">
+		<Objective Type="CollectItem" ItemId="12366" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Rogue Ice Thistle" Id="7457" />
+				<Mob Name="Ice Thistle Yeti" Id="7458" />
+				<Mob Name="Ice Thistle Matriarch" Id="7459" />
+				<Mob Name="Ice Thistle Patriarch" Id="7460" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6553.84" Y="-5107.75" Z="769.852" />
+				<Hotspot X="6504.5" Y="-5120.59" Z="767.827" />
+				<Hotspot X="6479.5" Y="-5079.67" Z="755.486" />
+				<Hotspot X="6553.07" Y="-5050.06" Z="722.443" />
+				<Hotspot X="6591.75" Y="-5061.57" Z="739.001" />
+				<Hotspot X="6588.97" Y="-5016.63" Z="713.073" />
+				<Hotspot X="6589.16" Y="-5167.14" Z="765.908" />
+				<Hotspot X="6561.96" Y="-5202.56" Z="764.172" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4809" Name="Chillwind Horns">
+		<Objective Type="CollectItem" ItemId="12444" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Fledgling Chillwind" Id="7447" />
+				<Mob Name="Chillwind Chimaera" Id="7448" />
+				<Mob Name="Chillwind Ravager" Id="7449" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6563.46" Y="-4410.48" Z="705.638" />
+				<Hotspot X="6640.05" Y="-4373.21" Z="707.87" />
+				<Hotspot X="6779.17" Y="-4263.95" Z="718.923" />
+				<Hotspot X="6547.24" Y="-4552.93" Z="708.493" />
+				<Hotspot X="6474.88" Y="-4494.19" Z="726.521" />
+				<Hotspot X="6424.27" Y="-4434.93" Z="729.323" />
+				<Hotspot X="6362.5" Y="-4557.77" Z="747.848" />
+				<Hotspot X="6559.62" Y="-4661.44" Z="695.58" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5055" Name="Brumeran of the Chillwind">
+		<Objective Type="KillMob" MobId="10807" KillCount="1">
+			<Hotspots>
+				<Hotspot X="5792.93" Y="-4757.32" Z="776.796" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="969" Name="Luck Be With You">
+		<Objective Type="CollectItem" ItemId="12334" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Frostmaul Giant" Id="7428" />
+				<Mob Name="Frostmaul Preserver" Id="7429" />
+				<Mob Name="Kashoch the Reaver" Id="10198" />
+				<GameObject Name="Frostmaul Shards" Id="175324" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5291.87" Y="-4709" Z="691.345" />
+				<Hotspot X="5312.13" Y="-4674.25" Z="692.328" />
+				<Hotspot X="5345.85" Y="-4651.97" Z="691.926" />
+				<Hotspot X="5322.92" Y="-4608.33" Z="693.754" />
+				<Hotspot X="5211.18" Y="-4576.94" Z="834.724" />
+				<Hotspot X="5241.49" Y="-4758.37" Z="691.936" />
+				<Hotspot X="5277.2" Y="-4781.89" Z="690.439" />
+				<Hotspot X="5250.98" Y="-4820.29" Z="690.783" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4864" Name="Enraged Wildkin">
+		<Objective Type="CollectItem" ItemId="12525" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Jaron's Supplies" Id="175628" />
+				<GameObject Name="Jaron's Supplies" Id="175629" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5658.78" Y="-4675.59" Z="775.469" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="12524" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Crazed Owlbeast" Id="7452" />
+				<Mob Name="Moontouched Owlbeast" Id="7453" />
+				<Mob Name="Berserk Owlbeast" Id="7454" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5682.75" Y="-4955.65" Z="804.29" />
+				<Hotspot X="5720.69" Y="-4979.07" Z="808.197" />
+				<Hotspot X="5675.77" Y="-4999.81" Z="807.178" />
+				<Hotspot X="5641.75" Y="-4977.44" Z="809.313" />
+				<Hotspot X="5604.25" Y="-4952.87" Z="820.938" />
+				<Hotspot X="5641.82" Y="-4931.1" Z="807.639" />
+				<Hotspot X="5717.49" Y="-4914.25" Z="800.549" />
+				<Hotspot X="5693.92" Y="-5046.95" Z="807.375" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="977" Name="Are We There, Yeti?">
+		<Objective Type="CollectItem" ItemId="12367" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Ice Thistle Matriarch" Id="7459" />
+				<Mob Name="Ice Thistle Patriarch" Id="7460" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6589.16" Y="-5167.14" Z="765.908" />
+				<Hotspot X="6561.96" Y="-5202.56" Z="764.172" />
+				<Hotspot X="6564.4" Y="-5264.12" Z="753.809" />
+				<Hotspot X="6650.65" Y="-5283.56" Z="753.521" />
+				<Hotspot X="6591.75" Y="-5061.57" Z="739.001" />
+				<Hotspot X="6553.07" Y="-5050.06" Z="722.443" />
+				<Hotspot X="6471.11" Y="-4994.14" Z="732.804" />
+				<Hotspot X="6406.12" Y="-5062.72" Z="749.77" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5121" Name="High Chief Winterfall">
+		<Objective Type="KillMob" MobId="10738" KillCount="1">
+			<Hotspots>
+				<Hotspot X="6725.09" Y="-5277.69" Z="778.638" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-Kalimdor.lua: Ding80's Loremaster Alliance Guides\Kalimdor\[60] Winterspring -->
+		<If Condition="Me.MapId != 1">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Kalimdor_[60] Winterspring");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Kalimdor" />
+		</If>
+		<If Condition="(Me.Level &gt;= 42)">
+			<PickUp QuestName="Handle With Care" QuestId="3022" GiverName="Curgle Cranklehop" GiverId="7763" X="-7112.68" Y="-3831.32" Z="9.7369" />
+		</If>
+		<TurnIn QuestName="Handle With Care" QuestId="3022" TurnInName="Erelas Ambersky" TurnInId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		<If Condition="(Me.Level &gt;= 42)">
+			<PickUp QuestName="Favored of Elune?" QuestId="3661" GiverName="Erelas Ambersky" GiverId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		</If>
+		<If Condition="(Me.Level &gt;= 50)">
+			<PickUp QuestName="Broodling Essence" QuestId="4726" GiverName="Tinkee Steamboil" GiverId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
+		</If>
+		<!-- REVIEW Q4726 Broodling Essence: item 12283 Broodling Essence has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4726)) &amp;&amp; (IsQuestCompleted(4726)))">
+			<TurnIn QuestName="Broodling Essence" QuestId="4726" TurnInName="Tinkee Steamboil" TurnInId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
+		</If>
+		<If Condition="((HasQuest(4726)) &amp;&amp; (!IsQuestCompleted(4726)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4726" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(4726)">
+			<PickUp QuestName="Felnok Steelspring" QuestId="4808" GiverName="Tinkee Steamboil" GiverId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
+		</If>
+		<Objective QuestName="Favored of Elune?" QuestId="3661" Type="CollectItem" ItemId="10819" CollectCount="15" />
+		<TurnIn QuestName="Favored of Elune?" QuestId="3661" TurnInName="Erelas Ambersky" TurnInId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(3661)">
+			<PickUp QuestName="Moontouched Wildkin" QuestId="978" GiverName="Erelas Ambersky" GiverId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		</If>
+		<If Condition="(Me.Level &gt;= 53)">
+			<PickUp QuestName="To Winterspring!" QuestId="5249" GiverName="Ivy Leafrunner" GiverId="10924" X="4006.03" Y="-1288.36" Z="254.368" />
+		</If>
+		<If Condition="(Me.Level &gt;= 45)">
+			<PickUp QuestName="Winterfall Activity" QuestId="8464" GiverName="Salfa" GiverId="11556" X="6900.44" Y="-2285.77" Z="586.148" />
+		</If>
+		<If Condition="(Me.Level &gt;= 51) &amp;&amp; IsQuestCompleted(980)">
+			<PickUp QuestName="Strange Sources" QuestId="4842" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<If Condition="(Me.Level &gt;= 52)">
+			<PickUp QuestName="Threat of the Winterfall" QuestId="5082" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<Objective QuestName="Moontouched Wildkin" QuestId="978" Type="CollectItem" ItemId="12383" CollectCount="10" />
+		<Objective QuestName="Threat of the Winterfall" QuestId="5082" Type="KillMob" MobId="7442" KillCount="8" />
+		<Objective QuestName="Threat of the Winterfall" QuestId="5082" Type="KillMob" MobId="7440" KillCount="8" />
+		<If Condition="HasItem(12771) &amp;&amp; !HasQuest(5083) &amp;&amp; !IsQuestCompleted(5083) &amp;&amp; (Me.Level &gt;= 52)">
+			<PickUp QuestName="Winterfall Firewater" QuestId="5083" GiverName="Empty Firewater Flask" GiverId="12771" GiverType="Item" />
+		</If>
+		<!-- REVIEW Q5082 Threat of the Winterfall: kill 7441 Winterfall Totemic x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(5082)) &amp;&amp; (IsQuestCompleted(5082)))">
+			<TurnIn QuestName="Threat of the Winterfall" QuestId="5082" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<If Condition="((HasQuest(5082)) &amp;&amp; (!IsQuestCompleted(5082)))">
+			<CustomBehavior File="AbandonQuest" QuestId="5082" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Winterfall Firewater" QuestId="5083" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(5083)">
+			<PickUp QuestName="Falling to Corruption" QuestId="5084" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<TurnIn QuestName="Falling to Corruption" QuestId="5084" TurnInName="Deadwood Cauldron" TurnInId="176091" TurnInType="Object" X="6909.33" Y="-1820.12" Z="570.555" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(5084)">
+			<PickUp QuestName="Mystery Goo" QuestId="5085" GiverName="Deadwood Cauldron" GiverId="176091" GiverType="Object" X="6909.33" Y="-1820.12" Z="570.555" />
+		</If>
+		<TurnIn QuestName="Mystery Goo" QuestId="5085" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(5085)">
+			<PickUp QuestName="Toxic Horrors" QuestId="5086" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<Objective QuestName="Toxic Horrors" QuestId="5086" Type="CollectItem" ItemId="12822" CollectCount="3" />
+		<TurnIn QuestName="Moontouched Wildkin" QuestId="978" TurnInName="Erelas Ambersky" TurnInId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(978)">
+			<PickUp QuestName="Find Ranshalla" QuestId="979" GiverName="Erelas Ambersky" GiverId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		</If>
+		<TurnIn QuestName="Toxic Horrors" QuestId="5086" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(5086)">
+			<PickUp QuestName="Winterfall Runners" QuestId="5087" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<Objective QuestName="Winterfall Runners" QuestId="5087" Type="CollectItem" ItemId="12829" CollectCount="1" />
+		<If Condition="(Me.Level &gt;= 53)">
+			<PickUp QuestName="Enraged Wildkin" QuestId="6604" GiverName="Harlo Wigglesworth" GiverId="11755" X="6714.13" Y="-4655.94" Z="721.72" />
+		</If>
+		<If Condition="(Me.Level &gt;= 53)">
+			<PickUp QuestName="Ursius of the Shardtooth" QuestId="5054" GiverName="Storm Shadowhoof" GiverId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
+		</If>
+		<TurnIn QuestName="To Winterspring!" QuestId="5249" TurnInName="Wynd Nightchaser" TurnInId="11079" X="7094.94" Y="-4006.68" Z="744.901" />
+		<If Condition="(Me.Level &gt;= 53)">
+			<PickUp QuestName="The Ruins of Kel'Theril" QuestId="5244" GiverName="Wynd Nightchaser" GiverId="11079" X="7094.94" Y="-4006.68" Z="744.901" />
+		</If>
+		<TurnIn QuestName="The Ruins of Kel'Theril" QuestId="5244" TurnInName="Jaron Stoneshaper" TurnInId="10301" X="7093.02" Y="-4018.56" Z="744.888" />
+		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(5244)">
+			<PickUp QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" GiverName="Jaron Stoneshaper" GiverId="10301" X="7093.02" Y="-4018.56" Z="744.888" />
+		</If>
+		<TurnIn QuestName="Enraged Wildkin" QuestId="6604" TurnInName="Jaron Stoneshaper" TurnInId="10301" X="7093.02" Y="-4018.56" Z="744.888" />
+		<If Condition="(Me.Level &gt;= 53)">
+			<PickUp QuestName="Enraged Wildkin" QuestId="4861" GiverName="Jaron Stoneshaper" GiverId="10301" X="7093.02" Y="-4018.56" Z="744.888" />
+		</If>
+		<Objective QuestName="Ursius of the Shardtooth" QuestId="5054" Type="KillMob" MobId="10806" KillCount="1" />
+		<Objective QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" Type="CollectItem" ItemId="12897" CollectCount="1" />
+		<Objective QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" Type="CollectItem" ItemId="12899" CollectCount="1" />
+		<Objective QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" Type="CollectItem" ItemId="12898" CollectCount="1" />
+		<Objective QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" Type="CollectItem" ItemId="12896" CollectCount="1" />
+		<If Condition="(Me.Level &gt;= 52)">
+			<PickUp QuestName="Are We There, Yeti?" QuestId="3783" GiverName="Umi Rumplesnicker" GiverId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		</If>
+		<TurnIn QuestName="Felnok Steelspring" QuestId="4808" TurnInName="Felnok Steelspring" TurnInId="10468" X="6705.58" Y="-4692.07" Z="721.272" />
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(4808)">
+			<PickUp QuestName="Chillwind Horns" QuestId="4809" GiverName="Felnok Steelspring" GiverId="10468" X="6705.58" Y="-4692.07" Z="721.272" />
+		</If>
+		<TurnIn QuestName="Ursius of the Shardtooth" QuestId="5054" TurnInName="Storm Shadowhoof" TurnInId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
+		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(5054)">
+			<PickUp QuestName="Brumeran of the Chillwind" QuestId="5055" GiverName="Storm Shadowhoof" GiverId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
+		</If>
+		<If Condition="(Me.Level &gt;= 55)">
+			<PickUp QuestName="Luck Be With You" QuestId="969" GiverName="Witch Doctor Mau'ari" GiverId="10307" X="6720.53" Y="-4712.91" Z="721.976" />
+		</If>
+		<Objective QuestName="Are We There, Yeti?" QuestId="3783" Type="CollectItem" ItemId="12366" CollectCount="10" />
+		<Objective QuestName="Chillwind Horns" QuestId="4809" Type="CollectItem" ItemId="12444" CollectCount="8" />
+		<TurnIn QuestName="Enraged Wildkin" QuestId="4861" TurnInName="Damaged Crate" TurnInId="175587" TurnInType="Object" X="5703.49" Y="-4504.99" Z="762.929" />
+		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(4861)">
+			<PickUp QuestName="Enraged Wildkin" QuestId="4863" GiverName="Damaged Crate" GiverId="175587" GiverType="Object" X="5703.49" Y="-4504.99" Z="762.929" />
+		</If>
+		<TurnIn QuestName="Enraged Wildkin" QuestId="4863" TurnInName="Jaron's Wagon" TurnInId="175586" TurnInType="Object" X="5661.34" Y="-4679.21" Z="775.067" />
+		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(4863)">
+			<PickUp QuestName="Enraged Wildkin" QuestId="4864" GiverName="Jaron's Wagon" GiverId="175586" GiverType="Object" X="5661.34" Y="-4679.21" Z="775.067" />
+		</If>
+		<Objective QuestName="Enraged Wildkin" QuestId="4864" Type="CollectItem" ItemId="12525" CollectCount="1" />
+		<TurnIn QuestName="Find Ranshalla" QuestId="979" TurnInName="Ranshalla" TurnInId="10300" X="5717.89" Y="-4794.96" Z="778.147" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(979)">
+			<PickUp QuestName="Guardians of the Altar" QuestId="4901" GiverName="Ranshalla" GiverId="10300" X="5717.89" Y="-4794.96" Z="778.147" />
+		</If>
+		<Objective QuestName="Enraged Wildkin" QuestId="4864" Type="CollectItem" ItemId="12524" CollectCount="1" />
+		<Objective QuestName="Luck Be With You" QuestId="969" Type="CollectItem" ItemId="12334" CollectCount="4" />
+		<Objective QuestName="Brumeran of the Chillwind" QuestId="5055" Type="KillMob" MobId="10807" KillCount="1" />
+		<TurnIn QuestName="Chillwind Horns" QuestId="4809" TurnInName="Felnok Steelspring" TurnInId="10468" X="6705.58" Y="-4692.07" Z="721.272" />
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(4809)">
+			<PickUp QuestName="Return to Tinkee" QuestId="4810" GiverName="Felnok Steelspring" GiverId="10468" X="6705.58" Y="-4692.07" Z="721.272" />
+		</If>
+		<TurnIn QuestName="Brumeran of the Chillwind" QuestId="5055" TurnInName="Storm Shadowhoof" TurnInId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
+		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(5055)">
+			<PickUp QuestName="Shy-Rotam" QuestId="5056" GiverName="Storm Shadowhoof" GiverId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
+		</If>
+		<TurnIn QuestName="Luck Be With You" QuestId="969" TurnInName="Witch Doctor Mau'ari" TurnInId="10307" X="6720.53" Y="-4712.91" Z="721.976" />
+		<If Condition="(Me.Level &gt;= 55) &amp;&amp; IsQuestCompleted(969)">
+			<PickUp QuestName="Cache of Mau'ari" QuestId="975" GiverName="Witch Doctor Mau'ari" GiverId="10307" X="6720.53" Y="-4712.91" Z="721.976" />
+		</If>
+		<!-- REVIEW Q975 Cache of Mau'ari: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(975)) &amp;&amp; (IsQuestCompleted(975)))">
+			<TurnIn QuestName="Cache of Mau'ari" QuestId="975" TurnInName="Witch Doctor Mau'ari" TurnInId="10307" X="6720.53" Y="-4712.91" Z="721.976" />
+		</If>
+		<If Condition="((HasQuest(975)) &amp;&amp; (!IsQuestCompleted(975)))">
+			<CustomBehavior File="AbandonQuest" QuestId="975" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Are We There, Yeti?" QuestId="3783" TurnInName="Umi Rumplesnicker" TurnInId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(3783)">
+			<PickUp QuestName="Are We There, Yeti?" QuestId="977" GiverName="Umi Rumplesnicker" GiverId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		</If>
+		<TurnIn QuestName="Enraged Wildkin" QuestId="4864" TurnInName="Jaron Stoneshaper" TurnInId="10301" X="7093.02" Y="-4018.56" Z="744.888" />
+		<If Condition="((HasQuest(4842)) &amp;&amp; (!IsQuestCompleted(4842)))">
+			<RunTo X="5018.91" Y="-4563.94" Z="851.75" />
+		</If>
+		<!-- REVIEW Q4842 Strange Sources: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4842)) &amp;&amp; (IsQuestCompleted(4842)))">
+			<TurnIn QuestName="Strange Sources" QuestId="4842" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<If Condition="((HasQuest(4842)) &amp;&amp; (!IsQuestCompleted(4842)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4842" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Winterfall Runners" QuestId="5087" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(5087)">
+			<PickUp QuestName="High Chief Winterfall" QuestId="5121" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<Objective QuestName="High Chief Winterfall" QuestId="5121" Type="KillMob" MobId="10738" KillCount="1" />
+		<If Condition="HasItem(12842) &amp;&amp; !HasQuest(5123) &amp;&amp; !IsQuestCompleted(5123) &amp;&amp; (Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(5087)">
+			<PickUp QuestName="The Final Piece" QuestId="5123" GiverName="Crudely-written Log" GiverId="12842" GiverType="Item" />
+		</If>
+		<Objective QuestName="Winterfall Activity" QuestId="8464" Type="KillMob" MobId="7440" KillCount="8" />
+		<Objective QuestName="Are We There, Yeti?" QuestId="977" Type="CollectItem" ItemId="12367" CollectCount="2" />
+		<TurnIn QuestName="Are We There, Yeti?" QuestId="977" TurnInName="Umi Rumplesnicker" TurnInId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(977)">
+			<PickUp QuestName="Are We There, Yeti?" QuestId="5163" GiverName="Umi Rumplesnicker" GiverId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="5163" ItemId="12928" MobId="10978" NumOfTimes="1" Range="5" CollectionDistance="200" X="6705.61" Y="-4686.18" Z="721.974" />
+		<!-- REVIEW Q5056 Shy-Rotam: collect 10737 Shy-Rotam x1: kill credit or scripted event; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(5056)) &amp;&amp; (IsQuestCompleted(5056)))">
+			<TurnIn QuestName="Shy-Rotam" QuestId="5056" TurnInName="Storm Shadowhoof" TurnInId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
+		</If>
+		<If Condition="((HasQuest(5056)) &amp;&amp; (!IsQuestCompleted(5056)))">
+			<CustomBehavior File="AbandonQuest" QuestId="5056" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(5056)">
+			<PickUp QuestName="Past Endeavors" QuestId="5057" GiverName="Storm Shadowhoof" GiverId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
+		</If>
+		<TurnIn QuestName="Past Endeavors" QuestId="5057" TurnInName="Storm Shadowhoof" TurnInId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
+		<TurnIn QuestName="High Chief Winterfall" QuestId="5121" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<TurnIn QuestName="The Final Piece" QuestId="5123" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(5123)">
+			<PickUp QuestName="Words of the High Chief" QuestId="5128" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		</If>
+		<!-- REVIEW Q8464 Winterfall Activity: kill 7439 Winterfall Shaman x8: kill credit or scripted event; kill 7438 Winterfall Ursa x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8464)) &amp;&amp; (IsQuestCompleted(8464)))">
+			<TurnIn QuestName="Winterfall Activity" QuestId="8464" TurnInName="Salfa" TurnInId="11556" X="6900.44" Y="-2285.77" Z="586.148" />
+		</If>
+		<If Condition="((HasQuest(8464)) &amp;&amp; (!IsQuestCompleted(8464)))">
+			<CustomBehavior File="AbandonQuest" QuestId="8464" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Words of the High Chief" QuestId="5128" TurnInName="Kelek Skykeeper" TurnInId="10920" X="3999.43" Y="-1298.66" Z="254.258" />
+		<CustomBehavior File="UseItemOn" QuestId="5163" ItemId="12928" MobId="7583" NumOfTimes="1" Range="5" CollectionDistance="200" X="-7111.11" Y="-3741.78" Z="8.6093" />
+		<CustomBehavior File="UseItemOn" QuestId="5163" ItemId="12928" MobId="10977" NumOfTimes="1" Range="5" CollectionDistance="200" X="-6197.86" Y="-1082.17" Z="-209.164" />
+		<!-- REVIEW Q5163 Are We There, Yeti?: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(5163)) &amp;&amp; (IsQuestCompleted(5163)))">
+			<TurnIn QuestName="Are We There, Yeti?" QuestId="5163" TurnInName="Umi Rumplesnicker" TurnInId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		</If>
+		<If Condition="((HasQuest(5163)) &amp;&amp; (!IsQuestCompleted(5163)))">
+			<CustomBehavior File="AbandonQuest" QuestId="5163" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q4901 Guardians of the Altar: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4901)) &amp;&amp; (IsQuestCompleted(4901)))">
+			<TurnIn QuestName="Guardians of the Altar" QuestId="4901" TurnInName="Erelas Ambersky" TurnInId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		</If>
+		<If Condition="((HasQuest(4901)) &amp;&amp; (!IsQuestCompleted(4901)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4901" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(4901)">
+			<PickUp QuestName="Wildkin of Elune" QuestId="4902" GiverName="Erelas Ambersky" GiverId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		</If>
+		<TurnIn QuestName="Wildkin of Elune" QuestId="4902" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" X="10173" Y="2569.92" Z="1366.96" />
+		<TurnIn QuestName="Return to Tinkee" QuestId="4810" TurnInName="Tinkee Steamboil" TurnInId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
+		<TurnIn QuestName="The Everlook Report" QuestId="6028" TurnInName="Argent Officer Pureheart" TurnInId="10840" X="971.654" Y="-1430.91" Z="65.1563" />
+		<TurnIn QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" TurnInName="Aurora Skycaller" TurnInId="10304" X="3232.15" Y="-4256.49" Z="98.206" />
+		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(5245)">
+			<PickUp QuestName="Fragments of the Past" QuestId="5246" GiverName="Aurora Skycaller" GiverId="10304" X="3232.15" Y="-4256.49" Z="98.206" />
+		</If>
+	</QuestOrder>
+</HBProfile>

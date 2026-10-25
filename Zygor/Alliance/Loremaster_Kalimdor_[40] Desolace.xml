@@ -1,0 +1,537 @@
+<HBProfile>
+	<Name>Zygor Loremaster\Kalimdor\[40] Desolace</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Barkeep Kelly" Entry="2366" Type="Food" X="-849.45" Y="-583.486" Z="11.7881" />
+		<Vendor Name="Innkeeper Anderson" Entry="2352" Type="Food" X="-857.096" Y="-570.751" Z="11.1649" />
+		<Vendor Name="Neema" Entry="2364" Type="Food" X="-863.837" Y="-569.354" Z="11.3463" />
+		<Vendor Name="Christi Galvanis" Entry="12960" Type="Food" X="243.016" Y="1238.59" Z="192.236" />
+		<Vendor Name="Innkeeper Lyshaerya" Entry="11103" Type="Food" X="255.615" Y="1253.76" Z="192.224" />
+		<Vendor Name="Robert Aebischer" Entry="3543" Type="Repair" X="-815.529" Y="-572.187" Z="15.3116" />
+		<Vendor Name="Maxton Strang" Entry="1322" Type="Repair" X="202.837" Y="1179.19" Z="168.082" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="1387" Name="Centaur Bounty">
+		<Objective Type="CollectItem" ItemId="6067" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Kolkar Centaur" Id="4632" />
+				<Mob Name="Kolkar Scout" Id="4633" />
+				<Mob Name="Kolkar Mauler" Id="4634" />
+				<Mob Name="Kolkar Windchaser" Id="4635" />
+				<Mob Name="Kolkar Battle Lord" Id="4636" />
+				<Mob Name="Kolkar Destroyer" Id="4637" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1759.23" Y="1057.68" Z="92.2733" />
+				<Hotspot X="-1802.12" Y="1061.57" Z="91.3887" />
+				<Hotspot X="-1820.98" Y="1108.27" Z="91.6211" />
+				<Hotspot X="-1784.93" Y="1155.86" Z="90.3809" />
+				<Hotspot X="-1753.18" Y="1111.37" Z="88.6241" />
+				<Hotspot X="-1714.72" Y="1085.24" Z="91.8669" />
+				<Hotspot X="-1689.86" Y="1029.18" Z="94.2452" />
+				<Hotspot X="-1718.04" Y="1149.67" Z="89.2574" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1458" Name="Reagents for Reclaimers Inc.">
+		<Objective Type="CollectItem" ItemId="6246" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Hatefury Rogue" Id="4670" />
+				<Mob Name="Hatefury Trickster" Id="4671" />
+				<Mob Name="Hatefury Felsworn" Id="4672" />
+				<Mob Name="Hatefury Betrayer" Id="4673" />
+				<Mob Name="Hatefury Shadowstalker" Id="4674" />
+				<Mob Name="Hatefury Hellcaller" Id="4675" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-82.7168" Y="954.011" Z="90.5134" />
+				<Hotspot X="-113.884" Y="985.231" Z="89.7076" />
+				<Hotspot X="-85.1189" Y="1017.02" Z="91.323" />
+				<Hotspot X="-46.9785" Y="1044.72" Z="99.7548" />
+				<Hotspot X="-151.06" Y="1017.83" Z="91.2913" />
+				<Hotspot X="-187.541" Y="982.448" Z="91.1746" />
+				<Hotspot X="-120.76" Y="926.593" Z="92.4041" />
+				<Hotspot X="-50.7124" Y="914.98" Z="92.1146" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="6247" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Hatefury Rogue" Id="4670" />
+				<Mob Name="Hatefury Trickster" Id="4671" />
+				<Mob Name="Hatefury Felsworn" Id="4672" />
+				<Mob Name="Hatefury Betrayer" Id="4673" />
+				<Mob Name="Hatefury Shadowstalker" Id="4674" />
+				<Mob Name="Hatefury Hellcaller" Id="4675" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-82.7168" Y="954.011" Z="90.5134" />
+				<Hotspot X="-113.884" Y="985.231" Z="89.7076" />
+				<Hotspot X="-85.1189" Y="1017.02" Z="91.323" />
+				<Hotspot X="-46.9785" Y="1044.72" Z="99.7548" />
+				<Hotspot X="-151.06" Y="1017.83" Z="91.2913" />
+				<Hotspot X="-187.541" Y="982.448" Z="91.1746" />
+				<Hotspot X="-120.76" Y="926.593" Z="92.4041" />
+				<Hotspot X="-50.7124" Y="914.98" Z="92.1146" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="261" Name="Down the Scarlet Path">
+		<Objective Type="KillMob" MobId="11561" KillCount="30">
+			<Hotspots>
+				<Hotspot X="-2310.03" Y="1401.83" Z="63.4736" />
+				<Hotspot X="-2270.72" Y="1378.87" Z="67.7156" />
+				<Hotspot X="-2309.16" Y="1351.27" Z="63.6176" />
+				<Hotspot X="-2248.25" Y="1318.56" Z="63.6714" />
+				<Hotspot X="-2216.98" Y="1361.36" Z="81.4102" />
+				<Hotspot X="-2162.96" Y="1359.47" Z="79.6642" />
+				<Hotspot X="-2265.39" Y="1440.18" Z="68.1967" />
+				<Hotspot X="-2271.56" Y="1484.8" Z="63.6537" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1459" Name="Reagents for Reclaimers Inc.">
+		<Objective Type="CollectItem" ItemId="6249" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Aged Kodo" Id="4700" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1270.44" Y="1867.88" Z="50.2692" />
+				<Hotspot X="-1229.63" Y="1897.63" Z="60.1534" />
+				<Hotspot X="-1245.73" Y="1962.46" Z="50.2692" />
+				<Hotspot X="-1381.84" Y="1948.58" Z="63.95" />
+				<Hotspot X="-1365.87" Y="1884.61" Z="50.2692" />
+				<Hotspot X="-1247.52" Y="1821.12" Z="50.4997" />
+				<Hotspot X="-1354.17" Y="2062.5" Z="50.2692" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="6248" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Scorpashi Snapper" Id="4696" />
+				<Mob Name="Scorpashi Lasher" Id="4697" />
+				<Mob Name="Scorpashi Venomlash" Id="4699" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1485.94" Y="1715.63" Z="61.0968" />
+				<Hotspot X="-1473.77" Y="1560.34" Z="61.9824" />
+				<Hotspot X="-1710.11" Y="1583.74" Z="61.2863" />
+				<Hotspot X="-1612.89" Y="1843.98" Z="61.4739" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5501" Name="Bone Collector">
+		<Objective Type="CollectItem" ItemId="13703" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Kodo Bones" Id="176751" />
+				<GameObject Name="Kodo Bones" Id="176752" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1307.84" Y="1949.76" Z="51.0022" />
+				<Hotspot X="-1347.18" Y="1933.94" Z="50.1442" />
+				<Hotspot X="-1303.66" Y="1887.6" Z="50.3437" />
+				<Hotspot X="-1258.74" Y="1856.7" Z="50.1442" />
+				<Hotspot X="-1290.17" Y="1810.65" Z="50.1442" />
+				<Hotspot X="-1383.97" Y="1838.74" Z="50.1442" />
+				<Hotspot X="-1259.2" Y="1999.79" Z="50.1442" />
+				<Hotspot X="-1310.88" Y="2035.5" Z="50.1442" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5741" Name="Sceptre of Light">
+		<Objective Type="CollectItem" ItemId="15750" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Burning Blade Seer" Id="13019" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-451.788" Y="1753.09" Z="153.571" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6161" Name="Claim Rackmore's Treasure!">
+		<Objective Type="CollectItem" ItemId="15878" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Drysnap Crawler" Id="11562" />
+				<Mob Name="Drysnap Pincer" Id="11563" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-480.358" Y="2748.83" Z="-29.196" />
+				<Hotspot X="-438.444" Y="2781.25" Z="-29.5898" />
+				<Hotspot X="-482.458" Y="2813.65" Z="-31.1686" />
+				<Hotspot X="-551.785" Y="2818.67" Z="-32.7423" />
+				<Hotspot X="-585.403" Y="2782.89" Z="-27.3659" />
+				<Hotspot X="-550.608" Y="2672.8" Z="-24.6606" />
+				<Hotspot X="-489.57" Y="2665.26" Z="-20.6284" />
+				<Hotspot X="-417.162" Y="2719.56" Z="-21.3663" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="15881" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Slitherblade Naga" Id="4711" />
+				<Mob Name="Slitherblade Sorceress" Id="4712" />
+				<Mob Name="Slitherblade Warrior" Id="4713" />
+				<Mob Name="Slitherblade Myrmidon" Id="4714" />
+				<Mob Name="Slitherblade Razortail" Id="4715" />
+				<Mob Name="Slitherblade Tidehunter" Id="4716" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="184.49" Y="2850.69" Z="-1.4731" />
+				<Hotspot X="218.2" Y="2885.13" Z="5.4035" />
+				<Hotspot X="181.431" Y="2922.9" Z="16.9841" />
+				<Hotspot X="219.115" Y="2951.57" Z="11.6365" />
+				<Hotspot X="111.979" Y="2922.4" Z="0.8434" />
+				<Hotspot X="122.853" Y="2853.28" Z="-15.4363" />
+				<Hotspot X="169.124" Y="2748.29" Z="-72.5172" />
+				<Hotspot X="254.285" Y="2785.65" Z="-16.327" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1384" Name="Raid on the Kolkar">
+		<Objective Type="CollectItem" ItemId="6079" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Kolkar Centaur" Id="4632" />
+				<Mob Name="Kolkar Scout" Id="4633" />
+				<Mob Name="Kolkar Mauler" Id="4634" />
+				<Mob Name="Kolkar Windchaser" Id="4635" />
+				<Mob Name="Kolkar Battle Lord" Id="4636" />
+				<Mob Name="Kolkar Destroyer" Id="4637" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1063.02" Y="913.021" Z="91.842" />
+				<Hotspot X="-1019.95" Y="898.49" Z="92.651" />
+				<Hotspot X="-969.897" Y="886.517" Z="91.5769" />
+				<Hotspot X="-983.877" Y="950.558" Z="92.7051" />
+				<Hotspot X="-943.864" Y="980.017" Z="89.4463" />
+				<Hotspot X="-986.065" Y="1017.95" Z="90.3548" />
+				<Hotspot X="-1064.2" Y="1009.63" Z="90.2706" />
+				<Hotspot X="-1110.17" Y="925.522" Z="89.2639" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1456" Name="The Karnitol Shipwreck">
+		<Objective Type="CollectItem" ItemId="6245" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Slitherblade Tidehunter" Id="4716" />
+				<Mob Name="Slitherblade Sea Witch" Id="4719" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="137.023" Y="2739.48" Z="-70.2462" />
+				<Hotspot X="154.688" Y="2680.73" Z="-67" />
+				<Hotspot X="190.685" Y="2705.24" Z="-66.7529" />
+				<Hotspot X="159.326" Y="2842.65" Z="-1.0511" />
+				<Hotspot X="214.7" Y="2848.44" Z="1.8659" />
+				<Hotspot X="181.431" Y="2922.9" Z="16.9841" />
+				<Hotspot X="120.568" Y="2948.28" Z="-0.9359" />
+				<Hotspot X="117.934" Y="2886.3" Z="-2.9863" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1466" Name="Reagents for Reclaimers Inc.">
+		<Objective Type="CollectItem" ItemId="6250" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Mana Eater" Id="4678" />
+				<Mob Name="Mage Hunter" Id="4681" />
+				<Mob Name="Ley Hunter" Id="4685" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1852.27" Y="1824.36" Z="62.4783" />
+				<Hotspot X="-1921.7" Y="1836.93" Z="66.6269" />
+				<Hotspot X="-1877.28" Y="1727.31" Z="65.3828" />
+				<Hotspot X="-1877.15" Y="1686.21" Z="62.1328" />
+				<Hotspot X="-1811.03" Y="1676.13" Z="61.4709" />
+				<Hotspot X="-1812.51" Y="1614.18" Z="61.394" />
+				<Hotspot X="-1729.74" Y="1721.32" Z="67.7709" />
+				<Hotspot X="-1987.14" Y="1995.42" Z="63.4865" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="6251" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Nether Maiden" Id="4679" />
+				<Mob Name="Nether Sister" Id="4682" />
+				<Mob Name="Nether Sorceress" Id="4684" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1849.07" Y="1778.2" Z="67.9268" />
+				<Hotspot X="-1893.02" Y="1798.69" Z="68.048" />
+				<Hotspot X="-1854.22" Y="1958.26" Z="64.794" />
+				<Hotspot X="-1882.69" Y="2045.57" Z="64.3289" />
+				<Hotspot X="-1742.28" Y="1986.56" Z="64.7644" />
+				<Hotspot X="-1697.54" Y="1958.83" Z="63.368" />
+				<Hotspot X="-1669.48" Y="1796.6" Z="61.9052" />
+				<Hotspot X="-2021.98" Y="1907.31" Z="69.2366" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="6252" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Doomwarder Captain" Id="4680" />
+				<Mob Name="Lord Azrethoc" Id="5760" />
+				<Mob Name="Kaskk" Id="14226" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1818.57" Y="1673.18" Z="61.9764" />
+				<Hotspot X="-2001.41" Y="1920.69" Z="69.2124" />
+				<Hotspot X="-2051.81" Y="1904.82" Z="70.5807" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1439" Name="Search for Tyranis">
+		<Objective Type="CollectItem" ItemId="6767" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Tyranis Malem" Id="5643" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-419.61" Y="1850.15" Z="128.492" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1370" Name="Stealing Supplies">
+		<Objective Type="CollectItem" ItemId="6069" CollectCount="6">
+			<CollectFrom>
+				<GameObject Name="Sack of Meat" Id="22245" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1809.68" Y="1045.78" Z="92.2393" />
+				<Hotspot X="-1864.22" Y="1121.96" Z="92.3054" />
+				<Hotspot X="-1904.84" Y="1086.4" Z="92.7197" />
+				<Hotspot X="-1901.59" Y="977.026" Z="90.8614" />
+				<Hotspot X="-1798.71" Y="943.654" Z="92.6719" />
+				<Hotspot X="-1760.62" Y="930.161" Z="92.4926" />
+				<Hotspot X="-1725.56" Y="903.259" Z="91.7553" />
+				<Hotspot X="-1962.53" Y="1242.16" Z="91.1554" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1373" Name="Ongeku">
+		<Objective Type="CollectItem" ItemId="6190" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ongeku" Id="5622" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9956.73" Y="-3715.53" Z="21.8028" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1374" Name="Khan Jehn">
+		<Objective Type="CollectItem" ItemId="6072" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Khan Jehn" Id="5601" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1958.45" Y="1268.37" Z="91.6906" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Achievements/A-Loremaster-Kalimdor.lua: Ding80's Loremaster Alliance Guides\Kalimdor\[40] Desolace -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Kalimdor_[40] Desolace");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Reclaimers' Business in Desolace" QuestId="1453" GiverName="Roetten Stonehammer" GiverId="5637" X="-4681.39" Y="-1266.61" Z="503.382" />
+		</If>
+		<If Condition="(Me.Level &gt;= 34)">
+			<PickUp QuestName="Brother Anton" QuestId="6141" GiverName="Brother Crowley" GiverId="12336" X="-8498" Y="809.271" Z="96.772" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Vahlarriel's Search" QuestId="1437" GiverName="Vahlarriel Demonslayer" GiverId="5642" X="97.8138" Y="1246.16" Z="164.155" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Centaur Bounty" QuestId="1387" GiverName="Corporal Melkins" GiverId="5752" X="126.208" Y="1232.69" Z="163.26" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Strange Alliance" QuestId="1382" GiverName="Captain Pentigast" GiverId="5396" X="124.292" Y="1236.19" Z="163.145" />
+		</If>
+		<TurnIn QuestName="Reclaimers' Business in Desolace" QuestId="1453" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1453)">
+			<PickUp QuestName="The Karnitol Shipwreck" QuestId="1454" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1453)">
+			<PickUp QuestName="Reagents for Reclaimers Inc." QuestId="1458" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		</If>
+		<TurnIn QuestName="Brother Anton" QuestId="6141" TurnInName="Brother Anton" TurnInId="1182" X="215.07" Y="1242.78" Z="197.284" />
+		<If Condition="(Me.Level &gt;= 34)">
+			<PickUp QuestName="Down the Scarlet Path" QuestId="261" GiverName="Brother Anton" GiverId="1182" X="215.07" Y="1242.78" Z="197.284" />
+		</If>
+		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1458" Type="CollectItem" ItemId="6246" CollectCount="10" />
+		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1458" Type="CollectItem" ItemId="6247" CollectCount="10" />
+		<TurnIn QuestName="Reagents for Reclaimers Inc." QuestId="1458" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1458)">
+			<PickUp QuestName="Reagents for Reclaimers Inc." QuestId="1459" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		</If>
+		<TurnIn QuestName="Vahlarriel's Search" QuestId="1437" TurnInName="Malem Chest" TurnInId="50961" TurnInType="Object" X="-82.7896" Y="1692.18" Z="88.7181" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1437)">
+			<PickUp QuestName="Vahlarriel's Search" QuestId="1465" GiverName="Malem Chest" GiverId="50961" GiverType="Object" X="-82.7896" Y="1692.18" Z="88.7181" />
+		</If>
+		<If Condition="(Me.Level &gt;= 29)">
+			<PickUp QuestName="Bone Collector" QuestId="5501" GiverName="Bibbly F'utzbuckle" GiverId="11438" X="-716.667" Y="1431.25" Z="90.4942" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Sceptre of Light" QuestId="5741" GiverName="Azore Aldamort" GiverId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
+		</If>
+		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1454" TurnInName="Karnitol's Chest" TurnInId="35251" TurnInType="Object" X="-460.793" Y="2609.83" Z="2.7569" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1454)">
+			<PickUp QuestName="The Karnitol Shipwreck" QuestId="1455" GiverName="Karnitol's Chest" GiverId="35251" GiverType="Object" X="-460.793" Y="2609.83" Z="2.7569" />
+		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Claim Rackmore's Treasure!" QuestId="6161" GiverName="Rackmore's Log" GiverId="177787" GiverType="Object" X="-459.514" Y="2611.73" Z="2.0908" />
+		</If>
+		<Objective QuestName="Claim Rackmore's Treasure!" QuestId="6161" Type="CollectItem" ItemId="15878" CollectCount="1" />
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Kodo Roundup" QuestId="5561" GiverName="Smeed Scrabblescrew" GiverId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
+		</If>
+		<Objective QuestName="Bone Collector" QuestId="5501" Type="CollectItem" ItemId="13703" CollectCount="10" />
+		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1459" Type="CollectItem" ItemId="6249" CollectCount="3" />
+		<If Condition="(Me.Level &gt;= 34)">
+			<PickUp QuestName="Ghost-o-plasm Round Up" QuestId="6134" GiverName="Hornizz Brimbuzzle" GiverId="6019" X="-1401.4" Y="2082.97" Z="61.939" />
+		</If>
+		<!-- REVIEW Q5561 Kodo Roundup: objective 11627 Tamed Kodo x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(5561)) &amp;&amp; (IsQuestCompleted(5561)))">
+			<TurnIn QuestName="Kodo Roundup" QuestId="5561" TurnInName="Smeed Scrabblescrew" TurnInId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
+		</If>
+		<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
+			<CustomBehavior File="AbandonQuest" QuestId="5561" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Centaur Bounty" QuestId="1387" Type="CollectItem" ItemId="6067" CollectCount="15" />
+		<Objective QuestName="Down the Scarlet Path" QuestId="261" Type="KillMob" MobId="11561" KillCount="30" />
+		<TurnIn QuestName="Strange Alliance" QuestId="1382" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1382)">
+			<PickUp QuestName="Raid on the Kolkar" QuestId="1384" GiverName="Uthek the Wise" GiverId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		</If>
+		<!-- REVIEW Q6134 Ghost-o-plasm Round Up: item 15849 Ghost-o-plasm has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(6134)) &amp;&amp; (IsQuestCompleted(6134)))">
+			<TurnIn QuestName="Ghost-o-plasm Round Up" QuestId="6134" TurnInName="Hornizz Brimbuzzle" TurnInId="6019" X="-1401.4" Y="2082.97" Z="61.939" />
+		</If>
+		<If Condition="((HasQuest(6134)) &amp;&amp; (!IsQuestCompleted(6134)))">
+			<CustomBehavior File="AbandonQuest" QuestId="6134" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1459" Type="CollectItem" ItemId="6248" CollectCount="7" />
+		<Objective QuestName="Raid on the Kolkar" QuestId="1384" Type="CollectItem" ItemId="6079" CollectCount="10" />
+		<TurnIn QuestName="Bone Collector" QuestId="5501" TurnInName="Bibbly F'utzbuckle" TurnInId="11438" X="-716.667" Y="1431.25" Z="90.4942" />
+		<TurnIn QuestName="Centaur Bounty" QuestId="1387" TurnInName="Corporal Melkins" TurnInId="5752" X="126.208" Y="1232.69" Z="163.26" />
+		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1455" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1455)">
+			<PickUp QuestName="The Karnitol Shipwreck" QuestId="1456" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		</If>
+		<TurnIn QuestName="Reagents for Reclaimers Inc." QuestId="1459" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1459)">
+			<PickUp QuestName="Reagents for Reclaimers Inc." QuestId="1466" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		</If>
+		<TurnIn QuestName="Down the Scarlet Path" QuestId="261" TurnInName="Brother Anton" TurnInId="1182" X="215.07" Y="1242.78" Z="197.284" />
+		<If Condition="(Me.Level &gt;= 34) &amp;&amp; IsQuestCompleted(261)">
+			<PickUp QuestName="Down the Scarlet Path" QuestId="1052" GiverName="Brother Anton" GiverId="1182" X="215.07" Y="1242.78" Z="197.284" />
+		</If>
+		<TurnIn QuestName="Vahlarriel's Search" QuestId="1465" TurnInName="Vahlarriel Demonslayer" TurnInId="5642" X="97.8138" Y="1246.16" Z="164.155" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1465)">
+			<PickUp QuestName="Vahlarriel's Search" QuestId="1438" GiverName="Vahlarriel Demonslayer" GiverId="5642" X="97.8138" Y="1246.16" Z="164.155" />
+		</If>
+		<TurnIn QuestName="Vahlarriel's Search" QuestId="1438" TurnInName="Dalinda Malem" TurnInId="5644" X="-331.142" Y="1766.99" Z="139.6" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1438)">
+			<PickUp QuestName="Search for Tyranis" QuestId="1439" GiverName="Dalinda Malem" GiverId="5644" X="-331.142" Y="1766.99" Z="139.6" />
+		</If>
+		<Objective QuestName="Sceptre of Light" QuestId="5741" Type="CollectItem" ItemId="15750" CollectCount="1" />
+		<Objective QuestName="Search for Tyranis" QuestId="1439" Type="CollectItem" ItemId="6767" CollectCount="1" />
+		<TurnIn QuestName="Search for Tyranis" QuestId="1439" TurnInName="Dalinda Malem" TurnInId="5644" X="-331.142" Y="1766.99" Z="139.6" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1439)">
+			<PickUp QuestName="Return to Vahlarriel" QuestId="1440" GiverName="Dalinda Malem" GiverId="5644" X="-331.142" Y="1766.99" Z="139.6" />
+		</If>
+		<TurnIn QuestName="Sceptre of Light" QuestId="5741" TurnInName="Azore Aldamort" TurnInId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(5741)">
+			<PickUp QuestName="Book of the Ancients" QuestId="6027" GiverName="Azore Aldamort" GiverId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
+		</If>
+		<Objective QuestName="Claim Rackmore's Treasure!" QuestId="6161" Type="CollectItem" ItemId="15881" CollectCount="1" />
+		<TurnIn QuestName="Claim Rackmore's Treasure!" QuestId="6161" TurnInName="Rackmore's Chest" TurnInId="177786" TurnInType="Object" X="191.081" Y="2884.41" Z="2.9673" />
+		<Objective QuestName="The Karnitol Shipwreck" QuestId="1456" Type="CollectItem" ItemId="6245" CollectCount="1" />
+		<!-- REVIEW Q6027 Book of the Ancients: item 15803 Book of the Ancients has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(6027)) &amp;&amp; (IsQuestCompleted(6027)))">
+			<TurnIn QuestName="Book of the Ancients" QuestId="6027" TurnInName="Azore Aldamort" TurnInId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
+		</If>
+		<If Condition="((HasQuest(6027)) &amp;&amp; (!IsQuestCompleted(6027)))">
+			<CustomBehavior File="AbandonQuest" QuestId="6027" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1466" Type="CollectItem" ItemId="6250" CollectCount="10" />
+		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1466" Type="CollectItem" ItemId="6251" CollectCount="10" />
+		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1466" Type="CollectItem" ItemId="6252" CollectCount="10" />
+		<TurnIn QuestName="Raid on the Kolkar" QuestId="1384" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Stealing Supplies" QuestId="1370" GiverName="Uthek the Wise" GiverId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		</If>
+		<Objective QuestName="Stealing Supplies" QuestId="1370" Type="CollectItem" ItemId="6069" CollectCount="6" />
+		<TurnIn QuestName="Stealing Supplies" QuestId="1370" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1370)">
+			<PickUp QuestName="Ongeku" QuestId="1373" GiverName="Uthek the Wise" GiverId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		</If>
+		<!-- REVIEW Q1440 Return to Vahlarriel: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1440)) &amp;&amp; (IsQuestCompleted(1440)))">
+			<TurnIn QuestName="Return to Vahlarriel" QuestId="1440" TurnInName="Vahlarriel Demonslayer" TurnInId="5642" X="97.8138" Y="1246.16" Z="164.155" />
+		</If>
+		<If Condition="((HasQuest(1440)) &amp;&amp; (!IsQuestCompleted(1440)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1440" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1456" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1456)">
+			<PickUp QuestName="The Karnitol Shipwreck" QuestId="1457" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		</If>
+		<TurnIn QuestName="Reagents for Reclaimers Inc." QuestId="1466" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1466)">
+			<PickUp QuestName="Reagents for Reclaimers Inc." QuestId="1467" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		</If>
+		<Objective QuestName="Ongeku" QuestId="1373" Type="CollectItem" ItemId="6190" CollectCount="1" />
+		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1457" TurnInName="Roetten Stonehammer" TurnInId="5637" X="-4681.39" Y="-1266.61" Z="503.382" />
+		<TurnIn QuestName="Reagents for Reclaimers Inc." QuestId="1467" TurnInName="Roetten Stonehammer" TurnInId="5637" X="-4681.39" Y="-1266.61" Z="503.382" />
+		<TurnIn QuestName="Down the Scarlet Path" QuestId="1052" TurnInName="Raleigh the Devout" TurnInId="3980" X="-844.878" Y="-580.284" Z="18.646" />
+		<TurnIn QuestName="Ongeku" QuestId="1373" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1373)">
+			<PickUp QuestName="Khan Jehn" QuestId="1374" GiverName="Uthek the Wise" GiverId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		</If>
+		<Objective QuestName="Khan Jehn" QuestId="1374" Type="CollectItem" ItemId="6072" CollectCount="1" />
+		<TurnIn QuestName="Khan Jehn" QuestId="1374" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1374)">
+			<PickUp QuestName="Khan Hratha" QuestId="1380" GiverName="Uthek the Wise" GiverId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		</If>
+		<If Condition="(Me.Level &gt;= 34)">
+			<PickUp QuestName="Get Me Out of Here!" QuestId="6132" GiverName="Melizza Brimbuzzle" GiverId="12277" X="-1151.77" Y="2707.09" Z="111.197" />
+		</If>
+		<!-- REVIEW Q6132 Get Me Out of Here!: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(6132)) &amp;&amp; (IsQuestCompleted(6132)))">
+			<TurnIn QuestName="Get Me Out of Here!" QuestId="6132" TurnInName="Hornizz Brimbuzzle" TurnInId="6019" X="-1401.4" Y="2082.97" Z="61.939" />
+		</If>
+		<If Condition="((HasQuest(6132)) &amp;&amp; (!IsQuestCompleted(6132)))">
+			<CustomBehavior File="AbandonQuest" QuestId="6132" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q1380 Khan Hratha: item 6077 Maraudine Key Fragment has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1380)) &amp;&amp; (IsQuestCompleted(1380)))">
+			<TurnIn QuestName="Khan Hratha" QuestId="1380" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		</If>
+		<If Condition="((HasQuest(1380)) &amp;&amp; (!IsQuestCompleted(1380)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1380" Type="Incomplete" />
+		</If>
+		<!-- SKIP pickup Q5943 Gizelton Caravan: no quest giver with a spawn in the database -->
+		<!-- REVIEW Q5943 Gizelton Caravan: no quest giver in the database; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(5943)) &amp;&amp; (IsQuestCompleted(5943)))">
+			<TurnIn QuestName="Gizelton Caravan" QuestId="5943" TurnInName="Smeed Scrabblescrew" TurnInId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
+		</If>
+		<If Condition="((HasQuest(5943)) &amp;&amp; (!IsQuestCompleted(5943)))">
+			<CustomBehavior File="AbandonQuest" QuestId="5943" Type="Incomplete" />
+		</If>
+	</QuestOrder>
+</HBProfile>

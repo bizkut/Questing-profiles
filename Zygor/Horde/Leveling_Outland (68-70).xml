@@ -1,0 +1,1526 @@
+<HBProfile>
+	<Name>Zygor Leveling\Outland (68-70)</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Boots" Entry="19617" Type="Food" X="3080.51" Y="3684.4" Z="142.533" />
+		<Vendor Name="Braagor" Entry="21084" Type="Food" X="2233.37" Y="4725" Z="162.212" />
+		<Vendor Name="Xerintha Ravenoak" Entry="20916" Type="Food" X="2949.44" Y="5456.5" Z="146.314" />
+		<Vendor Name="Gant" Entry="19572" Type="Food" X="3073.64" Y="3656.38" Z="143.174" />
+		<Vendor Name="Threlc" Entry="19472" Type="Food" X="2342.01" Y="6021.99" Z="142.622" />
+		<Vendor Name="Apprentice Andrethan" Entry="20463" Type="Repair" X="2290.12" Y="2266.04" Z="93.7195" />
+		<Vendor Name="Blazzle" Entry="28344" Type="Repair" X="3063.41" Y="3677.57" Z="142.761" />
+		<Vendor Name="Qiff" Entry="19575" Type="Repair" X="2975.46" Y="3663.07" Z="143.168" />
+		<Vendor Name="Raiza" Entry="19473" Type="Repair" X="2270.27" Y="5964.86" Z="142.641" />
+		<Vendor Name="Zinyen Swiftstrider" Entry="20917" Type="Repair" X="3023.43" Y="5504.72" Z="145.829" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="10543" Name="Grimnok and Korgaah, I Am For You!">
+		<Objective Type="KillMob" MobId="20095" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1500.85" Y="6380.42" Z="35.2803" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10505" Name="The Bloodmaul Ogres">
+		<Objective Type="KillMob" MobId="19991" KillCount="30">
+			<Hotspots>
+				<Hotspot X="1523.25" Y="6462.28" Z="-10.2139" />
+				<Hotspot X="1458.72" Y="6488.03" Z="-10.2555" />
+				<Hotspot X="1408.01" Y="6524.47" Z="4.4236" />
+				<Hotspot X="1404" Y="6569.53" Z="4.4139" />
+				<Hotspot X="1499.16" Y="6561.38" Z="-10.2455" />
+				<Hotspot X="1552.97" Y="6569.58" Z="6.6304" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10860" Name="Mok'Nathal Treats">
+		<Objective Type="CollectItem" ItemId="31671" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Scalewing Serpent" Id="20749" />
+				<Mob Name="Felsworn Scalewing" Id="21123" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1980.23" Y="5115.1" Z="266.479" />
+				<Hotspot X="1937.81" Y="5137.81" Z="266.243" />
+				<Hotspot X="1884.24" Y="5150.98" Z="265.558" />
+				<Hotspot X="1825.75" Y="5157.91" Z="265.542" />
+				<Hotspot X="1792.39" Y="5123.45" Z="265.599" />
+				<Hotspot X="2021.6" Y="5154.39" Z="265.558" />
+				<Hotspot X="2061.54" Y="5186.5" Z="265.128" />
+				<Hotspot X="2174.49" Y="5149.58" Z="265.991" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="31670" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Bladespire Raptor" Id="20728" />
+				<Mob Name="Bladespire Ravager" Id="20729" />
+				<Mob Name="Daggermaw Lashtail" Id="20751" />
+				<Mob Name="Felsworn Daggermaw" Id="21124" />
+				<Mob Name="Daggermaw Blackhide" Id="22052" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2349.77" Y="5216.74" Z="263.642" />
+				<Hotspot X="2426.7" Y="5251.5" Z="260.921" />
+				<Hotspot X="2472.99" Y="5363.07" Z="269.747" />
+				<Hotspot X="2497.6" Y="5440.27" Z="267.436" />
+				<Hotspot X="2476.53" Y="5492.32" Z="264.824" />
+				<Hotspot X="2417.25" Y="5482.01" Z="266.917" />
+				<Hotspot X="2566.15" Y="5407.15" Z="270.391" />
+				<Hotspot X="2249.64" Y="5257.75" Z="265.619" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10617" Name="Silkwing Cocoons">
+		<Objective Type="CollectItem" ItemId="30791" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Silkwing Larva" Id="20747" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2049.03" Y="4850.99" Z="147.446" />
+				<Hotspot X="2090.46" Y="4883.35" Z="150.574" />
+				<Hotspot X="2047.19" Y="4915.63" Z="145.482" />
+				<Hotspot X="1985.24" Y="4932.3" Z="141.124" />
+				<Hotspot X="1974.82" Y="4821.88" Z="143.474" />
+				<Hotspot X="2011.98" Y="4805.82" Z="143.986" />
+				<Hotspot X="1925.4" Y="4776.72" Z="144.448" />
+				<Hotspot X="1944" Y="4738.62" Z="143.373" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10618" Name="The Softest Wings">
+		<Objective Type="CollectItem" ItemId="30792" CollectCount="12">
+			<CollectFrom>
+				<Mob Name="Mature Silkwing" Id="21839" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1997.37" Y="4842.61" Z="144.509" />
+				<Hotspot X="2014.75" Y="4798.06" Z="145.435" />
+				<Hotspot X="2024.7" Y="4905.79" Z="140.883" />
+				<Hotspot X="2077.85" Y="4918.75" Z="148.948" />
+				<Hotspot X="2154.45" Y="4902.69" Z="147.933" />
+				<Hotspot X="2203.51" Y="4863.22" Z="152.677" />
+				<Hotspot X="1970.95" Y="4916.71" Z="142.978" />
+				<Hotspot X="1884.81" Y="4877.72" Z="144.636" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10846" Name="Understanding the Mok'Nathal">
+		<Objective Type="KillMob" MobId="22305" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1797.9" Y="5044.21" Z="178.462" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10843" Name="Since Time Forgotten...">
+		<Objective Type="KillMob" MobId="20768" KillCount="1">
+			<Hotspots>
+				<Hotspot X="2437.76" Y="5746.19" Z="272.288" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10851" Name="The Totems of My Enemy">
+		<Objective Type="CollectItem" ItemId="31651" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Bladespire Crusher" Id="20765" />
+				<Mob Name="Bladespire Mystic" Id="20766" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2379.85" Y="5637.82" Z="267.198" />
+				<Hotspot X="2397.28" Y="5590.08" Z="268.19" />
+				<Hotspot X="2431.04" Y="5619.22" Z="266.678" />
+				<Hotspot X="2432.8" Y="5677.81" Z="265.082" />
+				<Hotspot X="2431.52" Y="5731.81" Z="272.371" />
+				<Hotspot X="2343.1" Y="5723.1" Z="268.73" />
+				<Hotspot X="2311.04" Y="5698.25" Z="266.628" />
+				<Hotspot X="2333.21" Y="5659.59" Z="262.859" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10853" Name="Spirit Calling">
+		<Objective Type="CollectItem" ItemId="31656" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Lesser Nether Drake" Id="21004" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1664.68" Y="5254.28" Z="265.357" />
+				<Hotspot X="1618.51" Y="5256.21" Z="265.824" />
+				<Hotspot X="1650.28" Y="5206.49" Z="265.889" />
+				<Hotspot X="1584.41" Y="5192.08" Z="325.269" />
+				<Hotspot X="1655.5" Y="5328.62" Z="265.953" />
+				<Hotspot X="1619.42" Y="5354.08" Z="266.015" />
+				<Hotspot X="1624.59" Y="5428.15" Z="266.601" />
+				<Hotspot X="1581.97" Y="5443.21" Z="266.104" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10770" Name="Little Embers">
+		<Objective Type="KillMob" MobId="21021" KillCount="8">
+			<Hotspots>
+				<Hotspot X="3686.62" Y="5008.23" Z="266.31" />
+				<Hotspot X="3738.81" Y="5013.08" Z="275.481" />
+				<Hotspot X="3744.79" Y="4943.63" Z="277.165" />
+				<Hotspot X="3745.83" Y="4870.83" Z="256.1" />
+				<Hotspot X="3643.64" Y="4973.01" Z="263.291" />
+				<Hotspot X="3587.98" Y="5014.89" Z="266.343" />
+				<Hotspot X="3550.07" Y="4990.73" Z="267.647" />
+				<Hotspot X="3579.39" Y="4920.96" Z="269.715" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10771" Name="From the Ashes">
+		<Objective Type="UseObject" ObjectId="185124" UseCount="1">
+			<Hotspots>
+				<Hotspot X="3599.83" Y="4958.24" Z="267.815" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="185147" UseCount="1">
+			<Hotspots>
+				<Hotspot X="3672.17" Y="4962.03" Z="266.285" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="185148" UseCount="1">
+			<Hotspots>
+				<Hotspot X="3740.23" Y="4962.22" Z="276.698" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10717" Name="Poaching from Poachers">
+		<Objective Type="CollectItem" ItemId="31119" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Wyrmcult Poacher" Id="21809" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3038.41" Y="5603.96" Z="146.274" />
+				<Hotspot X="3083.67" Y="5573.94" Z="147.102" />
+				<Hotspot X="3133.94" Y="5588.94" Z="144.369" />
+				<Hotspot X="3154.78" Y="5550.11" Z="144.925" />
+				<Hotspot X="3102.85" Y="5630.54" Z="144.291" />
+				<Hotspot X="3053.35" Y="5664.02" Z="143.369" />
+				<Hotspot X="3015.84" Y="5685.74" Z="147.1" />
+				<Hotspot X="2943.81" Y="5618.07" Z="147.261" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10820" Name="Deceive thy Enemy">
+		<Objective Type="KillMob" MobId="19961" KillCount="4">
+			<Hotspots>
+				<Hotspot X="2973.15" Y="4762.98" Z="285.438" />
+				<Hotspot X="2929.56" Y="4773.5" Z="283.636" />
+				<Hotspot X="2924.09" Y="4845.89" Z="279.071" />
+				<Hotspot X="2962.18" Y="4867.59" Z="277.53" />
+				<Hotspot X="2862.43" Y="4819.82" Z="282.854" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="19960" KillCount="4">
+			<Hotspots>
+				<Hotspot X="2963.09" Y="4793.36" Z="282.714" />
+				<Hotspot X="2880.71" Y="4836.11" Z="278.049" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10715" Name="Into the Churning Gulch">
+		<Objective Type="CollectItem" ItemId="31132" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Greater Crust Burster" Id="21380" />
+				<Mob Name="Young Crust Burster" Id="21381" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2790.83" Y="6190.5" Z="1.0212" />
+				<Hotspot X="2843.57" Y="6223.44" Z="9.5618" />
+				<Hotspot X="2882.88" Y="6182.55" Z="8.8408" />
+				<Hotspot X="2930.3" Y="6175.62" Z="12.8793" />
+				<Hotspot X="2973.24" Y="6164.89" Z="4.5628" />
+				<Hotspot X="2997.82" Y="6108.39" Z="4.5391" />
+				<Hotspot X="2850.61" Y="6281.23" Z="12.3655" />
+				<Hotspot X="2819.51" Y="6316.12" Z="13.7224" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10784" Name="Crush the Bloodmaul Camp">
+		<Objective Type="KillMob" MobId="19993" KillCount="10">
+			<Hotspots>
+				<Hotspot X="3477.73" Y="5754.44" Z="34.2339" />
+				<Hotspot X="3505.26" Y="5713.36" Z="-9.4384" />
+				<Hotspot X="3553.14" Y="5800.52" Z="36.3056" />
+				<Hotspot X="3524.77" Y="5854.66" Z="3.3182" />
+				<Hotspot X="3368.57" Y="5811.02" Z="40.022" />
+				<Hotspot X="3407" Y="5736.28" Z="-9.9414" />
+				<Hotspot X="3297.24" Y="5721.74" Z="-7.1476" />
+				<Hotspot X="3261.58" Y="5869.3" Z="-1.865" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="19994" KillCount="5">
+			<Hotspots>
+				<Hotspot X="3462.94" Y="5839.89" Z="5.0683" />
+				<Hotspot X="3501.82" Y="5862.58" Z="17.1703" />
+				<Hotspot X="3490.88" Y="5781.21" Z="4.5372" />
+				<Hotspot X="3463.08" Y="5733.71" Z="11.7983" />
+				<Hotspot X="3326.09" Y="5703.92" Z="-0.7046" />
+				<Hotspot X="3162.78" Y="5796.71" Z="-7.4036" />
+				<Hotspot X="3179.62" Y="5872" Z="-6.6721" />
+				<Hotspot X="3613.78" Y="5787.32" Z="3.9858" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10721" Name="A Boaring Time for Grulloc">
+		<Objective Type="CollectItem" ItemId="31349" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Grulloc's Sack" Id="185152" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2680.37" Y="5542.47" Z="-2.884" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10786" Name="Slaughter at Boulder'mok">
+		<Objective Type="KillMob" MobId="21046" KillCount="5">
+			<Hotspots>
+				<Hotspot X="3514.51" Y="7206.31" Z="139.782" />
+				<Hotspot X="3549.42" Y="7241.37" Z="139.86" />
+				<Hotspot X="3591.02" Y="7188.98" Z="138.358" />
+				<Hotspot X="3630.08" Y="7223.25" Z="136.998" />
+				<Hotspot X="3666.55" Y="7177.22" Z="141.181" />
+				<Hotspot X="3609.74" Y="7136.49" Z="140.571" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="21047" KillCount="3">
+			<Hotspots>
+				<Hotspot X="3528.53" Y="7165.08" Z="174.65" />
+				<Hotspot X="3586.04" Y="7119.2" Z="140.521" />
+				<Hotspot X="3636.39" Y="7110.55" Z="178.535" />
+				<Hotspot X="3616.61" Y="7210.66" Z="137.245" />
+				<Hotspot X="3578.19" Y="7223.22" Z="138.612" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10893" Name="Longtail is the Lynchpin">
+		<Objective Type="KillMob" MobId="22396" KillCount="1">
+			<Hotspots>
+				<Hotspot X="3233.38" Y="6394.42" Z="131.46" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10748" Name="Maxnar Must Die!">
+		<Objective Type="KillMob" MobId="21389" KillCount="1">
+			<Hotspots>
+				<Hotspot X="3130.8" Y="7006.54" Z="168.207" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10342" Name="Securing the Shaleskin Shale">
+		<Objective Type="CollectItem" ItemId="29464" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Shaleskin Flayer" Id="20210" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3206.03" Y="3620.3" Z="129.265" />
+				<Hotspot X="3165.1" Y="3607.24" Z="135.148" />
+				<Hotspot X="3226.43" Y="3665.5" Z="128.984" />
+				<Hotspot X="3153.44" Y="3762.68" Z="139.138" />
+				<Hotspot X="3125.43" Y="3810.56" Z="143.007" />
+				<Hotspot X="3111.43" Y="3865.05" Z="143.726" />
+				<Hotspot X="3187.02" Y="3812.87" Z="140.167" />
+				<Hotspot X="3212.29" Y="3892.82" Z="196.22" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10265" Name="Consortium Crystal Collection">
+		<Objective Type="CollectItem" ItemId="28829" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Pentatharon" Id="20215" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2752.2" Y="3116.26" Z="155.687" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10189" Name="Manaforge B'naar">
+		<Objective Type="CollectItem" ItemId="28376" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Captain Arathyn" Id="19635" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3024.03" Y="3964.66" Z="156.178" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10186" Name="You're Hired!">
+		<Objective Type="CollectItem" ItemId="28364" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Etherlithium Matrix Crystal" Id="183767" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3364.13" Y="3689.98" Z="142.814" />
+				<Hotspot X="3420.25" Y="3719.69" Z="139.305" />
+				<Hotspot X="3435.99" Y="3663.29" Z="152.613" />
+				<Hotspot X="3469.47" Y="3633.1" Z="140.689" />
+				<Hotspot X="3455.13" Y="3572.6" Z="173.242" />
+				<Hotspot X="3510.09" Y="3579.61" Z="149.89" />
+				<Hotspot X="3547.47" Y="3624.41" Z="126.007" />
+				<Hotspot X="3408.04" Y="3614.71" Z="141.649" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10199" Name="That Little Extra Kick">
+		<Objective Type="CollectItem" ItemId="28417" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Nether Ray" Id="18880" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2748.59" Y="3009.8" Z="120.497" />
+				<Hotspot X="2762.93" Y="2945" Z="117.798" />
+				<Hotspot X="2834.56" Y="3001.47" Z="120.816" />
+				<Hotspot X="2848.07" Y="3093.44" Z="132.735" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10203" Name="Invaluable Asset Zapping">
+		<Objective Type="UseObject" ObjectId="183807" UseCount="1">
+			<Hotspots>
+				<Hotspot X="2746.59" Y="3239.64" Z="147.597" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="183805" UseCount="1">
+			<Hotspots>
+				<Hotspot X="2715.88" Y="3192.04" Z="147.597" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="183808" UseCount="1">
+			<Hotspots>
+				<Hotspot X="2774.06" Y="3114.28" Z="154.42" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="183806" UseCount="1">
+			<Hotspots>
+				<Hotspot X="2787.98" Y="3172.17" Z="146.042" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10224" Name="Essence for the Engines">
+		<Objective Type="CollectItem" ItemId="28527" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Mana Wraith" Id="18864" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3261.92" Y="3529.28" Z="120.256" />
+				<Hotspot X="3295.06" Y="3552.15" Z="125.789" />
+				<Hotspot X="3277.93" Y="3619.59" Z="127.448" />
+				<Hotspot X="3321.77" Y="3631.31" Z="134.04" />
+				<Hotspot X="3312.73" Y="3470.92" Z="111.647" />
+				<Hotspot X="3272.35" Y="3462.17" Z="105.557" />
+				<Hotspot X="3224.94" Y="3450.13" Z="105.264" />
+				<Hotspot X="3202.45" Y="3501.85" Z="115.723" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10300" Name="Rebuilding the Staff">
+		<Objective Type="CollectItem" ItemId="29216" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Disembodied Vindicator" Id="18872" />
+				<Mob Name="Disembodied Protector" Id="18873" />
+				<Mob Name="Disembodied Exarch" Id="21058" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3478.15" Y="3634" Z="157.722" />
+				<Hotspot X="3458.01" Y="3675.52" Z="150.502" />
+				<Hotspot X="3525.18" Y="3659.38" Z="141.993" />
+				<Hotspot X="3569.72" Y="3655.27" Z="129.757" />
+				<Hotspot X="3490.1" Y="3578.72" Z="158.708" />
+				<Hotspot X="3526.52" Y="3549.78" Z="138.236" />
+				<Hotspot X="3434.45" Y="3538.8" Z="144.569" />
+				<Hotspot X="3431.63" Y="3588.57" Z="144.531" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10262" Name="A Heap of Ethereals">
+		<Objective Type="CollectItem" ItemId="29209" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Zaxxis Raider" Id="18875" />
+				<Mob Name="Warp-Raider Nesaad" Id="19641" />
+				<Mob Name="Zaxxis Stalker" Id="19642" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2669.68" Y="3798.54" Z="140.686" />
+				<Hotspot X="2661.16" Y="3757.15" Z="143.673" />
+				<Hotspot X="2703.17" Y="3752.98" Z="142.219" />
+				<Hotspot X="2669.4" Y="3705.81" Z="144.005" />
+				<Hotspot X="2611.64" Y="3780.26" Z="142.112" />
+				<Hotspot X="2548.93" Y="3790.73" Z="142.156" />
+				<Hotspot X="2654.44" Y="3856.93" Z="137.991" />
+				<Hotspot X="2600.23" Y="3911.6" Z="136.206" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10206" Name="Pick Your Part">
+		<Objective Type="CollectItem" ItemId="28457" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Ethereal Technology" Id="183813" />
+				<GameObject Name="Ethereal Technology" Id="183814" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2649.11" Y="3800.06" Z="141.631" />
+				<Hotspot X="2620.73" Y="3771.76" Z="143.124" />
+				<Hotspot X="2654.13" Y="3742.93" Z="143.899" />
+				<Hotspot X="2699.51" Y="3763.65" Z="142.344" />
+				<Hotspot X="2660.75" Y="3854.82" Z="138.087" />
+				<Hotspot X="2604.63" Y="3908.68" Z="135.807" />
+				<Hotspot X="2541.39" Y="3849.15" Z="139.906" />
+				<Hotspot X="2523.34" Y="3788.7" Z="134.694" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10193" Name="High Value Targets">
+		<Objective Type="KillMob" MobId="18857" KillCount="2">
+			<Hotspots>
+				<Hotspot X="2827.2" Y="4023.98" Z="148.458" />
+				<Hotspot X="2874.61" Y="4048.84" Z="157.104" />
+				<Hotspot X="2820.19" Y="4151.42" Z="162.599" />
+				<Hotspot X="2776.01" Y="4154.54" Z="181.336" />
+				<Hotspot X="2780.14" Y="4201.67" Z="178.93" />
+				<Hotspot X="2719.11" Y="4092.57" Z="191.749" />
+				<Hotspot X="2852.1" Y="3933.84" Z="155.058" />
+				<Hotspot X="2749.49" Y="3884.96" Z="141.417" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="18852" KillCount="6">
+			<Hotspots>
+				<Hotspot X="2791.76" Y="3877.74" Z="160.784" />
+				<Hotspot X="2750.91" Y="3859.45" Z="139.823" />
+				<Hotspot X="2900.88" Y="4175.57" Z="161.889" />
+				<Hotspot X="2796.7" Y="4209.6" Z="179.424" />
+				<Hotspot X="2765.98" Y="4242.09" Z="180.249" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="19779" KillCount="8">
+			<Hotspots>
+				<Hotspot X="2823.21" Y="3998.62" Z="141.713" />
+				<Hotspot X="2798.09" Y="3957.93" Z="143.107" />
+				<Hotspot X="2758.24" Y="3953.7" Z="142.852" />
+				<Hotspot X="2727.57" Y="3990.82" Z="136.62" />
+				<Hotspot X="2796.02" Y="4068.31" Z="170.311" />
+				<Hotspot X="2876.11" Y="4045.08" Z="155.574" />
+				<Hotspot X="2848.13" Y="3931.9" Z="154.166" />
+				<Hotspot X="2834.51" Y="3881.73" Z="166.42" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10205" Name="Warp-Raider Nesaad">
+		<Objective Type="KillMob" MobId="19641" KillCount="1">
+			<Hotspots>
+				<Hotspot X="2503.19" Y="3902.48" Z="129.355" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10329" Name="Shutting Down Manaforge B'naar">
+		<Objective Type="CollectItem" ItemId="29366" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Overseer Theredis" Id="20416" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2828.02" Y="4154.67" Z="162.599" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10197" Name="A Convincing Disguise">
+		<Objective Type="CollectItem" ItemId="28635" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sunfury Arcanist" Id="20134" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2320.78" Y="2825.64" Z="131.988" />
+				<Hotspot X="2271.04" Y="2828.48" Z="131.715" />
+				<Hotspot X="2409" Y="2864.95" Z="132.493" />
+				<Hotspot X="2434.13" Y="2908.4" Z="130.624" />
+				<Hotspot X="2488.88" Y="2855.45" Z="137.485" />
+				<Hotspot X="2511.36" Y="2750.94" Z="132.168" />
+				<Hotspot X="2396.42" Y="2664.84" Z="133.039" />
+				<Hotspot X="2409.42" Y="2624.09" Z="134.4" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="28636" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sunfury Researcher" Id="20136" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2413.5" Y="2741.85" Z="132.97" />
+				<Hotspot X="2437.38" Y="2780.33" Z="134.564" />
+				<Hotspot X="2369.66" Y="2770.94" Z="134.576" />
+				<Hotspot X="2278.84" Y="2528.38" Z="115.49" />
+				<Hotspot X="2368.55" Y="2496.17" Z="141.336" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="28637" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sunfury Guardsman" Id="18850" />
+				<Mob Name="Sunfury Arch Mage" Id="20135" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2369.77" Y="2653.46" Z="131.446" />
+				<Hotspot X="2383.53" Y="2613.47" Z="133.274" />
+				<Hotspot X="2315.51" Y="2675.69" Z="127.633" />
+				<Hotspot X="2344.46" Y="2787.87" Z="133.168" />
+				<Hotspot X="2280.99" Y="2804.32" Z="131.564" />
+				<Hotspot X="2203.13" Y="2594.81" Z="91.9222" />
+				<Hotspot X="2317.61" Y="2460.32" Z="107.967" />
+				<Hotspot X="2503.1" Y="2707.09" Z="131.495" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10330" Name="Shutting Down Manaforge Coruu">
+		<Objective Type="CollectItem" ItemId="29396" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Overseer Seylanna" Id="20397" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2426.77" Y="2750.39" Z="133.243" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10331" Name="Indispensable Tools">
+		<Objective Type="CollectItem" ItemId="29365" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Kirin'Var Apprentice" Id="20409" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2308.32" Y="2080.85" Z="76.3482" />
+				<Hotspot X="2355.84" Y="2087.59" Z="83.0192" />
+				<Hotspot X="2294.57" Y="2137.83" Z="85.7296" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10184" Name="Malevolent Remnants">
+		<Objective Type="KillMob" MobId="19881" KillCount="20">
+			<Hotspots>
+				<Hotspot X="2311.42" Y="2107.84" Z="82.559" />
+				<Hotspot X="2294.97" Y="2150.97" Z="88.9858" />
+				<Hotspot X="2272.16" Y="2193.36" Z="91.1392" />
+				<Hotspot X="2212.83" Y="2166.97" Z="83.0959" />
+				<Hotspot X="2211.66" Y="2095.09" Z="71.1183" />
+				<Hotspot X="2261.3" Y="2101.07" Z="69.2158" />
+				<Hotspot X="2137.65" Y="2127.52" Z="66.2561" />
+				<Hotspot X="2184.61" Y="2249.51" Z="76.4593" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10188" Name="The Sigil of Krasus">
+		<Objective Type="CollectItem" ItemId="28368" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Spellbinder Maryana" Id="19593" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2406.91" Y="2604.9" Z="134.775" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10185" Name="A Fate Worse Than Death">
+		<Objective Type="KillMob" MobId="18867" KillCount="10">
+			<Hotspots>
+				<Hotspot X="2248.62" Y="2373.09" Z="108.931" />
+				<Hotspot X="2279.17" Y="2344.08" Z="110.226" />
+				<Hotspot X="2206.52" Y="2313.98" Z="85.804" />
+				<Hotspot X="2181.69" Y="2381.58" Z="97.273" />
+				<Hotspot X="2135.18" Y="2363.85" Z="74.4477" />
+				<Hotspot X="2085.72" Y="2385.06" Z="65.5214" />
+				<Hotspot X="2248.17" Y="2422.3" Z="118.137" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="18866" KillCount="10">
+			<Hotspots>
+				<Hotspot X="2290.24" Y="2360.72" Z="113.92" />
+				<Hotspot X="2255.18" Y="2321.21" Z="94.8299" />
+				<Hotspot X="2222.13" Y="2281.03" Z="82.0513" />
+				<Hotspot X="2195.36" Y="2322.1" Z="87.8142" />
+				<Hotspot X="2173.13" Y="2412.06" Z="102.207" />
+				<Hotspot X="2131.73" Y="2433.54" Z="89.9267" />
+				<Hotspot X="2186.84" Y="2220.45" Z="78.4004" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10343" Name="The Unending Invasion">
+		<Objective Type="CollectItem" ItemId="29461" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Mana Bomb Fragment" Id="184433" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2216.23" Y="2379.13" Z="103.6" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10332" Name="Master Smith Rhonsus">
+		<Objective Type="KillMob" MobId="20410" KillCount="1">
+			<Hotspots>
+				<Hotspot X="2288.35" Y="2051.09" Z="70.0708" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10312" Name="The Annals of Kirin'Var">
+		<Objective Type="CollectItem" ItemId="29331" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Battle-Mage Dathric" Id="19543" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2185.22" Y="2115.88" Z="72.4063" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10239" Name="Potential Energy Source">
+		<Objective Type="CollectItem" ItemId="28564" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Energy Isolation Cube" Id="183945" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2405.71" Y="2629.9" Z="134.323" />
+				<Hotspot X="2446" Y="2616.67" Z="134.322" />
+				<Hotspot X="2375.56" Y="2593.96" Z="135.725" />
+				<Hotspot X="2375.83" Y="2670.54" Z="131.434" />
+				<Hotspot X="2406.56" Y="2720.17" Z="134.493" />
+				<Hotspot X="2364.28" Y="2746.57" Z="134.493" />
+				<Hotspot X="2315.04" Y="2706.76" Z="127.457" />
+				<Hotspot X="2454.39" Y="2753.95" Z="134.493" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10314" Name="A Lingering Suspicion">
+		<Objective Type="CollectItem" ItemId="29338" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Tormented Soul" Id="20512" />
+				<Mob Name="Tormented Citizen" Id="21065" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2513.93" Y="2148.42" Z="98.4146" />
+				<Hotspot X="2475.73" Y="2164.79" Z="89.6609" />
+				<Hotspot X="2461.8" Y="2202.62" Z="102.37" />
+				<Hotspot X="2431.95" Y="2162.05" Z="99.0427" />
+				<Hotspot X="2439.6" Y="2121.88" Z="87.9443" />
+				<Hotspot X="2451.12" Y="2075.28" Z="83.7381" />
+				<Hotspot X="2525.98" Y="2064.67" Z="94.0328" />
+				<Hotspot X="2535.37" Y="2106.66" Z="99.998" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10319" Name="Capturing the Phylactery">
+		<Objective Type="CollectItem" ItemId="29361" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Suspicious Outhouse" Id="184310" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2468.82" Y="2146.18" Z="93.9604" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10192" Name="Krasus's Compendium">
+		<Objective Type="CollectItem" ItemId="28473" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Krasus's Compendium - Chapter 2" Id="184122" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2126.63" Y="2274.75" Z="73.1495" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="28472" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Krasus's Compendium - Chapter 1" Id="184121" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2140.74" Y="2216.16" Z="75.4029" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="28474" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Krasus's Compendium - Chapter 3" Id="184123" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2187.4" Y="2203.97" Z="77.6332" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10417" Name="Run a Diagnostic!">
+		<Objective Type="CollectItem" ItemId="29741" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Diagnostic Equipment" Id="184589" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3412.24" Y="2794.63" Z="148.412" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10348" Name="New Opportunities">
+		<Objective Type="CollectItem" ItemId="29474" CollectCount="15">
+			<CollectFrom>
+				<GameObject Name="Ivory Bell" Id="184443" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3451.52" Y="2794.32" Z="150.773" />
+				<Hotspot X="3407.5" Y="2823.72" Z="146.453" />
+				<Hotspot X="3350.48" Y="2833.84" Z="142.201" />
+				<Hotspot X="3394.33" Y="2919.46" Z="155.39" />
+				<Hotspot X="3453.24" Y="2903.69" Z="143.948" />
+				<Hotspot X="3477.46" Y="2948.83" Z="143.951" />
+				<Hotspot X="3514.47" Y="2800.83" Z="148.144" />
+				<Hotspot X="3575.9" Y="2791.82" Z="148.058" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10433" Name="Keeping Up Appearances">
+		<Objective Type="CollectItem" ItemId="29801" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Ripfang Lynx" Id="20671" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3388.87" Y="2928.47" Z="152.089" />
+				<Hotspot X="3418.44" Y="2985.63" Z="147.689" />
+				<Hotspot X="3368.98" Y="3029.74" Z="141.456" />
+				<Hotspot X="3331.74" Y="2966.98" Z="142.47" />
+				<Hotspot X="3465.27" Y="3035.63" Z="145.331" />
+				<Hotspot X="3528.53" Y="3017.03" Z="144.778" />
+				<Hotspot X="3620.15" Y="2894.95" Z="152.317" />
+				<Hotspot X="3600.37" Y="2846.14" Z="167.691" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10418" Name="Deal With the Saboteurs">
+		<Objective Type="KillMob" MobId="20773" KillCount="8">
+			<Hotspots>
+				<Hotspot X="3451.48" Y="2891.16" Z="140.964" />
+				<Hotspot X="3452.42" Y="2846.5" Z="141.217" />
+				<Hotspot X="3510.25" Y="2881.11" Z="141.92" />
+				<Hotspot X="3482.68" Y="2930.85" Z="139.904" />
+				<Hotspot X="3560.77" Y="2909.13" Z="141.334" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10234" Name="One Demon's Trash...">
+		<Objective Type="CollectItem" ItemId="28551" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Fel Reaver Part" Id="183935" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3258.32" Y="2778.3" Z="155.897" />
+				<Hotspot X="3278.36" Y="2720.45" Z="152.417" />
+				<Hotspot X="3304.93" Y="2675.64" Z="153.757" />
+				<Hotspot X="3345.2" Y="2692.89" Z="158.731" />
+				<Hotspot X="3292.72" Y="2624.46" Z="142.485" />
+				<Hotspot X="3241.54" Y="2663.03" Z="143.652" />
+				<Hotspot X="3214.93" Y="2731.04" Z="148.522" />
+				<Hotspot X="3182.91" Y="2771.27" Z="148.418" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Leveling/ZygorGuidesHorde.lua: Zygor's Horde Leveling Guides\Outland (68-70) -->
+		<If Condition="Me.MapId != 530">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Horde\Leveling_Outland (68-70)");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Outland" />
+		</If>
+		<Objective QuestName="Grimnok and Korgaah, I Am For You!" QuestId="10543" Type="KillMob" MobId="20095" KillCount="1" />
+		<CustomBehavior File="UseItemOn" QuestId="10543" ItemId="30353" MobId="20723" NumOfTimes="1" Range="5" CollectionDistance="200" X="2706.78" Y="6490.82" Z="25.6484" />
+		<!-- REVIEW Q10543 Grimnok and Korgaah, I Am For You!: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10543)) &amp;&amp; (IsQuestCompleted(10543)))">
+			<TurnIn QuestName="Grimnok and Korgaah, I Am For You!" QuestId="10543" TurnInName="T'chali the Witch Doctor" TurnInId="21349" X="1793.14" Y="6406.45" Z="-11.5" />
+		</If>
+		<If Condition="((HasQuest(10543)) &amp;&amp; (!IsQuestCompleted(10543)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10543" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10543)">
+			<PickUp QuestName="A Curse Upon Both of Your Clans!" QuestId="10544" GiverName="T'chali the Witch Doctor" GiverId="21349" X="1793.14" Y="6406.45" Z="-11.5" />
+		</If>
+		<!-- REVIEW Q10544 A Curse Upon Both of Your Clans!: use item 30479: target 21452 Bloodmaul Evil Spirit has no spawn (kill credit or scripted event); use item 30479: target 21446 Bladespire Evil Spirit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10544)) &amp;&amp; (IsQuestCompleted(10544)))">
+			<TurnIn QuestName="A Curse Upon Both of Your Clans!" QuestId="10544" TurnInName="T'chali the Witch Doctor" TurnInId="21349" X="1793.14" Y="6406.45" Z="-11.5" />
+		</If>
+		<If Condition="((HasQuest(10544)) &amp;&amp; (!IsQuestCompleted(10544)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10544" Type="Incomplete" />
+		</If>
+		<Objective QuestName="The Bloodmaul Ogres" QuestId="10505" Type="KillMob" MobId="19991" KillCount="30" />
+		<TurnIn QuestName="The Bloodmaul Ogres" QuestId="10505" TurnInName="Tor'chunk Twoclaws" TurnInId="21147" X="2295.88" Y="6027.99" Z="142.641" />
+		<!-- REVIEW Q10526 The Thunderspike: item 30435 The Thunderspike has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10526)) &amp;&amp; (IsQuestCompleted(10526)))">
+			<TurnIn QuestName="The Thunderspike" QuestId="10526" TurnInName="Rokgah Bloodgrip" TurnInId="21311" X="2276.08" Y="5981.62" Z="142.788" />
+		</If>
+		<If Condition="((HasQuest(10526)) &amp;&amp; (!IsQuestCompleted(10526)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10526" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10526)">
+			<PickUp QuestName="The Spirits Have Voices" QuestId="10718" GiverName="Garm Wolfbrother" GiverId="21950" X="2272.95" Y="5984.4" Z="142.799" />
+		</If>
+		<TurnIn QuestName="The Spirits Have Voices" QuestId="10718" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10718)">
+			<PickUp QuestName="Whispers on the Wind" QuestId="10614" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+		<If Condition="(Me.Level &gt;= 61)">
+			<PickUp QuestName="The Stones of Vekh'nir" QuestId="10565" GiverName="Dertrok" GiverId="21496" X="2162.21" Y="4769.62" Z="156.633" />
+		</If>
+		<TurnIn QuestName="Whispers on the Wind" QuestId="10614" TurnInName="Leoroxx" TurnInId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10614)">
+			<PickUp QuestName="Reunion" QuestId="10709" GiverName="Leoroxx" GiverId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65)">
+			<PickUp QuestName="Mok'Nathal Treats" QuestId="10860" GiverName="Matron Varah" GiverId="21088" X="2227.13" Y="4717.91" Z="162.075" />
+		</If>
+		<If Condition="(Me.Level &gt;= 61)">
+			<PickUp QuestName="Silkwing Cocoons" QuestId="10617" GiverName="Taerek" GiverId="21895" X="2186.73" Y="4729.71" Z="157.036" />
+		</If>
+		<If Condition="(Me.Level &gt;= 61)">
+			<PickUp QuestName="The Softest Wings" QuestId="10618" GiverName="Silmara" GiverId="21896" X="2182.92" Y="4731.6" Z="156.632" />
+		</If>
+		<TurnIn QuestName="Reunion" QuestId="10709" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10709)">
+			<PickUp QuestName="On Spirit's Wings" QuestId="10714" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+		<Objective QuestName="Silkwing Cocoons" QuestId="10617" Type="CollectItem" ItemId="30791" CollectCount="8" />
+		<Objective QuestName="The Softest Wings" QuestId="10618" Type="CollectItem" ItemId="30792" CollectCount="12" />
+		<!-- REVIEW Q10565 The Stones of Vekh'nir: item 30567 Charged Vekh'nir Crystal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10565)) &amp;&amp; (IsQuestCompleted(10565)))">
+			<TurnIn QuestName="The Stones of Vekh'nir" QuestId="10565" TurnInName="Dertrok" TurnInId="21496" X="2162.21" Y="4769.62" Z="156.633" />
+		</If>
+		<If Condition="((HasQuest(10565)) &amp;&amp; (!IsQuestCompleted(10565)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10565" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 61) &amp;&amp; IsQuestCompleted(10565)">
+			<PickUp QuestName="Trial and Error" QuestId="10566" GiverName="Dertrok" GiverId="21496" X="2162.21" Y="4769.62" Z="156.633" />
+		</If>
+		<TurnIn QuestName="Silkwing Cocoons" QuestId="10617" TurnInName="Taerek" TurnInId="21895" X="2186.73" Y="4729.71" Z="157.036" />
+		<TurnIn QuestName="The Softest Wings" QuestId="10618" TurnInName="Silmara" TurnInId="21896" X="2182.92" Y="4731.6" Z="156.632" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10565)">
+			<PickUp QuestName="Understanding the Mok'Nathal" QuestId="10846" GiverName="Leoroxx" GiverId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		</If>
+		<Objective QuestName="Understanding the Mok'Nathal" QuestId="10846" Type="KillMob" MobId="22305" KillCount="1" />
+		<!-- REVIEW Q10566 Trial and Error: use item 30650: target 21713 [DND]Mok'Nathal Wand 1 has no spawn (kill credit or scripted event); use item 30650: target 21714 [DND]Mok'Nathal Wand 2 has no spawn (kill credit or scripted event); use item 30650: target 21715 [DND]Mok'Nathal Wand 3 has no spawn (kill credit or scripted event); use item 30650: target 21716 [DND]Mok'Nathal Wand 4 has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10566)) &amp;&amp; (IsQuestCompleted(10566)))">
+			<TurnIn QuestName="Trial and Error" QuestId="10566" TurnInName="Dertrok" TurnInId="21496" X="2162.21" Y="4769.62" Z="156.633" />
+		</If>
+		<If Condition="((HasQuest(10566)) &amp;&amp; (!IsQuestCompleted(10566)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10566" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 61) &amp;&amp; IsQuestCompleted(10566)">
+			<PickUp QuestName="Ruuan Weald" QuestId="10615" GiverName="Dertrok" GiverId="21496" X="2162.21" Y="4769.62" Z="156.633" />
+		</If>
+		<TurnIn QuestName="Understanding the Mok'Nathal" QuestId="10846" TurnInName="Leoroxx" TurnInId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10846)">
+			<PickUp QuestName="Since Time Forgotten..." QuestId="10843" GiverName="Leoroxx" GiverId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10846)">
+			<PickUp QuestName="The Totems of My Enemy" QuestId="10851" GiverName="Spiritcaller Dohgar" GiverId="22312" X="2221.21" Y="4781.8" Z="156.583" />
+		</If>
+		<Objective QuestName="Mok'Nathal Treats" QuestId="10860" Type="CollectItem" ItemId="31671" CollectCount="3" />
+		<Objective QuestName="Mok'Nathal Treats" QuestId="10860" Type="CollectItem" ItemId="31670" CollectCount="3" />
+		<Objective QuestName="The Totems of My Enemy" QuestId="10851" Type="CollectItem" ItemId="31651" CollectCount="5" />
+		<Objective QuestName="Since Time Forgotten..." QuestId="10843" Type="KillMob" MobId="20768" KillCount="1" />
+		<TurnIn QuestName="Since Time Forgotten..." QuestId="10843" TurnInName="Leoroxx" TurnInId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10843)">
+			<PickUp QuestName="Slay the Brood Mother" QuestId="10845" GiverName="Leoroxx" GiverId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		</If>
+		<TurnIn QuestName="The Totems of My Enemy" QuestId="10851" TurnInName="Spiritcaller Dohgar" TurnInId="22312" X="2221.21" Y="4781.8" Z="156.583" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10851)">
+			<PickUp QuestName="Spirit Calling" QuestId="10853" GiverName="Spiritcaller Dohgar" GiverId="22312" X="2221.21" Y="4781.8" Z="156.583" />
+		</If>
+		<TurnIn QuestName="Mok'Nathal Treats" QuestId="10860" TurnInName="Matron Varah" TurnInId="21088" X="2227.13" Y="4717.91" Z="162.075" />
+		<Objective QuestName="Spirit Calling" QuestId="10853" Type="CollectItem" ItemId="31656" CollectCount="8" />
+		<CustomBehavior File="UseItemOn" QuestId="10845" ItemId="31663" MobId="21032" NumOfTimes="1" Range="5" CollectionDistance="200" X="1609.29" Y="5440.47" Z="266.058" />
+		<!-- REVIEW Q10845 Slay the Brood Mother: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10845)) &amp;&amp; (IsQuestCompleted(10845)))">
+			<TurnIn QuestName="Slay the Brood Mother" QuestId="10845" TurnInName="Leoroxx" TurnInId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		</If>
+		<If Condition="((HasQuest(10845)) &amp;&amp; (!IsQuestCompleted(10845)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10845" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Spirit Calling" QuestId="10853" TurnInName="Spiritcaller Dohgar" TurnInId="22312" X="2221.21" Y="4781.8" Z="156.583" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10853)">
+			<PickUp QuestName="Gather the Orbs" QuestId="10859" GiverName="Spiritcaller Dohgar" GiverId="22312" X="2221.21" Y="4781.8" Z="156.583" />
+		</If>
+		<!-- REVIEW Q10859 Gather the Orbs: use item 31668: target 21929 Trapping the Light Kill Credit Trigger has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10859)) &amp;&amp; (IsQuestCompleted(10859)))">
+			<TurnIn QuestName="Gather the Orbs" QuestId="10859" TurnInName="Spiritcaller Dohgar" TurnInId="22312" X="2221.21" Y="4781.8" Z="156.583" />
+		</If>
+		<If Condition="((HasQuest(10859)) &amp;&amp; (!IsQuestCompleted(10859)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10859" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10859)">
+			<PickUp QuestName="Inform Leoroxx!" QuestId="10865" GiverName="Spiritcaller Dohgar" GiverId="22312" X="2221.21" Y="4781.8" Z="156.583" />
+		</If>
+		<TurnIn QuestName="Inform Leoroxx!" QuestId="10865" TurnInName="Leoroxx" TurnInId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10865)">
+			<PickUp QuestName="There Can Be Only One Response" QuestId="10867" GiverName="Leoroxx" GiverId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		</If>
+		<TurnIn QuestName="Ruuan Weald" QuestId="10615" TurnInName="Timeon" TurnInId="21782" X="2993.94" Y="5473.5" Z="145.197" />
+		<If Condition="(Me.Level &gt;= 66)">
+			<PickUp QuestName="Creating the Pendant" QuestId="10567" GiverName="Timeon" GiverId="21782" X="2993.94" Y="5473.5" Z="145.197" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65)">
+			<PickUp QuestName="Culling the Wild" QuestId="10753" GiverName="Faradrella" GiverId="22133" X="3024.71" Y="5452.03" Z="147.35" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65)">
+			<PickUp QuestName="Little Embers" QuestId="10770" GiverName="Mosswood the Ancient" GiverId="22053" X="3017.66" Y="5523.29" Z="148.27" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65)">
+			<PickUp QuestName="From the Ashes" QuestId="10771" GiverName="Mosswood the Ancient" GiverId="22053" X="3017.66" Y="5523.29" Z="148.27" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65)">
+			<PickUp QuestName="A Time for Negotiation..." QuestId="10682" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		</If>
+		<!-- REVIEW Q10867 There Can Be Only One Response: item 30890 Collection of Souls has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10867)) &amp;&amp; (IsQuestCompleted(10867)))">
+			<TurnIn QuestName="There Can Be Only One Response" QuestId="10867" TurnInName="Spiritcaller Dohgar" TurnInId="22312" X="2221.21" Y="4781.8" Z="156.583" />
+		</If>
+		<If Condition="((HasQuest(10867)) &amp;&amp; (!IsQuestCompleted(10867)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10867" Type="Incomplete" />
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="10753" ItemId="31384" MobId="21300" NumOfTimes="2" Range="5" CollectionDistance="200" X="3113.37" Y="5087.61" Z="267.159" />
+		<CustomBehavior File="UseItemOn" QuestId="10753" ItemId="31384" MobId="21123" NumOfTimes="4" Range="5" CollectionDistance="200" X="3151.71" Y="5094.15" Z="266.877" />
+		<CustomBehavior File="UseItemOn" QuestId="10753" ItemId="31384" MobId="21124" NumOfTimes="4" Range="5" CollectionDistance="200" X="3126.45" Y="5137.86" Z="270.644" />
+		<If Condition="HasItem(31384) &amp;&amp; !HasQuest(10810) &amp;&amp; !IsQuestCompleted(10810) &amp;&amp; (Me.Level &gt;= 65)">
+			<PickUp QuestName="Damaged Mask" QuestId="10810" GiverName="Damaged Mask" GiverId="31384" GiverType="Item" />
+		</If>
+		<Objective QuestName="From the Ashes" QuestId="10771" Type="UseObject" ObjectId="185124" UseCount="1" />
+		<Objective QuestName="From the Ashes" QuestId="10771" Type="UseObject" ObjectId="185147" UseCount="1" />
+		<Objective QuestName="Little Embers" QuestId="10770" Type="KillMob" MobId="21021" KillCount="8" />
+		<Objective QuestName="From the Ashes" QuestId="10771" Type="UseObject" ObjectId="185148" UseCount="1" />
+		<TurnIn QuestName="Damaged Mask" QuestId="10810" TurnInName="O'Mally Zapnabber" TurnInId="22020" X="2948.06" Y="5446.82" Z="147.584" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10810)">
+			<PickUp QuestName="Mystery Mask" QuestId="10812" GiverName="O'Mally Zapnabber" GiverId="22020" X="2948.06" Y="5446.82" Z="147.584" />
+		</If>
+		<TurnIn QuestName="Mystery Mask" QuestId="10812" TurnInName="Wildlord Antelarion" TurnInId="22127" X="2959.73" Y="5465.37" Z="144.332" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10812)">
+			<PickUp QuestName="Felsworn Gas Mask" QuestId="10819" GiverName="Wildlord Antelarion" GiverId="22127" X="2959.73" Y="5465.37" Z="144.332" />
+		</If>
+		<!-- REVIEW Q10753 Culling the Wild: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10753)) &amp;&amp; (IsQuestCompleted(10753)))">
+			<TurnIn QuestName="Culling the Wild" QuestId="10753" TurnInName="Faradrella" TurnInId="22133" X="3024.71" Y="5452.03" Z="147.35" />
+		</If>
+		<If Condition="((HasQuest(10753)) &amp;&amp; (!IsQuestCompleted(10753)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10753" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Little Embers" QuestId="10770" TurnInName="Mosswood the Ancient" TurnInId="22053" X="3017.66" Y="5523.29" Z="148.27" />
+		<TurnIn QuestName="From the Ashes" QuestId="10771" TurnInName="Mosswood the Ancient" TurnInId="22053" X="3017.66" Y="5523.29" Z="148.27" />
+		<!-- REVIEW Q10682 A Time for Negotiation...: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10682)) &amp;&amp; (IsQuestCompleted(10682)))">
+			<TurnIn QuestName="A Time for Negotiation..." QuestId="10682" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		</If>
+		<If Condition="((HasQuest(10682)) &amp;&amp; (!IsQuestCompleted(10682)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10682" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10682)">
+			<PickUp QuestName="...and a Time for Action" QuestId="10713" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10682)">
+			<PickUp QuestName="Poaching from Poachers" QuestId="10717" GiverName="Samia Inkling" GiverId="21983" X="2981.4" Y="5485.77" Z="143.858" />
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="10713" ItemId="31120" MobId="21810" NumOfTimes="10" Range="5" CollectionDistance="200" X="3056.99" Y="5606.51" Z="143.959" />
+		<Objective QuestName="Poaching from Poachers" QuestId="10717" Type="CollectItem" ItemId="31119" CollectCount="5" />
+		<If Condition="HasItem(31120) &amp;&amp; !HasQuest(10719) &amp;&amp; !IsQuestCompleted(10719) &amp;&amp; (Me.Level &gt;= 65)">
+			<PickUp QuestName="Did You Get The Note?" QuestId="10719" GiverName="Meeting Note" GiverId="31120" GiverType="Item" />
+		</If>
+		<TurnIn QuestName="Poaching from Poachers" QuestId="10717" TurnInName="Samia Inkling" TurnInId="21983" X="2981.4" Y="5485.77" Z="143.858" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10717)">
+			<PickUp QuestName="Whelps of the Wyrmcult" QuestId="10747" GiverName="Samia Inkling" GiverId="21983" X="2981.4" Y="5485.77" Z="143.858" />
+		</If>
+		<!-- REVIEW Q10713 ...and a Time for Action: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10713)) &amp;&amp; (IsQuestCompleted(10713)))">
+			<TurnIn QuestName="...and a Time for Action" QuestId="10713" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		</If>
+		<If Condition="((HasQuest(10713)) &amp;&amp; (!IsQuestCompleted(10713)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10713" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Did You Get The Note?" QuestId="10719" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10719)">
+			<PickUp QuestName="Wyrmskull Watcher" QuestId="10894" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		</If>
+		<TurnIn QuestName="Felsworn Gas Mask" QuestId="10819" TurnInName="Legion Communicator" TurnInId="185165" TurnInType="Object" X="2960.45" Y="4870.89" Z="278.011" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10819)">
+			<PickUp QuestName="Deceive thy Enemy" QuestId="10820" GiverName="Legion Communicator" GiverId="185165" GiverType="Object" X="2960.45" Y="4870.89" Z="278.011" />
+		</If>
+		<Objective QuestName="Deceive thy Enemy" QuestId="10820" Type="KillMob" MobId="19961" KillCount="4" />
+		<Objective QuestName="Deceive thy Enemy" QuestId="10820" Type="KillMob" MobId="19960" KillCount="4" />
+		<TurnIn QuestName="Deceive thy Enemy" QuestId="10820" TurnInName="Legion Communicator" TurnInId="185165" TurnInType="Object" X="2960.45" Y="4870.89" Z="278.011" />
+		<!-- REVIEW Q10714 On Spirit's Wings: use item 31128: target 22383 [DND]Bloodmaul Chatter Credit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10714)) &amp;&amp; (IsQuestCompleted(10714)))">
+			<TurnIn QuestName="On Spirit's Wings" QuestId="10714" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+		<If Condition="((HasQuest(10714)) &amp;&amp; (!IsQuestCompleted(10714)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10714" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10714)">
+			<PickUp QuestName="Baron Sablemane" QuestId="10783" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+		<!-- REVIEW Q10567 Creating the Pendant: item 30706 Harbinger's Pendant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10567)) &amp;&amp; (IsQuestCompleted(10567)))">
+			<TurnIn QuestName="Creating the Pendant" QuestId="10567" TurnInName="Timeon" TurnInId="21782" X="2993.94" Y="5473.5" Z="145.197" />
+		</If>
+		<If Condition="((HasQuest(10567)) &amp;&amp; (!IsQuestCompleted(10567)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10567" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10567)">
+			<PickUp QuestName="Whispers of the Raven God" QuestId="10607" GiverName="Timeon" GiverId="21782" X="2993.94" Y="5473.5" Z="145.197" />
+		</If>
+		<TurnIn QuestName="Baron Sablemane" QuestId="10783" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10783)">
+			<PickUp QuestName="Into the Churning Gulch" QuestId="10715" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		</If>
+		<Objective QuestName="Into the Churning Gulch" QuestId="10715" Type="CollectItem" ItemId="31132" CollectCount="7" />
+		<TurnIn QuestName="Into the Churning Gulch" QuestId="10715" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10715)">
+			<PickUp QuestName="Baron Sablemane's Poison" QuestId="10749" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		</If>
+		<TurnIn QuestName="Baron Sablemane's Poison" QuestId="10749" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10749)">
+			<PickUp QuestName="The Smallest Creatures" QuestId="10720" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10749)">
+			<PickUp QuestName="Crush the Bloodmaul Camp" QuestId="10784" GiverName="Tor'chunk Twoclaws" GiverId="21147" X="2295.88" Y="6027.99" Z="142.641" />
+		</If>
+		<Objective QuestName="Crush the Bloodmaul Camp" QuestId="10784" Type="KillMob" MobId="19993" KillCount="10" />
+		<Objective QuestName="Crush the Bloodmaul Camp" QuestId="10784" Type="KillMob" MobId="19994" KillCount="5" />
+		<!-- REVIEW Q10720 The Smallest Creatures: goal 22367 [DND]Ripe Moonshine Keg Credit x1: not attackable; goal 22356 [DND]Green Spot Grog Keg Credit x1: not attackable; goal 22368 [DND]Fermented Seed Beer Keg Credit x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10720)) &amp;&amp; (IsQuestCompleted(10720)))">
+			<TurnIn QuestName="The Smallest Creatures" QuestId="10720" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+		<If Condition="((HasQuest(10720)) &amp;&amp; (!IsQuestCompleted(10720)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10720" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10720)">
+			<PickUp QuestName="A Boaring Time for Grulloc" QuestId="10721" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+		<TurnIn QuestName="Crush the Bloodmaul Camp" QuestId="10784" TurnInName="Tor'chunk Twoclaws" TurnInId="21147" X="2295.88" Y="6027.99" Z="142.641" />
+		<Objective QuestName="A Boaring Time for Grulloc" QuestId="10721" Type="CollectItem" ItemId="31349" CollectCount="1" />
+		<TurnIn QuestName="A Boaring Time for Grulloc" QuestId="10721" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10721)">
+			<PickUp QuestName="It's a Trap!" QuestId="10785" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		</If>
+		<TurnIn QuestName="It's a Trap!" QuestId="10785" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10785)">
+			<PickUp QuestName="Gorgrom the Dragon-Eater" QuestId="10723" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10785)">
+			<PickUp QuestName="Slaughter at Boulder'mok" QuestId="10786" GiverName="Tor'chunk Twoclaws" GiverId="21147" X="2295.88" Y="6027.99" Z="142.641" />
+		</If>
+		<TurnIn QuestName="Wyrmskull Watcher" QuestId="10894" TurnInName="Watcher Moonshade" TurnInId="22386" X="3108.07" Y="6131.54" Z="136.461" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10894)">
+			<PickUp QuestName="Longtail is the Lynchpin" QuestId="10893" GiverName="Watcher Moonshade" GiverId="22386" X="3108.07" Y="6131.54" Z="136.461" />
+		</If>
+		<Objective QuestName="Longtail is the Lynchpin" QuestId="10893" Type="KillMob" MobId="22396" KillCount="1" />
+		<TurnIn QuestName="Longtail is the Lynchpin" QuestId="10893" TurnInName="Watcher Moonshade" TurnInId="22386" X="3108.07" Y="6131.54" Z="136.461" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10893)">
+			<PickUp QuestName="Meeting at the Blackwing Coven" QuestId="10722" GiverName="Watcher Moonshade" GiverId="22386" X="3108.07" Y="6131.54" Z="136.461" />
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="10607" ItemId="31489" MobId="22801" NumOfTimes="1" Range="5" CollectionDistance="200" X="3575.48" Y="6666.42" Z="128.562" />
+		<If Condition="HasItem(31489) &amp;&amp; !HasQuest(10825) &amp;&amp; !IsQuestCompleted(10825) &amp;&amp; (Me.Level &gt;= 65)">
+			<PickUp QuestName="The Truth Unorbed" QuestId="10825" GiverName="Orb of the Grishna" GiverId="31489" GiverType="Item" />
+		</If>
+		<Objective QuestName="Slaughter at Boulder'mok" QuestId="10786" Type="KillMob" MobId="21046" KillCount="5" />
+		<Objective QuestName="Slaughter at Boulder'mok" QuestId="10786" Type="KillMob" MobId="21047" KillCount="3" />
+		<!-- REVIEW Q10747 Whelps of the Wyrmcult: item 31130 Wyrmcult Blackwhelp has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10747)) &amp;&amp; (IsQuestCompleted(10747)))">
+			<TurnIn QuestName="Whelps of the Wyrmcult" QuestId="10747" TurnInName="Samia Inkling" TurnInId="21983" X="2981.4" Y="5485.77" Z="143.858" />
+		</If>
+		<If Condition="((HasQuest(10747)) &amp;&amp; (!IsQuestCompleted(10747)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10747" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q10722 Meeting at the Blackwing Coven: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10722)) &amp;&amp; (IsQuestCompleted(10722)))">
+			<TurnIn QuestName="Meeting at the Blackwing Coven" QuestId="10722" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		</If>
+		<If Condition="((HasQuest(10722)) &amp;&amp; (!IsQuestCompleted(10722)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10722" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10722)">
+			<PickUp QuestName="Maxnar Must Die!" QuestId="10748" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		</If>
+		<TurnIn QuestName="The Truth Unorbed" QuestId="10825" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10825)">
+			<PickUp QuestName="Treebole Must Know" QuestId="10829" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		</If>
+		<!-- REVIEW Q10607 Whispers of the Raven God: goal 22800 Third Prophecy x1: not attackable; goal 22798 First Prophecy x1: not attackable; goal 22799 Second Prophecy x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10607)) &amp;&amp; (IsQuestCompleted(10607)))">
+			<TurnIn QuestName="Whispers of the Raven God" QuestId="10607" TurnInName="Timeon" TurnInId="21782" X="2993.94" Y="5473.5" Z="145.197" />
+		</If>
+		<If Condition="((HasQuest(10607)) &amp;&amp; (!IsQuestCompleted(10607)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10607" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q10723 Gorgrom the Dragon-Eater: collect 22434 [DND]Ogre Pike Planted Credit x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10723)) &amp;&amp; (IsQuestCompleted(10723)))">
+			<TurnIn QuestName="Gorgrom the Dragon-Eater" QuestId="10723" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+		<If Condition="((HasQuest(10723)) &amp;&amp; (!IsQuestCompleted(10723)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10723" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Slaughter at Boulder'mok" QuestId="10786" TurnInName="Tor'chunk Twoclaws" TurnInId="21147" X="2295.88" Y="6027.99" Z="142.641" />
+		<TurnIn QuestName="Treebole Must Know" QuestId="10829" TurnInName="Treebole" TurnInId="22215" X="3609.03" Y="6829.56" Z="136.69" />
+		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10829)">
+			<PickUp QuestName="Exorcising the Trees" QuestId="10830" GiverName="Treebole" GiverId="22215" X="3609.03" Y="6829.56" Z="136.69" />
+		</If>
+		<!-- REVIEW Q10830 Exorcising the Trees: collect 22226 Koi-Koi Spirit x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10830)) &amp;&amp; (IsQuestCompleted(10830)))">
+			<TurnIn QuestName="Exorcising the Trees" QuestId="10830" TurnInName="Treebole" TurnInId="22215" X="3609.03" Y="6829.56" Z="136.69" />
+		</If>
+		<If Condition="((HasQuest(10830)) &amp;&amp; (!IsQuestCompleted(10830)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10830" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Maxnar Must Die!" QuestId="10748" Type="KillMob" MobId="21389" KillCount="1" />
+		<TurnIn QuestName="Maxnar Must Die!" QuestId="10748" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="Off To Area 52" QuestId="10183" GiverName="Netherologist Coppernickels" GiverId="19569" X="3389.06" Y="4296.1" Z="120.867" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="Recharging the Batteries" QuestId="10190" GiverName="Bot-Specialist Alley" GiverId="19578" X="3352.84" Y="3726.39" Z="141.512" />
+		</If>
+		<!-- REVIEW Q10190 Recharging the Batteries: use item 28369: target 19595 Drained Phase Hunter has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10190)) &amp;&amp; (IsQuestCompleted(10190)))">
+			<TurnIn QuestName="Recharging the Batteries" QuestId="10190" TurnInName="Bot-Specialist Alley" TurnInId="19578" X="3352.84" Y="3726.39" Z="141.512" />
+		</If>
+		<If Condition="((HasQuest(10190)) &amp;&amp; (!IsQuestCompleted(10190)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10190" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="Securing the Shaleskin Shale" QuestId="10342" GiverName="Boots" GiverId="19617" X="3080.51" Y="3684.4" Z="142.533" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="Consortium Crystal Collection" QuestId="10265" GiverName="Nether-Stalker Khay'ji" GiverId="19880" X="3069.96" Y="3674.86" Z="142.527" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Manaforge B'naar" QuestId="10189" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<TurnIn QuestName="Off To Area 52" QuestId="10183" TurnInName="Rocket-Chief Fuselage" TurnInId="19570" X="3041.8" Y="3658.85" Z="143.406" />
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="You're Hired!" QuestId="10186" GiverName="Rocket-Chief Fuselage" GiverId="19570" X="3041.8" Y="3658.85" Z="143.406" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="The Archmage's Staff" QuestId="10173" GiverName="Ravandwyr" GiverId="19217" X="2997.61" Y="3734.97" Z="144.078" />
+		</If>
+		<Objective QuestName="Securing the Shaleskin Shale" QuestId="10342" Type="CollectItem" ItemId="29464" CollectCount="5" />
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="Mark V is Alive!" QuestId="10191" GiverName="Maxx A. Million Mk. V" GiverId="19589" X="3351.4" Y="3722.33" Z="141.397" />
+		</If>
+		<Objective QuestName="You're Hired!" QuestId="10186" Type="CollectItem" ItemId="28364" CollectCount="10" />
+		<!-- REVIEW Q10191 Mark V is Alive!: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10191)) &amp;&amp; (IsQuestCompleted(10191)))">
+			<TurnIn QuestName="Mark V is Alive!" QuestId="10191" TurnInName="Bot-Specialist Alley" TurnInId="19578" X="3352.84" Y="3726.39" Z="141.512" />
+		</If>
+		<If Condition="((HasQuest(10191)) &amp;&amp; (!IsQuestCompleted(10191)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10191" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Securing the Shaleskin Shale" QuestId="10342" TurnInName="Boots" TurnInId="19617" X="3080.51" Y="3684.4" Z="142.533" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10342)">
+			<PickUp QuestName="That Little Extra Kick" QuestId="10199" GiverName="Boots" GiverId="19617" X="3080.51" Y="3684.4" Z="142.533" />
+		</If>
+		<TurnIn QuestName="You're Hired!" QuestId="10186" TurnInName="Rocket-Chief Fuselage" TurnInId="19570" X="3041.8" Y="3658.85" Z="143.406" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10186)">
+			<PickUp QuestName="Invaluable Asset Zapping" QuestId="10203" GiverName="Rocket-Chief Fuselage" GiverId="19570" X="3041.8" Y="3658.85" Z="143.406" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10186)">
+			<PickUp QuestName="Report to Engineering" QuestId="10225" GiverName="Rocket-Chief Fuselage" GiverId="19570" X="3041.8" Y="3658.85" Z="143.406" />
+		</If>
+		<TurnIn QuestName="Report to Engineering" QuestId="10225" TurnInName="Chief Engineer Trep" TurnInId="19709" X="2974.39" Y="3675.3" Z="143.457" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10225)">
+			<PickUp QuestName="Essence for the Engines" QuestId="10224" GiverName="Chief Engineer Trep" GiverId="19709" X="2974.39" Y="3675.3" Z="143.457" />
+		</If>
+		<Objective QuestName="Essence for the Engines" QuestId="10224" Type="CollectItem" ItemId="28527" CollectCount="7" />
+		<TurnIn QuestName="Essence for the Engines" QuestId="10224" TurnInName="Chief Engineer Trep" TurnInId="19709" X="2974.39" Y="3675.3" Z="143.457" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10224)">
+			<PickUp QuestName="Elemental Power Extraction" QuestId="10226" GiverName="Chief Engineer Trep" GiverId="19709" X="2974.39" Y="3675.3" Z="143.457" />
+		</If>
+		<Objective QuestName="Manaforge B'naar" QuestId="10189" Type="CollectItem" ItemId="28376" CollectCount="1" />
+		<Objective QuestName="Invaluable Asset Zapping" QuestId="10203" Type="UseObject" ObjectId="183807" UseCount="1" />
+		<Objective QuestName="Invaluable Asset Zapping" QuestId="10203" Type="UseObject" ObjectId="183805" UseCount="1" />
+		<Objective QuestName="Consortium Crystal Collection" QuestId="10265" Type="CollectItem" ItemId="28829" CollectCount="1" />
+		<Objective QuestName="Invaluable Asset Zapping" QuestId="10203" Type="UseObject" ObjectId="183808" UseCount="1" />
+		<Objective QuestName="Invaluable Asset Zapping" QuestId="10203" Type="UseObject" ObjectId="183806" UseCount="1" />
+		<Objective QuestName="That Little Extra Kick" QuestId="10199" Type="CollectItem" ItemId="28417" CollectCount="5" />
+		<TurnIn QuestName="Invaluable Asset Zapping" QuestId="10203" TurnInName="Lead Sapper Blastfizzle" TurnInId="19634" X="2923.39" Y="3577.39" Z="129.389" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10203)">
+			<PickUp QuestName="Dr. Boom!" QuestId="10221" GiverName="Lead Sapper Blastfizzle" GiverId="19634" X="2923.39" Y="3577.39" Z="129.389" />
+		</If>
+		<!-- REVIEW Q10226 Elemental Power Extraction: item 28548 Elemental Power has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10226)) &amp;&amp; (IsQuestCompleted(10226)))">
+			<TurnIn QuestName="Elemental Power Extraction" QuestId="10226" TurnInName="Chief Engineer Trep" TurnInId="19709" X="2974.39" Y="3675.3" Z="143.457" />
+		</If>
+		<If Condition="((HasQuest(10226)) &amp;&amp; (!IsQuestCompleted(10226)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10226" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q10173 The Archmage's Staff: item 28292 Archmage Vargoth's Staff has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10173)) &amp;&amp; (IsQuestCompleted(10173)))">
+			<TurnIn QuestName="The Archmage's Staff" QuestId="10173" TurnInName="Ravandwyr" TurnInId="19217" X="2997.61" Y="3734.97" Z="144.078" />
+		</If>
+		<If Condition="((HasQuest(10173)) &amp;&amp; (!IsQuestCompleted(10173)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10173" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10173)">
+			<PickUp QuestName="Rebuilding the Staff" QuestId="10300" GiverName="Ravandwyr" GiverId="19217" X="2997.61" Y="3734.97" Z="144.078" />
+		</If>
+		<TurnIn QuestName="Consortium Crystal Collection" QuestId="10265" TurnInName="Nether-Stalker Khay'ji" TurnInId="19880" X="3069.96" Y="3674.86" Z="142.527" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10265)">
+			<PickUp QuestName="A Heap of Ethereals" QuestId="10262" GiverName="Nether-Stalker Khay'ji" GiverId="19880" X="3069.96" Y="3674.86" Z="142.527" />
+		</If>
+		<TurnIn QuestName="That Little Extra Kick" QuestId="10199" TurnInName="Boots" TurnInId="19617" X="3080.51" Y="3684.4" Z="142.533" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10265)">
+			<PickUp QuestName="Pick Your Part" QuestId="10206" GiverName="Papa Wheeler" GiverId="19645" X="3053.08" Y="3644.41" Z="143.263" />
+		</If>
+		<TurnIn QuestName="Manaforge B'naar" QuestId="10189" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10189) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="High Value Targets" QuestId="10193" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10189) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Bloodgem Crystals" QuestId="10204" GiverName="Magistrix Larynna" GiverId="19469" X="3077.69" Y="3696.48" Z="142.559" />
+		</If>
+		<Objective QuestName="Rebuilding the Staff" QuestId="10300" Type="CollectItem" ItemId="29216" CollectCount="4" />
+		<CustomBehavior File="UseItemOn" QuestId="10221" ItemId="29429" MobId="20284" NumOfTimes="1" Range="5" CollectionDistance="200" X="3242.53" Y="3531.44" Z="121.253" />
+		<TurnIn QuestName="Rebuilding the Staff" QuestId="10300" TurnInName="Ravandwyr" TurnInId="19217" X="2997.61" Y="3734.97" Z="144.078" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10300)">
+			<PickUp QuestName="Curse of the Violet Tower" QuestId="10174" GiverName="Ravandwyr" GiverId="19217" X="2997.61" Y="3734.97" Z="144.078" />
+		</If>
+		<!-- REVIEW Q10221 Dr. Boom!: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10221)) &amp;&amp; (IsQuestCompleted(10221)))">
+			<TurnIn QuestName="Dr. Boom!" QuestId="10221" TurnInName="Lead Sapper Blastfizzle" TurnInId="19634" X="2923.39" Y="3577.39" Z="129.389" />
+		</If>
+		<If Condition="((HasQuest(10221)) &amp;&amp; (!IsQuestCompleted(10221)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10221" Type="Incomplete" />
+		</If>
+		<Objective QuestName="High Value Targets" QuestId="10193" Type="KillMob" MobId="18857" KillCount="2" />
+		<Objective QuestName="High Value Targets" QuestId="10193" Type="KillMob" MobId="18852" KillCount="6" />
+		<Objective QuestName="High Value Targets" QuestId="10193" Type="KillMob" MobId="19779" KillCount="8" />
+		<Objective QuestName="A Heap of Ethereals" QuestId="10262" Type="CollectItem" ItemId="29209" CollectCount="10" />
+		<Objective QuestName="Pick Your Part" QuestId="10206" Type="CollectItem" ItemId="28457" CollectCount="10" />
+		<TurnIn QuestName="Pick Your Part" QuestId="10206" TurnInName="Papa Wheeler" TurnInId="19645" X="3053.08" Y="3644.41" Z="143.263" />
+		<TurnIn QuestName="A Heap of Ethereals" QuestId="10262" TurnInName="Nether-Stalker Khay'ji" TurnInId="19880" X="3069.96" Y="3674.86" Z="142.527" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10262)">
+			<PickUp QuestName="Warp-Raider Nesaad" QuestId="10205" GiverName="Nether-Stalker Khay'ji" GiverId="19880" X="3069.96" Y="3674.86" Z="142.527" />
+		</If>
+		<TurnIn QuestName="High Value Targets" QuestId="10193" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10193) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Shutting Down Manaforge B'naar" QuestId="10329" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<!-- REVIEW Q10204 Bloodgem Crystals: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10204)) &amp;&amp; (IsQuestCompleted(10204)))">
+			<TurnIn QuestName="Bloodgem Crystals" QuestId="10204" TurnInName="Magistrix Larynna" TurnInId="19469" X="3077.69" Y="3696.48" Z="142.559" />
+		</If>
+		<If Condition="((HasQuest(10204)) &amp;&amp; (!IsQuestCompleted(10204)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10204" Type="Incomplete" />
+		</If>
+		<Objective QuestName="Shutting Down Manaforge B'naar" QuestId="10329" Type="CollectItem" ItemId="29366" CollectCount="1" />
+		<!-- REVIEW Q10329 Shutting Down Manaforge B'naar: get 20209 B'naar Control Console x1: kill credit or scripted event; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10329)) &amp;&amp; (IsQuestCompleted(10329)))">
+			<TurnIn QuestName="Shutting Down Manaforge B'naar" QuestId="10329" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<If Condition="((HasQuest(10329)) &amp;&amp; (!IsQuestCompleted(10329)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10329" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10329) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Stealth Flight" QuestId="10194" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		</If>
+		<Objective QuestName="Warp-Raider Nesaad" QuestId="10205" Type="KillMob" MobId="19641" KillCount="1" />
+		<TurnIn QuestName="Warp-Raider Nesaad" QuestId="10205" TurnInName="Nether-Stalker Khay'ji" TurnInId="19880" X="3069.96" Y="3674.86" Z="142.527" />
+		<TurnIn QuestName="Stealth Flight" QuestId="10194" TurnInName="Veronia" TurnInId="20162" X="3068.91" Y="3598.24" Z="144.157" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10194) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Behind Enemy Lines" QuestId="10652" GiverName="Veronia" GiverId="20162" X="3068.91" Y="3598.24" Z="144.157" />
+		</If>
+		<TurnIn QuestName="Behind Enemy Lines" QuestId="10652" TurnInName="Caledis Brightdawn" TurnInId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10652) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="A Convincing Disguise" QuestId="10197" GiverName="Caledis Brightdawn" GiverId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<Objective QuestName="A Convincing Disguise" QuestId="10197" Type="CollectItem" ItemId="28635" CollectCount="1" />
+		<Objective QuestName="A Convincing Disguise" QuestId="10197" Type="CollectItem" ItemId="28636" CollectCount="1" />
+		<Objective QuestName="A Convincing Disguise" QuestId="10197" Type="CollectItem" ItemId="28637" CollectCount="1" />
+		<TurnIn QuestName="A Convincing Disguise" QuestId="10197" TurnInName="Caledis Brightdawn" TurnInId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10197) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Information Gathering" QuestId="10198" GiverName="Caledis Brightdawn" GiverId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<!-- REVIEW Q10198 Information Gathering: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10198)) &amp;&amp; (IsQuestCompleted(10198)))">
+			<TurnIn QuestName="Information Gathering" QuestId="10198" TurnInName="Caledis Brightdawn" TurnInId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<If Condition="((HasQuest(10198)) &amp;&amp; (!IsQuestCompleted(10198)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10198" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10198) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
+			<PickUp QuestName="Shutting Down Manaforge Coruu" QuestId="10330" GiverName="Caledis Brightdawn" GiverId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<Objective QuestName="Shutting Down Manaforge Coruu" QuestId="10330" Type="CollectItem" ItemId="29396" CollectCount="1" />
+		<!-- REVIEW Q10330 Shutting Down Manaforge Coruu: get 20417 Coruu Control Console x1: kill credit or scripted event; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10330)) &amp;&amp; (IsQuestCompleted(10330)))">
+			<TurnIn QuestName="Shutting Down Manaforge Coruu" QuestId="10330" TurnInName="Caledis Brightdawn" TurnInId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<If Condition="((HasQuest(10330)) &amp;&amp; (!IsQuestCompleted(10330)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10330" Type="Incomplete" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10330)">
+			<PickUp QuestName="Return to Thalodien" QuestId="10200" GiverName="Caledis Brightdawn" GiverId="19840" X="2237.67" Y="2793.89" Z="128.813" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="Needs More Cowbell" QuestId="10334" GiverName="Thadell" GiverId="20464" X="2299.38" Y="2265.28" Z="95.4419" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="Indispensable Tools" QuestId="10331" GiverName="Apprentice Andrethan" GiverId="20463" X="2290.12" Y="2266.04" Z="93.7195" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10174)">
+			<PickUp QuestName="Malevolent Remnants" QuestId="10184" GiverName="Custodian Dieworth" GiverId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		</If>
+		<!-- SKIP turn-in Q10174 Curse of the Violet Tower: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(10174)) &amp;&amp; (!IsQuestCompleted(10174)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10174" Type="Incomplete" />
+		</If>
+		<!-- SKIP pickup Q10188 The Sigil of Krasus: no quest giver with a spawn in the database -->
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10174)">
+			<PickUp QuestName="A Fate Worse Than Death" QuestId="10185" GiverName="Custodian Dieworth" GiverId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10174)">
+			<PickUp QuestName="The Unending Invasion" QuestId="10343" GiverName="Lieutenant-Sorcerer Morran" GiverId="19489" X="2248.73" Y="2273.1" Z="97.9139" />
+		</If>
+		<TurnIn QuestName="Needs More Cowbell" QuestId="10334" TurnInName="Bessy" TurnInId="20415" X="2528" Y="2185.68" Z="102.6" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10334)">
+			<PickUp QuestName="When the Cows Come Home" QuestId="10337" GiverName="Bessy" GiverId="20415" X="2528" Y="2185.68" Z="102.6" />
+		</If>
+		<!-- REVIEW Q10337 When the Cows Come Home: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10337)) &amp;&amp; (IsQuestCompleted(10337)))">
+			<TurnIn QuestName="When the Cows Come Home" QuestId="10337" TurnInName="Thadell" TurnInId="20464" X="2299.38" Y="2265.28" Z="95.4419" />
+		</If>
+		<If Condition="((HasQuest(10337)) &amp;&amp; (!IsQuestCompleted(10337)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10337" Type="Incomplete" />
+		</If>
+		<If Condition="HasItem(29234) &amp;&amp; !HasQuest(10305) &amp;&amp; !IsQuestCompleted(10305) &amp;&amp; (Me.Level &gt;= 67)">
+			<PickUp QuestName="Abjurist Belmara" QuestId="10305" GiverName="Belmara's Tome" GiverId="29234" GiverType="Item" />
+		</If>
+		<If Condition="HasItem(29236) &amp;&amp; !HasQuest(10307) &amp;&amp; !IsQuestCompleted(10307) &amp;&amp; (Me.Level &gt;= 67)">
+			<PickUp QuestName="Cohlien Frostweaver" QuestId="10307" GiverName="Cohlien's Cap" GiverId="29236" GiverType="Item" />
+		</If>
+		<If Condition="HasItem(29233) &amp;&amp; !HasQuest(10182) &amp;&amp; !IsQuestCompleted(10182) &amp;&amp; (Me.Level &gt;= 67)">
+			<PickUp QuestName="Battle-Mage Dathric" QuestId="10182" GiverName="Dathric's Blade" GiverId="29233" GiverType="Item" />
+		</If>
+		<If Condition="HasItem(29235) &amp;&amp; !HasQuest(10306) &amp;&amp; !IsQuestCompleted(10306) &amp;&amp; (Me.Level &gt;= 67)">
+			<PickUp QuestName="Conjurer Luminrath" QuestId="10306" GiverName="Luminrath's Mantle" GiverId="29235" GiverType="Item" />
+		</If>
+		<Objective QuestName="Indispensable Tools" QuestId="10331" Type="CollectItem" ItemId="29365" CollectCount="1" />
+		<Objective QuestName="Malevolent Remnants" QuestId="10184" Type="KillMob" MobId="19881" KillCount="20" />
+		<TurnIn QuestName="Indispensable Tools" QuestId="10331" TurnInName="Apprentice Andrethan" TurnInId="20463" X="2290.12" Y="2266.04" Z="93.7195" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10331)">
+			<PickUp QuestName="Master Smith Rhonsus" QuestId="10332" GiverName="Apprentice Andrethan" GiverId="20463" X="2290.12" Y="2266.04" Z="93.7195" />
+		</If>
+		<TurnIn QuestName="Malevolent Remnants" QuestId="10184" TurnInName="Custodian Dieworth" TurnInId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10184)">
+			<PickUp QuestName="The Annals of Kirin'Var" QuestId="10312" GiverName="Custodian Dieworth" GiverId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		</If>
+		<Objective QuestName="Master Smith Rhonsus" QuestId="10332" Type="KillMob" MobId="20410" KillCount="1" />
+		<TurnIn QuestName="Master Smith Rhonsus" QuestId="10332" TurnInName="Apprentice Andrethan" TurnInId="20463" X="2290.12" Y="2266.04" Z="93.7195" />
+		<CustomBehavior File="UseItemOn" QuestId="10182" ItemId="28351" MobId="19549" NumOfTimes="1" Range="5" CollectionDistance="200" X="2228.32" Y="2312.22" Z="89.3019" />
+		<CustomBehavior File="UseItemOn" QuestId="10306" ItemId="28352" MobId="19548" NumOfTimes="1" Range="5" CollectionDistance="200" X="2191.15" Y="2339.52" Z="90.4991" />
+		<Objective QuestName="The Unending Invasion" QuestId="10343" Type="CollectItem" ItemId="29461" CollectCount="1" />
+		<CustomBehavior File="UseItemOn" QuestId="10307" ItemId="28353" MobId="19550" NumOfTimes="1" Range="5" CollectionDistance="200" X="2202.37" Y="2412.08" Z="109.269" />
+		<CustomBehavior File="UseItemOn" QuestId="10305" ItemId="28336" MobId="19547" NumOfTimes="1" Range="5" CollectionDistance="200" X="2239.45" Y="2389.64" Z="112.748" />
+		<Objective QuestName="A Fate Worse Than Death" QuestId="10185" Type="KillMob" MobId="18867" KillCount="10" />
+		<Objective QuestName="A Fate Worse Than Death" QuestId="10185" Type="KillMob" MobId="18866" KillCount="10" />
+		<!-- REVIEW Q10305 Abjurist Belmara: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10305)) &amp;&amp; (IsQuestCompleted(10305)))">
+			<TurnIn QuestName="Abjurist Belmara" QuestId="10305" TurnInName="Custodian Dieworth" TurnInId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		</If>
+		<If Condition="((HasQuest(10305)) &amp;&amp; (!IsQuestCompleted(10305)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10305" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="A Fate Worse Than Death" QuestId="10185" TurnInName="Custodian Dieworth" TurnInId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		<!-- REVIEW Q10307 Cohlien Frostweaver: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10307)) &amp;&amp; (IsQuestCompleted(10307)))">
+			<TurnIn QuestName="Cohlien Frostweaver" QuestId="10307" TurnInName="Custodian Dieworth" TurnInId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		</If>
+		<If Condition="((HasQuest(10307)) &amp;&amp; (!IsQuestCompleted(10307)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10307" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q10182 Battle-Mage Dathric: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10182)) &amp;&amp; (IsQuestCompleted(10182)))">
+			<TurnIn QuestName="Battle-Mage Dathric" QuestId="10182" TurnInName="Custodian Dieworth" TurnInId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		</If>
+		<If Condition="((HasQuest(10182)) &amp;&amp; (!IsQuestCompleted(10182)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10182" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q10306 Conjurer Luminrath: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10306)) &amp;&amp; (IsQuestCompleted(10306)))">
+			<TurnIn QuestName="Conjurer Luminrath" QuestId="10306" TurnInName="Custodian Dieworth" TurnInId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		</If>
+		<If Condition="((HasQuest(10306)) &amp;&amp; (!IsQuestCompleted(10306)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10306" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="The Unending Invasion" QuestId="10343" TurnInName="Lieutenant-Sorcerer Morran" TurnInId="19489" X="2248.73" Y="2273.1" Z="97.9139" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10343)">
+			<PickUp QuestName="Potential Energy Source" QuestId="10239" GiverName="Lieutenant-Sorcerer Morran" GiverId="19489" X="2248.73" Y="2273.1" Z="97.9139" />
+		</If>
+		<Objective QuestName="The Annals of Kirin'Var" QuestId="10312" Type="CollectItem" ItemId="29331" CollectCount="1" />
+		<TurnIn QuestName="The Annals of Kirin'Var" QuestId="10312" TurnInName="Custodian Dieworth" TurnInId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10312)">
+			<PickUp QuestName="Searching for Evidence" QuestId="10316" GiverName="Custodian Dieworth" GiverId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		</If>
+		<TurnIn QuestName="Searching for Evidence" QuestId="10316" TurnInName="Necromantic Focus" TurnInId="184300" TurnInType="Object" X="2558.36" Y="2121.36" Z="99.492" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10316)">
+			<PickUp QuestName="A Lingering Suspicion" QuestId="10314" GiverName="Necromantic Focus" GiverId="184300" GiverType="Object" X="2558.36" Y="2121.36" Z="99.492" />
+		</If>
+		<Objective QuestName="A Lingering Suspicion" QuestId="10314" Type="CollectItem" ItemId="29338" CollectCount="10" />
+		<TurnIn QuestName="A Lingering Suspicion" QuestId="10314" TurnInName="Custodian Dieworth" TurnInId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10314)">
+			<PickUp QuestName="Capturing the Phylactery" QuestId="10319" GiverName="Custodian Dieworth" GiverId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		</If>
+		<Objective QuestName="Capturing the Phylactery" QuestId="10319" Type="CollectItem" ItemId="29361" CollectCount="1" />
+		<TurnIn QuestName="Capturing the Phylactery" QuestId="10319" TurnInName="Custodian Dieworth" TurnInId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
+		<Objective QuestName="Potential Energy Source" QuestId="10239" Type="CollectItem" ItemId="28564" CollectCount="10" />
+		<Objective QuestName="The Sigil of Krasus" QuestId="10188" Type="CollectItem" ItemId="28368" CollectCount="1" />
+		<!-- SKIP turn-in Q10188 The Sigil of Krasus: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(10188)) &amp;&amp; (!IsQuestCompleted(10188)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10188" Type="Incomplete" />
+		</If>
+		<!-- SKIP pickup Q10192 Krasus's Compendium: no quest giver with a spawn in the database -->
+		<TurnIn QuestName="Potential Energy Source" QuestId="10239" TurnInName="Lieutenant-Sorcerer Morran" TurnInId="19489" X="2248.73" Y="2273.1" Z="97.9139" />
+		<Objective QuestName="Krasus's Compendium" QuestId="10192" Type="CollectItem" ItemId="28473" CollectCount="1" />
+		<Objective QuestName="Krasus's Compendium" QuestId="10192" Type="CollectItem" ItemId="28472" CollectCount="1" />
+		<Objective QuestName="Krasus's Compendium" QuestId="10192" Type="CollectItem" ItemId="28474" CollectCount="1" />
+		<!-- SKIP turn-in Q10192 Krasus's Compendium: no turn-in NPC with a spawn in the database -->
+		<If Condition="((HasQuest(10192)) &amp;&amp; (!IsQuestCompleted(10192)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10192" Type="Incomplete" />
+		</If>
+		<TurnIn QuestName="Return to Thalodien" QuestId="10200" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10206)">
+			<PickUp QuestName="Help Mama Wheeler" QuestId="10333" GiverName="Papa Wheeler" GiverId="19645" X="3053.08" Y="3644.41" Z="143.263" />
+		</If>
+		<TurnIn QuestName="Help Mama Wheeler" QuestId="10333" TurnInName="Mama Wheeler" TurnInId="19728" X="3355.2" Y="2883.44" Z="144.111" />
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="Run a Diagnostic!" QuestId="10417" GiverName="Mehrdad" GiverId="20810" X="3359.65" Y="2893.79" Z="144.007" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="New Opportunities" QuestId="10348" GiverName="Mehrdad" GiverId="20810" X="3359.65" Y="2893.79" Z="144.007" />
+		</If>
+		<If Condition="(Me.Level &gt;= 67)">
+			<PickUp QuestName="Keeping Up Appearances" QuestId="10433" GiverName="Shauly Pore" GiverId="20921" X="3373.58" Y="2892.23" Z="144.049" />
+		</If>
+		<Objective QuestName="Run a Diagnostic!" QuestId="10417" Type="CollectItem" ItemId="29741" CollectCount="1" />
+		<Objective QuestName="New Opportunities" QuestId="10348" Type="CollectItem" ItemId="29474" CollectCount="15" />
+		<Objective QuestName="Keeping Up Appearances" QuestId="10433" Type="CollectItem" ItemId="29801" CollectCount="10" />
+		<TurnIn QuestName="New Opportunities" QuestId="10348" TurnInName="Mehrdad" TurnInId="20810" X="3359.65" Y="2893.79" Z="144.007" />
+		<TurnIn QuestName="Run a Diagnostic!" QuestId="10417" TurnInName="Mehrdad" TurnInId="20810" X="3359.65" Y="2893.79" Z="144.007" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10417)">
+			<PickUp QuestName="Deal With the Saboteurs" QuestId="10418" GiverName="Mehrdad" GiverId="20810" X="3359.65" Y="2893.79" Z="144.007" />
+		</If>
+		<TurnIn QuestName="Keeping Up Appearances" QuestId="10433" TurnInName="Shauly Pore" TurnInId="20921" X="3373.58" Y="2892.23" Z="144.049" />
+		<Objective QuestName="Deal With the Saboteurs" QuestId="10418" Type="KillMob" MobId="20773" KillCount="8" />
+		<TurnIn QuestName="Deal With the Saboteurs" QuestId="10418" TurnInName="Mehrdad" TurnInId="20810" X="3359.65" Y="2893.79" Z="144.007" />
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10333)">
+			<PickUp QuestName="One Demon's Trash..." QuestId="10234" GiverName="Mama Wheeler" GiverId="19728" X="3355.2" Y="2883.44" Z="144.111" />
+		</If>
+		<Objective QuestName="One Demon's Trash..." QuestId="10234" Type="CollectItem" ItemId="28551" CollectCount="10" />
+		<TurnIn QuestName="One Demon's Trash..." QuestId="10234" TurnInName="Mama Wheeler" TurnInId="19728" X="3355.2" Y="2883.44" Z="144.111" />
+		<CustomBehavior File="LoadProfile" ProfileName="Leveling_Northrend (70-72)" />
+	</QuestOrder>
+</HBProfile>
