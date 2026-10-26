@@ -131,6 +131,17 @@
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11469)">
 			<PickUp QuestName="The Way to His Heart..." QuestId="11472" GiverName="Anuniaq" GiverId="24810" X="743.706" Y="-2884.84" Z="7.2546" />
 		</If>
+		<If Condition="HasQuest(11472) &amp;&amp; !IsQuestCompleted(11472) &amp;&amp; GetItemCount(34127) &lt; 10">
+			<CustomBehavior File="CollectThings" QuestId="11472" CollectItemId="34127" CollectItemCount="10" HuntingGroundRadius="120" MobId="24637" X="155.123" Y="-3178.06" Z="-1.2188">
+				<Hotspot X="155.123" Y="-3178.06" Z="-1.2188" />
+				<Hotspot X="7.7919" Y="-3121.86" Z="-1.2341" />
+				<Hotspot X="12.856" Y="-3052.45" Z="-1.2428" />
+				<Hotspot X="-56.8718" Y="-3056.57" Z="-1.2865" />
+				<Hotspot X="-12.4834" Y="-3189.73" Z="-1.2067" />
+				<Hotspot X="-178.203" Y="-3221.94" Z="-1.0882" />
+				<Hotspot X="123.12" Y="-2996.76" Z="-1.2314" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11472 The Way to His Heart...: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11472)) &amp;&amp; (IsQuestCompleted(11472)))">
 			<TurnIn QuestName="The Way to His Heart..." QuestId="11472" TurnInName="Anuniaq" TurnInId="24810" X="743.706" Y="-2884.84" Z="7.2546" />

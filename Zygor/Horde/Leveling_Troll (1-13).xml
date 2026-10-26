@@ -842,6 +842,12 @@
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3129" KillCount="8" />
 		<Objective QuestName="Carry Your Weight" QuestId="791" Type="CollectItem" ItemId="4870" CollectCount="8" />
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3192" KillCount="1" />
+		<If Condition="HasQuest(830) &amp;&amp; !IsQuestCompleted(830) &amp;&amp; GetItemCount(4882) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="830" CollectItemId="4882" CollectItemCount="1" HuntingGroundRadius="120" MobId="3192" X="-245.52" Y="-5119.95" Z="42.6406">
+				<Hotspot X="-245.52" Y="-5119.95" Z="42.6406" />
+			</CustomBehavior>
+		</If>
+		<!-- Q830: Aged Envelope (4881) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="HasItem(4881) &amp;&amp; !HasQuest(830) &amp;&amp; !IsQuestCompleted(830)">
 			<PickUp QuestName="The Admiral's Orders" QuestId="830" GiverName="Aged Envelope" GiverId="4881" GiverType="Item" />
 		</If>
@@ -849,7 +855,13 @@
 		<If Condition="(Me.Level &gt;= 3) &amp;&amp; IsQuestCompleted(784)">
 			<PickUp QuestName="From The Wreckage...." QuestId="825" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		</If>
-		<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<!-- REVIEW Q830 The Admiral's Orders: helper item 4881 Aged Envelope has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(830)) &amp;&amp; (IsQuestCompleted(830)))">
+			<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		</If>
+		<If Condition="((HasQuest(830)) &amp;&amp; (!IsQuestCompleted(830)))">
+			<CustomBehavior File="AbandonQuest" QuestId="830" Type="Incomplete" />
+		</If>
 		<If Condition="IsQuestCompleted(830)">
 			<PickUp QuestName="The Admiral's Orders" QuestId="831" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		</If>
@@ -1007,7 +1019,13 @@
 		<Objective QuestName="Finding the Antidote" QuestId="813" Type="CollectItem" ItemId="4886" CollectCount="4" />
 		<TurnIn QuestName="Finding the Antidote" QuestId="813" TurnInName="Kor'ghan" TurnInId="3189" X="1772.72" Y="-4343.18" Z="-7.5719" />
 		<TurnIn QuestName="The Admiral's Orders" QuestId="831" TurnInName="Vol'jin" TurnInId="10540" X="1934.06" Y="-4162.26" Z="41.2386" />
-		<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<!-- REVIEW Q830 The Admiral's Orders: helper item 4881 Aged Envelope has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(830)) &amp;&amp; (IsQuestCompleted(830)))">
+			<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		</If>
+		<If Condition="((HasQuest(830)) &amp;&amp; (!IsQuestCompleted(830)))">
+			<CustomBehavior File="AbandonQuest" QuestId="830" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 9)">
 			<PickUp QuestName="Hidden Enemies" QuestId="5726" GiverName="Thrall" GiverId="4949" X="1919.9" Y="-4123.8" Z="44.3715" />
 		</If>

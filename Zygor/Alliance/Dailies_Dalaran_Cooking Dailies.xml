@@ -51,7 +51,72 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; !IsQuestCompleted(13100) &amp;&amp; !HasQuest(13100) &amp;&amp; !IsQuestCompleted(13101) &amp;&amp; !HasQuest(13101) &amp;&amp; !IsQuestCompleted(13103) &amp;&amp; !HasQuest(13103) &amp;&amp; !IsQuestCompleted(13107) &amp;&amp; !HasQuest(13107)">
 			<PickUp QuestName="Sewer Stew" QuestId="13102" GiverName="Katherine Lee" GiverId="28705" X="5707.61" Y="715.535" Z="642.573" />
 		</If>
-		<!-- REVIEW Q13103 Cheese for Glowergold: item 43136 Wine and Cheese Platter has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q13103: Aged Dalaran Limburger (43137) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13103: Half Full Dalaran Wine Glass (43138) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13101) &amp;&amp; !IsQuestCompleted(13101) &amp;&amp; GetItemCount(43013) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="13101" CollectItemId="43013" CollectItemCount="4" HuntingGroundRadius="120" MobId="25452" MobId2="26271" MobId3="26272" MobId4="26273" MobId5="26426" MobId6="26467" X="3719.57" Y="1944.7" Z="88.0768">
+				<Hotspot X="3719.57" Y="1944.7" Z="88.0768" />
+				<Hotspot X="3765.84" Y="1914.57" Z="95.5112" />
+				<Hotspot X="3791.22" Y="1864.72" Z="105.05" />
+				<Hotspot X="3789.73" Y="1990.23" Z="92.4449" />
+				<Hotspot X="3726.62" Y="2047.19" Z="89.2505" />
+				<Hotspot X="3688.93" Y="2006.48" Z="85.0985" />
+				<Hotspot X="3658.91" Y="2035.13" Z="81.5947" />
+				<Hotspot X="3608.49" Y="1908.61" Z="79.5211" />
+			</CustomBehavior>
+		</If>
+		<!-- Q13100: Infused Mushroom (43100) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13100) &amp;&amp; !IsQuestCompleted(13100) &amp;&amp; GetItemCount(43013) &lt; 2">
+			<CustomBehavior File="CollectThings" QuestId="13100" CollectItemId="43013" CollectItemCount="2" HuntingGroundRadius="120" MobId="25452" MobId2="26271" MobId3="26272" MobId4="26273" MobId5="26426" MobId6="26467" X="3719.57" Y="1944.7" Z="88.0768">
+				<Hotspot X="3719.57" Y="1944.7" Z="88.0768" />
+				<Hotspot X="3765.84" Y="1914.57" Z="95.5112" />
+				<Hotspot X="3791.22" Y="1864.72" Z="105.05" />
+				<Hotspot X="3789.73" Y="1990.23" Z="92.4449" />
+				<Hotspot X="3726.62" Y="2047.19" Z="89.2505" />
+				<Hotspot X="3688.93" Y="2006.48" Z="85.0985" />
+				<Hotspot X="3658.91" Y="2035.13" Z="81.5947" />
+				<Hotspot X="3608.49" Y="1908.61" Z="79.5211" />
+			</CustomBehavior>
+		</If>
+		<!-- Q13107: Wild Mustard (43143) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13107) &amp;&amp; !IsQuestCompleted(13107) &amp;&amp; GetItemCount(43012) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="13107" CollectItemId="43012" CollectItemCount="4" HuntingGroundRadius="120" MobId="25487" MobId2="25488" MobId3="25489" MobId4="25968" X="3262.21" Y="5892.36" Z="92.588">
+				<Hotspot X="3262.21" Y="5892.36" Z="92.588" />
+				<Hotspot X="3303.78" Y="5920.33" Z="86.9009" />
+				<Hotspot X="3277.86" Y="5952.93" Z="82.9137" />
+				<Hotspot X="3354.17" Y="5970.83" Z="74.9231" />
+				<Hotspot X="3283.54" Y="6040.26" Z="79.9008" />
+				<Hotspot X="3241.54" Y="6027.73" Z="80.9845" />
+				<Hotspot X="3170.23" Y="5968.76" Z="96.3616" />
+				<Hotspot X="3316.61" Y="5847.44" Z="77.8678" />
+			</CustomBehavior>
+		</If>
+		<!-- Q13107: Rhino Dogs (34752) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13102) &amp;&amp; !IsQuestCompleted(13102) &amp;&amp; GetItemCount(43148) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="13102" CollectItemId="43148" CollectItemCount="4" HuntingGroundRadius="120" MobId="31233" X="5660.36" Y="645.282" Z="150.381">
+				<Hotspot X="5660.36" Y="645.282" Z="150.381" />
+				<Hotspot X="5643.44" Y="787.429" Z="153.885" />
+				<Hotspot X="5790.33" Y="840.113" Z="154.92" />
+				<Hotspot X="5855.63" Y="758.34" Z="159.98" />
+				<Hotspot X="5849.48" Y="637.707" Z="171.496" />
+				<Hotspot X="5751.46" Y="460.772" Z="159.653" />
+				<Hotspot X="5512.1" Y="474.754" Z="161.948" />
+				<Hotspot X="5477.77" Y="495.509" Z="164.595" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(13102) &amp;&amp; !IsQuestCompleted(13102) &amp;&amp; GetItemCount(43013) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="13102" CollectItemId="43013" CollectItemCount="4" HuntingGroundRadius="120" MobId="25452" MobId2="26271" MobId3="26272" MobId4="26273" MobId5="26426" MobId6="26467" X="3719.57" Y="1944.7" Z="88.0768">
+				<Hotspot X="3719.57" Y="1944.7" Z="88.0768" />
+				<Hotspot X="3765.84" Y="1914.57" Z="95.5112" />
+				<Hotspot X="3791.22" Y="1864.72" Z="105.05" />
+				<Hotspot X="3789.73" Y="1990.23" Z="92.4449" />
+				<Hotspot X="3726.62" Y="2047.19" Z="89.2505" />
+				<Hotspot X="3688.93" Y="2006.48" Z="85.0985" />
+				<Hotspot X="3658.91" Y="2035.13" Z="81.5947" />
+				<Hotspot X="3608.49" Y="1908.61" Z="79.5211" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q13103 Cheese for Glowergold: helper item 43137 Aged Dalaran Limburger has no dropping creature near the guide coordinates; helper item 43138 Half Full Dalaran Wine Glass has no dropping creature near the guide coordinates; item 43136 Wine and Cheese Platter has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13103)) &amp;&amp; (IsQuestCompleted(13103)))">
 			<TurnIn QuestName="Cheese for Glowergold" QuestId="13103" TurnInName="Ranid Glowergold" TurnInId="28718" X="5912.55" Y="748.528" Z="641.163" />
 		</If>
@@ -65,14 +130,14 @@
 		<If Condition="((HasQuest(13101)) &amp;&amp; (!IsQuestCompleted(13101)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13101" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13100 Infused Mushroom Meatloaf: item 43099 Infused Mushroom Meatloaf has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13100 Infused Mushroom Meatloaf: helper item 43100 Infused Mushroom has no dropping creature near the guide coordinates; item 43099 Infused Mushroom Meatloaf has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13100)) &amp;&amp; (IsQuestCompleted(13100)))">
 			<TurnIn QuestName="Infused Mushroom Meatloaf" QuestId="13100" TurnInName="Orton Bennet" TurnInId="29527" X="5759.1" Y="618.335" Z="661.092" />
 		</If>
 		<If Condition="((HasQuest(13100)) &amp;&amp; (!IsQuestCompleted(13100)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13100" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13107 Mustard Dogs!: item 43144 Mustard Dog Basket! has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13107 Mustard Dogs!: helper item 43143 Wild Mustard has no dropping creature near the guide coordinates; helper item 34752 Rhino Dogs has no dropping creature near the guide coordinates; item 43144 Mustard Dog Basket! has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13107)) &amp;&amp; (IsQuestCompleted(13107)))">
 			<TurnIn QuestName="Mustard Dogs!" QuestId="13107" TurnInName="Archmage Pentarus" TurnInId="28160" X="5833.99" Y="483.519" Z="658.261" />
 		</If>

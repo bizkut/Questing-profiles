@@ -782,6 +782,7 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10584)">
 			<PickUp QuestName="Cutting Your Teeth" QuestId="10632" GiverName="Razak Ironsides" GiverId="21118" X="1898.28" Y="5588.86" Z="267.58" />
 		</If>
+		<!-- Q10710: Tally's Waiver (Signed) (30539) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Ride the Lightning" QuestId="10657" Type="CollectItem" ItemId="30849" CollectCount="5" />
 		<Objective QuestName="Cutting Your Teeth" QuestId="10632" Type="CollectItem" ItemId="30798" CollectCount="5" />
 		<Objective QuestName="Ridgespine Menace" QuestId="10620" Type="KillMob" MobId="20714" KillCount="10" />
@@ -794,7 +795,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="10609" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Cutting Your Teeth" QuestId="10632" TurnInName="Razak Ironsides" TurnInId="21118" X="1898.28" Y="5588.86" Z="267.58" />
-		<!-- REVIEW Q10710 Test Flight: The Singing Ridge: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10710 Test Flight: The Singing Ridge: helper item 30539 Tally's Waiver (Signed) has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10710)) &amp;&amp; (IsQuestCompleted(10710)))">
 			<TurnIn QuestName="Test Flight: The Singing Ridge" QuestId="10710" TurnInName="Tally Zapnabber" TurnInId="21460" X="1935.01" Y="5575.74" Z="263.753" />
 		</If>
@@ -893,6 +894,18 @@
 		<Objective QuestName="Culling the Wild" QuestId="10753" Type="KillMob" MobId="21124" KillCount="4" />
 		<Objective QuestName="Culling the Wild" QuestId="10753" Type="KillMob" MobId="21300" KillCount="2" />
 		<Objective QuestName="Little Embers" QuestId="10770" Type="KillMob" MobId="21021" KillCount="8" />
+		<If Condition="HasQuest(10567) &amp;&amp; !IsQuestCompleted(10567) &amp;&amp; GetItemCount(30704) &lt; 6">
+			<CustomBehavior File="CollectThings" QuestId="10567" CollectItemId="30704" CollectItemCount="6" HuntingGroundRadius="120" MobId="19985" MobId2="19986" MobId3="19987" MobId4="20211" X="3284.35" Y="5305.12" Z="148.132">
+				<Hotspot X="3284.35" Y="5305.12" Z="148.132" />
+				<Hotspot X="3276.63" Y="5346.13" Z="147.305" />
+				<Hotspot X="3234.8" Y="5328.32" Z="169.034" />
+				<Hotspot X="3199.35" Y="5308.48" Z="176.368" />
+				<Hotspot X="3177.37" Y="5357.3" Z="146.055" />
+				<Hotspot X="3230.17" Y="5380.85" Z="144.83" />
+				<Hotspot X="3303.88" Y="5409.22" Z="146.949" />
+				<Hotspot X="3338.88" Y="5343.98" Z="154.404" />
+			</CustomBehavior>
+		</If>
 		<TurnIn QuestName="Culling the Wild" QuestId="10753" TurnInName="Faradrella" TurnInId="22133" X="3024.71" Y="5452.03" Z="147.35" />
 		<TurnIn QuestName="Damaged Mask" QuestId="10810" TurnInName="O'Mally Zapnabber" TurnInId="22020" X="2948.06" Y="5446.82" Z="147.584" />
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10810)">
@@ -954,7 +967,17 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10820)">
 			<PickUp QuestName="You're Fired!" QuestId="10821" GiverName="Legion Communicator" GiverId="185165" GiverType="Object" X="2960.45" Y="4870.89" Z="278.011" />
 		</If>
-		<!-- REVIEW Q10821 You're Fired!: collect 19963 Doomcryer x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(10821) &amp;&amp; !IsQuestCompleted(10821) &amp;&amp; GetItemCount(31536) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10821" CollectItemId="31536" CollectItemCount="5" HuntingGroundRadius="120" MobId="16952" X="2907.15" Y="4888.81" Z="266.512">
+				<Hotspot X="2907.15" Y="4888.81" Z="266.512" />
+				<Hotspot X="2872.99" Y="4866.48" Z="278.04" />
+				<Hotspot X="2830.09" Y="4864.54" Z="278.587" />
+				<Hotspot X="2892.98" Y="4811.15" Z="278.65" />
+				<Hotspot X="2948.27" Y="4895.21" Z="265.405" />
+				<Hotspot X="2992.99" Y="4850.89" Z="277.611" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q10821 You're Fired!: kill 19963 Doomcryer x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10821)) &amp;&amp; (IsQuestCompleted(10821)))">
 			<TurnIn QuestName="You're Fired!" QuestId="10821" TurnInName="Wildlord Antelarion" TurnInId="22127" X="2959.73" Y="5465.37" Z="144.332" />
 		</If>
@@ -1042,8 +1065,31 @@
 		<If Condition="HasItem(31489) &amp;&amp; !HasQuest(10825) &amp;&amp; !IsQuestCompleted(10825) &amp;&amp; (Me.Level &gt;= 65)">
 			<PickUp QuestName="The Truth Unorbed" QuestId="10825" GiverName="Orb of the Grishna" GiverId="31489" GiverType="Item" />
 		</If>
+		<If Condition="HasQuest(10803) &amp;&amp; !IsQuestCompleted(10803) &amp;&amp; GetItemCount(31754) &lt; 3">
+			<CustomBehavior File="CollectThings" QuestId="10803" CollectItemId="31754" CollectItemCount="3" HuntingGroundRadius="120" MobId="21046" MobId2="21047" MobId3="21048" X="3591.02" Y="7188.98" Z="138.358">
+				<Hotspot X="3591.02" Y="7188.98" Z="138.358" />
+				<Hotspot X="3580.16" Y="7228.1" Z="138.262" />
+				<Hotspot X="3630.08" Y="7223.25" Z="136.998" />
+				<Hotspot X="3666.55" Y="7177.22" Z="141.181" />
+				<Hotspot X="3609.74" Y="7136.49" Z="140.571" />
+				<Hotspot X="3536.76" Y="7188.01" Z="155.59" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Slaughter at Boulder'mok" QuestId="10803" Type="KillMob" MobId="21046" KillCount="5" />
 		<Objective QuestName="Slaughter at Boulder'mok" QuestId="10803" Type="KillMob" MobId="21047" KillCount="3" />
+		<If Condition="HasQuest(10722) &amp;&amp; !IsQuestCompleted(10722) &amp;&amp; GetItemCount(31121) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10722" CollectItemId="31121" CollectItemCount="5" HuntingGroundRadius="120" MobId="21382" MobId2="21383" MobId3="21492" MobId4="21637" MobId5="21809" MobId6="21810" X="3166.45" Y="7070.6" Z="163.121">
+				<Hotspot X="3166.45" Y="7070.6" Z="163.121" />
+				<Hotspot X="3189.91" Y="7106.24" Z="178.414" />
+				<Hotspot X="3241.11" Y="7108.95" Z="172.951" />
+				<Hotspot X="3244.49" Y="7041.08" Z="167.6" />
+				<Hotspot X="3166.75" Y="7019.08" Z="162.045" />
+				<Hotspot X="3118.56" Y="7013.02" Z="165.577" />
+				<Hotspot X="3102.89" Y="7063.88" Z="160.299" />
+				<Hotspot X="3111.11" Y="7129.98" Z="152.609" />
+			</CustomBehavior>
+		</If>
+		<!-- Q10722: Overseer Disguise (31122) is needed but no creature near the guide coordinates drops it -->
 		<TurnIn QuestName="Slaughter at Boulder'mok" QuestId="10803" TurnInName="Lieutenant Fairweather" TurnInId="22150" X="3036.01" Y="5483.13" Z="147.07" />
 		<!-- REVIEW Q10802 Gorgrom the Dragon-Eater: objective 22434 [DND]Ogre Pike Planted Credit x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10802)) &amp;&amp; (IsQuestCompleted(10802)))">
@@ -1069,7 +1115,7 @@
 		<If Condition="((HasQuest(10747)) &amp;&amp; (!IsQuestCompleted(10747)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10747" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q10722 Meeting at the Blackwing Coven: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10722 Meeting at the Blackwing Coven: helper item 31122 Overseer Disguise has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10722)) &amp;&amp; (IsQuestCompleted(10722)))">
 			<TurnIn QuestName="Meeting at the Blackwing Coven" QuestId="10722" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
 		</If>
@@ -1089,7 +1135,21 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10829)">
 			<PickUp QuestName="Exorcising the Trees" QuestId="10830" GiverName="Treebole" GiverId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>
-		<!-- REVIEW Q10830 Exorcising the Trees: collect 22226 Koi-Koi Spirit x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q10830: Grishnath Orb (31495) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(10830) &amp;&amp; !IsQuestCompleted(10830) &amp;&amp; GetItemCount(31517) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10830" CollectItemId="31517" CollectItemCount="5" HuntingGroundRadius="120" MobId="21042" X="3401.39" Y="6839.35" Z="169.9">
+				<Hotspot X="3401.39" Y="6839.35" Z="169.9" />
+				<Hotspot X="3352.52" Y="6849.71" Z="166.892" />
+				<Hotspot X="3300.32" Y="6823.1" Z="168.643" />
+				<Hotspot X="3396.96" Y="6789.31" Z="168.2" />
+				<Hotspot X="3473.96" Y="6760.46" Z="144.792" />
+				<Hotspot X="3347.04" Y="6923.75" Z="163.005" />
+				<Hotspot X="3314.08" Y="6953.82" Z="164.151" />
+				<Hotspot X="3350.65" Y="7053.47" Z="159.414" />
+			</CustomBehavior>
+		</If>
+		<!-- Q10830: Exorcism Feather (31518) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q10830 Exorcising the Trees: helper item 31495 Grishnath Orb has no dropping creature near the guide coordinates; helper item 31518 Exorcism Feather has no dropping creature near the guide coordinates; objective 22226 Koi-Koi Spirit x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10830)) &amp;&amp; (IsQuestCompleted(10830)))">
 			<TurnIn QuestName="Exorcising the Trees" QuestId="10830" TurnInName="Treebole" TurnInId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>
@@ -1177,12 +1237,36 @@
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11025)">
 			<PickUp QuestName="Our Boy Wants To Be A Skyguard Ranger" QuestId="11030" GiverName="Torkus" GiverId="23316" X="2315.89" Y="7304.39" Z="366.92" />
 		</If>
+		<If Condition="HasQuest(11058) &amp;&amp; !IsQuestCompleted(11058) &amp;&amp; GetItemCount(32569) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11058" CollectItemId="32569" CollectItemCount="1" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22195" MobId6="22204" X="2061.52" Y="7271.81" Z="363.911">
+				<Hotspot X="2061.52" Y="7271.81" Z="363.911" />
+				<Hotspot X="2067.45" Y="7331.05" Z="364.735" />
+				<Hotspot X="2103.11" Y="7353.6" Z="366.479" />
+				<Hotspot X="1943.92" Y="7359.26" Z="364.572" />
+				<Hotspot X="1926.84" Y="7195.48" Z="364.116" />
+				<Hotspot X="2101.22" Y="7137.61" Z="364.771" />
+				<Hotspot X="2114.53" Y="7187.61" Z="366.179" />
+				<Hotspot X="2206.19" Y="7122.32" Z="364.065" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11058 An Apexis Relic: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11058)) &amp;&amp; (IsQuestCompleted(11058)))">
 			<TurnIn QuestName="An Apexis Relic" QuestId="11058" TurnInName="Chu'a'lor" TurnInId="23233" X="2335.24" Y="7285.18" Z="365.617" />
 		</If>
 		<If Condition="((HasQuest(11058)) &amp;&amp; (!IsQuestCompleted(11058)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11058" Type="Incomplete" />
+		</If>
+		<If Condition="HasQuest(11030) &amp;&amp; !IsQuestCompleted(11030) &amp;&amp; GetItemCount(32569) &lt; 10">
+			<CustomBehavior File="CollectThings" QuestId="11030" CollectItemId="32569" CollectItemCount="10" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22195" MobId6="22204" X="2061.52" Y="7271.81" Z="363.911">
+				<Hotspot X="2061.52" Y="7271.81" Z="363.911" />
+				<Hotspot X="2067.45" Y="7331.05" Z="364.735" />
+				<Hotspot X="2103.11" Y="7353.6" Z="366.479" />
+				<Hotspot X="1943.92" Y="7359.26" Z="364.572" />
+				<Hotspot X="1926.84" Y="7195.48" Z="364.116" />
+				<Hotspot X="2101.22" Y="7137.61" Z="364.771" />
+				<Hotspot X="2114.53" Y="7187.61" Z="366.179" />
+				<Hotspot X="2206.19" Y="7122.32" Z="364.065" />
+			</CustomBehavior>
 		</If>
 		<!-- REVIEW Q11030 Our Boy Wants To Be A Skyguard Ranger: item 32598 Unstable Flask of the Beast has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11030)) &amp;&amp; (IsQuestCompleted(11030)))">
@@ -1247,12 +1331,48 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11066" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q11078 To Rule The Skies: group quest (5 players) -->
+		<If Condition="HasQuest(11059) &amp;&amp; !IsQuestCompleted(11059) &amp;&amp; GetItemCount(32569) &lt; 35">
+			<CustomBehavior File="CollectThings" QuestId="11059" CollectItemId="32569" CollectItemCount="35" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22195" MobId6="22204" X="2061.52" Y="7271.81" Z="363.911">
+				<Hotspot X="2061.52" Y="7271.81" Z="363.911" />
+				<Hotspot X="2067.45" Y="7331.05" Z="364.735" />
+				<Hotspot X="2103.11" Y="7353.6" Z="366.479" />
+				<Hotspot X="1943.92" Y="7359.26" Z="364.572" />
+				<Hotspot X="1926.84" Y="7195.48" Z="364.116" />
+				<Hotspot X="2101.22" Y="7137.61" Z="364.771" />
+				<Hotspot X="2114.53" Y="7187.61" Z="366.179" />
+				<Hotspot X="2206.19" Y="7122.32" Z="364.065" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11059 Guardian of the Monument: group quest (5 players); item 32697 Apexis Guardian's Head has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11059)) &amp;&amp; (IsQuestCompleted(11059)))">
 			<TurnIn QuestName="Guardian of the Monument" QuestId="11059" TurnInName="Chu'a'lor" TurnInId="23233" X="2335.24" Y="7285.18" Z="365.617" />
 		</If>
 		<If Condition="((HasQuest(11059)) &amp;&amp; (!IsQuestCompleted(11059)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11059" Type="Incomplete" />
+		</If>
+		<If Condition="HasQuest(11078) &amp;&amp; !IsQuestCompleted(11078) &amp;&amp; GetItemCount(32569) &lt; 35">
+			<CustomBehavior File="CollectThings" QuestId="11078" CollectItemId="32569" CollectItemCount="35" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22195" MobId6="22204" X="2061.52" Y="7271.81" Z="363.911">
+				<Hotspot X="2061.52" Y="7271.81" Z="363.911" />
+				<Hotspot X="2067.45" Y="7331.05" Z="364.735" />
+				<Hotspot X="2103.11" Y="7353.6" Z="366.479" />
+				<Hotspot X="1943.92" Y="7359.26" Z="364.572" />
+				<Hotspot X="1926.84" Y="7195.48" Z="364.116" />
+				<Hotspot X="2101.22" Y="7137.61" Z="364.771" />
+				<Hotspot X="2114.53" Y="7187.61" Z="366.179" />
+				<Hotspot X="2206.19" Y="7122.32" Z="364.065" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(11061) &amp;&amp; !IsQuestCompleted(11061) &amp;&amp; GetItemCount(32569) &lt; 10">
+			<CustomBehavior File="CollectThings" QuestId="11061" CollectItemId="32569" CollectItemCount="10" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22195" MobId6="22204" X="2061.52" Y="7271.81" Z="363.911">
+				<Hotspot X="2061.52" Y="7271.81" Z="363.911" />
+				<Hotspot X="2067.45" Y="7331.05" Z="364.735" />
+				<Hotspot X="2103.11" Y="7353.6" Z="366.479" />
+				<Hotspot X="1943.92" Y="7359.26" Z="364.572" />
+				<Hotspot X="1926.84" Y="7195.48" Z="364.116" />
+				<Hotspot X="2101.22" Y="7137.61" Z="364.771" />
+				<Hotspot X="2114.53" Y="7187.61" Z="366.179" />
+				<Hotspot X="2206.19" Y="7122.32" Z="364.065" />
+			</CustomBehavior>
 		</If>
 		<!-- REVIEW Q11078 To Rule The Skies: group quest (5 players); item 32732 Dragon Teeth has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11078)) &amp;&amp; (IsQuestCompleted(11078)))">
@@ -1269,6 +1389,18 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11061" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q11079 A Fel Whip For Gahk: group quest (5 players) -->
+		<If Condition="HasQuest(11079) &amp;&amp; !IsQuestCompleted(11079) &amp;&amp; GetItemCount(32569) &lt; 35">
+			<CustomBehavior File="CollectThings" QuestId="11079" CollectItemId="32569" CollectItemCount="35" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22195" MobId6="22204" X="2061.52" Y="7271.81" Z="363.911">
+				<Hotspot X="2061.52" Y="7271.81" Z="363.911" />
+				<Hotspot X="2067.45" Y="7331.05" Z="364.735" />
+				<Hotspot X="2103.11" Y="7353.6" Z="366.479" />
+				<Hotspot X="1943.92" Y="7359.26" Z="364.572" />
+				<Hotspot X="1926.84" Y="7195.48" Z="364.116" />
+				<Hotspot X="2101.22" Y="7137.61" Z="364.771" />
+				<Hotspot X="2114.53" Y="7187.61" Z="366.179" />
+				<Hotspot X="2206.19" Y="7122.32" Z="364.065" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11079 A Fel Whip For Gahk: group quest (5 players); item 32733 Fel Whip has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11079)) &amp;&amp; (IsQuestCompleted(11079)))">
 			<TurnIn QuestName="A Fel Whip For Gahk" QuestId="11079" TurnInName="Gahk" TurnInId="23300" X="2308.34" Y="7300.44" Z="365.718" />

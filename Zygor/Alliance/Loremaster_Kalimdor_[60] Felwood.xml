@@ -310,6 +310,8 @@
 		<If Condition="(Me.Level &gt;= 48)">
 			<PickUp QuestName="A Little Slime Goes a Long Way" QuestId="4512" GiverName="Laris Geardawdle" GiverId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
 		</If>
+		<!-- Q4512: Empty Cursed Ooze Jar (11914) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q4512: Empty Tainted Ooze Jar (11948) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 48)">
 			<PickUp QuestName="Cleansing Felwood" QuestId="4101" GiverName="Arathandris Silversky" GiverId="9528" X="3804.74" Y="-1471.87" Z="210.565" />
 		</If>
@@ -467,7 +469,7 @@
 		<If Condition="((HasQuest(4261)) &amp;&amp; (!IsQuestCompleted(4261)))">
 			<CustomBehavior File="AbandonQuest" QuestId="4261" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q4512 A Little Slime Goes a Long Way: item 11947 Filled Cursed Ooze Jar has no drop or chest near the guide coordinates; item 11949 Filled Tainted Ooze Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q4512 A Little Slime Goes a Long Way: helper item 11914 Empty Cursed Ooze Jar has no dropping creature near the guide coordinates; helper item 11948 Empty Tainted Ooze Jar has no dropping creature near the guide coordinates; item 11947 Filled Cursed Ooze Jar has no drop or chest near the guide coordinates; item 11949 Filled Tainted Ooze Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4512)) &amp;&amp; (IsQuestCompleted(4512)))">
 			<TurnIn QuestName="A Little Slime Goes a Long Way" QuestId="4512" TurnInName="Laris Geardawdle" TurnInId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
 		</If>

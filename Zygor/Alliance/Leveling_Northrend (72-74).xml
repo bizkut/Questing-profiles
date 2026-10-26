@@ -710,23 +710,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12083" Name="Atop the Woodlands">
-		<Objective Type="KillMob" MobId="26831" KillCount="1">
-			<Hotspots>
-				<Hotspot X="2896.58" Y="1817.61" Z="135.334" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="12092" Name="Strengthen the Ancients">
-		<Objective Type="KillMob" MobId="26321" KillCount="3">
-			<Hotspots>
-				<Hotspot X="3243.96" Y="1802.86" Z="136.995" />
-				<Hotspot X="3137.95" Y="1819.67" Z="128.161" />
-				<Hotspot X="3197.59" Y="1911" Z="128.729" />
-				<Hotspot X="3183.26" Y="1680.55" Z="151.736" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="12169" Name="The High Cultist">
 		<Objective Type="KillMob" MobId="26655" KillCount="1">
 			<Hotspots>
@@ -899,7 +882,8 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11278)">
 			<PickUp QuestName="Trust is Earned" QuestId="11460" GiverName="Hidalgo the Master Falconer" GiverId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
-		<!-- REVIEW Q11460 Trust is Earned: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q11460: Fjord Grub (34102) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q11460 Trust is Earned: helper item 34102 Fjord Grub has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11460)) &amp;&amp; (IsQuestCompleted(11460)))">
 			<TurnIn QuestName="Trust is Earned" QuestId="11460" TurnInName="Hidalgo the Master Falconer" TurnInId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
@@ -909,7 +893,8 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11460)">
 			<PickUp QuestName="The Ransacked Caravan" QuestId="11465" GiverName="Hidalgo the Master Falconer" GiverId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
-		<!-- REVIEW Q11465 The Ransacked Caravan: item 34112 Fjord Turkey has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q11465: Fjord Grub (34102) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q11465 The Ransacked Caravan: helper item 34102 Fjord Grub has no dropping creature near the guide coordinates; item 34112 Fjord Turkey has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11465)) &amp;&amp; (IsQuestCompleted(11465)))">
 			<TurnIn QuestName="The Ransacked Caravan" QuestId="11465" TurnInName="Hidalgo the Master Falconer" TurnInId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
@@ -919,7 +904,8 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11465)">
 			<PickUp QuestName="Falcon Versus Hawk" QuestId="11468" GiverName="Hidalgo the Master Falconer" GiverId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
-		<!-- REVIEW Q11468 Falcon Versus Hawk: item 34120 Fjord Hawk has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q11468: Fjord Grub (34102) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q11468 Falcon Versus Hawk: helper item 34102 Fjord Grub has no dropping creature near the guide coordinates; item 34120 Fjord Hawk has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11468)) &amp;&amp; (IsQuestCompleted(11468)))">
 			<TurnIn QuestName="Falcon Versus Hawk" QuestId="11468" TurnInName="Hidalgo the Master Falconer" TurnInId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
@@ -1181,6 +1167,17 @@
 		<TurnIn QuestName="Avenge Iskaal" QuestId="11458" TurnInName="Elder Atuik" TurnInId="24755" X="820.483" Y="-2910.46" Z="7.6385" />
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11469)">
 			<PickUp QuestName="The Way to His Heart..." QuestId="11472" GiverName="Anuniaq" GiverId="24810" X="743.706" Y="-2884.84" Z="7.2546" />
+		</If>
+		<If Condition="HasQuest(11472) &amp;&amp; !IsQuestCompleted(11472) &amp;&amp; GetItemCount(34127) &lt; 10">
+			<CustomBehavior File="CollectThings" QuestId="11472" CollectItemId="34127" CollectItemCount="10" HuntingGroundRadius="120" MobId="24637" X="155.123" Y="-3178.06" Z="-1.2188">
+				<Hotspot X="155.123" Y="-3178.06" Z="-1.2188" />
+				<Hotspot X="7.7919" Y="-3121.86" Z="-1.2341" />
+				<Hotspot X="12.856" Y="-3052.45" Z="-1.2428" />
+				<Hotspot X="-56.8718" Y="-3056.57" Z="-1.2865" />
+				<Hotspot X="-12.4834" Y="-3189.73" Z="-1.2067" />
+				<Hotspot X="-178.203" Y="-3221.94" Z="-1.0882" />
+				<Hotspot X="123.12" Y="-2996.76" Z="-1.2314" />
+			</CustomBehavior>
 		</If>
 		<TurnIn QuestName="The Fragrance of Money" QuestId="11455" TurnInName="Handsome Terry" TurnInId="24537" X="-117.444" Y="-3550.41" Z="3.8186" />
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11455)">
@@ -1524,7 +1521,7 @@
 		<If Condition="(Me.Level &gt;= 68)">
 			<PickUp QuestName="The Yeti Next Door" QuestId="11284" GiverName="Foreman Colbey" GiverId="24176" X="2487.1" Y="-5036.1" Z="282.818" />
 		</If>
-		<CustomBehavior File="UseItemOn" QuestId="11284" ItemId="33352" MobId="24178" NumOfTimes="1" Range="5" CollectionDistance="200" X="2638.73" Y="-5057.32" Z="295.801" />
+		<!-- Q11284: Giant Yeti Meal (33477) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Down to the Wire" QuestId="11269" Type="CollectItem" ItemId="33348" CollectCount="10" />
 		<Objective QuestName="Preying Upon the Weak" QuestId="11292" Type="CollectItem" ItemId="33487" CollectCount="8" />
 		<!-- REVIEW Q11322 The Cleansing: get 27959 Your Inner Turmoil x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1622,7 +1619,8 @@
 		<If Condition="((HasQuest(11239)) &amp;&amp; (!IsQuestCompleted(11239)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11239" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q11284 The Yeti Next Door: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<CustomBehavior File="UseItemOn" QuestId="11284" ItemId="33477" MobId="24178" NumOfTimes="1" Range="5" CollectionDistance="200" X="2638.73" Y="-5057.32" Z="295.801" />
+		<!-- REVIEW Q11284 The Yeti Next Door: helper item 33477 Giant Yeti Meal has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11284)) &amp;&amp; (IsQuestCompleted(11284)))">
 			<TurnIn QuestName="The Yeti Next Door" QuestId="11284" TurnInName="Foreman Colbey" TurnInId="24176" X="2487.1" Y="-5036.1" Z="282.818" />
 		</If>
@@ -1798,10 +1796,39 @@
 		<If Condition="(Me.Level &gt;= 71)">
 			<PickUp QuestName="Strengthen the Ancients" QuestId="12092" GiverName="Sarendryana" GiverId="26837" X="3439.4" Y="2016.05" Z="69.5504" />
 		</If>
-		<Objective QuestName="Strengthen the Ancients" QuestId="12092" Type="KillMob" MobId="26321" KillCount="3" />
-		<Objective QuestName="Atop the Woodlands" QuestId="12083" Type="KillMob" MobId="26831" KillCount="1" />
-		<TurnIn QuestName="Strengthen the Ancients" QuestId="12092" TurnInName="Sarendryana" TurnInId="26837" X="3439.4" Y="2016.05" Z="69.5504" />
-		<TurnIn QuestName="Atop the Woodlands" QuestId="12083" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		<If Condition="HasQuest(12092) &amp;&amp; !IsQuestCompleted(12092) &amp;&amp; GetItemCount(36786) &lt; 3">
+			<CustomBehavior File="CollectThings" QuestId="12092" CollectItemId="36786" CollectItemCount="3" HuntingGroundRadius="120" MobId="26421" X="3330.99" Y="1897.64" Z="107.107">
+				<Hotspot X="3330.99" Y="1897.64" Z="107.107" />
+				<Hotspot X="3277.64" Y="1920.02" Z="133.969" />
+				<Hotspot X="3227.01" Y="1977.59" Z="134.844" />
+				<Hotspot X="3113.2" Y="1927.07" Z="127.222" />
+				<Hotspot X="3237.88" Y="1839.09" Z="135.773" />
+				<Hotspot X="3325.94" Y="1805.34" Z="129.999" />
+				<Hotspot X="3247.84" Y="1717.03" Z="136.105" />
+				<Hotspot X="3261.67" Y="1614.18" Z="143.948" />
+			</CustomBehavior>
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="12092" ItemId="36786" MobId="26321" NumOfTimes="3" Range="5" CollectionDistance="200" X="3197.59" Y="1911" Z="128.729" />
+		<If Condition="HasQuest(12083) &amp;&amp; !IsQuestCompleted(12083) &amp;&amp; GetItemCount(36779) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12083" CollectItemId="36779" CollectItemCount="1" HuntingGroundRadius="120" MobId="26815" X="2847.59" Y="1833.02" Z="139.577">
+				<Hotspot X="2847.59" Y="1833.02" Z="139.577" />
+			</CustomBehavior>
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="12083" ItemId="36779" MobId="26831" NumOfTimes="1" Range="5" CollectionDistance="200" X="2896.58" Y="1817.61" Z="135.334" />
+		<!-- REVIEW Q12092 Strengthen the Ancients: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12092)) &amp;&amp; (IsQuestCompleted(12092)))">
+			<TurnIn QuestName="Strengthen the Ancients" QuestId="12092" TurnInName="Sarendryana" TurnInId="26837" X="3439.4" Y="2016.05" Z="69.5504" />
+		</If>
+		<If Condition="((HasQuest(12092)) &amp;&amp; (!IsQuestCompleted(12092)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12092" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q12083 Atop the Woodlands: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12083)) &amp;&amp; (IsQuestCompleted(12083)))">
+			<TurnIn QuestName="Atop the Woodlands" QuestId="12083" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<If Condition="((HasQuest(12083)) &amp;&amp; (!IsQuestCompleted(12083)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12083" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12083)">
 			<PickUp QuestName="Search Indu'le Village" QuestId="12098" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>

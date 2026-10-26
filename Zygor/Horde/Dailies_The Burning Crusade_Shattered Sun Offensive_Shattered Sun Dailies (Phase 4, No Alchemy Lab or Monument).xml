@@ -213,6 +213,18 @@
 		</If>
 		<!-- SKIP pickup Q11523 Arm the Wards!: no quest giver with a spawn in the database -->
 		<!-- SKIP pickup Q11525 Further Conversions: no quest giver with a spawn in the database -->
+		<If Condition="HasQuest(11523) &amp;&amp; !IsQuestCompleted(11523) &amp;&amp; GetItemCount(34338) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="11523" CollectItemId="34338" CollectItemCount="4" HuntingGroundRadius="120" MobId="24960" MobId2="24966" X="12961.3" Y="-6786.39" Z="7.8622">
+				<Hotspot X="12961.3" Y="-6786.39" Z="7.8622" />
+				<Hotspot X="13003.7" Y="-6774.46" Z="9.7415" />
+				<Hotspot X="12980.4" Y="-6829.91" Z="8.3056" />
+				<Hotspot X="12934.3" Y="-6845.1" Z="8.8422" />
+				<Hotspot X="12909.3" Y="-6810.11" Z="8.6065" />
+				<Hotspot X="12884.1" Y="-6749.97" Z="11.8963" />
+				<Hotspot X="12935.2" Y="-6732.26" Z="12.546" />
+				<Hotspot X="13020.2" Y="-6861.82" Z="2.2898" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11523 Arm the Wards!: no quest giver in the database; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11523)) &amp;&amp; (IsQuestCompleted(11523)))">
 			<TurnIn QuestName="Arm the Wards!" QuestId="11523" TurnInName="Captain Theris Dawnhearth" TurnInId="24967" X="12890.7" Y="-6881.36" Z="10.5983" />
@@ -307,13 +319,35 @@
 		<If Condition="(Me.Level &gt;= 70)">
 			<PickUp QuestName="The Multiphase Survey" QuestId="11880" GiverName="Harbinger Haronem" GiverId="19475" X="-1928.22" Y="5329.93" Z="-12.3282" />
 		</If>
+		<If Condition="HasQuest(11520) &amp;&amp; !IsQuestCompleted(11520) &amp;&amp; GetItemCount(34255) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11520" CollectItemId="34255" CollectItemCount="1" HuntingGroundRadius="120" MobId="24920" X="-1472.81" Y="3947.02" Z="220.299">
+				<Hotspot X="-1472.81" Y="3947.02" Z="220.299" />
+				<Hotspot X="-1418.12" Y="3857.38" Z="210.826" />
+				<Hotspot X="-1367.7" Y="3835.66" Z="215.791" />
+				<Hotspot X="-1487.61" Y="4068.61" Z="213.228" />
+				<Hotspot X="-1460.29" Y="4125.44" Z="214.106" />
+				<Hotspot X="-1449.89" Y="4237.15" Z="226.547" />
+			</CustomBehavior>
+		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11526)">
 			<PickUp QuestName="Blood for Blood" QuestId="11515" GiverName="Magistrix Seyla" GiverId="24937" X="875.694" Y="2535.02" Z="298.075" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11526)">
 			<PickUp QuestName="Blast the Gateway" QuestId="11516" GiverName="Magistrix Seyla" GiverId="24937" X="875.694" Y="2535.02" Z="298.075" />
 		</If>
-		<!-- REVIEW Q11515 Blood for Blood: collect 24955 Emaciated Felblood x4: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11515) &amp;&amp; !IsQuestCompleted(11515) &amp;&amp; GetItemCount(34259) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="11515" CollectItemId="34259" CollectItemCount="4" HuntingGroundRadius="120" MobId="24919" X="882.204" Y="2252.73" Z="300.066">
+				<Hotspot X="882.204" Y="2252.73" Z="300.066" />
+				<Hotspot X="841.577" Y="2313.24" Z="289.348" />
+				<Hotspot X="843.658" Y="2364.89" Z="281.511" />
+				<Hotspot X="836.349" Y="2442.66" Z="290.716" />
+				<Hotspot X="719.738" Y="2387.9" Z="274.327" />
+				<Hotspot X="834.115" Y="2196.89" Z="281.442" />
+				<Hotspot X="796.243" Y="2156.71" Z="272.98" />
+				<Hotspot X="792.549" Y="2092.3" Z="273.805" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q11515 Blood for Blood: use item 34257: target 24955 Emaciated Felblood has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11515)) &amp;&amp; (IsQuestCompleted(11515)))">
 			<TurnIn QuestName="Blood for Blood" QuestId="11515" TurnInName="Magistrix Seyla" TurnInId="24937" X="875.694" Y="2535.02" Z="298.075" />
 		</If>
@@ -326,6 +360,18 @@
 		</If>
 		<If Condition="((HasQuest(11516)) &amp;&amp; (!IsQuestCompleted(11516)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11516" Type="Incomplete" />
+		</If>
+		<If Condition="HasQuest(11514) &amp;&amp; !IsQuestCompleted(11514) &amp;&amp; GetItemCount(34248) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11514" CollectItemId="34248" CollectItemCount="1" HuntingGroundRadius="120" MobId="22241" MobId2="22242" MobId3="22243" MobId4="22244" X="3737.82" Y="6078.91" Z="266.809">
+				<Hotspot X="3737.82" Y="6078.91" Z="266.809" />
+				<Hotspot X="3713.73" Y="6112.02" Z="266.544" />
+				<Hotspot X="3759.19" Y="6132.08" Z="266.715" />
+				<Hotspot X="3785.32" Y="6090.4" Z="266.263" />
+				<Hotspot X="3777.57" Y="6030.13" Z="265.548" />
+				<Hotspot X="3735.76" Y="6035.23" Z="266.735" />
+				<Hotspot X="3720.03" Y="5980.17" Z="267.361" />
+				<Hotspot X="3675.01" Y="6069.82" Z="267.089" />
+			</CustomBehavior>
 		</If>
 		<Objective QuestName="Maintaining the Sunwell Portal" QuestId="11514" Type="CollectItem" ItemId="34246" CollectCount="10" />
 		<Objective QuestName="Gaining the Advantage" QuestId="11875" Type="CollectItem" ItemId="35229" CollectCount="8" />
@@ -350,6 +396,18 @@
 		</If>
 		<If Condition="((HasQuest(11880)) &amp;&amp; (!IsQuestCompleted(11880)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11880" Type="Incomplete" />
+		</If>
+		<If Condition="HasQuest(11544) &amp;&amp; !IsQuestCompleted(11544) &amp;&amp; GetItemCount(34500) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="11544" CollectItemId="34500" CollectItemCount="5" HuntingGroundRadius="120" MobId="22081" MobId2="22082" MobId3="22084" X="-3329.19" Y="444.084" Z="99.945">
+				<Hotspot X="-3329.19" Y="444.084" Z="99.945" />
+				<Hotspot X="-3349.37" Y="490.827" Z="90.8471" />
+				<Hotspot X="-3387.07" Y="467.889" Z="104.05" />
+				<Hotspot X="-3329.3" Y="391.749" Z="120.663" />
+				<Hotspot X="-3285.26" Y="415.06" Z="104.066" />
+				<Hotspot X="-3244.87" Y="421.909" Z="104.074" />
+				<Hotspot X="-3242.57" Y="465.971" Z="104.025" />
+				<Hotspot X="-3282.42" Y="469.923" Z="104.233" />
+			</CustomBehavior>
 		</If>
 		<!-- REVIEW Q11536 Don't Stop Now....: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11536)) &amp;&amp; (IsQuestCompleted(11536)))">

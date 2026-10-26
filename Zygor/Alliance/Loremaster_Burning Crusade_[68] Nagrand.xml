@@ -903,6 +903,18 @@
 		<If Condition="(Me.Level &gt;= 64)">
 			<PickUp QuestName="HELP!" QuestId="9923" GiverName="Corki" GiverId="18369" X="-2563.89" Y="6288.29" Z="15.295" />
 		</If>
+		<If Condition="HasQuest(9923) &amp;&amp; !IsQuestCompleted(9923) &amp;&amp; GetItemCount(25490) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="9923" CollectItemId="25490" CollectItemCount="1" HuntingGroundRadius="120" MobId="17134" MobId2="17135" X="-2550.31" Y="6249.54" Z="17.4318">
+				<Hotspot X="-2550.31" Y="6249.54" Z="17.4318" />
+				<Hotspot X="-2557.92" Y="6289.34" Z="14.9307" />
+				<Hotspot X="-2595.41" Y="6239.24" Z="18.8595" />
+				<Hotspot X="-2566.3" Y="6211.13" Z="16.332" />
+				<Hotspot X="-2592.52" Y="6173.8" Z="21.4897" />
+				<Hotspot X="-2538.98" Y="6163.36" Z="60.0224" />
+				<Hotspot X="-2488.33" Y="6179.86" Z="60.1037" />
+				<Hotspot X="-2490.53" Y="6256" Z="31.1707" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Fierce Enemies" QuestId="10476" Type="CollectItem" ItemId="25433" CollectCount="10" />
 		<Objective QuestName="I Must Have Them!" QuestId="10109" Type="CollectItem" ItemId="27807" CollectCount="3" />
 		<TurnIn QuestName="Talbuk Mastery" QuestId="9858" TurnInName="Harold Lane" TurnInId="18218" X="-1454.64" Y="6352.28" Z="37.3238" />
@@ -1001,7 +1013,7 @@
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9917)">
 			<PickUp QuestName="Not On My Watch!" QuestId="9918" GiverName="Huntress Bintook" GiverId="18353" X="-2556.34" Y="7254.19" Z="15.2034" />
 		</If>
-		<!-- REVIEW Q9923 HELP!: get 18369 Corki x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q9923 HELP!: objective 18369 Corki x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9923)) &amp;&amp; (IsQuestCompleted(9923)))">
 			<TurnIn QuestName="HELP!" QuestId="9923" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>
@@ -1078,6 +1090,18 @@
 		<Objective QuestName="The Ultimate Bloodsport" QuestId="9852" Type="CollectItem" ItemId="24505" CollectCount="1" />
 		<Objective QuestName="The Spirit Polluted" QuestId="9810" Type="KillMob" MobId="18145" KillCount="1" />
 		<Objective QuestName="The Spirit Polluted" QuestId="9810" Type="KillMob" MobId="17155" KillCount="8" />
+		<If Condition="HasQuest(9924) &amp;&amp; !IsQuestCompleted(9924) &amp;&amp; GetItemCount(25509) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="9924" CollectItemId="25509" CollectItemCount="1" HuntingGroundRadius="120" MobId="17136" MobId2="17137" X="-1192.12" Y="8022.7" Z="-93.1029">
+				<Hotspot X="-1192.12" Y="8022.7" Z="-93.1029" />
+				<Hotspot X="-1214.91" Y="8056.29" Z="-84.8416" />
+				<Hotspot X="-1239.33" Y="8009.72" Z="-94.3593" />
+				<Hotspot X="-1143.88" Y="8051.77" Z="-83.5101" />
+				<Hotspot X="-1103.03" Y="8047.95" Z="-84.9493" />
+				<Hotspot X="-1065.72" Y="8074.14" Z="-92.045" />
+				<Hotspot X="-1030.45" Y="8106.47" Z="-92.8502" />
+				<Hotspot X="-1089.78" Y="8117.36" Z="-87.9527" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="The Twin Clefts of Nagrand" QuestId="9922" Type="KillMob" MobId="17136" KillCount="10" />
 		<Objective QuestName="The Twin Clefts of Nagrand" QuestId="9922" Type="KillMob" MobId="17137" KillCount="10" />
 		<TurnIn QuestName="The Spirit Polluted" QuestId="9810" TurnInName="Elementalist Lo'ap" TurnInId="18073" X="-782.63" Y="6936.53" Z="32.4767" />
@@ -1086,7 +1110,7 @@
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9922)">
 			<PickUp QuestName="Diplomatic Measures" QuestId="10108" GiverName="Mo'mor the Breaker" GiverId="18223" X="-2618.18" Y="7278.46" Z="20.8077" />
 		</If>
-		<!-- REVIEW Q9924 Corki's Gone Missing Again!: collect 20812 Corki x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q9924 Corki's Gone Missing Again!: objective 20812 Corki x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9924)) &amp;&amp; (IsQuestCompleted(9924)))">
 			<TurnIn QuestName="Corki's Gone Missing Again!" QuestId="9924" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>
@@ -1122,6 +1146,18 @@
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9927)">
 			<PickUp QuestName="Body of Evidence" QuestId="9932" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
+		<If Condition="HasQuest(9853) &amp;&amp; !IsQuestCompleted(9853) &amp;&amp; GetItemCount(24502) &lt; 7">
+			<CustomBehavior File="CollectThings" QuestId="9853" CollectItemId="24502" CollectItemCount="7" HuntingGroundRadius="120" MobId="17138" MobId2="18037" MobId3="18064" MobId4="18065" MobId5="18423" X="-824.154" Y="7704.12" Z="38.9575">
+				<Hotspot X="-824.154" Y="7704.12" Z="38.9575" />
+				<Hotspot X="-866.976" Y="7699.83" Z="37.7382" />
+				<Hotspot X="-863.74" Y="7748.44" Z="33.4028" />
+				<Hotspot X="-811.945" Y="7762.78" Z="39.8831" />
+				<Hotspot X="-775.493" Y="7715.9" Z="49.1003" />
+				<Hotspot X="-746.949" Y="7620.73" Z="53.7294" />
+				<Hotspot X="-789.211" Y="7611.85" Z="48.6743" />
+				<Hotspot X="-842.09" Y="7641.23" Z="45.1244" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q9954 Corki's Ransom: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9954)) &amp;&amp; (IsQuestCompleted(9954)))">
 			<TurnIn QuestName="Corki's Ransom" QuestId="9954" TurnInName="Corki" TurnInId="18445" X="-918.143" Y="8663.94" Z="172.542" />
@@ -1130,7 +1166,12 @@
 			<CustomBehavior File="AbandonQuest" QuestId="9954" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q9955 Cho'war the Pillager: group quest (3 players) -->
-		<!-- REVIEW Q9955 Cho'war the Pillager: group quest (3 players); get 18444 Corki Event Controller x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(9955) &amp;&amp; !IsQuestCompleted(9955) &amp;&amp; GetItemCount(25648) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="9955" CollectItemId="25648" CollectItemCount="1" HuntingGroundRadius="120" MobId="18423" X="-471.73" Y="8857.5" Z="239.455">
+				<Hotspot X="-471.73" Y="8857.5" Z="239.455" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q9955 Cho'war the Pillager: group quest (3 players); objective 18444 Corki Event Controller x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9955)) &amp;&amp; (IsQuestCompleted(9955)))">
 			<TurnIn QuestName="Cho'war the Pillager" QuestId="9955" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>
@@ -1232,7 +1273,17 @@
 		</If>
 		<!-- SKIP Q10011 Forge Camp: Annihilated: group quest (3 players) -->
 		<Objective QuestName="Vision of the Dead" QuestId="10252" Type="CollectItem" ItemId="28667" CollectCount="1" />
-		<!-- REVIEW Q10011 Forge Camp: Annihilated: group quest (3 players); get 19067 Fel Cannon: Hate x1: not attackable; get 19210 Fel Cannon: Fear x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(10011) &amp;&amp; !IsQuestCompleted(10011) &amp;&amp; GetItemCount(25770) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10011" CollectItemId="25770" CollectItemCount="1" HuntingGroundRadius="120" MobId="18535" X="-1287.83" Y="8915.32" Z="60.9594">
+				<Hotspot X="-1287.83" Y="8915.32" Z="60.9594" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(10011) &amp;&amp; !IsQuestCompleted(10011) &amp;&amp; GetItemCount(25771) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10011" CollectItemId="25771" CollectItemCount="1" HuntingGroundRadius="120" MobId="18536" X="-1840.42" Y="9212.31" Z="73.4196">
+				<Hotspot X="-1840.42" Y="9212.31" Z="73.4196" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q10011 Forge Camp: Annihilated: group quest (3 players); objective 19067 Fel Cannon: Hate x1: not attackable; objective 19210 Fel Cannon: Fear x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10011)) &amp;&amp; (IsQuestCompleted(10011)))">
 			<TurnIn QuestName="Forge Camp: Annihilated" QuestId="10011" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
@@ -1261,7 +1312,19 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10587) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="A Necessary Distraction" QuestId="10637" GiverName="Exarch Onaala" GiverId="21860" X="-3019.8" Y="859.135" Z="-9.7862" />
 		</If>
-		<!-- REVIEW Q10637 A Necessary Distraction: get 21892 Azaloth Credit Marker x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(10637) &amp;&amp; !IsQuestCompleted(10637) &amp;&amp; GetItemCount(30811) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10637" CollectItemId="30811" CollectItemCount="1" HuntingGroundRadius="120" MobId="21503" MobId2="21505" X="-3801.05" Y="254.02" Z="120.664">
+				<Hotspot X="-3801.05" Y="254.02" Z="120.664" />
+				<Hotspot X="-3752.95" Y="270.244" Z="104.203" />
+				<Hotspot X="-3824.63" Y="317.182" Z="120.771" />
+				<Hotspot X="-3864.35" Y="302.711" Z="137.184" />
+				<Hotspot X="-3827.56" Y="377.905" Z="120.673" />
+				<Hotspot X="-3918.8" Y="397.723" Z="120.596" />
+				<Hotspot X="-3724.57" Y="416.328" Z="104.084" />
+				<Hotspot X="-3725.74" Y="356.081" Z="104.258" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q10637 A Necessary Distraction: objective 21892 Azaloth Credit Marker x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10637)) &amp;&amp; (IsQuestCompleted(10637)))">
 			<TurnIn QuestName="A Necessary Distraction" QuestId="10637" TurnInName="Exarch Onaala" TurnInId="21860" X="-3019.8" Y="859.135" Z="-9.7862" />
 		</If>
@@ -1279,7 +1342,19 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10687) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
 			<PickUp QuestName="A Necessary Distraction" QuestId="10688" GiverName="Larissa Sunstrike" GiverId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
 		</If>
-		<!-- REVIEW Q10688 A Necessary Distraction: get 21892 Azaloth Credit Marker x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(10688) &amp;&amp; !IsQuestCompleted(10688) &amp;&amp; GetItemCount(30811) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10688" CollectItemId="30811" CollectItemCount="1" HuntingGroundRadius="120" MobId="21503" MobId2="21505" X="-3801.05" Y="254.02" Z="120.664">
+				<Hotspot X="-3801.05" Y="254.02" Z="120.664" />
+				<Hotspot X="-3752.95" Y="270.244" Z="104.203" />
+				<Hotspot X="-3824.63" Y="317.182" Z="120.771" />
+				<Hotspot X="-3864.35" Y="302.711" Z="137.184" />
+				<Hotspot X="-3827.56" Y="377.905" Z="120.673" />
+				<Hotspot X="-3918.8" Y="397.723" Z="120.596" />
+				<Hotspot X="-3724.57" Y="416.328" Z="104.084" />
+				<Hotspot X="-3725.74" Y="356.081" Z="104.258" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q10688 A Necessary Distraction: objective 21892 Azaloth Credit Marker x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10688)) &amp;&amp; (IsQuestCompleted(10688)))">
 			<TurnIn QuestName="A Necessary Distraction" QuestId="10688" TurnInName="Larissa Sunstrike" TurnInId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
 		</If>
@@ -1301,8 +1376,16 @@
 			<PickUp QuestName="Against All Odds" QuestId="10669" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
 		<TurnIn QuestName="A Mystifying Vision" QuestId="11042" TurnInName="Rocket-Chief Fuselage" TurnInId="19570" X="3041.8" Y="3658.85" Z="143.406" />
+		<If Condition="HasQuest(10641) &amp;&amp; !IsQuestCompleted(10641) &amp;&amp; GetItemCount(30850) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10641" CollectItemId="30850" CollectItemCount="1" HuntingGroundRadius="120" MobId="18859" X="4726.59" Y="3300.68" Z="184.907">
+				<Hotspot X="4726.59" Y="3300.68" Z="184.907" />
+				<Hotspot X="4574.48" Y="3267.89" Z="152.87" />
+				<Hotspot X="4701.08" Y="3135.11" Z="173.991" />
+				<Hotspot X="4661.07" Y="3098.49" Z="163.538" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Against the Illidari" QuestId="10668" Type="KillMob" MobId="21928" KillCount="1" />
-		<!-- REVIEW Q10641 Against the Legion: get 21925 Avatar of Sathal x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10641 Against the Legion: use item 30850: target 21925 Avatar of Sathal has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10641)) &amp;&amp; (IsQuestCompleted(10641)))">
 			<TurnIn QuestName="Against the Legion" QuestId="10641" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>

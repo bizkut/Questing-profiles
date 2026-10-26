@@ -1418,6 +1418,10 @@
 		<Objective QuestName="Stealing Knowledge" QuestId="3517" Type="CollectItem" ItemId="10540" CollectCount="1" />
 		<Objective QuestName="Stealing Knowledge" QuestId="3517" Type="CollectItem" ItemId="10538" CollectCount="1" />
 		<Objective QuestName="Stealing Knowledge" QuestId="3517" Type="CollectItem" ItemId="10539" CollectCount="1" />
+		<!-- Q3568: Empty Vial Labeled #1 (10687) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q3568: Empty Vial Labeled #2 (10688) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q3568: Empty Vial Labeled #3 (10689) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q3568: Empty Vial Labeled #4 (10690) is needed but no creature near the guide coordinates drops it -->
 		<TurnIn QuestName="Stealing Knowledge" QuestId="3517" TurnInName="Jediga" TurnInId="8587" X="3603.02" Y="-4421.08" Z="112.075" />
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3517)">
 			<PickUp QuestName="Delivery to Magatha" QuestId="3518" GiverName="Jediga" GiverId="8587" X="3603.02" Y="-4421.08" Z="112.075" />
@@ -1491,7 +1495,7 @@
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3542)">
 			<PickUp QuestName="Andron's Payment to Jediga" QuestId="3564" GiverName="Andron Gant" GiverId="6522" X="1389.34" Y="347.315" Z="-65.9567" />
 		</If>
-		<!-- REVIEW Q3568 Seeping Corruption: item 10691 Filled Vial Labeled #1 has no drop or chest near the guide coordinates; item 10692 Filled Vial Labeled #2 has no drop or chest near the guide coordinates; item 10693 Filled Vial Labeled #3 has no drop or chest near the guide coordinates; item 10694 Filled Vial Labeled #4 has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q3568 Seeping Corruption: helper item 10687 Empty Vial Labeled #1 has no dropping creature near the guide coordinates; helper item 10688 Empty Vial Labeled #2 has no dropping creature near the guide coordinates; helper item 10689 Empty Vial Labeled #3 has no dropping creature near the guide coordinates; helper item 10690 Empty Vial Labeled #4 has no dropping creature near the guide coordinates; item 10691 Filled Vial Labeled #1 has no drop or chest near the guide coordinates; item 10692 Filled Vial Labeled #2 has no drop or chest near the guide coordinates; item 10693 Filled Vial Labeled #3 has no drop or chest near the guide coordinates; item 10694 Filled Vial Labeled #4 has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(3568)) &amp;&amp; (IsQuestCompleted(3568)))">
 			<TurnIn QuestName="Seeping Corruption" QuestId="3568" TurnInName="Chemist Cuely" TurnInId="8390" X="1420.98" Y="405.895" Z="-85.163" />
 		</If>
@@ -1709,6 +1713,11 @@
 		<Objective QuestName="Larion and Muigin" QuestId="4145" Type="KillMob" MobId="6512" KillCount="5" />
 		<Objective QuestName="Expedition Salvation" QuestId="3881" Type="CollectItem" ItemId="11112" CollectCount="1" />
 		<Objective QuestName="Beware of Pterrordax" QuestId="4501" Type="KillMob" MobId="9167" KillCount="10" />
+		<If Condition="HasQuest(4294) &amp;&amp; !IsQuestCompleted(4294) &amp;&amp; GetItemCount(12235) &lt; 15">
+			<CustomBehavior File="CollectThings" QuestId="4294" CollectItemId="12235" CollectItemCount="15" HuntingGroundRadius="120" MobId="6556" MobId2="6557" MobId3="6559" X="-7464.18" Y="-519.744" Z="-270.736">
+				<Hotspot X="-7464.18" Y="-519.744" Z="-270.736" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Bungle in the Jungle" QuestId="4496" Type="CollectItem" ItemId="11018" CollectCount="5" />
 		<Objective QuestName="Un'Goro Soil" QuestId="3761" Type="CollectItem" ItemId="11018" CollectCount="20" />
 		<If Condition="(Me.Level &gt;= 51)">

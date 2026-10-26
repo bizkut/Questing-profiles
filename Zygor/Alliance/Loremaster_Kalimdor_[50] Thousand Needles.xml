@@ -269,10 +269,17 @@
 		<If Condition="(Me.Level &gt;= 28)">
 			<PickUp QuestName="The Brassbolts Brothers" QuestId="1179" GiverName="Pilot Longbeard" GiverId="2092" X="-5065.23" Y="-1288.6" Z="502.047" />
 		</If>
+		<!-- Q1100: Henrig Lonebrow's Journal (5791) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="HasItem(5791) &amp;&amp; !HasQuest(1100) &amp;&amp; !IsQuestCompleted(1100) &amp;&amp; (Me.Level &gt;= 23)">
 			<PickUp QuestName="Lonebrow's Journal" QuestId="1100" GiverName="Henrig Lonebrow's Journal" GiverId="5791" GiverType="Item" />
 		</If>
-		<TurnIn QuestName="Lonebrow's Journal" QuestId="1100" TurnInName="Falfindel Waywarder" TurnInId="4048" X="-4524.14" Y="-787.884" Z="-41.5917" />
+		<!-- REVIEW Q1100 Lonebrow's Journal: helper item 5791 Henrig Lonebrow's Journal has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1100)) &amp;&amp; (IsQuestCompleted(1100)))">
+			<TurnIn QuestName="Lonebrow's Journal" QuestId="1100" TurnInName="Falfindel Waywarder" TurnInId="4048" X="-4524.14" Y="-787.884" Z="-41.5917" />
+		</If>
+		<If Condition="((HasQuest(1100)) &amp;&amp; (!IsQuestCompleted(1100)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1100" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 28)">
 			<PickUp QuestName="Rocket Car Parts" QuestId="1110" GiverName="Kravel Koalbeard" GiverId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
 		</If>
@@ -365,6 +372,11 @@
 		<Objective QuestName="Encrusted Tail Fins" QuestId="1107" Type="CollectItem" ItemId="5796" CollectCount="10" />
 		<If Condition="((HasQuest(578)) &amp;&amp; (!IsQuestCompleted(578)))">
 			<RunTo X="-12153.6" Y="894.014" Z="9.5389" />
+		</If>
+		<If Condition="HasQuest(1182) &amp;&amp; !IsQuestCompleted(1182) &amp;&amp; GetItemCount(5851) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="1182" CollectItemId="5851" CollectItemCount="1" HuntingGroundRadius="120" MobId="4723" X="-11949.5" Y="-500.392" Z="30.7014">
+				<Hotspot X="-11949.5" Y="-500.392" Z="30.7014" />
+			</CustomBehavior>
 		</If>
 		<Objective QuestName="Goblin Sponsorship" QuestId="1182" Type="CollectItem" ItemId="5852" CollectCount="1" />
 		<If Condition="((HasQuest(201)) &amp;&amp; (!IsQuestCompleted(201)))">

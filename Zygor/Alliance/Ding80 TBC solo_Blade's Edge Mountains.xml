@@ -713,6 +713,18 @@
 		<If Condition="((HasQuest(10753)) &amp;&amp; (!IsQuestCompleted(10753)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10753" Type="Incomplete" />
 		</If>
+		<If Condition="HasQuest(10567) &amp;&amp; !IsQuestCompleted(10567) &amp;&amp; GetItemCount(30704) &lt; 6">
+			<CustomBehavior File="CollectThings" QuestId="10567" CollectItemId="30704" CollectItemCount="6" HuntingGroundRadius="120" MobId="19985" MobId2="19986" MobId3="19987" MobId4="20211" X="3268.42" Y="5376.27" Z="145.145">
+				<Hotspot X="3268.42" Y="5376.27" Z="145.145" />
+				<Hotspot X="3289.06" Y="5337.99" Z="165.718" />
+				<Hotspot X="3282.55" Y="5291.44" Z="146.925" />
+				<Hotspot X="3234.8" Y="5328.32" Z="169.034" />
+				<Hotspot X="3199.35" Y="5308.48" Z="176.368" />
+				<Hotspot X="3177.37" Y="5357.3" Z="146.055" />
+				<Hotspot X="3303.88" Y="5409.22" Z="146.949" />
+				<Hotspot X="3343.57" Y="5361.36" Z="150.24" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q10567 Creating the Pendant: item 30706 Harbinger's Pendant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10567)) &amp;&amp; (IsQuestCompleted(10567)))">
 			<TurnIn QuestName="Creating the Pendant" QuestId="10567" TurnInName="Timeon" TurnInId="21782" X="2993.94" Y="5473.5" Z="145.197" />
@@ -828,8 +840,32 @@
 		<If Condition="HasItem(31489) &amp;&amp; !HasQuest(10825) &amp;&amp; !IsQuestCompleted(10825) &amp;&amp; (Me.Level &gt;= 65)">
 			<PickUp QuestName="The Truth Unorbed" QuestId="10825" GiverName="Orb of the Grishna" GiverId="31489" GiverType="Item" />
 		</If>
+		<If Condition="HasQuest(10722) &amp;&amp; !IsQuestCompleted(10722) &amp;&amp; GetItemCount(31121) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10722" CollectItemId="31121" CollectItemCount="5" HuntingGroundRadius="120" MobId="21382" MobId2="21383" MobId3="21492" MobId4="21637" MobId5="21809" MobId6="21810" X="3152.57" Y="7090.58" Z="169.336">
+				<Hotspot X="3152.57" Y="7090.58" Z="169.336" />
+				<Hotspot X="3189.91" Y="7106.24" Z="178.414" />
+				<Hotspot X="3189.06" Y="7168.66" Z="163.699" />
+				<Hotspot X="3111.11" Y="7129.98" Z="152.609" />
+				<Hotspot X="3063.47" Y="7121.63" Z="150.111" />
+				<Hotspot X="3102.89" Y="7063.88" Z="160.299" />
+				<Hotspot X="3118.56" Y="7013.02" Z="165.577" />
+				<Hotspot X="3166.75" Y="7019.08" Z="162.045" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Slaughter at Boulder'mok" QuestId="10803" Type="KillMob" MobId="21046" KillCount="5" />
 		<Objective QuestName="Slaughter at Boulder'mok" QuestId="10803" Type="KillMob" MobId="21047" KillCount="3" />
+		<If Condition="HasQuest(10803) &amp;&amp; !IsQuestCompleted(10803) &amp;&amp; GetItemCount(31754) &lt; 3">
+			<CustomBehavior File="CollectThings" QuestId="10803" CollectItemId="31754" CollectItemCount="3" HuntingGroundRadius="120" MobId="21046" MobId2="21047" MobId3="21048" X="3514.51" Y="7206.31" Z="139.782">
+				<Hotspot X="3514.51" Y="7206.31" Z="139.782" />
+				<Hotspot X="3528.53" Y="7165.08" Z="174.65" />
+				<Hotspot X="3591.02" Y="7188.98" Z="138.358" />
+				<Hotspot X="3630.08" Y="7223.25" Z="136.998" />
+				<Hotspot X="3666.55" Y="7177.22" Z="141.181" />
+				<Hotspot X="3636.39" Y="7110.55" Z="178.535" />
+				<Hotspot X="3586.04" Y="7119.2" Z="140.521" />
+				<Hotspot X="3549.42" Y="7241.37" Z="139.86" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q10747 Whelps of the Wyrmcult: item 31130 Wyrmcult Blackwhelp has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10747)) &amp;&amp; (IsQuestCompleted(10747)))">
 			<TurnIn QuestName="Whelps of the Wyrmcult" QuestId="10747" TurnInName="Samia Inkling" TurnInId="21983" X="2981.4" Y="5485.77" Z="143.858" />
@@ -875,12 +911,35 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10829)">
 			<PickUp QuestName="Exorcising the Trees" QuestId="10830" GiverName="Treebole" GiverId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>
-		<!-- REVIEW Q10830 Exorcising the Trees: collect 22226 Koi-Koi Spirit x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q10830: Grishnath Orb (31495) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(10830) &amp;&amp; !IsQuestCompleted(10830) &amp;&amp; GetItemCount(31517) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10830" CollectItemId="31517" CollectItemCount="5" HuntingGroundRadius="120" MobId="21042" X="3381.69" Y="7221.6" Z="153.264">
+				<Hotspot X="3381.69" Y="7221.6" Z="153.264" />
+				<Hotspot X="3338.98" Y="7273.9" Z="145.651" />
+				<Hotspot X="3288.45" Y="7226.35" Z="159.324" />
+				<Hotspot X="3350.65" Y="7053.47" Z="159.414" />
+				<Hotspot X="3314.08" Y="6953.82" Z="164.151" />
+				<Hotspot X="3347.04" Y="6923.75" Z="163.005" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q10830 Exorcising the Trees: helper item 31495 Grishnath Orb has no dropping creature near the guide coordinates; use item 31495: target 22226 Koi-Koi Spirit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10830)) &amp;&amp; (IsQuestCompleted(10830)))">
 			<TurnIn QuestName="Exorcising the Trees" QuestId="10830" TurnInName="Treebole" TurnInId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>
 		<If Condition="((HasQuest(10830)) &amp;&amp; (!IsQuestCompleted(10830)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10830" Type="Incomplete" />
+		</If>
+		<If Condition="HasQuest(10748) &amp;&amp; !IsQuestCompleted(10748) &amp;&amp; GetItemCount(31121) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10748" CollectItemId="31121" CollectItemCount="5" HuntingGroundRadius="120" MobId="21382" MobId2="21383" MobId3="21492" MobId4="21637" MobId5="21809" MobId6="21810" X="3152.57" Y="7090.58" Z="169.336">
+				<Hotspot X="3152.57" Y="7090.58" Z="169.336" />
+				<Hotspot X="3189.91" Y="7106.24" Z="178.414" />
+				<Hotspot X="3189.06" Y="7168.66" Z="163.699" />
+				<Hotspot X="3111.11" Y="7129.98" Z="152.609" />
+				<Hotspot X="3063.47" Y="7121.63" Z="150.111" />
+				<Hotspot X="3102.89" Y="7063.88" Z="160.299" />
+				<Hotspot X="3118.56" Y="7013.02" Z="165.577" />
+				<Hotspot X="3166.75" Y="7019.08" Z="162.045" />
+			</CustomBehavior>
 		</If>
 		<Objective QuestName="Maxnar Must Die!" QuestId="10748" Type="KillMob" MobId="21389" KillCount="1" />
 		<If Condition="(Me.Level &gt;= 67)">

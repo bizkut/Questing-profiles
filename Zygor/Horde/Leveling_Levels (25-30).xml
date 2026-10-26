@@ -370,14 +370,6 @@
 		</Objective>
 	</Quest>
 	<Quest Id="1089" Name="The Den">
-		<Objective Type="CollectItem" ItemId="5689" CollectCount="1">
-			<CollectFrom>
-				<GameObject Name="Sleepers' Cache" Id="19596" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="2546.77" Y="1998.05" Z="347.693" />
-			</Hotspots>
-		</Objective>
 		<Objective Type="CollectItem" ItemId="5690" CollectCount="1">
 			<CollectFrom>
 				<GameObject Name="Druids' Cache" Id="19597" />
@@ -392,6 +384,14 @@
 			</CollectFrom>
 			<Hotspots>
 				<Hotspot X="2466.91" Y="1880.6" Z="363.948" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5689" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Sleepers' Cache" Id="19596" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2546.77" Y="1998.05" Z="347.693" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -441,6 +441,18 @@
 		</If>
 		<If Condition="HasItem(16303) &amp;&amp; !HasQuest(23) &amp;&amp; !IsQuestCompleted(23) &amp;&amp; (Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(6383)">
 			<PickUp QuestName="Ursangous's Paw" QuestId="23" GiverName="Ursangous's Paw" GiverId="16303" GiverType="Item" />
+		</If>
+		<If Condition="HasQuest(1195) &amp;&amp; !IsQuestCompleted(1195) &amp;&amp; GetItemCount(5867) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="1195" CollectItemId="5867" CollectItemCount="1" HuntingGroundRadius="120" MobId="4054" X="2520.04" Y="-1648.77" Z="144.428">
+				<Hotspot X="2520.04" Y="-1648.77" Z="144.428" />
+				<Hotspot X="2486.79" Y="-1682.54" Z="135.108" />
+				<Hotspot X="2444.76" Y="-1669.72" Z="134.755" />
+				<Hotspot X="2378.04" Y="-1685.62" Z="149.126" />
+				<Hotspot X="2514.05" Y="-1752.22" Z="137.976" />
+				<Hotspot X="2547.33" Y="-1780.42" Z="149.309" />
+				<Hotspot X="2580.97" Y="-1716.76" Z="159.502" />
+				<Hotspot X="2556.58" Y="-1683.6" Z="153.098" />
+			</CustomBehavior>
 		</If>
 		<!-- REVIEW Q25 Stonetalon Standstill: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(25)) &amp;&amp; (IsQuestCompleted(25)))">
@@ -657,10 +669,17 @@
 		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(1088)">
 			<PickUp QuestName="The Den" QuestId="1089" GiverName="Braelyn Firehand" GiverId="4198" X="949.228" Y="1002.23" Z="103.836" />
 		</If>
-		<Objective QuestName="The Den" QuestId="1089" Type="CollectItem" ItemId="5689" CollectCount="1" />
+		<!-- Q1089: Gatekeeper's Key (5687) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="The Den" QuestId="1089" Type="CollectItem" ItemId="5690" CollectCount="1" />
 		<Objective QuestName="The Den" QuestId="1089" Type="CollectItem" ItemId="5691" CollectCount="1" />
-		<TurnIn QuestName="The Den" QuestId="1089" TurnInName="Talon Den Hoard" TurnInId="19599" TurnInType="Object" X="2562.67" Y="1947.02" Z="347.03" />
+		<Objective QuestName="The Den" QuestId="1089" Type="CollectItem" ItemId="5689" CollectCount="1" />
+		<!-- REVIEW Q1089 The Den: helper item 5687 Gatekeeper's Key has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1089)) &amp;&amp; (IsQuestCompleted(1089)))">
+			<TurnIn QuestName="The Den" QuestId="1089" TurnInName="Talon Den Hoard" TurnInId="19599" TurnInType="Object" X="2562.67" Y="1947.02" Z="347.03" />
+		</If>
+		<If Condition="((HasQuest(1089)) &amp;&amp; (!IsQuestCompleted(1089)))">
+			<CustomBehavior File="AbandonQuest" QuestId="1089" Type="Incomplete" />
+		</If>
 		<CustomBehavior File="LoadProfile" ProfileName="Leveling_Levels (30-35)" />
 	</QuestOrder>
 </HBProfile>

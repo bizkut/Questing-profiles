@@ -401,6 +401,11 @@
 		<Objective QuestName="Fiery Menace!" QuestId="7724" Type="KillMob" MobId="5858" KillCount="20" />
 		<Objective QuestName="The Flawless Flame" QuestId="3442" Type="CollectItem" ItemId="10511" CollectCount="4" />
 		<Objective QuestName="The Flawless Flame" QuestId="3442" Type="CollectItem" ItemId="10509" CollectCount="4" />
+		<If Condition="HasQuest(3181) &amp;&amp; !IsQuestCompleted(3181) &amp;&amp; GetItemCount(10000) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="3181" CollectItemId="10000" CollectItemCount="1" HuntingGroundRadius="120" MobId="5833" X="-7256.31" Y="-1949.49" Z="298.82">
+				<Hotspot X="-7256.31" Y="-1949.49" Z="298.82" />
+			</CustomBehavior>
+		</If>
 		<If Condition="HasItem(10000) &amp;&amp; !HasQuest(3181) &amp;&amp; !IsQuestCompleted(3181) &amp;&amp; (Me.Level &gt;= 40)">
 			<PickUp QuestName="The Horn of the Beast" QuestId="3181" GiverName="Margol's Horn" GiverId="10000" GiverType="Item" />
 		</If>

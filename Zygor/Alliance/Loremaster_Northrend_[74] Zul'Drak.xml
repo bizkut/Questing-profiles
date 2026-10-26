@@ -309,13 +309,9 @@
 				<Mob Name="Lost Drakkari Spirit" Id="29129" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="5641.22" Y="-2486.3" Z="287.547" />
-				<Hotspot X="5629.61" Y="-2427.6" Z="287.617" />
-				<Hotspot X="5652.43" Y="-2390.27" Z="287.636" />
+				<Hotspot X="5688.06" Y="-2389.79" Z="287.633" />
 				<Hotspot X="5656.17" Y="-2339.04" Z="287.568" />
-				<Hotspot X="5579.72" Y="-2411.97" Z="287.601" />
-				<Hotspot X="5637.37" Y="-2551.54" Z="287.603" />
-				<Hotspot X="5680.31" Y="-2569.3" Z="287.61" />
+				<Hotspot X="5665.11" Y="-2470.07" Z="287.543" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -1183,8 +1179,15 @@
 		<If Condition="((HasQuest(12557)) &amp;&amp; (!IsQuestCompleted(12557)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12557" Type="Incomplete" />
 		</If>
+		<!-- Q12799: Ancient Ectoplasm (38335) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Siphoning the Spirits" QuestId="12799" Type="CollectItem" ItemId="40066" CollectCount="5" />
-		<TurnIn QuestName="Siphoning the Spirits" QuestId="12799" TurnInName="Captain Arnath" TurnInId="28045" X="5929.84" Y="-2378.66" Z="293.924" />
+		<!-- REVIEW Q12799 Siphoning the Spirits: helper item 38335 Ancient Ectoplasm has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12799)) &amp;&amp; (IsQuestCompleted(12799)))">
+			<TurnIn QuestName="Siphoning the Spirits" QuestId="12799" TurnInName="Captain Arnath" TurnInId="28045" X="5929.84" Y="-2378.66" Z="293.924" />
+		</If>
+		<If Condition="((HasQuest(12799)) &amp;&amp; (!IsQuestCompleted(12799)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12799" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12799)">
 			<PickUp QuestName="Stocking the Shelves" QuestId="12609" GiverName="Captain Arnath" GiverId="28045" X="5929.84" Y="-2378.66" Z="293.924" />
 		</If>
@@ -1356,7 +1359,13 @@
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12646)">
 			<PickUp QuestName="An End to the Suffering" QuestId="12647" GiverName="Spirit of Rhunok" GiverId="28561" X="6369.9" Y="-3265.91" Z="389.018" />
 		</If>
-		<!-- REVIEW Q12647 An End to the Suffering: collect 28416 Rhunok x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(12647) &amp;&amp; !IsQuestCompleted(12647) &amp;&amp; GetItemCount(38696) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12647" CollectItemId="38696" CollectItemCount="1" HuntingGroundRadius="120" MobId="28575" X="6477.39" Y="-3265.51" Z="403.784">
+				<Hotspot X="6477.39" Y="-3265.51" Z="403.784" />
+			</CustomBehavior>
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="12647" ItemId="38696" MobId="28416" NumOfTimes="1" Range="5" CollectionDistance="200" X="6522.06" Y="-3270.41" Z="408.319" />
+		<!-- REVIEW Q12647 An End to the Suffering: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12647)) &amp;&amp; (IsQuestCompleted(12647)))">
 			<TurnIn QuestName="An End to the Suffering" QuestId="12647" TurnInName="Spirit of Rhunok" TurnInId="28561" X="6369.9" Y="-3265.91" Z="389.018" />
 		</If>
@@ -1476,8 +1485,24 @@
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12685)">
 			<PickUp QuestName="Wooly Justice" QuestId="12707" GiverName="Scalper Ahunae" GiverId="28484" X="5797.79" Y="-3553.85" Z="390.427" />
 		</If>
-		<Objective QuestName="The Key of Warlord Zol'Maz" QuestId="12712" Type="CollectItem" ItemId="39318" CollectCount="1" />
+		<If Condition="HasQuest(12712) &amp;&amp; !IsQuestCompleted(12712) &amp;&amp; GetItemCount(39315) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12712" CollectItemId="39315" CollectItemCount="1" HuntingGroundRadius="120" MobId="28918" X="6491.28" Y="-4005.58" Z="471.515">
+				<Hotspot X="6491.28" Y="-4005.58" Z="471.515" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(12712) &amp;&amp; !IsQuestCompleted(12712) &amp;&amp; GetItemCount(39313) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12712" CollectItemId="39313" CollectItemCount="1" HuntingGroundRadius="120" MobId="28917" X="6579.68" Y="-3992.66" Z="483.391">
+				<Hotspot X="6579.68" Y="-3992.66" Z="483.391" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(12712) &amp;&amp; !IsQuestCompleted(12712) &amp;&amp; GetItemCount(39316) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12712" CollectItemId="39316" CollectItemCount="1" HuntingGroundRadius="120" MobId="28916" X="6434" Y="-3786.79" Z="470.799">
+				<Hotspot X="6434" Y="-3786.79" Z="470.799" />
+			</CustomBehavior>
+		</If>
+		<!-- Q12712: Tiki Dervish Ceremony (39314) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Hexed Caches" QuestId="12709" Type="CollectItem" ItemId="39301" CollectCount="12" />
+		<Objective QuestName="The Key of Warlord Zol'Maz" QuestId="12712" Type="CollectItem" ItemId="39318" CollectCount="1" />
 		<If Condition="(Me.Level &gt;= 74)">
 			<PickUp QuestName="Eggs for Dubra'Jin" QuestId="13556" GiverName="Ha'wana" GiverId="33025" X="6970.98" Y="-4094.88" Z="479.446" />
 		</If>
@@ -1493,7 +1518,13 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12707" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Hexed Caches" QuestId="12709" TurnInName="Chronicler To'kini" TurnInId="28527" X="5740.27" Y="-3595.09" Z="387.024" />
-		<TurnIn QuestName="The Key of Warlord Zol'Maz" QuestId="12712" TurnInName="Har'koa" TurnInId="28401" X="5746.51" Y="-3608.83" Z="387.191" />
+		<!-- REVIEW Q12712 The Key of Warlord Zol'Maz: helper item 39314 Tiki Dervish Ceremony has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12712)) &amp;&amp; (IsQuestCompleted(12712)))">
+			<TurnIn QuestName="The Key of Warlord Zol'Maz" QuestId="12712" TurnInName="Har'koa" TurnInId="28401" X="5746.51" Y="-3608.83" Z="387.191" />
+		</If>
+		<If Condition="((HasQuest(12712)) &amp;&amp; (!IsQuestCompleted(12712)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12712" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12712)">
 			<PickUp QuestName="Rampage" QuestId="12721" GiverName="Har'koa" GiverId="28401" X="5746.51" Y="-3608.83" Z="387.191" />
 		</If>

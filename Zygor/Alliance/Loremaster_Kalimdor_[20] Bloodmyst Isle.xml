@@ -712,6 +712,11 @@
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(9538)">
 			<PickUp QuestName="Saving Princess Stillpine" QuestId="9667" GiverName="Princess Stillpine" GiverId="17682" X="-2519.77" Y="-12301.9" Z="14.2378" />
 		</If>
+		<If Condition="HasQuest(9667) &amp;&amp; !IsQuestCompleted(9667) &amp;&amp; GetItemCount(24099) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="9667" CollectItemId="24099" CollectItemCount="1" HuntingGroundRadius="120" MobId="17702" X="-2426.15" Y="-12169.1" Z="32.691">
+				<Hotspot X="-2426.15" Y="-12169.1" Z="32.691" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Declaration of Power" QuestId="9666" Type="KillMob" MobId="17701" KillCount="1" />
 		<!-- REVIEW Q9666 Declaration of Power: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9666)) &amp;&amp; (IsQuestCompleted(9666)))">
@@ -729,7 +734,7 @@
 		<If Condition="(Me.Level &gt;= 10)">
 			<PickUp QuestName="Catch and Release" QuestId="9629" GiverName="Morae" GiverId="17434" X="-2014.22" Y="-11812.1" Z="53.9252" />
 		</If>
-		<!-- REVIEW Q9667 Saving Princess Stillpine: collect 17682 Princess Stillpine x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q9667 Saving Princess Stillpine: objective 17682 Princess Stillpine x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9667)) &amp;&amp; (IsQuestCompleted(9667)))">
 			<TurnIn QuestName="Saving Princess Stillpine" QuestId="9667" TurnInName="Stillpine Ambassador Frasaboo" TurnInId="18803" X="-1975.23" Y="-11874.5" Z="49.3356" />
 		</If>

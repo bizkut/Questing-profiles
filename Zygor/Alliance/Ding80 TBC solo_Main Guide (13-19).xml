@@ -865,12 +865,36 @@
 		<Objective QuestName="The Killing Fields" QuestId="9" Type="KillMob" MobId="114" KillCount="20" />
 		<Objective QuestName="Westfall Stew" QuestId="38" Type="CollectItem" ItemId="732" CollectCount="3" />
 		<Objective QuestName="Keeper of the Flame" QuestId="103" Type="CollectItem" ItemId="814" CollectCount="5" />
+		<If Condition="HasQuest(116) &amp;&amp; !IsQuestCompleted(116) &amp;&amp; GetItemCount(1274) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="116" CollectItemId="1274" CollectItemCount="5" HuntingGroundRadius="120" MobId="36" MobId2="114" MobId3="115" MobId4="480" MobId5="573" X="-10114.8" Y="1156.42" Z="36.4085">
+				<Hotspot X="-10114.8" Y="1156.42" Z="36.4085" />
+				<Hotspot X="-10155.8" Y="1188.61" Z="36.3941" />
+				<Hotspot X="-10184.7" Y="1151.63" Z="36.8419" />
+				<Hotspot X="-10151.2" Y="1114.41" Z="36.8488" />
+				<Hotspot X="-10186.4" Y="1081.39" Z="36.6235" />
+				<Hotspot X="-10043.1" Y="1143.52" Z="41.7283" />
+				<Hotspot X="-10001.6" Y="1116.25" Z="43.4615" />
+				<Hotspot X="-9993.02" Y="1218.13" Z="41.3384" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="The Forgotten Heirloom" QuestId="64" Type="CollectItem" ItemId="841" CollectCount="1" />
 		<Objective QuestName="Patrolling Westfall" QuestId="102" Type="CollectItem" ItemId="725" CollectCount="8" />
 		<Objective QuestName="Westfall Stew" QuestId="38" Type="CollectItem" ItemId="730" CollectCount="3" />
 		<Objective QuestName="Poor Old Blanchy" QuestId="151" Type="CollectItem" ItemId="1528" CollectCount="8" />
 		<TurnIn QuestName="The Forgotten Heirloom" QuestId="64" TurnInName="Farmer Furlbrow" TurnInId="237" X="-9851.68" Y="918.296" Z="30.5143" />
 		<TurnIn QuestName="Poor Old Blanchy" QuestId="151" TurnInName="Verna Furlbrow" TurnInId="238" X="-9853.05" Y="919.542" Z="30.4614" />
+		<If Condition="HasQuest(116) &amp;&amp; !IsQuestCompleted(116) &amp;&amp; GetItemCount(1274) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="116" CollectItemId="1274" CollectItemCount="5" HuntingGroundRadius="120" MobId="36" MobId2="114" MobId3="115" MobId4="480" MobId5="573" X="-10122.9" Y="1126.23" Z="36.9085">
+				<Hotspot X="-10122.9" Y="1126.23" Z="36.9085" />
+				<Hotspot X="-10184.7" Y="1151.63" Z="36.8419" />
+				<Hotspot X="-10220.3" Y="1130.18" Z="36.2865" />
+				<Hotspot X="-10186.4" Y="1081.39" Z="36.6235" />
+				<Hotspot X="-10199.4" Y="1026.92" Z="36.3607" />
+				<Hotspot X="-10155.8" Y="1188.61" Z="36.3941" />
+				<Hotspot X="-10192.3" Y="1255.63" Z="36.367" />
+				<Hotspot X="-10043.1" Y="1143.52" Z="41.7283" />
+			</CustomBehavior>
+		</If>
 		<TurnIn QuestName="The Killing Fields" QuestId="9" TurnInName="Farmer Saldean" TurnInId="233" X="-10128.7" Y="1055.21" Z="36.4333" />
 		<TurnIn QuestName="Westfall Stew" QuestId="38" TurnInName="Salma Saldean" TurnInId="235" X="-10112.1" Y="1042.1" Z="37.5542" />
 		<TurnIn QuestName="Goretusk Liver Pie" QuestId="22" TurnInName="Salma Saldean" TurnInId="235" X="-10112.1" Y="1042.1" Z="37.5542" />

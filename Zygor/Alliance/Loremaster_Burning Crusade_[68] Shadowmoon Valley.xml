@@ -1214,6 +1214,11 @@
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10766)">
 			<PickUp QuestName="The Art of Fel Reaver Maintenance" QuestId="10606" GiverName="Plexi" GiverId="21790" X="-2764.22" Y="1980.79" Z="167.526" />
 		</If>
+		<If Condition="HasQuest(10606) &amp;&amp; !IsQuestCompleted(10606) &amp;&amp; GetItemCount(30712) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10606" CollectItemId="30712" CollectItemCount="1" HuntingGroundRadius="120" MobId="21778" MobId2="21779" X="-2665.37" Y="2058.36" Z="116.334">
+				<Hotspot X="-2665.37" Y="2058.36" Z="116.334" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="The Art of Fel Reaver Maintenance" QuestId="10606" Type="CollectItem" ItemId="30713" CollectCount="1" />
 		<TurnIn QuestName="The Art of Fel Reaver Maintenance" QuestId="10606" TurnInName="Plexi" TurnInId="21790" X="-2764.22" Y="1980.79" Z="167.526" />
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10606)">
@@ -1346,8 +1351,9 @@
 			<CustomBehavior File="AbandonQuest" QuestId="10858" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q10866 Zuluhed the Whacked: group quest (5 players) -->
+		<!-- Q10866: Zuluhed's Key (31664) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Zuluhed the Whacked" QuestId="10866" Type="UseObject" ObjectId="185156" UseCount="1" />
-		<!-- REVIEW Q10866 Zuluhed the Whacked: group quest (5 players); kill 11980 Zuluhed the Whacked x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10866 Zuluhed the Whacked: group quest (5 players); kill 11980 Zuluhed the Whacked x1: kill credit or scripted event; helper item 31664 Zuluhed's Key has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10866)) &amp;&amp; (IsQuestCompleted(10866)))">
 			<TurnIn QuestName="Zuluhed the Whacked" QuestId="10866" TurnInName="Karynaku" TurnInId="22112" X="-4200.89" Y="382.464" Z="118.055" />
 		</If>
@@ -1459,11 +1465,23 @@
 		<Objective QuestName="Reclaiming Holy Grounds" QuestId="10816" Type="KillMob" MobId="22082" KillCount="8" />
 		<Objective QuestName="Reclaiming Holy Grounds" QuestId="10816" Type="KillMob" MobId="22084" KillCount="8" />
 		<Objective QuestName="Reclaiming Holy Grounds" QuestId="10816" Type="KillMob" MobId="22081" KillCount="4" />
+		<If Condition="HasQuest(10637) &amp;&amp; !IsQuestCompleted(10637) &amp;&amp; GetItemCount(30811) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10637" CollectItemId="30811" CollectItemCount="1" HuntingGroundRadius="120" MobId="21503" MobId2="21505" X="-3801.05" Y="254.02" Z="120.664">
+				<Hotspot X="-3801.05" Y="254.02" Z="120.664" />
+				<Hotspot X="-3752.95" Y="270.244" Z="104.203" />
+				<Hotspot X="-3824.63" Y="317.182" Z="120.771" />
+				<Hotspot X="-3864.35" Y="302.711" Z="137.184" />
+				<Hotspot X="-3827.56" Y="377.905" Z="120.673" />
+				<Hotspot X="-3918.8" Y="397.723" Z="120.596" />
+				<Hotspot X="-3724.57" Y="416.328" Z="104.084" />
+				<Hotspot X="-3725.74" Y="356.081" Z="104.258" />
+			</CustomBehavior>
+		</If>
 		<TurnIn QuestName="Oronu the Elder" QuestId="10571" TurnInName="Anchorite Ceyla" TurnInId="21402" X="-2988.39" Y="783.175" Z="-7.9718" />
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10571) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="The Ashtongue Corruptors" QuestId="10574" GiverName="Anchorite Ceyla" GiverId="21402" X="-2988.39" Y="783.175" Z="-7.9718" />
 		</If>
-		<!-- REVIEW Q10637 A Necessary Distraction: collect 21892 Azaloth Credit Marker x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10637 A Necessary Distraction: objective 21892 Azaloth Credit Marker x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10637)) &amp;&amp; (IsQuestCompleted(10637)))">
 			<TurnIn QuestName="A Necessary Distraction" QuestId="10637" TurnInName="Exarch Onaala" TurnInId="21860" X="-3019.8" Y="859.135" Z="-9.7862" />
 		</If>
@@ -1534,6 +1552,18 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10807) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
 			<PickUp QuestName="The Great Retribution" QuestId="10817" GiverName="Varen the Reclaimer" GiverId="21953" X="-4081.72" Y="1214.84" Z="79.4043" />
 		</If>
+		<If Condition="HasQuest(10688) &amp;&amp; !IsQuestCompleted(10688) &amp;&amp; GetItemCount(30811) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10688" CollectItemId="30811" CollectItemCount="1" HuntingGroundRadius="120" MobId="21503" MobId2="21505" X="-3801.05" Y="254.02" Z="120.664">
+				<Hotspot X="-3801.05" Y="254.02" Z="120.664" />
+				<Hotspot X="-3752.95" Y="270.244" Z="104.203" />
+				<Hotspot X="-3824.63" Y="317.182" Z="120.771" />
+				<Hotspot X="-3864.35" Y="302.711" Z="137.184" />
+				<Hotspot X="-3827.56" Y="377.905" Z="120.673" />
+				<Hotspot X="-3918.8" Y="397.723" Z="120.596" />
+				<Hotspot X="-3724.57" Y="416.328" Z="104.084" />
+				<Hotspot X="-3725.74" Y="356.081" Z="104.258" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="The Great Retribution" QuestId="10817" Type="KillMob" MobId="22082" KillCount="8" />
 		<Objective QuestName="The Great Retribution" QuestId="10817" Type="KillMob" MobId="22084" KillCount="8" />
 		<Objective QuestName="The Great Retribution" QuestId="10817" Type="KillMob" MobId="22081" KillCount="4" />
@@ -1542,7 +1572,7 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10684) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
 			<PickUp QuestName="The Ashtongue Corruptors" QuestId="10685" GiverName="Arcanist Thelis" GiverId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
 		</If>
-		<!-- REVIEW Q10688 A Necessary Distraction: collect 21892 Azaloth Credit Marker x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10688 A Necessary Distraction: objective 21892 Azaloth Credit Marker x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10688)) &amp;&amp; (IsQuestCompleted(10688)))">
 			<TurnIn QuestName="A Necessary Distraction" QuestId="10688" TurnInName="Larissa Sunstrike" TurnInId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
 		</If>
@@ -1712,8 +1742,16 @@
 			<PickUp QuestName="Against All Odds" QuestId="10669" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
 		<TurnIn QuestName="A Mystifying Vision" QuestId="11042" TurnInName="Rocket-Chief Fuselage" TurnInId="19570" X="3041.8" Y="3658.85" Z="143.406" />
+		<If Condition="HasQuest(10641) &amp;&amp; !IsQuestCompleted(10641) &amp;&amp; GetItemCount(30850) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10641" CollectItemId="30850" CollectItemCount="1" HuntingGroundRadius="120" MobId="18859" X="4726.59" Y="3300.68" Z="184.907">
+				<Hotspot X="4726.59" Y="3300.68" Z="184.907" />
+				<Hotspot X="4574.48" Y="3267.89" Z="152.87" />
+				<Hotspot X="4701.08" Y="3135.11" Z="173.991" />
+				<Hotspot X="4661.07" Y="3098.49" Z="163.538" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Against the Illidari" QuestId="10668" Type="KillMob" MobId="21928" KillCount="1" />
-		<!-- REVIEW Q10641 Against the Legion: get 21925 Avatar of Sathal x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10641 Against the Legion: use item 30850: target 21925 Avatar of Sathal has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10641)) &amp;&amp; (IsQuestCompleted(10641)))">
 			<TurnIn QuestName="Against the Legion" QuestId="10641" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
@@ -1802,7 +1840,9 @@
 		<If Condition="((HasQuest(11052)) &amp;&amp; (!IsQuestCompleted(11052)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11052" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q10664 Additional Materials: item 23784 Adamantite Frame has no drop or chest near the guide coordinates; item 23793 Heavy Knothide Leather has no drop or chest near the guide coordinates; item 30823 Demon Warding Totem has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q10664: Knothide Leather (21887) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q10664: Knothide Leather (21887) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q10664 Additional Materials: helper item 21887 Knothide Leather has no dropping creature near the guide coordinates; item 23793 Heavy Knothide Leather has no drop or chest near the guide coordinates; item 23784 Adamantite Frame has no drop or chest near the guide coordinates; item 30823 Demon Warding Totem has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10664)) &amp;&amp; (IsQuestCompleted(10664)))">
 			<TurnIn QuestName="Additional Materials" QuestId="10664" TurnInName="David Wayne" TurnInId="21465" X="-2389.1" Y="2895.6" Z="-55.6795" />
 		</If>

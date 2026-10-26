@@ -443,6 +443,18 @@
 			<PickUp QuestName="Are We There, Yeti?" QuestId="977" GiverName="Umi Rumplesnicker" GiverId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
 		</If>
 		<TurnIn QuestName="Enraged Wildkin" QuestId="4864" TurnInName="Jaron Stoneshaper" TurnInId="10301" X="7093.02" Y="-4018.56" Z="744.888" />
+		<If Condition="HasQuest(5056) &amp;&amp; !IsQuestCompleted(5056) &amp;&amp; GetItemCount(12733) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="5056" CollectItemId="12733" CollectItemCount="1" HuntingGroundRadius="120" MobId="7430" MobId2="7431" MobId3="7432" MobId4="7433" MobId5="7434" X="7786.45" Y="-4055.18" Z="688.302">
+				<Hotspot X="7786.45" Y="-4055.18" Z="688.302" />
+				<Hotspot X="7813.55" Y="-4017.96" Z="691.866" />
+				<Hotspot X="7843.2" Y="-4044.97" Z="690.219" />
+				<Hotspot X="7860.28" Y="-3981.42" Z="698.007" />
+				<Hotspot X="7783.22" Y="-3981.51" Z="691.218" />
+				<Hotspot X="7738.69" Y="-4086.34" Z="700.927" />
+				<Hotspot X="7783.69" Y="-4119.98" Z="684.084" />
+				<Hotspot X="7821.13" Y="-4154.91" Z="682.2" />
+			</CustomBehavior>
+		</If>
 		<If Condition="((HasQuest(4842)) &amp;&amp; (!IsQuestCompleted(4842)))">
 			<RunTo X="5018.91" Y="-4563.94" Z="851.75" />
 		</If>
@@ -468,7 +480,7 @@
 			<PickUp QuestName="Are We There, Yeti?" QuestId="5163" GiverName="Umi Rumplesnicker" GiverId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="5163" ItemId="12928" MobId="10978" NumOfTimes="1" Range="5" CollectionDistance="200" X="6705.61" Y="-4686.18" Z="721.974" />
-		<!-- REVIEW Q5056 Shy-Rotam: collect 10737 Shy-Rotam x1: kill credit or scripted event; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q5056 Shy-Rotam: use item 12733: target 10737 Shy-Rotam has no spawn (kill credit or scripted event); completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(5056)) &amp;&amp; (IsQuestCompleted(5056)))">
 			<TurnIn QuestName="Shy-Rotam" QuestId="5056" TurnInName="Storm Shadowhoof" TurnInId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
 		</If>

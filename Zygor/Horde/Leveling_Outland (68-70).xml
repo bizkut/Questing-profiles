@@ -890,6 +890,18 @@
 		</If>
 		<Objective QuestName="Silkwing Cocoons" QuestId="10617" Type="CollectItem" ItemId="30791" CollectCount="8" />
 		<Objective QuestName="The Softest Wings" QuestId="10618" Type="CollectItem" ItemId="30792" CollectCount="12" />
+		<If Condition="HasQuest(10565) &amp;&amp; !IsQuestCompleted(10565) &amp;&amp; GetItemCount(30561) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10565" CollectItemId="30561" CollectItemCount="1" HuntingGroundRadius="120" MobId="19982" MobId2="19983" MobId3="19984" MobId4="20161" X="1680.59" Y="4700.93" Z="144.666">
+				<Hotspot X="1680.59" Y="4700.93" Z="144.666" />
+				<Hotspot X="1641.39" Y="4687.94" Z="144.461" />
+				<Hotspot X="1642.8" Y="4629.26" Z="144.023" />
+				<Hotspot X="1662.67" Y="4591.71" Z="141.63" />
+				<Hotspot X="1700.28" Y="4653.28" Z="145.548" />
+				<Hotspot X="1729.17" Y="4687.5" Z="148.362" />
+				<Hotspot X="1745.37" Y="4649.77" Z="148.631" />
+				<Hotspot X="1779.69" Y="4680.71" Z="146.017" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q10565 The Stones of Vekh'nir: item 30567 Charged Vekh'nir Crystal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10565)) &amp;&amp; (IsQuestCompleted(10565)))">
 			<TurnIn QuestName="The Stones of Vekh'nir" QuestId="10565" TurnInName="Dertrok" TurnInId="21496" X="2162.21" Y="4769.62" Z="156.633" />
@@ -905,8 +917,24 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10565)">
 			<PickUp QuestName="Understanding the Mok'Nathal" QuestId="10846" GiverName="Leoroxx" GiverId="22004" X="2207.24" Y="4761.25" Z="158.082" />
 		</If>
+		<!-- Q10566: Dertrok's First Wand (30651) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q10566: Dertrok's Second Wand (30652) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q10566: Dertrok's Third Wand (30653) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q10566: Dertrok's Fourth Wand (30654) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(10566) &amp;&amp; !IsQuestCompleted(10566) &amp;&amp; GetItemCount(30655) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="10566" CollectItemId="30655" CollectItemCount="4" HuntingGroundRadius="120" MobId="19982" MobId2="19983" MobId3="19984" MobId4="20161" X="1725.73" Y="4864.52" Z="171.221">
+				<Hotspot X="1725.73" Y="4864.52" Z="171.221" />
+				<Hotspot X="1738.21" Y="4926.79" Z="171.092" />
+				<Hotspot X="1680.32" Y="4929.22" Z="170.865" />
+				<Hotspot X="1715.47" Y="5001.27" Z="177.429" />
+				<Hotspot X="1774.94" Y="5011.96" Z="171.076" />
+				<Hotspot X="1764.39" Y="5058.01" Z="171.935" />
+				<Hotspot X="1679.94" Y="4702.67" Z="144.683" />
+				<Hotspot X="1735.22" Y="4688.78" Z="147.593" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Understanding the Mok'Nathal" QuestId="10846" Type="KillMob" MobId="22305" KillCount="1" />
-		<!-- REVIEW Q10566 Trial and Error: use item 30650: target 21713 [DND]Mok'Nathal Wand 1 has no spawn (kill credit or scripted event); use item 30650: target 21714 [DND]Mok'Nathal Wand 2 has no spawn (kill credit or scripted event); use item 30650: target 21715 [DND]Mok'Nathal Wand 3 has no spawn (kill credit or scripted event); use item 30650: target 21716 [DND]Mok'Nathal Wand 4 has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10566 Trial and Error: helper item 30651 Dertrok's First Wand has no dropping creature near the guide coordinates; helper item 30652 Dertrok's Second Wand has no dropping creature near the guide coordinates; helper item 30653 Dertrok's Third Wand has no dropping creature near the guide coordinates; helper item 30654 Dertrok's Fourth Wand has no dropping creature near the guide coordinates; use item 30651: target 21713 [DND]Mok'Nathal Wand 1 has no spawn (kill credit or scripted event); use item 30651: target 21714 [DND]Mok'Nathal Wand 2 has no spawn (kill credit or scripted event); use item 30651: target 21715 [DND]Mok'Nathal Wand 3 has no spawn (kill credit or scripted event); use item 30651: target 21716 [DND]Mok'Nathal Wand 4 has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10566)) &amp;&amp; (IsQuestCompleted(10566)))">
 			<TurnIn QuestName="Trial and Error" QuestId="10566" TurnInName="Dertrok" TurnInId="21496" X="2162.21" Y="4769.62" Z="156.633" />
 		</If>
@@ -1053,6 +1081,18 @@
 		<Objective QuestName="Deceive thy Enemy" QuestId="10820" Type="KillMob" MobId="19961" KillCount="4" />
 		<Objective QuestName="Deceive thy Enemy" QuestId="10820" Type="KillMob" MobId="19960" KillCount="4" />
 		<TurnIn QuestName="Deceive thy Enemy" QuestId="10820" TurnInName="Legion Communicator" TurnInId="185165" TurnInType="Object" X="2960.45" Y="4870.89" Z="278.011" />
+		<If Condition="HasQuest(10567) &amp;&amp; !IsQuestCompleted(10567) &amp;&amp; GetItemCount(30704) &lt; 6">
+			<CustomBehavior File="CollectThings" QuestId="10567" CollectItemId="30704" CollectItemCount="6" HuntingGroundRadius="120" MobId="19985" MobId2="19986" MobId3="19987" MobId4="20211" X="3268.42" Y="5376.27" Z="145.145">
+				<Hotspot X="3268.42" Y="5376.27" Z="145.145" />
+				<Hotspot X="3289.06" Y="5337.99" Z="165.718" />
+				<Hotspot X="3282.55" Y="5291.44" Z="146.925" />
+				<Hotspot X="3234.8" Y="5328.32" Z="169.034" />
+				<Hotspot X="3199.35" Y="5308.48" Z="176.368" />
+				<Hotspot X="3177.37" Y="5357.3" Z="146.055" />
+				<Hotspot X="3303.88" Y="5409.22" Z="146.949" />
+				<Hotspot X="3343.57" Y="5361.36" Z="150.24" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q10714 On Spirit's Wings: use item 31128: target 22383 [DND]Bloodmaul Chatter Credit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10714)) &amp;&amp; (IsQuestCompleted(10714)))">
 			<TurnIn QuestName="On Spirit's Wings" QuestId="10714" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
@@ -1127,8 +1167,32 @@
 		<If Condition="HasItem(31489) &amp;&amp; !HasQuest(10825) &amp;&amp; !IsQuestCompleted(10825) &amp;&amp; (Me.Level &gt;= 65)">
 			<PickUp QuestName="The Truth Unorbed" QuestId="10825" GiverName="Orb of the Grishna" GiverId="31489" GiverType="Item" />
 		</If>
+		<If Condition="HasQuest(10722) &amp;&amp; !IsQuestCompleted(10722) &amp;&amp; GetItemCount(31121) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10722" CollectItemId="31121" CollectItemCount="5" HuntingGroundRadius="120" MobId="21382" MobId2="21383" MobId3="21492" MobId4="21637" MobId5="21809" MobId6="21810" X="3152.57" Y="7090.58" Z="169.336">
+				<Hotspot X="3152.57" Y="7090.58" Z="169.336" />
+				<Hotspot X="3189.91" Y="7106.24" Z="178.414" />
+				<Hotspot X="3189.06" Y="7168.66" Z="163.699" />
+				<Hotspot X="3111.11" Y="7129.98" Z="152.609" />
+				<Hotspot X="3063.47" Y="7121.63" Z="150.111" />
+				<Hotspot X="3102.89" Y="7063.88" Z="160.299" />
+				<Hotspot X="3118.56" Y="7013.02" Z="165.577" />
+				<Hotspot X="3166.75" Y="7019.08" Z="162.045" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Slaughter at Boulder'mok" QuestId="10786" Type="KillMob" MobId="21046" KillCount="5" />
 		<Objective QuestName="Slaughter at Boulder'mok" QuestId="10786" Type="KillMob" MobId="21047" KillCount="3" />
+		<If Condition="HasQuest(10723) &amp;&amp; !IsQuestCompleted(10723) &amp;&amp; GetItemCount(31754) &lt; 3">
+			<CustomBehavior File="CollectThings" QuestId="10723" CollectItemId="31754" CollectItemCount="3" HuntingGroundRadius="120" MobId="21046" MobId2="21047" MobId3="21048" X="3514.51" Y="7206.31" Z="139.782">
+				<Hotspot X="3514.51" Y="7206.31" Z="139.782" />
+				<Hotspot X="3528.53" Y="7165.08" Z="174.65" />
+				<Hotspot X="3591.02" Y="7188.98" Z="138.358" />
+				<Hotspot X="3630.08" Y="7223.25" Z="136.998" />
+				<Hotspot X="3666.55" Y="7177.22" Z="141.181" />
+				<Hotspot X="3636.39" Y="7110.55" Z="178.535" />
+				<Hotspot X="3586.04" Y="7119.2" Z="140.521" />
+				<Hotspot X="3549.42" Y="7241.37" Z="139.86" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q10747 Whelps of the Wyrmcult: item 31130 Wyrmcult Blackwhelp has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10747)) &amp;&amp; (IsQuestCompleted(10747)))">
 			<TurnIn QuestName="Whelps of the Wyrmcult" QuestId="10747" TurnInName="Samia Inkling" TurnInId="21983" X="2981.4" Y="5485.77" Z="143.858" />
@@ -1157,7 +1221,7 @@
 		<If Condition="((HasQuest(10607)) &amp;&amp; (!IsQuestCompleted(10607)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10607" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q10723 Gorgrom the Dragon-Eater: collect 22434 [DND]Ogre Pike Planted Credit x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10723 Gorgrom the Dragon-Eater: use item 31754: target 22434 [DND]Ogre Pike Planted Credit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10723)) &amp;&amp; (IsQuestCompleted(10723)))">
 			<TurnIn QuestName="Gorgrom the Dragon-Eater" QuestId="10723" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
 		</If>
@@ -1169,7 +1233,18 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10829)">
 			<PickUp QuestName="Exorcising the Trees" QuestId="10830" GiverName="Treebole" GiverId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>
-		<!-- REVIEW Q10830 Exorcising the Trees: collect 22226 Koi-Koi Spirit x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q10830: Grishnath Orb (31495) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(10830) &amp;&amp; !IsQuestCompleted(10830) &amp;&amp; GetItemCount(31517) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10830" CollectItemId="31517" CollectItemCount="5" HuntingGroundRadius="120" MobId="21042" X="3381.69" Y="7221.6" Z="153.264">
+				<Hotspot X="3381.69" Y="7221.6" Z="153.264" />
+				<Hotspot X="3338.98" Y="7273.9" Z="145.651" />
+				<Hotspot X="3288.45" Y="7226.35" Z="159.324" />
+				<Hotspot X="3350.65" Y="7053.47" Z="159.414" />
+				<Hotspot X="3314.08" Y="6953.82" Z="164.151" />
+				<Hotspot X="3347.04" Y="6923.75" Z="163.005" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q10830 Exorcising the Trees: helper item 31495 Grishnath Orb has no dropping creature near the guide coordinates; use item 31495: target 22226 Koi-Koi Spirit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10830)) &amp;&amp; (IsQuestCompleted(10830)))">
 			<TurnIn QuestName="Exorcising the Trees" QuestId="10830" TurnInName="Treebole" TurnInId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>

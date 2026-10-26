@@ -121,6 +121,14 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13643)">
 			<PickUp QuestName="There's Something About the Squire" QuestId="13654" GiverName="Crusader Rhydalla" GiverId="33417" X="8464.64" Y="1089.84" Z="554.493" />
 		</If>
+		<If Condition="HasQuest(13654) &amp;&amp; !IsQuestCompleted(13654) &amp;&amp; GetItemCount(45080) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="13654" CollectItemId="45080" CollectItemCount="1" HuntingGroundRadius="120" MobId="33499" X="5427.88" Y="360.651" Z="163.194">
+				<Hotspot X="5427.88" Y="360.651" Z="163.194" />
+				<Hotspot X="5469.51" Y="374.177" Z="158.549" />
+				<Hotspot X="5458.53" Y="424.54" Z="163.886" />
+				<Hotspot X="5416.46" Y="439.152" Z="170.435" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q13654 There's Something About the Squire: item 45082 Murderer's Toolkit has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13654)) &amp;&amp; (IsQuestCompleted(13654)))">
 			<TurnIn QuestName="There's Something About the Squire" QuestId="13654" TurnInName="Crusader Rhydalla" TurnInId="33417" X="8464.64" Y="1089.84" Z="554.493" />

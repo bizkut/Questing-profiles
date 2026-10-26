@@ -54,7 +54,8 @@
 		</If>
 		<!-- SKIP Q12315 Crush Captain Brightwater!: group quest (3 players) -->
 		<Objective QuestName="Crush Captain Brightwater!" QuestId="12315" Type="KillMob" MobId="27509" KillCount="1" />
-		<!-- REVIEW Q12432 Riding the Red Rocket: collect 27688 Alliance Lumberboat x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q12432: Element 115 (37664) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q12432 Riding the Red Rocket: helper item 37664 Element 115 has no dropping creature near the guide coordinates; goal 27688 Alliance Lumberboat x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12432)) &amp;&amp; (IsQuestCompleted(12432)))">
 			<TurnIn QuestName="Riding the Red Rocket" QuestId="12432" TurnInName="General Gorlok" TurnInId="27708" X="2487.56" Y="-1888.8" Z="9.7118" />
 		</If>

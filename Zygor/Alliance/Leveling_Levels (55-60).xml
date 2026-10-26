@@ -770,6 +770,7 @@
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3913)">
 			<PickUp QuestName="Linken's Sword" QuestId="3914" GiverName="A Conspicuous Gravestone" GiverId="148504" GiverType="Object" X="-7211.86" Y="-3931.95" Z="8.9327" />
 		</If>
+		<!-- Q4513: Empty Pure Sample Jar (11953) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(4289)">
 			<PickUp QuestName="The Mighty U'cha" QuestId="4301" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
@@ -922,7 +923,7 @@
 		<If Condition="(Me.Level &gt;= 54)">
 			<PickUp QuestName="Taking Back Silithus" QuestId="8275" GiverName="Cenarion Emissary Jademoon" GiverId="15187" X="-4818.88" Y="-1176.41" Z="502.278" />
 		</If>
-		<!-- REVIEW Q4513 A Little Slime Goes a Long Way: item 11954 Filled Pure Sample Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q4513 A Little Slime Goes a Long Way: helper item 11953 Empty Pure Sample Jar has no dropping creature near the guide coordinates; item 11954 Filled Pure Sample Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4513)) &amp;&amp; (IsQuestCompleted(4513)))">
 			<TurnIn QuestName="A Little Slime Goes a Long Way" QuestId="4513" TurnInName="Laris Geardawdle" TurnInId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
 		</If>

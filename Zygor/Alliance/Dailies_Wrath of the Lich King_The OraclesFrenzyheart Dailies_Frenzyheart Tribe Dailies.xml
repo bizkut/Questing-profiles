@@ -130,19 +130,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12538" Name="The Mist Isn't Listening">
-		<Objective Type="KillMob" MobId="28109" KillCount="12">
-			<Hotspots>
-				<Hotspot X="6010.31" Y="5008.06" Z="-103.607" />
-				<Hotspot X="6049.85" Y="5022.84" Z="-97.1357" />
-				<Hotspot X="6031.8" Y="5066.51" Z="-122.279" />
-				<Hotspot X="6113.74" Y="5045.9" Z="-96.1121" />
-				<Hotspot X="6118.95" Y="4952.66" Z="-97.783" />
-				<Hotspot X="6060.37" Y="4952.1" Z="-94.5864" />
-				<Hotspot X="6173.33" Y="4910.8" Z="-86.9626" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="12571" Name="Make the Bad Snake Go Away">
 		<Objective Type="KillMob" MobId="28358" KillCount="1">
 			<Hotspots>
@@ -237,14 +224,11 @@
 	<Quest Id="12703" Name="Kartak's Rampage" Daily="True">
 		<Objective Type="KillMob" MobId="28111" KillCount="50">
 			<Hotspots>
-				<Hotspot X="5212.42" Y="5547.87" Z="-97.1549" />
-				<Hotspot X="5253.78" Y="5569.86" Z="-98.2033" />
-				<Hotspot X="5171.55" Y="5577.75" Z="-94.1318" />
-				<Hotspot X="5160.25" Y="5624.82" Z="-95.2187" />
-				<Hotspot X="5115.74" Y="5575.46" Z="-95.5463" />
-				<Hotspot X="5163.94" Y="5514.98" Z="-96.8368" />
-				<Hotspot X="5199.61" Y="5475.14" Z="-87.4818" />
-				<Hotspot X="5246.71" Y="5484.34" Z="-93.7401" />
+				<Hotspot X="4913.63" Y="5732.74" Z="-66.1364" />
+				<Hotspot X="4925.97" Y="5688.12" Z="-71.565" />
+				<Hotspot X="4953.71" Y="5651" Z="-76.4812" />
+				<Hotspot X="5076.71" Y="5702.37" Z="-90.5308" />
+				<Hotspot X="5086.37" Y="5758.02" Z="-82.7626" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -265,7 +249,6 @@
 				<Hotspot X="4913.63" Y="5732.74" Z="-66.1364" />
 				<Hotspot X="4925.97" Y="5688.12" Z="-71.565" />
 				<Hotspot X="4953.71" Y="5651" Z="-76.4812" />
-				<Hotspot X="5001.07" Y="5615.15" Z="-88.4448" />
 				<Hotspot X="5076.71" Y="5702.37" Z="-90.5308" />
 				<Hotspot X="5086.37" Y="5758.02" Z="-82.7626" />
 			</Hotspots>
@@ -336,7 +319,7 @@
 		<If Condition="(Me.Level &gt;= 76)">
 			<PickUp QuestName="A Rough Ride" QuestId="12536" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		</If>
-		<Objective QuestName="The Mist Isn't Listening" QuestId="12538" Type="KillMob" MobId="28109" KillCount="12" />
+		<!-- Q12538: Zepik's Hunting Horn (38512) is needed but no creature near the guide coordinates drops it -->
 		<!-- SKIP turn-in Q12536 A Rough Ride: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12536)) &amp;&amp; (!IsQuestCompleted(12536)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12536" Type="Incomplete" />
@@ -347,6 +330,7 @@
 		<If Condition="((HasQuest(12537)) &amp;&amp; (!IsQuestCompleted(12537)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12537" Type="Incomplete" />
 		</If>
+		<CustomBehavior File="UseItemOn" QuestId="12538" ItemId="38512" MobId="28109" NumOfTimes="12" Range="5" CollectionDistance="200" X="6220.01" Y="4942.91" Z="-98.7522" />
 		<!-- SKIP turn-in Q12538 The Mist Isn't Listening: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12538)) &amp;&amp; (!IsQuestCompleted(12538)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12538" Type="Incomplete" />
@@ -382,11 +366,12 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12570)">
 			<PickUp QuestName="Make the Bad Snake Go Away" QuestId="12571" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
+		<!-- Q12572: Lafoo's Bug Bag (38622) is needed but no creature near the guide coordinates drops it -->
 		<!-- SKIP pickup Q12572 Gods like Shiny Things: no quest giver with a spawn in the database -->
 		<Objective QuestName="Make the Bad Snake Go Away" QuestId="12571" Type="KillMob" MobId="28358" KillCount="1" />
 		<Objective QuestName="Make the Bad Snake Go Away" QuestId="12571" Type="KillMob" MobId="28011" KillCount="10" />
 		<TurnIn QuestName="Make the Bad Snake Go Away" QuestId="12571" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
-		<!-- REVIEW Q12572 Gods like Shiny Things: item 38575 Shiny Treasures has no drop or chest near the guide coordinates; no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12572 Gods like Shiny Things: helper item 38622 Lafoo's Bug Bag has no dropping creature near the guide coordinates; no quest giver in the database; item 38575 Shiny Treasures has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12572)) &amp;&amp; (IsQuestCompleted(12572)))">
 			<TurnIn QuestName="Gods like Shiny Things" QuestId="12572" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
@@ -435,6 +420,7 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12577)">
 			<PickUp QuestName="The Angry Gorloc" QuestId="12578" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
+		<!-- Q12578: Moodle's Stress Ball (38624) is needed but no creature near the guide coordinates drops it -->
 		<!-- SKIP turn-in Q12578 The Angry Gorloc: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12578)) &amp;&amp; (!IsQuestCompleted(12578)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12578" Type="Incomplete" />
@@ -489,12 +475,51 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12692) &amp;&amp; !IsQuestCompleted(12703) &amp;&amp; !HasQuest(12703) &amp;&amp; !IsQuestCompleted(12760) &amp;&amp; !HasQuest(12760)">
 			<PickUp QuestName="Tools of War" QuestId="12759" GiverName="Vekgar" GiverId="29146" X="5292.87" Y="4510.35" Z="-90.6748" />
 		</If>
+		<If Condition="HasQuest(12732) &amp;&amp; !IsQuestCompleted(12732) &amp;&amp; GetItemCount(39573) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12732" CollectItemId="39573" CollectItemCount="1" HuntingGroundRadius="120" MobId="29044" X="6592.83" Y="4329.2" Z="47.7217">
+				<Hotspot X="6592.83" Y="4329.2" Z="47.7217" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(12758) &amp;&amp; !IsQuestCompleted(12758) &amp;&amp; GetItemCount(39651) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12758" CollectItemId="39651" CollectItemCount="1" HuntingGroundRadius="120" MobId="28123" MobId2="28124" X="5918.7" Y="5438.94" Z="-91.8608">
+				<Hotspot X="5918.7" Y="5438.94" Z="-91.8608" />
+				<Hotspot X="5957.63" Y="5448.22" Z="-91.2667" />
+				<Hotspot X="5951.98" Y="5407.52" Z="-94.8168" />
+				<Hotspot X="5887.09" Y="5383.73" Z="-95.2655" />
+				<Hotspot X="5845.54" Y="5394.64" Z="-79.8685" />
+				<Hotspot X="5877.73" Y="5437.81" Z="-81.1225" />
+				<Hotspot X="5894.83" Y="5488.33" Z="-77.2053" />
+				<Hotspot X="5949.15" Y="5493.8" Z="-77.7736" />
+			</CustomBehavior>
+		</If>
+		<!-- Q12732: Suntouched Water (39576) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12703) &amp;&amp; !IsQuestCompleted(12703) &amp;&amp; GetItemCount(39265) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12703" CollectItemId="39265" CollectItemCount="1" HuntingGroundRadius="120" MobId="28111" MobId2="28112" X="5212.52" Y="5547.9" Z="-97.1549">
+				<Hotspot X="5212.52" Y="5547.9" Z="-97.1549" />
+				<Hotspot X="5224.3" Y="5509.08" Z="-88.6617" />
+				<Hotspot X="5199.61" Y="5475.14" Z="-87.4818" />
+				<Hotspot X="5163.94" Y="5514.98" Z="-96.8368" />
+				<Hotspot X="5200.04" Y="5589.69" Z="-90.9199" />
+				<Hotspot X="5144.77" Y="5597.46" Z="-95.0147" />
+				<Hotspot X="5253.78" Y="5569.86" Z="-98.2033" />
+				<Hotspot X="5264.22" Y="5470.57" Z="-96.3955" />
+			</CustomBehavior>
+		</If>
+		<!-- Q12759: Spike Bomb (39697) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12759: Ensnaring Trap (39695) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12759: Volatile Trap (39696) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Kartak's Rampage" QuestId="12703" Type="KillMob" MobId="28111" KillCount="50" />
-		<Objective QuestName="Tools of War" QuestId="12759" Type="KillMob" MobId="28111" KillCount="50" />
 		<TurnIn QuestName="Kartak's Rampage" QuestId="12703" TurnInName="Shaman Jakjek" TurnInId="28106" X="4891.31" Y="5905.05" Z="-40.6086" />
 		<Objective QuestName="Secret Strength of the Frenzyheart" QuestId="12760" Type="KillMob" MobId="28111" KillCount="30" />
 		<TurnIn QuestName="Secret Strength of the Frenzyheart" QuestId="12760" TurnInName="Shaman Jakjek" TurnInId="28106" X="4891.31" Y="5905.05" Z="-40.6086" />
-		<TurnIn QuestName="Tools of War" QuestId="12759" TurnInName="Shaman Jakjek" TurnInId="28106" X="4891.31" Y="5905.05" Z="-40.6086" />
+		<Objective QuestName="Tools of War" QuestId="12759" Type="KillMob" MobId="28111" KillCount="50" />
+		<!-- REVIEW Q12759 Tools of War: helper item 39697 Spike Bomb has no dropping creature near the guide coordinates; helper item 39695 Ensnaring Trap has no dropping creature near the guide coordinates; helper item 39696 Volatile Trap has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12759)) &amp;&amp; (IsQuestCompleted(12759)))">
+			<TurnIn QuestName="Tools of War" QuestId="12759" TurnInName="Shaman Jakjek" TurnInId="28106" X="4891.31" Y="5905.05" Z="-40.6086" />
+		</If>
+		<If Condition="((HasQuest(12759)) &amp;&amp; (!IsQuestCompleted(12759)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12759" Type="Incomplete" />
+		</If>
 		<!-- REVIEW Q12702 Chicken Party!: item 38483 Captured Chicken has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12702)) &amp;&amp; (IsQuestCompleted(12702)))">
 			<TurnIn QuestName="Chicken Party!" QuestId="12702" TurnInName="Elder Harkek" TurnInId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
@@ -524,7 +549,7 @@
 		<If Condition="((HasQuest(12741)) &amp;&amp; (!IsQuestCompleted(12741)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12741" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q12732 The Heartblood's Strength: item 39575 Suntouched Heartblood has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12732 The Heartblood's Strength: helper item 39576 Suntouched Water has no dropping creature near the guide coordinates; item 39575 Suntouched Heartblood has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12732)) &amp;&amp; (IsQuestCompleted(12732)))">
 			<TurnIn QuestName="The Heartblood's Strength" QuestId="12732" TurnInName="Rejek" TurnInId="29043" X="5270.12" Y="4501.99" Z="-82.8075" />
 		</If>

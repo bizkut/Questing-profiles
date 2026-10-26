@@ -190,14 +190,12 @@
 				<Mob Name="Emerald Lasher" Id="27254" />
 			</CollectFrom>
 			<Hotspots>
+				<Hotspot X="2922.39" Y="120.359" Z="5.3034" />
+				<Hotspot X="2914.44" Y="75.7164" Z="3.4832" />
 				<Hotspot X="2873.83" Y="51.7353" Z="1.3982" />
 				<Hotspot X="2893.12" Y="15.0152" Z="1.5533" />
-				<Hotspot X="2914.44" Y="75.7164" Z="3.4832" />
-				<Hotspot X="2884.54" Y="114.481" Z="2.7151" />
 				<Hotspot X="2852.21" Y="145.984" Z="2.6029" />
-				<Hotspot X="2827.06" Y="103.963" Z="2.1148" />
-				<Hotspot X="2801.04" Y="140.674" Z="2.0126" />
-				<Hotspot X="2767.48" Y="87.0446" Z="4.148" />
+				<Hotspot X="2842.53" Y="184.96" Z="3.2082" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -1239,6 +1237,11 @@
 			<PickUp QuestName="All Hail Roanauk!" QuestId="12140" GiverName="Overlord Agmar" GiverId="26379" X="3842.39" Y="1486.62" Z="92.0606" />
 		</If>
 		<Objective QuestName="Blightbeasts be Damned!" QuestId="12072" Type="KillMob" MobId="26607" KillCount="25" />
+		<If Condition="HasQuest(12066) &amp;&amp; !IsQuestCompleted(12066) &amp;&amp; GetItemCount(36751) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12066" CollectItemId="36751" CollectItemCount="1" HuntingGroundRadius="120" MobId="26762" X="3149.37" Y="2151.22" Z="24.6377">
+				<Hotspot X="3149.37" Y="2151.22" Z="24.6377" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q12125 In Service of Blood: item 36828 Filled Blood Gem has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12125)) &amp;&amp; (IsQuestCompleted(12125)))">
 			<TurnIn QuestName="In Service of Blood" QuestId="12125" TurnInName="Koltira Deathweaver" TurnInId="26581" X="3798.49" Y="1601.21" Z="89.7437" />
@@ -1247,7 +1250,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12125" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Blightbeasts be Damned!" QuestId="12072" TurnInName="Valnok Windrager" TurnInId="26574" X="3865.59" Y="1540.07" Z="89.9852" />
-		<!-- REVIEW Q12066 The Focus on the Beach: collect 26773 The Focus on the Beach Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12066 The Focus on the Beach: objective 26773 The Focus on the Beach Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12066)) &amp;&amp; (IsQuestCompleted(12066)))">
 			<TurnIn QuestName="The Focus on the Beach" QuestId="12066" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		</If>
@@ -1267,7 +1270,11 @@
 		<If Condition="(Me.Level &gt;= 71)">
 			<PickUp QuestName="Strengthen the Ancients" QuestId="12096" GiverName="Earthwarden Grife" GiverId="26854" X="3784.8" Y="1579.23" Z="90.0175" />
 		</If>
-		<Objective QuestName="Atop the Woodlands" QuestId="12084" Type="KillMob" MobId="26831" KillCount="1" />
+		<If Condition="HasQuest(12084) &amp;&amp; !IsQuestCompleted(12084) &amp;&amp; GetItemCount(36779) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12084" CollectItemId="36779" CollectItemCount="1" HuntingGroundRadius="120" MobId="26815" X="2847.59" Y="1833.02" Z="139.577">
+				<Hotspot X="2847.59" Y="1833.02" Z="139.577" />
+			</CustomBehavior>
+		</If>
 		<If Condition="HasItem(36780) &amp;&amp; !HasQuest(12085) &amp;&amp; !IsQuestCompleted(12085) &amp;&amp; (Me.Level &gt;= 71)">
 			<PickUp QuestName="A Letter for Home" QuestId="12085" GiverName="Lieutenant Ta'zinni's Letter" GiverId="36780" GiverType="Item" />
 		</If>
@@ -1281,6 +1288,11 @@
 		<TurnIn QuestName="Let Nothing Go To Waste" QuestId="11958" TurnInName="Elder Ko'nani" TurnInId="26194" X="2774.97" Y="934.863" Z="22.622" />
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(11958)">
 			<PickUp QuestName="Slay Loguhn" QuestId="11959" GiverName="Elder Ko'nani" GiverId="26194" X="2774.97" Y="934.863" Z="22.622" />
+		</If>
+		<If Condition="HasQuest(11959) &amp;&amp; !IsQuestCompleted(11959) &amp;&amp; GetItemCount(35688) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11959" CollectItemId="35688" CollectItemCount="1" HuntingGroundRadius="120" MobId="26196" X="3363.32" Y="1029.17" Z="141.758">
+				<Hotspot X="3363.32" Y="1029.17" Z="141.758" />
+			</CustomBehavior>
 		</If>
 		<If Condition="HasItem(37833) &amp;&amp; !HasQuest(12419) &amp;&amp; !IsQuestCompleted(12419) &amp;&amp; (Me.Level &gt;= 71)">
 			<PickUp QuestName="The Fate of the Ruby Dragonshrine" QuestId="12419" GiverName="Ruby Brooch" GiverId="37833" GiverType="Item" />
@@ -1303,6 +1315,7 @@
 		<If Condition="((HasQuest(12126)) &amp;&amp; (!IsQuestCompleted(12126)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12126" Type="Incomplete" />
 		</If>
+		<Objective QuestName="Atop the Woodlands" QuestId="12084" Type="KillMob" MobId="26831" KillCount="1" />
 		<TurnIn QuestName="Atop the Woodlands" QuestId="12084" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12084)">
 			<PickUp QuestName="Search Indu'le Village" QuestId="12106" GiverName="Image of Archmage Aethas Sunreaver" GiverId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
@@ -1315,7 +1328,7 @@
 		<If Condition="((HasQuest(12111)) &amp;&amp; (!IsQuestCompleted(12111)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12111" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q11959 Slay Loguhn: collect 26227 Slay Loguhn Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11959 Slay Loguhn: objective 26227 Slay Loguhn Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11959)) &amp;&amp; (IsQuestCompleted(11959)))">
 			<TurnIn QuestName="Slay Loguhn" QuestId="11959" TurnInName="Elder Ko'nani" TurnInId="26194" X="2774.97" Y="934.863" Z="22.622" />
 		</If>
@@ -1382,7 +1395,7 @@
 		<If Condition="(Me.Level &gt;= 72)">
 			<PickUp QuestName="Cycle of Life" QuestId="12454" GiverName="Nishera the Garden Keeper" GiverId="27255" X="2827.62" Y="-20.4965" Z="0.5493" />
 		</If>
-		<Objective QuestName="Seeds of the Lashers" QuestId="12458" Type="CollectItem" ItemId="37882" CollectCount="3" />
+		<!-- Q12458: 140458 (140458) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Cycle of Life" QuestId="12454" Type="KillMob" MobId="27244" KillCount="5" />
 		<TurnIn QuestName="Cycle of Life" QuestId="12454" TurnInName="Nishera the Garden Keeper" TurnInId="27255" X="2827.62" Y="-20.4965" Z="0.5493" />
 		<Objective QuestName="Emerald Dragon Tears" QuestId="12200" Type="CollectItem" ItemId="37124" CollectCount="8" />
@@ -1502,7 +1515,14 @@
 		<TurnIn QuestName="The Truth Will Out" QuestId="12283" TurnInName="High Executor Wroth" TurnInId="27243" X="3208.62" Y="-678.667" Z="167.62" />
 		<Objective QuestName="Fire Upon the Waters" QuestId="12243" Type="KillMob" MobId="28013" KillCount="1" />
 		<TurnIn QuestName="Fire Upon the Waters" QuestId="12243" TurnInName="Apothecary Vicky Levine" TurnInId="27248" X="3221.88" Y="-691.37" Z="167.209" />
-		<TurnIn QuestName="Seeds of the Lashers" QuestId="12458" TurnInName="Lord Itharius" TurnInId="27785" X="3539.55" Y="285.5" Z="342.804" />
+		<Objective QuestName="Seeds of the Lashers" QuestId="12458" Type="CollectItem" ItemId="37882" CollectCount="3" />
+		<!-- REVIEW Q12458 Seeds of the Lashers: helper item 140458 140458 has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12458)) &amp;&amp; (IsQuestCompleted(12458)))">
+			<TurnIn QuestName="Seeds of the Lashers" QuestId="12458" TurnInName="Lord Itharius" TurnInId="27785" X="3539.55" Y="285.5" Z="342.804" />
+		</If>
+		<If Condition="((HasQuest(12458)) &amp;&amp; (!IsQuestCompleted(12458)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12458" Type="Incomplete" />
+		</If>
 		<TurnIn QuestName="The Fate of the Ruby Dragonshrine" QuestId="12419" TurnInName="Krasus" TurnInId="27990" X="3529.38" Y="273.873" Z="342.804" />
 		<Objective QuestName="The End of the Line" QuestId="12110" Type="KillMob" MobId="26887" KillCount="1" />
 		<!-- REVIEW Q12110 The End of the Line: objective 26889 The End of the Line Area Trigger Kill Credit Bunny x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

@@ -1556,6 +1556,18 @@
 		</If>
 		<Objective QuestName="Akiris by the Bundle" QuestId="617" Type="CollectItem" ItemId="4029" CollectCount="10" />
 		<Objective QuestName="Scaring Shaky" QuestId="606" Type="CollectItem" ItemId="3919" CollectCount="5" />
+		<If Condition="HasQuest(348) &amp;&amp; !IsQuestCompleted(348) &amp;&amp; GetItemCount(2799) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="348" CollectItemId="2799" CollectItemCount="1" HuntingGroundRadius="120" MobId="1114" MobId2="1557" MobId3="1558" MobId4="1559" MobId5="2521" MobId6="14491" X="-13997.6" Y="174.808" Z="12.3466">
+				<Hotspot X="-13997.6" Y="174.808" Z="12.3466" />
+				<Hotspot X="-14043.3" Y="185.231" Z="13.1035" />
+				<Hotspot X="-14079.9" Y="157.474" Z="14.8891" />
+				<Hotspot X="-14043.6" Y="111.891" Z="10.6574" />
+				<Hotspot X="-13999.3" Y="72.1553" Z="12.7376" />
+				<Hotspot X="-13981.5" Y="113.066" Z="14.8363" />
+				<Hotspot X="-13949.6" Y="215.246" Z="22.6267" />
+				<Hotspot X="-14024.7" Y="243.284" Z="13.0169" />
+			</CustomBehavior>
+		</If>
 		<TurnIn QuestName="Scaring Shaky" QuestId="606" TurnInName='"Shaky" Phillipe' TurnInId="2502" X="-14299.4" Y="504.577" Z="9.1211" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(606)">
 			<PickUp QuestName="Return to MacKinley" QuestId="607" GiverName='"Shaky" Phillipe' GiverId="2502" X="-14299.4" Y="504.577" Z="9.1211" />

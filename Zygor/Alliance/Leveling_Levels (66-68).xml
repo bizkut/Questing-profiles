@@ -948,11 +948,23 @@
 		</If>
 		<Objective QuestName="The Twin Clefts of Nagrand" QuestId="9922" Type="KillMob" MobId="17136" KillCount="10" />
 		<Objective QuestName="The Twin Clefts of Nagrand" QuestId="9922" Type="KillMob" MobId="17137" KillCount="10" />
+		<If Condition="HasQuest(9924) &amp;&amp; !IsQuestCompleted(9924) &amp;&amp; GetItemCount(25509) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="9924" CollectItemId="25509" CollectItemCount="1" HuntingGroundRadius="120" MobId="17136" MobId2="17137" X="-1260.41" Y="8031.68" Z="-94.6711">
+				<Hotspot X="-1260.41" Y="8031.68" Z="-94.6711" />
+				<Hotspot X="-1213.36" Y="8018.38" Z="-92.0055" />
+				<Hotspot X="-1218.71" Y="8059.71" Z="-84.6944" />
+				<Hotspot X="-1143.88" Y="8051.77" Z="-83.5101" />
+				<Hotspot X="-1103.03" Y="8047.95" Z="-84.9493" />
+				<Hotspot X="-1065.72" Y="8074.14" Z="-92.045" />
+				<Hotspot X="-1089.78" Y="8117.36" Z="-87.9527" />
+				<Hotspot X="-1160.49" Y="8011.36" Z="-79.7283" />
+			</CustomBehavior>
+		</If>
 		<TurnIn QuestName="The Twin Clefts of Nagrand" QuestId="9922" TurnInName="Mo'mor the Breaker" TurnInId="18223" X="-2618.18" Y="7278.46" Z="20.8077" />
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9922)">
 			<PickUp QuestName="Diplomatic Measures" QuestId="10108" GiverName="Mo'mor the Breaker" GiverId="18223" X="-2618.18" Y="7278.46" Z="20.8077" />
 		</If>
-		<!-- REVIEW Q9924 Corki's Gone Missing Again!: collect 20812 Corki x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q9924 Corki's Gone Missing Again!: goal 20812 Corki x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9924)) &amp;&amp; (IsQuestCompleted(9924)))">
 			<TurnIn QuestName="Corki's Gone Missing Again!" QuestId="9924" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>
@@ -1293,6 +1305,18 @@
 		<Objective QuestName="From the Ashes" QuestId="10771" Type="UseObject" ObjectId="185147" UseCount="1" />
 		<Objective QuestName="From the Ashes" QuestId="10771" Type="UseObject" ObjectId="185148" UseCount="1" />
 		<Objective QuestName="Little Embers" QuestId="10770" Type="KillMob" MobId="21021" KillCount="8" />
+		<If Condition="HasQuest(10567) &amp;&amp; !IsQuestCompleted(10567) &amp;&amp; GetItemCount(30704) &lt; 6">
+			<CustomBehavior File="CollectThings" QuestId="10567" CollectItemId="30704" CollectItemCount="6" HuntingGroundRadius="120" MobId="19985" MobId2="19986" MobId3="19987" MobId4="20211" X="3268.42" Y="5376.27" Z="145.145">
+				<Hotspot X="3268.42" Y="5376.27" Z="145.145" />
+				<Hotspot X="3289.06" Y="5337.99" Z="165.718" />
+				<Hotspot X="3282.55" Y="5291.44" Z="146.925" />
+				<Hotspot X="3234.8" Y="5328.32" Z="169.034" />
+				<Hotspot X="3199.35" Y="5308.48" Z="176.368" />
+				<Hotspot X="3177.37" Y="5357.3" Z="146.055" />
+				<Hotspot X="3303.88" Y="5409.22" Z="146.949" />
+				<Hotspot X="3343.57" Y="5361.36" Z="150.24" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q10753 Culling the Wild: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10753)) &amp;&amp; (IsQuestCompleted(10753)))">
 			<TurnIn QuestName="Culling the Wild" QuestId="10753" TurnInName="Faradrella" TurnInId="22133" X="3024.71" Y="5452.03" Z="147.35" />

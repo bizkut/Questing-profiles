@@ -116,13 +116,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12083" Name="Atop the Woodlands">
-		<Objective Type="KillMob" MobId="26831" KillCount="1">
-			<Hotspots>
-				<Hotspot X="2896.58" Y="1817.61" Z="135.334" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="12092" Name="Strengthen the Ancients">
 		<Objective Type="KillMob" MobId="26321" KillCount="3">
 			<Hotspots>
@@ -408,14 +401,12 @@
 				<Mob Name="Emerald Lasher" Id="27254" />
 			</CollectFrom>
 			<Hotspots>
+				<Hotspot X="2922.39" Y="120.359" Z="5.3034" />
+				<Hotspot X="2914.44" Y="75.7164" Z="3.4832" />
 				<Hotspot X="2873.83" Y="51.7353" Z="1.3982" />
 				<Hotspot X="2893.12" Y="15.0152" Z="1.5533" />
-				<Hotspot X="2914.44" Y="75.7164" Z="3.4832" />
-				<Hotspot X="2884.54" Y="114.481" Z="2.7151" />
 				<Hotspot X="2852.21" Y="145.984" Z="2.6029" />
-				<Hotspot X="2827.06" Y="103.963" Z="2.1148" />
-				<Hotspot X="2801.04" Y="140.674" Z="2.0126" />
-				<Hotspot X="2767.48" Y="87.0446" Z="4.148" />
+				<Hotspot X="2842.53" Y="184.96" Z="3.2082" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -455,6 +446,16 @@
 				<Hotspot X="3731.04" Y="844.972" Z="57.1548" />
 				<Hotspot X="3631.1" Y="827.101" Z="62.9253" />
 				<Hotspot X="3629.1" Y="1100.38" Z="75.7452" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12417" Name="Return to the Earth">
+		<Objective Type="KillMob" MobId="27530" KillCount="6">
+			<Hotspots>
+				<Hotspot X="3770.26" Y="749.045" Z="94.1753" />
+				<Hotspot X="3813.84" Y="865.602" Z="57.5398" />
+				<Hotspot X="3907.35" Y="866.472" Z="56.2255" />
+				<Hotspot X="3830.08" Y="958.533" Z="55.6804" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -869,10 +870,15 @@
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12060)">
 			<PickUp QuestName="The Focus on the Beach" QuestId="12065" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
+		<If Condition="HasQuest(12065) &amp;&amp; !IsQuestCompleted(12065) &amp;&amp; GetItemCount(36751) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12065" CollectItemId="36751" CollectItemCount="1" HuntingGroundRadius="120" MobId="26762" X="3149.37" Y="2151.22" Z="24.6377">
+				<Hotspot X="3149.37" Y="2151.22" Z="24.6377" />
+			</CustomBehavior>
+		</If>
 		<If Condition="HasItem(36756) &amp;&amp; !HasQuest(12067) &amp;&amp; !IsQuestCompleted(12067) &amp;&amp; (Me.Level &gt;= 71)">
 			<PickUp QuestName="A Letter for Home" QuestId="12067" GiverName="Captain Malin's Letter" GiverId="36756" GiverType="Item" />
 		</If>
-		<!-- REVIEW Q12065 The Focus on the Beach: collect 26773 The Focus on the Beach Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12065 The Focus on the Beach: use item 36751: target 26773 The Focus on the Beach Kill Credit Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12065)) &amp;&amp; (IsQuestCompleted(12065)))">
 			<TurnIn QuestName="The Focus on the Beach" QuestId="12065" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
@@ -886,10 +892,21 @@
 		<If Condition="(Me.Level &gt;= 71)">
 			<PickUp QuestName="Strengthen the Ancients" QuestId="12092" GiverName="Sarendryana" GiverId="26837" X="3439.4" Y="2016.05" Z="69.5504" />
 		</If>
-		<Objective QuestName="Atop the Woodlands" QuestId="12083" Type="KillMob" MobId="26831" KillCount="1" />
+		<If Condition="HasQuest(12083) &amp;&amp; !IsQuestCompleted(12083) &amp;&amp; GetItemCount(36779) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12083" CollectItemId="36779" CollectItemCount="1" HuntingGroundRadius="120" MobId="26815" X="2847.59" Y="1833.02" Z="139.577">
+				<Hotspot X="2847.59" Y="1833.02" Z="139.577" />
+			</CustomBehavior>
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="12083" ItemId="36779" MobId="26831" NumOfTimes="1" Range="5" CollectionDistance="200" X="2896.58" Y="1817.61" Z="135.334" />
 		<Objective QuestName="Strengthen the Ancients" QuestId="12092" Type="KillMob" MobId="26321" KillCount="3" />
 		<TurnIn QuestName="Strengthen the Ancients" QuestId="12092" TurnInName="Sarendryana" TurnInId="26837" X="3439.4" Y="2016.05" Z="69.5504" />
-		<TurnIn QuestName="Atop the Woodlands" QuestId="12083" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		<!-- REVIEW Q12083 Atop the Woodlands: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12083)) &amp;&amp; (IsQuestCompleted(12083)))">
+			<TurnIn QuestName="Atop the Woodlands" QuestId="12083" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
+		</If>
+		<If Condition="((HasQuest(12083)) &amp;&amp; (!IsQuestCompleted(12083)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12083" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12083)">
 			<PickUp QuestName="Search Indu'le Village" QuestId="12098" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
@@ -916,7 +933,12 @@
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(11958)">
 			<PickUp QuestName="Slay Loguhn" QuestId="11959" GiverName="Elder Ko'nani" GiverId="26194" X="2774.97" Y="934.863" Z="22.622" />
 		</If>
-		<!-- REVIEW Q11959 Slay Loguhn: collect 26227 Slay Loguhn Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11959) &amp;&amp; !IsQuestCompleted(11959) &amp;&amp; GetItemCount(35688) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11959" CollectItemId="35688" CollectItemCount="1" HuntingGroundRadius="120" MobId="26196" X="3363.32" Y="1029.17" Z="141.758">
+				<Hotspot X="3363.32" Y="1029.17" Z="141.758" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q11959 Slay Loguhn: use item 35688: target 26227 Slay Loguhn Kill Credit Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11959)) &amp;&amp; (IsQuestCompleted(11959)))">
 			<TurnIn QuestName="Slay Loguhn" QuestId="11959" TurnInName="Elder Ko'nani" TurnInId="26194" X="2774.97" Y="934.863" Z="22.622" />
 		</If>
@@ -1034,11 +1056,12 @@
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12276)">
 			<PickUp QuestName="Leave Nothing to Chance" QuestId="12277" GiverName="Slinkin the Demo-gnome" GiverId="27412" X="3996.67" Y="-945.023" Z="105.89" />
 		</If>
+		<!-- Q12277: Wintergarde Mine Bomb (37465) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="The Bleeding Ore" QuestId="12272" Type="CollectItem" ItemId="37359" CollectCount="10" />
 		<Objective QuestName="Not In Our Mine" QuestId="12269" Type="CollectItem" ItemId="37411" CollectCount="10" />
 		<TurnIn QuestName="Not In Our Mine" QuestId="12269" TurnInName="Highlord Leoric Von Zeldig" TurnInId="27156" X="3692.51" Y="-736.212" Z="213.33" />
 		<TurnIn QuestName="The Bleeding Ore" QuestId="12272" TurnInName="Siege Engineer Quarterflash" TurnInId="27159" X="3694.25" Y="-738.813" Z="213.581" />
-		<!-- REVIEW Q12277 Leave Nothing to Chance: collect 27436 Upper Wintergarde Mine Shaft x1: not attackable; collect 27437 Lower Wintergarde Mine Shaft x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12277 Leave Nothing to Chance: helper item 37465 Wintergarde Mine Bomb has no dropping creature near the guide coordinates; objective 27436 Upper Wintergarde Mine Shaft x1: not attackable; objective 27437 Lower Wintergarde Mine Shaft x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12277)) &amp;&amp; (IsQuestCompleted(12277)))">
 			<TurnIn QuestName="Leave Nothing to Chance" QuestId="12277" TurnInName="Siege Engineer Quarterflash" TurnInId="27159" X="3694.25" Y="-738.813" Z="213.581" />
 		</If>
@@ -1290,14 +1313,20 @@
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12416)">
 			<PickUp QuestName="Return to the Earth" QuestId="12417" GiverName="Ceristrasz" GiverId="27506" X="3703.88" Y="699.021" Z="89.2857" />
 		</If>
-		<CustomBehavior File="UseItemOn" QuestId="12417" ItemId="37727" MobId="27530" NumOfTimes="6" Range="5" CollectionDistance="200" X="3830.08" Y="958.533" Z="55.6804" />
-		<!-- REVIEW Q12417 Return to the Earth: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(12417)) &amp;&amp; (IsQuestCompleted(12417)))">
-			<TurnIn QuestName="Return to the Earth" QuestId="12417" TurnInName="Ceristrasz" TurnInId="27506" X="3703.88" Y="699.021" Z="89.2857" />
+		<If Condition="HasQuest(12417) &amp;&amp; !IsQuestCompleted(12417) &amp;&amp; GetItemCount(37727) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12417" CollectItemId="37727" CollectItemCount="1" HuntingGroundRadius="120" MobId="26926" MobId2="27539" X="3798.94" Y="944.174" Z="61.0432">
+				<Hotspot X="3798.94" Y="944.174" Z="61.0432" />
+				<Hotspot X="3753.98" Y="904.018" Z="60.5581" />
+				<Hotspot X="3702.85" Y="927.352" Z="54.0018" />
+				<Hotspot X="3668.19" Y="984.643" Z="56.2522" />
+				<Hotspot X="3714.88" Y="1008.58" Z="62.6208" />
+				<Hotspot X="3779.48" Y="1003.07" Z="59.8987" />
+				<Hotspot X="3808.35" Y="1082.22" Z="57.0994" />
+				<Hotspot X="3841.08" Y="898.789" Z="57.7763" />
+			</CustomBehavior>
 		</If>
-		<If Condition="((HasQuest(12417)) &amp;&amp; (!IsQuestCompleted(12417)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12417" Type="Incomplete" />
-		</If>
+		<Objective QuestName="Return to the Earth" QuestId="12417" Type="KillMob" MobId="27530" KillCount="6" />
+		<TurnIn QuestName="Return to the Earth" QuestId="12417" TurnInName="Ceristrasz" TurnInId="27506" X="3703.88" Y="699.021" Z="89.2857" />
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12417)">
 			<PickUp QuestName="Through Fields of Flame" QuestId="12418" GiverName="Ceristrasz" GiverId="27506" X="3703.88" Y="699.021" Z="89.2857" />
 		</If>
@@ -1392,7 +1421,7 @@
 		<If Condition="(Me.Level &gt;= 72)">
 			<PickUp QuestName="Cycle of Life" QuestId="12454" GiverName="Nishera the Garden Keeper" GiverId="27255" X="2827.62" Y="-20.4965" Z="0.5493" />
 		</If>
-		<Objective QuestName="Seeds of the Lashers" QuestId="12458" Type="CollectItem" ItemId="37882" CollectCount="3" />
+		<!-- Q12458: 140458 (140458) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Cycle of Life" QuestId="12454" Type="KillMob" MobId="27244" KillCount="5" />
 		<TurnIn QuestName="Cycle of Life" QuestId="12454" TurnInName="Nishera the Garden Keeper" TurnInId="27255" X="2827.62" Y="-20.4965" Z="0.5493" />
 		<!-- SKIP Q12456 The Plume of Alystros: group quest (3 players) -->
@@ -1404,7 +1433,14 @@
 		<If Condition="((HasQuest(12456)) &amp;&amp; (!IsQuestCompleted(12456)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12456" Type="Incomplete" />
 		</If>
-		<TurnIn QuestName="Seeds of the Lashers" QuestId="12458" TurnInName="Lord Itharius" TurnInId="27785" X="3539.55" Y="285.5" Z="342.804" />
+		<Objective QuestName="Seeds of the Lashers" QuestId="12458" Type="CollectItem" ItemId="37882" CollectCount="3" />
+		<!-- REVIEW Q12458 Seeds of the Lashers: helper item 140458 140458 has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12458)) &amp;&amp; (IsQuestCompleted(12458)))">
+			<TurnIn QuestName="Seeds of the Lashers" QuestId="12458" TurnInName="Lord Itharius" TurnInId="27785" X="3539.55" Y="285.5" Z="342.804" />
+		</If>
+		<If Condition="((HasQuest(12458)) &amp;&amp; (!IsQuestCompleted(12458)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12458" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 72) &amp;&amp; IsQuestCompleted(12458)">
 			<PickUp QuestName="That Which Creates Can Also Destroy" QuestId="12459" GiverName="Lord Itharius" GiverId="27785" X="3539.55" Y="285.5" Z="342.804" />
 		</If>

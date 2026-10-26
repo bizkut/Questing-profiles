@@ -1063,6 +1063,9 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13238)">
 			<PickUp QuestName="Volatility" QuestId="13239" GiverName="Chief Engineer Copperclaw" GiverId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
+		<!-- Q13239: Abandoned Armor (43616) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13239: Abandoned Helm (43610) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13239: Pile of Bones (43609) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Poke and Prod" QuestId="13237" Type="KillMob" MobId="31140" KillCount="5" />
 		<Objective QuestName="Poke and Prod" QuestId="13237" Type="KillMob" MobId="31155" KillCount="5" />
 		<Objective QuestName="Poke and Prod" QuestId="13237" Type="KillMob" MobId="31145" KillCount="5" />
@@ -1070,7 +1073,7 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13237)">
 			<PickUp QuestName="That's Abominable!" QuestId="13264" GiverName="Koltira Deathweaver" GiverId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
 		</If>
-		<!-- REVIEW Q13239 Volatility: collect 31364 Frostbrood Skytalon KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13239 Volatility: helper item 43616 Abandoned Armor has no dropping creature near the guide coordinates; helper item 43610 Abandoned Helm has no dropping creature near the guide coordinates; helper item 43609 Pile of Bones has no dropping creature near the guide coordinates; use item 43608: target 31364 Frostbrood Skytalon KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13239)) &amp;&amp; (IsQuestCompleted(13239)))">
 			<TurnIn QuestName="Volatility" QuestId="13239" TurnInName="Chief Engineer Copperclaw" TurnInId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
@@ -1251,7 +1254,9 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13355)">
 			<PickUp QuestName="Retest Now" QuestId="13356" GiverName="Chief Engineer Copperclaw" GiverId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
-		<!-- REVIEW Q13358 Not a Bug: use item 44307: target 32314 Dark Messenger KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q13356: Writhing Mass (44304) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13358: Dark Matter (44434) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q13358 Not a Bug: helper item 44434 Dark Matter has no dropping creature near the guide coordinates; goal 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13358)) &amp;&amp; (IsQuestCompleted(13358)))">
 			<TurnIn QuestName="Not a Bug" QuestId="13358" TurnInName="Koltira Deathweaver" TurnInId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
 		</If>
@@ -1259,7 +1264,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="13358" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q13366 Need More Info: group quest (3 players) -->
-		<!-- REVIEW Q13356 Retest Now: use item 44307: target 32266 Writhing Mass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13356 Retest Now: helper item 44304 Writhing Mass has no dropping creature near the guide coordinates; use item 44304: target 32266 Writhing Mass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13356)) &amp;&amp; (IsQuestCompleted(13356)))">
 			<TurnIn QuestName="Retest Now" QuestId="13356" TurnInName="Chief Engineer Copperclaw" TurnInId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
@@ -1268,6 +1273,18 @@
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="12992" ItemId="42480" MobId="29880" NumOfTimes="15" Range="5" CollectionDistance="200" X="8223.69" Y="3311.01" Z="653.685" />
 		<Objective QuestName="Reading the Bones" QuestId="13092" Type="CollectItem" ItemId="43089" CollectCount="15" />
+		<If Condition="HasQuest(12982) &amp;&amp; !IsQuestCompleted(12982) &amp;&amp; GetItemCount(42422) &lt; 8">
+			<CustomBehavior File="CollectThings" QuestId="12982" CollectItemId="42422" CollectItemCount="8" HuntingGroundRadius="120" MobId="29880" MobId2="30037" MobId3="30243" MobId4="30250" MobId5="30409" MobId6="30632" X="8300.76" Y="3369.64" Z="643.668">
+				<Hotspot X="8300.76" Y="3369.64" Z="643.668" />
+				<Hotspot X="8284.51" Y="3427.66" Z="659.084" />
+				<Hotspot X="8277.99" Y="3473.62" Z="655.375" />
+				<Hotspot X="8318.43" Y="3470.82" Z="657.355" />
+				<Hotspot X="8392.54" Y="3404.55" Z="640.045" />
+				<Hotspot X="8294.66" Y="3273.88" Z="655.783" />
+				<Hotspot X="8223.69" Y="3311.01" Z="653.685" />
+				<Hotspot X="8228.85" Y="3402.81" Z="658.569" />
+			</CustomBehavior>
+		</If>
 		<CustomBehavior File="UseItemOn" QuestId="12982" ItemId="42480" MobId="30186" NumOfTimes="8" Range="5" CollectionDistance="200" X="7878.6" Y="3499.39" Z="672.475" />
 		<CustomBehavior File="UseItemOn" QuestId="13084" ItemId="42480" MobId="191820" MobType="GameObject" NumOfTimes="10" Range="5" CollectionDistance="200" X="8298.63" Y="3372.28" Z="644.493" />
 		<TurnIn QuestName="The Bone Witch" QuestId="12999" TurnInName="The Bone Witch" TurnInId="30232" X="7631.19" Y="3405.44" Z="656.402" />
@@ -1357,7 +1374,16 @@
 		<Objective QuestName="Death's Gaze" QuestId="13120" Type="UseObject" ObjectId="192916" UseCount="1" />
 		<Objective QuestName="Death's Gaze" QuestId="13120" Type="UseObject" ObjectId="192914" UseCount="1" />
 		<Objective QuestName="Death's Gaze" QuestId="13120" Type="UseObject" ObjectId="192915" UseCount="1" />
-		<!-- REVIEW Q13119 Destroying the Altars: collect 30742 First Summoning Altar x1: not attackable; collect 30744 Second Summoning Altar x1: not attackable; collect 30745 Third Summoning Altar x1: not attackable; collect 30950 Fourth Summoning Altar x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(13119) &amp;&amp; !IsQuestCompleted(13119) &amp;&amp; GetItemCount(43159) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="13119" CollectItemId="43159" CollectItemCount="1" HuntingGroundRadius="120" MobId="30746" X="6468.32" Y="3077.83" Z="657.593">
+				<Hotspot X="6468.32" Y="3077.83" Z="657.593" />
+			</CustomBehavior>
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="13119" ItemId="43159" MobId="30742" NumOfTimes="1" Range="5" CollectionDistance="200" X="6470.42" Y="3139.73" Z="659.273" />
+		<CustomBehavior File="UseItemOn" QuestId="13119" ItemId="43159" MobId="30744" NumOfTimes="1" Range="5" CollectionDistance="200" X="6431.48" Y="3148.91" Z="659.196" />
+		<CustomBehavior File="UseItemOn" QuestId="13119" ItemId="43159" MobId="30950" NumOfTimes="1" Range="5" CollectionDistance="200" X="6436.78" Y="3100.7" Z="658.905" />
+		<CustomBehavior File="UseItemOn" QuestId="13119" ItemId="43159" MobId="30745" NumOfTimes="1" Range="5" CollectionDistance="200" X="6469.17" Y="3071.56" Z="659.218" />
+		<!-- REVIEW Q13119 Destroying the Altars: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13119)) &amp;&amp; (IsQuestCompleted(13119)))">
 			<TurnIn QuestName="Destroying the Altars" QuestId="13119" TurnInName="Darkrider Arly" TurnInId="30631" X="6654.15" Y="3224.66" Z="810.501" />
 		</If>
@@ -1616,9 +1642,21 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12813" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Intelligence Gathering" QuestId="12838" TurnInName="Aurochs Grimbane" TurnInId="29456" X="7435.78" Y="4200.42" Z="314.32" />
+		<If Condition="HasQuest(12814) &amp;&amp; !IsQuestCompleted(12814) &amp;&amp; GetItemCount(40970) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12814" CollectItemId="40970" CollectItemCount="1" HuntingGroundRadius="120" MobId="29333" X="7572.58" Y="4912.33" Z="69.5336">
+				<Hotspot X="7572.58" Y="4912.33" Z="69.5336" />
+				<Hotspot X="7561.77" Y="4951.31" Z="77.7052" />
+				<Hotspot X="7604.98" Y="4974.37" Z="29.0922" />
+				<Hotspot X="7619.29" Y="4925.62" Z="29.4943" />
+				<Hotspot X="7610.28" Y="4875.89" Z="50.7346" />
+				<Hotspot X="7650.63" Y="4880.29" Z="29.6056" />
+				<Hotspot X="7539.27" Y="4848.64" Z="69.1548" />
+				<Hotspot X="7506.36" Y="4933.26" Z="95.3046" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="In Strict Confidence" QuestId="12840" Type="KillMob" MobId="29490" KillCount="1" />
 		<CustomBehavior File="UseItemOn" QuestId="12840" ItemId="40970" MobId="29489" NumOfTimes="1" Range="5" CollectionDistance="200" X="7673.72" Y="5088.04" Z="20.2601" />
-		<!-- REVIEW Q12814 You'll Need a Gryphon: collect 29406 You'll Need a Gryphon Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12814 You'll Need a Gryphon: goal 29406 You'll Need a Gryphon Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12814)) &amp;&amp; (IsQuestCompleted(12814)))">
 			<TurnIn QuestName="You'll Need a Gryphon" QuestId="12814" TurnInName="Uzo Deathcaller" TurnInId="29405" X="7428.57" Y="4212.2" Z="314.221" />
 		</If>
@@ -1762,7 +1800,15 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13363)">
 			<PickUp QuestName="Tirion's Gambit" QuestId="13364" GiverName="Highlord Tirion Fordring" GiverId="31044" X="6426.66" Y="440.038" Z="511.307" />
 		</If>
-		<!-- REVIEW Q13364 Tirion's Gambit: use item 44784: target 32648 Tirion's Gambit Event Credit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(13364) &amp;&amp; !IsQuestCompleted(13364) &amp;&amp; GetItemCount(44784) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="13364" CollectItemId="44784" CollectItemCount="1" HuntingGroundRadius="120" MobId="32507" X="6225.04" Y="2596.24" Z="566.739">
+				<Hotspot X="6225.04" Y="2596.24" Z="566.739" />
+				<Hotspot X="6140.98" Y="2612.51" Z="570.333" />
+				<Hotspot X="6242.46" Y="2471.94" Z="496.875" />
+				<Hotspot X="6284.77" Y="2489.81" Z="496.29" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q13364 Tirion's Gambit: goal 32648 Tirion's Gambit Event Credit x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13364)) &amp;&amp; (IsQuestCompleted(13364)))">
 			<TurnIn QuestName="Tirion's Gambit" QuestId="13364" TurnInName="Highlord Tirion Fordring" TurnInId="31044" X="6426.66" Y="440.038" Z="511.307" />
 		</If>

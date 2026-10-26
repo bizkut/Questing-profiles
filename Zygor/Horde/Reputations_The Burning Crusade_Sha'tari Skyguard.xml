@@ -207,10 +207,33 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11029" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q11885 Adversarial Blood: group quest (3 players) -->
+		<If Condition="HasQuest(11885) &amp;&amp; !IsQuestCompleted(11885) &amp;&amp; GetItemCount(32388) &lt; 12">
+			<CustomBehavior File="CollectThings" QuestId="11885" CollectItemId="32388" CollectItemCount="12" HuntingGroundRadius="120" MobId="21644" MobId2="21649" MobId3="21650" MobId4="21911" MobId5="23066" MobId6="23067" X="-3677.19" Y="3370.76" Z="283.441">
+				<Hotspot X="-3677.19" Y="3370.76" Z="283.441" />
+				<Hotspot X="-3686.07" Y="3327.08" Z="283.532" />
+				<Hotspot X="-3741.48" Y="3330.95" Z="292.196" />
+				<Hotspot X="-3827.51" Y="3357.09" Z="324.159" />
+				<Hotspot X="-3826.58" Y="3287.57" Z="275.247" />
+				<Hotspot X="-3848.2" Y="3441.94" Z="363.643" />
+				<Hotspot X="-3641.07" Y="3448.17" Z="280.775" />
+				<Hotspot X="-3603.7" Y="3502.74" Z="279.394" />
+			</CustomBehavior>
+		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11004)">
 			<PickUp QuestName="More Shadow Dust" QuestId="11006" GiverName="Severin" GiverId="23042" X="-3407.59" Y="3624.57" Z="278.075" />
 		</If>
-		<!-- REVIEW Q11885 Adversarial Blood: group quest (3 players); collect 23161 Darkscreecher Akkarai x1: kill credit or scripted event; collect 23165 Karrog x1: kill credit or scripted event; collect 23163 Gezzarak the Huntress x1: kill credit or scripted event; collect 23162 Vakkiz the Windrager x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q11885: Elixir of Shadows (32446) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(11885) &amp;&amp; !IsQuestCompleted(11885) &amp;&amp; GetItemCount(32620) &lt; 40">
+			<CustomBehavior File="CollectThings" QuestId="11885" CollectItemId="32620" CollectItemCount="40" HuntingGroundRadius="120" MobId="21651" MobId2="21763" MobId3="21787" X="-3689.96" Y="3739.63" Z="278.65">
+				<Hotspot X="-3689.96" Y="3739.63" Z="278.65" />
+				<Hotspot X="-3705.89" Y="3787.89" Z="302.813" />
+				<Hotspot X="-3643.24" Y="3771.67" Z="301.829" />
+				<Hotspot X="-3825.59" Y="3781.83" Z="277.171" />
+				<Hotspot X="-3882.21" Y="3753.61" Z="334.907" />
+				<Hotspot X="-3862.81" Y="3671.75" Z="335.951" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q11885 Adversarial Blood: group quest (3 players); helper item 32446 Elixir of Shadows has no dropping creature near the guide coordinates; kill 23163 Gezzarak the Huntress x1: kill credit or scripted event; kill 23161 Darkscreecher Akkarai x1: kill credit or scripted event; kill 23165 Karrog x1: kill credit or scripted event; kill 23162 Vakkiz the Windrager x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11885)) &amp;&amp; (IsQuestCompleted(11885)))">
 			<TurnIn QuestName="Adversarial Blood" QuestId="11885" TurnInName="Hazzik" TurnInId="23306" X="-3410.85" Y="3614.86" Z="278.234" />
 		</If>
@@ -300,12 +323,36 @@
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11025)">
 			<PickUp QuestName="Our Boy Wants To Be A Skyguard Ranger" QuestId="11030" GiverName="Torkus" GiverId="23316" X="2315.89" Y="7304.39" Z="366.92" />
 		</If>
+		<If Condition="HasQuest(11058) &amp;&amp; !IsQuestCompleted(11058) &amp;&amp; GetItemCount(32569) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11058" CollectItemId="32569" CollectItemCount="1" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22195" MobId6="22204" X="2061.52" Y="7271.81" Z="363.911">
+				<Hotspot X="2061.52" Y="7271.81" Z="363.911" />
+				<Hotspot X="2067.45" Y="7331.05" Z="364.735" />
+				<Hotspot X="2103.11" Y="7353.6" Z="366.479" />
+				<Hotspot X="1943.92" Y="7359.26" Z="364.572" />
+				<Hotspot X="1926.84" Y="7195.48" Z="364.116" />
+				<Hotspot X="2101.22" Y="7137.61" Z="364.771" />
+				<Hotspot X="2114.53" Y="7187.61" Z="366.179" />
+				<Hotspot X="2206.19" Y="7122.32" Z="364.065" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11058 An Apexis Relic: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11058)) &amp;&amp; (IsQuestCompleted(11058)))">
 			<TurnIn QuestName="An Apexis Relic" QuestId="11058" TurnInName="Chu'a'lor" TurnInId="23233" X="2335.24" Y="7285.18" Z="365.617" />
 		</If>
 		<If Condition="((HasQuest(11058)) &amp;&amp; (!IsQuestCompleted(11058)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11058" Type="Incomplete" />
+		</If>
+		<If Condition="HasQuest(11030) &amp;&amp; !IsQuestCompleted(11030) &amp;&amp; GetItemCount(32569) &lt; 10">
+			<CustomBehavior File="CollectThings" QuestId="11030" CollectItemId="32569" CollectItemCount="10" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22182" MobId6="22195" X="2580.75" Y="7115.81" Z="364.961">
+				<Hotspot X="2580.75" Y="7115.81" Z="364.961" />
+				<Hotspot X="2546.68" Y="7050.09" Z="367.955" />
+				<Hotspot X="2518.28" Y="7020.29" Z="367.955" />
+				<Hotspot X="2464.83" Y="7072.46" Z="364.959" />
+				<Hotspot X="2403.47" Y="7083.51" Z="366.579" />
+				<Hotspot X="2504.71" Y="7245.27" Z="365.684" />
+				<Hotspot X="2458.35" Y="7281.86" Z="365.359" />
+				<Hotspot X="2616.01" Y="7245.59" Z="364.671" />
+			</CustomBehavior>
 		</If>
 		<!-- REVIEW Q11030 Our Boy Wants To Be A Skyguard Ranger: item 32598 Unstable Flask of the Beast has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11030)) &amp;&amp; (IsQuestCompleted(11030)))">
@@ -336,6 +383,18 @@
 			<PickUp QuestName="Wrangle Some Aether Rays!" QuestId="11065" GiverName="Skyguard Khatie" GiverId="23335" X="2547.77" Y="7330.44" Z="373.524" />
 		</If>
 		<!-- SKIP Q11059 Guardian of the Monument: group quest (5 players) -->
+		<If Condition="HasQuest(11059) &amp;&amp; !IsQuestCompleted(11059) &amp;&amp; GetItemCount(32569) &lt; 35">
+			<CustomBehavior File="CollectThings" QuestId="11059" CollectItemId="32569" CollectItemCount="35" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22182" MobId6="22195" X="2580.75" Y="7115.81" Z="364.961">
+				<Hotspot X="2580.75" Y="7115.81" Z="364.961" />
+				<Hotspot X="2546.68" Y="7050.09" Z="367.955" />
+				<Hotspot X="2518.28" Y="7020.29" Z="367.955" />
+				<Hotspot X="2464.83" Y="7072.46" Z="364.959" />
+				<Hotspot X="2403.47" Y="7083.51" Z="366.579" />
+				<Hotspot X="2504.71" Y="7245.27" Z="365.684" />
+				<Hotspot X="2458.35" Y="7281.86" Z="365.359" />
+				<Hotspot X="2616.01" Y="7245.59" Z="364.671" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11059 Guardian of the Monument: group quest (5 players); item 32697 Apexis Guardian's Head has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11059)) &amp;&amp; (IsQuestCompleted(11059)))">
 			<TurnIn QuestName="Guardian of the Monument" QuestId="11059" TurnInName="Chu'a'lor" TurnInId="23233" X="2335.24" Y="7285.18" Z="365.617" />
@@ -351,6 +410,18 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11065" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q11078 To Rule The Skies: group quest (5 players) -->
+		<If Condition="HasQuest(11078) &amp;&amp; !IsQuestCompleted(11078) &amp;&amp; GetItemCount(32569) &lt; 35">
+			<CustomBehavior File="CollectThings" QuestId="11078" CollectItemId="32569" CollectItemCount="35" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22182" MobId6="22195" X="2580.75" Y="7115.81" Z="364.961">
+				<Hotspot X="2580.75" Y="7115.81" Z="364.961" />
+				<Hotspot X="2546.68" Y="7050.09" Z="367.955" />
+				<Hotspot X="2518.28" Y="7020.29" Z="367.955" />
+				<Hotspot X="2464.83" Y="7072.46" Z="364.959" />
+				<Hotspot X="2403.47" Y="7083.51" Z="366.579" />
+				<Hotspot X="2504.71" Y="7245.27" Z="365.684" />
+				<Hotspot X="2458.35" Y="7281.86" Z="365.359" />
+				<Hotspot X="2616.01" Y="7245.59" Z="364.671" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11078 To Rule The Skies: group quest (5 players); item 32732 Dragon Teeth has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11078)) &amp;&amp; (IsQuestCompleted(11078)))">
 			<TurnIn QuestName="To Rule The Skies" QuestId="11078" TurnInName="Sky Commander Keller" TurnInId="23334" X="2503.06" Y="7360.36" Z="380.453" />

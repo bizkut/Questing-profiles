@@ -891,7 +891,10 @@
 		<TurnIn QuestName="Warn Your People" QuestId="9622" TurnInName="Exarch Menelaous" TurnInId="17116" X="-4167.46" Y="-12417.9" Z="41.9126" />
 		<TurnIn QuestName="Coming of Age" QuestId="9623" TurnInName="Torallius the Pack Handler" TurnInId="17584" X="-3972.18" Y="-11927.5" Z="-0.67" />
 		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Shaman)))">
-			<!-- REVIEW Q9467 Call of Fire: item 23682 Ritual Torch has no drop or chest near the guide coordinates; item 23688 Hauteur's Ashes has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<!-- Q9467: Orb of Returning (24335) is needed but no creature near the guide coordinates drops it -->
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Shaman)))">
+			<!-- REVIEW Q9467 Call of Fire: item 23682 Ritual Torch has no drop or chest near the guide coordinates; helper item 24335 Orb of Returning has no dropping creature near the guide coordinates; item 23688 Hauteur's Ashes has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(9467)) &amp;&amp; (IsQuestCompleted(9467)))">
 				<TurnIn QuestName="Call of Fire" QuestId="9467" TurnInName="Temper" TurnInId="17205" X="-3285.64" Y="-12924.1" Z="11.7715" />
 			</If>

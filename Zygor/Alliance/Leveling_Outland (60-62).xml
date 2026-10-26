@@ -551,7 +551,31 @@
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10143)">
 			<PickUp QuestName="Disrupt Their Reinforcements" QuestId="10144" GiverName="Forward Commander Kingston" GiverId="19310" X="-680.346" Y="1855.05" Z="66.9225" />
 		</If>
+		<If Condition="HasQuest(10144) &amp;&amp; !IsQuestCompleted(10144) &amp;&amp; GetItemCount(28513) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="10144" CollectItemId="28513" CollectItemCount="4" HuntingGroundRadius="120" MobId="16950" MobId2="18975" MobId3="18981" MobId4="19190" MobId5="19282" X="-580.02" Y="1819.01" Z="69.8571">
+				<Hotspot X="-580.02" Y="1819.01" Z="69.8571" />
+				<Hotspot X="-533.873" Y="1800.03" Z="59.2283" />
+				<Hotspot X="-500.195" Y="1822.99" Z="63.4242" />
+				<Hotspot X="-463.015" Y="1806.61" Z="60.0951" />
+				<Hotspot X="-518.215" Y="1745.83" Z="48.6575" />
+				<Hotspot X="-566.403" Y="1766.93" Z="58.5212" />
+				<Hotspot X="-516.131" Y="1873.92" Z="77.6638" />
+				<Hotspot X="-559.217" Y="1888.97" Z="83.7547" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Disrupt Their Reinforcements" QuestId="10144" Type="UseObject" ObjectId="184414" UseCount="1" />
+		<If Condition="HasQuest(10144) &amp;&amp; !IsQuestCompleted(10144) &amp;&amp; GetItemCount(28513) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="10144" CollectItemId="28513" CollectItemCount="4" HuntingGroundRadius="120" MobId="16950" MobId2="18975" MobId3="18981" MobId4="19190" MobId5="19282" X="-433.4" Y="1833.45" Z="74.0648">
+				<Hotspot X="-433.4" Y="1833.45" Z="74.0648" />
+				<Hotspot X="-400.17" Y="1866.58" Z="90.3053" />
+				<Hotspot X="-383.874" Y="1908.16" Z="112.988" />
+				<Hotspot X="-491.104" Y="1838.75" Z="68.7595" />
+				<Hotspot X="-516.131" Y="1873.92" Z="77.6638" />
+				<Hotspot X="-567.911" Y="1845.56" Z="71.7222" />
+				<Hotspot X="-507.162" Y="1788.03" Z="53.4746" />
+				<Hotspot X="-447.029" Y="1759.72" Z="49.8528" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Disrupt Their Reinforcements" QuestId="10144" Type="UseObject" ObjectId="184415" UseCount="1" />
 		<TurnIn QuestName="Disrupt Their Reinforcements" QuestId="10144" TurnInName="Forward Commander Kingston" TurnInId="19310" X="-680.346" Y="1855.05" Z="66.9225" />
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10144)">

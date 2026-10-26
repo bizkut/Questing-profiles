@@ -967,6 +967,18 @@
 		<Objective QuestName="Prison Break In" QuestId="544" Type="CollectItem" ItemId="3688" CollectCount="1" />
 		<Objective QuestName="Helcular's Revenge" QuestId="553" Type="UseObject" ObjectId="1768" UseCount="1" />
 		<Objective QuestName="Helcular's Revenge" QuestId="553" Type="UseObject" ObjectId="1769" UseCount="1" />
+		<If Condition="HasQuest(1136) &amp;&amp; !IsQuestCompleted(1136) &amp;&amp; GetItemCount(5810) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="1136" CollectItemId="5810" CollectItemCount="1" HuntingGroundRadius="120" MobId="2384" MobId2="2385" MobId3="2406" MobId4="2407" X="-144.744" Y="-318.556" Z="149.53">
+				<Hotspot X="-144.744" Y="-318.556" Z="149.53" />
+				<Hotspot X="-155.448" Y="-267.079" Z="149.913" />
+				<Hotspot X="-112.202" Y="-253.167" Z="141.937" />
+				<Hotspot X="-82.1833" Y="-222.665" Z="137.722" />
+				<Hotspot X="-80.9055" Y="-331.666" Z="136.471" />
+				<Hotspot X="-214.918" Y="-346.312" Z="158.212" />
+				<Hotspot X="-216.06" Y="-286.145" Z="160.079" />
+				<Hotspot X="-156.645" Y="-456.74" Z="76.9884" />
+			</CustomBehavior>
+		</If>
 		<TurnIn QuestName="Prison Break In" QuestId="544" TurnInName="Magus Wordeen Voidglare" TurnInId="2410" X="-44.7427" Y="-904.614" Z="57.3454" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(544)">
 			<PickUp QuestName="Dalaran Patrols" QuestId="545" GiverName="Magus Wordeen Voidglare" GiverId="2410" X="-44.7427" Y="-904.614" Z="57.3454" />
@@ -990,6 +1002,11 @@
 		</If>
 		<TurnIn QuestName="To Steal From Thieves" QuestId="1164" TurnInName="Genavie Callow" TurnInId="4486" X="1561.39" Y="260.797" Z="-43.0193" />
 		<Objective QuestName="The Vile Reef" QuestId="629" Type="CollectItem" ItemId="4094" CollectCount="1" />
+		<If Condition="HasQuest(1182) &amp;&amp; !IsQuestCompleted(1182) &amp;&amp; GetItemCount(5851) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="1182" CollectItemId="5851" CollectItemCount="1" HuntingGroundRadius="120" MobId="4723" X="-11949.5" Y="-500.392" Z="30.7014">
+				<Hotspot X="-11949.5" Y="-500.392" Z="30.7014" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Goblin Sponsorship" QuestId="1182" Type="CollectItem" ItemId="5852" CollectCount="1" />
 		<Objective QuestName="Panther Mastery" QuestId="192" Type="KillMob" MobId="684" KillCount="10" />
 		<Objective QuestName="Mok'thardin's Enchantment" QuestId="570" Type="CollectItem" ItemId="3838" CollectCount="8" />

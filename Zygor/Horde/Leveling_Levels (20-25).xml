@@ -1012,6 +1012,17 @@
 		</If>
 		<TurnIn QuestName="Betrayal from Within" QuestId="906" TurnInName="Thork" TurnInId="3429" X="-473.202" Y="-2595.7" Z="103.806" />
 		<TurnIn QuestName="Egg Hunt" QuestId="868" TurnInName="Korran" TurnInId="3428" X="-389.282" Y="-2552.14" Z="98.9925" />
+		<If Condition="HasQuest(882) &amp;&amp; !IsQuestCompleted(882) &amp;&amp; GetItemCount(10338) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="882" CollectItemId="10338" CollectItemCount="1" HuntingGroundRadius="120" MobId="3242" MobId2="3426" X="-693.865" Y="-2523.85" Z="93.9181">
+				<Hotspot X="-693.865" Y="-2523.85" Z="93.9181" />
+				<Hotspot X="-803.939" Y="-2512.26" Z="93.6714" />
+				<Hotspot X="-790.805" Y="-2628.3" Z="92.5417" />
+				<Hotspot X="-743.003" Y="-2656.82" Z="91.7917" />
+				<Hotspot X="-741.331" Y="-2716.33" Z="92.7916" />
+				<Hotspot X="-619.528" Y="-2847.89" Z="92.2137" />
+				<Hotspot X="-318.443" Y="-2149.35" Z="97.0569" />
+			</CustomBehavior>
+		</If>
 		<TurnIn QuestName="Chen's Empty Keg" QuestId="819" TurnInName="Brewmaster Drohn" TurnInId="3292" X="-981.24" Y="-3686.49" Z="9.5055" />
 		<If Condition="(Me.Level &gt;= 23)">
 			<PickUp QuestName="Calling in the Reserves" QuestId="5881" GiverName="Maggran Earthbinder" GiverId="11860" X="925.298" Y="940.918" Z="105.575" />

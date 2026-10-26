@@ -903,6 +903,18 @@
 		<If Condition="(Me.Level &gt;= 31)">
 			<PickUp QuestName="Clam Bait" QuestId="6142" GiverName="Mai'Lahii" GiverId="12031" X="-1705.49" Y="3215.33" Z="8.0161" />
 		</If>
+		<If Condition="HasQuest(5386) &amp;&amp; !IsQuestCompleted(5386) &amp;&amp; GetItemCount(13545) &lt; 10">
+			<CustomBehavior File="CollectThings" QuestId="5386" CollectItemId="13545" CollectItemCount="10" HuntingGroundRadius="120" MobId="11562" MobId2="11563" X="-1872.81" Y="3374.68" Z="-70.0521">
+				<Hotspot X="-1872.81" Y="3374.68" Z="-70.0521" />
+				<Hotspot X="-1917.88" Y="3400.77" Z="-47.1733" />
+				<Hotspot X="-1932.04" Y="3446.46" Z="-46.503" />
+				<Hotspot X="-1808.33" Y="3425" Z="-45.1" />
+				<Hotspot X="-1707.33" Y="3438.74" Z="-51.3684" />
+				<Hotspot X="-1711.3" Y="3353.13" Z="-47.3943" />
+				<Hotspot X="-1878.52" Y="3311.72" Z="-46.6471" />
+				<Hotspot X="-1915.5" Y="3249.39" Z="-51.1113" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Fish in a Bucket" QuestId="5421" Type="CollectItem" ItemId="13545" CollectCount="5" />
 		<TurnIn QuestName="Fish in a Bucket" QuestId="5421" TurnInName="Jinar'Zillen" TurnInId="11317" X="-1739.91" Y="3223.85" Z="5.0641" />
 		<Objective QuestName="Clam Bait" QuestId="6142" Type="CollectItem" ItemId="15924" CollectCount="10" />

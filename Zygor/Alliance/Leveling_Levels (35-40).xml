@@ -936,6 +936,11 @@
 		</If>
 		<Objective QuestName="Panther Mastery" QuestId="192" Type="KillMob" MobId="684" KillCount="10" />
 		<Objective QuestName="Hostile Takeover" QuestId="213" Type="CollectItem" ItemId="4106" CollectCount="8" />
+		<If Condition="HasQuest(1182) &amp;&amp; !IsQuestCompleted(1182) &amp;&amp; GetItemCount(5851) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="1182" CollectItemId="5851" CollectItemCount="1" HuntingGroundRadius="120" MobId="4723" X="-11949.5" Y="-500.392" Z="30.7014">
+				<Hotspot X="-11949.5" Y="-500.392" Z="30.7014" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Goblin Sponsorship" QuestId="1182" Type="CollectItem" ItemId="5852" CollectCount="1" />
 		<Objective QuestName="Raptor Mastery" QuestId="195" Type="KillMob" MobId="686" KillCount="10" />
 		<Objective QuestName="Tiger Mastery" QuestId="187" Type="KillMob" MobId="1085" KillCount="10" />

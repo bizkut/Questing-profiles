@@ -149,6 +149,11 @@
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12065)">
 			<PickUp QuestName="Atop the Woodlands" QuestId="12083" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
+		<If Condition="HasQuest(12083) &amp;&amp; !IsQuestCompleted(12083) &amp;&amp; GetItemCount(36779) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12083" CollectItemId="36779" CollectItemCount="1" HuntingGroundRadius="120" MobId="26815" X="2847.59" Y="1833.02" Z="139.577">
+				<Hotspot X="2847.59" Y="1833.02" Z="139.577" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Atop the Woodlands" QuestId="12083" Type="KillMob" MobId="26831" KillCount="1" />
 		<TurnIn QuestName="Atop the Woodlands" QuestId="12083" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12083)">

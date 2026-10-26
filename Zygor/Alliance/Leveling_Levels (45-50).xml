@@ -1157,7 +1157,11 @@
 		<If Condition="(Me.Level &gt;= 44)">
 			<PickUp QuestName="The Giant Guardian" QuestId="2844" GiverName="Rockbiter" GiverId="7765" X="-3385.91" Y="2495.84" Z="23.5588" />
 		</If>
-		<!-- REVIEW Q2879 The Stave of Equinex: item 9306 Stave of Equinex has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q2879: Byltan Essence (9258) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q2879: Samha Essence (9257) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q2879: Imbel Essence (9256) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q2879: Lahassa Essence (9255) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q2879 The Stave of Equinex: helper item 9258 Byltan Essence has no dropping creature near the guide coordinates; helper item 9257 Samha Essence has no dropping creature near the guide coordinates; helper item 9256 Imbel Essence has no dropping creature near the guide coordinates; helper item 9255 Lahassa Essence has no dropping creature near the guide coordinates; item 9306 Stave of Equinex has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2879)) &amp;&amp; (IsQuestCompleted(2879)))">
 			<TurnIn QuestName="The Stave of Equinex" QuestId="2879" TurnInName="Equinex Monolith" TurnInId="144063" TurnInType="Object" X="-2976.94" Y="2743.2" Z="53.0054" />
 		</If>
@@ -1311,6 +1315,18 @@
 		</If>
 		<If Condition="HasItem(4098) &amp;&amp; !HasQuest(594) &amp;&amp; !IsQuestCompleted(594) &amp;&amp; (Me.Level &gt;= 42)">
 			<PickUp QuestName="Message in a Bottle" QuestId="594" GiverName="Carefully Folded Note" GiverId="4098" GiverType="Item" />
+		</If>
+		<If Condition="HasQuest(348) &amp;&amp; !IsQuestCompleted(348) &amp;&amp; GetItemCount(2799) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="348" CollectItemId="2799" CollectItemCount="1" HuntingGroundRadius="120" MobId="1557" MobId2="1558" MobId3="1559" MobId4="2521" MobId5="14491" X="-14058.4" Y="232.911" Z="13.4458">
+				<Hotspot X="-14058.4" Y="232.911" Z="13.4458" />
+				<Hotspot X="-14043.3" Y="185.231" Z="13.1035" />
+				<Hotspot X="-14079.9" Y="157.474" Z="14.8891" />
+				<Hotspot X="-14043.6" Y="111.891" Z="10.6574" />
+				<Hotspot X="-13997.6" Y="174.808" Z="12.3466" />
+				<Hotspot X="-13953.3" Y="140.875" Z="13.7878" />
+				<Hotspot X="-13949.6" Y="215.246" Z="22.6267" />
+				<Hotspot X="-14007.4" Y="250.055" Z="17.3661" />
+			</CustomBehavior>
 		</If>
 		<Objective QuestName="Big Game Hunter" QuestId="208" Type="CollectItem" ItemId="3880" CollectCount="1" />
 		<TurnIn QuestName="Big Game Hunter" QuestId="208" TurnInName="Hemet Nesingwary Jr." TurnInId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />

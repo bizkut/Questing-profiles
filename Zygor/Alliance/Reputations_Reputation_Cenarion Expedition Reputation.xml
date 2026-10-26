@@ -803,7 +803,12 @@
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(9996)">
 			<PickUp QuestName="The Final Code" QuestId="10446" GiverName="Lieutenant Meridian" GiverId="21006" X="-2588.25" Y="3319.51" Z="0.6892" />
 		</If>
-		<!-- REVIEW Q10446 The Final Code: collect 21039 Mana Bomb Kill Credit Trigger x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(10446) &amp;&amp; !IsQuestCompleted(10446) &amp;&amp; GetItemCount(29912) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10446" CollectItemId="29912" CollectItemCount="1" HuntingGroundRadius="120" MobId="18554" X="-2289.5" Y="3094.68" Z="152.917">
+				<Hotspot X="-2289.5" Y="3094.68" Z="152.917" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q10446 The Final Code: goal 21039 Mana Bomb Kill Credit Trigger x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10446)) &amp;&amp; (IsQuestCompleted(10446)))">
 			<TurnIn QuestName="The Final Code" QuestId="10446" TurnInName="Jenai Starwhisper" TurnInId="18459" X="-2925.6" Y="4004.8" Z="-1.4743" />
 		</If>
@@ -839,6 +844,18 @@
 		<Objective QuestName="From the Ashes" QuestId="10771" Type="UseObject" ObjectId="185147" UseCount="1" />
 		<Objective QuestName="From the Ashes" QuestId="10771" Type="UseObject" ObjectId="185148" UseCount="1" />
 		<Objective QuestName="Little Embers" QuestId="10770" Type="KillMob" MobId="21021" KillCount="8" />
+		<If Condition="HasQuest(10567) &amp;&amp; !IsQuestCompleted(10567) &amp;&amp; GetItemCount(30704) &lt; 6">
+			<CustomBehavior File="CollectThings" QuestId="10567" CollectItemId="30704" CollectItemCount="6" HuntingGroundRadius="120" MobId="19985" MobId2="19986" MobId3="19987" MobId4="20211" X="3268.42" Y="5376.27" Z="145.145">
+				<Hotspot X="3268.42" Y="5376.27" Z="145.145" />
+				<Hotspot X="3289.06" Y="5337.99" Z="165.718" />
+				<Hotspot X="3282.55" Y="5291.44" Z="146.925" />
+				<Hotspot X="3234.8" Y="5328.32" Z="169.034" />
+				<Hotspot X="3199.35" Y="5308.48" Z="176.368" />
+				<Hotspot X="3177.37" Y="5357.3" Z="146.055" />
+				<Hotspot X="3303.88" Y="5409.22" Z="146.949" />
+				<Hotspot X="3343.57" Y="5361.36" Z="150.24" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q10753 Culling the Wild: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10753)) &amp;&amp; (IsQuestCompleted(10753)))">
 			<TurnIn QuestName="Culling the Wild" QuestId="10753" TurnInName="Faradrella" TurnInId="22133" X="3024.71" Y="5452.03" Z="147.35" />
@@ -921,6 +938,18 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10893)">
 			<PickUp QuestName="Meeting at the Blackwing Coven" QuestId="10722" GiverName="Watcher Moonshade" GiverId="22386" X="3108.07" Y="6131.54" Z="136.461" />
 		</If>
+		<If Condition="HasQuest(10722) &amp;&amp; !IsQuestCompleted(10722) &amp;&amp; GetItemCount(31121) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10722" CollectItemId="31121" CollectItemCount="5" HuntingGroundRadius="120" MobId="21382" MobId2="21383" MobId3="21492" MobId4="21637" MobId5="21809" MobId6="21810" X="3152.57" Y="7090.58" Z="169.336">
+				<Hotspot X="3152.57" Y="7090.58" Z="169.336" />
+				<Hotspot X="3189.91" Y="7106.24" Z="178.414" />
+				<Hotspot X="3189.06" Y="7168.66" Z="163.699" />
+				<Hotspot X="3111.11" Y="7129.98" Z="152.609" />
+				<Hotspot X="3063.47" Y="7121.63" Z="150.111" />
+				<Hotspot X="3102.89" Y="7063.88" Z="160.299" />
+				<Hotspot X="3118.56" Y="7013.02" Z="165.577" />
+				<Hotspot X="3166.75" Y="7019.08" Z="162.045" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q10722 Meeting at the Blackwing Coven: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10722)) &amp;&amp; (IsQuestCompleted(10722)))">
 			<TurnIn QuestName="Meeting at the Blackwing Coven" QuestId="10722" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
@@ -937,6 +966,18 @@
 		</If>
 		<If Condition="((HasQuest(10607)) &amp;&amp; (!IsQuestCompleted(10607)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10607" Type="Incomplete" />
+		</If>
+		<If Condition="HasQuest(10748) &amp;&amp; !IsQuestCompleted(10748) &amp;&amp; GetItemCount(31121) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10748" CollectItemId="31121" CollectItemCount="5" HuntingGroundRadius="120" MobId="21382" MobId2="21383" MobId3="21492" MobId4="21637" MobId5="21809" MobId6="21810" X="3152.57" Y="7090.58" Z="169.336">
+				<Hotspot X="3152.57" Y="7090.58" Z="169.336" />
+				<Hotspot X="3189.91" Y="7106.24" Z="178.414" />
+				<Hotspot X="3189.06" Y="7168.66" Z="163.699" />
+				<Hotspot X="3111.11" Y="7129.98" Z="152.609" />
+				<Hotspot X="3063.47" Y="7121.63" Z="150.111" />
+				<Hotspot X="3102.89" Y="7063.88" Z="160.299" />
+				<Hotspot X="3118.56" Y="7013.02" Z="165.577" />
+				<Hotspot X="3166.75" Y="7019.08" Z="162.045" />
+			</CustomBehavior>
 		</If>
 		<Objective QuestName="Maxnar Must Die!" QuestId="10748" Type="KillMob" MobId="21389" KillCount="1" />
 		<TurnIn QuestName="Maxnar Must Die!" QuestId="10748" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />

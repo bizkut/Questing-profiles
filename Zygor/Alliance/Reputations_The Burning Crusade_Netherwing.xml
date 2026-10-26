@@ -132,7 +132,18 @@
 		<If Condition="(Me.Level &gt;= 70)">
 			<PickUp QuestName="Kindness" QuestId="10804" GiverName="Mordenai" GiverId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
 		</If>
-		<!-- REVIEW Q10804 Kindness: use item 31373: target 22131 Netherwing Event Pinger has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(10804) &amp;&amp; !IsQuestCompleted(10804) &amp;&amp; GetItemCount(31372) &lt; 8">
+			<CustomBehavior File="CollectThings" QuestId="10804" CollectItemId="31372" CollectItemCount="8" HuntingGroundRadius="120" MobId="21477" X="-3999.08" Y="702.886" Z="7.9136">
+				<Hotspot X="-3999.08" Y="702.886" Z="7.9136" />
+				<Hotspot X="-3900.6" Y="750.043" Z="8.6082" />
+				<Hotspot X="-4125.77" Y="763.814" Z="2.0037" />
+				<Hotspot X="-4203.24" Y="722.261" Z="24.501" />
+				<Hotspot X="-4074.22" Y="901.909" Z="6.6601" />
+				<Hotspot X="-4156.82" Y="962.684" Z="28.5924" />
+				<Hotspot X="-4011.56" Y="1013.37" Z="20.0137" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q10804 Kindness: objective 22131 Netherwing Event Pinger x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10804)) &amp;&amp; (IsQuestCompleted(10804)))">
 			<TurnIn QuestName="Kindness" QuestId="10804" TurnInName="Mordenai" TurnInId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
 		</If>
@@ -187,8 +198,9 @@
 			<CustomBehavior File="AbandonQuest" QuestId="10858" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q10866 Zuluhed the Whacked: group quest (5 players) -->
+		<!-- Q10866: Zuluhed's Key (31664) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Zuluhed the Whacked" QuestId="10866" Type="UseObject" ObjectId="185156" UseCount="1" />
-		<!-- REVIEW Q10866 Zuluhed the Whacked: group quest (5 players); kill 11980 Zuluhed the Whacked x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10866 Zuluhed the Whacked: group quest (5 players); kill 11980 Zuluhed the Whacked x1: kill credit or scripted event; helper item 31664 Zuluhed's Key has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10866)) &amp;&amp; (IsQuestCompleted(10866)))">
 			<TurnIn QuestName="Zuluhed the Whacked" QuestId="10866" TurnInName="Karynaku" TurnInId="22112" X="-4200.89" Y="382.464" Z="118.055" />
 		</If>

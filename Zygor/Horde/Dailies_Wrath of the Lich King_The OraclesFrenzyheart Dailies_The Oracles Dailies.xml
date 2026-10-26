@@ -130,19 +130,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12538" Name="The Mist Isn't Listening">
-		<Objective Type="KillMob" MobId="28109" KillCount="12">
-			<Hotspots>
-				<Hotspot X="6010.31" Y="5008.06" Z="-103.607" />
-				<Hotspot X="6049.85" Y="5022.84" Z="-97.1357" />
-				<Hotspot X="6031.8" Y="5066.51" Z="-122.279" />
-				<Hotspot X="6113.74" Y="5045.9" Z="-96.1121" />
-				<Hotspot X="6118.95" Y="4952.66" Z="-97.783" />
-				<Hotspot X="6060.37" Y="4952.1" Z="-94.5864" />
-				<Hotspot X="6173.33" Y="4910.8" Z="-86.9626" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="12571" Name="Make the Bad Snake Go Away">
 		<Objective Type="KillMob" MobId="28358" KillCount="1">
 			<Hotspots>
@@ -259,14 +246,14 @@
 	<Quest Id="12705" Name="Will of the Titans" Daily="True">
 		<Objective Type="KillMob" MobId="28078" KillCount="50">
 			<Hotspots>
-				<Hotspot X="4919.8" Y="5868.43" Z="-56.7423" />
-				<Hotspot X="4899.64" Y="5833.71" Z="-57.0951" />
-				<Hotspot X="4866.27" Y="5809.94" Z="-53.9961" />
-				<Hotspot X="4931.17" Y="5799.62" Z="-67.8848" />
-				<Hotspot X="4950.34" Y="5840.92" Z="-62.7133" />
-				<Hotspot X="4972.56" Y="5878.25" Z="-63.1143" />
-				<Hotspot X="4886.51" Y="5910.39" Z="-39.0189" />
-				<Hotspot X="4860.52" Y="5878.32" Z="-38.5941" />
+				<Hotspot X="5037.9" Y="5574.49" Z="-94.911" />
+				<Hotspot X="5009.79" Y="5604.04" Z="-91.8901" />
+				<Hotspot X="4991.97" Y="5647.73" Z="-86.3812" />
+				<Hotspot X="4952.84" Y="5638.42" Z="-76.8213" />
+				<Hotspot X="4979.37" Y="5565.01" Z="-82.8835" />
+				<Hotspot X="5075.42" Y="5658.91" Z="-95.1205" />
+				<Hotspot X="5042.96" Y="5704.66" Z="-89.848" />
+				<Hotspot X="5160.65" Y="5636.89" Z="-95.1396" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -335,7 +322,7 @@
 		<If Condition="(Me.Level &gt;= 76)">
 			<PickUp QuestName="A Rough Ride" QuestId="12536" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		</If>
-		<Objective QuestName="The Mist Isn't Listening" QuestId="12538" Type="KillMob" MobId="28109" KillCount="12" />
+		<!-- Q12538: Zepik's Hunting Horn (38512) is needed but no creature near the guide coordinates drops it -->
 		<!-- SKIP turn-in Q12536 A Rough Ride: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12536)) &amp;&amp; (!IsQuestCompleted(12536)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12536" Type="Incomplete" />
@@ -346,6 +333,7 @@
 		<If Condition="((HasQuest(12537)) &amp;&amp; (!IsQuestCompleted(12537)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12537" Type="Incomplete" />
 		</If>
+		<CustomBehavior File="UseItemOn" QuestId="12538" ItemId="38512" MobId="28109" NumOfTimes="12" Range="5" CollectionDistance="200" X="6220.01" Y="4942.91" Z="-98.7522" />
 		<!-- SKIP turn-in Q12538 The Mist Isn't Listening: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12538)) &amp;&amp; (!IsQuestCompleted(12538)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12538" Type="Incomplete" />
@@ -381,11 +369,12 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12570)">
 			<PickUp QuestName="Make the Bad Snake Go Away" QuestId="12571" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
+		<!-- Q12572: Lafoo's Bug Bag (38622) is needed but no creature near the guide coordinates drops it -->
 		<!-- SKIP pickup Q12572 Gods like Shiny Things: no quest giver with a spawn in the database -->
 		<Objective QuestName="Make the Bad Snake Go Away" QuestId="12571" Type="KillMob" MobId="28358" KillCount="1" />
 		<Objective QuestName="Make the Bad Snake Go Away" QuestId="12571" Type="KillMob" MobId="28011" KillCount="10" />
 		<TurnIn QuestName="Make the Bad Snake Go Away" QuestId="12571" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
-		<!-- REVIEW Q12572 Gods like Shiny Things: item 38575 Shiny Treasures has no drop or chest near the guide coordinates; no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12572 Gods like Shiny Things: helper item 38622 Lafoo's Bug Bag has no dropping creature near the guide coordinates; no quest giver in the database; item 38575 Shiny Treasures has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12572)) &amp;&amp; (IsQuestCompleted(12572)))">
 			<TurnIn QuestName="Gods like Shiny Things" QuestId="12572" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
@@ -434,6 +423,7 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12577)">
 			<PickUp QuestName="The Angry Gorloc" QuestId="12578" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
+		<!-- Q12578: Moodle's Stress Ball (38624) is needed but no creature near the guide coordinates drops it -->
 		<!-- SKIP turn-in Q12578 The Angry Gorloc: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12578)) &amp;&amp; (!IsQuestCompleted(12578)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12578" Type="Incomplete" />
@@ -467,6 +457,7 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12695)">
 			<PickUp QuestName="Appeasing the Great Rain Stone" QuestId="12704" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
+		<!-- Q12704: Lafoo's Bug Bag (38622) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12695) &amp;&amp; !IsQuestCompleted(12726) &amp;&amp; !HasQuest(12726) &amp;&amp; !IsQuestCompleted(12736) &amp;&amp; !HasQuest(12736) &amp;&amp; !IsQuestCompleted(12737) &amp;&amp; !HasQuest(12737)">
 			<PickUp QuestName="A Cleansing Song" QuestId="12735" GiverName="Oracle Soo-nee" GiverId="29006" X="5648.67" Y="4605.62" Z="-132.056" />
 		</If>
@@ -488,9 +479,29 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12695) &amp;&amp; !IsQuestCompleted(12761) &amp;&amp; !HasQuest(12761) &amp;&amp; !IsQuestCompleted(12762) &amp;&amp; !HasQuest(12762)">
 			<PickUp QuestName="Will of the Titans" QuestId="12705" GiverName="Oracle Soo-dow" GiverId="29149" X="5726.03" Y="4569.98" Z="-119.875" />
 		</If>
+		<!-- Q12761: Crystal of the Violent Storm (39694) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12761: Crystal of Unstable Energy (39693) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12761: Crystal of the Frozen Grip (39689) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12705) &amp;&amp; !IsQuestCompleted(12705) &amp;&amp; GetItemCount(39266) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12705" CollectItemId="39266" CollectItemCount="1" HuntingGroundRadius="120" MobId="28078" MobId2="28079" X="4897.27" Y="5848.09" Z="-54.8494">
+				<Hotspot X="4897.27" Y="5848.09" Z="-54.8494" />
+				<Hotspot X="4920.3" Y="5809.95" Z="-62.6004" />
+				<Hotspot X="4972.21" Y="5817.99" Z="-63.6291" />
+				<Hotspot X="4939.9" Y="5865.2" Z="-59.9315" />
+				<Hotspot X="4886.51" Y="5910.39" Z="-39.0189" />
+				<Hotspot X="4860.52" Y="5878.32" Z="-38.5941" />
+				<Hotspot X="4829.34" Y="5841.01" Z="-47.6557" />
+				<Hotspot X="4866.27" Y="5809.94" Z="-53.9961" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Mastery of the Crystals" QuestId="12761" Type="KillMob" MobId="28078" KillCount="50" />
-		<Objective QuestName="Will of the Titans" QuestId="12705" Type="KillMob" MobId="28078" KillCount="50" />
-		<TurnIn QuestName="Mastery of the Crystals" QuestId="12761" TurnInName="Lightningcaller Soo-met" TurnInId="28107" X="5040.47" Y="5502.82" Z="-88.3044" />
+		<!-- REVIEW Q12761 Mastery of the Crystals: helper item 39694 Crystal of the Violent Storm has no dropping creature near the guide coordinates; helper item 39693 Crystal of Unstable Energy has no dropping creature near the guide coordinates; helper item 39689 Crystal of the Frozen Grip has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12761)) &amp;&amp; (IsQuestCompleted(12761)))">
+			<TurnIn QuestName="Mastery of the Crystals" QuestId="12761" TurnInName="Lightningcaller Soo-met" TurnInId="28107" X="5040.47" Y="5502.82" Z="-88.3044" />
+		</If>
+		<If Condition="((HasQuest(12761)) &amp;&amp; (!IsQuestCompleted(12761)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12761" Type="Incomplete" />
+		</If>
 		<Objective QuestName="Power of the Great Ones" QuestId="12762" Type="KillMob" MobId="28078" KillCount="30" />
 		<!-- REVIEW Q12762 Power of the Great Ones: item 39748 Energized Polished Crystal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12762)) &amp;&amp; (IsQuestCompleted(12762)))">
@@ -499,6 +510,7 @@
 		<If Condition="((HasQuest(12762)) &amp;&amp; (!IsQuestCompleted(12762)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12762" Type="Incomplete" />
 		</If>
+		<Objective QuestName="Will of the Titans" QuestId="12705" Type="KillMob" MobId="28078" KillCount="50" />
 		<TurnIn QuestName="Will of the Titans" QuestId="12705" TurnInName="Lightningcaller Soo-met" TurnInId="28107" X="5040.47" Y="5502.82" Z="-88.3044" />
 		<!-- REVIEW Q12735 A Cleansing Song: use item 39572: target 29033 Spirit of Atha has no spawn (kill credit or scripted event); use item 39572: target 29034 Spirit of Koosu has no spawn (kill credit or scripted event); use item 39572: target 29018 Spirit of Ha-Khalan has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12735)) &amp;&amp; (IsQuestCompleted(12735)))">
@@ -528,7 +540,7 @@
 		<If Condition="((HasQuest(12726)) &amp;&amp; (!IsQuestCompleted(12726)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12726" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q12704 Appeasing the Great Rain Stone: item 38575 Shiny Treasures has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12704 Appeasing the Great Rain Stone: helper item 38622 Lafoo's Bug Bag has no dropping creature near the guide coordinates; item 38575 Shiny Treasures has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12704)) &amp;&amp; (IsQuestCompleted(12704)))">
 			<TurnIn QuestName="Appeasing the Great Rain Stone" QuestId="12704" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>

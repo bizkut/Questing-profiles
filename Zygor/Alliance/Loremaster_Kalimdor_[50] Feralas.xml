@@ -593,7 +593,11 @@
 		<If Condition="(Me.Level &gt;= 44)">
 			<PickUp QuestName="The Giant Guardian" QuestId="2844" GiverName="Rockbiter" GiverId="7765" X="-3385.91" Y="2495.84" Z="23.5588" />
 		</If>
-		<!-- REVIEW Q2879 The Stave of Equinex: item 9306 Stave of Equinex has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q2879: Byltan Essence (9258) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q2879: Samha Essence (9257) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q2879: Imbel Essence (9256) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q2879: Lahassa Essence (9255) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q2879 The Stave of Equinex: helper item 9258 Byltan Essence has no dropping creature near the guide coordinates; helper item 9257 Samha Essence has no dropping creature near the guide coordinates; helper item 9256 Imbel Essence has no dropping creature near the guide coordinates; helper item 9255 Lahassa Essence has no dropping creature near the guide coordinates; item 9306 Stave of Equinex has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2879)) &amp;&amp; (IsQuestCompleted(2879)))">
 			<TurnIn QuestName="The Stave of Equinex" QuestId="2879" TurnInName="Equinex Monolith" TurnInId="144063" TurnInType="Object" X="-2976.94" Y="2743.2" Z="53.0054" />
 		</If>

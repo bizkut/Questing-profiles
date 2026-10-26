@@ -183,6 +183,18 @@
 			<PickUp QuestName="The Booterang: A Cure For The Common Worthless Peon" QuestId="11055" GiverName="Chief Overseer Mudlump" GiverId="23291" X="-5105.28" Y="548.874" Z="85.7276" />
 		</If>
 		<Objective QuestName="The Not-So-Friendly Skies..." QuestId="11035" Type="CollectItem" ItemId="32509" CollectCount="10" />
+		<If Condition="HasQuest(11020) &amp;&amp; !IsQuestCompleted(11020) &amp;&amp; GetItemCount(32502) &lt; 12">
+			<CustomBehavior File="CollectThings" QuestId="11020" CollectItemId="32502" CollectItemCount="12" HuntingGroundRadius="120" MobId="21408" MobId2="21462" MobId3="21864" MobId4="21878" MobId5="21879" MobId6="21901" X="-3623.23" Y="867.567" Z="35.9929">
+				<Hotspot X="-3623.23" Y="867.567" Z="35.9929" />
+				<Hotspot X="-3584.69" Y="852.832" Z="19.2115" />
+				<Hotspot X="-3547.47" Y="837.853" Z="3.9385" />
+				<Hotspot X="-3555.5" Y="886.809" Z="14.7985" />
+				<Hotspot X="-3513.1" Y="921.716" Z="-23.0115" />
+				<Hotspot X="-3493.37" Y="878.273" Z="-30.1073" />
+				<Hotspot X="-3632.51" Y="797.419" Z="10.084" />
+				<Hotspot X="-3659.28" Y="904.588" Z="51.5739" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Netherdust Pollen" QuestId="11017" Type="CollectItem" ItemId="32468" CollectCount="40" />
 		<Objective QuestName="Nethercite Ore" QuestId="11018" Type="CollectItem" ItemId="32464" CollectCount="40" />
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11075) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
@@ -197,7 +209,7 @@
 		<Objective QuestName="Netherwing Crystals" QuestId="11015" Type="CollectItem" ItemId="32427" CollectCount="30" />
 		<TurnIn QuestName="Dragons are the Least of Our Problems" QuestId="11077" TurnInName="Dragonmaw Foreman" TurnInId="23376" X="-5129.35" Y="681.345" Z="40.0699" />
 		<TurnIn QuestName="Picking Up The Pieces..." QuestId="11076" TurnInName="Mistress of the Mines" TurnInId="23149" X="-5254.18" Y="628.473" Z="48.9907" />
-		<!-- REVIEW Q11020 A Slow Death: collect 23209 Dragonmaw Peon Kill Credit x12: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11020 A Slow Death: objective 23209 Dragonmaw Peon Kill Credit x12: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11020)) &amp;&amp; (IsQuestCompleted(11020)))">
 			<TurnIn QuestName="A Slow Death" QuestId="11020" TurnInName="Yarzill the Merc" TurnInId="23141" X="-5117.53" Y="593.779" Z="85.1407" />
 		</If>

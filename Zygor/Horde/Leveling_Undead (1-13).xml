@@ -804,6 +804,11 @@
 		<Objective QuestName="Scavenging Deathknell" QuestId="3902" Type="CollectItem" ItemId="11127" CollectCount="6" />
 		<Objective QuestName="Night Web's Hollow" QuestId="380" Type="KillMob" MobId="1504" KillCount="8" />
 		<Objective QuestName="Night Web's Hollow" QuestId="380" Type="KillMob" MobId="1505" KillCount="5" />
+		<If Condition="HasQuest(6395) &amp;&amp; !IsQuestCompleted(6395) &amp;&amp; GetItemCount(16333) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="6395" CollectItemId="16333" CollectItemCount="1" HuntingGroundRadius="120" MobId="1919" X="1982.9" Y="1376.01" Z="63.0515">
+				<Hotspot X="1982.9" Y="1376.01" Z="63.0515" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Marla's Last Wish" QuestId="6395" Type="UseObject" ObjectId="178090" UseCount="1" />
 		<TurnIn QuestName="Scavenging Deathknell" QuestId="3902" TurnInName="Deathguard Saltain" TurnInId="1740" X="1861.17" Y="1605.02" Z="95.0318" />
 		<TurnIn QuestName="Night Web's Hollow" QuestId="380" TurnInName="Executor Arren" TurnInId="1570" X="1848.82" Y="1580.47" Z="94.7451" />

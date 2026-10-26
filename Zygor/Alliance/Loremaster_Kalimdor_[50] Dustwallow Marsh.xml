@@ -699,6 +699,15 @@
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11143)">
 			<PickUp QuestName="Arms of the Grimtotems" QuestId="11148" GiverName="Captain Darill" GiverId="23568" X="-2894.49" Y="-3422.32" Z="44.2113" />
 		</If>
+		<If Condition="HasQuest(11144) &amp;&amp; !IsQuestCompleted(11144) &amp;&amp; GetItemCount(33050) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="11144" CollectItemId="33050" CollectItemCount="4" HuntingGroundRadius="120" MobId="23714" X="-2515.08" Y="-3190.14" Z="33.0079">
+				<Hotspot X="-2515.08" Y="-3190.14" Z="33.0079" />
+				<Hotspot X="-2468.22" Y="-3190.52" Z="34.2757" />
+				<Hotspot X="-2418.56" Y="-3183.14" Z="38.8065" />
+				<Hotspot X="-2403.04" Y="-3128.26" Z="36.8455" />
+				<Hotspot X="-2460.21" Y="-3116.33" Z="34.9337" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Arms of the Grimtotems" QuestId="11148" Type="CollectItem" ItemId="33071" CollectCount="7" />
 		<!-- REVIEW Q11144 Confirming the Suspicion: item 33051 Grimtotem Battle Plan has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11144)) &amp;&amp; (IsQuestCompleted(11144)))">

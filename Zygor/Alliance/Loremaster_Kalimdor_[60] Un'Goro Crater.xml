@@ -375,6 +375,7 @@
 		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(4512)">
 			<PickUp QuestName="A Little Slime Goes a Long Way" QuestId="4513" GiverName="Laris Geardawdle" GiverId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
 		</If>
+		<!-- Q4513: Empty Pure Sample Jar (11953) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 47)">
 			<PickUp QuestName="Assisting Arch Druid Staghelm" QuestId="3763" GiverName="Innkeeper Saelienne" GiverId="6735" X="10127.9" Y="2224.79" Z="1328.81" />
 		</If>
@@ -416,6 +417,8 @@
 		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(4291)">
 			<PickUp QuestName="The Bait for Lar'korwi" QuestId="4292" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
+		<!-- Q4292: Preserved Threshadon Meat (11569) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q4292: Preserved Pheromone Mixture (11570) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 48)">
 			<PickUp QuestName="Chasing A-Me 01" QuestId="4243" GiverName="Karna Remtravel" GiverId="9618" X="-6298.29" Y="-1182.65" Z="-269.101" />
 		</If>
@@ -509,7 +512,7 @@
 		</If>
 		<Objective QuestName="Expedition Salvation" QuestId="3881" Type="CollectItem" ItemId="11113" CollectCount="1" />
 		<TurnIn QuestName="The Apes of Un'Goro" QuestId="4289" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
-		<!-- REVIEW Q4292 The Bait for Lar'korwi: item 11510 Lar'korwi's Head has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q4292 The Bait for Lar'korwi: helper item 11569 Preserved Threshadon Meat has no dropping creature near the guide coordinates; helper item 11570 Preserved Pheromone Mixture has no dropping creature near the guide coordinates; item 11510 Lar'korwi's Head has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4292)) &amp;&amp; (IsQuestCompleted(4292)))">
 			<TurnIn QuestName="The Bait for Lar'korwi" QuestId="4292" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
@@ -556,6 +559,18 @@
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(4284)">
 			<PickUp QuestName="The Western Pylon" QuestId="4288" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
+		<If Condition="HasQuest(3785) &amp;&amp; !IsQuestCompleted(3785) &amp;&amp; GetItemCount(11018) &lt; 30">
+			<CustomBehavior File="CollectThings" QuestId="3785" CollectItemId="11018" CollectItemCount="30" HuntingGroundRadius="120" MobId="6498" MobId2="6501" MobId3="6502" MobId4="6503" MobId5="6504" MobId6="6505" X="-7414.67" Y="-1020.45" Z="-272.097">
+				<Hotspot X="-7414.67" Y="-1020.45" Z="-272.097" />
+				<Hotspot X="-7344.74" Y="-1032.06" Z="-271.858" />
+				<Hotspot X="-7351.23" Y="-947.729" Z="-271.455" />
+				<Hotspot X="-7420.49" Y="-918.51" Z="-268.919" />
+				<Hotspot X="-7444.46" Y="-879.391" Z="-264.649" />
+				<Hotspot X="-7482.27" Y="-916.145" Z="-272.201" />
+				<Hotspot X="-7499.54" Y="-954.384" Z="-271.939" />
+				<Hotspot X="-7482.42" Y="-1066.68" Z="-272.733" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q4285 The Northern Pylon: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4285)) &amp;&amp; (IsQuestCompleted(4285)))">
 			<TurnIn QuestName="The Northern Pylon" QuestId="4285" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
@@ -599,7 +614,8 @@
 		</If>
 		<TurnIn QuestName="Trouble in Winterspring!" QuestId="6603" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		<TurnIn QuestName="A Visit to Gregan" QuestId="4142" TurnInName="Gregan Brewspewer" TurnInId="7775" X="-3551.3" Y="2305.97" Z="62.8218" />
-		<!-- REVIEW Q3909 The Videre Elixir: item 11243 Videre Elixir has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q3909: Evoroot (11242) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q3909 The Videre Elixir: item 11243 Videre Elixir has no drop or chest near the guide coordinates; helper item 11242 Evoroot has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(3909)) &amp;&amp; (IsQuestCompleted(3909)))">
 			<TurnIn QuestName="The Videre Elixir" QuestId="3909" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		</If>
@@ -635,7 +651,21 @@
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(4084)">
 			<PickUp QuestName="Aquementas" QuestId="4005" GiverName="Eridan Bluewind" GiverId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
 		</If>
-		<!-- REVIEW Q4005 Aquementas: item 11522 Silver Totem of Aquementas has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q4005: Book of Aquor (11169) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(4005) &amp;&amp; !IsQuestCompleted(4005) &amp;&amp; GetItemCount(11172) &lt; 11">
+			<CustomBehavior File="CollectThings" QuestId="4005" CollectItemId="11172" CollectItemCount="11" HuntingGroundRadius="120" MobId="8956" MobId2="8958" MobId3="8959" MobId4="8960" MobId5="14339" MobId6="14344" X="4042.79" Y="-1314.79" Z="277.265">
+				<Hotspot X="4042.79" Y="-1314.79" Z="277.265" />
+				<Hotspot X="4061.63" Y="-1250.02" Z="278.75" />
+				<Hotspot X="4079.03" Y="-1199.05" Z="287.125" />
+				<Hotspot X="3992.23" Y="-1211.5" Z="263.642" />
+				<Hotspot X="3950.64" Y="-1249.67" Z="237.747" />
+				<Hotspot X="3944.19" Y="-1180.12" Z="245.881" />
+				<Hotspot X="3985.55" Y="-1368.59" Z="245.514" />
+				<Hotspot X="3937.82" Y="-1417.09" Z="233.15" />
+			</CustomBehavior>
+		</If>
+		<!-- Q4005: Irontree Heart (11173) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q4005 Aquementas: helper item 11169 Book of Aquor has no dropping creature near the guide coordinates; helper item 11173 Irontree Heart has no dropping creature near the guide coordinates; item 11522 Silver Totem of Aquementas has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4005)) &amp;&amp; (IsQuestCompleted(4005)))">
 			<TurnIn QuestName="Aquementas" QuestId="4005" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
@@ -666,14 +696,15 @@
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3781)">
 			<PickUp QuestName="Morrowgrain Research" QuestId="3785" GiverName="Mathrengyl Bearwalker" GiverId="4217" X="10179" Y="2563.98" Z="1340.13" />
 		</If>
-		<!-- REVIEW Q3785 Morrowgrain Research: item 11040 Morrowgrain has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q3785: Un'Goro Soil (11018) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q3785 Morrowgrain Research: helper item 11018 Un'Goro Soil has no dropping creature near the guide coordinates; item 11040 Morrowgrain has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(3785)) &amp;&amp; (IsQuestCompleted(3785)))">
 			<TurnIn QuestName="Morrowgrain Research" QuestId="3785" TurnInName="Mathrengyl Bearwalker" TurnInId="4217" X="10179" Y="2563.98" Z="1340.13" />
 		</If>
 		<If Condition="((HasQuest(3785)) &amp;&amp; (!IsQuestCompleted(3785)))">
 			<CustomBehavior File="AbandonQuest" QuestId="3785" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q4513 A Little Slime Goes a Long Way: item 11954 Filled Pure Sample Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q4513 A Little Slime Goes a Long Way: helper item 11953 Empty Pure Sample Jar has no dropping creature near the guide coordinates; item 11954 Filled Pure Sample Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4513)) &amp;&amp; (IsQuestCompleted(4513)))">
 			<TurnIn QuestName="A Little Slime Goes a Long Way" QuestId="4513" TurnInName="Laris Geardawdle" TurnInId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
 		</If>

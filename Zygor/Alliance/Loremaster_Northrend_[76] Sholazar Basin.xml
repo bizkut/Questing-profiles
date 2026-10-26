@@ -1086,6 +1086,7 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12577)">
 			<PickUp QuestName="The Angry Gorloc" QuestId="12578" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
+		<!-- Q12578: Moodle's Stress Ball (38624) is needed but no creature near the guide coordinates drops it -->
 		<!-- SKIP turn-in Q12578 The Angry Gorloc: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12578)) &amp;&amp; (!IsQuestCompleted(12578)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12578" Type="Incomplete" />

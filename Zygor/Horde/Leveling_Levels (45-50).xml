@@ -1089,6 +1089,18 @@
 		<If Condition="(Me.Level &gt;= 42)">
 			<PickUp QuestName="Rin'ji is Trapped!" QuestId="2742" GiverName="Rin'ji" GiverId="7780" X="262.982" Y="-2758.03" Z="122.636" />
 		</If>
+		<If Condition="HasQuest(2932) &amp;&amp; !IsQuestCompleted(2932) &amp;&amp; GetItemCount(9320) &lt; 20">
+			<CustomBehavior File="CollectThings" QuestId="2932" CollectItemId="9320" CollectItemCount="20" HuntingGroundRadius="120" MobId="2649" MobId2="2650" MobId3="2651" MobId4="2652" MobId5="2653" MobId6="2654" X="-5.0468" Y="-2833.18" Z="122.393">
+				<Hotspot X="-5.0468" Y="-2833.18" Z="122.393" />
+				<Hotspot X="-45.0445" Y="-2838.35" Z="123.559" />
+				<Hotspot X="-27.8324" Y="-2795.07" Z="122.097" />
+				<Hotspot X="-70.4262" Y="-2789.35" Z="123.932" />
+				<Hotspot X="-75.3673" Y="-2748.45" Z="151.241" />
+				<Hotspot X="-23.1278" Y="-2713.82" Z="153.658" />
+				<Hotspot X="10.6359" Y="-2751.95" Z="151.172" />
+				<Hotspot X="15.9034" Y="-2792.05" Z="123.191" />
+			</CustomBehavior>
+		</If>
 		<If Condition="(Me.Level &gt;= 40)">
 			<PickUp QuestName="Venom Bottles" QuestId="2933" GiverName="Venom Bottle" GiverId="142702" GiverType="Object" X="-42.5313" Y="-2481.28" Z="119.151" />
 		</If>
@@ -1180,6 +1192,18 @@
 		<If Condition="(Me.Level &gt;= 40)">
 			<PickUp QuestName="Stranglethorn Fever" QuestId="348" GiverName="Fin Fizracket" GiverId="2486" X="-14433.2" Y="458.988" Z="15.5349" />
 		</If>
+		<If Condition="HasQuest(348) &amp;&amp; !IsQuestCompleted(348) &amp;&amp; GetItemCount(2799) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="348" CollectItemId="2799" CollectItemCount="1" HuntingGroundRadius="120" MobId="1557" MobId2="1558" MobId3="1559" MobId4="2521" MobId5="14491" X="-14058.4" Y="232.911" Z="13.4458">
+				<Hotspot X="-14058.4" Y="232.911" Z="13.4458" />
+				<Hotspot X="-14043.3" Y="185.231" Z="13.1035" />
+				<Hotspot X="-14079.9" Y="157.474" Z="14.8891" />
+				<Hotspot X="-14043.6" Y="111.891" Z="10.6574" />
+				<Hotspot X="-13997.6" Y="174.808" Z="12.3466" />
+				<Hotspot X="-13953.3" Y="140.875" Z="13.7878" />
+				<Hotspot X="-13949.6" Y="215.246" Z="22.6267" />
+				<Hotspot X="-14007.4" Y="250.055" Z="17.3661" />
+			</CustomBehavior>
+		</If>
 		<If Condition="HasItem(4098) &amp;&amp; !HasQuest(594) &amp;&amp; !IsQuestCompleted(594) &amp;&amp; (Me.Level &gt;= 42)">
 			<PickUp QuestName="Message in a Bottle" QuestId="594" GiverName="Carefully Folded Note" GiverId="4098" GiverType="Item" />
 		</If>
@@ -1256,6 +1280,18 @@
 		<Objective QuestName="Vengeance on the Northspring" QuestId="3063" Type="KillMob" MobId="5363" KillCount="4" />
 		<Objective QuestName="Vengeance on the Northspring" QuestId="3063" Type="KillMob" MobId="5364" KillCount="4" />
 		<Objective QuestName="Vengeance on the Northspring" QuestId="3063" Type="KillMob" MobId="5366" KillCount="4" />
+		<If Condition="HasQuest(3063) &amp;&amp; !IsQuestCompleted(3063) &amp;&amp; GetItemCount(9530) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="3063" CollectItemId="9530" CollectItemCount="1" HuntingGroundRadius="120" MobId="5362" MobId2="5363" MobId3="5364" MobId4="5366" X="-2919.32" Y="2553.76" Z="49.8155">
+				<Hotspot X="-2919.32" Y="2553.76" Z="49.8155" />
+				<Hotspot X="-2947.04" Y="2517.57" Z="36.6045" />
+				<Hotspot X="-2950.55" Y="2636.36" Z="57.2984" />
+				<Hotspot X="-2919.9" Y="2687.7" Z="67.2096" />
+				<Hotspot X="-2885.58" Y="2722.42" Z="74.0792" />
+				<Hotspot X="-2836.57" Y="2699.75" Z="72.3785" />
+				<Hotspot X="-2874.77" Y="2652.08" Z="73.2393" />
+				<Hotspot X="-2971.34" Y="2721.16" Z="52.4896" />
+			</CustomBehavior>
+		</If>
 		<TurnIn QuestName="Improved Quality" QuestId="7734" TurnInName="Jangdor Swiftstrider" TurnInId="7854" X="-4354.65" Y="268.764" Z="26.4007" />
 		<!-- REVIEW Q3062 Dark Heart: item 9528 Edana's Dark Heart has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(3062)) &amp;&amp; (IsQuestCompleted(3062)))">

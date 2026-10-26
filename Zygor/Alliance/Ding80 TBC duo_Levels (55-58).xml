@@ -634,6 +634,7 @@
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3528)">
 			<PickUp QuestName="The Lost Tablets of Mosh'aru" QuestId="5065" GiverName="Prospector Ironboot" GiverId="10460" X="-6980.38" Y="-4834.05" Z="7.8512" />
 		</If>
+		<!-- Q4513: Empty Pure Sample Jar (11953) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 47)">
 			<PickUp QuestName="The Apes of Un'Goro" QuestId="4289" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>

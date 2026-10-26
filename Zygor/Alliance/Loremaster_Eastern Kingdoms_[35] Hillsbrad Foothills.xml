@@ -369,11 +369,18 @@
 		<If Condition="(Me.Level &gt;= 28)">
 			<PickUp QuestName="MacKreel's Moonshine" QuestId="647" GiverName="Foggy MacKreel" GiverId="2696" X="-2356.74" Y="-2423.36" Z="74.8731" />
 		</If>
+		<!-- Q637: Waterlogged Envelope (4433) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="HasItem(4433) &amp;&amp; !HasQuest(637) &amp;&amp; !IsQuestCompleted(637) &amp;&amp; (Me.Level &gt;= 25)">
 			<PickUp QuestName="Sully Balloo's Letter" QuestId="637" GiverName="Waterlogged Envelope" GiverId="4433" GiverType="Item" />
 		</If>
 		<TurnIn QuestName="MacKreel's Moonshine" QuestId="647" TurnInName="Brewmeister Bilger" TurnInId="2705" X="-853.016" Y="-601.581" Z="4.5201" />
-		<TurnIn QuestName="Sully Balloo's Letter" QuestId="637" TurnInName="Sara Balloo" TurnInId="2695" X="-4924.32" Y="-1215.65" Z="502.594" />
+		<!-- REVIEW Q637 Sully Balloo's Letter: helper item 4433 Waterlogged Envelope has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(637)) &amp;&amp; (IsQuestCompleted(637)))">
+			<TurnIn QuestName="Sully Balloo's Letter" QuestId="637" TurnInName="Sara Balloo" TurnInId="2695" X="-4924.32" Y="-1215.65" Z="502.594" />
+		</If>
+		<If Condition="((HasQuest(637)) &amp;&amp; (!IsQuestCompleted(637)))">
+			<CustomBehavior File="AbandonQuest" QuestId="637" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(637)">
 			<PickUp QuestName="Sara Balloo's Plea" QuestId="683" GiverName="Sara Balloo" GiverId="2695" X="-4924.32" Y="-1215.65" Z="502.594" />
 		</If>

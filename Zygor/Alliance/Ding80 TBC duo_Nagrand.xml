@@ -776,6 +776,18 @@
 		<Objective QuestName="The Twin Clefts of Nagrand" QuestId="9922" Type="KillMob" MobId="17136" KillCount="10" />
 		<Objective QuestName="The Twin Clefts of Nagrand" QuestId="9922" Type="KillMob" MobId="17137" KillCount="10" />
 		<Objective QuestName="Obsidian Warbeads" QuestId="9893" Type="CollectItem" ItemId="25433" CollectCount="10" />
+		<If Condition="HasQuest(9924) &amp;&amp; !IsQuestCompleted(9924) &amp;&amp; GetItemCount(25509) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="9924" CollectItemId="25509" CollectItemCount="1" HuntingGroundRadius="120" MobId="17136" MobId2="17137" X="-976.023" Y="8127.27" Z="-94.3549">
+				<Hotspot X="-976.023" Y="8127.27" Z="-94.3549" />
+				<Hotspot X="-1030.45" Y="8106.47" Z="-92.8502" />
+				<Hotspot X="-1037.62" Y="8149.93" Z="-89.8631" />
+				<Hotspot X="-1089.78" Y="8117.36" Z="-87.9527" />
+				<Hotspot X="-1103.03" Y="8047.95" Z="-84.9493" />
+				<Hotspot X="-1143.88" Y="8051.77" Z="-83.5101" />
+				<Hotspot X="-1160.49" Y="8011.36" Z="-79.7283" />
+				<Hotspot X="-1034.09" Y="8057.95" Z="-92.3334" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Windroc Mastery" QuestId="9856" Type="CollectItem" ItemId="24513" CollectCount="1" />
 		<Objective QuestName="Vision of the Dead" QuestId="10252" Type="CollectItem" ItemId="28667" CollectCount="1" />
 		<Objective QuestName="The Spirit Polluted" QuestId="9810" Type="KillMob" MobId="17155" KillCount="8" />
@@ -867,7 +879,7 @@
 		<If Condition="((HasQuest(9879)) &amp;&amp; (!IsQuestCompleted(9879)))">
 			<CustomBehavior File="AbandonQuest" QuestId="9879" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q9924 Corki's Gone Missing Again!: collect 20812 Corki x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q9924 Corki's Gone Missing Again!: goal 20812 Corki x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9924)) &amp;&amp; (IsQuestCompleted(9924)))">
 			<TurnIn QuestName="Corki's Gone Missing Again!" QuestId="9924" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>

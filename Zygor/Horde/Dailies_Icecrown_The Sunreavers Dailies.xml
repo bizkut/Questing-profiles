@@ -71,14 +71,11 @@
 		</Objective>
 		<Objective Type="KillMob" MobId="34716" KillCount="4">
 			<Hotspots>
-				<Hotspot X="8493.42" Y="1419.66" Z="642.722" />
 				<Hotspot X="8547.06" Y="1382.13" Z="642.262" />
+				<Hotspot X="8493.42" Y="1419.66" Z="642.722" />
 				<Hotspot X="8532.68" Y="1492.51" Z="642.117" />
 				<Hotspot X="8574.84" Y="1508" Z="642.916" />
 				<Hotspot X="8550.08" Y="1543.92" Z="642.182" />
-				<Hotspot X="8545.87" Y="1591.2" Z="642.182" />
-				<Hotspot X="8515.85" Y="1626.35" Z="642.677" />
-				<Hotspot X="8606.21" Y="1604.1" Z="642.851" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -117,8 +114,19 @@
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="What Do You Feed a Yeti, Anyway?" QuestId="14145" GiverName="Tylos Dawnrunner" GiverId="34914" X="8422.19" Y="673.261" Z="550.554" />
 		</If>
-		<Objective QuestName="You've Really Done It This Time, Kul" QuestId="14142" Type="KillMob" MobId="34956" KillCount="1" />
-		<Objective QuestName="You've Really Done It This Time, Kul" QuestId="14142" Type="KillMob" MobId="34716" KillCount="4" />
+		<If Condition="HasQuest(14142) &amp;&amp; !IsQuestCompleted(14142) &amp;&amp; GetItemCount(46895) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="14142" CollectItemId="46895" CollectItemCount="1" HuntingGroundRadius="120" MobId="34728" MobId2="34734" X="8537.59" Y="1435.61" Z="638.323">
+				<Hotspot X="8537.59" Y="1435.61" Z="638.323" />
+				<Hotspot X="8502.65" Y="1409.11" Z="642.173" />
+				<Hotspot X="8477.6" Y="1371.89" Z="632.699" />
+				<Hotspot X="8528.71" Y="1359.24" Z="639.741" />
+				<Hotspot X="8550.54" Y="1392.97" Z="642.559" />
+				<Hotspot X="8496.78" Y="1459.57" Z="663.506" />
+				<Hotspot X="8545.37" Y="1489.48" Z="642.175" />
+				<Hotspot X="8530.87" Y="1557.36" Z="643.617" />
+			</CustomBehavior>
+		</If>
+		<!-- Q14145: Fresh Chum (47036) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Rescue at Sea" QuestId="14136" Type="KillMob" MobId="34947" KillCount="8" />
 		<Objective QuestName="Rescue at Sea" QuestId="14136" Type="KillMob" MobId="34907" KillCount="3" />
 		<Objective QuestName="A Leg Up" QuestId="14143" Type="CollectItem" ItemId="46859" CollectCount="10" />
@@ -138,6 +146,8 @@
 		<If Condition="((HasQuest(14144)) &amp;&amp; (!IsQuestCompleted(14144)))">
 			<CustomBehavior File="AbandonQuest" QuestId="14144" Type="Incomplete" />
 		</If>
+		<Objective QuestName="You've Really Done It This Time, Kul" QuestId="14142" Type="KillMob" MobId="34956" KillCount="1" />
+		<Objective QuestName="You've Really Done It This Time, Kul" QuestId="14142" Type="KillMob" MobId="34716" KillCount="4" />
 		<TurnIn QuestName="You've Really Done It This Time, Kul" QuestId="14142" TurnInName="Girana the Blooded" TurnInId="34771" X="8420.01" Y="674.24" Z="550.462" />
 		<!-- REVIEW Q14092 Breakfast Of Champions: item 46889 Jormungar Egg Sac has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14092)) &amp;&amp; (IsQuestCompleted(14092)))">
@@ -153,7 +163,7 @@
 		<If Condition="((HasQuest(14141)) &amp;&amp; (!IsQuestCompleted(14141)))">
 			<CustomBehavior File="AbandonQuest" QuestId="14141" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q14145 What Do You Feed a Yeti, Anyway?: item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q14145 What Do You Feed a Yeti, Anyway?: helper item 47036 Fresh Chum has no dropping creature near the guide coordinates; item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14145)) &amp;&amp; (IsQuestCompleted(14145)))">
 			<TurnIn QuestName="What Do You Feed a Yeti, Anyway?" QuestId="14145" TurnInName="Tylos Dawnrunner" TurnInId="34914" X="8422.19" Y="673.261" Z="550.554" />
 		</If>

@@ -954,6 +954,42 @@
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11313)">
 			<PickUp QuestName="Wild Vines" QuestId="11315" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
+		<If Condition="HasQuest(11350) &amp;&amp; !IsQuestCompleted(11350) &amp;&amp; GetItemCount(33778) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11350" CollectItemId="33778" CollectItemCount="1" HuntingGroundRadius="120" MobId="23796" MobId2="24030" X="2081.38" Y="-5509.67" Z="228.502">
+				<Hotspot X="2081.38" Y="-5509.67" Z="228.502" />
+				<Hotspot X="2153.36" Y="-5463.9" Z="240.7" />
+				<Hotspot X="2106.86" Y="-5423.24" Z="238.197" />
+				<Hotspot X="1978.11" Y="-5310.51" Z="201.038" />
+				<Hotspot X="1931.35" Y="-5312.67" Z="201.218" />
+				<Hotspot X="1941.16" Y="-5660.21" Z="213.285" />
+				<Hotspot X="2006.77" Y="-5728.65" Z="220.446" />
+				<Hotspot X="2179.21" Y="-5609.59" Z="227.452" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(11350) &amp;&amp; !IsQuestCompleted(11350) &amp;&amp; GetItemCount(33779) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11350" CollectItemId="33779" CollectItemCount="1" HuntingGroundRadius="120" MobId="23796" MobId2="24030" X="2081.38" Y="-5509.67" Z="228.502">
+				<Hotspot X="2081.38" Y="-5509.67" Z="228.502" />
+				<Hotspot X="2153.36" Y="-5463.9" Z="240.7" />
+				<Hotspot X="2106.86" Y="-5423.24" Z="238.197" />
+				<Hotspot X="1978.11" Y="-5310.51" Z="201.038" />
+				<Hotspot X="1931.35" Y="-5312.67" Z="201.218" />
+				<Hotspot X="1941.16" Y="-5660.21" Z="213.285" />
+				<Hotspot X="2006.77" Y="-5728.65" Z="220.446" />
+				<Hotspot X="2179.21" Y="-5609.59" Z="227.452" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(11350) &amp;&amp; !IsQuestCompleted(11350) &amp;&amp; GetItemCount(33780) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11350" CollectItemId="33780" CollectItemCount="1" HuntingGroundRadius="120" MobId="23796" MobId2="24030" X="2081.38" Y="-5509.67" Z="228.502">
+				<Hotspot X="2081.38" Y="-5509.67" Z="228.502" />
+				<Hotspot X="2153.36" Y="-5463.9" Z="240.7" />
+				<Hotspot X="2106.86" Y="-5423.24" Z="238.197" />
+				<Hotspot X="1978.11" Y="-5310.51" Z="201.038" />
+				<Hotspot X="1931.35" Y="-5312.67" Z="201.218" />
+				<Hotspot X="1941.16" Y="-5660.21" Z="213.285" />
+				<Hotspot X="2006.77" Y="-5728.65" Z="220.446" />
+				<Hotspot X="2179.21" Y="-5609.59" Z="227.452" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11281 Mimicking Nature's Call: objective 24173 Frostgore x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11281)) &amp;&amp; (IsQuestCompleted(11281)))">
 			<TurnIn QuestName="Mimicking Nature's Call" QuestId="11281" TurnInName="Nokoma Snowseer" TurnInId="24123" X="2633.78" Y="-4379.52" Z="283.846" />
@@ -1219,9 +1255,21 @@
 			<PickUp QuestName="The Slumbering King" QuestId="11453" GiverName="Mezhen's Writings" GiverId="34091" GiverType="Item" />
 		</If>
 		<Objective QuestName="The Walking Dead" QuestId="11268" Type="KillMob" MobId="24013" KillCount="10" />
+		<If Condition="HasQuest(11433) &amp;&amp; !IsQuestCompleted(11433) &amp;&amp; GetItemCount(34083) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="11433" CollectItemId="34083" CollectItemCount="5" HuntingGroundRadius="120" MobId="24014" X="2722.93" Y="-3404.28" Z="179.794">
+				<Hotspot X="2722.93" Y="-3404.28" Z="179.794" />
+				<Hotspot X="2716.1" Y="-3447.36" Z="161.28" />
+				<Hotspot X="2687.97" Y="-3501.81" Z="161.464" />
+				<Hotspot X="2757.94" Y="-3524.41" Z="166.237" />
+				<Hotspot X="2800.49" Y="-3556.2" Z="161.469" />
+				<Hotspot X="2809.69" Y="-3622.02" Z="161.497" />
+				<Hotspot X="2582.45" Y="-3600.96" Z="161.466" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="The Walking Dead" QuestId="11268" Type="KillMob" MobId="23992" KillCount="2" />
+		<CustomBehavior File="UseItemOn" QuestId="11433" ItemId="34083" MobId="24669" NumOfTimes="5" Range="5" CollectionDistance="200" X="2632.99" Y="-3512.78" Z="162.695" />
 		<Objective QuestName="The Walking Dead" QuestId="11268" Type="KillMob" MobId="24073" KillCount="4" />
-		<!-- REVIEW Q11433 Sleeping Giants: collect 24669 Dormant Vrykul x5: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11433 Sleeping Giants: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11433)) &amp;&amp; (IsQuestCompleted(11433)))">
 			<TurnIn QuestName="Sleeping Giants" QuestId="11433" TurnInName="Ahota Whitefrost" TurnInId="24127" X="2671.59" Y="-4322.75" Z="290.908" />
 		</If>

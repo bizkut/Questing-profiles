@@ -1545,6 +1545,8 @@
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(8460)">
 			<PickUp QuestName="Speak to Nafien" QuestId="8462" GiverName="Grazle" GiverId="11554" X="3874.76" Y="-1286.59" Z="220.49" />
 		</If>
+		<!-- Q4512: Empty Cursed Ooze Jar (11914) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q4512: Empty Tainted Ooze Jar (11948) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Forces of Jaedenar" QuestId="5155" Type="KillMob" MobId="7125" KillCount="4" />
 		<Objective QuestName="Forces of Jaedenar" QuestId="5155" Type="KillMob" MobId="7113" KillCount="4" />
 		<Objective QuestName="Forces of Jaedenar" QuestId="5155" Type="KillMob" MobId="7115" KillCount="6" />
@@ -1610,6 +1612,7 @@
 		</If>
 		<TurnIn QuestName="Jonespyre's Request" QuestId="3788" TurnInName="Quintis Jonespyre" TurnInId="7879" X="-4395.55" Y="3186.61" Z="58.6435" />
 		<TurnIn QuestName="A Visit to Gregan" QuestId="4142" TurnInName="Gregan Brewspewer" TurnInId="7775" X="-3551.3" Y="2305.97" Z="62.8218" />
+		<!-- Q3909: Bait (11141) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="The Videre Elixir" QuestId="4041" Type="CollectItem" ItemId="11242" CollectCount="1" />
 		<Objective QuestName="Flute of Xavaric" QuestId="939" Type="CollectItem" ItemId="11674" CollectCount="5" />
 		<TurnIn QuestName="Flute of Xavaric" QuestId="939" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />

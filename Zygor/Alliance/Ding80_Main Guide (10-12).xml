@@ -405,6 +405,13 @@
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior))">
+			<If Condition="HasQuest(1667) &amp;&amp; !IsQuestCompleted(1667) &amp;&amp; GetItemCount(6783) &lt; 1">
+				<CustomBehavior File="CollectThings" QuestId="1667" CollectItemId="6783" CollectItemCount="1" HuntingGroundRadius="120" MobId="6093" X="-9768.74" Y="-1566.18" Z="41.7361">
+					<Hotspot X="-9768.74" Y="-1566.18" Z="41.7361" />
+				</CustomBehavior>
+			</If>
+		</If>
+		<If Condition="((Me.Class == WoWClass.Warrior))">
 			<Objective QuestName="Dead-tooth Jack" QuestId="1667" Type="CollectItem" ItemId="6782" CollectCount="1" />
 		</If>
 		<Objective QuestName="Protect the Frontier" QuestId="52" Type="KillMob" MobId="118" KillCount="8" />

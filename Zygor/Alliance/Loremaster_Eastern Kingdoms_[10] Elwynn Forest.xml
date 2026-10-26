@@ -510,6 +510,11 @@
 		</If>
 		<Objective QuestName="Princess Must Die!" QuestId="88" Type="CollectItem" ItemId="1006" CollectCount="1" />
 		<Objective QuestName="Red Linen Goods" QuestId="83" Type="CollectItem" ItemId="1019" CollectCount="6" />
+		<If Condition="HasQuest(184) &amp;&amp; !IsQuestCompleted(184) &amp;&amp; GetItemCount(1972) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="184" CollectItemId="1972" CollectItemCount="1" HuntingGroundRadius="120" MobId="116" MobId2="474" MobId3="880" MobId4="6846" MobId5="6927" X="-9772.73" Y="-1560.21" Z="41.749">
+				<Hotspot X="-9772.73" Y="-1560.21" Z="41.749" />
+			</CustomBehavior>
+		</If>
 		<If Condition="HasItem(1972) &amp;&amp; !HasQuest(184) &amp;&amp; !IsQuestCompleted(184) &amp;&amp; (Me.Level &gt;= 8)">
 			<PickUp QuestName="Furlbrow's Deed" QuestId="184" GiverName="Westfall Deed" GiverId="1972" GiverType="Item" />
 		</If>
@@ -548,6 +553,18 @@
 		</If>
 		<Objective QuestName='Wanted:  "Hogger"' QuestId="176" Type="CollectItem" ItemId="1931" CollectCount="1" />
 		<Objective QuestName="Riverpaw Gnoll Bounty" QuestId="11" Type="CollectItem" ItemId="782" CollectCount="8" />
+		<If Condition="HasQuest(123) &amp;&amp; !IsQuestCompleted(123) &amp;&amp; GetItemCount(1307) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="123" CollectItemId="1307" CollectItemCount="1" HuntingGroundRadius="120" MobId="97" MobId2="100" MobId3="448" MobId4="478" X="-9945.14" Y="617.188" Z="37.2311">
+				<Hotspot X="-9945.14" Y="617.188" Z="37.2311" />
+				<Hotspot X="-9931.62" Y="578.899" Z="37.277" />
+				<Hotspot X="-9983.9" Y="575.295" Z="37.7614" />
+				<Hotspot X="-10027.2" Y="608.88" Z="38.7172" />
+				<Hotspot X="-10062.3" Y="630.716" Z="39.4488" />
+				<Hotspot X="-10002" Y="657.114" Z="36.4221" />
+				<Hotspot X="-9954.26" Y="663.252" Z="34.0295" />
+				<Hotspot X="-9847.56" Y="587.786" Z="40.311" />
+			</CustomBehavior>
+		</If>
 		<If Condition="HasItem(1307) &amp;&amp; !HasQuest(123) &amp;&amp; !IsQuestCompleted(123) &amp;&amp; (Me.Level &gt;= 7)">
 			<PickUp QuestName="The Collector" QuestId="123" GiverName="Gold Pickup Schedule" GiverId="1307" GiverType="Item" />
 		</If>

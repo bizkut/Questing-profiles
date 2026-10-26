@@ -723,6 +723,18 @@
 		</If>
 		<TurnIn QuestName="A Daughter's Love" QuestId="231" TurnInName="A Weathered Grave" TurnInId="61" TurnInType="Object" X="-10240.1" Y="354.663" Z="50.3859" />
 		<Objective QuestName="The Night Watch" QuestId="58" Type="KillMob" MobId="604" KillCount="20" />
+		<If Condition="HasQuest(331) &amp;&amp; !IsQuestCompleted(331) &amp;&amp; GetItemCount(2794) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="331" CollectItemId="2794" CollectItemCount="1" HuntingGroundRadius="120" MobId="3" MobId2="202" MobId3="205" MobId4="206" MobId5="210" MobId6="212" X="-10306.8" Y="206.455" Z="34.2484">
+				<Hotspot X="-10306.8" Y="206.455" Z="34.2484" />
+				<Hotspot X="-10330.2" Y="243.43" Z="34.3995" />
+				<Hotspot X="-10359.4" Y="202.731" Z="34.9291" />
+				<Hotspot X="-10335.2" Y="164.208" Z="36.0561" />
+				<Hotspot X="-10332.3" Y="122.914" Z="3.0443" />
+				<Hotspot X="-10264.6" Y="172.465" Z="0.6197" />
+				<Hotspot X="-10240.2" Y="140.189" Z="2.3998" />
+				<Hotspot X="-10250.6" Y="230.919" Z="0.831" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Ghoulish Effigy" QuestId="133" Type="CollectItem" ItemId="884" CollectCount="7" />
 		<If Condition="HasItem(2794) &amp;&amp; !HasQuest(337) &amp;&amp; !IsQuestCompleted(337) &amp;&amp; (Me.Level &gt;= 20)">
 			<PickUp QuestName="An Old History Book" QuestId="337" GiverName="An Old History Book" GiverId="2794" GiverType="Item" />

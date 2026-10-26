@@ -66,7 +66,61 @@
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(11379) &amp;&amp; !HasQuest(11379) &amp;&amp; !IsQuestCompleted(11380) &amp;&amp; !HasQuest(11380) &amp;&amp; !IsQuestCompleted(11381) &amp;&amp; !HasQuest(11381)">
 			<PickUp QuestName="Revenge is Tasty" QuestId="11377" GiverName="The Rokk" GiverId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />
 		</If>
+		<If Condition="HasQuest(11381) &amp;&amp; !IsQuestCompleted(11381) &amp;&amp; GetItemCount(27678) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="11381" CollectItemId="27678" CollectItemCount="4" HuntingGroundRadius="120" MobId="17132" MobId2="17133" MobId3="18205" MobId4="18259" X="-2578.94" Y="7762.35" Z="-37.5349">
+				<Hotspot X="-2578.94" Y="7762.35" Z="-37.5349" />
+				<Hotspot X="-2533.3" Y="7693.28" Z="-22.5229" />
+				<Hotspot X="-2596.86" Y="7879.94" Z="-53.3126" />
+				<Hotspot X="-2797.1" Y="7697.27" Z="-10.4366" />
+				<Hotspot X="-2808.93" Y="7603.67" Z="-3.3388" />
+				<Hotspot X="-2829.96" Y="7564.44" Z="-4.8165" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(11379) &amp;&amp; !IsQuestCompleted(11379) &amp;&amp; GetItemCount(31670) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="11379" CollectItemId="31670" CollectItemCount="4" HuntingGroundRadius="120" MobId="20728" MobId2="20729" MobId3="20751" MobId4="21124" MobId5="22052" X="2729.08" Y="6175" Z="-10.2139">
+				<Hotspot X="2729.08" Y="6175" Z="-10.2139" />
+				<Hotspot X="2729.02" Y="6246.72" Z="-10.1337" />
+				<Hotspot X="2625.06" Y="6238.14" Z="11.0278" />
+				<Hotspot X="2548.87" Y="6215.75" Z="14.3167" />
+				<Hotspot X="2583.49" Y="6152.88" Z="19.6487" />
+				<Hotspot X="2621.41" Y="6383.37" Z="-9.1178" />
+				<Hotspot X="2798.61" Y="6060.54" Z="-10.2741" />
+				<Hotspot X="2904.88" Y="6087.59" Z="-4.5885" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(11379) &amp;&amp; !IsQuestCompleted(11379) &amp;&amp; GetItemCount(31671) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11379" CollectItemId="31671" CollectItemCount="1" HuntingGroundRadius="120" MobId="20749" MobId2="21123" X="2174.49" Y="5149.58" Z="265.991">
+				<Hotspot X="2174.49" Y="5149.58" Z="265.991" />
+				<Hotspot X="2201.93" Y="5227.86" Z="265.917" />
+				<Hotspot X="2329.25" Y="5247.46" Z="262.349" />
+				<Hotspot X="2061.54" Y="5186.5" Z="265.128" />
+				<Hotspot X="2021.6" Y="5154.39" Z="265.558" />
+				<Hotspot X="1980.23" Y="5115.1" Z="266.479" />
+				<Hotspot X="1937.81" Y="5137.81" Z="266.243" />
+				<Hotspot X="1884.24" Y="5150.98" Z="265.558" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Manalicious" QuestId="11380" Type="CollectItem" ItemId="33849" CollectCount="15" />
+		<If Condition="HasQuest(11377) &amp;&amp; !IsQuestCompleted(11377) &amp;&amp; GetItemCount(27681) &lt; 3">
+			<CustomBehavior File="CollectThings" QuestId="11377" CollectItemId="27681" CollectItemCount="3" HuntingGroundRadius="120" MobId="18464" MobId2="18465" MobId3="23219" X="-4017.68" Y="3682.79" Z="300.721">
+				<Hotspot X="-4017.68" Y="3682.79" Z="300.721" />
+				<Hotspot X="-4052.56" Y="3587.41" Z="289.699" />
+				<Hotspot X="-4144.58" Y="3554.15" Z="319.465" />
+				<Hotspot X="-4120.2" Y="3440.34" Z="291.884" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(11377) &amp;&amp; !IsQuestCompleted(11377) &amp;&amp; GetItemCount(33838) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11377" CollectItemId="33838" CollectItemCount="1" HuntingGroundRadius="120" MobId="23051" X="-3712.47" Y="3449.82" Z="329.528">
+				<Hotspot X="-3712.47" Y="3449.82" Z="329.528" />
+				<Hotspot X="-3689.09" Y="3491.28" Z="321.928" />
+				<Hotspot X="-3671.49" Y="3402.64" Z="324.462" />
+				<Hotspot X="-3700.19" Y="3268.53" Z="332.569" />
+				<Hotspot X="-3800.04" Y="3329.87" Z="342.099" />
+				<Hotspot X="-3894.56" Y="3430.66" Z="372.471" />
+				<Hotspot X="-3691.13" Y="3638.68" Z="303.152" />
+				<Hotspot X="-3629.08" Y="3563.67" Z="295.001" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11381 Soup for the Soul: item 33850 Spiritual Soup has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11381)) &amp;&amp; (IsQuestCompleted(11381)))">
 			<TurnIn QuestName="Soup for the Soul" QuestId="11381" TurnInName="The Rokk" TurnInId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />

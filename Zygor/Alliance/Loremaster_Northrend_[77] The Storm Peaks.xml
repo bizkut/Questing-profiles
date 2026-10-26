@@ -346,18 +346,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12925" Name="Aberrations">
-		<Objective Type="UseObject" ObjectId="191840" UseCount="30">
-			<Hotspots>
-				<Hotspot X="7442.26" Y="137.062" Z="768.382" />
-				<Hotspot X="7457.48" Y="175.778" Z="768.386" />
-				<Hotspot X="7440.07" Y="214.628" Z="768.586" />
-				<Hotspot X="7458.42" Y="251.085" Z="768.815" />
-				<Hotspot X="7416.16" Y="248.413" Z="768.757" />
-				<Hotspot X="7413.99" Y="168.785" Z="768.502" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="12942" Name="Off With Their Black Wings">
 		<Objective Type="KillMob" MobId="29570" KillCount="12">
 			<Hotspots>
@@ -560,13 +548,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12874" Name="Fervor of the Frostborn">
-		<Objective Type="KillMob" MobId="30142" KillCount="1">
-			<Hotspots>
-				<Hotspot X="8392.7" Y="-1970.14" Z="1461.84" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="12975" Name="In Memoriam">
 		<Objective Type="CollectItem" ItemId="42162" CollectCount="8">
 			<CollectFrom>
@@ -693,6 +674,7 @@
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="Ore Repossession" QuestId="12830" GiverName="Tore Rumblewrench" GiverId="29430" X="6404.13" Y="-1122.33" Z="426.433" />
 		</If>
+		<!-- Q12828: U.D.E.D. (40686) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Ample Inspiration" QuestId="12828" Type="CollectItem" ItemId="40728" CollectCount="8" />
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="Only Partly Forgotten" QuestId="12831" GiverName="Injured Goblin Miner" GiverId="29434" X="6646.12" Y="-1111.91" Z="427.432" />
@@ -708,7 +690,13 @@
 		<TurnIn QuestName="Ore Repossession" QuestId="12830" TurnInName="Tore Rumblewrench" TurnInId="29430" X="6404.13" Y="-1122.33" Z="426.433" />
 		<Objective QuestName="A Delicate Touch" QuestId="12820" Type="KillMob" MobId="29618" KillCount="12" />
 		<TurnIn QuestName="A Delicate Touch" QuestId="12820" TurnInName="Ricket" TurnInId="29428" X="6152.99" Y="-1069.41" Z="402.843" />
-		<TurnIn QuestName="Ample Inspiration" QuestId="12828" TurnInName="Ricket" TurnInId="29428" X="6152.99" Y="-1069.41" Z="402.843" />
+		<!-- REVIEW Q12828 Ample Inspiration: helper item 40686 U.D.E.D. has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12828)) &amp;&amp; (IsQuestCompleted(12828)))">
+			<TurnIn QuestName="Ample Inspiration" QuestId="12828" TurnInName="Ricket" TurnInId="29428" X="6152.99" Y="-1069.41" Z="402.843" />
+		</If>
+		<If Condition="((HasQuest(12828)) &amp;&amp; (!IsQuestCompleted(12828)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12828" Type="Incomplete" />
+		</If>
 		<!-- REVIEW Q12832 Bitter Departure: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12832)) &amp;&amp; (IsQuestCompleted(12832)))">
 			<TurnIn QuestName="Bitter Departure" QuestId="12832" TurnInName="Ricket" TurnInId="29428" X="6152.99" Y="-1069.41" Z="402.843" />
@@ -775,6 +763,18 @@
 			<PickUp QuestName="Loyal Companions" QuestId="12865" GiverName="Fjorlin Frostbrow" GiverId="29732" X="6607.42" Y="-279.665" Z="985.624" />
 		</If>
 		<Objective QuestName="On Brann's Trail" QuestId="12854" Type="CollectItem" ItemId="40947" CollectCount="1" />
+		<If Condition="HasQuest(12865) &amp;&amp; !IsQuestCompleted(12865) &amp;&amp; GetItemCount(41340) &lt; 8">
+			<CustomBehavior File="CollectThings" QuestId="12865" CollectItemId="41340" CollectItemCount="8" HuntingGroundRadius="120" MobId="29469" MobId2="30445" X="7443.39" Y="-1212.04" Z="905.957">
+				<Hotspot X="7443.39" Y="-1212.04" Z="905.957" />
+				<Hotspot X="7498.02" Y="-1249.23" Z="911.602" />
+				<Hotspot X="7345.86" Y="-1209.14" Z="910.672" />
+				<Hotspot X="7292.35" Y="-1261.21" Z="908.549" />
+				<Hotspot X="7295.51" Y="-1312.46" Z="907.552" />
+				<Hotspot X="7267.56" Y="-1350.98" Z="910.214" />
+				<Hotspot X="7336.48" Y="-1382.21" Z="910.198" />
+				<Hotspot X="7376" Y="-1355.97" Z="909.919" />
+			</CustomBehavior>
+		</If>
 		<TurnIn QuestName="Leave No Goblin Behind" QuestId="12846" TurnInName="Lok'lira the Crone" TurnInId="29481" X="6931.07" Y="-1202.59" Z="808.828" />
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12846)">
 			<PickUp QuestName="The Crone's Bargain" QuestId="12841" GiverName="Lok'lira the Crone" GiverId="29481" X="6931.07" Y="-1202.59" Z="808.828" />
@@ -930,7 +930,17 @@
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="Valkyrion Must Burn" QuestId="12953" GiverName="Harpoon Crate" GiverId="192072" GiverType="Object" X="7271.79" Y="130.824" Z="784.625" />
 		</If>
-		<Objective QuestName="Aberrations" QuestId="12925" Type="UseObject" ObjectId="191840" UseCount="30" />
+		<If Condition="HasQuest(12925) &amp;&amp; !IsQuestCompleted(12925) &amp;&amp; GetItemCount(41612) &lt; 6">
+			<CustomBehavior File="CollectThings" QuestId="12925" CollectItemId="41612" CollectItemCount="6" HuntingGroundRadius="120" MobId="29569" X="7381.23" Y="88.2175" Z="767.788">
+				<Hotspot X="7381.23" Y="88.2175" Z="767.788" />
+				<Hotspot X="7341.53" Y="162.669" Z="786.237" />
+				<Hotspot X="7366.01" Y="235.436" Z="776.93" />
+				<Hotspot X="7391.17" Y="-17.3943" Z="781.595" />
+				<Hotspot X="7270.96" Y="-14.0613" Z="766.918" />
+				<Hotspot X="7221.08" Y="-8.4437" Z="773.653" />
+				<Hotspot X="7290.74" Y="-113.937" Z="770.164" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Off With Their Black Wings" QuestId="12942" Type="KillMob" MobId="29570" KillCount="12" />
 		<Objective QuestName="Ancient Relics" QuestId="12870" Type="CollectItem" ItemId="42780" CollectCount="10" />
 		<TurnIn QuestName="Ancient Relics" QuestId="12870" TurnInName="Rork Sharpchin" TurnInId="29744" X="6685.76" Y="-208.804" Z="949.89" />
@@ -948,7 +958,7 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12854)">
 			<PickUp QuestName="Sniffing Out the Perpetrator" QuestId="12855" GiverName="Archaeologist Andorin" GiverId="29650" X="6685.12" Y="-259.956" Z="955.067" />
 		</If>
-		<!-- REVIEW Q12865 Loyal Companions: collect 29816 Eagle Feeding Kill Credit x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12865 Loyal Companions: objective 29816 Eagle Feeding Kill Credit x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12865)) &amp;&amp; (IsQuestCompleted(12865)))">
 			<TurnIn QuestName="Loyal Companions" QuestId="12865" TurnInName="Fjorlin Frostbrow" TurnInId="29732" X="6607.42" Y="-279.665" Z="985.624" />
 		</If>
@@ -962,12 +972,23 @@
 		<Objective QuestName="Stemming the Aggressors" QuestId="12866" Type="KillMob" MobId="29792" KillCount="8" />
 		<Objective QuestName="Stemming the Aggressors" QuestId="12866" Type="KillMob" MobId="29793" KillCount="8" />
 		<Objective QuestName="Sniffing Out the Perpetrator" QuestId="12855" Type="KillMob" MobId="29695" KillCount="1" />
+		<If Condition="HasQuest(12855) &amp;&amp; !IsQuestCompleted(12855) &amp;&amp; GetItemCount(40971) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12855" CollectItemId="40971" CollectItemCount="1" HuntingGroundRadius="120" MobId="29695" X="7313.96" Y="-1611.88" Z="944.595">
+				<Hotspot X="7313.96" Y="-1611.88" Z="944.595" />
+			</CustomBehavior>
+		</If>
 		<!-- SKIP turn-in Q12855 Sniffing Out the Perpetrator: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12855)) &amp;&amp; (!IsQuestCompleted(12855)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12855" Type="Incomplete" />
 		</If>
 		<!-- SKIP pickup Q12858 Pieces to the Puzzle: no quest giver with a spawn in the database -->
-		<TurnIn QuestName="Aberrations" QuestId="12925" TurnInName="Thyra Kvinnshal" TurnInId="30041" X="6776.51" Y="-1603.37" Z="820.475" />
+		<!-- REVIEW Q12925 Aberrations: object 191840 Plagued Proto-Drake Egg has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12925)) &amp;&amp; (IsQuestCompleted(12925)))">
+			<TurnIn QuestName="Aberrations" QuestId="12925" TurnInName="Thyra Kvinnshal" TurnInId="30041" X="6776.51" Y="-1603.37" Z="820.475" />
+		</If>
+		<If Condition="((HasQuest(12925)) &amp;&amp; (!IsQuestCompleted(12925)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12925" Type="Incomplete" />
+		</If>
 		<TurnIn QuestName="Off With Their Black Wings" QuestId="12942" TurnInName="Iva the Vengeful" TurnInId="29997" X="6777.78" Y="-1595.43" Z="820.54" />
 		<TurnIn QuestName="Yulda's Folly" QuestId="12968" TurnInName="Iva the Vengeful" TurnInId="29997" X="6777.78" Y="-1595.43" Z="820.54" />
 		<!-- REVIEW Q12953 Valkyrion Must Burn: objective 30096 Dry Haystack x6: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1001,6 +1022,18 @@
 		<TurnIn QuestName="A Spark of Hope" QuestId="12956" TurnInName="Thorim" TurnInId="29445" X="7448.98" Y="-534.783" Z="1896.95" />
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12956)">
 			<PickUp QuestName="Forging an Alliance" QuestId="12924" GiverName="Thorim" GiverId="29445" X="7448.98" Y="-534.783" Z="1896.95" />
+		</If>
+		<If Condition="HasQuest(12858) &amp;&amp; !IsQuestCompleted(12858) &amp;&amp; GetItemCount(41130) &lt; 6">
+			<CustomBehavior File="CollectThings" QuestId="12858" CollectItemId="41130" CollectItemCount="6" HuntingGroundRadius="120" MobId="29724" X="8179.01" Y="-876.362" Z="955.743">
+				<Hotspot X="8179.01" Y="-876.362" Z="955.743" />
+				<Hotspot X="8135.58" Y="-896.79" Z="955.784" />
+				<Hotspot X="8155.87" Y="-833.557" Z="955.786" />
+				<Hotspot X="8240.53" Y="-870.075" Z="925.9" />
+				<Hotspot X="8266.45" Y="-832.498" Z="923.999" />
+				<Hotspot X="8263.16" Y="-937.055" Z="923.999" />
+				<Hotspot X="8249.23" Y="-985.085" Z="923.999" />
+				<Hotspot X="8204.62" Y="-975.199" Z="925.63" />
+			</CustomBehavior>
 		</If>
 		<!-- SKIP turn-in Q12858 Pieces to the Puzzle: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12858)) &amp;&amp; (!IsQuestCompleted(12858)))">
@@ -1073,6 +1106,18 @@
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12957)">
 			<PickUp QuestName="Facing the Storm" QuestId="12978" GiverName="Bruor Ironbane" GiverId="30152" X="8388.08" Y="-382.951" Z="903.202" />
+		</If>
+		<If Condition="HasQuest(12979) &amp;&amp; !IsQuestCompleted(12979) &amp;&amp; GetItemCount(42203) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12979" CollectItemId="42203" CollectItemCount="1" HuntingGroundRadius="120" MobId="29380" MobId2="29380" X="8023.33" Y="77.2412" Z="999.959">
+				<Hotspot X="8023.33" Y="77.2412" Z="999.959" />
+				<Hotspot X="8083.85" Y="66.8619" Z="928.664" />
+				<Hotspot X="8115.97" Y="42.0962" Z="900.944" />
+				<Hotspot X="8155.42" Y="77.8279" Z="898.983" />
+				<Hotspot X="8174.76" Y="6.793" Z="852.893" />
+				<Hotspot X="8062.68" Y="-34.0521" Z="872.399" />
+				<Hotspot X="8052.2" Y="-165.807" Z="858.999" />
+				<Hotspot X="7891.82" Y="29.8049" Z="1012.99" />
+			</CustomBehavior>
 		</If>
 		<If Condition="HasItem(42203) &amp;&amp; !HasQuest(12979) &amp;&amp; !IsQuestCompleted(12979) &amp;&amp; (Me.Level &gt;= 77)">
 			<PickUp QuestName="Armor of Darkness" QuestId="12979" GiverName="Dark Armor Plate" GiverId="42203" GiverType="Item" />
@@ -1160,7 +1205,8 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12873)">
 			<PickUp QuestName="Fervor of the Frostborn" QuestId="12874" GiverName="Yorg Stormheart" GiverId="29593" X="6653.1" Y="-310.577" Z="989.468" />
 		</If>
-		<Objective QuestName="Fervor of the Frostborn" QuestId="12874" Type="KillMob" MobId="30142" KillCount="1" />
+		<!-- Q12874: Battered Storm Hammer (42624) is needed but no creature near the guide coordinates drops it -->
+		<CustomBehavior File="UseItemOn" QuestId="12874" ItemId="42624" MobId="30142" NumOfTimes="1" Range="5" CollectionDistance="200" X="8392.7" Y="-1970.14" Z="1461.84" />
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="You Can't Miss Him" QuestId="12966" GiverName="King Jokkum" GiverId="30105" X="7345.9" Y="-2812.95" Z="798.571" />
 		</If>
@@ -1221,9 +1267,10 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12987" Type="Incomplete" />
 		</If>
 		<Objective QuestName="Raising Hodir's Spear" QuestId="13001" Type="CollectItem" ItemId="42542" CollectCount="3" />
+		<!-- Q13011: Icemaw Bear Flank (42733) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Raising Hodir's Spear" QuestId="13001" Type="CollectItem" ItemId="42541" CollectCount="3" />
 		<TurnIn QuestName="Raising Hodir's Spear" QuestId="13001" TurnInName="Lorekeeper Randvir" TurnInId="30252" X="7397.65" Y="-2770.25" Z="771.041" />
-		<!-- REVIEW Q13011 Jormuttar is Soo Fat...: use item 42732: target 30340 Jormuttar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13011 Jormuttar is Soo Fat...: helper item 42733 Icemaw Bear Flank has no dropping creature near the guide coordinates; use item 42733: target 30340 Jormuttar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13011)) &amp;&amp; (IsQuestCompleted(13011)))">
 			<TurnIn QuestName="Jormuttar is Soo Fat..." QuestId="13011" TurnInName="King Jokkum" TurnInId="30105" X="7345.9" Y="-2812.95" Z="798.571" />
 		</If>
@@ -1234,7 +1281,13 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13009)">
 			<PickUp QuestName="Veranus" QuestId="13050" GiverName="Thorim" GiverId="29445" X="7448.98" Y="-534.783" Z="1896.95" />
 		</If>
-		<TurnIn QuestName="Fervor of the Frostborn" QuestId="12874" TurnInName="Yorg Stormheart" TurnInId="29593" X="6653.1" Y="-310.577" Z="989.468" />
+		<!-- REVIEW Q12874 Fervor of the Frostborn: helper item 42624 Battered Storm Hammer has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12874)) &amp;&amp; (IsQuestCompleted(12874)))">
+			<TurnIn QuestName="Fervor of the Frostborn" QuestId="12874" TurnInName="Yorg Stormheart" TurnInId="29593" X="6653.1" Y="-310.577" Z="989.468" />
+		</If>
+		<If Condition="((HasQuest(12874)) &amp;&amp; (!IsQuestCompleted(12874)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12874" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12874)">
 			<PickUp QuestName="An Experienced Guide" QuestId="12875" GiverName="Yorg Stormheart" GiverId="29593" X="6653.1" Y="-310.577" Z="989.468" />
 		</If>

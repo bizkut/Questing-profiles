@@ -1767,9 +1767,21 @@
 			<PickUp QuestName="Aldor No More" QuestId="10381" GiverName="Kaylaan" GiverId="20780" X="4036.13" Y="3547.31" Z="121.384" />
 		</If>
 		<TurnIn QuestName="Aldor No More" QuestId="10381" TurnInName="Exarch Orelis" TurnInId="19466" X="3070.84" Y="3695.18" Z="142.465" />
+		<If Condition="HasQuest(10855) &amp;&amp; !IsQuestCompleted(10855) &amp;&amp; GetItemCount(31653) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="10855" CollectItemId="31653" CollectItemCount="5" HuntingGroundRadius="120" MobId="16949" X="4391.43" Y="3296.76" Z="143.662">
+				<Hotspot X="4391.43" Y="3296.76" Z="143.662" />
+				<Hotspot X="4433.29" Y="3280.28" Z="144.528" />
+				<Hotspot X="4461.35" Y="3331.09" Z="154.515" />
+				<Hotspot X="4413.5" Y="3349.48" Z="153.359" />
+				<Hotspot X="4422.43" Y="3404.68" Z="166.725" />
+				<Hotspot X="4373.43" Y="3408.01" Z="168.201" />
+				<Hotspot X="4324.24" Y="3364.47" Z="148.386" />
+				<Hotspot X="4303.99" Y="3403.44" Z="151.357" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Nether Gas In a Fel Fire Engine" QuestId="10850" Type="CollectItem" ItemId="31653" CollectCount="5" />
 		<TurnIn QuestName="Nether Gas In a Fel Fire Engine" QuestId="10850" TurnInName="Inactive Fel Reaver" TurnInId="22293" X="4501.38" Y="3367.62" Z="156.794" />
-		<!-- REVIEW Q10855 Fel Reavers, No Thanks!: collect 22293 Inactive Fel Reaver x1: not attackable; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10855 Fel Reavers, No Thanks!: objective 22293 Inactive Fel Reaver x1: not attackable; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10855)) &amp;&amp; (IsQuestCompleted(10855)))">
 			<TurnIn QuestName="Fel Reavers, No Thanks!" QuestId="10855" TurnInName="Nether-Stalker Nauthis" TurnInId="20471" X="4157.72" Y="2991.28" Z="336.945" />
 		</If>
@@ -2004,6 +2016,11 @@
 			<PickUp QuestName="Finding the Keymaster" QuestId="10256" GiverName="Archmage Vargoth" GiverId="19481" X="2245.08" Y="2230.73" Z="136.723" />
 		</If>
 		<Objective QuestName="Destroy Naberius!" QuestId="10320" Type="KillMob" MobId="20483" KillCount="1" />
+		<If Condition="HasQuest(10256) &amp;&amp; !IsQuestCompleted(10256) &amp;&amp; GetItemCount(28786) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10256" CollectItemId="28786" CollectItemCount="1" HuntingGroundRadius="120" MobId="19940" X="2863.66" Y="2591.46" Z="108.774">
+				<Hotspot X="2863.66" Y="2591.46" Z="108.774" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q10320 Destroy Naberius!: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10320)) &amp;&amp; (IsQuestCompleted(10320)))">
 			<TurnIn QuestName="Destroy Naberius!" QuestId="10320" TurnInName="Custodian Dieworth" TurnInId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
@@ -2011,7 +2028,7 @@
 		<If Condition="((HasQuest(10320)) &amp;&amp; (!IsQuestCompleted(10320)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10320" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q10256 Finding the Keymaster: collect 19938 Image of Commander Sarannis x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10256 Finding the Keymaster: objective 19938 Image of Commander Sarannis x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10256)) &amp;&amp; (IsQuestCompleted(10256)))">
 			<TurnIn QuestName="Finding the Keymaster" QuestId="10256" TurnInName="Archmage Vargoth" TurnInId="19481" X="2245.08" Y="2230.73" Z="136.723" />
 		</If>

@@ -576,6 +576,11 @@
 		</If>
 		<TurnIn QuestName="Timberling Sprouts" QuestId="919" TurnInName="Denalan" TurnInId="2080" X="9506.92" Y="713.766" Z="1255.99" />
 		<Objective QuestName="Ferocitas the Dream Eater" QuestId="2459" Type="KillMob" MobId="7235" KillCount="7" />
+		<If Condition="HasQuest(2459) &amp;&amp; !IsQuestCompleted(2459) &amp;&amp; GetItemCount(8049) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="2459" CollectItemId="8049" CollectItemCount="1" HuntingGroundRadius="120" MobId="7234" X="10018.8" Y="282.413" Z="1323.02">
+				<Hotspot X="10018.8" Y="282.413" Z="1323.02" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q2459 Ferocitas the Dream Eater: item 8050 Tallonkai's Jewel has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2459)) &amp;&amp; (IsQuestCompleted(2459)))">
 			<TurnIn QuestName="Ferocitas the Dream Eater" QuestId="2459" TurnInName="Tallonkai Swiftroot" TurnInId="3567" X="9898.59" Y="984.968" Z="1354.89" />

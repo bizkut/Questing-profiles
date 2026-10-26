@@ -850,6 +850,18 @@
 		<Objective QuestName="The Shadow Tomb" QuestId="10881" Type="CollectItem" ItemId="31709" CollectCount="1" />
 		<TurnIn QuestName="The Shadow Tomb" QuestId="10881" TurnInName="Mekeda" TurnInId="22370" X="-2866.16" Y="5039.95" Z="-20.2197" />
 		<Objective QuestName="A Personal Favor" QuestId="10112" Type="CollectItem" ItemId="27861" CollectCount="5" />
+		<If Condition="HasQuest(10852) &amp;&amp; !IsQuestCompleted(10852) &amp;&amp; GetItemCount(31655) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10852" CollectItemId="31655" CollectItemCount="1" HuntingGroundRadius="120" MobId="18452" MobId2="18453" X="-2512.17" Y="5352.53" Z="0.9232">
+				<Hotspot X="-2512.17" Y="5352.53" Z="0.9232" />
+				<Hotspot X="-2533.29" Y="5387.57" Z="27.2865" />
+				<Hotspot X="-2507.37" Y="5421.63" Z="0.2319" />
+				<Hotspot X="-2482.96" Y="5385.98" Z="0.4617" />
+				<Hotspot X="-2445.63" Y="5345.55" Z="1.4803" />
+				<Hotspot X="-2481.35" Y="5322.64" Z="1.3441" />
+				<Hotspot X="-2418.74" Y="5388.6" Z="1.9707" />
+				<Hotspot X="-2559.83" Y="5452.21" Z="0.1421" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q10839 Veil Skith: Darkstone of Terokk: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10839)) &amp;&amp; (IsQuestCompleted(10839)))">
 			<TurnIn QuestName="Veil Skith: Darkstone of Terokk" QuestId="10839" TurnInName="Kirrik the Awakened" TurnInId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
@@ -860,7 +872,7 @@
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10839)">
 			<PickUp QuestName="Veil Rhaze: Unliving Evil" QuestId="10848" GiverName="Kirrik the Awakened" GiverId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
 		</If>
-		<!-- REVIEW Q10852 Missing Friends: collect 22314 Captive Child x12: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10852 Missing Friends: goal 22314 Captive Child x12: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10852)) &amp;&amp; (IsQuestCompleted(10852)))">
 			<TurnIn QuestName="Missing Friends" QuestId="10852" TurnInName="Ethan" TurnInId="22365" X="-2848.37" Y="5045.6" Z="-18.6129" />
 		</If>
@@ -1067,7 +1079,12 @@
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(9996)">
 			<PickUp QuestName="The Final Code" QuestId="10446" GiverName="Lieutenant Meridian" GiverId="21006" X="-2588.25" Y="3319.51" Z="0.6892" />
 		</If>
-		<!-- REVIEW Q10446 The Final Code: collect 21039 Mana Bomb Kill Credit Trigger x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(10446) &amp;&amp; !IsQuestCompleted(10446) &amp;&amp; GetItemCount(29912) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10446" CollectItemId="29912" CollectItemCount="1" HuntingGroundRadius="120" MobId="18554" X="-2289.5" Y="3094.68" Z="152.917">
+				<Hotspot X="-2289.5" Y="3094.68" Z="152.917" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q10446 The Final Code: goal 21039 Mana Bomb Kill Credit Trigger x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10446)) &amp;&amp; (IsQuestCompleted(10446)))">
 			<TurnIn QuestName="The Final Code" QuestId="10446" TurnInName="Jenai Starwhisper" TurnInId="18459" X="-2925.6" Y="4004.8" Z="-1.4743" />
 		</If>

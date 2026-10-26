@@ -107,6 +107,18 @@
 		</If>
 		<!-- SKIP pickup Q11496 The Sanctum Wards: no quest giver with a spawn in the database -->
 		<!-- SKIP pickup Q11524 Erratic Behavior: no quest giver with a spawn in the database -->
+		<If Condition="HasQuest(11496) &amp;&amp; !IsQuestCompleted(11496) &amp;&amp; GetItemCount(34338) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="11496" CollectItemId="34338" CollectItemCount="4" HuntingGroundRadius="120" MobId="24960" MobId2="24966" X="12961.3" Y="-6786.39" Z="7.8622">
+				<Hotspot X="12961.3" Y="-6786.39" Z="7.8622" />
+				<Hotspot X="13003.7" Y="-6774.46" Z="9.7415" />
+				<Hotspot X="12980.4" Y="-6829.91" Z="8.3056" />
+				<Hotspot X="12934.3" Y="-6845.1" Z="8.8422" />
+				<Hotspot X="12909.3" Y="-6810.11" Z="8.6065" />
+				<Hotspot X="12884.1" Y="-6749.97" Z="11.8963" />
+				<Hotspot X="12935.2" Y="-6732.26" Z="12.546" />
+				<Hotspot X="13020.2" Y="-6861.82" Z="2.2898" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11496 The Sanctum Wards: no quest giver in the database; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11496)) &amp;&amp; (IsQuestCompleted(11496)))">
 			<TurnIn QuestName="The Sanctum Wards" QuestId="11496" TurnInName="Captain Theris Dawnhearth" TurnInId="24967" X="12890.7" Y="-6881.36" Z="10.5983" />
@@ -136,7 +148,19 @@
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11526)">
 			<PickUp QuestName="Blast the Gateway" QuestId="11516" GiverName="Magistrix Seyla" GiverId="24937" X="875.694" Y="2535.02" Z="298.075" />
 		</If>
-		<!-- REVIEW Q11515 Blood for Blood: collect 24955 Emaciated Felblood x4: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11515) &amp;&amp; !IsQuestCompleted(11515) &amp;&amp; GetItemCount(34259) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="11515" CollectItemId="34259" CollectItemCount="4" HuntingGroundRadius="120" MobId="24919" X="882.204" Y="2252.73" Z="300.066">
+				<Hotspot X="882.204" Y="2252.73" Z="300.066" />
+				<Hotspot X="841.577" Y="2313.24" Z="289.348" />
+				<Hotspot X="843.658" Y="2364.89" Z="281.511" />
+				<Hotspot X="836.349" Y="2442.66" Z="290.716" />
+				<Hotspot X="719.738" Y="2387.9" Z="274.327" />
+				<Hotspot X="834.115" Y="2196.89" Z="281.442" />
+				<Hotspot X="796.243" Y="2156.71" Z="272.98" />
+				<Hotspot X="792.549" Y="2092.3" Z="273.805" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q11515 Blood for Blood: use item 34257: target 24955 Emaciated Felblood has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11515)) &amp;&amp; (IsQuestCompleted(11515)))">
 			<TurnIn QuestName="Blood for Blood" QuestId="11515" TurnInName="Magistrix Seyla" TurnInId="24937" X="875.694" Y="2535.02" Z="298.075" />
 		</If>

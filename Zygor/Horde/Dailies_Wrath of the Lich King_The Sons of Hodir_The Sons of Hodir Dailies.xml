@@ -430,6 +430,17 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (GetFactionReputation(1119) &gt;= 3000)">
 			<PickUp QuestName="In Memoriam" QuestId="12975" GiverName="King Jokkum" GiverId="30105" X="7345.9" Y="-2812.95" Z="798.571" />
 		</If>
+		<If Condition="HasQuest(12981) &amp;&amp; !IsQuestCompleted(12981) &amp;&amp; GetItemCount(42246) &lt; 6">
+			<CustomBehavior File="CollectThings" QuestId="12981" CollectItemId="42246" CollectItemCount="6" HuntingGroundRadius="120" MobId="30160" X="7359.13" Y="-3103.31" Z="837.534">
+				<Hotspot X="7359.13" Y="-3103.31" Z="837.534" />
+				<Hotspot X="7405.8" Y="-3082.12" Z="837.57" />
+				<Hotspot X="7419.28" Y="-3141.33" Z="837.577" />
+				<Hotspot X="7376.07" Y="-3153.04" Z="837.577" />
+				<Hotspot X="7315.46" Y="-3179.34" Z="837.617" />
+				<Hotspot X="7300.77" Y="-3084.76" Z="837.577" />
+				<Hotspot X="7255.27" Y="-3083.26" Z="837.577" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="In Memoriam" QuestId="12975" Type="CollectItem" ItemId="42162" CollectCount="8" />
 		<TurnIn QuestName="In Memoriam" QuestId="12975" TurnInName="King Jokkum" TurnInId="30105" X="7345.9" Y="-2812.95" Z="798.571" />
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12975)">
@@ -473,6 +484,7 @@
 			<PickUp QuestName="Spy Hunter" QuestId="12994" GiverName="Frostworg Denmother" GiverId="30294" X="7365.76" Y="-2674.17" Z="747.048" />
 		</If>
 		<Objective QuestName="Raising Hodir's Spear" QuestId="13001" Type="CollectItem" ItemId="42542" CollectCount="3" />
+		<!-- Q13011: Icemaw Bear Flank (42733) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Raising Hodir's Spear" QuestId="13001" Type="CollectItem" ItemId="42541" CollectCount="3" />
 		<Objective QuestName="Polishing the Helm" QuestId="13006" Type="CollectItem" ItemId="42640" CollectCount="5" />
 		<TurnIn QuestName="A New Beginning" QuestId="13009" TurnInName="Thorim" TurnInId="29445" X="7448.98" Y="-534.783" Z="1896.95" />
@@ -506,7 +518,7 @@
 		</If>
 		<TurnIn QuestName="Polishing the Helm" QuestId="13006" TurnInName="Hodir's Helm" TurnInId="192080" TurnInType="Object" X="7390.14" Y="-2725.38" Z="874.256" />
 		<TurnIn QuestName="Raising Hodir's Spear" QuestId="13001" TurnInName="Lorekeeper Randvir" TurnInId="30252" X="7397.65" Y="-2770.25" Z="771.041" />
-		<!-- REVIEW Q13011 Jormuttar is Soo Fat...: use item 42732: target 30340 Jormuttar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13011 Jormuttar is Soo Fat...: helper item 42733 Icemaw Bear Flank has no dropping creature near the guide coordinates; use item 42733: target 30340 Jormuttar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13011)) &amp;&amp; (IsQuestCompleted(13011)))">
 			<TurnIn QuestName="Jormuttar is Soo Fat..." QuestId="13011" TurnInName="King Jokkum" TurnInId="30105" X="7345.9" Y="-2812.95" Z="798.571" />
 		</If>
@@ -601,6 +613,17 @@
 		</If>
 		<If Condition="((HasQuest(13046)) &amp;&amp; (!IsQuestCompleted(13046)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13046" Type="Incomplete" />
+		</If>
+		<If Condition="HasQuest(12981) &amp;&amp; !IsQuestCompleted(12981) &amp;&amp; GetItemCount(42246) &lt; 6">
+			<CustomBehavior File="CollectThings" QuestId="12981" CollectItemId="42246" CollectItemCount="6" HuntingGroundRadius="120" MobId="30160" X="7359.13" Y="-3103.31" Z="837.534">
+				<Hotspot X="7359.13" Y="-3103.31" Z="837.534" />
+				<Hotspot X="7405.8" Y="-3082.12" Z="837.57" />
+				<Hotspot X="7419.28" Y="-3141.33" Z="837.577" />
+				<Hotspot X="7376.07" Y="-3153.04" Z="837.577" />
+				<Hotspot X="7315.46" Y="-3179.34" Z="837.617" />
+				<Hotspot X="7300.77" Y="-3084.76" Z="837.577" />
+				<Hotspot X="7255.27" Y="-3083.26" Z="837.577" />
+			</CustomBehavior>
 		</If>
 		<!-- REVIEW Q12981 Hot and Cold: item 42252 Frozen Iron Scrap has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12981)) &amp;&amp; (IsQuestCompleted(12981)))">

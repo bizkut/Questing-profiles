@@ -382,13 +382,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="11129" Name="Kyle's Gone Missing!">
-		<Objective Type="KillMob" MobId="23616" KillCount="1">
-			<Hotspots>
-				<Hotspot X="-2459.23" Y="-484.062" Z="-9.0128" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="759" Name="Wildmane Totem">
 		<Objective Type="CollectItem" ItemId="4803" CollectCount="8">
 			<CollectFrom>
@@ -839,6 +832,18 @@
 			<Objective QuestName="Thunderhorn Totem" QuestId="756" Type="CollectItem" ItemId="4802" CollectCount="6" />
 			<Objective QuestName="Thunderhorn Totem" QuestId="756" Type="CollectItem" ItemId="4801" CollectCount="6" />
 		</If>
+		<If Condition="HasQuest(746) &amp;&amp; !IsQuestCompleted(746) &amp;&amp; GetItemCount(4702) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="746" CollectItemId="4702" CollectItemCount="5" HuntingGroundRadius="120" MobId="2989" MobId2="2990" X="-1887.37" Y="281.861" Z="70.5874">
+				<Hotspot X="-1887.37" Y="281.861" Z="70.5874" />
+				<Hotspot X="-1918.63" Y="313.671" Z="91.56" />
+				<Hotspot X="-1901.19" Y="350.847" Z="106.313" />
+				<Hotspot X="-1894.65" Y="404.89" Z="136.548" />
+				<Hotspot X="-1931.53" Y="424.686" Z="133.715" />
+				<Hotspot X="-1984.92" Y="401.04" Z="135.63" />
+				<Hotspot X="-1956.1" Y="366.97" Z="133.17" />
+				<Hotspot X="-1975.29" Y="310.834" Z="108.819" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q746 Dwarven Digging: item 4703 Broken Tools has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(746)) &amp;&amp; (IsQuestCompleted(746)))">
 			<TurnIn QuestName="Dwarven Digging" QuestId="746" TurnInName="Baine Bloodhoof" TurnInId="2993" X="-2333.54" Y="-393.073" Z="-7.9293" />
@@ -855,7 +860,18 @@
 		<If Condition="(Me.Level &gt;= 5)">
 			<PickUp QuestName="Kyle's Gone Missing!" QuestId="11129" GiverName="Ahab Wheathoof" GiverId="23618" X="-2097.52" Y="-430.539" Z="-6.6282" />
 		</If>
-		<Objective QuestName="Kyle's Gone Missing!" QuestId="11129" Type="KillMob" MobId="23616" KillCount="1" />
+		<If Condition="HasQuest(11129) &amp;&amp; !IsQuestCompleted(11129) &amp;&amp; GetItemCount(33009) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11129" CollectItemId="33009" CollectItemCount="1" HuntingGroundRadius="120" MobId="2956" MobId2="2957" MobId3="3068" X="-1816.76" Y="-284.566" Z="-8.109">
+				<Hotspot X="-1816.76" Y="-284.566" Z="-8.109" />
+				<Hotspot X="-1788.98" Y="-320.257" Z="-9.2999" />
+				<Hotspot X="-1707.51" Y="-388.744" Z="-20.7691" />
+				<Hotspot X="-1670.64" Y="-256.396" Z="-13.879" />
+				<Hotspot X="-1777.19" Y="-198.79" Z="-9.2998" />
+				<Hotspot X="-1882.62" Y="-176.13" Z="-7.3103" />
+				<Hotspot X="-2033.25" Y="-196.54" Z="-9.3352" />
+				<Hotspot X="-1842.55" Y="-461.321" Z="-8.2885" />
+			</CustomBehavior>
+		</If>
 		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<!-- REVIEW Q758 Thunderhorn Cleansing: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(758)) &amp;&amp; (IsQuestCompleted(758)))">
@@ -868,7 +884,14 @@
 				<PickUp QuestName="Wildmane Totem" QuestId="759" GiverName="Mull Thunderhorn" GiverId="2948" X="-2341.4" Y="-445.449" Z="-6.4173" />
 			</If>
 		</If>
-		<TurnIn QuestName="Kyle's Gone Missing!" QuestId="11129" TurnInName="Ahab Wheathoof" TurnInId="23618" X="-2097.52" Y="-430.539" Z="-6.6282" />
+		<CustomBehavior File="UseItemOn" QuestId="11129" ItemId="33009" MobId="23616" NumOfTimes="1" Range="5" CollectionDistance="200" X="-2459.23" Y="-484.062" Z="-9.0128" />
+		<!-- REVIEW Q11129 Kyle's Gone Missing!: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11129)) &amp;&amp; (IsQuestCompleted(11129)))">
+			<TurnIn QuestName="Kyle's Gone Missing!" QuestId="11129" TurnInName="Ahab Wheathoof" TurnInId="23618" X="-2097.52" Y="-430.539" Z="-6.6282" />
+		</If>
+		<If Condition="((HasQuest(11129)) &amp;&amp; (!IsQuestCompleted(11129)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11129" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 5)">
 			<PickUp QuestName="The Ravaged Caravan" QuestId="749" GiverName="Morin Cloudstalker" GiverId="2988" X="-2369.16" Y="-876.936" Z="-9.4221" />
 		</If>

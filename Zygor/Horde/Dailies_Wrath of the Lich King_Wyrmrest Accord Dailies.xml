@@ -139,12 +139,10 @@
 	<Quest Id="11936" Name="Hatching a Plan">
 		<Objective Type="UseObject" ObjectId="188133" UseCount="5">
 			<Hotspots>
-				<Hotspot X="3764.96" Y="6935.17" Z="108.931" />
-				<Hotspot X="3772.46" Y="6978.29" Z="104.15" />
 				<Hotspot X="3817.44" Y="6877.6" Z="103.905" />
 				<Hotspot X="3877.98" Y="6865.35" Z="103.211" />
-				<Hotspot X="3907.4" Y="6902.92" Z="104.702" />
-				<Hotspot X="3951.6" Y="6926.54" Z="103.753" />
+				<Hotspot X="3764.96" Y="6935.17" Z="108.931" />
+				<Hotspot X="3772.46" Y="6978.29" Z="104.15" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -221,7 +219,12 @@
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12061)">
 			<PickUp QuestName="The Focus on the Beach" QuestId="12066" GiverName="Image of Archmage Aethas Sunreaver" GiverId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		</If>
-		<!-- REVIEW Q12066 The Focus on the Beach: collect 26773 The Focus on the Beach Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(12066) &amp;&amp; !IsQuestCompleted(12066) &amp;&amp; GetItemCount(36751) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12066" CollectItemId="36751" CollectItemCount="1" HuntingGroundRadius="120" MobId="26762" X="3149.37" Y="2151.22" Z="24.6377">
+				<Hotspot X="3149.37" Y="2151.22" Z="24.6377" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q12066 The Focus on the Beach: objective 26773 The Focus on the Beach Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12066)) &amp;&amp; (IsQuestCompleted(12066)))">
 			<TurnIn QuestName="The Focus on the Beach" QuestId="12066" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		</If>
@@ -231,7 +234,11 @@
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12066)">
 			<PickUp QuestName="Atop the Woodlands" QuestId="12084" GiverName="Image of Archmage Aethas Sunreaver" GiverId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		</If>
-		<Objective QuestName="Atop the Woodlands" QuestId="12084" Type="KillMob" MobId="26831" KillCount="1" />
+		<If Condition="HasQuest(12084) &amp;&amp; !IsQuestCompleted(12084) &amp;&amp; GetItemCount(36779) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12084" CollectItemId="36779" CollectItemCount="1" HuntingGroundRadius="120" MobId="26815" X="2847.59" Y="1833.02" Z="139.577">
+				<Hotspot X="2847.59" Y="1833.02" Z="139.577" />
+			</CustomBehavior>
+		</If>
 		<If Condition="!HasItem(36780) &amp;&amp; !HasQuest(12085) &amp;&amp; !IsQuestCompleted(12085)">
 			<CustomBehavior File="CollectThings" CollectItemId="36780" CollectItemCount="1" HuntingGroundRadius="120" MobId="26815" X="2847.59" Y="1833.02" Z="139.577">
 				<Hotspot X="2847.59" Y="1833.02" Z="139.577" />
@@ -240,6 +247,7 @@
 		<If Condition="HasItem(36780) &amp;&amp; !HasQuest(12085) &amp;&amp; !IsQuestCompleted(12085) &amp;&amp; (Me.Level &gt;= 71)">
 			<PickUp QuestName="A Letter for Home" QuestId="12085" GiverName="Lieutenant Ta'zinni's Letter" GiverId="36780" GiverType="Item" />
 		</If>
+		<Objective QuestName="Atop the Woodlands" QuestId="12084" Type="KillMob" MobId="26831" KillCount="1" />
 		<TurnIn QuestName="Atop the Woodlands" QuestId="12084" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12084)">
 			<PickUp QuestName="Search Indu'le Village" QuestId="12106" GiverName="Image of Archmage Aethas Sunreaver" GiverId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
@@ -334,6 +342,18 @@
 		<TurnIn QuestName="Basic Training" QuestId="11918" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11918)">
 			<PickUp QuestName="Hatching a Plan" QuestId="11936" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		</If>
+		<If Condition="HasQuest(11936) &amp;&amp; !IsQuestCompleted(11936) &amp;&amp; GetItemCount(35586) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="11936" CollectItemId="35586" CollectItemCount="5" HuntingGroundRadius="120" MobId="25728" X="3690.53" Y="6820.61" Z="160.952">
+				<Hotspot X="3690.53" Y="6820.61" Z="160.952" />
+				<Hotspot X="3749.79" Y="6890.08" Z="154.591" />
+				<Hotspot X="3649.99" Y="7020.45" Z="166.278" />
+				<Hotspot X="3583.83" Y="6845.97" Z="174.005" />
+				<Hotspot X="3848" Y="6748.06" Z="150.504" />
+				<Hotspot X="3917.06" Y="6817.92" Z="150.507" />
+				<Hotspot X="3949.39" Y="6782.82" Z="153.945" />
+				<Hotspot X="3792.45" Y="6622.14" Z="157.409" />
+			</CustomBehavior>
 		</If>
 		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
 		<TurnIn QuestName="Hatching a Plan" QuestId="11936" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />

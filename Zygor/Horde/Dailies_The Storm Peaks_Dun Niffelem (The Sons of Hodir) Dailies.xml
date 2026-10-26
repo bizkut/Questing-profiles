@@ -95,6 +95,17 @@
 		<If Condition="((HasQuest(13046)) &amp;&amp; (!IsQuestCompleted(13046)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13046" Type="Incomplete" />
 		</If>
+		<If Condition="HasQuest(12981) &amp;&amp; !IsQuestCompleted(12981) &amp;&amp; GetItemCount(42246) &lt; 6">
+			<CustomBehavior File="CollectThings" QuestId="12981" CollectItemId="42246" CollectItemCount="6" HuntingGroundRadius="120" MobId="30160" X="7359.13" Y="-3103.31" Z="837.534">
+				<Hotspot X="7359.13" Y="-3103.31" Z="837.534" />
+				<Hotspot X="7405.8" Y="-3082.12" Z="837.57" />
+				<Hotspot X="7419.28" Y="-3141.33" Z="837.577" />
+				<Hotspot X="7376.07" Y="-3153.04" Z="837.577" />
+				<Hotspot X="7315.46" Y="-3179.34" Z="837.617" />
+				<Hotspot X="7300.77" Y="-3084.76" Z="837.577" />
+				<Hotspot X="7255.27" Y="-3083.26" Z="837.577" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q12981 Hot and Cold: item 42252 Frozen Iron Scrap has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12981)) &amp;&amp; (IsQuestCompleted(12981)))">
 			<TurnIn QuestName="Hot and Cold" QuestId="12981" TurnInName="Fjorn's Anvil" TurnInId="192071" TurnInType="Object" X="7213.59" Y="-2648.74" Z="810.551" />

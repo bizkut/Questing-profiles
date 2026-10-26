@@ -401,7 +401,31 @@
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10124)">
 			<PickUp QuestName="Disrupt Their Reinforcements" QuestId="10208" GiverName="Forward Commander To'arch" GiverId="19273" X="-19.8447" Y="2136.61" Z="114.085" />
 		</If>
+		<If Condition="HasQuest(10208) &amp;&amp; !IsQuestCompleted(10208) &amp;&amp; GetItemCount(28513) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="10208" CollectItemId="28513" CollectItemCount="4" HuntingGroundRadius="120" MobId="16950" MobId2="18975" MobId3="18981" MobId4="19190" MobId5="19282" X="-93.2246" Y="1867.17" Z="74.3223">
+				<Hotspot X="-93.2246" Y="1867.17" Z="74.3223" />
+				<Hotspot X="-139.03" Y="1908.15" Z="83.2493" />
+				<Hotspot X="-175.766" Y="1924.46" Z="92.5669" />
+				<Hotspot X="-133.838" Y="1956.58" Z="89.818" />
+				<Hotspot X="-51.0436" Y="1932.59" Z="72.8739" />
+				<Hotspot X="-10.7821" Y="1900.59" Z="62.3397" />
+				<Hotspot X="29.3979" Y="1911.31" Z="63.8811" />
+				<Hotspot X="-150.125" Y="1828.63" Z="82.0869" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Disrupt Their Reinforcements" QuestId="10208" Type="UseObject" ObjectId="184290" UseCount="1" />
+		<If Condition="HasQuest(10208) &amp;&amp; !IsQuestCompleted(10208) &amp;&amp; GetItemCount(28513) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="10208" CollectItemId="28513" CollectItemCount="4" HuntingGroundRadius="120" MobId="16950" MobId2="18975" MobId3="18981" MobId4="19190" MobId5="19282" X="157.543" Y="1733.51" Z="38.6115">
+				<Hotspot X="157.543" Y="1733.51" Z="38.6115" />
+				<Hotspot X="198.766" Y="1728.06" Z="28.523" />
+				<Hotspot X="166.502" Y="1692.53" Z="29.4923" />
+				<Hotspot X="90.8476" Y="1725.94" Z="43.6332" />
+				<Hotspot X="77.1706" Y="1770.55" Z="47.386" />
+				<Hotspot X="120.555" Y="1762.26" Z="43.5301" />
+				<Hotspot X="153.88" Y="1786.81" Z="32.1519" />
+				<Hotspot X="199.479" Y="1776.24" Z="28.9548" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Disrupt Their Reinforcements" QuestId="10208" Type="UseObject" ObjectId="184289" UseCount="1" />
 		<TurnIn QuestName="Disrupt Their Reinforcements" QuestId="10208" TurnInName="Forward Commander To'arch" TurnInId="19273" X="-19.8447" Y="2136.61" Z="114.085" />
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10208)">
@@ -542,6 +566,18 @@
 			<PickUp QuestName="Honor the Fallen" QuestId="10258" GiverName="Althen the Historian" GiverId="19736" X="-1335.32" Y="2351.09" Z="89.0748" />
 		</If>
 		<TurnIn QuestName="Honor the Fallen" QuestId="10258" TurnInName="Commander Hogarth" TurnInId="19937" X="-1183.11" Y="2599.94" Z="30.6718" />
+		<If Condition="HasQuest(10538) &amp;&amp; !IsQuestCompleted(10538) &amp;&amp; GetItemCount(30425) &lt; 12">
+			<CustomBehavior File="CollectThings" QuestId="10538" CollectItemId="30425" CollectItemCount="12" HuntingGroundRadius="120" MobId="16871" MobId2="16873" MobId3="16907" MobId4="19422" MobId5="19424" MobId6="19442" X="-986.503" Y="2163.45" Z="22.0662">
+				<Hotspot X="-986.503" Y="2163.45" Z="22.0662" />
+				<Hotspot X="-947.596" Y="2131.92" Z="20.7129" />
+				<Hotspot X="-1002.43" Y="2109.36" Z="94.8671" />
+				<Hotspot X="-1046.39" Y="2132.57" Z="46.2241" />
+				<Hotspot X="-1132.39" Y="2152.06" Z="63.854" />
+				<Hotspot X="-1049.08" Y="2255.82" Z="24.091" />
+				<Hotspot X="-944.679" Y="2214.73" Z="9.1277" />
+				<Hotspot X="-897.688" Y="2189.9" Z="10.5188" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Wanted: Worg Master Kruush" QuestId="10809" Type="CollectItem" ItemId="31374" CollectCount="1" />
 		<TurnIn QuestName="Wanted: Worg Master Kruush" QuestId="10809" TurnInName="Captain Darkhowl" TurnInId="22107" X="-1319.35" Y="2378.33" Z="88.6272" />
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10809)">
@@ -571,11 +607,24 @@
 			<PickUp QuestName='Grillok "Darkeye"' QuestId="10834" GiverName="Zezzak" GiverId="22231" X="-1337.77" Y="2355.06" Z="89.0385" />
 		</If>
 		<Objective QuestName='Grillok "Darkeye"' QuestId="10834" Type="CollectItem" ItemId="31529" CollectCount="1" />
-		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31347" MobId="20813" NumOfTimes="1" Range="5" CollectionDistance="200" X="-1120.22" Y="1929.89" Z="92.3609" />
-		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31347" MobId="20815" NumOfTimes="1" Range="5" CollectionDistance="200" X="-934.393" Y="1934.01" Z="82.0316" />
-		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31347" MobId="20816" NumOfTimes="1" Range="5" CollectionDistance="200" X="-1145.41" Y="2064.83" Z="80.7826" />
-		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31347" MobId="20814" NumOfTimes="1" Range="5" CollectionDistance="200" X="-1043.44" Y="2002.14" Z="76.0305" />
-		<!-- REVIEW Q10792 Zeth'Gor Must Burn!: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792) &amp;&amp; GetItemCount(31347) &lt; 4">
+			<CustomBehavior File="CollectThings" QuestId="10792" CollectItemId="31347" CollectItemCount="4" HuntingGroundRadius="120" MobId="16907" X="-928.007" Y="1999.82" Z="65.8802">
+				<Hotspot X="-928.007" Y="1999.82" Z="65.8802" />
+				<Hotspot X="-902.61" Y="1967.31" Z="68.7888" />
+				<Hotspot X="-968.079" Y="2012.54" Z="67.0646" />
+				<Hotspot X="-952.191" Y="2051.46" Z="67.0211" />
+				<Hotspot X="-896.722" Y="2115.57" Z="19.9363" />
+				<Hotspot X="-830.116" Y="2023.96" Z="39.2022" />
+				<Hotspot X="-969.954" Y="1906.92" Z="80.0465" />
+				<Hotspot X="-1019.98" Y="1990.64" Z="69.6215" />
+			</CustomBehavior>
+		</If>
+		<!-- Q10792: Burning Bleeding Hollow Torch (31346) is needed but no creature near the guide coordinates drops it -->
+		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31346" MobId="20815" NumOfTimes="1" Range="5" CollectionDistance="200" X="-934.393" Y="1934.01" Z="82.0316" />
+		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31346" MobId="20814" NumOfTimes="1" Range="5" CollectionDistance="200" X="-1043.44" Y="2002.14" Z="76.0305" />
+		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31346" MobId="20816" NumOfTimes="1" Range="5" CollectionDistance="200" X="-1145.41" Y="2064.83" Z="80.7826" />
+		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31346" MobId="20813" NumOfTimes="1" Range="5" CollectionDistance="200" X="-1152.89" Y="1961.49" Z="92.9795" />
+		<!-- REVIEW Q10792 Zeth'Gor Must Burn!: helper item 31346 Burning Bleeding Hollow Torch has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10792)) &amp;&amp; (IsQuestCompleted(10792)))">
 			<TurnIn QuestName="Zeth'Gor Must Burn!" QuestId="10792" TurnInName="Captain Darkhowl" TurnInId="22107" X="-1319.35" Y="2378.33" Z="88.6272" />
 		</If>
@@ -601,6 +650,18 @@
 		<TurnIn QuestName="Ravager Egg Roundup" QuestId="9349" TurnInName="Legassi" TurnInId="19344" X="-1095.95" Y="2996.35" Z="8.2736" />
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(9349)">
 			<PickUp QuestName="Helboar, the Other White Meat" QuestId="9361" GiverName="Legassi" GiverId="19344" X="-1095.95" Y="2996.35" Z="8.2736" />
+		</If>
+		<If Condition="HasQuest(9361) &amp;&amp; !IsQuestCompleted(9361) &amp;&amp; GetItemCount(23270) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="9361" CollectItemId="23270" CollectItemCount="1" HuntingGroundRadius="120" MobId="16863" MobId2="16879" MobId3="16880" X="-1077.22" Y="2913.91" Z="-1.6295">
+				<Hotspot X="-1077.22" Y="2913.91" Z="-1.6295" />
+				<Hotspot X="-1048.2" Y="2881.98" Z="-1.3927" />
+				<Hotspot X="-1005.3" Y="2915.17" Z="1.3773" />
+				<Hotspot X="-1139.05" Y="2916.02" Z="-2.7203" />
+				<Hotspot X="-1199.29" Y="2886.87" Z="-5.9363" />
+				<Hotspot X="-1179.79" Y="3009.42" Z="17.8146" />
+				<Hotspot X="-1141.92" Y="3063.36" Z="25.024" />
+				<Hotspot X="-1086.76" Y="3062.04" Z="21.9105" />
+			</CustomBehavior>
 		</If>
 		<If Condition="HasItem(23338) &amp;&amp; !HasQuest(9373) &amp;&amp; !IsQuestCompleted(9373) &amp;&amp; (Me.Level &gt;= 58)">
 			<PickUp QuestName="Missing Missive" QuestId="9373" GiverName="Eroded Leather Case" GiverId="23338" GiverType="Item" />

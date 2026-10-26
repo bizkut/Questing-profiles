@@ -1023,11 +1023,12 @@
 		</If>
 		<!-- SKIP pickup Q12537 Lightning Definitely Strikes Twice: no quest giver with a spawn in the database -->
 		<!-- SKIP pickup Q12538 The Mist Isn't Listening: no quest giver with a spawn in the database -->
-		<Objective QuestName="The Mist Isn't Listening" QuestId="12538" Type="KillMob" MobId="28109" KillCount="12" />
+		<!-- Q12538: Zepik's Hunting Horn (38512) is needed but no creature near the guide coordinates drops it -->
 		<!-- SKIP turn-in Q12537 Lightning Definitely Strikes Twice: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12537)) &amp;&amp; (!IsQuestCompleted(12537)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12537" Type="Incomplete" />
 		</If>
+		<Objective QuestName="The Mist Isn't Listening" QuestId="12538" Type="KillMob" MobId="28109" KillCount="12" />
 		<!-- SKIP turn-in Q12538 The Mist Isn't Listening: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(12538)) &amp;&amp; (!IsQuestCompleted(12538)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12538" Type="Incomplete" />
@@ -1115,6 +1116,7 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12577)">
 			<PickUp QuestName="The Angry Gorloc" QuestId="12578" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
+		<!-- Q12578: Moodle's Stress Ball (38624) is needed but no creature near the guide coordinates drops it -->
 		<TurnIn QuestName="Back Through the Waygate" QuestId="12797" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12797)">
 			<PickUp QuestName="Reclamation" QuestId="12546" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />

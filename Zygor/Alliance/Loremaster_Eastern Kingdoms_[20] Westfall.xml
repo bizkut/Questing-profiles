@@ -34,16 +34,6 @@
 
 	<Mailboxes />
 
-	<Quest Id="399" Name="Humble Beginnings">
-		<Objective Type="CollectItem" ItemId="2998" CollectCount="1">
-			<CollectFrom>
-				<GameObject Name="Alexston's Chest" Id="1166" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-10672.2" Y="1748.32" Z="40.5583" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="64" Name="The Forgotten Heirloom">
 		<Objective Type="CollectItem" ItemId="841" CollectCount="1">
 			<CollectFrom>
@@ -422,6 +412,18 @@
 		<Objective QuestName="Poor Old Blanchy" QuestId="151" Type="CollectItem" ItemId="1528" CollectCount="8" />
 		<Objective QuestName="The Forgotten Heirloom" QuestId="64" Type="CollectItem" ItemId="841" CollectCount="1" />
 		<Objective QuestName="Westfall Stew" QuestId="38" Type="CollectItem" ItemId="730" CollectCount="3" />
+		<If Condition="HasQuest(136) &amp;&amp; !IsQuestCompleted(136) &amp;&amp; GetItemCount(1357) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="136" CollectItemId="1357" CollectItemCount="1" HuntingGroundRadius="120" MobId="126" MobId2="127" MobId3="171" MobId4="391" MobId5="456" MobId6="458" X="-11033.9" Y="2047.56" Z="9.526">
+				<Hotspot X="-11033.9" Y="2047.56" Z="9.526" />
+				<Hotspot X="-11073.6" Y="2069.53" Z="6.3876" />
+				<Hotspot X="-11104.8" Y="2035.63" Z="0.8097" />
+				<Hotspot X="-11123" Y="2084.76" Z="-6.8155" />
+				<Hotspot X="-11162.7" Y="2061.85" Z="-3.5664" />
+				<Hotspot X="-10807.6" Y="2086.28" Z="7.4564" />
+				<Hotspot X="-10799.8" Y="2038.96" Z="11.2187" />
+				<Hotspot X="-10757.5" Y="2082.63" Z="5.4149" />
+			</CustomBehavior>
+		</If>
 		<If Condition="HasItem(1357) &amp;&amp; !HasQuest(136) &amp;&amp; !IsQuestCompleted(136) &amp;&amp; (Me.Level &gt;= 10)">
 			<PickUp QuestName="Captain Sanders' Hidden Treasure" QuestId="136" GiverName="Captain Sanders' Treasure Map" GiverId="1357" GiverType="Item" />
 		</If>
@@ -442,7 +444,7 @@
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(136)">
 			<PickUp QuestName="Captain Sanders' Hidden Treasure" QuestId="138" GiverName="Captain's Footlocker" GiverId="35" GiverType="Object" X="-10514.2" Y="2109.99" Z="2.6882" />
 		</If>
-		<Objective QuestName="Humble Beginnings" QuestId="399" Type="CollectItem" ItemId="2998" CollectCount="1" />
+		<!-- Q399: Bloodscalp Channeling Staff (1998) is needed but no creature near the guide coordinates drops it -->
 		<TurnIn QuestName="Captain Sanders' Hidden Treasure" QuestId="138" TurnInName="Broken Barrel" TurnInId="36" TurnInType="Object" X="-10515.2" Y="1598.61" Z="44.0296" />
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(138)">
 			<PickUp QuestName="Captain Sanders' Hidden Treasure" QuestId="139" GiverName="Broken Barrel" GiverId="36" GiverType="Object" X="-10515.2" Y="1598.61" Z="44.0296" />
@@ -505,7 +507,13 @@
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
-			<TurnIn QuestName="Humble Beginnings" QuestId="399" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
+			<!-- REVIEW Q399 Humble Beginnings: helper item 1998 Bloodscalp Channeling Staff has no dropping creature near the guide coordinates; item 2998 A Simple Compass has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(399)) &amp;&amp; (IsQuestCompleted(399)))">
+				<TurnIn QuestName="Humble Beginnings" QuestId="399" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
+			</If>
+			<If Condition="((HasQuest(399)) &amp;&amp; (!IsQuestCompleted(399)))">
+				<CustomBehavior File="AbandonQuest" QuestId="399" Type="Incomplete" />
+			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
 			<TurnIn QuestName="Dungar Longdrink" QuestId="6261" TurnInName="Dungar Longdrink" TurnInId="352" X="-8835.76" Y="490.084" Z="109.699" />
@@ -528,7 +536,13 @@
 		<If Condition="(Me.Level &gt;= 14) &amp;&amp; IsQuestCompleted(135)">
 			<PickUp QuestName="The Defias Brotherhood" QuestId="141" GiverName="Master Mathias Shaw" GiverId="332" X="-8815.27" Y="362.3" Z="109.604" />
 		</If>
-		<TurnIn QuestName="Humble Beginnings" QuestId="399" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
+		<!-- REVIEW Q399 Humble Beginnings: helper item 1998 Bloodscalp Channeling Staff has no dropping creature near the guide coordinates; item 2998 A Simple Compass has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(399)) &amp;&amp; (IsQuestCompleted(399)))">
+			<TurnIn QuestName="Humble Beginnings" QuestId="399" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
+		</If>
+		<If Condition="((HasQuest(399)) &amp;&amp; (!IsQuestCompleted(399)))">
+			<CustomBehavior File="AbandonQuest" QuestId="399" Type="Incomplete" />
+		</If>
 		<TurnIn QuestName="The Defias Brotherhood" QuestId="141" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
 		<If Condition="(Me.Level &gt;= 14) &amp;&amp; IsQuestCompleted(141)">
 			<PickUp QuestName="The Defias Brotherhood" QuestId="142" GiverName="Gryan Stoutmantle" GiverId="234" X="-10508.8" Y="1045.23" Z="60.7013" />

@@ -508,6 +508,18 @@
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1374)">
 			<PickUp QuestName="Khan Hratha" QuestId="1380" GiverName="Uthek the Wise" GiverId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
 		</If>
+		<If Condition="HasQuest(1380) &amp;&amp; !IsQuestCompleted(1380) &amp;&amp; GetItemCount(6074) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="1380" CollectItemId="6074" CollectItemCount="1" HuntingGroundRadius="120" MobId="4654" MobId2="4655" MobId3="4656" MobId4="4657" MobId5="4658" MobId6="4659" X="-1373.53" Y="2794.38" Z="112.181">
+				<Hotspot X="-1373.53" Y="2794.38" Z="112.181" />
+				<Hotspot X="-1339.33" Y="2767.88" Z="113.293" />
+				<Hotspot X="-1313.95" Y="2818.8" Z="113.631" />
+				<Hotspot X="-1296.83" Y="2886.9" Z="113.547" />
+				<Hotspot X="-1365.21" Y="2906.61" Z="127.478" />
+				<Hotspot X="-1380.57" Y="2854.46" Z="122.81" />
+				<Hotspot X="-1418.03" Y="2883.82" Z="132.727" />
+				<Hotspot X="-1509.29" Y="2849.72" Z="109.499" />
+			</CustomBehavior>
+		</If>
 		<If Condition="(Me.Level &gt;= 34)">
 			<PickUp QuestName="Get Me Out of Here!" QuestId="6132" GiverName="Melizza Brimbuzzle" GiverId="12277" X="-1151.77" Y="2707.09" Z="111.197" />
 		</If>

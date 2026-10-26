@@ -689,6 +689,11 @@
 		<Objective QuestName="Water Elementals" QuestId="601" Type="CollectItem" ItemId="3923" CollectCount="6" />
 		<Objective QuestName="Raptor Mastery" QuestId="195" Type="KillMob" MobId="686" KillCount="10" />
 		<Objective QuestName="Some Assembly Required" QuestId="577" Type="CollectItem" ItemId="4104" CollectCount="5" />
+		<If Condition="HasQuest(1182) &amp;&amp; !IsQuestCompleted(1182) &amp;&amp; GetItemCount(5851) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="1182" CollectItemId="5851" CollectItemCount="1" HuntingGroundRadius="120" MobId="4723" X="-11949.5" Y="-500.392" Z="30.7014">
+				<Hotspot X="-11949.5" Y="-500.392" Z="30.7014" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Goblin Sponsorship" QuestId="1182" Type="CollectItem" ItemId="5852" CollectCount="1" />
 		<Objective QuestName="Hostile Takeover" QuestId="213" Type="CollectItem" ItemId="4106" CollectCount="8" />
 		<Objective QuestName="Panther Mastery" QuestId="192" Type="KillMob" MobId="684" KillCount="10" />
@@ -764,6 +769,17 @@
 			<PickUp QuestName="Stones of Binding" QuestId="651" GiverName="Iridescent Shards" GiverId="2701" GiverType="Object" X="-876.186" Y="-3901.82" Z="143.1" />
 		</If>
 		<Objective QuestName="Stones of Binding" QuestId="651" Type="CollectItem" ItemId="4484" CollectCount="1" />
+		<If Condition="((Me.Class == WoWClass.Warrior))">
+			<If Condition="HasQuest(1712) &amp;&amp; !IsQuestCompleted(1712) &amp;&amp; GetItemCount(4481) &lt; 8">
+				<CustomBehavior File="CollectThings" QuestId="1712" CollectItemId="4481" CollectItemCount="8" HuntingGroundRadius="120" MobId="2572" MobId2="2573" MobId3="2574" MobId4="2761" X="-850.903" Y="-3262.96" Z="78.2393">
+					<Hotspot X="-850.903" Y="-3262.96" Z="78.2393" />
+					<Hotspot X="-811.062" Y="-3249.74" Z="81.7931" />
+					<Hotspot X="-817.885" Y="-3292.26" Z="80.6197" />
+					<Hotspot X="-880.819" Y="-3312.67" Z="79.7718" />
+					<Hotspot X="-877.641" Y="-3219.66" Z="82.4555" />
+				</CustomBehavior>
+			</If>
+		</If>
 		<TurnIn QuestName="Hints of a New Plague?" QuestId="659" TurnInName="Quae" TurnInId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(659)">
 			<PickUp QuestName="Hints of a New Plague?" QuestId="658" GiverName="Quae" GiverId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
@@ -791,6 +807,19 @@
 		<Objective QuestName="Worth Its Weight in Gold" QuestId="691" Type="CollectItem" ItemId="4522" CollectCount="4" />
 		<Objective QuestName="Worth Its Weight in Gold" QuestId="691" Type="CollectItem" ItemId="5040" CollectCount="1" />
 		<Objective QuestName="Stones of Binding" QuestId="651" Type="CollectItem" ItemId="4485" CollectCount="1" />
+		<If Condition="((Me.Class == WoWClass.Warrior))">
+			<If Condition="HasQuest(1712) &amp;&amp; !IsQuestCompleted(1712) &amp;&amp; GetItemCount(4480) &lt; 8">
+				<CustomBehavior File="CollectThings" QuestId="1712" CollectItemId="4480" CollectItemCount="8" HuntingGroundRadius="120" MobId="2572" MobId2="2573" MobId3="2574" MobId4="2762" X="-1342.75" Y="-2738.18" Z="59.0828">
+					<Hotspot X="-1342.75" Y="-2738.18" Z="59.0828" />
+					<Hotspot X="-1379.65" Y="-2716.35" Z="57.4799" />
+					<Hotspot X="-1383.47" Y="-2757.88" Z="53.0001" />
+					<Hotspot X="-1316.9" Y="-2785.59" Z="57.0789" />
+					<Hotspot X="-1278.76" Y="-2744.07" Z="52.9249" />
+					<Hotspot X="-1353.3" Y="-2680.84" Z="69.1467" />
+					<Hotspot X="-1413.11" Y="-2684.88" Z="51.4271" />
+				</CustomBehavior>
+			</If>
+		</If>
 		<TurnIn QuestName="Worth Its Weight in Gold" QuestId="691" TurnInName="Apprentice Kryten" TurnInId="2788" X="-1279.41" Y="-2529.77" Z="21.5095" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(691)">
 			<PickUp QuestName="Wand over Fist" QuestId="693" GiverName="Skuerto" GiverId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
@@ -804,7 +833,19 @@
 		<Objective QuestName="Northfold Manor" QuestId="681" Type="KillMob" MobId="2589" KillCount="6" />
 		<Objective QuestName="Stones of Binding" QuestId="651" Type="CollectItem" ItemId="4483" CollectCount="1" />
 		<If Condition="((Me.Class == WoWClass.Warrior))">
-			<!-- REVIEW Q1712 Cyclonian: item 3901 Bloodscalp Tusk has no drop or chest near the guide coordinates; item 6851 Essence of the Exile has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="HasQuest(1712) &amp;&amp; !IsQuestCompleted(1712) &amp;&amp; GetItemCount(4479) &lt; 8">
+				<CustomBehavior File="CollectThings" QuestId="1712" CollectItemId="4479" CollectItemCount="8" HuntingGroundRadius="120" MobId="2760" X="-848.952" Y="-1789.83" Z="40.3907">
+					<Hotspot X="-848.952" Y="-1789.83" Z="40.3907" />
+					<Hotspot X="-877.01" Y="-1819.88" Z="44.0376" />
+					<Hotspot X="-813.588" Y="-1814.71" Z="48.4326" />
+					<Hotspot X="-817.706" Y="-1758.89" Z="48.3385" />
+					<Hotspot X="-865.859" Y="-1744.28" Z="45.5624" />
+					<Hotspot X="-919.272" Y="-1751.73" Z="47.802" />
+				</CustomBehavior>
+			</If>
+		</If>
+		<If Condition="((Me.Class == WoWClass.Warrior))">
+			<!-- REVIEW Q1712 Cyclonian: item 6851 Essence of the Exile has no drop or chest near the guide coordinates; item 3901 Bloodscalp Tusk has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(1712)) &amp;&amp; (IsQuestCompleted(1712)))">
 				<TurnIn QuestName="Cyclonian" QuestId="1712" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" X="250.84" Y="-1470.58" Z="55.4491" />
 			</If>

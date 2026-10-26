@@ -357,6 +357,16 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="1143" Name="The Tower of Althalaxx">
+		<Objective Type="CollectItem" ItemId="5383" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Athrikus Narassin" Id="3660" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="7183.49" Y="-727.623" Z="94.2088" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="951" Name="Mathystra Relics">
 		<Objective Type="CollectItem" ItemId="5273" CollectCount="6">
 			<CollectFrom>
@@ -675,7 +685,11 @@
 		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(4762)">
 			<PickUp QuestName="The Blackwood Corrupted" QuestId="4763" GiverName="Thundris Windweaver" GiverId="3649" X="6580.97" Y="492.292" Z="8.3174" />
 		</If>
+		<!-- Q4763: Filled Cleansing Bowl (12347) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Tharnariun's Hope" QuestId="2139" Type="KillMob" MobId="6788" KillCount="1" />
+		<!-- Q4763: Blackwood Grain Sample (12342) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q4763: Blackwood Nut Sample (12343) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q4763: Blackwood Fruit Sample (12341) is needed but no creature near the guide coordinates drops it -->
 		<TurnIn QuestName="The Tower of Althalaxx" QuestId="965" TurnInName="Balthule Shadowstrike" TurnInId="3661" X="7246.63" Y="-658.966" Z="34.622" />
 		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(965)">
 			<PickUp QuestName="The Tower of Althalaxx" QuestId="966" GiverName="Balthule Shadowstrike" GiverId="3661" X="7246.63" Y="-658.966" Z="34.622" />
@@ -688,7 +702,7 @@
 		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(4681)">
 			<PickUp QuestName="Beached Sea Turtle" QuestId="4727" GiverName="Beached Sea Turtle" GiverId="176196" GiverType="Object" X="7543.85" Y="-537.257" Z="0.6169" />
 		</If>
-		<!-- REVIEW Q4763 The Blackwood Corrupted: item 12355 Talisman of Corruption has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q4763 The Blackwood Corrupted: helper item 12347 Filled Cleansing Bowl has no dropping creature near the guide coordinates; helper item 12342 Blackwood Grain Sample has no dropping creature near the guide coordinates; helper item 12343 Blackwood Nut Sample has no dropping creature near the guide coordinates; helper item 12341 Blackwood Fruit Sample has no dropping creature near the guide coordinates; item 12355 Talisman of Corruption has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4763)) &amp;&amp; (IsQuestCompleted(4763)))">
 			<TurnIn QuestName="The Blackwood Corrupted" QuestId="4763" TurnInName="Thundris Windweaver" TurnInId="3649" X="6580.97" Y="492.292" Z="8.3174" />
 		</If>
@@ -762,6 +776,17 @@
 		</If>
 		<If Condition="(Me.Level &gt;= 10)">
 			<PickUp QuestName="Therylune's Escape" QuestId="945" GiverName="Therylune" GiverId="3584" X="4519.74" Y="410.481" Z="33.8577" />
+		</If>
+		<If Condition="HasQuest(1143) &amp;&amp; !IsQuestCompleted(1143) &amp;&amp; GetItemCount(5352) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="1143" CollectItemId="5352" CollectItemCount="1" HuntingGroundRadius="120" MobId="2338" MobId2="2339" X="4565.64" Y="416.6" Z="33.7967">
+				<Hotspot X="4565.64" Y="416.6" Z="33.7967" />
+				<Hotspot X="4553.06" Y="377.936" Z="31.6077" />
+				<Hotspot X="4593.27" Y="359.268" Z="34.9827" />
+				<Hotspot X="4606.53" Y="404.076" Z="31.6077" />
+				<Hotspot X="4525.24" Y="439.07" Z="32.7327" />
+				<Hotspot X="4501.4" Y="396.829" Z="31.9258" />
+				<Hotspot X="4488.33" Y="354.692" Z="31.6077" />
+			</CustomBehavior>
 		</If>
 		<If Condition="HasItem(5352) &amp;&amp; !HasQuest(968) &amp;&amp; !IsQuestCompleted(968) &amp;&amp; (Me.Level &gt;= 10)">
 			<PickUp QuestName="The Powers Below" QuestId="968" GiverName="Book: The Powers Below" GiverId="5352" GiverType="Item" />
@@ -850,13 +875,8 @@
 		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(1167)">
 			<PickUp QuestName="The Tower of Althalaxx" QuestId="1143" GiverName="Balthule Shadowstrike" GiverId="3661" X="7246.63" Y="-658.966" Z="34.622" />
 		</If>
-		<!-- REVIEW Q1143 The Tower of Althalaxx: item 5383 Athrikus Narassin's Head has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(1143)) &amp;&amp; (IsQuestCompleted(1143)))">
-			<TurnIn QuestName="The Tower of Althalaxx" QuestId="1143" TurnInName="Balthule Shadowstrike" TurnInId="3661" X="7246.63" Y="-658.966" Z="34.622" />
-		</If>
-		<If Condition="((HasQuest(1143)) &amp;&amp; (!IsQuestCompleted(1143)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1143" Type="Incomplete" />
-		</If>
+		<Objective QuestName="The Tower of Althalaxx" QuestId="1143" Type="CollectItem" ItemId="5383" CollectCount="1" />
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="1143" TurnInName="Balthule Shadowstrike" TurnInId="3661" X="7246.63" Y="-658.966" Z="34.622" />
 		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(1143)">
 			<PickUp QuestName="The Tower of Althalaxx" QuestId="981" GiverName="Balthule Shadowstrike" GiverId="3661" X="7246.63" Y="-658.966" Z="34.622" />
 		</If>

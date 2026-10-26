@@ -55,42 +55,116 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(13041) &amp;&amp; !IsQuestCompleted(12958) &amp;&amp; !HasQuest(12958) &amp;&amp; !IsQuestCompleted(12959) &amp;&amp; !HasQuest(12959) &amp;&amp; !IsQuestCompleted(12961) &amp;&amp; !HasQuest(12961) &amp;&amp; !IsQuestCompleted(12962) &amp;&amp; !HasQuest(12962) &amp;&amp; !IsQuestCompleted(12963) &amp;&amp; !HasQuest(12963)">
 			<PickUp QuestName="Shipment: Wicked Sun Brooch" QuestId="12960" GiverName="Timothy Jones" GiverId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
-		<!-- REVIEW Q12958 Shipment: Blood Jade Amulet : item 43269 Blood Jade Amulet has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(12958) &amp;&amp; !IsQuestCompleted(12958) &amp;&amp; GetItemCount(41989) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12958" CollectItemId="41989" CollectItemCount="1" HuntingGroundRadius="120" MobId="30953" MobId2="31159" MobId3="31258" MobId4="31262" MobId5="31267" MobId6="31746" X="7141.73" Y="1757.92" Z="488.524">
+				<Hotspot X="7141.73" Y="1757.92" Z="488.524" />
+				<Hotspot X="7175.08" Y="1802.79" Z="528.015" />
+				<Hotspot X="7201.21" Y="1766.27" Z="482.083" />
+				<Hotspot X="7223.11" Y="1726.27" Z="476.162" />
+				<Hotspot X="7272.39" Y="1732.53" Z="472.435" />
+				<Hotspot X="7263.79" Y="1664.01" Z="443.938" />
+				<Hotspot X="7179.87" Y="1683.75" Z="470.215" />
+				<Hotspot X="7081.81" Y="1753.6" Z="497.456" />
+			</CustomBehavior>
+		</If>
+		<!-- Q12958: Dark Jade (36932) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12958: Bloodstone (36917) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12962) &amp;&amp; !IsQuestCompleted(12962) &amp;&amp; GetItemCount(42107) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12962" CollectItemId="42107" CollectItemCount="1" HuntingGroundRadius="120" MobId="26283" MobId2="26316" MobId3="27254" MobId4="27382" X="3614.71" Y="-151.189" Z="59.7922">
+				<Hotspot X="3614.71" Y="-151.189" Z="59.7922" />
+				<Hotspot X="3654.77" Y="-154.416" Z="59.799" />
+				<Hotspot X="3643.6" Y="-110.345" Z="59.799" />
+				<Hotspot X="3593.04" Y="-94.3517" Z="59.8126" />
+				<Hotspot X="3510.27" Y="-143.185" Z="63.0682" />
+				<Hotspot X="3495.04" Y="-190.635" Z="59.908" />
+				<Hotspot X="3582.08" Y="-196.215" Z="59.7566" />
+			</CustomBehavior>
+		</If>
+		<!-- Q12962: Huge Citrine (36929) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12962: Bloodstone (36917) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12959) &amp;&amp; !IsQuestCompleted(12959) &amp;&amp; GetItemCount(42104) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12959" CollectItemId="42104" CollectItemCount="1" HuntingGroundRadius="120" MobId="26271" MobId2="26272" MobId3="26273" MobId4="32400" X="3796.46" Y="13.9505" Z="59.7361">
+				<Hotspot X="3796.46" Y="13.9505" Z="59.7361" />
+				<Hotspot X="3856.7" Y="-27.7189" Z="50.3614" />
+				<Hotspot X="3837.37" Y="-69.417" Z="55.2755" />
+				<Hotspot X="3903.54" Y="47.8734" Z="47.0908" />
+				<Hotspot X="4033.39" Y="-45.1277" Z="58.099" />
+				<Hotspot X="3831" Y="362.401" Z="34.3449" />
+			</CustomBehavior>
+		</If>
+		<!-- Q12959: Chalcedony (36923) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12959: Shadow Crystal (36926) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12961) &amp;&amp; !IsQuestCompleted(12961) &amp;&amp; GetItemCount(42106) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12961" CollectItemId="42106" CollectItemCount="1" HuntingGroundRadius="120" MobId="29590" MobId2="29753" X="7462.62" Y="199.231" Z="768.731">
+				<Hotspot X="7462.62" Y="199.231" Z="768.731" />
+				<Hotspot X="7459.58" Y="132.299" Z="768.328" />
+				<Hotspot X="7420.03" Y="257.465" Z="768.803" />
+				<Hotspot X="7448.86" Y="302.587" Z="771.315" />
+			</CustomBehavior>
+		</If>
+		<!-- Q12961: Chalcedony (36923) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12961: Dark Jade (36932) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12963) &amp;&amp; !IsQuestCompleted(12963) &amp;&amp; GetItemCount(42108) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12963" CollectItemId="42108" CollectItemCount="1" HuntingGroundRadius="120" MobId="26492" MobId2="26493" MobId3="27270" MobId4="27284" MobId5="27360" MobId6="27362" X="4545.38" Y="476.614" Z="67.0911">
+				<Hotspot X="4545.38" Y="476.614" Z="67.0911" />
+				<Hotspot X="4583.09" Y="449.509" Z="85.0521" />
+				<Hotspot X="4444.33" Y="354.777" Z="48.877" />
+				<Hotspot X="4431.47" Y="310.504" Z="45.8737" />
+				<Hotspot X="4370.42" Y="315.989" Z="48.4204" />
+				<Hotspot X="4355.68" Y="363.742" Z="51.2043" />
+				<Hotspot X="4415.26" Y="416.972" Z="44.5214" />
+				<Hotspot X="4341.52" Y="484.592" Z="-7.9457" />
+			</CustomBehavior>
+		</If>
+		<!-- Q12963: Sun Crystal (36920) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12963: Shadow Crystal (36926) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12960) &amp;&amp; !IsQuestCompleted(12960) &amp;&amp; GetItemCount(42105) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12960" CollectItemId="42105" CollectItemCount="1" HuntingGroundRadius="120" MobId="29369" MobId2="29370" MobId3="29374" MobId4="29376" MobId5="29377" MobId6="29586" X="7007.96" Y="-3.7559" Z="809.461">
+				<Hotspot X="7007.96" Y="-3.7559" Z="809.461" />
+				<Hotspot X="6966.27" Y="-18.0699" Z="809.05" />
+				<Hotspot X="6896.48" Y="14.3666" Z="797.861" />
+				<Hotspot X="6903.44" Y="70.1409" Z="805.923" />
+				<Hotspot X="7010.22" Y="61.934" Z="812.907" />
+			</CustomBehavior>
+		</If>
+		<!-- Q12960: Huge Citrine (36929) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12960: Sun Crystal (36920) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q12958 Shipment: Blood Jade Amulet : helper item 36932 Dark Jade has no dropping creature near the guide coordinates; helper item 36917 Bloodstone has no dropping creature near the guide coordinates; item 43269 Blood Jade Amulet has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12958)) &amp;&amp; (IsQuestCompleted(12958)))">
 			<TurnIn QuestName="Shipment: Blood Jade Amulet " QuestId="12958" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12958)) &amp;&amp; (!IsQuestCompleted(12958)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12958" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q12962 Shipment: Bright Armor Relic: item 43275 Bright Armor Relic has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12962 Shipment: Bright Armor Relic: helper item 36929 Huge Citrine has no dropping creature near the guide coordinates; helper item 36917 Bloodstone has no dropping creature near the guide coordinates; item 43275 Bright Armor Relic has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12962)) &amp;&amp; (IsQuestCompleted(12962)))">
 			<TurnIn QuestName="Shipment: Bright Armor Relic" QuestId="12962" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12962)) &amp;&amp; (!IsQuestCompleted(12962)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12962" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q12959 Shipment: Glowing Ivory Figurine: item 43270 Glowing Ivory Figurine has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12959 Shipment: Glowing Ivory Figurine: helper item 36923 Chalcedony has no dropping creature near the guide coordinates; helper item 36926 Shadow Crystal has no dropping creature near the guide coordinates; item 43270 Glowing Ivory Figurine has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12959)) &amp;&amp; (IsQuestCompleted(12959)))">
 			<TurnIn QuestName="Shipment: Glowing Ivory Figurine" QuestId="12959" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12959)) &amp;&amp; (!IsQuestCompleted(12959)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12959" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q12961 Shipment: Intricate Bone Figurine: item 43274 Intricate Bone Figurine has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12961 Shipment: Intricate Bone Figurine: helper item 36923 Chalcedony has no dropping creature near the guide coordinates; helper item 36932 Dark Jade has no dropping creature near the guide coordinates; item 43274 Intricate Bone Figurine has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12961)) &amp;&amp; (IsQuestCompleted(12961)))">
 			<TurnIn QuestName="Shipment: Intricate Bone Figurine" QuestId="12961" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12961)) &amp;&amp; (!IsQuestCompleted(12961)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12961" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q12963 Shipment: Shifting Sun Curio : item 43276 Shifting Sun Curio has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12963 Shipment: Shifting Sun Curio : helper item 36920 Sun Crystal has no dropping creature near the guide coordinates; helper item 36926 Shadow Crystal has no dropping creature near the guide coordinates; item 43276 Shifting Sun Curio has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12963)) &amp;&amp; (IsQuestCompleted(12963)))">
 			<TurnIn QuestName="Shipment: Shifting Sun Curio " QuestId="12963" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12963)) &amp;&amp; (!IsQuestCompleted(12963)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12963" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q12960 Shipment: Wicked Sun Brooch: item 43272 Wicked Sun Brooch has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12960 Shipment: Wicked Sun Brooch: helper item 36929 Huge Citrine has no dropping creature near the guide coordinates; helper item 36920 Sun Crystal has no dropping creature near the guide coordinates; item 43272 Wicked Sun Brooch has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12960)) &amp;&amp; (IsQuestCompleted(12960)))">
 			<TurnIn QuestName="Shipment: Wicked Sun Brooch" QuestId="12960" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>

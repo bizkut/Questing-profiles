@@ -918,10 +918,15 @@
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(9996)">
 			<PickUp QuestName="The Final Code" QuestId="10446" GiverName="Lieutenant Meridian" GiverId="21006" X="-2588.25" Y="3319.51" Z="0.6892" />
 		</If>
+		<If Condition="HasQuest(10446) &amp;&amp; !IsQuestCompleted(10446) &amp;&amp; GetItemCount(29912) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10446" CollectItemId="29912" CollectItemCount="1" HuntingGroundRadius="120" MobId="18554" X="-2289.5" Y="3094.68" Z="152.917">
+				<Hotspot X="-2289.5" Y="3094.68" Z="152.917" />
+			</CustomBehavior>
+		</If>
 		<If Condition="(Me.Level &gt;= 62)">
 			<PickUp QuestName="Escape from Firewing Point!" QuestId="10051" GiverName="Isla Starmane" GiverId="18760" X="-2265.21" Y="3091.14" Z="13.9121" />
 		</If>
-		<!-- REVIEW Q10446 The Final Code: collect 21039 Mana Bomb Kill Credit Trigger x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10446 The Final Code: goal 21039 Mana Bomb Kill Credit Trigger x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10446)) &amp;&amp; (IsQuestCompleted(10446)))">
 			<TurnIn QuestName="The Final Code" QuestId="10446" TurnInName="Jenai Starwhisper" TurnInId="18459" X="-2925.6" Y="4004.8" Z="-1.4743" />
 		</If>

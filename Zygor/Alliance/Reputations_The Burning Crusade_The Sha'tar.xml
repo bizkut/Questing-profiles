@@ -466,7 +466,17 @@
 			<CustomBehavior File="AbandonQuest" QuestId="10010" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q10011 Forge Camp: Annihilated: group quest (3 players) -->
-		<!-- REVIEW Q10011 Forge Camp: Annihilated: group quest (3 players); collect 19067 Fel Cannon: Hate x1: not attackable; collect 19210 Fel Cannon: Fear x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(10011) &amp;&amp; !IsQuestCompleted(10011) &amp;&amp; GetItemCount(25770) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10011" CollectItemId="25770" CollectItemCount="1" HuntingGroundRadius="120" MobId="18535" X="-1287.83" Y="8915.32" Z="60.9594">
+				<Hotspot X="-1287.83" Y="8915.32" Z="60.9594" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(10011) &amp;&amp; !IsQuestCompleted(10011) &amp;&amp; GetItemCount(25771) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10011" CollectItemId="25771" CollectItemCount="1" HuntingGroundRadius="120" MobId="18536" X="-1840.42" Y="9212.31" Z="73.4196">
+				<Hotspot X="-1840.42" Y="9212.31" Z="73.4196" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q10011 Forge Camp: Annihilated: group quest (3 players); objective 19067 Fel Cannon: Hate x1: not attackable; objective 19210 Fel Cannon: Fear x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10011)) &amp;&amp; (IsQuestCompleted(10011)))">
 			<TurnIn QuestName="Forge Camp: Annihilated" QuestId="10011" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
@@ -574,7 +584,19 @@
 		</If>
 		<TurnIn QuestName="The Dread Relic" QuestId="10877" TurnInName="Oakun" TurnInId="22456" X="-3755.23" Y="5405.95" Z="-3.3149" />
 		<!-- SKIP Q10923 Evil Draws Near: group quest (3 players) -->
-		<!-- REVIEW Q10923 Evil Draws Near: group quest (3 players); collect 22441 Teribus the Cursed x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(10923) &amp;&amp; !IsQuestCompleted(10923) &amp;&amp; GetItemCount(31812) &lt; 20">
+			<CustomBehavior File="CollectThings" QuestId="10923" CollectItemId="31812" CollectItemCount="20" HuntingGroundRadius="120" MobId="21242" MobId2="21285" X="-3412.35" Y="4448.26" Z="-7.8966">
+				<Hotspot X="-3412.35" Y="4448.26" Z="-7.8966" />
+				<Hotspot X="-3370.78" Y="4440.97" Z="-11.7821" />
+				<Hotspot X="-3399.3" Y="4402.36" Z="-12.6198" />
+				<Hotspot X="-3454.51" Y="4376.43" Z="-10.596" />
+				<Hotspot X="-3464.42" Y="4443.12" Z="-11.8372" />
+				<Hotspot X="-3420.02" Y="4492.4" Z="-14.8924" />
+				<Hotspot X="-3381.02" Y="4511.68" Z="-14.0893" />
+			</CustomBehavior>
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="10923" ItemId="31811" MobId="22441" NumOfTimes="1" Range="5" CollectionDistance="200" X="-3400.86" Y="4665.3" Z="99.6544" />
+		<!-- REVIEW Q10923 Evil Draws Near: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10923)) &amp;&amp; (IsQuestCompleted(10923)))">
 			<TurnIn QuestName="Evil Draws Near" QuestId="10923" TurnInName="Oakun" TurnInId="22456" X="-3755.23" Y="5405.95" Z="-3.3149" />
 		</If>

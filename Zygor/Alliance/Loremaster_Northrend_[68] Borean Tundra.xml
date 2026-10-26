@@ -525,9 +525,10 @@
 	<Quest Id="11936" Name="Hatching a Plan">
 		<Objective Type="UseObject" ObjectId="188133" UseCount="5">
 			<Hotspots>
-				<Hotspot X="3756.01" Y="7014.67" Z="103.175" />
-				<Hotspot X="3758.1" Y="6952.05" Z="107.888" />
-				<Hotspot X="3831.61" Y="7083.87" Z="103.561" />
+				<Hotspot X="3817.44" Y="6877.6" Z="103.905" />
+				<Hotspot X="3877.98" Y="6865.35" Z="103.211" />
+				<Hotspot X="3764.96" Y="6935.17" Z="108.931" />
+				<Hotspot X="3772.46" Y="6978.29" Z="104.15" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -598,14 +599,14 @@
 				<GameObject Name="Crystallized Mana" Id="188140" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="3726.05" Y="6604.72" Z="171.631" />
-				<Hotspot X="3758.26" Y="6652.85" Z="151.392" />
-				<Hotspot X="3767.87" Y="6704.59" Z="151.62" />
 				<Hotspot X="3817.02" Y="6751.44" Z="150.473" />
-				<Hotspot X="3854.43" Y="6648.31" Z="151.582" />
-				<Hotspot X="3796.4" Y="6601.57" Z="162.257" />
-				<Hotspot X="3805.09" Y="6541.64" Z="173.371" />
-				<Hotspot X="3650.61" Y="6903.97" Z="161.405" />
+				<Hotspot X="3879.95" Y="6753.89" Z="151.078" />
+				<Hotspot X="3767.87" Y="6704.59" Z="151.62" />
+				<Hotspot X="3758.26" Y="6652.85" Z="151.392" />
+				<Hotspot X="3750.36" Y="6909.54" Z="163.118" />
+				<Hotspot X="3686.3" Y="6901.34" Z="155.615" />
+				<Hotspot X="3676.29" Y="6941.89" Z="159.802" />
+				<Hotspot X="3610.09" Y="6946" Z="172.088" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -1020,6 +1021,11 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11908)">
 			<PickUp QuestName="Repurposed Technology" QuestId="12035" GiverName="Jeremiah Hawning" GiverId="26084" X="2476.09" Y="5216.26" Z="31.5088" />
 		</If>
+		<If Condition="HasQuest(11904) &amp;&amp; !IsQuestCompleted(11904) &amp;&amp; GetItemCount(35705) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11904" CollectItemId="35705" CollectItemCount="1" HuntingGroundRadius="120" MobId="26252" X="2849.36" Y="5229.06" Z="13.0336">
+				<Hotspot X="2849.36" Y="5229.06" Z="13.0336" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Fruits of Our Labor" QuestId="11904" Type="UseObject" ObjectId="188104" UseCount="1" />
 		<TurnIn QuestName="Fruits of Our Labor" QuestId="11904" TurnInName="Gerald Green" TurnInId="26083" X="2483.26" Y="5215.05" Z="30.2763" />
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11904)">
@@ -1228,13 +1234,28 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11612)">
 			<PickUp QuestName="Hampering Their Escape" QuestId="11617" GiverName="Etaruk" GiverId="25292" X="3510.62" Y="5440.93" Z="54.8075" />
 		</If>
+		<If Condition="HasQuest(11617) &amp;&amp; !IsQuestCompleted(11617) &amp;&amp; GetItemCount(34772) &lt; 3">
+			<CustomBehavior File="CollectThings" QuestId="11617" CollectItemId="34772" CollectItemCount="3" HuntingGroundRadius="120" MobId="25449" X="3595.51" Y="5537.04" Z="47.1724">
+				<Hotspot X="3595.51" Y="5537.04" Z="47.1724" />
+				<Hotspot X="3557.06" Y="5517.57" Z="27.1998" />
+				<Hotspot X="3577.43" Y="5582.68" Z="36.1652" />
+				<Hotspot X="3531.71" Y="5612.38" Z="54.4951" />
+				<Hotspot X="3623.38" Y="5637" Z="30.1231" />
+				<Hotspot X="3661.32" Y="5546.96" Z="33.0705" />
+				<Hotspot X="3715.68" Y="5533.02" Z="57.8415" />
+				<Hotspot X="3607.14" Y="5466.82" Z="31.0485" />
+			</CustomBehavior>
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="11617" ItemId="34772" MobId="25441" NumOfTimes="1" Range="5" CollectionDistance="200" X="3670.9" Y="5557.41" Z="64.3578" />
+		<CustomBehavior File="UseItemOn" QuestId="11617" ItemId="34772" MobId="25443" NumOfTimes="1" Range="5" CollectionDistance="200" X="3589.69" Y="5633.59" Z="74.2919" />
+		<CustomBehavior File="UseItemOn" QuestId="11617" ItemId="34772" MobId="25442" NumOfTimes="1" Range="5" CollectionDistance="200" X="3567.48" Y="5531.07" Z="86.6564" />
 		<Objective QuestName="The Lost Spirits" QuestId="11607" Type="KillMob" MobId="25321" KillCount="3" />
 		<Objective QuestName="The Lost Spirits" QuestId="11607" Type="KillMob" MobId="25322" KillCount="3" />
 		<TurnIn QuestName="The Lost Spirits" QuestId="11607" TurnInName="Elder Atkanok" TurnInId="187565" TurnInType="Object" X="3519.76" Y="5421.07" Z="40.9974" />
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11607)">
 			<PickUp QuestName="Picking Up the Pieces" QuestId="11609" GiverName="Elder Atkanok" GiverId="187565" GiverType="Object" X="3519.76" Y="5421.07" Z="40.9974" />
 		</If>
-		<!-- REVIEW Q11617 Hampering Their Escape: collect 25442 East Platform x1: not attackable; collect 25441 North Platform x1: not attackable; collect 25443 West Platform x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11617 Hampering Their Escape: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11617)) &amp;&amp; (IsQuestCompleted(11617)))">
 			<TurnIn QuestName="Hampering Their Escape" QuestId="11617" TurnInName="Etaruk" TurnInId="25292" X="3510.62" Y="5440.93" Z="54.8075" />
 		</If>
@@ -1262,12 +1283,24 @@
 		<If Condition="(Me.Level &gt;= 69)">
 			<PickUp QuestName="Monitoring the Rift: Cleftcliff Anomaly" QuestId="11576" GiverName="Librarian Garren" GiverId="25291" X="3614.86" Y="5978.05" Z="136.3" />
 		</If>
+		<If Condition="HasQuest(11587) &amp;&amp; !IsQuestCompleted(11587) &amp;&amp; GetItemCount(34688) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11587" CollectItemId="34688" CollectItemCount="1" HuntingGroundRadius="120" MobId="25585" X="3449.3" Y="6151.09" Z="74.5724">
+				<Hotspot X="3449.3" Y="6151.09" Z="74.5724" />
+				<Hotspot X="3456.02" Y="6105.24" Z="67.5395" />
+				<Hotspot X="3512.56" Y="6093.57" Z="65.0953" />
+				<Hotspot X="3388.98" Y="6167.48" Z="79.831" />
+				<Hotspot X="3398.4" Y="6208.01" Z="76.5181" />
+				<Hotspot X="3342.57" Y="6207.24" Z="76.9889" />
+				<Hotspot X="3339.82" Y="6158.93" Z="76.5962" />
+				<Hotspot X="3370.86" Y="6123.23" Z="75.6" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Monitoring the Rift: Cleftcliff Anomaly" QuestId="11576" Type="KillMob" MobId="25310" KillCount="1" />
 		<TurnIn QuestName="Monitoring the Rift: Cleftcliff Anomaly" QuestId="11576" TurnInName="Librarian Garren" TurnInId="25291" X="3614.86" Y="5978.05" Z="136.3" />
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11576)">
 			<PickUp QuestName="Monitoring the Rift: Sundered Chasm" QuestId="11582" GiverName="Librarian Garren" GiverId="25291" X="3614.86" Y="5978.05" Z="136.3" />
 		</If>
-		<!-- REVIEW Q11587 Prison Break: collect 25318 Arcane Prisoner x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11587 Prison Break: objective 25318 Arcane Prisoner x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11587)) &amp;&amp; (IsQuestCompleted(11587)))">
 			<TurnIn QuestName="Prison Break" QuestId="11587" TurnInName="Librarian Donathan" TurnInId="25262" X="3615.93" Y="5961.46" Z="136.3" />
 		</If>
@@ -1376,10 +1409,22 @@
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11912)">
 			<PickUp QuestName="Keep the Secret Safe" QuestId="11914" GiverName="Librarian Serrah" GiverId="26110" X="3576.48" Y="6640.39" Z="195.176" />
 		</If>
-		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
+		<If Condition="HasQuest(11936) &amp;&amp; !IsQuestCompleted(11936) &amp;&amp; GetItemCount(35586) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="11936" CollectItemId="35586" CollectItemCount="5" HuntingGroundRadius="120" MobId="25728" X="3603.81" Y="7151.87" Z="221.859">
+				<Hotspot X="3603.81" Y="7151.87" Z="221.859" />
+				<Hotspot X="3619.05" Y="7192.14" Z="219.747" />
+				<Hotspot X="3562.78" Y="7189.18" Z="225.075" />
+				<Hotspot X="3514.75" Y="7146.97" Z="217.131" />
+				<Hotspot X="3492.84" Y="7109.36" Z="214.988" />
+				<Hotspot X="3514.82" Y="7074.38" Z="209.062" />
+				<Hotspot X="3556.04" Y="7055.76" Z="204.917" />
+				<Hotspot X="3649.99" Y="7020.45" Z="166.278" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="The Cell" QuestId="11943" Type="CollectItem" ItemId="35669" CollectCount="1" />
 		<Objective QuestName="The Cell" QuestId="11943" Type="CollectItem" ItemId="35668" CollectCount="1" />
 		<Objective QuestName="Keep the Secret Safe" QuestId="11914" Type="CollectItem" ItemId="35493" CollectCount="5" />
+		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
 		<TurnIn QuestName="Hatching a Plan" QuestId="11936" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11936)">
 			<PickUp QuestName="Drake Hunt" QuestId="11919" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
@@ -1402,9 +1447,10 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11946" Type="Incomplete" />
 		</If>
 		<!-- SKIP pickup Q11951 Bait and Switch: no quest giver with a spawn in the database -->
-		<Objective QuestName="Bait and Switch" QuestId="11951" Type="CollectItem" ItemId="35685" CollectCount="10" />
+		<!-- Q11951: Augmented Arcane Prison (35671) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Cracking the Code" QuestId="11931" Type="CollectItem" ItemId="35628" CollectCount="1" />
 		<Objective QuestName="Cracking the Code" QuestId="11931" Type="CollectItem" ItemId="35629" CollectCount="3" />
+		<Objective QuestName="Bait and Switch" QuestId="11951" Type="CollectItem" ItemId="35685" CollectCount="10" />
 		<!-- SKIP turn-in Q11951 Bait and Switch: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(11951)) &amp;&amp; (!IsQuestCompleted(11951)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11951" Type="Incomplete" />
@@ -1710,7 +1756,8 @@
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11658)">
 			<PickUp QuestName="It Was The Orcs, Honest!" QuestId="11670" GiverName="Crafty Wobblesprocket" GiverId="25477" X="4172.79" Y="5254.92" Z="26.2426" />
 		</If>
-		<!-- REVIEW Q11670 It Was The Orcs, Honest!: use item 34871: target 25581 It Was The Orcs, Honest! Kill Credit Bunny has no spawn (kill credit or scripted event); item 34870 Warsong Orc Disguise has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q11670: Warsong Banner (34869) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q11670 It Was The Orcs, Honest!: helper item 34869 Warsong Banner has no dropping creature near the guide coordinates; item 34870 Warsong Orc Disguise has no drop or chest near the guide coordinates; objective 25581 It Was The Orcs, Honest! Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11670)) &amp;&amp; (IsQuestCompleted(11670)))">
 			<TurnIn QuestName="It Was The Orcs, Honest!" QuestId="11670" TurnInName="Crafty Wobblesprocket" TurnInId="25477" X="4172.79" Y="5254.92" Z="26.2426" />
 		</If>

@@ -850,17 +850,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="11982" Name="Raining Down Destruction">
-		<Objective Type="KillMob" MobId="26264" KillCount="5">
-			<Hotspots>
-				<Hotspot X="4973.23" Y="-4645.17" Z="215.929" />
-				<Hotspot X="4983.09" Y="-4688.56" Z="219.586" />
-				<Hotspot X="4996.65" Y="-4729.5" Z="219.601" />
-				<Hotspot X="5024.74" Y="-4766.62" Z="219.589" />
-				<Hotspot X="5052.39" Y="-4796.59" Z="219.602" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="11985" Name="Into the Breach">
 		<Objective Type="KillMob" MobId="26348" KillCount="1">
 			<Hotspots>
@@ -1159,7 +1148,10 @@
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12276)">
 			<PickUp QuestName="Leave Nothing to Chance" QuestId="12277" GiverName="Slinkin the Demo-gnome" GiverId="27412" X="3996.67" Y="-945.023" Z="105.89" />
 		</If>
-		<!-- REVIEW Q12277 Leave Nothing to Chance: collect 27436 Upper Wintergarde Mine Shaft x1: not attackable; collect 27437 Lower Wintergarde Mine Shaft x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q12277: Wintergarde Mine Bomb (37465) is needed but no creature near the guide coordinates drops it -->
+		<CustomBehavior File="UseItemOn" QuestId="12277" ItemId="37465" MobId="27437" NumOfTimes="1" Range="5" CollectionDistance="200" X="3882.8" Y="-868.198" Z="111.188" />
+		<CustomBehavior File="UseItemOn" QuestId="12277" ItemId="37465" MobId="27436" NumOfTimes="1" Range="5" CollectionDistance="200" X="3899.86" Y="-883.613" Z="119.636" />
+		<!-- REVIEW Q12277 Leave Nothing to Chance: helper item 37465 Wintergarde Mine Bomb has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12277)) &amp;&amp; (IsQuestCompleted(12277)))">
 			<TurnIn QuestName="Leave Nothing to Chance" QuestId="12277" TurnInName="Siege Engineer Quarterflash" TurnInId="27159" X="3694.25" Y="-738.813" Z="213.581" />
 		</If>
@@ -1636,7 +1628,8 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11984)">
 			<PickUp QuestName="Truce?" QuestId="11989" GiverName="Drakuru" GiverId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
-		<!-- REVIEW Q11989 Truce?: collect 27921 Drakuru Handshake KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q11989: Dull Carving Knife (38083) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q11989 Truce?: helper item 38083 Dull Carving Knife has no dropping creature near the guide coordinates; use item 38083: target 27921 Drakuru Handshake KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11989)) &amp;&amp; (IsQuestCompleted(11989)))">
 			<TurnIn QuestName="Truce?" QuestId="11989" TurnInName="Drakuru" TurnInId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
@@ -1661,7 +1654,8 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11990)">
 			<PickUp QuestName="Scourgekabob" QuestId="12484" GiverName="Prigmon" GiverId="26519" X="3882.44" Y="-1936.45" Z="209.169" />
 		</If>
-		<!-- REVIEW Q12484 Scourgekabob: collect 27929 Mummified Carcass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q12484: Scourged Troll Mummy (38149) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q12484 Scourgekabob: helper item 38149 Scourged Troll Mummy has no dropping creature near the guide coordinates; use item 38149: target 27929 Mummified Carcass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12484)) &amp;&amp; (IsQuestCompleted(12484)))">
 			<TurnIn QuestName="Scourgekabob" QuestId="12484" TurnInName="Mack Fearsen" TurnInId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
 		</If>
@@ -1676,6 +1670,18 @@
 		</If>
 		<Objective QuestName="Shimmercap Stew" QuestId="12483" Type="CollectItem" ItemId="35782" CollectCount="5" />
 		<Objective QuestName="Shimmercap Stew" QuestId="12483" Type="CollectItem" ItemId="35798" CollectCount="5" />
+		<If Condition="HasQuest(11991) &amp;&amp; !IsQuestCompleted(11991) &amp;&amp; GetItemCount(35799) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="11991" CollectItemId="35799" CollectItemCount="5" HuntingGroundRadius="120" MobId="26425" MobId2="26447" X="3464.06" Y="-1811.98" Z="112.077">
+				<Hotspot X="3464.06" Y="-1811.98" Z="112.077" />
+				<Hotspot X="3437.82" Y="-1845.82" Z="109.795" />
+				<Hotspot X="3389.14" Y="-1830.33" Z="103.455" />
+				<Hotspot X="3392.04" Y="-1786.48" Z="99.8915" />
+				<Hotspot X="3428.63" Y="-1759.98" Z="94.8829" />
+				<Hotspot X="3370.5" Y="-1736.32" Z="90.4234" />
+				<Hotspot X="3335.63" Y="-1835.53" Z="98.3403" />
+				<Hotspot X="3372.92" Y="-1887.65" Z="118.46" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11991 Subject to Interpretation: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11991)) &amp;&amp; (IsQuestCompleted(11991)))">
 			<TurnIn QuestName="Subject to Interpretation" QuestId="11991" TurnInName="Image of Drakuru" TurnInId="26500" X="3386.21" Y="-1805.46" Z="115.058" />
@@ -1687,6 +1693,11 @@
 			<PickUp QuestName="Sacrifices Must be Made" QuestId="12007" GiverName="Image of Drakuru" GiverId="26500" X="3386.21" Y="-1805.46" Z="115.058" />
 		</If>
 		<Objective QuestName="Shimmercap Stew" QuestId="12483" Type="CollectItem" ItemId="37087" CollectCount="5" />
+		<If Condition="HasQuest(12007) &amp;&amp; !IsQuestCompleted(12007) &amp;&amp; GetItemCount(35836) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12007" CollectItemId="35836" CollectItemCount="1" HuntingGroundRadius="120" MobId="26544" X="4186.27" Y="-1871.81" Z="204.547">
+				<Hotspot X="4186.27" Y="-1871.81" Z="204.547" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q12007 Sacrifices Must be Made: item 35806 Eye of the Prophets has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12007)) &amp;&amp; (IsQuestCompleted(12007)))">
 			<TurnIn QuestName="Sacrifices Must be Made" QuestId="12007" TurnInName="Image of Drakuru" TurnInId="26543" X="4244.1" Y="-2025" Z="238.25" />
@@ -1705,6 +1716,18 @@
 		<TurnIn QuestName="Heart of the Ancients" QuestId="12042" TurnInName="Heart of the Ancients" TurnInId="188365" TurnInType="Object" X="4384.34" Y="-3050.1" Z="344.128" />
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12042)">
 			<PickUp QuestName="My Heart is in Your Hands" QuestId="12802" GiverName="Heart of the Ancients" GiverId="188365" GiverType="Object" X="4384.34" Y="-3050.1" Z="344.128" />
+		</If>
+		<If Condition="HasQuest(12802) &amp;&amp; !IsQuestCompleted(12802) &amp;&amp; GetItemCount(36743) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="12802" CollectItemId="36743" CollectItemCount="5" HuntingGroundRadius="120" MobId="26704" MobId2="27554" X="4464.81" Y="-3425.01" Z="232.647">
+				<Hotspot X="4464.81" Y="-3425.01" Z="232.647" />
+				<Hotspot X="4501.96" Y="-3402.51" Z="228.704" />
+				<Hotspot X="4515.84" Y="-3440.8" Z="227.057" />
+				<Hotspot X="4544.82" Y="-3473.85" Z="227.057" />
+				<Hotspot X="4564.08" Y="-3514.62" Z="227.101" />
+				<Hotspot X="4516.55" Y="-3509.4" Z="227.135" />
+				<Hotspot X="4477.3" Y="-3474.07" Z="227.216" />
+				<Hotspot X="4540.49" Y="-3360.87" Z="234.19" />
+			</CustomBehavior>
 		</If>
 		<!-- REVIEW Q12802 My Heart is in Your Hands: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12802)) &amp;&amp; (IsQuestCompleted(12802)))">
@@ -1925,7 +1948,9 @@
 		<If Condition="(Me.Level &gt;= 72)">
 			<PickUp QuestName="A Bear of an Appetite" QuestId="12279" GiverName="Hugh Glass" GiverId="26484" X="4113.11" Y="-4738.28" Z="100.871" />
 		</If>
-		<!-- REVIEW Q12414 Mounting Up: collect 26212 Captain Gryan Stoutmantle x5: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q12414: Wild Carrot (37707) is needed but no creature near the guide coordinates drops it -->
+		<CustomBehavior File="UseItemOn" QuestId="12414" ItemId="37708" MobId="26212" NumOfTimes="5" Range="5" CollectionDistance="200" X="4606.54" Y="-4229.83" Z="178.752" />
+		<!-- REVIEW Q12414 Mounting Up: helper item 37707 Wild Carrot has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12414)) &amp;&amp; (IsQuestCompleted(12414)))">
 			<TurnIn QuestName="Mounting Up" QuestId="12414" TurnInName="Squire Percy" TurnInId="26377" X="4585.34" Y="-4212.35" Z="178.598" />
 		</If>
@@ -1953,8 +1978,15 @@
 		<If Condition="(Me.Level &gt;= 72) &amp;&amp; IsQuestCompleted(11981)">
 			<PickUp QuestName="Raining Down Destruction" QuestId="11982" GiverName="Kurun" GiverId="26260" X="4894.46" Y="-4563.21" Z="347.919" />
 		</If>
-		<Objective QuestName="Raining Down Destruction" QuestId="11982" Type="KillMob" MobId="26264" KillCount="5" />
-		<TurnIn QuestName="Raining Down Destruction" QuestId="11982" TurnInName="Kurun" TurnInId="26260" X="4894.46" Y="-4563.21" Z="347.919" />
+		<!-- Q11982: Boulder (35734) is needed but no creature near the guide coordinates drops it -->
+		<CustomBehavior File="UseItemOn" QuestId="11982" ItemId="35734" MobId="26264" NumOfTimes="5" Range="5" CollectionDistance="200" X="4973.23" Y="-4645.17" Z="215.929" />
+		<!-- REVIEW Q11982 Raining Down Destruction: helper item 35734 Boulder has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11982)) &amp;&amp; (IsQuestCompleted(11982)))">
+			<TurnIn QuestName="Raining Down Destruction" QuestId="11982" TurnInName="Kurun" TurnInId="26260" X="4894.46" Y="-4563.21" Z="347.919" />
+		</If>
+		<If Condition="((HasQuest(11982)) &amp;&amp; (!IsQuestCompleted(11982)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11982" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 72) &amp;&amp; IsQuestCompleted(11982)">
 			<PickUp QuestName="Rallying the Troops" QuestId="12070" GiverName="Kurun" GiverId="26260" X="4894.46" Y="-4563.21" Z="347.919" />
 		</If>
@@ -2034,8 +2066,20 @@
 		<TurnIn QuestName="Nice to Meat You" QuestId="12113" TurnInName="Harkor" TurnInId="26884" X="4326.23" Y="-4983.15" Z="20.4613" />
 		<Objective QuestName="Therapy" QuestId="12114" Type="KillMob" MobId="26797" KillCount="10" />
 		<Objective QuestName="Therapy" QuestId="12114" Type="KillMob" MobId="26795" KillCount="10" />
-		<Objective QuestName="Voices From the Dust" QuestId="12068" Type="CollectItem" ItemId="36757" CollectCount="1" />
+		<If Condition="HasQuest(12068) &amp;&amp; !IsQuestCompleted(12068) &amp;&amp; GetItemCount(36758) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="12068" CollectItemId="36758" CollectItemCount="5" HuntingGroundRadius="120" MobId="26795" MobId2="26797" X="4558.07" Y="-4793.71" Z="50.9066">
+				<Hotspot X="4558.07" Y="-4793.71" Z="50.9066" />
+				<Hotspot X="4597.87" Y="-4763.41" Z="49.5928" />
+				<Hotspot X="4630.56" Y="-4792.68" Z="48.0151" />
+				<Hotspot X="4690.29" Y="-4796.18" Z="48.0356" />
+				<Hotspot X="4627.08" Y="-4897.85" Z="35.5477" />
+				<Hotspot X="4573.56" Y="-4931.91" Z="49.9539" />
+				<Hotspot X="4538.39" Y="-4904.01" Z="44.44" />
+				<Hotspot X="4571.35" Y="-4865.72" Z="48.0477" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="It Takes Guts...." QuestId="12116" Type="CollectItem" ItemId="36825" CollectCount="5" />
+		<Objective QuestName="Voices From the Dust" QuestId="12068" Type="CollectItem" ItemId="36757" CollectCount="1" />
 		<If Condition="(Me.Level &gt;= 73)">
 			<PickUp QuestName="Dun-da-Dun-tah!" QuestId="12082" GiverName="Harrison Jones" GiverId="26814" X="4905.26" Y="-4758.71" Z="27.3164" />
 		</If>

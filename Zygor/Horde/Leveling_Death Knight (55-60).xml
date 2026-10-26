@@ -843,6 +843,7 @@
 		<If Condition="(Me.Level &gt;= 50)">
 			<PickUp QuestName="Scarlet Diversions" QuestId="5096" GiverName="High Executor Derrington" GiverId="10837" X="1760.79" Y="-723.177" Z="59.9819" />
 		</If>
+		<!-- Q5096: Flame in a Bottle (12814) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 50)">
 			<PickUp QuestName="Better Late Than Never" QuestId="5021" GiverName="Janice Felstone" GiverId="10778" X="1817.14" Y="-1234.57" Z="65.1924" />
 		</If>
@@ -850,7 +851,7 @@
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5021)">
 			<PickUp QuestName="Better Late Than Never" QuestId="5023" GiverName="Janice's Parcel" GiverId="175894" GiverType="Object" X="1783.06" Y="-1248.57" Z="59.8121" />
 		</If>
-		<!-- REVIEW Q5096 Scarlet Diversions: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q5096 Scarlet Diversions: helper item 12814 Flame in a Bottle has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(5096)) &amp;&amp; (IsQuestCompleted(5096)))">
 			<TurnIn QuestName="Scarlet Diversions" QuestId="5096" TurnInName="High Executor Derrington" TurnInId="10837" X="1760.79" Y="-723.177" Z="59.9819" />
 		</If>

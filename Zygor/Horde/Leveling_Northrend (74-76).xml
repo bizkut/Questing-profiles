@@ -86,16 +86,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12096" Name="Strengthen the Ancients">
-		<Objective Type="KillMob" MobId="26321" KillCount="3">
-			<Hotspots>
-				<Hotspot X="3243.96" Y="1802.86" Z="136.995" />
-				<Hotspot X="3137.95" Y="1819.67" Z="128.161" />
-				<Hotspot X="3197.59" Y="1911" Z="128.729" />
-				<Hotspot X="3183.26" Y="1680.55" Z="151.736" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="11980" Name="Pride of the Horde">
 		<Objective Type="KillMob" MobId="26402" KillCount="15">
 			<Hotspots>
@@ -917,12 +907,30 @@
 		<If Condition="(Me.Level &gt;= 71)">
 			<PickUp QuestName="Strengthen the Ancients" QuestId="12096" GiverName="Earthwarden Grife" GiverId="26854" X="3784.8" Y="1579.23" Z="90.0175" />
 		</If>
-		<Objective QuestName="Strengthen the Ancients" QuestId="12096" Type="KillMob" MobId="26321" KillCount="3" />
+		<If Condition="HasQuest(12096) &amp;&amp; !IsQuestCompleted(12096) &amp;&amp; GetItemCount(36786) &lt; 3">
+			<CustomBehavior File="CollectThings" QuestId="12096" CollectItemId="36786" CollectItemCount="3" HuntingGroundRadius="120" MobId="26421" X="3330.99" Y="1897.64" Z="107.107">
+				<Hotspot X="3330.99" Y="1897.64" Z="107.107" />
+				<Hotspot X="3277.64" Y="1920.02" Z="133.969" />
+				<Hotspot X="3227.01" Y="1977.59" Z="134.844" />
+				<Hotspot X="3113.2" Y="1927.07" Z="127.222" />
+				<Hotspot X="3237.88" Y="1839.09" Z="135.773" />
+				<Hotspot X="3325.94" Y="1805.34" Z="129.999" />
+				<Hotspot X="3247.84" Y="1717.03" Z="136.105" />
+				<Hotspot X="3261.67" Y="1614.18" Z="143.948" />
+			</CustomBehavior>
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="12096" ItemId="36786" MobId="26321" NumOfTimes="3" Range="5" CollectionDistance="200" X="3197.59" Y="1911" Z="128.729" />
 		<If Condition="HasItem(36780) &amp;&amp; !HasQuest(12085) &amp;&amp; !IsQuestCompleted(12085) &amp;&amp; (Me.Level &gt;= 71)">
 			<PickUp QuestName="A Letter for Home" QuestId="12085" GiverName="Lieutenant Ta'zinni's Letter" GiverId="36780" GiverType="Item" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="12084" ItemId="36779" MobId="26831" NumOfTimes="1" Range="5" CollectionDistance="200" X="2896.58" Y="1817.61" Z="135.334" />
-		<TurnIn QuestName="Strengthen the Ancients" QuestId="12096" TurnInName="Earthwarden Grife" TurnInId="26854" X="3784.8" Y="1579.23" Z="90.0175" />
+		<!-- REVIEW Q12096 Strengthen the Ancients: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12096)) &amp;&amp; (IsQuestCompleted(12096)))">
+			<TurnIn QuestName="Strengthen the Ancients" QuestId="12096" TurnInName="Earthwarden Grife" TurnInId="26854" X="3784.8" Y="1579.23" Z="90.0175" />
+		</If>
+		<If Condition="((HasQuest(12096)) &amp;&amp; (!IsQuestCompleted(12096)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12096" Type="Incomplete" />
+		</If>
 		<!-- REVIEW Q12084 Atop the Woodlands: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12084)) &amp;&amp; (IsQuestCompleted(12084)))">
 			<TurnIn QuestName="Atop the Woodlands" QuestId="12084" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
@@ -1591,7 +1599,8 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11984)">
 			<PickUp QuestName="Truce?" QuestId="11989" GiverName="Drakuru" GiverId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
-		<!-- REVIEW Q11989 Truce?: collect 27921 Drakuru Handshake KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q11989: Dull Carving Knife (38083) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q11989 Truce?: helper item 38083 Dull Carving Knife has no dropping creature near the guide coordinates; use item 38083: target 27921 Drakuru Handshake KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11989)) &amp;&amp; (IsQuestCompleted(11989)))">
 			<TurnIn QuestName="Truce?" QuestId="11989" TurnInName="Drakuru" TurnInId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
@@ -1616,7 +1625,8 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11990)">
 			<PickUp QuestName="Scourgekabob" QuestId="12484" GiverName="Prigmon" GiverId="26519" X="3882.44" Y="-1936.45" Z="209.169" />
 		</If>
-		<!-- REVIEW Q12484 Scourgekabob: collect 27929 Mummified Carcass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q12484: Scourged Troll Mummy (38149) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q12484 Scourgekabob: helper item 38149 Scourged Troll Mummy has no dropping creature near the guide coordinates; use item 38149: target 27929 Mummified Carcass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12484)) &amp;&amp; (IsQuestCompleted(12484)))">
 			<TurnIn QuestName="Scourgekabob" QuestId="12484" TurnInName="Mack Fearsen" TurnInId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
 		</If>
@@ -1631,6 +1641,18 @@
 		</If>
 		<Objective QuestName="Shimmercap Stew" QuestId="12483" Type="CollectItem" ItemId="35782" CollectCount="5" />
 		<Objective QuestName="Shimmercap Stew" QuestId="12483" Type="CollectItem" ItemId="35798" CollectCount="5" />
+		<If Condition="HasQuest(11991) &amp;&amp; !IsQuestCompleted(11991) &amp;&amp; GetItemCount(35799) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="11991" CollectItemId="35799" CollectItemCount="5" HuntingGroundRadius="120" MobId="26425" MobId2="26447" X="3464.06" Y="-1811.98" Z="112.077">
+				<Hotspot X="3464.06" Y="-1811.98" Z="112.077" />
+				<Hotspot X="3437.82" Y="-1845.82" Z="109.795" />
+				<Hotspot X="3389.14" Y="-1830.33" Z="103.455" />
+				<Hotspot X="3392.04" Y="-1786.48" Z="99.8915" />
+				<Hotspot X="3428.63" Y="-1759.98" Z="94.8829" />
+				<Hotspot X="3370.5" Y="-1736.32" Z="90.4234" />
+				<Hotspot X="3335.63" Y="-1835.53" Z="98.3403" />
+				<Hotspot X="3372.92" Y="-1887.65" Z="118.46" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q11991 Subject to Interpretation: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11991)) &amp;&amp; (IsQuestCompleted(11991)))">
 			<TurnIn QuestName="Subject to Interpretation" QuestId="11991" TurnInName="Image of Drakuru" TurnInId="26500" X="3386.21" Y="-1805.46" Z="115.058" />
@@ -1642,6 +1664,11 @@
 			<PickUp QuestName="Sacrifices Must be Made" QuestId="12007" GiverName="Image of Drakuru" GiverId="26500" X="3386.21" Y="-1805.46" Z="115.058" />
 		</If>
 		<Objective QuestName="Shimmercap Stew" QuestId="12483" Type="CollectItem" ItemId="37087" CollectCount="5" />
+		<If Condition="HasQuest(12007) &amp;&amp; !IsQuestCompleted(12007) &amp;&amp; GetItemCount(35836) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12007" CollectItemId="35836" CollectItemCount="1" HuntingGroundRadius="120" MobId="26544" X="4186.27" Y="-1871.81" Z="204.547">
+				<Hotspot X="4186.27" Y="-1871.81" Z="204.547" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q12007 Sacrifices Must be Made: item 35806 Eye of the Prophets has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12007)) &amp;&amp; (IsQuestCompleted(12007)))">
 			<TurnIn QuestName="Sacrifices Must be Made" QuestId="12007" TurnInName="Image of Drakuru" TurnInId="26543" X="4244.1" Y="-2025" Z="238.25" />
@@ -1657,6 +1684,18 @@
 		<TurnIn QuestName="Heart of the Ancients" QuestId="12042" TurnInName="Heart of the Ancients" TurnInId="188365" TurnInType="Object" X="4384.34" Y="-3050.1" Z="344.128" />
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12042)">
 			<PickUp QuestName="My Heart is in Your Hands" QuestId="12802" GiverName="Heart of the Ancients" GiverId="188365" GiverType="Object" X="4384.34" Y="-3050.1" Z="344.128" />
+		</If>
+		<If Condition="HasQuest(12802) &amp;&amp; !IsQuestCompleted(12802) &amp;&amp; GetItemCount(36743) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="12802" CollectItemId="36743" CollectItemCount="5" HuntingGroundRadius="120" MobId="26704" MobId2="27554" X="4464.81" Y="-3425.01" Z="232.647">
+				<Hotspot X="4464.81" Y="-3425.01" Z="232.647" />
+				<Hotspot X="4501.96" Y="-3402.51" Z="228.704" />
+				<Hotspot X="4515.84" Y="-3440.8" Z="227.057" />
+				<Hotspot X="4544.82" Y="-3473.85" Z="227.057" />
+				<Hotspot X="4564.08" Y="-3514.62" Z="227.101" />
+				<Hotspot X="4516.55" Y="-3509.4" Z="227.135" />
+				<Hotspot X="4477.3" Y="-3474.07" Z="227.216" />
+				<Hotspot X="4540.49" Y="-3360.87" Z="234.19" />
+			</CustomBehavior>
 		</If>
 		<!-- REVIEW Q12802 My Heart is in Your Hands: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12802)) &amp;&amp; (IsQuestCompleted(12802)))">

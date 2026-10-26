@@ -311,6 +311,7 @@
 		<If Condition="(Me.Level &gt;= 64)">
 			<PickUp QuestName="HELP!" QuestId="9923" GiverName="Corki" GiverId="18369" X="-2563.89" Y="6288.29" Z="15.295" />
 		</If>
+		<!-- Q9923: Boulderfist Key (25490) is needed but no creature near the guide coordinates drops it -->
 		<!-- REVIEW Q9956 The Ravaged Caravan: item 25647 Telaar Supply Crate has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9956)) &amp;&amp; (IsQuestCompleted(9956)))">
 			<TurnIn QuestName="The Ravaged Caravan" QuestId="9956" TurnInName="Huntress Kima" TurnInId="18416" X="-2552.39" Y="7337.85" Z="7.3699" />
@@ -363,7 +364,7 @@
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9917)">
 			<PickUp QuestName="Not On My Watch!" QuestId="9918" GiverName="Huntress Bintook" GiverId="18353" X="-2556.34" Y="7254.19" Z="15.2034" />
 		</If>
-		<!-- REVIEW Q9923 HELP!: collect 18369 Corki x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q9923 HELP!: helper item 25490 Boulderfist Key has no dropping creature near the guide coordinates; objective 18369 Corki x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9923)) &amp;&amp; (IsQuestCompleted(9923)))">
 			<TurnIn QuestName="HELP!" QuestId="9923" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>
@@ -398,6 +399,7 @@
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9921)">
 			<PickUp QuestName="The Twin Clefts of Nagrand" QuestId="9922" GiverName="Mo'mor the Breaker" GiverId="18223" X="-2618.18" Y="7278.46" Z="20.8077" />
 		</If>
+		<!-- Q9924: Northwind Cleft Key (25509) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 64)">
 			<PickUp QuestName="The Totem of Kar'dash" QuestId="9879" GiverName="Kurenai Captive" GiverId="18209" X="-1516.63" Y="8462.39" Z="-4.0194" />
 		</If>
@@ -418,7 +420,7 @@
 		<If Condition="((HasQuest(9879)) &amp;&amp; (!IsQuestCompleted(9879)))">
 			<CustomBehavior File="AbandonQuest" QuestId="9879" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q9924 Corki's Gone Missing Again!: collect 20812 Corki x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q9924 Corki's Gone Missing Again!: helper item 25509 Northwind Cleft Key has no dropping creature near the guide coordinates; objective 20812 Corki x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9924)) &amp;&amp; (IsQuestCompleted(9924)))">
 			<TurnIn QuestName="Corki's Gone Missing Again!" QuestId="9924" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>
@@ -480,7 +482,12 @@
 			<CustomBehavior File="AbandonQuest" QuestId="9954" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q9955 Cho'war the Pillager: group quest (3 players) -->
-		<!-- REVIEW Q9955 Cho'war the Pillager: group quest (3 players); collect 18444 Corki Event Controller x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(9955) &amp;&amp; !IsQuestCompleted(9955) &amp;&amp; GetItemCount(25648) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="9955" CollectItemId="25648" CollectItemCount="1" HuntingGroundRadius="120" MobId="18423" X="-471.73" Y="8857.5" Z="239.455">
+				<Hotspot X="-471.73" Y="8857.5" Z="239.455" />
+			</CustomBehavior>
+		</If>
+		<!-- REVIEW Q9955 Cho'war the Pillager: group quest (3 players); objective 18444 Corki Event Controller x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9955)) &amp;&amp; (IsQuestCompleted(9955)))">
 			<TurnIn QuestName="Cho'war the Pillager" QuestId="9955" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>

@@ -43,10 +43,14 @@
 	<Quest Id="11936" Name="Hatching a Plan">
 		<Objective Type="UseObject" ObjectId="188133" UseCount="5">
 			<Hotspots>
-				<Hotspot X="3817.44" Y="6877.6" Z="103.905" />
+				<Hotspot X="3967.21" Y="7000.73" Z="103.55" />
+				<Hotspot X="3972.94" Y="6926.27" Z="105.017" />
+				<Hotspot X="3907.4" Y="6902.92" Z="104.702" />
 				<Hotspot X="3877.98" Y="6865.35" Z="103.211" />
-				<Hotspot X="3764.96" Y="6935.17" Z="108.931" />
-				<Hotspot X="3772.46" Y="6978.29" Z="104.15" />
+				<Hotspot X="3826.08" Y="6911.31" Z="105.178" />
+				<Hotspot X="3788.74" Y="6955.19" Z="104.8" />
+				<Hotspot X="3756.01" Y="7014.67" Z="103.175" />
+				<Hotspot X="3831.61" Y="7083.87" Z="103.561" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -79,6 +83,16 @@
 		<TurnIn QuestName="Basic Training" QuestId="11918" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11918)">
 			<PickUp QuestName="Hatching a Plan" QuestId="11936" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		</If>
+		<If Condition="HasQuest(11936) &amp;&amp; !IsQuestCompleted(11936) &amp;&amp; GetItemCount(35586) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="11936" CollectItemId="35586" CollectItemCount="5" HuntingGroundRadius="120" MobId="25728" X="3583.83" Y="6845.97" Z="174.005">
+				<Hotspot X="3583.83" Y="6845.97" Z="174.005" />
+				<Hotspot X="3690.53" Y="6820.61" Z="160.952" />
+				<Hotspot X="3749.79" Y="6890.08" Z="154.591" />
+				<Hotspot X="3848" Y="6748.06" Z="150.504" />
+				<Hotspot X="3792.45" Y="6622.14" Z="157.409" />
+				<Hotspot X="3847.82" Y="6543.21" Z="173.041" />
+			</CustomBehavior>
 		</If>
 		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
 		<TurnIn QuestName="Hatching a Plan" QuestId="11936" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />

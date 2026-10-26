@@ -44,6 +44,23 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="12180" Name="The Captive Prospectors">
+		<Objective Type="KillMob" MobId="27113" KillCount="1">
+			<Hotspots>
+				<Hotspot X="3576.84" Y="-5124.74" Z="167.202" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="27114" KillCount="1">
+			<Hotspots>
+				<Hotspot X="3468.19" Y="-5118.6" Z="237.03" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="27115" KillCount="1">
+			<Hotspots>
+				<Hotspot X="3379.34" Y="-5103.15" Z="326.386" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="12130" Name="Why Fabricate When You Can Appropriate?">
 		<Objective Type="CollectItem" ItemId="36852" CollectCount="8">
 			<CollectFrom>
@@ -908,7 +925,8 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12137)">
 			<PickUp QuestName="Jin'arrak's End" QuestId="12152" GiverName="Kraz" GiverId="26886" X="4322.28" Y="-4990.64" Z="20.4613" />
 		</If>
-		<!-- REVIEW Q12152 Jin'arrak's End: use item 36873: target 27199 Warlord Jin'arrak has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q12152: Infused Drakkari Offering (37063) is needed but no creature near the guide coordinates drops it -->
+		<!-- REVIEW Q12152 Jin'arrak's End: helper item 37063 Infused Drakkari Offering has no dropping creature near the guide coordinates; use item 37063: target 27199 Warlord Jin'arrak has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12152)) &amp;&amp; (IsQuestCompleted(12152)))">
 			<TurnIn QuestName="Jin'arrak's End" QuestId="12152" TurnInName="Kraz" TurnInId="26886" X="4322.28" Y="-4990.64" Z="20.4613" />
 		</If>
@@ -946,9 +964,21 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12128)">
 			<PickUp QuestName="The Perfect Plan" QuestId="12129" GiverName="Raegar Breakbrow" GiverId="26883" X="3814.07" Y="-5157.37" Z="119.355" />
 		</If>
-		<CustomBehavior File="UseItemOn" QuestId="12180" ItemId="36849" MobId="27113" NumOfTimes="1" Range="5" CollectionDistance="200" X="3576.84" Y="-5124.74" Z="167.202" />
-		<CustomBehavior File="UseItemOn" QuestId="12180" ItemId="36849" MobId="27114" NumOfTimes="1" Range="5" CollectionDistance="200" X="3468.19" Y="-5118.6" Z="237.03" />
-		<CustomBehavior File="UseItemOn" QuestId="12180" ItemId="36849" MobId="27115" NumOfTimes="1" Range="5" CollectionDistance="200" X="3379.34" Y="-5103.15" Z="326.386" />
+		<If Condition="HasQuest(12180) &amp;&amp; !IsQuestCompleted(12180) &amp;&amp; GetItemCount(37013) &lt; 3">
+			<CustomBehavior File="CollectThings" QuestId="12180" CollectItemId="37013" CollectItemCount="3" HuntingGroundRadius="120" MobId="26347" MobId2="26407" MobId3="26409" MobId4="26410" MobId5="26414" MobId6="27177" X="3598.23" Y="-5133.09" Z="167.202">
+				<Hotspot X="3598.23" Y="-5133.09" Z="167.202" />
+				<Hotspot X="3614.64" Y="-5093.48" Z="165.902" />
+				<Hotspot X="3591.46" Y="-5050.06" Z="194.828" />
+				<Hotspot X="3542.92" Y="-5067.19" Z="236.781" />
+				<Hotspot X="3517.59" Y="-5123.6" Z="233.76" />
+				<Hotspot X="3593.58" Y="-5192.28" Z="163.043" />
+				<Hotspot X="3655.24" Y="-5180.24" Z="143.024" />
+				<Hotspot X="3678.08" Y="-5140.01" Z="145.988" />
+			</CustomBehavior>
+		</If>
+		<Objective QuestName="The Captive Prospectors" QuestId="12180" Type="KillMob" MobId="27113" KillCount="1" />
+		<Objective QuestName="The Captive Prospectors" QuestId="12180" Type="KillMob" MobId="27114" KillCount="1" />
+		<Objective QuestName="The Captive Prospectors" QuestId="12180" Type="KillMob" MobId="27115" KillCount="1" />
 		<!-- REVIEW Q12129 The Perfect Plan: item 36848 War Golem Blueprint has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12129)) &amp;&amp; (IsQuestCompleted(12129)))">
 			<TurnIn QuestName="The Perfect Plan" QuestId="12129" TurnInName="Raegar Breakbrow" TurnInId="26883" X="3814.07" Y="-5157.37" Z="119.355" />
@@ -959,13 +989,7 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12129)">
 			<PickUp QuestName="Why Fabricate When You Can Appropriate?" QuestId="12130" GiverName="Raegar Breakbrow" GiverId="26883" X="3814.07" Y="-5157.37" Z="119.355" />
 		</If>
-		<!-- REVIEW Q12180 The Captive Prospectors: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(12180)) &amp;&amp; (IsQuestCompleted(12180)))">
-			<TurnIn QuestName="The Captive Prospectors" QuestId="12180" TurnInName="Mountaineer Kilian" TurnInId="26885" X="3821.11" Y="-5151.58" Z="119.074" />
-		</If>
-		<If Condition="((HasQuest(12180)) &amp;&amp; (!IsQuestCompleted(12180)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12180" Type="Incomplete" />
-		</If>
+		<TurnIn QuestName="The Captive Prospectors" QuestId="12180" TurnInName="Mountaineer Kilian" TurnInId="26885" X="3821.11" Y="-5151.58" Z="119.074" />
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12180)">
 			<PickUp QuestName="Looking the Part" QuestId="12183" GiverName="Mountaineer Kilian" GiverId="26885" X="3821.11" Y="-5151.58" Z="119.074" />
 		</If>
@@ -1585,7 +1609,13 @@
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12646)">
 			<PickUp QuestName="An End to the Suffering" QuestId="12647" GiverName="Spirit of Rhunok" GiverId="28561" X="6369.9" Y="-3265.91" Z="389.018" />
 		</If>
-		<!-- REVIEW Q12647 An End to the Suffering: collect 28416 Rhunok x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(12647) &amp;&amp; !IsQuestCompleted(12647) &amp;&amp; GetItemCount(38696) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12647" CollectItemId="38696" CollectItemCount="1" HuntingGroundRadius="120" MobId="28575" X="6477.39" Y="-3265.51" Z="403.784">
+				<Hotspot X="6477.39" Y="-3265.51" Z="403.784" />
+			</CustomBehavior>
+		</If>
+		<CustomBehavior File="UseItemOn" QuestId="12647" ItemId="38696" MobId="28416" NumOfTimes="1" Range="5" CollectionDistance="200" X="6522.06" Y="-3270.41" Z="408.319" />
+		<!-- REVIEW Q12647 An End to the Suffering: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12647)) &amp;&amp; (IsQuestCompleted(12647)))">
 			<TurnIn QuestName="An End to the Suffering" QuestId="12647" TurnInName="Spirit of Rhunok" TurnInId="28561" X="6369.9" Y="-3265.91" Z="389.018" />
 		</If>
@@ -1705,11 +1735,33 @@
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12685)">
 			<PickUp QuestName="Wooly Justice" QuestId="12707" GiverName="Scalper Ahunae" GiverId="28484" X="5797.79" Y="-3553.85" Z="390.427" />
 		</If>
-		<Objective QuestName="The Key of Warlord Zol'Maz" QuestId="12712" Type="CollectItem" ItemId="39318" CollectCount="1" />
+		<If Condition="HasQuest(12712) &amp;&amp; !IsQuestCompleted(12712) &amp;&amp; GetItemCount(39315) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12712" CollectItemId="39315" CollectItemCount="1" HuntingGroundRadius="120" MobId="28918" X="6491.28" Y="-4005.58" Z="471.515">
+				<Hotspot X="6491.28" Y="-4005.58" Z="471.515" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(12712) &amp;&amp; !IsQuestCompleted(12712) &amp;&amp; GetItemCount(39313) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12712" CollectItemId="39313" CollectItemCount="1" HuntingGroundRadius="120" MobId="28917" X="6579.68" Y="-3992.66" Z="483.391">
+				<Hotspot X="6579.68" Y="-3992.66" Z="483.391" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(12712) &amp;&amp; !IsQuestCompleted(12712) &amp;&amp; GetItemCount(39316) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="12712" CollectItemId="39316" CollectItemCount="1" HuntingGroundRadius="120" MobId="28916" X="6434" Y="-3786.79" Z="470.799">
+				<Hotspot X="6434" Y="-3786.79" Z="470.799" />
+			</CustomBehavior>
+		</If>
+		<!-- Q12712: Tiki Dervish Ceremony (39314) is needed but no creature near the guide coordinates drops it -->
 		<Objective QuestName="Enchanted Tiki Warriors" QuestId="12708" Type="KillMob" MobId="28882" KillCount="12" />
 		<Objective QuestName="Hexed Caches" QuestId="12709" Type="CollectItem" ItemId="39301" CollectCount="12" />
+		<Objective QuestName="The Key of Warlord Zol'Maz" QuestId="12712" Type="CollectItem" ItemId="39318" CollectCount="1" />
 		<TurnIn QuestName="Just Checkin'" QuestId="13099" TurnInName="Chronicler Bah'Kini" TurnInId="30676" X="6972.23" Y="-4098.52" Z="479.503" />
-		<TurnIn QuestName="The Key of Warlord Zol'Maz" QuestId="12712" TurnInName="Har'koa" TurnInId="28401" X="5746.51" Y="-3608.83" Z="387.191" />
+		<!-- REVIEW Q12712 The Key of Warlord Zol'Maz: helper item 39314 Tiki Dervish Ceremony has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12712)) &amp;&amp; (IsQuestCompleted(12712)))">
+			<TurnIn QuestName="The Key of Warlord Zol'Maz" QuestId="12712" TurnInName="Har'koa" TurnInId="28401" X="5746.51" Y="-3608.83" Z="387.191" />
+		</If>
+		<If Condition="((HasQuest(12712)) &amp;&amp; (!IsQuestCompleted(12712)))">
+			<CustomBehavior File="AbandonQuest" QuestId="12712" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12712)">
 			<PickUp QuestName="Rampage" QuestId="12721" GiverName="Har'koa" GiverId="28401" X="5746.51" Y="-3608.83" Z="387.191" />
 		</If>

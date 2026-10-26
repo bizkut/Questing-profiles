@@ -868,6 +868,11 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11908)">
 			<PickUp QuestName="Repurposed Technology" QuestId="12035" GiverName="Jeremiah Hawning" GiverId="26084" X="2476.09" Y="5216.26" Z="31.5088" />
 		</If>
+		<If Condition="HasQuest(11904) &amp;&amp; !IsQuestCompleted(11904) &amp;&amp; GetItemCount(35705) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11904" CollectItemId="35705" CollectItemCount="1" HuntingGroundRadius="120" MobId="26252" X="2849.36" Y="5229.06" Z="13.0336">
+				<Hotspot X="2849.36" Y="5229.06" Z="13.0336" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Fruits of Our Labor" QuestId="11904" Type="UseObject" ObjectId="188104" UseCount="1" />
 		<TurnIn QuestName="Fruits of Our Labor" QuestId="11904" TurnInName="Gerald Green" TurnInId="26083" X="2483.26" Y="5215.05" Z="30.2763" />
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11904)">
@@ -1285,6 +1290,18 @@
 		<If Condition="(Me.Level &gt;= 69)">
 			<PickUp QuestName="Monitoring the Rift: Cleftcliff Anomaly" QuestId="11576" GiverName="Librarian Garren" GiverId="25291" X="3614.86" Y="5978.05" Z="136.3" />
 		</If>
+		<If Condition="HasQuest(11587) &amp;&amp; !IsQuestCompleted(11587) &amp;&amp; GetItemCount(34688) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11587" CollectItemId="34688" CollectItemCount="1" HuntingGroundRadius="120" MobId="25585" X="3393.2" Y="6234" Z="75.589">
+				<Hotspot X="3393.2" Y="6234" Z="75.589" />
+				<Hotspot X="3342.57" Y="6207.24" Z="76.9889" />
+				<Hotspot X="3339.82" Y="6158.93" Z="76.5962" />
+				<Hotspot X="3370.86" Y="6123.23" Z="75.6" />
+				<Hotspot X="3388.98" Y="6167.48" Z="79.831" />
+				<Hotspot X="3449.3" Y="6151.09" Z="74.5724" />
+				<Hotspot X="3456.02" Y="6105.24" Z="67.5395" />
+				<Hotspot X="3285.89" Y="6167.57" Z="72.6437" />
+			</CustomBehavior>
+		</If>
 		<CustomBehavior File="UseItemOn" QuestId="11576" ItemId="34669" MobId="25310" NumOfTimes="1" Range="5" CollectionDistance="200" X="3277.52" Y="6594.09" Z="-0.015" />
 		<!-- REVIEW Q11576 Monitoring the Rift: Cleftcliff Anomaly: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11576)) &amp;&amp; (IsQuestCompleted(11576)))">
@@ -1296,7 +1313,7 @@
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11576)">
 			<PickUp QuestName="Monitoring the Rift: Sundered Chasm" QuestId="11582" GiverName="Librarian Garren" GiverId="25291" X="3614.86" Y="5978.05" Z="136.3" />
 		</If>
-		<!-- REVIEW Q11587 Prison Break: collect 25318 Arcane Prisoner x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11587 Prison Break: goal 25318 Arcane Prisoner x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11587)) &amp;&amp; (IsQuestCompleted(11587)))">
 			<TurnIn QuestName="Prison Break" QuestId="11587" TurnInName="Librarian Donathan" TurnInId="25262" X="3615.93" Y="5961.46" Z="136.3" />
 		</If>

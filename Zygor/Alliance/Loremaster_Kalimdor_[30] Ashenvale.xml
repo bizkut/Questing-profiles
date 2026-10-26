@@ -580,6 +580,18 @@
 		<If Condition="(Me.Level &gt;= 20)">
 			<PickUp QuestName="Elemental Bracers" QuestId="1016" GiverName="Sentinel Velene Starstrike" GiverId="3885" X="2089.5" Y="-1171.56" Z="101.876" />
 		</If>
+		<If Condition="HasQuest(1016) &amp;&amp; !IsQuestCompleted(1016) &amp;&amp; GetItemCount(12220) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="1016" CollectItemId="12220" CollectItemCount="5" HuntingGroundRadius="120" MobId="3917" MobId2="12759" X="1999.55" Y="-1152.56" Z="80.6255">
+				<Hotspot X="1999.55" Y="-1152.56" Z="80.6255" />
+				<Hotspot X="1971.31" Y="-1201.6" Z="59.8145" />
+				<Hotspot X="1940.09" Y="-1171.98" Z="64.3597" />
+				<Hotspot X="1911.13" Y="-1136.32" Z="71.7567" />
+				<Hotspot X="1945.87" Y="-1086.45" Z="80.5476" />
+				<Hotspot X="1994.24" Y="-1070.94" Z="95.2175" />
+				<Hotspot X="2053.68" Y="-1068.15" Z="94.2211" />
+				<Hotspot X="2081.34" Y="-1236.67" Z="98.1509" />
+			</CustomBehavior>
+		</If>
 		<!-- REVIEW Q1016 Elemental Bracers: item 5455 Divined Scroll has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(1016)) &amp;&amp; (IsQuestCompleted(1016)))">
 			<TurnIn QuestName="Elemental Bracers" QuestId="1016" TurnInName="Sentinel Velene Starstrike" TurnInId="3885" X="2089.5" Y="-1171.56" Z="101.876" />
@@ -620,6 +632,16 @@
 		<Objective QuestName="A Shameful Waste" QuestId="9517" Type="CollectItem" ItemId="24081" CollectCount="5" />
 		<Objective QuestName="Forsaken Diseases" QuestId="1011" Type="CollectItem" ItemId="5440" CollectCount="1" />
 		<TurnIn QuestName="Report from the Northern Front" QuestId="9521" TurnInName="Sentinel Farsong" TurnInId="14733" X="1447.91" Y="-1866.85" Z="127.464" />
+		<If Condition="HasQuest(1026) &amp;&amp; !IsQuestCompleted(1026) &amp;&amp; GetItemCount(5475) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="1026" CollectItemId="5475" CollectItemCount="1" HuntingGroundRadius="120" MobId="3834" MobId2="3919" X="3327.83" Y="-1457.55" Z="186.294">
+				<Hotspot X="3327.83" Y="-1457.55" Z="186.294" />
+				<Hotspot X="3399.78" Y="-1475.61" Z="167.861" />
+				<Hotspot X="3465.29" Y="-1602.21" Z="167.684" />
+				<Hotspot X="3377.05" Y="-1654.76" Z="168.711" />
+				<Hotspot X="3286.47" Y="-1688.05" Z="176.913" />
+				<Hotspot X="3170.55" Y="-1631.9" Z="171.775" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Raene's Cleansing" QuestId="1026" Type="CollectItem" ItemId="5464" CollectCount="1" />
 		<TurnIn QuestName="Raene's Cleansing" QuestId="1026" TurnInName="Shael'dryn" TurnInId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
 		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1026)">
@@ -698,6 +720,18 @@
 		<Objective QuestName="Destroy the Legion" QuestId="9516" Type="KillMob" MobId="11697" KillCount="6" />
 		<Objective QuestName="Destroy the Legion" QuestId="9516" Type="KillMob" MobId="6115" KillCount="6" />
 		<Objective QuestName="Destroy the Legion" QuestId="9516" Type="KillMob" MobId="6073" KillCount="6" />
+		<If Condition="HasQuest(9520) &amp;&amp; !IsQuestCompleted(9520) &amp;&amp; GetItemCount(23777) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="9520" CollectItemId="23777" CollectItemCount="1" HuntingGroundRadius="120" MobId="6073" MobId2="6115" MobId3="11697" X="2074.18" Y="-3113.2" Z="104.347">
+				<Hotspot X="2074.18" Y="-3113.2" Z="104.347" />
+				<Hotspot X="2039.74" Y="-3136.41" Z="103.619" />
+				<Hotspot X="1983.6" Y="-3146.79" Z="101.819" />
+				<Hotspot X="1986.65" Y="-3097.45" Z="113.78" />
+				<Hotspot X="2019.79" Y="-3056.88" Z="101.597" />
+				<Hotspot X="2076.39" Y="-3046.35" Z="109.48" />
+				<Hotspot X="2114.24" Y="-3078.28" Z="109.95" />
+				<Hotspot X="2117.47" Y="-3010.92" Z="112.084" />
+			</CustomBehavior>
+		</If>
 		<If Condition="HasItem(23777) &amp;&amp; !HasQuest(9520) &amp;&amp; !IsQuestCompleted(9520) &amp;&amp; (Me.Level &gt;= 27)">
 			<PickUp QuestName="Diabolical Plans" QuestId="9520" GiverName="Diabolical Plans" GiverId="23777" GiverType="Item" />
 		</If>

@@ -3360,6 +3360,11 @@
 		<Objective QuestName="Rattling the Rattlecages" QuestId="3901" Type="KillMob" MobId="1890" KillCount="8" />
 		<Objective QuestName="Night Web's Hollow" QuestId="380" Type="KillMob" MobId="1504" KillCount="8" />
 		<Objective QuestName="Night Web's Hollow" QuestId="380" Type="KillMob" MobId="1505" KillCount="5" />
+		<If Condition="HasQuest(6395) &amp;&amp; !IsQuestCompleted(6395) &amp;&amp; GetItemCount(16333) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="6395" CollectItemId="16333" CollectItemCount="1" HuntingGroundRadius="120" MobId="1919" X="1982.9" Y="1376.01" Z="63.0515">
+				<Hotspot X="1982.9" Y="1376.01" Z="63.0515" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Marla's Last Wish" QuestId="6395" Type="UseObject" ObjectId="178090" UseCount="1" />
 		<TurnIn QuestName="Scavenging Deathknell" QuestId="3902" TurnInName="Deathguard Saltain" TurnInId="1740" X="1861.17" Y="1605.02" Z="95.0318" />
 		<TurnIn QuestName="Night Web's Hollow" QuestId="380" TurnInName="Executor Arren" TurnInId="1570" X="1848.82" Y="1580.47" Z="94.7451" />
@@ -3770,13 +3775,23 @@
 		<Objective QuestName="Elixir of Suffering" QuestId="496" Type="CollectItem" ItemId="3477" CollectCount="1" />
 		<Objective QuestName="WANTED: Syndicate Personnel" QuestId="549" Type="KillMob" MobId="2261" KillCount="10" />
 		<Objective QuestName="WANTED: Syndicate Personnel" QuestId="549" Type="KillMob" MobId="2260" KillCount="10" />
-		<Objective QuestName="The Rescue" QuestId="498" Type="UseObject" ObjectId="1721" UseCount="1" />
-		<Objective QuestName="The Rescue" QuestId="498" Type="UseObject" ObjectId="1722" UseCount="1" />
+		<If Condition="HasQuest(498) &amp;&amp; !IsQuestCompleted(498) &amp;&amp; GetItemCount(3467) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="498" CollectItemId="3467" CollectItemCount="1" HuntingGroundRadius="120" MobId="2427" X="-492.277" Y="-1480.43" Z="88.0715">
+				<Hotspot X="-492.277" Y="-1480.43" Z="88.0715" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(498) &amp;&amp; !IsQuestCompleted(498) &amp;&amp; GetItemCount(3499) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="498" CollectItemId="3499" CollectItemCount="1" HuntingGroundRadius="120" MobId="2428" X="-465.482" Y="-1476.91" Z="90.2819">
+				<Hotspot X="-465.482" Y="-1476.91" Z="90.2819" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Elixir of Agony" QuestId="509" Type="CollectItem" ItemId="3502" CollectCount="6" />
 		<Objective QuestName="Elixir of Pain" QuestId="501" Type="CollectItem" ItemId="3496" CollectCount="10" />
 		<Objective QuestName="Humbert's Sword" QuestId="547" Type="CollectItem" ItemId="3693" CollectCount="1" />
 		<TurnIn QuestName="WANTED: Syndicate Personnel" QuestId="549" TurnInName="High Executor Darthalia" TurnInId="2215" X="-33.3555" Y="-927.892" Z="54.5261" />
 		<TurnIn QuestName="Humbert's Sword" QuestId="547" TurnInName="Deathguard Humbert" TurnInId="2419" X="-31.1004" Y="-941.497" Z="54.6636" />
+		<Objective QuestName="The Rescue" QuestId="498" Type="UseObject" ObjectId="1721" UseCount="1" />
+		<Objective QuestName="The Rescue" QuestId="498" Type="UseObject" ObjectId="1722" UseCount="1" />
 		<TurnIn QuestName="The Rescue" QuestId="498" TurnInName="Krusk" TurnInId="2229" X="-40.6782" Y="-956.998" Z="56.2796" />
 		<If Condition="(Me.Level &gt;= 30)">
 			<PickUp QuestName="Regthar Deathgate" QuestId="1361" GiverName="Krusk" GiverId="2229" X="-40.6782" Y="-956.998" Z="56.2796" />
@@ -4316,14 +4331,38 @@
 		<Objective QuestName="Mazzranache" QuestId="766" Type="CollectItem" ItemId="4804" CollectCount="1" />
 		<Objective QuestName="Mazzranache" QuestId="766" Type="CollectItem" ItemId="4805" CollectCount="1" />
 		<Objective QuestName="Mazzranache" QuestId="766" Type="CollectItem" ItemId="4806" CollectCount="1" />
-		<Objective QuestName="Kyle's Gone Missing!" QuestId="11129" Type="KillMob" MobId="23616" KillCount="1" />
+		<If Condition="HasQuest(11129) &amp;&amp; !IsQuestCompleted(11129) &amp;&amp; GetItemCount(33009) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11129" CollectItemId="33009" CollectItemCount="1" HuntingGroundRadius="120" MobId="2956" MobId2="2957" MobId3="3068" X="-1816.76" Y="-284.566" Z="-8.109">
+				<Hotspot X="-1816.76" Y="-284.566" Z="-8.109" />
+				<Hotspot X="-1788.98" Y="-320.257" Z="-9.2999" />
+				<Hotspot X="-1707.51" Y="-388.744" Z="-20.7691" />
+				<Hotspot X="-1842.55" Y="-461.321" Z="-8.2885" />
+				<Hotspot X="-1853.08" Y="-553.833" Z="0.1596" />
+				<Hotspot X="-1777.19" Y="-198.79" Z="-9.2998" />
+				<Hotspot X="-1882.62" Y="-176.13" Z="-7.3103" />
+				<Hotspot X="-2033.25" Y="-196.54" Z="-9.3352" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Rite of Vision" QuestId="771" Type="CollectItem" ItemId="4809" CollectCount="2" />
 		<Objective QuestName="Rite of Vision" QuestId="771" Type="CollectItem" ItemId="4808" CollectCount="2" />
 		<Objective QuestName="The Hunter's Way" QuestId="861" Type="CollectItem" ItemId="5203" CollectCount="4" />
 		<Objective QuestName="Sharing the Land" QuestId="745" Type="KillMob" MobId="2949" KillCount="10" />
 		<Objective QuestName="Sharing the Land" QuestId="745" Type="KillMob" MobId="2950" KillCount="8" />
 		<Objective QuestName="Sharing the Land" QuestId="745" Type="KillMob" MobId="2951" KillCount="5" />
+		<If Condition="HasQuest(746) &amp;&amp; !IsQuestCompleted(746) &amp;&amp; GetItemCount(4702) &lt; 5">
+			<CustomBehavior File="CollectThings" QuestId="746" CollectItemId="4702" CollectItemCount="5" HuntingGroundRadius="120" MobId="2989" MobId2="2990" X="-1952.88" Y="317.576" Z="109.374">
+				<Hotspot X="-1952.88" Y="317.576" Z="109.374" />
+				<Hotspot X="-1914" Y="287.114" Z="79.0711" />
+				<Hotspot X="-1899.74" Y="341.381" Z="105.573" />
+				<Hotspot X="-1956.1" Y="366.97" Z="133.17" />
+				<Hotspot X="-1984.92" Y="401.04" Z="135.63" />
+				<Hotspot X="-1991.31" Y="451.859" Z="136.901" />
+				<Hotspot X="-1942.3" Y="439.655" Z="133.965" />
+				<Hotspot X="-1912.23" Y="409.695" Z="134.34" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Dangers of the Windfury" QuestId="743" Type="CollectItem" ItemId="4751" CollectCount="8" />
+		<Objective QuestName="Kyle's Gone Missing!" QuestId="11129" Type="KillMob" MobId="23616" KillCount="1" />
 		<TurnIn QuestName="Kyle's Gone Missing!" QuestId="11129" TurnInName="Ahab Wheathoof" TurnInId="23618" X="-2097.52" Y="-430.539" Z="-6.6282" />
 		<TurnIn QuestName="Rite of Vision" QuestId="771" TurnInName="Zarlman Two-Moons" TurnInId="3054" X="-2243.48" Y="-405.843" Z="-9.3416" />
 		<If Condition="(Me.Level &gt;= 3) &amp;&amp; IsQuestCompleted(771)">
@@ -4496,6 +4535,12 @@
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3128" KillCount="10" />
 		<Objective QuestName="Carry Your Weight" QuestId="791" Type="CollectItem" ItemId="4870" CollectCount="8" />
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3192" KillCount="1" />
+		<If Condition="HasQuest(830) &amp;&amp; !IsQuestCompleted(830) &amp;&amp; GetItemCount(4882) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="830" CollectItemId="4882" CollectItemCount="1" HuntingGroundRadius="120" MobId="3192" X="-245.52" Y="-5119.95" Z="42.6406">
+				<Hotspot X="-245.52" Y="-5119.95" Z="42.6406" />
+			</CustomBehavior>
+		</If>
+		<!-- Q830: Aged Envelope (4881) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="HasItem(4881) &amp;&amp; !HasQuest(830) &amp;&amp; !IsQuestCompleted(830)">
 			<PickUp QuestName="The Admiral's Orders" QuestId="830" GiverName="Aged Envelope" GiverId="4881" GiverType="Item" />
 		</If>
@@ -4504,7 +4549,13 @@
 		<If Condition="(Me.Level &gt;= 3) &amp;&amp; IsQuestCompleted(784)">
 			<PickUp QuestName="From The Wreckage...." QuestId="825" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		</If>
-		<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<!-- REVIEW Q830 The Admiral's Orders: helper item 4881 Aged Envelope has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(830)) &amp;&amp; (IsQuestCompleted(830)))">
+			<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		</If>
+		<If Condition="((HasQuest(830)) &amp;&amp; (!IsQuestCompleted(830)))">
+			<CustomBehavior File="AbandonQuest" QuestId="830" Type="Incomplete" />
+		</If>
 		<If Condition="IsQuestCompleted(830)">
 			<PickUp QuestName="The Admiral's Orders" QuestId="831" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		</If>
@@ -4722,11 +4773,23 @@
 		<Objective QuestName="Hezrul Bloodmark" QuestId="852" Type="CollectItem" ItemId="5025" CollectCount="1" />
 		<Objective QuestName="Altered Beings" QuestId="880" Type="CollectItem" ItemId="5098" CollectCount="8" />
 		<Objective QuestName="Stolen Silver" QuestId="3281" Type="CollectItem" ItemId="5061" CollectCount="1" />
+		<If Condition="HasQuest(905) &amp;&amp; !IsQuestCompleted(905) &amp;&amp; GetItemCount(5165) &lt; 3">
+			<CustomBehavior File="CollectThings" QuestId="905" CollectItemId="5165" CollectItemCount="3" HuntingGroundRadius="120" MobId="3254" MobId2="3255" MobId3="3256" X="-2042.54" Y="-3224" Z="91.8632">
+				<Hotspot X="-2042.54" Y="-3224" Z="91.8632" />
+				<Hotspot X="-2013.54" Y="-3181.47" Z="91.7257" />
+				<Hotspot X="-1969.07" Y="-3156.77" Z="92.3596" />
+				<Hotspot X="-1901.26" Y="-3165.62" Z="90.7522" />
+				<Hotspot X="-1892.94" Y="-3033.93" Z="91.5729" />
+				<Hotspot X="-1818.81" Y="-3016.76" Z="86.1552" />
+				<Hotspot X="-1767.94" Y="-3286.3" Z="91.8525" />
+				<Hotspot X="-2063.32" Y="-3163.08" Z="118.679" />
+			</CustomBehavior>
+		</If>
+		<Objective QuestName="Consumed by Hatred" QuestId="899" Type="CollectItem" ItemId="5085" CollectCount="60" />
+		<TurnIn QuestName="Stolen Silver" QuestId="3281" TurnInName="Gazrog" TurnInId="3464" X="-435.952" Y="-2639.21" Z="96.3588" />
 		<Objective QuestName="The Angry Scytheclaws" QuestId="905" Type="UseObject" ObjectId="6907" UseCount="1" />
 		<Objective QuestName="The Angry Scytheclaws" QuestId="905" Type="UseObject" ObjectId="6908" UseCount="1" />
 		<Objective QuestName="The Angry Scytheclaws" QuestId="905" Type="UseObject" ObjectId="6906" UseCount="1" />
-		<Objective QuestName="Consumed by Hatred" QuestId="899" Type="CollectItem" ItemId="5085" CollectCount="60" />
-		<TurnIn QuestName="Stolen Silver" QuestId="3281" TurnInName="Gazrog" TurnInId="3464" X="-435.952" Y="-2639.21" Z="96.3588" />
 		<TurnIn QuestName="The Angry Scytheclaws" QuestId="905" TurnInName="Sergra Darkthorn" TurnInId="3338" X="-482.475" Y="-2670.19" Z="97.522" />
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(905)">
 			<PickUp QuestName="Jorn Skyseer" QuestId="3261" GiverName="Sergra Darkthorn" GiverId="3338" X="-482.475" Y="-2670.19" Z="97.522" />
@@ -4763,6 +4826,18 @@
 		<Objective QuestName="Tribes at War" QuestId="878" Type="KillMob" MobId="3261" KillCount="12" />
 		<Objective QuestName="Tribes at War" QuestId="878" Type="KillMob" MobId="3263" KillCount="12" />
 		<Objective QuestName="Blood Shards of Agamaggan" QuestId="5052" Type="CollectItem" ItemId="5075" CollectCount="1" />
+		<If Condition="HasQuest(882) &amp;&amp; !IsQuestCompleted(882) &amp;&amp; GetItemCount(10338) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="882" CollectItemId="10338" CollectItemCount="1" HuntingGroundRadius="120" MobId="3242" MobId2="3426" MobId3="3466" X="-1804.36" Y="-2784.99" Z="91.6743">
+				<Hotspot X="-1804.36" Y="-2784.99" Z="91.6743" />
+				<Hotspot X="-1789.74" Y="-2692.37" Z="92.6352" />
+				<Hotspot X="-1692.81" Y="-2711.14" Z="93.7313" />
+				<Hotspot X="-1623.06" Y="-2849.84" Z="92.3251" />
+				<Hotspot X="-1654.08" Y="-2919.32" Z="88.6484" />
+				<Hotspot X="-1770.82" Y="-2956.91" Z="91.7917" />
+				<Hotspot X="-1850.74" Y="-2963.75" Z="92.078" />
+				<Hotspot X="-1918.12" Y="-2811.37" Z="92.0417" />
+			</CustomBehavior>
+		</If>
 		<TurnIn QuestName="Tribes at War" QuestId="878" TurnInName="Mangletooth" TurnInId="3430" X="-2391.57" Y="-1891.09" Z="95.7874" />
 		<If Condition="(Me.Level &gt;= 14) &amp;&amp; IsQuestCompleted(878)">
 			<PickUp QuestName="Blood Shards of Agamaggan" QuestId="5052" GiverName="Mangletooth" GiverId="3430" X="-2391.57" Y="-1891.09" Z="95.7874" />

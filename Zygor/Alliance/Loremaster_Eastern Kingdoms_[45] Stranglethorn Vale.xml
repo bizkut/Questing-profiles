@@ -986,6 +986,18 @@
 			<PickUp QuestName="The Bloodsail Buccaneers" QuestId="597" GiverName="Bloodsail Correspondence" GiverId="2083" GiverType="Object" X="-14126.2" Y="480.146" Z="2.4385" />
 		</If>
 		<Objective QuestName="Scaring Shaky" QuestId="606" Type="CollectItem" ItemId="3919" CollectCount="5" />
+		<If Condition="HasQuest(348) &amp;&amp; !IsQuestCompleted(348) &amp;&amp; GetItemCount(2799) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="348" CollectItemId="2799" CollectItemCount="1" HuntingGroundRadius="120" MobId="1557" MobId2="1558" MobId3="1559" MobId4="2521" MobId5="14491" X="-14058.4" Y="232.911" Z="13.4458">
+				<Hotspot X="-14058.4" Y="232.911" Z="13.4458" />
+				<Hotspot X="-14043.3" Y="185.231" Z="13.1035" />
+				<Hotspot X="-14079.9" Y="157.474" Z="14.8891" />
+				<Hotspot X="-14043.6" Y="111.891" Z="10.6574" />
+				<Hotspot X="-13997.6" Y="174.808" Z="12.3466" />
+				<Hotspot X="-13953.3" Y="140.875" Z="13.7878" />
+				<Hotspot X="-13949.6" Y="215.246" Z="22.6267" />
+				<Hotspot X="-14007.4" Y="250.055" Z="17.3661" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Zanzil's Secret" QuestId="621" Type="CollectItem" ItemId="4016" CollectCount="12" />
 		<Objective QuestName="The Captain's Chest" QuestId="614" Type="CollectItem" ItemId="3932" CollectCount="1" />
 		<TurnIn QuestName="Scaring Shaky" QuestId="606" TurnInName='"Shaky" Phillipe' TurnInId="2502" X="-14299.4" Y="504.577" Z="9.1211" />
@@ -1071,10 +1083,17 @@
 		</If>
 		<TurnIn QuestName="Cracking Maury's Foot" QuestId="613" TurnInName='"Sea Wolf" MacKinley' TurnInId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
 		<TurnIn QuestName="Excelsior" QuestId="628" TurnInName="Drizzlik" TurnInId="2495" X="-14469.6" Y="415.382" Z="25.452" />
+		<!-- Q594: Carefully Folded Note (4098) is needed but no creature near the guide coordinates drops it -->
 		<If Condition="HasItem(4098) &amp;&amp; !HasQuest(594) &amp;&amp; !IsQuestCompleted(594) &amp;&amp; (Me.Level &gt;= 42)">
 			<PickUp QuestName="Message in a Bottle" QuestId="594" GiverName="Carefully Folded Note" GiverId="4098" GiverType="Item" />
 		</If>
-		<TurnIn QuestName="Message in a Bottle" QuestId="594" TurnInName="Princess Poobah" TurnInId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
+		<!-- REVIEW Q594 Message in a Bottle: helper item 4098 Carefully Folded Note has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(594)) &amp;&amp; (IsQuestCompleted(594)))">
+			<TurnIn QuestName="Message in a Bottle" QuestId="594" TurnInName="Princess Poobah" TurnInId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
+		</If>
+		<If Condition="((HasQuest(594)) &amp;&amp; (!IsQuestCompleted(594)))">
+			<CustomBehavior File="AbandonQuest" QuestId="594" Type="Incomplete" />
+		</If>
 		<If Condition="(Me.Level &gt;= 42) &amp;&amp; IsQuestCompleted(594)">
 			<PickUp QuestName="Message in a Bottle" QuestId="630" GiverName="Princess Poobah" GiverId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
 		</If>

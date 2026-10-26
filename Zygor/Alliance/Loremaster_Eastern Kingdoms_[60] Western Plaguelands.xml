@@ -398,6 +398,11 @@
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5050)">
 			<PickUp QuestName="Two Halves Become One" QuestId="5051" GiverName="Janice Felstone" GiverId="10778" X="1817.14" Y="-1234.57" Z="65.1924" />
 		</If>
+		<If Condition="HasQuest(5051) &amp;&amp; !IsQuestCompleted(5051) &amp;&amp; GetItemCount(12722) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="5051" CollectItemId="12722" CollectItemCount="1" HuntingGroundRadius="120" MobId="10801" X="1697.65" Y="-1167.22" Z="59.7525">
+				<Hotspot X="1697.65" Y="-1167.22" Z="59.7525" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Skeletal Fragments" QuestId="5537" Type="CollectItem" ItemId="14619" CollectCount="15" />
 		<!-- REVIEW Q5051 Two Halves Become One: item 12723 Good Luck Charm has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(5051)) &amp;&amp; (IsQuestCompleted(5051)))">
