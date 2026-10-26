@@ -50,6 +50,23 @@
 				<Hotspot X="10185" Y="1189.2" Z="76.159" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="46859" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Kvaldir Reaver" Id="34838" />
+				<Mob Name="Kvaldir Mist Binder" Id="34839" />
+				<GameObject Name="Stolen Tallstrider Leg" Id="195274" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="10110.9" Y="1218.41" Z="78.9978" />
+				<Hotspot X="10051.3" Y="1216.9" Z="69.6857" />
+				<Hotspot X="10025.6" Y="1184.96" Z="60.5205" />
+				<Hotspot X="9998.99" Y="1218.63" Z="60.7685" />
+				<Hotspot X="9951.68" Y="1201.5" Z="52.6994" />
+				<Hotspot X="9991.07" Y="1153.53" Z="39.4657" />
+				<Hotspot X="9998.88" Y="1098.61" Z="30.4584" />
+				<Hotspot X="10185" Y="1189.2" Z="76.159" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="14136" Name="Rescue at Sea" Daily="True">
 		<Objective Type="KillMob" MobId="34947" KillCount="8">
@@ -90,13 +107,7 @@
 	<Quest Id="14141" Name="Gormok Wants His Snobolds" Daily="True" />
 	<Quest Id="14145" Name="What Do You Feed a Yeti, Anyway?" Daily="True" />
 	<Quest Id="13813" Name="Taking Battle To The Enemy" Daily="True" />
-	<Quest Id="13812" Name="Threat From Above" Daily="True">
-		<Objective Type="KillMob" MobId="33687" KillCount="1">
-			<Hotspots>
-				<Hotspot X="8026.11" Y="2686.62" Z="550.965" />
-			</Hotspots>
-		</Objective>
-	</Quest>
+	<Quest Id="13812" Name="Threat From Above" Daily="True" />
 	<Quest Id="13863" Name="Battle Before The Citadel" Daily="True">
 		<Objective Type="KillMob" MobId="34127" KillCount="3">
 			<Hotspots>
@@ -113,13 +124,7 @@
 	</Quest>
 	<Quest Id="13814" Name="Among the Champions" Daily="True" />
 	<Quest Id="13811" Name="Among the Champions" Daily="True" />
-	<Quest Id="13809" Name="Threat From Above" Daily="True">
-		<Objective Type="KillMob" MobId="33687" KillCount="1">
-			<Hotspots>
-				<Hotspot X="8026.11" Y="2686.62" Z="550.965" />
-			</Hotspots>
-		</Objective>
-	</Quest>
+	<Quest Id="13809" Name="Threat From Above" Daily="True" />
 	<Quest Id="13862" Name="Battle Before The Citadel" Daily="True">
 		<Objective Type="KillMob" MobId="34127" KillCount="3">
 			<Hotspots>
@@ -255,8 +260,8 @@
 				<PickUp QuestName="Taking Battle To The Enemy" QuestId="13813" GiverName="Zor'be the Bloodletter" GiverId="33769" X="8613.75" Y="815.734" Z="547.637" />
 			</If>
 		</If>
+		<!-- SKIP Q13812 Threat From Above: group quest (3 players) -->
 		<If Condition="((Me.Class == WoWClass.DeathKnight))">
-			<!-- SKIP Q13812 Threat From Above: group quest (3 players) -->
 			<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13795)">
 				<PickUp QuestName="Battle Before The Citadel" QuestId="13863" GiverName="Crok Scourgebane" GiverId="33762" X="8588.21" Y="816.003" Z="547.637" />
 			</If>
@@ -271,8 +276,8 @@
 				<PickUp QuestName="Among the Champions" QuestId="13811" GiverName="Luuri" GiverId="33771" X="8451.65" Y="1058.68" Z="554.493" />
 			</If>
 		</If>
+		<!-- SKIP Q13809 Threat From Above: group quest (3 players) -->
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
-			<!-- SKIP Q13809 Threat From Above: group quest (3 players) -->
 			<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock) || (Me.Class == WoWClass.Druid)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13794)">
 				<PickUp QuestName="Battle Before The Citadel" QuestId="13862" GiverName="Eadric the Pure" GiverId="33759" X="8447.08" Y="1056.51" Z="554.423" />
 			</If>
@@ -437,13 +442,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="13071" Type="Incomplete" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.DeathKnight))">
-			<Objective QuestName="Threat From Above" QuestId="13812" Type="KillMob" MobId="33687" KillCount="1" />
-		</If>
-		<If Condition="((Me.Class == WoWClass.DeathKnight))">
 			<Objective QuestName="Battle Before The Citadel" QuestId="13863" Type="KillMob" MobId="34127" KillCount="3" />
-		</If>
-		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
-			<Objective QuestName="Threat From Above" QuestId="13809" Type="KillMob" MobId="33687" KillCount="1" />
 		</If>
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
 			<Objective QuestName="Battle Before The Citadel" QuestId="13862" Type="KillMob" MobId="34127" KillCount="3" />
@@ -503,13 +502,6 @@
 			</If>
 		</If>
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
-			<!-- REVIEW Q13809 Threat From Above: group quest (3 players); kill 33695 Cultist Bombardier x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-			<If Condition="((HasQuest(13809)) &amp;&amp; (IsQuestCompleted(13809)))">
-				<TurnIn QuestName="Threat From Above" QuestId="13809" TurnInName="Eadric the Pure" TurnInId="33759" X="8447.08" Y="1056.51" Z="554.423" />
-			</If>
-			<If Condition="((HasQuest(13809)) &amp;&amp; (!IsQuestCompleted(13809)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13809" Type="Incomplete" />
-			</If>
 			<TurnIn QuestName="Battle Before The Citadel" QuestId="13862" TurnInName="Eadric the Pure" TurnInId="33759" X="8447.08" Y="1056.51" Z="554.423" />
 		</If>
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
@@ -568,13 +560,6 @@
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.DeathKnight))">
-			<!-- REVIEW Q13812 Threat From Above: group quest (3 players); kill 33695 Cultist Bombardier x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-			<If Condition="((HasQuest(13812)) &amp;&amp; (IsQuestCompleted(13812)))">
-				<TurnIn QuestName="Threat From Above" QuestId="13812" TurnInName="Crok Scourgebane" TurnInId="33762" X="8588.21" Y="816.003" Z="547.637" />
-			</If>
-			<If Condition="((HasQuest(13812)) &amp;&amp; (!IsQuestCompleted(13812)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13812" Type="Incomplete" />
-			</If>
 			<TurnIn QuestName="Battle Before The Citadel" QuestId="13863" TurnInName="Crok Scourgebane" TurnInId="33762" X="8588.21" Y="816.003" Z="547.637" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.DeathKnight))">

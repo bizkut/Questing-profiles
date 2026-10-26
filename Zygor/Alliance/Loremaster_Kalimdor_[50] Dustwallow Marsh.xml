@@ -43,6 +43,14 @@
 				<Hotspot X="-4088.65" Y="-4541.65" Z="6.3793" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="33008" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Deserter Propaganda" Id="186266" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4088.65" Y="-4541.65" Z="6.3793" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="11134" Name="The End of the Deserters">
 		<Objective Type="KillMob" MobId="23941" KillCount="1">
@@ -52,6 +60,21 @@
 		</Objective>
 	</Quest>
 	<Quest Id="11192" Name="Thresher Oil">
+		<Objective Type="CollectItem" ItemId="33126" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Young Murk Thresher" Id="4388" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3776.34" Y="-4750.75" Z="-35.7235" />
+				<Hotspot X="-3820.93" Y="-4757.88" Z="-32.4699" />
+				<Hotspot X="-3856.54" Y="-4718.37" Z="-14.2716" />
+				<Hotspot X="-3883.71" Y="-4684.06" Z="-12.416" />
+				<Hotspot X="-3911.08" Y="-4752.25" Z="-23.8792" />
+				<Hotspot X="-3748.31" Y="-4709.46" Z="-27.6842" />
+				<Hotspot X="-3661.11" Y="-4689.51" Z="-39.2088" />
+				<Hotspot X="-3727.28" Y="-4818.96" Z="-36.5424" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="33126" CollectCount="4">
 			<CollectFrom>
 				<Mob Name="Young Murk Thresher" Id="4388" />
@@ -81,8 +104,28 @@
 				<Hotspot X="-3509.96" Y="-4388.96" Z="-3.775" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="5883" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Mudrock Spikeshell" Id="4397" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3462.65" Y="-4376.41" Z="0.6426" />
+				<Hotspot X="-3421.5" Y="-4373.36" Z="1.6352" />
+				<Hotspot X="-3369.66" Y="-4310.66" Z="0.7983" />
+				<Hotspot X="-3283.43" Y="-4285.41" Z="1.9246" />
+				<Hotspot X="-3509.96" Y="-4388.96" Z="-3.775" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="11137" Name="Defias in Dustwallow?">
+		<Objective Type="CollectItem" ItemId="33037" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Garn Mathers" Id="23679" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3050.21" Y="-4329.64" Z="8.1565" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="33037" CollectCount="1">
 			<CollectFrom>
 				<Mob Name="Garn Mathers" Id="23679" />
@@ -108,8 +151,41 @@
 				<Hotspot X="-2857.95" Y="-3879.8" Z="39.6824" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="33202" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Giant Marsh Frog" Id="23979" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2921.75" Y="-3911.63" Z="38.5221" />
+				<Hotspot X="-2919.41" Y="-3867.98" Z="34.8484" />
+				<Hotspot X="-2957.55" Y="-3828.82" Z="37.5224" />
+				<Hotspot X="-2997.41" Y="-3855.08" Z="37.8508" />
+				<Hotspot X="-2976.78" Y="-3895" Z="30.466" />
+				<Hotspot X="-2993.38" Y="-3935.75" Z="30.8974" />
+				<Hotspot X="-2920.32" Y="-3964.11" Z="38.284" />
+				<Hotspot X="-2857.95" Y="-3879.8" Z="39.6824" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="1206" Name="Jarl Needs Eyes">
+		<Objective Type="CollectItem" ItemId="5884" CollectCount="20">
+			<CollectFrom>
+				<Mob Name="Darkmist Spider" Id="4376" />
+				<Mob Name="Darkmist Recluse" Id="4378" />
+				<Mob Name="Darkmist Silkspinner" Id="4379" />
+				<Mob Name="Darkmist Widow" Id="4380" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2842.1" Y="-2804.72" Z="36.2097" />
+				<Hotspot X="-2884.42" Y="-2818.96" Z="38.8499" />
+				<Hotspot X="-2877.41" Y="-2774.3" Z="45.1583" />
+				<Hotspot X="-2929.09" Y="-2778.75" Z="33.025" />
+				<Hotspot X="-2818.95" Y="-2752.69" Z="36.5536" />
+				<Hotspot X="-2830.49" Y="-2707.51" Z="38.4059" />
+				<Hotspot X="-2786.17" Y="-2814.47" Z="35.9305" />
+				<Hotspot X="-2745.57" Y="-2813.45" Z="43.3771" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="5884" CollectCount="20">
 			<CollectFrom>
 				<Mob Name="Darkmist Spider" Id="4376" />
@@ -147,6 +223,23 @@
 				<Hotspot X="-2910.22" Y="-3814.21" Z="28.6474" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="33112" CollectCount="9">
+			<CollectFrom>
+				<Mob Name="Risen Spirit" Id="23554" />
+				<Mob Name="Risen Husk" Id="23555" />
+				<GameObject Name="Witchbane" Id="186423" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2980.24" Y="-3951.83" Z="32.8186" />
+				<Hotspot X="-3017.52" Y="-3914.38" Z="30.1005" />
+				<Hotspot X="-3046.37" Y="-3963.17" Z="28.7379" />
+				<Hotspot X="-3047.66" Y="-4017.34" Z="39.5942" />
+				<Hotspot X="-2975.05" Y="-4015.67" Z="40.6697" />
+				<Hotspot X="-2892.74" Y="-3991.67" Z="33.7325" />
+				<Hotspot X="-2912.81" Y="-3953.09" Z="39.034" />
+				<Hotspot X="-2910.22" Y="-3814.21" Z="28.6474" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="11139" Name="Secondhand Diving Gear">
 		<Objective Type="CollectItem" ItemId="33038" CollectCount="1">
@@ -155,6 +248,29 @@
 			</CollectFrom>
 			<Hotspots>
 				<Hotspot X="-2671.49" Y="-4263.42" Z="3.5957" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="33038" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Damaged Diving Gear" Id="186273" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2671.49" Y="-4263.42" Z="3.5957" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="33039" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Defias Rummager" Id="23589" />
+				<GameObject Name="Tool Kit" Id="186272" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2707" Y="-4228.4" Z="10.4329" />
+				<Hotspot X="-2665.71" Y="-4242.3" Z="8.9153" />
+				<Hotspot X="-2650.01" Y="-4284.63" Z="18.0474" />
+				<Hotspot X="-2685.58" Y="-4309.3" Z="17.5914" />
+				<Hotspot X="-2733.28" Y="-4294.74" Z="6.7738" />
+				<Hotspot X="-2764.18" Y="-4202.97" Z="0.0999" />
+				<Hotspot X="-2949.1" Y="-4319.67" Z="2.9454" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="CollectItem" ItemId="33039" CollectCount="1">
@@ -198,8 +314,42 @@
 				<Hotspot X="-4448.71" Y="-2768.33" Z="35.2743" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="33085" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Bloodfen Razormaw" Id="4356" />
+				<Mob Name="Bloodfen Lashtail" Id="4357" />
+				<Mob Name="Goreclaw the Ravenous" Id="23873" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4312.8" Y="-2757.97" Z="34.7295" />
+				<Hotspot X="-4315.73" Y="-2714.9" Z="34.0476" />
+				<Hotspot X="-4350.79" Y="-2693.12" Z="35.037" />
+				<Hotspot X="-4276.35" Y="-2665.85" Z="35.7399" />
+				<Hotspot X="-4365.18" Y="-2803.8" Z="45.7529" />
+				<Hotspot X="-4346.69" Y="-2881.11" Z="35.4809" />
+				<Hotspot X="-4407.9" Y="-2945.62" Z="55.944" />
+				<Hotspot X="-4448.71" Y="-2768.33" Z="35.2743" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="11217" Name="Catch a Dragon by the Tail">
+		<Objective Type="CollectItem" ItemId="33175" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Searing Whelp" Id="4324" />
+				<Mob Name="Drywallow Daggermaw" Id="4345" />
+				<GameObject Name="Wyrmtail" Id="186463" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4617.19" Y="-3423.96" Z="29.076" />
+				<Hotspot X="-4579.17" Y="-3457.65" Z="31.8975" />
+				<Hotspot X="-4543.64" Y="-3477.62" Z="33.4225" />
+				<Hotspot X="-4687.33" Y="-3478.95" Z="30.8713" />
+				<Hotspot X="-4690.11" Y="-3414.35" Z="29.5225" />
+				<Hotspot X="-4658.27" Y="-3378.09" Z="31.2643" />
+				<Hotspot X="-4688.41" Y="-3328.51" Z="38.0137" />
+				<Hotspot X="-4570.14" Y="-3305.63" Z="32.8247" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="33175" CollectCount="8">
 			<CollectFrom>
 				<Mob Name="Searing Whelp" Id="4324" />
@@ -248,8 +398,39 @@
 				<Hotspot X="-3931.82" Y="-3264.18" Z="36.642" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="33103" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Noxious Shredder" Id="4348" />
+				<Mob Name="Darkfang Creeper" Id="4412" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3817.99" Y="-3145.86" Z="41.3687" />
+				<Hotspot X="-3847.79" Y="-3183.98" Z="40.8663" />
+				<Hotspot X="-3882.84" Y="-3153.17" Z="37.5073" />
+				<Hotspot X="-3892.21" Y="-3094.63" Z="36.419" />
+				<Hotspot X="-3751.32" Y="-3130.47" Z="37.1474" />
+				<Hotspot X="-3728.93" Y="-3256.42" Z="37.5519" />
+				<Hotspot X="-3881.07" Y="-3277.74" Z="47.5041" />
+				<Hotspot X="-3931.82" Y="-3264.18" Z="36.642" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="11207" Name="Secure the Cargo!">
+		<Objective Type="CollectItem" ItemId="33163" CollectCount="8">
+			<CollectFrom>
+				<GameObject Name="Zeppelin Cargo" Id="186450" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3984.55" Y="-3772.04" Z="40.9397" />
+				<Hotspot X="-4008.56" Y="-3735.68" Z="45.7889" />
+				<Hotspot X="-3987.02" Y="-3688.77" Z="46.9588" />
+				<Hotspot X="-3951.3" Y="-3723.65" Z="45.1108" />
+				<Hotspot X="-3920.49" Y="-3755.76" Z="38.9218" />
+				<Hotspot X="-3941.57" Y="-3842.56" Z="35.8808" />
+				<Hotspot X="-4067.84" Y="-3743.76" Z="40.0025" />
+				<Hotspot X="-4045.37" Y="-3672.55" Z="43.4523" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="33163" CollectCount="8">
 			<CollectFrom>
 				<GameObject Name="Zeppelin Cargo" Id="186450" />
@@ -275,6 +456,14 @@
 				<Hotspot X="-2667.59" Y="-4017.55" Z="1.7995" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="33110" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Razorspine" Id="23841" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2667.59" Y="-4017.55" Z="1.7995" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="11160" Name="Banner of the Stonemaul">
 		<Objective Type="CollectItem" ItemId="33086" CollectCount="1">
@@ -285,8 +474,36 @@
 				<Hotspot X="-4464.58" Y="-2975.96" Z="30.3234" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="33086" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Stonemaul Clan Banner" Id="186329" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4464.58" Y="-2975.96" Z="30.3234" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="11148" Name="Arms of the Grimtotems">
+		<Objective Type="CollectItem" ItemId="33071" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Drywallow Crocolisk" Id="4341" />
+				<Mob Name="Withervine Creeper" Id="4382" />
+				<Mob Name="Grimtotem Breaker" Id="23592" />
+				<Mob Name="Grimtotem Spirit-Shifter" Id="23593" />
+				<Mob Name="Grimtotem Elder" Id="23714" />
+				<GameObject Name="Blackhoof Armaments" Id="186301" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2568.84" Y="-3231.43" Z="34.0732" />
+				<Hotspot X="-2536.15" Y="-3205.1" Z="35.01" />
+				<Hotspot X="-2483.89" Y="-3206.3" Z="35.6416" />
+				<Hotspot X="-2492.76" Y="-3162.9" Z="33.0647" />
+				<Hotspot X="-2437.69" Y="-3201.37" Z="33.1775" />
+				<Hotspot X="-2590.33" Y="-3269.08" Z="35.203" />
+				<Hotspot X="-2622.61" Y="-3237.17" Z="30.6114" />
+				<Hotspot X="-2619.45" Y="-3335.26" Z="42.412" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="33071" CollectCount="7">
 			<CollectFrom>
 				<Mob Name="Drywallow Crocolisk" Id="4341" />

@@ -32,17 +32,28 @@
 
 	<Mailboxes />
 
-	<Quest Id="10995" Name="Grulloc Has Two Skulls">
-		<Objective Type="CollectItem" ItemId="32379" CollectCount="1">
+	<Quest Id="11025" Name="The Crystals">
+		<Objective Type="CollectItem" ItemId="32569" CollectCount="5">
 			<CollectFrom>
-				<Mob Name="Grulloc" Id="20216" />
+				<Mob Name="Hemathion" Id="18692" />
+				<Mob Name="Abyssal Flamebringer" Id="19973" />
+				<Mob Name="Wrath Hound" Id="20557" />
+				<Mob Name="Aether Ray" Id="22181" />
+				<Mob Name="Wrath Speaker" Id="22195" />
+				<Mob Name="Fear Fiend" Id="22204" />
+				<GameObject Name="Apexis Shard Formation" Id="185911" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="2686.48" Y="5540.87" Z="-1.9367" />
+				<Hotspot X="2061.52" Y="7271.81" Z="363.911" />
+				<Hotspot X="2067.45" Y="7331.05" Z="364.735" />
+				<Hotspot X="2103.11" Y="7353.6" Z="366.479" />
+				<Hotspot X="1943.92" Y="7359.26" Z="364.572" />
+				<Hotspot X="1926.84" Y="7195.48" Z="364.116" />
+				<Hotspot X="2101.22" Y="7137.61" Z="364.771" />
+				<Hotspot X="2114.53" Y="7187.61" Z="366.179" />
+				<Hotspot X="2206.19" Y="7122.32" Z="364.065" />
 			</Hotspots>
 		</Objective>
-	</Quest>
-	<Quest Id="11025" Name="The Crystals">
 		<Objective Type="CollectItem" ItemId="32569" CollectCount="5">
 			<CollectFrom>
 				<Mob Name="Hemathion" Id="18692" />
@@ -103,44 +114,8 @@
 		<!-- SKIP Q10995 Grulloc Has Two Skulls: group quest (5 players) -->
 		<!-- SKIP Q10996 Maggoc's Treasure Chest: group quest (5 players) -->
 		<!-- SKIP Q10997 Even Gronn Have Standards: group quest (5 players) -->
-		<Objective QuestName="Grulloc Has Two Skulls" QuestId="10995" Type="CollectItem" ItemId="32379" CollectCount="1" />
-		<!-- REVIEW Q10995 Grulloc Has Two Skulls: group quest (5 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10995)) &amp;&amp; (IsQuestCompleted(10995)))">
-			<TurnIn QuestName="Grulloc Has Two Skulls" QuestId="10995" TurnInName="Mog'dorg the Wizened" TurnInId="22941" X="2785.99" Y="5835.66" Z="36.1526" />
-		</If>
-		<If Condition="((HasQuest(10995)) &amp;&amp; (!IsQuestCompleted(10995)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10995" Type="Incomplete" />
-		</If>
-		<!-- REVIEW Q10996 Maggoc's Treasure Chest: group quest (5 players); item 32380 Maggoc's Treasure Chest has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10996)) &amp;&amp; (IsQuestCompleted(10996)))">
-			<TurnIn QuestName="Maggoc's Treasure Chest" QuestId="10996" TurnInName="Mog'dorg the Wizened" TurnInId="22941" X="2785.99" Y="5835.66" Z="36.1526" />
-		</If>
-		<If Condition="((HasQuest(10996)) &amp;&amp; (!IsQuestCompleted(10996)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10996" Type="Incomplete" />
-		</If>
-		<!-- REVIEW Q10997 Even Gronn Have Standards: group quest (5 players); item 32382 Slaag's Standard has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10997)) &amp;&amp; (IsQuestCompleted(10997)))">
-			<TurnIn QuestName="Even Gronn Have Standards" QuestId="10997" TurnInName="Mog'dorg the Wizened" TurnInId="22941" X="2785.99" Y="5835.66" Z="36.1526" />
-		</If>
-		<If Condition="((HasQuest(10997)) &amp;&amp; (!IsQuestCompleted(10997)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10997" Type="Incomplete" />
-		</If>
 		<!-- SKIP Q10998 Grim(oire) Business: group quest (5 players) -->
-		<!-- REVIEW Q10998 Grim(oire) Business: group quest (5 players); item 32358 Vim'gol's Vile Grimoire has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10998)) &amp;&amp; (IsQuestCompleted(10998)))">
-			<TurnIn QuestName="Grim(oire) Business" QuestId="10998" TurnInName="Mog'dorg the Wizened" TurnInId="22941" X="2785.99" Y="5835.66" Z="36.1526" />
-		</If>
-		<If Condition="((HasQuest(10998)) &amp;&amp; (!IsQuestCompleted(10998)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10998" Type="Incomplete" />
-		</If>
 		<!-- SKIP Q11000 Into the Soulgrinder: group quest (5 players) -->
-		<!-- REVIEW Q11000 Into the Soulgrinder: group quest (5 players); item 32383 Skulloc's Soul has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(11000)) &amp;&amp; (IsQuestCompleted(11000)))">
-			<TurnIn QuestName="Into the Soulgrinder" QuestId="11000" TurnInName="Mog'dorg the Wizened" TurnInId="22941" X="2785.99" Y="5835.66" Z="36.1526" />
-		</If>
-		<If Condition="((HasQuest(11000)) &amp;&amp; (!IsQuestCompleted(11000)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11000" Type="Incomplete" />
-		</If>
 		<!-- SKIP pickup Q11022 Speak with Mog'dorg: no quest giver with a spawn in the database -->
 		<!-- REVIEW Q11022 Speak with Mog'dorg: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11022)) &amp;&amp; (IsQuestCompleted(11022)))">
@@ -227,25 +202,6 @@
 			<PickUp QuestName="Wrangle Some Aether Rays!" QuestId="11065" GiverName="Skyguard Khatie" GiverId="23335" X="2547.77" Y="7330.44" Z="373.524" />
 		</If>
 		<!-- SKIP Q11059 Guardian of the Monument: group quest (5 players) -->
-		<If Condition="HasQuest(11059) &amp;&amp; !IsQuestCompleted(11059) &amp;&amp; GetItemCount(32569) &lt; 35">
-			<CustomBehavior File="CollectThings" QuestId="11059" CollectItemId="32569" CollectItemCount="35" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22182" MobId6="22195" X="2580.75" Y="7115.81" Z="364.961">
-				<Hotspot X="2580.75" Y="7115.81" Z="364.961" />
-				<Hotspot X="2546.68" Y="7050.09" Z="367.955" />
-				<Hotspot X="2518.28" Y="7020.29" Z="367.955" />
-				<Hotspot X="2464.83" Y="7072.46" Z="364.959" />
-				<Hotspot X="2403.47" Y="7083.51" Z="366.579" />
-				<Hotspot X="2504.71" Y="7245.27" Z="365.684" />
-				<Hotspot X="2458.35" Y="7281.86" Z="365.359" />
-				<Hotspot X="2616.01" Y="7245.59" Z="364.671" />
-			</CustomBehavior>
-		</If>
-		<!-- REVIEW Q11059 Guardian of the Monument: group quest (5 players); item 32697 Apexis Guardian's Head has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(11059)) &amp;&amp; (IsQuestCompleted(11059)))">
-			<TurnIn QuestName="Guardian of the Monument" QuestId="11059" TurnInName="Chu'a'lor" TurnInId="23233" X="2335.24" Y="7285.18" Z="365.617" />
-		</If>
-		<If Condition="((HasQuest(11059)) &amp;&amp; (!IsQuestCompleted(11059)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11059" Type="Incomplete" />
-		</If>
 		<!-- REVIEW Q11065 Wrangle Some Aether Rays!: objective 23343 Wrangled Aether Ray x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11065)) &amp;&amp; (IsQuestCompleted(11065)))">
 			<TurnIn QuestName="Wrangle Some Aether Rays!" QuestId="11065" TurnInName="Skyguard Khatie" TurnInId="23335" X="2547.77" Y="7330.44" Z="373.524" />
@@ -254,18 +210,6 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11065" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q11078 To Rule The Skies: group quest (5 players) -->
-		<If Condition="HasQuest(11078) &amp;&amp; !IsQuestCompleted(11078) &amp;&amp; GetItemCount(32569) &lt; 35">
-			<CustomBehavior File="CollectThings" QuestId="11078" CollectItemId="32569" CollectItemCount="35" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22182" MobId6="22195" X="2580.75" Y="7115.81" Z="364.961">
-				<Hotspot X="2580.75" Y="7115.81" Z="364.961" />
-				<Hotspot X="2546.68" Y="7050.09" Z="367.955" />
-				<Hotspot X="2518.28" Y="7020.29" Z="367.955" />
-				<Hotspot X="2464.83" Y="7072.46" Z="364.959" />
-				<Hotspot X="2403.47" Y="7083.51" Z="366.579" />
-				<Hotspot X="2504.71" Y="7245.27" Z="365.684" />
-				<Hotspot X="2458.35" Y="7281.86" Z="365.359" />
-				<Hotspot X="2616.01" Y="7245.59" Z="364.671" />
-			</CustomBehavior>
-		</If>
 		<If Condition="HasQuest(11061) &amp;&amp; !IsQuestCompleted(11061) &amp;&amp; GetItemCount(32569) &lt; 10">
 			<CustomBehavior File="CollectThings" QuestId="11061" CollectItemId="32569" CollectItemCount="10" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22182" MobId6="22195" X="2580.75" Y="7115.81" Z="364.961">
 				<Hotspot X="2580.75" Y="7115.81" Z="364.961" />
@@ -278,13 +222,6 @@
 				<Hotspot X="2616.01" Y="7245.59" Z="364.671" />
 			</CustomBehavior>
 		</If>
-		<!-- REVIEW Q11078 To Rule The Skies: group quest (5 players); item 32732 Dragon Teeth has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(11078)) &amp;&amp; (IsQuestCompleted(11078)))">
-			<TurnIn QuestName="To Rule The Skies" QuestId="11078" TurnInName="Sky Commander Keller" TurnInId="23334" X="2503.06" Y="7360.36" Z="380.453" />
-		</If>
-		<If Condition="((HasQuest(11078)) &amp;&amp; (!IsQuestCompleted(11078)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11078" Type="Incomplete" />
-		</If>
 		<!-- REVIEW Q11061 A Father's Duty: item 32601 Unstable Flask of the Sorcerer has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11061)) &amp;&amp; (IsQuestCompleted(11061)))">
 			<TurnIn QuestName="A Father's Duty" QuestId="11061" TurnInName="Torkus" TurnInId="23316" X="2315.89" Y="7304.39" Z="366.92" />
@@ -293,25 +230,6 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11061" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q11079 A Fel Whip For Gahk: group quest (5 players) -->
-		<If Condition="HasQuest(11079) &amp;&amp; !IsQuestCompleted(11079) &amp;&amp; GetItemCount(32569) &lt; 35">
-			<CustomBehavior File="CollectThings" QuestId="11079" CollectItemId="32569" CollectItemCount="35" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22182" MobId6="22195" X="2580.75" Y="7115.81" Z="364.961">
-				<Hotspot X="2580.75" Y="7115.81" Z="364.961" />
-				<Hotspot X="2546.68" Y="7050.09" Z="367.955" />
-				<Hotspot X="2518.28" Y="7020.29" Z="367.955" />
-				<Hotspot X="2464.83" Y="7072.46" Z="364.959" />
-				<Hotspot X="2403.47" Y="7083.51" Z="366.579" />
-				<Hotspot X="2504.71" Y="7245.27" Z="365.684" />
-				<Hotspot X="2458.35" Y="7281.86" Z="365.359" />
-				<Hotspot X="2616.01" Y="7245.59" Z="364.671" />
-			</CustomBehavior>
-		</If>
-		<!-- REVIEW Q11079 A Fel Whip For Gahk: group quest (5 players); item 32733 Fel Whip has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(11079)) &amp;&amp; (IsQuestCompleted(11079)))">
-			<TurnIn QuestName="A Fel Whip For Gahk" QuestId="11079" TurnInName="Gahk" TurnInId="23300" X="2308.34" Y="7300.44" Z="365.718" />
-		</If>
-		<If Condition="((HasQuest(11079)) &amp;&amp; (!IsQuestCompleted(11079)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11079" Type="Incomplete" />
-		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; (GetFactionReputation(1038) &gt;= 3000)">
 			<PickUp QuestName="A Special Thank You" QuestId="11091" GiverName="Chu'a'lor" GiverId="23233" X="2335.24" Y="7285.18" Z="365.617" />
 		</If>

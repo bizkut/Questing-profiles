@@ -35,6 +35,14 @@
 				<Hotspot X="5100.75" Y="2970.8" Z="80.0953" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="32666" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Tyrantus" Id="20931" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5100.75" Y="2970.8" Z="80.0953" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="11083" Name="Crazed and Confused">
 		<Objective Type="KillMob" MobId="23305" KillCount="1">
@@ -76,9 +84,6 @@
 		<Objective QuestName="Crazed and Confused" QuestId="11083" Type="KillMob" MobId="23305" KillCount="1" />
 		<Objective QuestName="Crazed and Confused" QuestId="11083" Type="KillMob" MobId="23324" KillCount="5" />
 		<TurnIn QuestName="Crazed and Confused" QuestId="11083" TurnInName="Ronag the Slave Driver" TurnInId="23166" X="-5161.06" Y="288.167" Z="-27.1133" />
-		<If Condition="HasItem(32726) &amp;&amp; !HasQuest(11081) &amp;&amp; !IsQuestCompleted(11081) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11075) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
-			<PickUp QuestName="The Great Murkblood Revolt" QuestId="11081" GiverName="Murkblood Escape Plans" GiverId="32726" GiverType="Item" />
-		</If>
 		<If Condition="!HasItem(32726) &amp;&amp; !HasQuest(11081) &amp;&amp; !IsQuestCompleted(11081)">
 			<CustomBehavior File="CollectThings" CollectItemId="32726" CollectItemCount="1" HuntingGroundRadius="120" MobId="23286" MobId2="23324" X="-5094.4" Y="647.837" Z="33.0287">
 				<Hotspot X="-5094.4" Y="647.837" Z="33.0287" />
@@ -90,6 +95,9 @@
 				<Hotspot X="-5105.38" Y="536.014" Z="-10.5264" />
 				<Hotspot X="-5153.19" Y="487.361" Z="-12.2186" />
 			</CustomBehavior>
+		</If>
+		<If Condition="HasItem(32726) &amp;&amp; !HasQuest(11081) &amp;&amp; !IsQuestCompleted(11081) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11075) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">
+			<PickUp QuestName="The Great Murkblood Revolt" QuestId="11081" GiverName="Murkblood Escape Plans" GiverId="32726" GiverType="Item" />
 		</If>
 		<TurnIn QuestName="The Great Murkblood Revolt" QuestId="11081" TurnInName="Mistress of the Mines" TurnInId="23149" X="-5254.18" Y="628.473" Z="48.9907" />
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11081)">

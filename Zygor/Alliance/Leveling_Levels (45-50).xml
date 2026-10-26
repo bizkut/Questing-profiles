@@ -22,10 +22,10 @@
 		<Vendor Name="Wigcik" Entry="2842" Type="Food" X="-14444" Y="433.765" Z="4.2724" />
 		<Vendor Name="Jabbey" Entry="8139" Type="Food" X="-6886.48" Y="-4842.28" Z="8.6222" />
 		<Vendor Name="Pratt McGrubben" Entry="7852" Type="Repair" X="-4345.38" Y="3312.75" Z="10.0974" />
-		<Vendor Name="Jaquilina Dramet" Entry="2483" Type="Repair" X="-11622.1" Y="-60.6165" Z="11.038" />
 		<Vendor Name="Jutak" Entry="2843" Type="Repair" X="-14467.8" Y="468.374" Z="15.1064" />
 		<Vendor Name="Krinkle Goodsteel" Entry="5411" Type="Repair" X="-7200.43" Y="-3769.82" Z="8.7594" />
 		<Vendor Name="Dulciea Frostmoon" Entry="10293" Type="Repair" X="-4365.9" Y="3302" Z="13.6392" />
+		<Vendor Name="Blizrik Buckshot" Entry="8131" Type="Repair" X="-7141.49" Y="-3719.69" Z="8.5781" />
 	</Vendors>
 
 	<AvoidMobs />
@@ -101,6 +101,14 @@
 				<Hotspot X="-7630.66" Y="-4480.84" Z="9.5255" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="8723" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Caliph Scorpidsting" Id="7847" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7630.66" Y="-4480.84" Z="9.5255" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="1707" Name="Water Pouch Bounty">
 		<Objective Type="CollectItem" ItemId="8483" CollectCount="5">
@@ -119,8 +127,32 @@
 				<Hotspot X="-7562.11" Y="-4263.42" Z="9.0018" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="8483" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Wastewander Rogue" Id="5615" />
+				<Mob Name="Wastewander Thief" Id="5616" />
+				<Mob Name="Wastewander Shadow Mage" Id="5617" />
+				<Mob Name="Wastewander Bandit" Id="5618" />
+				<Mob Name="Wastewander Assassin" Id="5623" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6952.23" Y="-4290.61" Z="9.5641" />
+				<Hotspot X="-7011.46" Y="-4317.52" Z="10.6665" />
+				<Hotspot X="-6952.48" Y="-4356.11" Z="11.5365" />
+				<Hotspot X="-7524.2" Y="-4284.77" Z="10.6837" />
+				<Hotspot X="-7562.11" Y="-4263.42" Z="9.0018" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="2873" Name="Stoley's Shipment">
+		<Objective Type="CollectItem" ItemId="9244" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Stolen Cargo" Id="142181" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8023.04" Y="-5196.92" Z="13.1196" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="9244" CollectCount="1">
 			<CollectFrom>
 				<GameObject Name="Stolen Cargo" Id="142181" />
@@ -170,6 +202,14 @@
 				<Hotspot X="-8043.38" Y="-5281.05" Z="0.6618" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="9246" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Andre Firebeard" Id="7883" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8043.38" Y="-5281.05" Z="0.6618" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="8365" Name="Pirate Hats Ahoy!">
 		<Objective Type="CollectItem" ItemId="20519" CollectCount="20">
@@ -187,8 +227,41 @@
 				<Hotspot X="-7884.81" Y="-5187.15" Z="2.6942" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="20519" CollectCount="20">
+			<CollectFrom>
+				<Mob Name="Southsea Pirate" Id="7855" />
+				<Mob Name="Southsea Freebooter" Id="7856" />
+				<Mob Name="Southsea Dock Worker" Id="7857" />
+				<Mob Name="Southsea Swashbuckler" Id="7858" />
+				<Mob Name="Andre Firebeard" Id="7883" />
+				<Mob Name="Kregg Keelhaul" Id="8203" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7828.86" Y="-5111.13" Z="4.3044" />
+				<Hotspot X="-7850.92" Y="-5145.96" Z="4.0914" />
+				<Hotspot X="-7884.81" Y="-5187.15" Z="2.6942" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="2821" Name="The Mark of Quality">
+		<Objective Type="CollectItem" ItemId="8973" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Feral Scar Yeti" Id="5292" />
+				<Mob Name="Hulking Feral Scar" Id="5293" />
+				<Mob Name="Enraged Feral Scar" Id="5295" />
+				<Mob Name="Bloodroar the Stalker" Id="5346" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4918.46" Y="1585.73" Z="66.2957" />
+				<Hotspot X="-4982.96" Y="1580.84" Z="61.2149" />
+				<Hotspot X="-5017.49" Y="1548.14" Z="56.5877" />
+				<Hotspot X="-4984.72" Y="1513.5" Z="57.075" />
+				<Hotspot X="-5043.28" Y="1615.39" Z="70.4387" />
+				<Hotspot X="-4968.76" Y="1643.84" Z="64.3893" />
+				<Hotspot X="-4925.96" Y="1721.98" Z="64.1672" />
+				<Hotspot X="-4967.34" Y="1748.86" Z="65.4392" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="8973" CollectCount="10">
 			<CollectFrom>
 				<Mob Name="Feral Scar Yeti" Id="5292" />
@@ -267,8 +340,36 @@
 				<Hotspot X="-4709.96" Y="3587.5" Z="12.3178" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="9247" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Hatecrest Warrior" Id="5331" />
+				<Mob Name="Hatecrest Wave Rider" Id="5332" />
+				<Mob Name="Hatecrest Serpent Guard" Id="5333" />
+				<Mob Name="Hatecrest Myrmidon" Id="5334" />
+				<Mob Name="Hatecrest Screamer" Id="5335" />
+				<Mob Name="Hatecrest Sorceress" Id="5336" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4783.15" Y="3584.55" Z="10.1398" />
+				<Hotspot X="-4813.53" Y="3522.13" Z="9.1338" />
+				<Hotspot X="-4777.91" Y="3496.47" Z="10.7718" />
+				<Hotspot X="-4804.19" Y="3455.31" Z="12.7959" />
+				<Hotspot X="-4757.7" Y="3445.52" Z="13.6235" />
+				<Hotspot X="-4854.35" Y="3555.69" Z="21.5627" />
+				<Hotspot X="-4853.22" Y="3618.27" Z="16.4186" />
+				<Hotspot X="-4709.96" Y="3587.5" Z="12.3178" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="2870" Name="Against Lord Shalzaru">
+		<Objective Type="CollectItem" ItemId="9248" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Lord Shalzaru" Id="8136" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5631.35" Y="3461" Z="2.605" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="9248" CollectCount="1">
 			<CollectFrom>
 				<Mob Name="Lord Shalzaru" Id="8136" />
@@ -326,8 +427,40 @@
 				<Hotspot X="-3760.75" Y="1785.19" Z="154.109" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="18947" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Rage Scar Yeti" Id="5296" />
+				<Mob Name="Elder Rage Scar" Id="5297" />
+				<Mob Name="Ferocious Rage Scar" Id="5299" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3821.86" Y="1825.24" Z="127.435" />
+				<Hotspot X="-3835.66" Y="1766.09" Z="141.016" />
+				<Hotspot X="-3849.15" Y="1705.96" Z="145.664" />
+				<Hotspot X="-3850.51" Y="1644.98" Z="144.913" />
+				<Hotspot X="-3900.17" Y="1661.49" Z="117.636" />
+				<Hotspot X="-3907.13" Y="1603.44" Z="129.447" />
+				<Hotspot X="-3775.82" Y="1743.18" Z="148.935" />
+				<Hotspot X="-3760.75" Y="1785.19" Z="154.109" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="3661" Name="Favored of Elune?">
+		<Objective Type="CollectItem" ItemId="10819" CollectCount="15">
+			<CollectFrom>
+				<GameObject Name="Wildkin Feather" Id="153239" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="59.1494" Y="-2458.14" Z="123.159" />
+				<Hotspot X="104.486" Y="-2469.16" Z="124.453" />
+				<Hotspot X="160.259" Y="-2430.17" Z="126.847" />
+				<Hotspot X="27.887" Y="-2385.72" Z="127.713" />
+				<Hotspot X="-12.08" Y="-2369.73" Z="122.519" />
+				<Hotspot X="-40.6661" Y="-2525.25" Z="121.178" />
+				<Hotspot X="100.526" Y="-2581.09" Z="115.188" />
+				<Hotspot X="72.429" Y="-2642.29" Z="111.754" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="10819" CollectCount="15">
 			<CollectFrom>
 				<GameObject Name="Wildkin Feather" Id="153239" />
@@ -408,6 +541,26 @@
 				<Hotspot X="-78.1976" Y="-2518.87" Z="118.415" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="9259" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vilebranch Axe Thrower" Id="2639" />
+				<Mob Name="Vilebranch Witch Doctor" Id="2640" />
+				<Mob Name="Vilebranch Hideskinner" Id="2644" />
+				<Mob Name="Vilebranch Shadow Hunter" Id="2645" />
+				<Mob Name="Vilebranch Blood Drinker" Id="2646" />
+				<Mob Name="Vilebranch Soul Eater" Id="2647" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="46.6611" Y="-2510.11" Z="124.38" />
+				<Hotspot X="13.5397" Y="-2486.89" Z="124.133" />
+				<Hotspot X="-34.9182" Y="-2486.33" Z="119.836" />
+				<Hotspot X="-14.8095" Y="-2438.44" Z="125.778" />
+				<Hotspot X="50.8771" Y="-2454.9" Z="122.935" />
+				<Hotspot X="27.2924" Y="-2555.64" Z="118.067" />
+				<Hotspot X="-20.951" Y="-2544.37" Z="117.501" />
+				<Hotspot X="-78.1976" Y="-2518.87" Z="118.415" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="9470" Name="A Gesture of Goodwill">
 		<Objective Type="KillMob" MobId="17236" KillCount="1">
@@ -463,8 +616,35 @@
 				<Hotspot X="-334.877" Y="-4481.4" Z="10.9634" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="3900" CollectCount="12">
+			<CollectFrom>
+				<GameObject Name="Pupellyverbos Port" Id="2068" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-215.656" Y="-4570.68" Z="11.1453" />
+				<Hotspot X="-112.019" Y="-4656.11" Z="6.3698" />
+				<Hotspot X="-67.1886" Y="-4655.48" Z="8.8127" />
+				<Hotspot X="-3.9498" Y="-4653.33" Z="11.465" />
+				<Hotspot X="47.6152" Y="-4696.43" Z="8.5473" />
+				<Hotspot X="-29.108" Y="-4574.31" Z="11.2146" />
+				<Hotspot X="-337.585" Y="-4633.88" Z="9.8694" />
+				<Hotspot X="-334.877" Y="-4481.4" Z="10.9634" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="9475" Name="Reclaiming the Eggs">
+		<Objective Type="CollectItem" ItemId="23694" CollectCount="5">
+			<CollectFrom>
+				<GameObject Name="Gryphon Egg" Id="181645" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-403.663" Y="-2888.74" Z="84.9427" />
+				<Hotspot X="-458.228" Y="-2872.08" Z="97.045" />
+				<Hotspot X="-400.907" Y="-2957.13" Z="94.3013" />
+				<Hotspot X="-257.609" Y="-2810.08" Z="115.943" />
+				<Hotspot X="-228.687" Y="-3109.74" Z="127.158" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="23694" CollectCount="5">
 			<CollectFrom>
 				<GameObject Name="Gryphon Egg" Id="181645" />
@@ -495,6 +675,22 @@
 				<Hotspot X="-4622.85" Y="2072.9" Z="5.031" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="18958" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Sea Elemental" Id="5461" />
+				<Mob Name="Sea Spray" Id="5462" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4511.62" Y="2316.16" Z="1.3621" />
+				<Hotspot X="-4618.54" Y="2318.41" Z="0.8546" />
+				<Hotspot X="-4668.75" Y="2368.75" Z="-0.3376" />
+				<Hotspot X="-4783.76" Y="2318.24" Z="-1.0077" />
+				<Hotspot X="-4763.79" Y="2254.95" Z="7.6773" />
+				<Hotspot X="-4690.65" Y="2122.08" Z="0.9956" />
+				<Hotspot X="-4669.55" Y="2084.79" Z="-1.9416" />
+				<Hotspot X="-4622.85" Y="2072.9" Z="5.031" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="2845" Name="Wandering Shay">
 		<Objective Type="CollectItem" ItemId="9189" CollectCount="1">
@@ -505,8 +701,31 @@
 				<Hotspot X="-2843.53" Y="2783.17" Z="94.3958" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="9189" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Shay's Chest" Id="144054" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2843.53" Y="2783.17" Z="94.3958" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="2605" Name="The Thirsty Goblin">
+		<Objective Type="CollectItem" ItemId="8428" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Thistleshrub Dew Collector" Id="5481" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8845.76" Y="-2155.87" Z="11.7513" />
+				<Hotspot X="-8769.98" Y="-2164.1" Z="11.043" />
+				<Hotspot X="-8845.31" Y="-2311.82" Z="9.0019" />
+				<Hotspot X="-8923.98" Y="-2244.71" Z="9.0017" />
+				<Hotspot X="-8953.94" Y="-2280.2" Z="9.1274" />
+				<Hotspot X="-8980.37" Y="-2217.61" Z="9.5075" />
+				<Hotspot X="-9034.01" Y="-2176.37" Z="10.6268" />
+				<Hotspot X="-8996.68" Y="-2121.54" Z="9.2821" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="8428" CollectCount="1">
 			<CollectFrom>
 				<Mob Name="Thistleshrub Dew Collector" Id="5481" />
@@ -600,8 +819,43 @@
 				<Hotspot X="-8184.94" Y="-2496.65" Z="9.7701" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="8587" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Centipaar Wasp" Id="5455" />
+				<Mob Name="Centipaar Stinger" Id="5456" />
+				<Mob Name="Centipaar Swarmer" Id="5457" />
+				<Mob Name="Centipaar Worker" Id="5458" />
+				<Mob Name="Centipaar Tunneler" Id="5459" />
+				<Mob Name="Centipaar Sandreaver" Id="5460" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8141.46" Y="-2627.87" Z="9.2758" />
+				<Hotspot X="-8102.17" Y="-2639.73" Z="9.131" />
+				<Hotspot X="-8090.39" Y="-2688.23" Z="13.9678" />
+				<Hotspot X="-8045.36" Y="-2639.34" Z="9.15" />
+				<Hotspot X="-8060.85" Y="-2579.83" Z="8.8476" />
+				<Hotspot X="-8078.13" Y="-2508.61" Z="-52.12" />
+				<Hotspot X="-8155.07" Y="-2554.05" Z="9.4182" />
+				<Hotspot X="-8184.94" Y="-2496.65" Z="9.7701" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="3161" Name="Gahz'ridian">
+		<Objective Type="CollectItem" ItemId="8443" CollectCount="30">
+			<CollectFrom>
+				<GameObject Name="Gahz'ridian" Id="140971" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9232.23" Y="-2901.92" Z="13.7862" />
+				<Hotspot X="-9254.23" Y="-2952.99" Z="12.7756" />
+				<Hotspot X="-9249.25" Y="-2996.27" Z="16.3039" />
+				<Hotspot X="-9310.7" Y="-3003.86" Z="9.6125" />
+				<Hotspot X="-9302.86" Y="-2958.55" Z="8.9436" />
+				<Hotspot X="-9190.99" Y="-2972.8" Z="26.9513" />
+				<Hotspot X="-9160.47" Y="-3022.52" Z="33.2242" />
+				<Hotspot X="-9128.89" Y="-2914.41" Z="40.1765" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="8443" CollectCount="30">
 			<CollectFrom>
 				<GameObject Name="Gahz'ridian" Id="140971" />
@@ -628,8 +882,25 @@
 				<Hotspot X="-74.0476" Y="-3095.58" Z="105.822" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="8526" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Violet Tragan" Id="141853" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-49.4441" Y="-3140.39" Z="100.705" />
+				<Hotspot X="-74.0476" Y="-3095.58" Z="105.822" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="10" Name="The Scrimshank Redemption">
+		<Objective Type="CollectItem" ItemId="8593" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Scrimshank's Surveying Gear" Id="144053" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9148.63" Y="-4079.77" Z="-45.4797" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="8593" CollectCount="1">
 			<CollectFrom>
 				<GameObject Name="Scrimshank's Surveying Gear" Id="144053" />
@@ -655,18 +926,31 @@
 				<Hotspot X="-80.2793" Y="-4219.33" Z="118.082" />
 			</Hotspots>
 		</Objective>
-	</Quest>
-	<Quest Id="208" Name="Big Game Hunter">
-		<Objective Type="CollectItem" ItemId="3880" CollectCount="1">
+		<Objective Type="CollectItem" ItemId="11472" CollectCount="5">
 			<CollectFrom>
-				<Mob Name="King Bangalash" Id="731" />
+				<Mob Name="Silvermane Stalker" Id="2926" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-12682.2" Y="-217.205" Z="37.6285" />
+				<Hotspot X="-22.8571" Y="-4290.83" Z="120.806" />
+				<Hotspot X="19.921" Y="-4261.37" Z="121.631" />
+				<Hotspot X="83.4658" Y="-4240.07" Z="120.912" />
+				<Hotspot X="59.302" Y="-4325.83" Z="124.6" />
+				<Hotspot X="19.7264" Y="-4361.74" Z="134.192" />
+				<Hotspot X="-61.296" Y="-4331.49" Z="123.538" />
+				<Hotspot X="-112.484" Y="-4319.53" Z="133.509" />
+				<Hotspot X="-80.2793" Y="-4219.33" Z="118.082" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="630" Name="Message in a Bottle">
+		<Objective Type="CollectItem" ItemId="4103" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="King Mukla" Id="1559" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-14737.8" Y="-392.236" Z="8.2503" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="4103" CollectCount="1">
 			<CollectFrom>
 				<Mob Name="King Mukla" Id="1559" />
@@ -710,6 +994,22 @@
 				<Hotspot X="-10959" Y="-3118.91" Z="42.9477" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="8391" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Starving Snickerfang" Id="5984" />
+				<Mob Name="Snickerfang Hyena" Id="5985" />
+				<Mob Name="Ravage" Id="8300" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10965.2" Y="-2859.8" Z="5.7761" />
+				<Hotspot X="-11007" Y="-2841.82" Z="9.082" />
+				<Hotspot X="-11034.3" Y="-2804.99" Z="8.674" />
+				<Hotspot X="-11044" Y="-2765.01" Z="2.8911" />
+				<Hotspot X="-10957.5" Y="-2775.29" Z="5.7689" />
+				<Hotspot X="-11092.1" Y="-2842.07" Z="15.8735" />
+				<Hotspot X="-10959" Y="-3118.91" Z="42.9477" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="8392" CollectCount="2">
 			<CollectFrom>
 				<Mob Name="Ashmane Boar" Id="5992" />
@@ -718,6 +1018,32 @@
 			</CollectFrom>
 			<Hotspots>
 				<Hotspot X="-11178.3" Y="-2992.61" Z="8.9409" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8392" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Ashmane Boar" Id="5992" />
+				<Mob Name="Helboar" Id="5993" />
+				<Mob Name="Grunter" Id="8303" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11178.3" Y="-2992.61" Z="8.9409" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8393" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Scorpok Stinger" Id="5988" />
+				<Mob Name="Clack the Reaver" Id="8301" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10946.5" Y="-2915.18" Z="8.5604" />
+				<Hotspot X="-11000.6" Y="-2874.81" Z="9.4764" />
+				<Hotspot X="-11057.1" Y="-2908.66" Z="13.6863" />
+				<Hotspot X="-11118.2" Y="-2765.16" Z="18.126" />
+				<Hotspot X="-11013.5" Y="-2738.43" Z="5.7798" />
+				<Hotspot X="-10888.8" Y="-2805.44" Z="46.4878" />
+				<Hotspot X="-10987.1" Y="-3154.22" Z="44.8503" />
+				<Hotspot X="-11056.2" Y="-3136.22" Z="45.5669" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="CollectItem" ItemId="8393" CollectCount="1">
@@ -748,6 +1074,16 @@
 				<Hotspot X="-11178.3" Y="-2992.61" Z="8.9409" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="8392" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Ashmane Boar" Id="5992" />
+				<Mob Name="Helboar" Id="5993" />
+				<Mob Name="Grunter" Id="8303" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11178.3" Y="-2992.61" Z="8.9409" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="8393" CollectCount="2">
 			<CollectFrom>
 				<Mob Name="Scorpok Stinger" Id="5988" />
@@ -762,6 +1098,36 @@
 				<Hotspot X="-10888.8" Y="-2805.44" Z="46.4878" />
 				<Hotspot X="-10987.1" Y="-3154.22" Z="44.8503" />
 				<Hotspot X="-11056.2" Y="-3136.22" Z="45.5669" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8393" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Scorpok Stinger" Id="5988" />
+				<Mob Name="Clack the Reaver" Id="8301" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10946.5" Y="-2915.18" Z="8.5604" />
+				<Hotspot X="-11000.6" Y="-2874.81" Z="9.4764" />
+				<Hotspot X="-11057.1" Y="-2908.66" Z="13.6863" />
+				<Hotspot X="-11118.2" Y="-2765.16" Z="18.126" />
+				<Hotspot X="-11013.5" Y="-2738.43" Z="5.7798" />
+				<Hotspot X="-10888.8" Y="-2805.44" Z="46.4878" />
+				<Hotspot X="-10987.1" Y="-3154.22" Z="44.8503" />
+				<Hotspot X="-11056.2" Y="-3136.22" Z="45.5669" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8394" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Redstone Basilisk" Id="5990" />
+				<Mob Name="Redstone Crystalhide" Id="5991" />
+				<Mob Name="Deatheye" Id="8302" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11029.5" Y="-2922.28" Z="12.5276" />
+				<Hotspot X="-11021" Y="-2864.95" Z="9.0807" />
+				<Hotspot X="-11059.6" Y="-2817.06" Z="9.3027" />
+				<Hotspot X="-11021.4" Y="-2782.37" Z="4.2525" />
+				<Hotspot X="-10964.3" Y="-2781.22" Z="5.2932" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="CollectItem" ItemId="8394" CollectCount="1">
@@ -796,6 +1162,38 @@
 				<Hotspot X="-11056.2" Y="-3136.22" Z="45.5669" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="8393" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Scorpok Stinger" Id="5988" />
+				<Mob Name="Clack the Reaver" Id="8301" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10946.5" Y="-2915.18" Z="8.5604" />
+				<Hotspot X="-11000.6" Y="-2874.81" Z="9.4764" />
+				<Hotspot X="-11057.1" Y="-2908.66" Z="13.6863" />
+				<Hotspot X="-11118.2" Y="-2765.16" Z="18.126" />
+				<Hotspot X="-11013.5" Y="-2738.43" Z="5.7798" />
+				<Hotspot X="-10888.8" Y="-2805.44" Z="46.4878" />
+				<Hotspot X="-10987.1" Y="-3154.22" Z="44.8503" />
+				<Hotspot X="-11056.2" Y="-3136.22" Z="45.5669" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8396" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Black Slayer" Id="5982" />
+				<Mob Name="Bonepicker" Id="5983" />
+				<Mob Name="Spiteflayer" Id="8299" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11199.3" Y="-3205.91" Z="8.2719" />
+				<Hotspot X="-11247.4" Y="-3315.6" Z="19.0054" />
+				<Hotspot X="-11159.5" Y="-3342.99" Z="4.7923" />
+				<Hotspot X="-11317.1" Y="-3169.56" Z="7.8046" />
+				<Hotspot X="-11380.9" Y="-3117.83" Z="4.1014" />
+				<Hotspot X="-11377.2" Y="-3065.98" Z="-4.3938" />
+				<Hotspot X="-11361" Y="-2763.36" Z="6.3744" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="8396" CollectCount="2">
 			<CollectFrom>
 				<Mob Name="Black Slayer" Id="5982" />
@@ -822,6 +1220,16 @@
 				<Hotspot X="-11178.3" Y="-2992.61" Z="8.9409" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="8392" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ashmane Boar" Id="5992" />
+				<Mob Name="Helboar" Id="5993" />
+				<Mob Name="Grunter" Id="8303" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11178.3" Y="-2992.61" Z="8.9409" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="2601" Name="The Basilisk's Bite">
 		<Objective Type="CollectItem" ItemId="8394" CollectCount="10">
@@ -836,6 +1244,36 @@
 				<Hotspot X="-11059.6" Y="-2817.06" Z="9.3027" />
 				<Hotspot X="-11021.4" Y="-2782.37" Z="4.2525" />
 				<Hotspot X="-10964.3" Y="-2781.22" Z="5.2932" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8394" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Redstone Basilisk" Id="5990" />
+				<Mob Name="Redstone Crystalhide" Id="5991" />
+				<Mob Name="Deatheye" Id="8302" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11029.5" Y="-2922.28" Z="12.5276" />
+				<Hotspot X="-11021" Y="-2864.95" Z="9.0807" />
+				<Hotspot X="-11059.6" Y="-2817.06" Z="9.3027" />
+				<Hotspot X="-11021.4" Y="-2782.37" Z="4.2525" />
+				<Hotspot X="-10964.3" Y="-2781.22" Z="5.2932" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8396" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Black Slayer" Id="5982" />
+				<Mob Name="Bonepicker" Id="5983" />
+				<Mob Name="Spiteflayer" Id="8299" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11199.3" Y="-3205.91" Z="8.2719" />
+				<Hotspot X="-11247.4" Y="-3315.6" Z="19.0054" />
+				<Hotspot X="-11159.5" Y="-3342.99" Z="4.7923" />
+				<Hotspot X="-11317.1" Y="-3169.56" Z="7.8046" />
+				<Hotspot X="-11380.9" Y="-3117.83" Z="4.1014" />
+				<Hotspot X="-11377.2" Y="-3065.98" Z="-4.3938" />
+				<Hotspot X="-11361" Y="-2763.36" Z="6.3744" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="CollectItem" ItemId="8396" CollectCount="2">
@@ -870,6 +1308,38 @@
 				<Hotspot X="-11380.9" Y="-3117.83" Z="4.1014" />
 				<Hotspot X="-11377.2" Y="-3065.98" Z="-4.3938" />
 				<Hotspot X="-11361" Y="-2763.36" Z="6.3744" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8396" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Black Slayer" Id="5982" />
+				<Mob Name="Bonepicker" Id="5983" />
+				<Mob Name="Spiteflayer" Id="8299" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11199.3" Y="-3205.91" Z="8.2719" />
+				<Hotspot X="-11247.4" Y="-3315.6" Z="19.0054" />
+				<Hotspot X="-11159.5" Y="-3342.99" Z="4.7923" />
+				<Hotspot X="-11317.1" Y="-3169.56" Z="7.8046" />
+				<Hotspot X="-11380.9" Y="-3117.83" Z="4.1014" />
+				<Hotspot X="-11377.2" Y="-3065.98" Z="-4.3938" />
+				<Hotspot X="-11361" Y="-2763.36" Z="6.3744" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8391" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Starving Snickerfang" Id="5984" />
+				<Mob Name="Snickerfang Hyena" Id="5985" />
+				<Mob Name="Ravage" Id="8300" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10965.2" Y="-2859.8" Z="5.7761" />
+				<Hotspot X="-11007" Y="-2841.82" Z="9.082" />
+				<Hotspot X="-11034.3" Y="-2804.99" Z="8.674" />
+				<Hotspot X="-11044" Y="-2765.01" Z="2.8911" />
+				<Hotspot X="-10957.5" Y="-2775.29" Z="5.7689" />
+				<Hotspot X="-11092.1" Y="-2842.07" Z="15.8735" />
+				<Hotspot X="-10959" Y="-3118.91" Z="42.9477" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="CollectItem" ItemId="8391" CollectCount="2">
@@ -1092,7 +1562,6 @@
 		<Objective QuestName="Witherbark Cages" QuestId="2988" Type="UseObject" ObjectId="144068" UseCount="1" />
 		<Objective QuestName="Skulk Rock Clean-up" QuestId="2877" Type="KillMob" MobId="2655" KillCount="10" />
 		<Objective QuestName="Skulk Rock Clean-up" QuestId="2877" Type="KillMob" MobId="2656" KillCount="10" />
-		<Objective QuestName="Whiskey Slim's Lost Grog" QuestId="580" Type="CollectItem" ItemId="3900" CollectCount="12" />
 		<TurnIn QuestName="Skulk Rock Clean-up" QuestId="2877" TurnInName="Fraggar Thundermantle" TurnInId="7884" X="322.773" Y="-2146.14" Z="123.311" />
 		<TurnIn QuestName="Troll Necklace Bounty" QuestId="2880" TurnInName="Fraggar Thundermantle" TurnInId="7884" X="322.773" Y="-2146.14" Z="123.311" />
 		<TurnIn QuestName="A Gesture of Goodwill" QuestId="9470" TurnInName="Ambassador Rualeth" TurnInId="17223" X="254.952" Y="-2156.55" Z="120.151" />
@@ -1317,6 +1786,9 @@
 			<PickUp QuestName="Becoming a Parent" QuestId="4298" GiverName="Agnar Beastamer" GiverId="9660" X="347.076" Y="-2119.98" Z="104.701" />
 		</If>
 		<TurnIn QuestName="Becoming a Parent" QuestId="4298" TurnInName="Agnar Beastamer" TurnInId="9660" X="347.076" Y="-2119.98" Z="104.701" />
+		<If Condition="((HasQuest(580)) &amp;&amp; (!IsQuestCompleted(580)))">
+			<Objective QuestName="Whiskey Slim's Lost Grog" QuestId="580" Type="CollectItem" ItemId="3900" CollectCount="12" />
+		</If>
 		<TurnIn QuestName="Whiskey Slim's Lost Grog" QuestId="580" TurnInName="Whiskey Slim" TurnInId="2491" X="-14463.6" Y="489.274" Z="15.205" />
 		<If Condition="(Me.Level &gt;= 40)">
 			<PickUp QuestName="Stranglethorn Fever" QuestId="348" GiverName="Fin Fizracket" GiverId="2486" X="-14433.2" Y="458.988" Z="15.5349" />
@@ -1336,8 +1808,7 @@
 				<Hotspot X="-14007.4" Y="250.055" Z="17.3661" />
 			</CustomBehavior>
 		</If>
-		<Objective QuestName="Big Game Hunter" QuestId="208" Type="CollectItem" ItemId="3880" CollectCount="1" />
-		<TurnIn QuestName="Big Game Hunter" QuestId="208" TurnInName="Hemet Nesingwary Jr." TurnInId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<!-- SKIP Q208 Big Game Hunter: group quest (3 players) -->
 		<!-- REVIEW Q348 Stranglethorn Fever: item 2797 Heart of Mokk has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(348)) &amp;&amp; (IsQuestCompleted(348)))">
 			<TurnIn QuestName="Stranglethorn Fever" QuestId="348" TurnInName="Fin Fizracket" TurnInId="2486" X="-14433.2" Y="458.988" Z="15.5349" />
@@ -1354,11 +1825,17 @@
 		<If Condition="HasItem(4056) &amp;&amp; !HasQuest(624) &amp;&amp; !IsQuestCompleted(624) &amp;&amp; (Me.Level &gt;= 35)">
 			<PickUp QuestName="Cortello's Riddle" QuestId="624" GiverName="Cortello's Riddle" GiverId="4056" GiverType="Item" />
 		</If>
-		<Objective QuestName="The Bloodsail Buccaneers" QuestId="608" Type="KillMob" MobId="2550" KillCount="1" />
-		<Objective QuestName="The Bloodsail Buccaneers" QuestId="608" Type="KillMob" MobId="2546" KillCount="1" />
-		<Objective QuestName="The Bloodsail Buccaneers" QuestId="608" Type="KillMob" MobId="2548" KillCount="1" />
 		<If Condition="HasItem(4056) &amp;&amp; !HasQuest(624) &amp;&amp; !IsQuestCompleted(624) &amp;&amp; (Me.Level &gt;= 35)">
 			<PickUp QuestName="Cortello's Riddle" QuestId="624" GiverName="Cortello's Riddle" GiverId="4056" GiverType="Item" />
+		</If>
+		<If Condition="((HasQuest(608)) &amp;&amp; (!IsQuestCompleted(608)))">
+			<Objective QuestName="The Bloodsail Buccaneers" QuestId="608" Type="KillMob" MobId="2550" KillCount="1" />
+		</If>
+		<If Condition="((HasQuest(608)) &amp;&amp; (!IsQuestCompleted(608)))">
+			<Objective QuestName="The Bloodsail Buccaneers" QuestId="608" Type="KillMob" MobId="2546" KillCount="1" />
+		</If>
+		<If Condition="((HasQuest(608)) &amp;&amp; (!IsQuestCompleted(608)))">
+			<Objective QuestName="The Bloodsail Buccaneers" QuestId="608" Type="KillMob" MobId="2548" KillCount="1" />
 		</If>
 		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="608" TurnInName="Fleet Master Seahorn" TurnInId="2487" X="-14444.8" Y="486.81" Z="28.809" />
 		<TurnIn QuestName="Cortello's Riddle" QuestId="624" TurnInName="A Soggy Scroll" TurnInId="2553" TurnInType="Object" X="-10357.7" Y="-2747.54" Z="17.3974" />

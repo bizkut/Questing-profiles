@@ -325,30 +325,40 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.Orc))">
 			<TurnIn QuestName="A Valiant Of Orgrimmar" QuestId="13691" TurnInName="Mokra the Skullcrusher" TurnInId="33361" X="8398.04" Y="648.065" Z="550.344" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Valiant's Charge" QuestId="13697" GiverName="Mokra the Skullcrusher" GiverId="33361" X="8398.04" Y="648.065" Z="550.344" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Troll))">
 			<TurnIn QuestName="A Valiant Of Sen'jin" QuestId="13693" TurnInName="Zul'tore" TurnInId="33372" X="8401.49" Y="680.507" Z="550.252" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Valiant's Charge" QuestId="13719" GiverName="Zul'tore" GiverId="33372" X="8401.49" Y="680.507" Z="550.252" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<TurnIn QuestName="A Valiant Of Thunder Bluff" QuestId="13694" TurnInName="Runok Wildmane" TurnInId="33403" X="8397.64" Y="664.995" Z="550.533" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Valiant's Charge" QuestId="13720" GiverName="Runok Wildmane" GiverId="33403" X="8397.64" Y="664.995" Z="550.533" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Undead))">
 			<TurnIn QuestName="A Valiant Of Undercity" QuestId="13695" TurnInName="Deathstalker Visceri" TurnInId="33373" X="8415.04" Y="644.571" Z="550.434" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Valiant's Charge" QuestId="13721" GiverName="Deathstalker Visceri" GiverId="33373" X="8415.04" Y="644.571" Z="550.434" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<TurnIn QuestName="A Valiant Of Silvermoon" QuestId="13696" TurnInName="Eressea Dawnsinger" TurnInId="33379" X="8429.48" Y="649.509" Z="550.434" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Valiant's Charge" QuestId="13722" GiverName="Eressea Dawnsinger" GiverId="33379" X="8429.48" Y="649.509" Z="550.434" />
 			</If>
@@ -357,9 +367,13 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Blade Fit For A Champion" QuestId="13762" GiverName="Mokra the Skullcrusher" GiverId="33361" X="8398.04" Y="648.065" Z="550.344" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Worthy Weapon" QuestId="13763" GiverName="Mokra the Skullcrusher" GiverId="33361" X="8398.04" Y="648.065" Z="550.344" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Edge Of Winter" QuestId="13764" GiverName="Mokra the Skullcrusher" GiverId="33361" X="8398.04" Y="648.065" Z="550.344" />
 			</If>
@@ -373,6 +387,8 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Grand Melee" QuestId="13767" GiverName="Morah Worgsister" GiverId="33544" X="8399.17" Y="652.768" Z="550.345" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="At The Enemy's Gates" QuestId="13856" GiverName="Morah Worgsister" GiverId="33544" X="8399.17" Y="652.768" Z="550.345" />
 			</If>
@@ -391,7 +407,11 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.Orc))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13856" Type="KillMob" MobId="33438" KillCount="15" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13856" Type="KillMob" MobId="33550" KillCount="10" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13856" Type="KillMob" MobId="33429" KillCount="3" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Orc))">
@@ -405,6 +425,8 @@
 			<If Condition="((HasQuest(13762)) &amp;&amp; (!IsQuestCompleted(13762)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13762" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<!-- REVIEW Q13763 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13763)) &amp;&amp; (IsQuestCompleted(13763)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13763" TurnInName="Mokra the Skullcrusher" TurnInId="33361" X="8398.04" Y="648.065" Z="550.344" />
@@ -412,6 +434,8 @@
 			<If Condition="((HasQuest(13763)) &amp;&amp; (!IsQuestCompleted(13763)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13763" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<!-- REVIEW Q13764 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13764)) &amp;&amp; (IsQuestCompleted(13764)))">
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13764" TurnInName="Mokra the Skullcrusher" TurnInId="33361" X="8398.04" Y="648.065" Z="550.344" />
@@ -431,15 +455,21 @@
 			<If Condition="((HasQuest(13767)) &amp;&amp; (!IsQuestCompleted(13767)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13767" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<TurnIn QuestName="At The Enemy's Gates" QuestId="13856" TurnInName="Morah Worgsister" TurnInId="33544" X="8399.17" Y="652.768" Z="550.345" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Troll))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Blade Fit For A Champion" QuestId="13768" GiverName="Zul'tore" GiverId="33372" X="8401.49" Y="680.507" Z="550.252" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Worthy Weapon" QuestId="13769" GiverName="Zul'tore" GiverId="33372" X="8401.49" Y="680.507" Z="550.252" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Edge Of Winter" QuestId="13770" GiverName="Zul'tore" GiverId="33372" X="8401.49" Y="680.507" Z="550.252" />
 			</If>
@@ -453,6 +483,8 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Grand Melee" QuestId="13772" GiverName="Gahju" GiverId="33545" X="8406.47" Y="682.454" Z="550.341" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="At The Enemy's Gates" QuestId="13857" GiverName="Gahju" GiverId="33545" X="8406.47" Y="682.454" Z="550.341" />
 			</If>
@@ -471,7 +503,11 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.Troll))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13857" Type="KillMob" MobId="33438" KillCount="15" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13857" Type="KillMob" MobId="33550" KillCount="10" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13857" Type="KillMob" MobId="33429" KillCount="3" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Troll))">
@@ -485,6 +521,8 @@
 			<If Condition="((HasQuest(13768)) &amp;&amp; (!IsQuestCompleted(13768)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13768" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<!-- REVIEW Q13769 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13769)) &amp;&amp; (IsQuestCompleted(13769)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13769" TurnInName="Zul'tore" TurnInId="33372" X="8401.49" Y="680.507" Z="550.252" />
@@ -492,6 +530,8 @@
 			<If Condition="((HasQuest(13769)) &amp;&amp; (!IsQuestCompleted(13769)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13769" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<!-- REVIEW Q13770 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13770)) &amp;&amp; (IsQuestCompleted(13770)))">
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13770" TurnInName="Zul'tore" TurnInId="33372" X="8401.49" Y="680.507" Z="550.252" />
@@ -511,15 +551,21 @@
 			<If Condition="((HasQuest(13772)) &amp;&amp; (!IsQuestCompleted(13772)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13772" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<TurnIn QuestName="At The Enemy's Gates" QuestId="13857" TurnInName="Gahju" TurnInId="33545" X="8406.47" Y="682.454" Z="550.341" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Blade Fit For A Champion" QuestId="13773" GiverName="Runok Wildmane" GiverId="33403" X="8397.64" Y="664.995" Z="550.533" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Worthy Weapon" QuestId="13774" GiverName="Runok Wildmane" GiverId="33403" X="8397.64" Y="664.995" Z="550.533" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Edge Of Winter" QuestId="13775" GiverName="Runok Wildmane" GiverId="33403" X="8397.64" Y="664.995" Z="550.533" />
 			</If>
@@ -533,6 +579,8 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Grand Melee" QuestId="13777" GiverName="Anka Clawhoof" GiverId="33549" X="8396.95" Y="669.127" Z="550.346" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="At The Enemy's Gates" QuestId="13858" GiverName="Anka Clawhoof" GiverId="33549" X="8396.95" Y="669.127" Z="550.346" />
 			</If>
@@ -551,7 +599,11 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13858" Type="KillMob" MobId="33438" KillCount="15" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13858" Type="KillMob" MobId="33550" KillCount="10" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13858" Type="KillMob" MobId="33429" KillCount="3" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Tauren))">
@@ -565,6 +617,8 @@
 			<If Condition="((HasQuest(13773)) &amp;&amp; (!IsQuestCompleted(13773)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13773" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<!-- REVIEW Q13774 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13774)) &amp;&amp; (IsQuestCompleted(13774)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13774" TurnInName="Runok Wildmane" TurnInId="33403" X="8397.64" Y="664.995" Z="550.533" />
@@ -572,6 +626,8 @@
 			<If Condition="((HasQuest(13774)) &amp;&amp; (!IsQuestCompleted(13774)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13774" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<!-- REVIEW Q13775 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13775)) &amp;&amp; (IsQuestCompleted(13775)))">
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13775" TurnInName="Runok Wildmane" TurnInId="33403" X="8397.64" Y="664.995" Z="550.533" />
@@ -591,15 +647,21 @@
 			<If Condition="((HasQuest(13777)) &amp;&amp; (!IsQuestCompleted(13777)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13777" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<TurnIn QuestName="At The Enemy's Gates" QuestId="13858" TurnInName="Anka Clawhoof" TurnInId="33549" X="8396.95" Y="669.127" Z="550.346" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Undead))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Blade Fit For A Champion" QuestId="13778" GiverName="Deathstalker Visceri" GiverId="33373" X="8415.04" Y="644.571" Z="550.434" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Worthy Weapon" QuestId="13779" GiverName="Deathstalker Visceri" GiverId="33373" X="8415.04" Y="644.571" Z="550.434" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Edge Of Winter" QuestId="13780" GiverName="Deathstalker Visceri" GiverId="33373" X="8415.04" Y="644.571" Z="550.434" />
 			</If>
@@ -613,6 +675,8 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Grand Melee" QuestId="13782" GiverName="Handler Dretch" GiverId="33547" X="8410.02" Y="643.455" Z="550.342" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="At The Enemy's Gates" QuestId="13860" GiverName="Handler Dretch" GiverId="33547" X="8410.02" Y="643.455" Z="550.342" />
 			</If>
@@ -631,7 +695,11 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.Undead))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13860" Type="KillMob" MobId="33438" KillCount="15" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13860" Type="KillMob" MobId="33550" KillCount="10" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13860" Type="KillMob" MobId="33429" KillCount="3" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Undead))">
@@ -645,6 +713,8 @@
 			<If Condition="((HasQuest(13778)) &amp;&amp; (!IsQuestCompleted(13778)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13778" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<!-- REVIEW Q13779 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13779)) &amp;&amp; (IsQuestCompleted(13779)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13779" TurnInName="Deathstalker Visceri" TurnInId="33373" X="8415.04" Y="644.571" Z="550.434" />
@@ -652,6 +722,8 @@
 			<If Condition="((HasQuest(13779)) &amp;&amp; (!IsQuestCompleted(13779)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13779" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<!-- REVIEW Q13780 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13780)) &amp;&amp; (IsQuestCompleted(13780)))">
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13780" TurnInName="Deathstalker Visceri" TurnInId="33373" X="8415.04" Y="644.571" Z="550.434" />
@@ -671,15 +743,21 @@
 			<If Condition="((HasQuest(13782)) &amp;&amp; (!IsQuestCompleted(13782)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13782" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<TurnIn QuestName="At The Enemy's Gates" QuestId="13860" TurnInName="Handler Dretch" TurnInId="33547" X="8410.02" Y="643.455" Z="550.342" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Blade Fit For A Champion" QuestId="13783" GiverName="Eressea Dawnsinger" GiverId="33379" X="8429.48" Y="649.509" Z="550.434" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Worthy Weapon" QuestId="13784" GiverName="Eressea Dawnsinger" GiverId="33379" X="8429.48" Y="649.509" Z="550.434" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Edge Of Winter" QuestId="13785" GiverName="Eressea Dawnsinger" GiverId="33379" X="8429.48" Y="649.509" Z="550.434" />
 			</If>
@@ -693,6 +771,8 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Grand Melee" QuestId="13787" GiverName="Aneera Thuron" GiverId="33548" X="8426.74" Y="644.955" Z="550.34" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="At The Enemy's Gates" QuestId="13859" GiverName="Aneera Thuron" GiverId="33548" X="8426.74" Y="644.955" Z="550.34" />
 			</If>
@@ -711,7 +791,11 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13859" Type="KillMob" MobId="33438" KillCount="15" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13859" Type="KillMob" MobId="33550" KillCount="10" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13859" Type="KillMob" MobId="33429" KillCount="3" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.BloodElf))">
@@ -725,6 +809,8 @@
 			<If Condition="((HasQuest(13783)) &amp;&amp; (!IsQuestCompleted(13783)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13783" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<!-- REVIEW Q13784 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13784)) &amp;&amp; (IsQuestCompleted(13784)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13784" TurnInName="Eressea Dawnsinger" TurnInId="33379" X="8429.48" Y="649.509" Z="550.434" />
@@ -732,6 +818,8 @@
 			<If Condition="((HasQuest(13784)) &amp;&amp; (!IsQuestCompleted(13784)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13784" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<!-- REVIEW Q13785 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13785)) &amp;&amp; (IsQuestCompleted(13785)))">
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13785" TurnInName="Eressea Dawnsinger" TurnInId="33379" X="8429.48" Y="649.509" Z="550.434" />
@@ -751,6 +839,8 @@
 			<If Condition="((HasQuest(13787)) &amp;&amp; (!IsQuestCompleted(13787)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13787" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<TurnIn QuestName="At The Enemy's Gates" QuestId="13859" TurnInName="Aneera Thuron" TurnInId="33548" X="8426.74" Y="644.955" Z="550.34" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Orc))">
@@ -761,6 +851,8 @@
 			<If Condition="((HasQuest(13697)) &amp;&amp; (!IsQuestCompleted(13697)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13697" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13697)">
 				<PickUp QuestName="The Valiant's Challenge" QuestId="13726" GiverName="Mokra the Skullcrusher" GiverId="33361" X="8398.04" Y="648.065" Z="550.344" />
 			</If>
@@ -773,6 +865,8 @@
 			<If Condition="((HasQuest(13719)) &amp;&amp; (!IsQuestCompleted(13719)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13719" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13719)">
 				<PickUp QuestName="The Valiant's Challenge" QuestId="13727" GiverName="Zul'tore" GiverId="33372" X="8401.49" Y="680.507" Z="550.252" />
 			</If>
@@ -785,6 +879,8 @@
 			<If Condition="((HasQuest(13720)) &amp;&amp; (!IsQuestCompleted(13720)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13720" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13720)">
 				<PickUp QuestName="The Valiant's Challenge" QuestId="13728" GiverName="Runok Wildmane" GiverId="33403" X="8397.64" Y="664.995" Z="550.533" />
 			</If>
@@ -797,6 +893,8 @@
 			<If Condition="((HasQuest(13721)) &amp;&amp; (!IsQuestCompleted(13721)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13721" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13721)">
 				<PickUp QuestName="The Valiant's Challenge" QuestId="13729" GiverName="Deathstalker Visceri" GiverId="33373" X="8415.04" Y="644.571" Z="550.434" />
 			</If>
@@ -809,6 +907,8 @@
 			<If Condition="((HasQuest(13722)) &amp;&amp; (!IsQuestCompleted(13722)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13722" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13722)">
 				<PickUp QuestName="The Valiant's Challenge" QuestId="13731" GiverName="Eressea Dawnsinger" GiverId="33379" X="8429.48" Y="649.509" Z="550.434" />
 			</If>
@@ -821,6 +921,8 @@
 			<If Condition="((HasQuest(13726)) &amp;&amp; (!IsQuestCompleted(13726)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13726" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Orc))">
 			<If Condition="((Me.Race == WoWRace.Orc)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13726)">
 				<PickUp QuestName="A Champion Rises" QuestId="13736" GiverName="Mokra the Skullcrusher" GiverId="33361" X="8398.04" Y="648.065" Z="550.344" />
 			</If>
@@ -833,6 +935,8 @@
 			<If Condition="((HasQuest(13727)) &amp;&amp; (!IsQuestCompleted(13727)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13727" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Troll))">
 			<If Condition="((Me.Race == WoWRace.Troll)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13727)">
 				<PickUp QuestName="A Champion Rises" QuestId="13737" GiverName="Zul'tore" GiverId="33372" X="8401.49" Y="680.507" Z="550.252" />
 			</If>
@@ -845,6 +949,8 @@
 			<If Condition="((HasQuest(13728)) &amp;&amp; (!IsQuestCompleted(13728)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13728" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<If Condition="((Me.Race == WoWRace.Tauren)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13728)">
 				<PickUp QuestName="A Champion Rises" QuestId="13738" GiverName="Runok Wildmane" GiverId="33403" X="8397.64" Y="664.995" Z="550.533" />
 			</If>
@@ -857,6 +963,8 @@
 			<If Condition="((HasQuest(13729)) &amp;&amp; (!IsQuestCompleted(13729)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13729" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Undead))">
 			<If Condition="((Me.Race == WoWRace.Undead)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13729)">
 				<PickUp QuestName="A Champion Rises" QuestId="13739" GiverName="Deathstalker Visceri" GiverId="33373" X="8415.04" Y="644.571" Z="550.434" />
 			</If>
@@ -869,6 +977,8 @@
 			<If Condition="((HasQuest(13731)) &amp;&amp; (!IsQuestCompleted(13731)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13731" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.BloodElf))">
 			<If Condition="((Me.Race == WoWRace.BloodElf)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13731)">
 				<PickUp QuestName="A Champion Rises" QuestId="13740" GiverName="Eressea Dawnsinger" GiverId="33379" X="8429.48" Y="649.509" Z="550.434" />
 			</If>

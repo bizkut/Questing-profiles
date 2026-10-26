@@ -24,13 +24,7 @@
 	<Mailboxes />
 
 	<Quest Id="13790" Name="Among the Champions" Daily="True" />
-	<Quest Id="13682" Name="Threat From Above" Daily="True">
-		<Objective Type="KillMob" MobId="33687" KillCount="1">
-			<Hotspots>
-				<Hotspot X="8026.11" Y="2686.62" Z="550.965" />
-			</Hotspots>
-		</Objective>
-	</Quest>
+	<Quest Id="13682" Name="Threat From Above" Daily="True" />
 	<Quest Id="13861" Name="Battle Before The Citadel" Daily="True">
 		<Objective Type="KillMob" MobId="34127" KillCount="3">
 			<Hotspots>
@@ -59,8 +53,8 @@
 				<PickUp QuestName="Among the Champions" QuestId="13790" GiverName="Luuri" GiverId="33771" X="8451.65" Y="1058.68" Z="554.493" />
 			</If>
 		</If>
+		<!-- SKIP Q13682 Threat From Above: group quest (3 players) -->
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
-			<!-- SKIP Q13682 Threat From Above: group quest (3 players) -->
 			<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock) || (Me.Class == WoWClass.Druid)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13794)">
 				<PickUp QuestName="Battle Before The Citadel" QuestId="13861" GiverName="Eadric the Pure" GiverId="33759" X="8447.08" Y="1056.51" Z="554.423" />
 			</If>
@@ -72,9 +66,6 @@
 		</If>
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
 			<CustomBehavior File="KillUntilComplete" QuestId="13789" MobId1="29717" MobId2="31731" MobId3="31738" MobId4="32236" MobId5="32238" MobId6="32250" X="8530.89" Y="1416.05" Z="638.376" />
-		</If>
-		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
-			<Objective QuestName="Threat From Above" QuestId="13682" Type="KillMob" MobId="33687" KillCount="1" />
 		</If>
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
 			<Objective QuestName="Battle Before The Citadel" QuestId="13861" Type="KillMob" MobId="34127" KillCount="3" />
@@ -89,13 +80,6 @@
 			</If>
 		</If>
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
-			<!-- REVIEW Q13682 Threat From Above: group quest (3 players); kill 33695 Cultist Bombardier x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-			<If Condition="((HasQuest(13682)) &amp;&amp; (IsQuestCompleted(13682)))">
-				<TurnIn QuestName="Threat From Above" QuestId="13682" TurnInName="Eadric the Pure" TurnInId="33759" X="8447.08" Y="1056.51" Z="554.423" />
-			</If>
-			<If Condition="((HasQuest(13682)) &amp;&amp; (!IsQuestCompleted(13682)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13682" Type="Incomplete" />
-			</If>
 			<TurnIn QuestName="Battle Before The Citadel" QuestId="13861" TurnInName="Eadric the Pure" TurnInId="33759" X="8447.08" Y="1056.51" Z="554.423" />
 		</If>
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">

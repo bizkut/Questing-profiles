@@ -325,30 +325,40 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
 			<TurnIn QuestName="A Valiant Of Stormwind" QuestId="13684" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Valiant's Charge" QuestId="13718" GiverName="Marshal Jacob Alerius" GiverId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<TurnIn QuestName="A Valiant Of Darnassus" QuestId="13689" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Valiant's Charge" QuestId="13717" GiverName="Jaelyne Evensong" GiverId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<TurnIn QuestName="A Valiant Of Ironforge" QuestId="13685" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Valiant's Charge" QuestId="13714" GiverName="Lana Stouthammer" GiverId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<TurnIn QuestName="A Valiant Of Gnomeregan" QuestId="13688" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Valiant's Charge" QuestId="13715" GiverName="Ambrose Boltspark" GiverId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<TurnIn QuestName="A Valiant Of The Exodar" QuestId="13690" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Valiant's Charge" QuestId="13716" GiverName="Colosos" GiverId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
@@ -357,9 +367,13 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Blade Fit For A Champion" QuestId="13752" GiverName="Colosos" GiverId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Worthy Weapon" QuestId="13753" GiverName="Colosos" GiverId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Edge Of Winter" QuestId="13754" GiverName="Colosos" GiverId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
@@ -373,6 +387,8 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Grand Melee" QuestId="13756" GiverName="Ranii" GiverId="33656" X="8629.63" Y="669.079" Z="550.173" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="At The Enemy's Gates" QuestId="13854" GiverName="Ranii" GiverId="33656" X="8629.63" Y="669.079" Z="550.173" />
 			</If>
@@ -391,7 +407,11 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13854" Type="KillMob" MobId="33438" KillCount="15" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13854" Type="KillMob" MobId="33550" KillCount="10" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13854" Type="KillMob" MobId="33429" KillCount="3" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
@@ -405,6 +425,8 @@
 			<If Condition="((HasQuest(13752)) &amp;&amp; (!IsQuestCompleted(13752)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13752" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<!-- REVIEW Q13753 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13753)) &amp;&amp; (IsQuestCompleted(13753)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13753" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
@@ -412,6 +434,8 @@
 			<If Condition="((HasQuest(13753)) &amp;&amp; (!IsQuestCompleted(13753)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13753" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<!-- REVIEW Q13754 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13754)) &amp;&amp; (IsQuestCompleted(13754)))">
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13754" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
@@ -431,15 +455,21 @@
 			<If Condition="((HasQuest(13756)) &amp;&amp; (!IsQuestCompleted(13756)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13756" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<TurnIn QuestName="At The Enemy's Gates" QuestId="13854" TurnInName="Ranii" TurnInId="33656" X="8629.63" Y="669.079" Z="550.173" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Blade Fit For A Champion" QuestId="13741" GiverName="Lana Stouthammer" GiverId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Worthy Weapon" QuestId="13742" GiverName="Lana Stouthammer" GiverId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Edge Of Winter" QuestId="13743" GiverName="Lana Stouthammer" GiverId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
@@ -453,6 +483,8 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Grand Melee" QuestId="13745" GiverName="Clara Tumblebrew" GiverId="33309" X="8608.91" Y="637.616" Z="550.255" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="At The Enemy's Gates" QuestId="13851" GiverName="Clara Tumblebrew" GiverId="33309" X="8608.91" Y="637.616" Z="550.255" />
 			</If>
@@ -471,7 +503,11 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13851" Type="KillMob" MobId="33438" KillCount="15" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13851" Type="KillMob" MobId="33550" KillCount="10" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13851" Type="KillMob" MobId="33429" KillCount="3" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
@@ -485,6 +521,8 @@
 			<If Condition="((HasQuest(13741)) &amp;&amp; (!IsQuestCompleted(13741)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13741" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<!-- REVIEW Q13742 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13742)) &amp;&amp; (IsQuestCompleted(13742)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13742" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
@@ -492,6 +530,8 @@
 			<If Condition="((HasQuest(13742)) &amp;&amp; (!IsQuestCompleted(13742)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13742" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<!-- REVIEW Q13743 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13743)) &amp;&amp; (IsQuestCompleted(13743)))">
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13743" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
@@ -511,15 +551,21 @@
 			<If Condition="((HasQuest(13745)) &amp;&amp; (!IsQuestCompleted(13745)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13745" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<TurnIn QuestName="At The Enemy's Gates" QuestId="13851" TurnInName="Clara Tumblebrew" TurnInId="33309" X="8608.91" Y="637.616" Z="550.255" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Blade Fit For A Champion" QuestId="13603" GiverName="Marshal Jacob Alerius" GiverId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Worthy Weapon" QuestId="13600" GiverName="Marshal Jacob Alerius" GiverId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Edge Of Winter" QuestId="13616" GiverName="Marshal Jacob Alerius" GiverId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
@@ -533,6 +579,8 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Grand Melee" QuestId="13665" GiverName="Captain Joseph Holley" GiverId="33223" X="8623.98" Y="639.313" Z="550.252" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="At The Enemy's Gates" QuestId="13847" GiverName="Captain Joseph Holley" GiverId="33223" X="8623.98" Y="639.313" Z="550.252" />
 			</If>
@@ -551,7 +599,11 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13847" Type="KillMob" MobId="33438" KillCount="15" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13847" Type="KillMob" MobId="33550" KillCount="10" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13847" Type="KillMob" MobId="33429" KillCount="3" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
@@ -565,6 +617,8 @@
 			<If Condition="((HasQuest(13603)) &amp;&amp; (!IsQuestCompleted(13603)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13603" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<!-- REVIEW Q13600 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13600)) &amp;&amp; (IsQuestCompleted(13600)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13600" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
@@ -572,6 +626,8 @@
 			<If Condition="((HasQuest(13600)) &amp;&amp; (!IsQuestCompleted(13600)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13600" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<!-- REVIEW Q13616 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13616)) &amp;&amp; (IsQuestCompleted(13616)))">
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13616" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
@@ -591,15 +647,21 @@
 			<If Condition="((HasQuest(13665)) &amp;&amp; (!IsQuestCompleted(13665)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13665" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<TurnIn QuestName="At The Enemy's Gates" QuestId="13847" TurnInName="Captain Joseph Holley" TurnInId="33223" X="8623.98" Y="639.313" Z="550.252" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Blade Fit For A Champion" QuestId="13757" GiverName="Jaelyne Evensong" GiverId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Worthy Weapon" QuestId="13758" GiverName="Jaelyne Evensong" GiverId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Edge Of Winter" QuestId="13759" GiverName="Jaelyne Evensong" GiverId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
@@ -613,6 +675,8 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Grand Melee" QuestId="13761" GiverName="Airae Starseeker" GiverId="33654" X="8632.64" Y="652.755" Z="550.343" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="At The Enemy's Gates" QuestId="13855" GiverName="Airae Starseeker" GiverId="33654" X="8632.64" Y="652.755" Z="550.343" />
 			</If>
@@ -631,7 +695,11 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13855" Type="KillMob" MobId="33438" KillCount="15" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13855" Type="KillMob" MobId="33550" KillCount="10" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13855" Type="KillMob" MobId="33429" KillCount="3" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
@@ -645,6 +713,8 @@
 			<If Condition="((HasQuest(13757)) &amp;&amp; (!IsQuestCompleted(13757)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13757" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<!-- REVIEW Q13758 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13758)) &amp;&amp; (IsQuestCompleted(13758)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13758" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
@@ -652,6 +722,8 @@
 			<If Condition="((HasQuest(13758)) &amp;&amp; (!IsQuestCompleted(13758)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13758" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<!-- REVIEW Q13759 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13759)) &amp;&amp; (IsQuestCompleted(13759)))">
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13759" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
@@ -671,15 +743,21 @@
 			<If Condition="((HasQuest(13761)) &amp;&amp; (!IsQuestCompleted(13761)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13761" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<TurnIn QuestName="At The Enemy's Gates" QuestId="13855" TurnInName="Airae Starseeker" TurnInId="33654" X="8632.64" Y="652.755" Z="550.343" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Blade Fit For A Champion" QuestId="13746" GiverName="Ambrose Boltspark" GiverId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="A Worthy Weapon" QuestId="13747" GiverName="Ambrose Boltspark" GiverId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Edge Of Winter" QuestId="13748" GiverName="Ambrose Boltspark" GiverId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
@@ -693,6 +771,8 @@
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="The Grand Melee" QuestId="13750" GiverName="Flickin Gearspanner" GiverId="33649" X="8595.79" Y="645.937" Z="550.168" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<If Condition="(Me.Level &gt;= 77)">
 				<PickUp QuestName="At The Enemy's Gates" QuestId="13852" GiverName="Flickin Gearspanner" GiverId="33649" X="8595.79" Y="645.937" Z="550.168" />
 			</If>
@@ -711,7 +791,11 @@
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13852" Type="KillMob" MobId="33438" KillCount="15" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13852" Type="KillMob" MobId="33550" KillCount="10" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<Objective QuestName="At The Enemy's Gates" QuestId="13852" Type="KillMob" MobId="33429" KillCount="3" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
@@ -725,6 +809,8 @@
 			<If Condition="((HasQuest(13746)) &amp;&amp; (!IsQuestCompleted(13746)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13746" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<!-- REVIEW Q13747 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13747)) &amp;&amp; (IsQuestCompleted(13747)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13747" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
@@ -732,6 +818,8 @@
 			<If Condition="((HasQuest(13747)) &amp;&amp; (!IsQuestCompleted(13747)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13747" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<!-- REVIEW Q13748 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13748)) &amp;&amp; (IsQuestCompleted(13748)))">
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13748" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
@@ -751,6 +839,8 @@
 			<If Condition="((HasQuest(13750)) &amp;&amp; (!IsQuestCompleted(13750)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13750" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<TurnIn QuestName="At The Enemy's Gates" QuestId="13852" TurnInName="Flickin Gearspanner" TurnInId="33649" X="8595.79" Y="645.937" Z="550.168" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
@@ -761,6 +851,8 @@
 			<If Condition="((HasQuest(13718)) &amp;&amp; (!IsQuestCompleted(13718)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13718" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13718)">
 				<PickUp QuestName="The Valiant's Challenge" QuestId="13699" GiverName="Marshal Jacob Alerius" GiverId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
@@ -773,6 +865,8 @@
 			<If Condition="((HasQuest(13717)) &amp;&amp; (!IsQuestCompleted(13717)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13717" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13717)">
 				<PickUp QuestName="The Valiant's Challenge" QuestId="13725" GiverName="Jaelyne Evensong" GiverId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
@@ -785,6 +879,8 @@
 			<If Condition="((HasQuest(13714)) &amp;&amp; (!IsQuestCompleted(13714)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13714" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13714)">
 				<PickUp QuestName="The Valiant's Challenge" QuestId="13713" GiverName="Lana Stouthammer" GiverId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
@@ -797,6 +893,8 @@
 			<If Condition="((HasQuest(13715)) &amp;&amp; (!IsQuestCompleted(13715)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13715" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13715)">
 				<PickUp QuestName="The Valiant's Challenge" QuestId="13723" GiverName="Ambrose Boltspark" GiverId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
@@ -809,6 +907,8 @@
 			<If Condition="((HasQuest(13716)) &amp;&amp; (!IsQuestCompleted(13716)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13716" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13716)">
 				<PickUp QuestName="The Valiant's Challenge" QuestId="13724" GiverName="Colosos" GiverId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
@@ -821,6 +921,8 @@
 			<If Condition="((HasQuest(13699)) &amp;&amp; (!IsQuestCompleted(13699)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13699" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Human))">
 			<If Condition="((Me.Race == WoWRace.Human)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13699)">
 				<PickUp QuestName="A Champion Rises" QuestId="13702" GiverName="Marshal Jacob Alerius" GiverId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
@@ -833,6 +935,8 @@
 			<If Condition="((HasQuest(13725)) &amp;&amp; (!IsQuestCompleted(13725)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13725" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<If Condition="((Me.Race == WoWRace.NightElf)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13725)">
 				<PickUp QuestName="A Champion Rises" QuestId="13735" GiverName="Jaelyne Evensong" GiverId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
@@ -845,6 +949,8 @@
 			<If Condition="((HasQuest(13713)) &amp;&amp; (!IsQuestCompleted(13713)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13713" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<If Condition="((Me.Race == WoWRace.Dwarf)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13713)">
 				<PickUp QuestName="A Champion Rises" QuestId="13732" GiverName="Lana Stouthammer" GiverId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
@@ -857,6 +963,8 @@
 			<If Condition="((HasQuest(13723)) &amp;&amp; (!IsQuestCompleted(13723)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13723" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<If Condition="((Me.Race == WoWRace.Gnome)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13723)">
 				<PickUp QuestName="A Champion Rises" QuestId="13733" GiverName="Ambrose Boltspark" GiverId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
@@ -869,6 +977,8 @@
 			<If Condition="((HasQuest(13724)) &amp;&amp; (!IsQuestCompleted(13724)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13724" Type="Incomplete" />
 			</If>
+		</If>
+		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<If Condition="((Me.Race == WoWRace.Draenei)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13724)">
 				<PickUp QuestName="A Champion Rises" QuestId="13734" GiverName="Colosos" GiverId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>

@@ -30,13 +30,7 @@
 	<Mailboxes />
 
 	<Quest Id="13791" Name="Taking Battle To The Enemy" Daily="True" />
-	<Quest Id="13788" Name="Threat From Above" Daily="True">
-		<Objective Type="KillMob" MobId="33687" KillCount="1">
-			<Hotspots>
-				<Hotspot X="8026.11" Y="2686.62" Z="550.965" />
-			</Hotspots>
-		</Objective>
-	</Quest>
+	<Quest Id="13788" Name="Threat From Above" Daily="True" />
 	<Quest Id="13864" Name="Battle Before The Citadel" Daily="True">
 		<Objective Type="KillMob" MobId="34127" KillCount="3">
 			<Hotspots>
@@ -65,8 +59,8 @@
 				<PickUp QuestName="Taking Battle To The Enemy" QuestId="13791" GiverName="Zor'be the Bloodletter" GiverId="33769" X="8613.75" Y="815.734" Z="547.637" />
 			</If>
 		</If>
+		<!-- SKIP Q13788 Threat From Above: group quest (3 players) -->
 		<If Condition="((Me.Class == WoWClass.DeathKnight))">
-			<!-- SKIP Q13788 Threat From Above: group quest (3 players) -->
 			<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13795)">
 				<PickUp QuestName="Battle Before The Citadel" QuestId="13864" GiverName="Crok Scourgebane" GiverId="33762" X="8588.21" Y="816.003" Z="547.637" />
 			</If>
@@ -83,9 +77,6 @@
 			<Objective QuestName="Battle Before The Citadel" QuestId="13864" Type="KillMob" MobId="34127" KillCount="3" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.DeathKnight))">
-			<Objective QuestName="Threat From Above" QuestId="13788" Type="KillMob" MobId="33687" KillCount="1" />
-		</If>
-		<If Condition="((Me.Class == WoWClass.DeathKnight))">
 			<!-- REVIEW Q13791 Taking Battle To The Enemy: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13791)) &amp;&amp; (IsQuestCompleted(13791)))">
 				<TurnIn QuestName="Taking Battle To The Enemy" QuestId="13791" TurnInName="Zor'be the Bloodletter" TurnInId="33769" X="8613.75" Y="815.734" Z="547.637" />
@@ -95,13 +86,6 @@
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.DeathKnight))">
-			<!-- REVIEW Q13788 Threat From Above: group quest (3 players); kill 33695 Cultist Bombardier x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-			<If Condition="((HasQuest(13788)) &amp;&amp; (IsQuestCompleted(13788)))">
-				<TurnIn QuestName="Threat From Above" QuestId="13788" TurnInName="Crok Scourgebane" TurnInId="33762" X="8588.21" Y="816.003" Z="547.637" />
-			</If>
-			<If Condition="((HasQuest(13788)) &amp;&amp; (!IsQuestCompleted(13788)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13788" Type="Incomplete" />
-			</If>
 			<TurnIn QuestName="Battle Before The Citadel" QuestId="13864" TurnInName="Crok Scourgebane" TurnInId="33762" X="8588.21" Y="816.003" Z="547.637" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.DeathKnight))">

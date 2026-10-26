@@ -17,10 +17,10 @@
 
 	<Vendors>
 		<Vendor Name="Matron Tikkit" Entry="18913" Type="Food" X="-1229.58" Y="7161.33" Z="57.3484" />
-		<Vendor Name="Kylene" Entry="19186" Type="Food" X="-1767.14" Y="5135.39" Z="-37.2049" />
-		<Vendor Name="Shaarubo" Entry="19182" Type="Food" X="-1769.02" Y="5152.54" Z="-37.1216" />
 		<Vendor Name="Quartermaster Urgronn" Entry="17585" Type="Food" X="179.435" Y="2704.33" Z="89.1009" />
 		<Vendor Name="Floyd Pinkus" Entry="16602" Type="Food" X="190.876" Y="2610.93" Z="87.3669" />
+		<Vendor Name="Nula the Butcher" Entry="20097" Type="Food" X="-1272.24" Y="7083.96" Z="38.4424" />
+		<Vendor Name="Cookie One-Eye" Entry="16585" Type="Food" X="62.0795" Y="2719.01" Z="85.2474" />
 		<Vendor Name="Osrok the Immovable" Entry="19011" Type="Repair" X="-1332.88" Y="7197.08" Z="34.2739" />
 		<Vendor Name="Reagan Mancuso" Entry="22225" Type="Repair" X="179.787" Y="2605.4" Z="87.3669" />
 		<Vendor Name="Rohok" Entry="16583" Type="Repair" X="167.278" Y="2795.67" Z="113.449" />
@@ -34,6 +34,15 @@
 	<Mailboxes />
 
 	<Quest Id="9442" Name="A Debilitating Sickness">
+		<Objective Type="CollectItem" ItemId="23753" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Drycap Mushroom" Id="181680" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-761.765" Y="3795.76" Z="20.3151" />
+				<Hotspot X="-760.016" Y="3839.73" Z="19.5281" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="23753" CollectCount="1">
 			<CollectFrom>
 				<GameObject Name="Drycap Mushroom" Id="181680" />
@@ -121,71 +130,23 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="9999" Name="Buying Time">
-		<Objective Type="KillMob" MobId="17152" KillCount="2">
-			<Hotspots>
-				<Hotspot X="-1367.21" Y="8907.32" Z="51.6001" />
-				<Hotspot X="-1265.72" Y="8865.55" Z="53.0176" />
-				<Hotspot X="-1499.24" Y="9104.6" Z="88.6032" />
-				<Hotspot X="-1538.6" Y="9113.84" Z="87.4405" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="16945" KillCount="3">
-			<Hotspots>
-				<Hotspot X="-1337.49" Y="8950.3" Z="59.4901" />
-				<Hotspot X="-1364.17" Y="9007.1" Z="54.6472" />
-				<Hotspot X="-1253.15" Y="8966.12" Z="56.2953" />
-				<Hotspot X="-1218.83" Y="8942.5" Z="55.4846" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="17151" KillCount="8">
-			<Hotspots>
-				<Hotspot X="-1347.15" Y="8911.06" Z="54.2005" />
-				<Hotspot X="-1336.5" Y="8872.03" Z="52.6895" />
-				<Hotspot X="-1242.99" Y="8895.34" Z="58.3708" />
-				<Hotspot X="-1286.56" Y="8954.76" Z="58.6134" />
-				<Hotspot X="-1397.13" Y="8961.09" Z="57.7383" />
-				<Hotspot X="-1510.94" Y="9092.64" Z="85.3383" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="10001" Name="The Master Planner">
-		<Objective Type="CollectItem" ItemId="25751" CollectCount="1">
-			<CollectFrom>
-				<Mob Name="Mo'arg Master Planner" Id="18567" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-1234.32" Y="8991.61" Z="55.9549" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="10009" Name="Crackin' Some Skulls">
-		<Objective Type="CollectItem" ItemId="25767" CollectCount="1">
-			<CollectFrom>
-				<Mob Name="Raliq the Drunk" Id="18585" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-1747.92" Y="5157.36" Z="-37.1216" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="CollectItem" ItemId="25768" CollectCount="1">
-			<CollectFrom>
-				<Mob Name="Coosh'coosh" Id="18586" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-1120.84" Y="5409.3" Z="22.3175" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="CollectItem" ItemId="25769" CollectCount="1">
-			<CollectFrom>
-				<Mob Name="Floon" Id="18588" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-3077.3" Y="5611.32" Z="-7.2129" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="9928" Name="Armaments for Deception">
+		<Objective Type="CollectItem" ItemId="25554" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Kil'sorrow Cultist" Id="17147" />
+				<GameObject Name="Kil'sorrow Armaments" Id="182355" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2902.1" Y="6405.04" Z="81.9079" />
+				<Hotspot X="-2902.25" Y="6456.31" Z="82.7451" />
+				<Hotspot X="-2852.6" Y="6441.05" Z="82.7555" />
+				<Hotspot X="-2794.05" Y="6424.33" Z="62.2587" />
+				<Hotspot X="-2784.06" Y="6464.78" Z="64.8018" />
+				<Hotspot X="-2842.27" Y="6545.65" Z="37.6052" />
+				<Hotspot X="-2966.4" Y="6452.86" Z="85.1098" />
+				<Hotspot X="-2936.75" Y="6354.43" Z="88.3589" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="25554" CollectCount="10">
 			<CollectFrom>
 				<Mob Name="Kil'sorrow Cultist" Id="17147" />
@@ -219,6 +180,36 @@
 				<Hotspot X="-1939.53" Y="6862.93" Z="-68.5345" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="25864" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Telaari Frond" Id="182599" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1940.17" Y="7052.31" Z="-92.0861" />
+				<Hotspot X="-1906.81" Y="7113.18" Z="-89.2084" />
+				<Hotspot X="-1861.37" Y="7148.75" Z="-85.4785" />
+				<Hotspot X="-1932.93" Y="7210.01" Z="-109.031" />
+				<Hotspot X="-1994.11" Y="7182.13" Z="-107.595" />
+				<Hotspot X="-2089.41" Y="7207.83" Z="-111.873" />
+				<Hotspot X="-2047.8" Y="6954.59" Z="-87.0047" />
+				<Hotspot X="-1939.53" Y="6862.93" Z="-68.5345" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="25863" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Olemba Root" Id="182601" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2387.03" Y="5315.45" Z="3.1733" />
+				<Hotspot X="-2328.86" Y="5295.93" Z="-8.9461" />
+				<Hotspot X="-2379.38" Y="5237.27" Z="-1.6938" />
+				<Hotspot X="-2425.16" Y="5187.33" Z="-1.8692" />
+				<Hotspot X="-2507.26" Y="5205.48" Z="0.9284" />
+				<Hotspot X="-2571.42" Y="5218.51" Z="8.1002" />
+				<Hotspot X="-2375.03" Y="5101.09" Z="0.4765" />
+				<Hotspot X="-2225.21" Y="5194.33" Z="-11.4217" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="25863" CollectCount="1">
 			<CollectFrom>
 				<GameObject Name="Olemba Root" Id="182601" />
@@ -246,6 +237,35 @@
 				<Hotspot X="1676.28" Y="6748.8" Z="128.144" />
 				<Hotspot X="1655.64" Y="6713.05" Z="121.906" />
 				<Hotspot X="1603.78" Y="6756.36" Z="138.544" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="25865" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Dragonspine" Id="182606" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1789.69" Y="6695.57" Z="147.778" />
+				<Hotspot X="1838.91" Y="6612.7" Z="138.087" />
+				<Hotspot X="1867.59" Y="6582.2" Z="148.439" />
+				<Hotspot X="1982.58" Y="6584.86" Z="147.812" />
+				<Hotspot X="1676.28" Y="6748.8" Z="128.144" />
+				<Hotspot X="1655.64" Y="6713.05" Z="121.906" />
+				<Hotspot X="1603.78" Y="6756.36" Z="138.544" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="25862" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Marshberry" Id="182600" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1649.93" Y="8466.33" Z="-15.8287" />
+				<Hotspot X="1602.62" Y="8463.47" Z="-22.3325" />
+				<Hotspot X="1637.97" Y="8556.09" Z="6.007" />
+				<Hotspot X="1680.55" Y="8527.77" Z="0.1825" />
+				<Hotspot X="1716.97" Y="8493.14" Z="-4.0558" />
+				<Hotspot X="1782.41" Y="8506.89" Z="-15.65" />
+				<Hotspot X="1741.58" Y="8428.36" Z="-19.3359" />
+				<Hotspot X="1621.85" Y="8637.37" Z="-4.7997" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="CollectItem" ItemId="25862" CollectCount="1">
@@ -325,16 +345,6 @@
 				<Hotspot X="-1496.64" Y="8565.37" Z="7.2601" />
 				<Hotspot X="-1438.26" Y="8532.47" Z="13.7976" />
 				<Hotspot X="-1476.8" Y="8417.78" Z="0.9725" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="9946" Name="Cho'war the Pillager">
-		<Objective Type="CollectItem" ItemId="25590" CollectCount="1">
-			<CollectFrom>
-				<Mob Name="Cho'war the Pillager" Id="18423" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-471.73" Y="8857.5" Z="239.455" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -444,78 +454,12 @@
 		</If>
 		<TurnIn QuestName="He Called Himself Altruis..." QuestId="9983" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		<!-- SKIP Q9991 Survey the Land: group quest (3 players) -->
-		<!-- REVIEW Q9991 Survey the Land: group quest (3 players); completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(9991)) &amp;&amp; (IsQuestCompleted(9991)))">
-			<TurnIn QuestName="Survey the Land" QuestId="9991" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
-		</If>
-		<If Condition="((HasQuest(9991)) &amp;&amp; (!IsQuestCompleted(9991)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9991" Type="Incomplete" />
-		</If>
 		<!-- SKIP Q9999 Buying Time: group quest (3 players) -->
-		<Objective QuestName="Buying Time" QuestId="9999" Type="KillMob" MobId="17152" KillCount="2" />
-		<Objective QuestName="Buying Time" QuestId="9999" Type="KillMob" MobId="16945" KillCount="3" />
-		<Objective QuestName="Buying Time" QuestId="9999" Type="KillMob" MobId="17151" KillCount="8" />
-		<!-- REVIEW Q9999 Buying Time: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(9999)) &amp;&amp; (IsQuestCompleted(9999)))">
-			<TurnIn QuestName="Buying Time" QuestId="9999" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
-		</If>
-		<If Condition="((HasQuest(9999)) &amp;&amp; (!IsQuestCompleted(9999)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9999" Type="Incomplete" />
-		</If>
 		<!-- SKIP Q10001 The Master Planner: group quest (3 players) -->
-		<Objective QuestName="The Master Planner" QuestId="10001" Type="CollectItem" ItemId="25751" CollectCount="1" />
-		<!-- REVIEW Q10001 The Master Planner: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10001)) &amp;&amp; (IsQuestCompleted(10001)))">
-			<TurnIn QuestName="The Master Planner" QuestId="10001" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
-		</If>
-		<If Condition="((HasQuest(10001)) &amp;&amp; (!IsQuestCompleted(10001)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10001" Type="Incomplete" />
-		</If>
 		<!-- SKIP Q10004 Patience and Understanding: group quest (3 players) -->
-		<!-- REVIEW Q10004 Patience and Understanding: group quest (3 players); completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10004)) &amp;&amp; (IsQuestCompleted(10004)))">
-			<TurnIn QuestName="Patience and Understanding" QuestId="10004" TurnInName="Sal'salabim" TurnInId="18584" X="-1777.43" Y="5126.05" Z="-35.6732" />
-		</If>
-		<If Condition="((HasQuest(10004)) &amp;&amp; (!IsQuestCompleted(10004)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10004" Type="Incomplete" />
-		</If>
 		<!-- SKIP Q10009 Crackin' Some Skulls: group quest (3 players) -->
-		<Objective QuestName="Crackin' Some Skulls" QuestId="10009" Type="CollectItem" ItemId="25767" CollectCount="1" />
-		<Objective QuestName="Crackin' Some Skulls" QuestId="10009" Type="CollectItem" ItemId="25768" CollectCount="1" />
-		<Objective QuestName="Crackin' Some Skulls" QuestId="10009" Type="CollectItem" ItemId="25769" CollectCount="1" />
-		<!-- REVIEW Q10009 Crackin' Some Skulls: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10009)) &amp;&amp; (IsQuestCompleted(10009)))">
-			<TurnIn QuestName="Crackin' Some Skulls" QuestId="10009" TurnInName="Sal'salabim" TurnInId="18584" X="-1777.43" Y="5126.05" Z="-35.6732" />
-		</If>
-		<If Condition="((HasQuest(10009)) &amp;&amp; (!IsQuestCompleted(10009)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10009" Type="Incomplete" />
-		</If>
 		<!-- SKIP Q10010 It's Just That Easy?: group quest (3 players) -->
-		<!-- REVIEW Q10010 It's Just That Easy?: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10010)) &amp;&amp; (IsQuestCompleted(10010)))">
-			<TurnIn QuestName="It's Just That Easy?" QuestId="10010" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
-		</If>
-		<If Condition="((HasQuest(10010)) &amp;&amp; (!IsQuestCompleted(10010)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10010" Type="Incomplete" />
-		</If>
 		<!-- SKIP Q10011 Forge Camp: Annihilated: group quest (3 players) -->
-		<If Condition="HasQuest(10011) &amp;&amp; !IsQuestCompleted(10011) &amp;&amp; GetItemCount(25770) &lt; 1">
-			<CustomBehavior File="CollectThings" QuestId="10011" CollectItemId="25770" CollectItemCount="1" HuntingGroundRadius="120" MobId="18535" X="-1287.83" Y="8915.32" Z="60.9594">
-				<Hotspot X="-1287.83" Y="8915.32" Z="60.9594" />
-			</CustomBehavior>
-		</If>
-		<If Condition="HasQuest(10011) &amp;&amp; !IsQuestCompleted(10011) &amp;&amp; GetItemCount(25771) &lt; 1">
-			<CustomBehavior File="CollectThings" QuestId="10011" CollectItemId="25771" CollectItemCount="1" HuntingGroundRadius="120" MobId="18536" X="-1840.42" Y="9212.31" Z="73.4196">
-				<Hotspot X="-1840.42" Y="9212.31" Z="73.4196" />
-			</CustomBehavior>
-		</If>
-		<!-- REVIEW Q10011 Forge Camp: Annihilated: group quest (3 players); objective 19067 Fel Cannon: Hate x1: not attackable; objective 19210 Fel Cannon: Fear x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10011)) &amp;&amp; (IsQuestCompleted(10011)))">
-			<TurnIn QuestName="Forge Camp: Annihilated" QuestId="10011" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
-		</If>
-		<If Condition="((HasQuest(10011)) &amp;&amp; (!IsQuestCompleted(10011)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10011" Type="Incomplete" />
-		</If>
 		<TurnIn QuestName="An Audacious Advance" QuestId="9907" TurnInName="Jorin Deadeye" TurnInId="18106" X="-1344.14" Y="7226.02" Z="33.5916" />
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9907)">
 			<PickUp QuestName="Diplomatic Measures" QuestId="10107" GiverName="Jorin Deadeye" GiverId="18106" X="-1344.14" Y="7226.02" Z="33.5916" />
@@ -627,13 +571,6 @@
 			<CustomBehavior File="AbandonQuest" QuestId="10167" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q10168 What the Soul Sees: group quest (3 players) -->
-		<!-- REVIEW Q10168 What the Soul Sees: group quest (3 players); item 28283 Soul Mirror has no drop or chest near the guide coordinates; use item 28283: target 19480 Darkened Spirit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10168)) &amp;&amp; (IsQuestCompleted(10168)))">
-			<TurnIn QuestName="What the Soul Sees" QuestId="10168" TurnInName="Mother Kashur" TurnInId="18687" X="-2210.08" Y="8820.06" Z="16.3197" />
-		</If>
-		<If Condition="((HasQuest(10168)) &amp;&amp; (!IsQuestCompleted(10168)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10168" Type="Incomplete" />
-		</If>
 		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10168)">
 			<PickUp QuestName="Return to the Greatmother" QuestId="10170" GiverName="Mother Kashur" GiverId="18687" X="-2210.08" Y="8820.06" Z="16.3197" />
 		</If>
@@ -674,14 +611,6 @@
 		<Objective QuestName="War on the Warmaul" QuestId="9945" Type="KillMob" MobId="18037" KillCount="8" />
 		<TurnIn QuestName="War on the Warmaul" QuestId="9945" TurnInName="Elder Yorley" TurnInId="18414" X="-1289.84" Y="8510.74" Z="16.8298" />
 		<!-- SKIP Q9946 Cho'war the Pillager: group quest (3 players) -->
-		<Objective QuestName="Cho'war the Pillager" QuestId="9946" Type="CollectItem" ItemId="25590" CollectCount="1" />
-		<!-- REVIEW Q9946 Cho'war the Pillager: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(9946)) &amp;&amp; (IsQuestCompleted(9946)))">
-			<TurnIn QuestName="Cho'war the Pillager" QuestId="9946" TurnInName="Elder Yorley" TurnInId="18414" X="-1289.84" Y="8510.74" Z="16.8298" />
-		</If>
-		<If Condition="((HasQuest(9946)) &amp;&amp; (!IsQuestCompleted(9946)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9946" Type="Incomplete" />
-		</If>
 		<Objective QuestName="Once Were Warriors" QuestId="9865" Type="KillMob" MobId="18203" KillCount="10" />
 		<Objective QuestName="Once Were Warriors" QuestId="9865" Type="KillMob" MobId="18207" KillCount="20" />
 		<TurnIn QuestName="Once Were Warriors" QuestId="9865" TurnInName="Saurfang the Younger" TurnInId="18229" X="-1285.25" Y="8503.59" Z="16.9548" />
@@ -690,12 +619,5 @@
 		</If>
 		<TurnIn QuestName="He Will Walk The Earth..." QuestId="9866" TurnInName="Farseer Corhuk" TurnInId="18067" X="-1426.77" Y="7268.06" Z="25.5226" />
 		<!-- SKIP Q9937 Wanted: Durn the Hungerer: group quest (5 players) -->
-		<!-- REVIEW Q9937 Wanted: Durn the Hungerer: group quest (5 players); objective 18411 Durn the Hungerer x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(9937)) &amp;&amp; (IsQuestCompleted(9937)))">
-			<TurnIn QuestName="Wanted: Durn the Hungerer" QuestId="9937" TurnInName="Warden Bullrok" TurnInId="18407" X="-1356.12" Y="7213.31" Z="33.717" />
-		</If>
-		<If Condition="((HasQuest(9937)) &amp;&amp; (!IsQuestCompleted(9937)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9937" Type="Incomplete" />
-		</If>
 	</QuestOrder>
 </HBProfile>

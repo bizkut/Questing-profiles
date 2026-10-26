@@ -44,6 +44,18 @@
 				<Hotspot X="-6451.76" Y="-1192.1" Z="181.019" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="4306" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Slave Worker" Id="5843" />
+				<Mob Name="Holdout Warrior" Id="6391" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5125.08" Y="-1694.8" Z="497.919" />
+				<Hotspot X="-6423.84" Y="-1300.68" Z="180.944" />
+				<Hotspot X="-6410.04" Y="-1235.76" Z="181.021" />
+				<Hotspot X="-6451.76" Y="-1192.1" Z="181.019" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="KillMob" MobId="5839" KillCount="8">
 			<Hotspots>
 				<Hotspot X="-6986" Y="-1729.99" Z="241.659" />
@@ -51,6 +63,14 @@
 		</Objective>
 	</Quest>
 	<Quest Id="7701" Name="WANTED: Overseer Maltorius">
+		<Objective Type="CollectItem" ItemId="18946" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Overseer Maltorius" Id="14621" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6633.88" Y="-1232.66" Z="209.835" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="18946" CollectCount="1">
 			<CollectFrom>
 				<Mob Name="Overseer Maltorius" Id="14621" />
@@ -69,6 +89,29 @@
 				<Hotspot X="-6838.51" Y="-1163.79" Z="241.167" />
 				<Hotspot X="-6818.91" Y="-1215.62" Z="240.036" />
 				<Hotspot X="-6868.71" Y="-1281.88" Z="242.891" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="18959" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dark Iron Steamsmith" Id="5840" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6838.51" Y="-1163.79" Z="241.167" />
+				<Hotspot X="-6818.91" Y="-1215.62" Z="240.036" />
+				<Hotspot X="-6868.71" Y="-1281.88" Z="242.891" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="18960" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dark Iron Lookout" Id="8566" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6872.32" Y="-1074.97" Z="240.078" />
+				<Hotspot X="-6916.08" Y="-1047.83" Z="240.125" />
+				<Hotspot X="-7024" Y="-1107.26" Z="240.183" />
+				<Hotspot X="-6995.07" Y="-1144.61" Z="257.58" />
+				<Hotspot X="-7030.76" Y="-1276.01" Z="242.328" />
+				<Hotspot X="-6636.48" Y="-1233.76" Z="209.839" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="CollectItem" ItemId="18960" CollectCount="1">
@@ -112,6 +155,15 @@
 		</Objective>
 	</Quest>
 	<Quest Id="7702" Name="Kill 'Em With Sleep Deprivation">
+		<Objective Type="CollectItem" ItemId="18943" CollectCount="20">
+			<CollectFrom>
+				<GameObject Name="Dark Iron Pillow" Id="179828" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6562.07" Y="-1344.44" Z="212.619" />
+				<Hotspot X="-6518.33" Y="-1342.21" Z="212.095" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="18943" CollectCount="20">
 			<CollectFrom>
 				<GameObject Name="Dark Iron Pillow" Id="179828" />
@@ -173,8 +225,31 @@
 				<Hotspot X="-6631.63" Y="-1225.39" Z="210.617" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="18922" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Secret Plans: Fiery Flux" Id="179826" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6631.63" Y="-1225.39" Z="210.617" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="3442" Name="The Flawless Flame">
+		<Objective Type="CollectItem" ItemId="10511" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Tempered War Golem" Id="5853" />
+				<Mob Name="Heavy War Golem" Id="5854" />
+				<Mob Name="Magma Elemental" Id="5855" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7213.59" Y="-1017.4" Z="240.075" />
+				<Hotspot X="-7218.6" Y="-1112.98" Z="246.755" />
+				<Hotspot X="-7060.31" Y="-1005.89" Z="239.526" />
+				<Hotspot X="-6988.11" Y="-993.348" Z="242.169" />
+				<Hotspot X="-7014.28" Y="-1138.36" Z="242.304" />
+				<Hotspot X="-7043.3" Y="-1251.95" Z="244.896" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="10511" CollectCount="4">
 			<CollectFrom>
 				<Mob Name="Tempered War Golem" Id="5853" />
@@ -206,6 +281,22 @@
 				<Hotspot X="-6971.4" Y="-1208.53" Z="144.506" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="10509" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Blazing Elemental" Id="5850" />
+				<Mob Name="Inferno Elemental" Id="5852" />
+				<Mob Name="Magma Elemental" Id="5855" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7213.59" Y="-1017.4" Z="240.075" />
+				<Hotspot X="-7243.93" Y="-991.062" Z="242.245" />
+				<Hotspot X="-7218.6" Y="-1112.98" Z="246.755" />
+				<Hotspot X="-7060.31" Y="-1005.89" Z="239.526" />
+				<Hotspot X="-7058.46" Y="-942.979" Z="264.066" />
+				<Hotspot X="-6988.11" Y="-993.348" Z="242.169" />
+				<Hotspot X="-6971.4" Y="-1208.53" Z="144.506" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="4450" Name="Ledger from Tanaris">
 		<Objective Type="CollectItem" ItemId="11727" CollectCount="1">
@@ -214,6 +305,29 @@
 			</CollectFrom>
 			<Hotspots>
 				<Hotspot X="-7025.07" Y="-1784.32" Z="265.739" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11727" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Goodsteel Ledger" Id="173266" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7025.07" Y="-1784.32" Z="265.739" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11725" CollectCount="20">
+			<CollectFrom>
+				<Mob Name="Glassweb Spider" Id="5856" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6906.36" Y="-1724.62" Z="242.33" />
+				<Hotspot X="-6860.15" Y="-1700.02" Z="250.686" />
+				<Hotspot X="-6855.49" Y="-1740.54" Z="251.591" />
+				<Hotspot X="-6826.77" Y="-1784.11" Z="257.509" />
+				<Hotspot X="-6888.01" Y="-1808.97" Z="241.287" />
+				<Hotspot X="-6853.89" Y="-1870.32" Z="253.124" />
+				<Hotspot X="-6778.22" Y="-1846.36" Z="260.229" />
+				<Hotspot X="-6882.89" Y="-1637.47" Z="244.317" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="CollectItem" ItemId="11725" CollectCount="20">
@@ -239,6 +353,22 @@
 				<Hotspot X="-10416.8" Y="-4396.86" Z="4.0564" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="11723" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Jarquia" Id="9916" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10416.8" Y="-4396.86" Z="4.0564" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11724" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Damaged Crate" Id="174728" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3990" Y="-3814.18" Z="34.4486" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="11724" CollectCount="1">
 			<CollectFrom>
 				<GameObject Name="Damaged Crate" Id="174728" />
@@ -249,6 +379,26 @@
 		</Objective>
 	</Quest>
 	<Quest Id="3443" Name="Forging the Shaft">
+		<Objective Type="CollectItem" ItemId="10551" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Dark Iron Geologist" Id="5839" />
+				<Mob Name="Dark Iron Steamsmith" Id="5840" />
+				<Mob Name="Slave Worker" Id="5843" />
+				<Mob Name="Dark Iron Slaver" Id="5844" />
+				<Mob Name="Dark Iron Taskmaster" Id="5846" />
+				<Mob Name="Dark Iron Lookout" Id="8566" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6750.62" Y="-1264.45" Z="183.884" />
+				<Hotspot X="-6703.07" Y="-1278.2" Z="241.081" />
+				<Hotspot X="-6754.4" Y="-1197" Z="184.177" />
+				<Hotspot X="-6836.02" Y="-1228.32" Z="240.263" />
+				<Hotspot X="-6877.61" Y="-1231.93" Z="177.184" />
+				<Hotspot X="-6868.71" Y="-1281.88" Z="242.891" />
+				<Hotspot X="-6872.4" Y="-1322.4" Z="243.141" />
+				<Hotspot X="-6850.19" Y="-1186.73" Z="183.684" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="10551" CollectCount="8">
 			<CollectFrom>
 				<Mob Name="Dark Iron Geologist" Id="5839" />
@@ -289,6 +439,24 @@
 				<Hotspot X="-6490.95" Y="-1009.03" Z="341.16" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="10552" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Twilight Dark Shaman" Id="5860" />
+				<Mob Name="Twilight Fire Guard" Id="5861" />
+				<Mob Name="Twilight Geomancer" Id="5862" />
+				<Mob Name="Twilight Idolater" Id="8419" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6490.58" Y="-963.602" Z="335.212" />
+				<Hotspot X="-6454.17" Y="-937.5" Z="334.48" />
+				<Hotspot X="-6488.71" Y="-904.842" Z="324.312" />
+				<Hotspot X="-6512.2" Y="-848.033" Z="323.538" />
+				<Hotspot X="-6613.07" Y="-885.627" Z="244.269" />
+				<Hotspot X="-6653.2" Y="-882.197" Z="249.269" />
+				<Hotspot X="-6623.97" Y="-844.385" Z="244.269" />
+				<Hotspot X="-6490.95" Y="-1009.03" Z="341.16" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="3372" Name="Release Them">
 		<Objective Type="CollectItem" ItemId="10442" CollectCount="1">
@@ -299,8 +467,34 @@
 				<Hotspot X="-6484.87" Y="-973.079" Z="333.565" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="10442" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Twilight Artifact" Id="148506" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6484.87" Y="-973.079" Z="333.565" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="3378" Name="Prayer to Elune">
+		<Objective Type="CollectItem" ItemId="10458" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Twilight Dark Shaman" Id="5860" />
+				<Mob Name="Twilight Fire Guard" Id="5861" />
+				<Mob Name="Twilight Geomancer" Id="5862" />
+				<Mob Name="Twilight Idolater" Id="8419" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6479.03" Y="-920.239" Z="332.385" />
+				<Hotspot X="-6477.95" Y="-962.255" Z="335.212" />
+				<Hotspot X="-6490.95" Y="-1009.03" Z="341.16" />
+				<Hotspot X="-6490.32" Y="-873.726" Z="323.75" />
+				<Hotspot X="-6489.66" Y="-819.278" Z="321.186" />
+				<Hotspot X="-6623.97" Y="-844.385" Z="244.269" />
+				<Hotspot X="-6613.07" Y="-885.627" Z="244.269" />
+				<Hotspot X="-6653.2" Y="-882.197" Z="249.269" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="10458" CollectCount="1">
 			<CollectFrom>
 				<Mob Name="Twilight Dark Shaman" Id="5860" />
@@ -346,6 +540,14 @@
 				<Hotspot X="-6461.91" Y="-1254.6" Z="180.578" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="10446" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Obsidion" Id="8400" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6461.91" Y="-1254.6" Z="180.578" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
@@ -354,7 +556,6 @@
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Loremaster_Eastern Kingdoms_[50] Searing Gorge");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
 		</If>
-		<Objective QuestName="Caught!" QuestId="4449" Type="CollectItem" ItemId="4306" CollectCount="15" />
 		<If Condition="(Me.Level &gt;= 45)">
 			<PickUp QuestName="WANTED: Overseer Maltorius" QuestId="7701" GiverName="Wanted/Missing/Lost &amp; Found" GiverId="179827" GiverType="Object" X="-6493.8" Y="-1162.98" Z="309.189" />
 		</If>
@@ -401,17 +602,22 @@
 		<Objective QuestName="Fiery Menace!" QuestId="7724" Type="KillMob" MobId="5858" KillCount="20" />
 		<Objective QuestName="The Flawless Flame" QuestId="3442" Type="CollectItem" ItemId="10511" CollectCount="4" />
 		<Objective QuestName="The Flawless Flame" QuestId="3442" Type="CollectItem" ItemId="10509" CollectCount="4" />
-		<If Condition="HasQuest(3181) &amp;&amp; !IsQuestCompleted(3181) &amp;&amp; GetItemCount(10000) &lt; 1">
-			<CustomBehavior File="CollectThings" QuestId="3181" CollectItemId="10000" CollectItemCount="1" HuntingGroundRadius="120" MobId="5833" X="-7256.31" Y="-1949.49" Z="298.82">
-				<Hotspot X="-7256.31" Y="-1949.49" Z="298.82" />
-			</CustomBehavior>
-		</If>
 		<If Condition="HasItem(10000) &amp;&amp; !HasQuest(3181) &amp;&amp; !IsQuestCompleted(3181) &amp;&amp; (Me.Level &gt;= 40)">
 			<PickUp QuestName="The Horn of the Beast" QuestId="3181" GiverName="Margol's Horn" GiverId="10000" GiverType="Item" />
+		</If>
+		<If Condition="((HasQuest(3181)) &amp;&amp; (!IsQuestCompleted(3181)))">
+			<If Condition="HasQuest(3181) &amp;&amp; !IsQuestCompleted(3181) &amp;&amp; GetItemCount(10000) &lt; 1">
+				<CustomBehavior File="CollectThings" QuestId="3181" CollectItemId="10000" CollectItemCount="1" HuntingGroundRadius="120" MobId="5833" X="-7256.31" Y="-1949.49" Z="298.82">
+					<Hotspot X="-7256.31" Y="-1949.49" Z="298.82" />
+				</CustomBehavior>
+			</If>
 		</If>
 		<TurnIn QuestName="The Key to Freedom" QuestId="4451" TurnInName="Wooden Outhouse" TurnInId="173265" TurnInType="Object" X="-7024.78" Y="-1786.5" Z="265.828" />
 		<If Condition="(Me.Level &gt;= 43)">
 			<PickUp QuestName="Caught!" QuestId="4449" GiverName="Wooden Outhouse" GiverId="173265" GiverType="Object" X="-7024.78" Y="-1786.5" Z="265.828" />
+		</If>
+		<If Condition="((HasQuest(4449)) &amp;&amp; (!IsQuestCompleted(4449)))">
+			<Objective QuestName="Caught!" QuestId="4449" Type="CollectItem" ItemId="4306" CollectCount="15" />
 		</If>
 		<Objective QuestName="Caught!" QuestId="4449" Type="KillMob" MobId="5839" KillCount="8" />
 		<TurnIn QuestName="Caught!" QuestId="4449" TurnInName="Wooden Outhouse" TurnInId="173265" TurnInType="Object" X="-7024.78" Y="-1786.5" Z="265.828" />

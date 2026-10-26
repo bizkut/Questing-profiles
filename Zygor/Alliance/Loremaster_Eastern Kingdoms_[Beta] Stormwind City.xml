@@ -57,8 +57,52 @@
 				<Hotspot X="-10202.3" Y="237.301" Z="0.931" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="2592" CollectCount="60">
+			<CollectFrom>
+				<Mob Name="Bone Chewer" Id="210" />
+				<Mob Name="Brain Eater" Id="570" />
+				<Mob Name="Plague Spreader" Id="604" />
+				<Mob Name="Skeletal Warder" Id="785" />
+				<Mob Name="Skeletal Healer" Id="787" />
+				<Mob Name="Skeletal Raider" Id="1110" />
+				<GameObject Name="Battered Chest" Id="106319" />
+				<GameObject Name="Solid Chest" Id="2850" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8334" Y="394.722" Z="122.374" />
+				<Hotspot X="-9584.66" Y="1508.62" Z="-2.2585" />
+				<Hotspot X="-9909" Y="1443.03" Z="38.9455" />
+				<Hotspot X="-9946.81" Y="1477.11" Z="39.8371" />
+				<Hotspot X="-9992.27" Y="1452.8" Z="41.4762" />
+				<Hotspot X="-10222.3" Y="369.688" Z="10.5134" />
+				<Hotspot X="-10192.6" Y="312.351" Z="6.9174" />
+				<Hotspot X="-10202.3" Y="237.301" Z="0.931" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="7793" Name="A Donation of Silk">
+		<Objective Type="CollectItem" ItemId="4306" CollectCount="60">
+			<CollectFrom>
+				<Mob Name="Bone Chewer" Id="210" />
+				<Mob Name="Lord Malathrom" Id="503" />
+				<Mob Name="Brain Eater" Id="570" />
+				<Mob Name="Plague Spreader" Id="604" />
+				<Mob Name="Skeletal Warder" Id="785" />
+				<Mob Name="Skeletal Healer" Id="787" />
+				<GameObject Name="Solid Chest" Id="2850" />
+				<GameObject Name="Solid Chest" Id="2852" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8334" Y="394.722" Z="122.374" />
+				<Hotspot X="-10192.6" Y="312.351" Z="6.9174" />
+				<Hotspot X="-10206.1" Y="262.436" Z="0.931" />
+				<Hotspot X="-10205.7" Y="170.329" Z="27.2421" />
+				<Hotspot X="-10222.3" Y="369.688" Z="10.5134" />
+				<Hotspot X="-10205.6" Y="476.661" Z="27.0559" />
+				<Hotspot X="-10324.5" Y="489.261" Z="12.8491" />
+				<Hotspot X="-10369.9" Y="358.59" Z="15.9736" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="4306" CollectCount="60">
 			<CollectFrom>
 				<Mob Name="Bone Chewer" Id="210" />
@@ -92,8 +136,25 @@
 				<Hotspot X="-8953.95" Y="521.019" Z="96.5399" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="14047" CollectCount="60">
+			<CollectFrom>
+				<Mob Name="General Marcus Jonathan" Id="466" />
+				<Mob Name="Stormwind Royal Guard" Id="1756" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8953.95" Y="521.019" Z="96.5399" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="1244" Name="The Missing Diplomat">
+		<Objective Type="CollectItem" ItemId="5947" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Defias Strongbox" Id="21052" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11014" Y="187.361" Z="28.7922" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="5947" CollectCount="1">
 			<CollectFrom>
 				<GameObject Name="Defias Strongbox" Id="21052" />
@@ -111,9 +172,6 @@
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
 		</If>
 		<PickUp QuestName="Wine Shop Advert" QuestId="332" GiverName="Renato Gallina" GiverId="1432" X="-8848.26" Y="614.981" Z="95.2698" />
-		<Objective QuestName="A Donation of Wool" QuestId="7791" Type="CollectItem" ItemId="2592" CollectCount="60" />
-		<Objective QuestName="A Donation of Silk" QuestId="7793" Type="CollectItem" ItemId="4306" CollectCount="60" />
-		<Objective QuestName="A Donation of Runecloth" QuestId="7795" Type="CollectItem" ItemId="14047" CollectCount="60" />
 		<PickUp QuestName="Harlan Needs a Resupply" QuestId="333" GiverName="Harlan Bagley" GiverId="1427" X="-8782.9" Y="640.188" Z="97.4065" />
 		<TurnIn QuestName="Harlan Needs a Resupply" QuestId="333" TurnInName="Rema Schneider" TurnInId="1428" X="-8777.6" Y="713.496" Z="99.6172" />
 		<PickUp QuestName="Package for Thurman" QuestId="334" GiverName="Rema Schneider" GiverId="1428" X="-8777.6" Y="713.496" Z="99.6172" />
@@ -122,14 +180,23 @@
 		<If Condition="(Me.Level &gt;= 12)">
 			<PickUp QuestName="A Donation of Wool" QuestId="7791" GiverName="Clavicus Knavingham" GiverId="14722" X="-8942.03" Y="785.805" Z="97.4045" />
 		</If>
+		<If Condition="((HasQuest(7791)) &amp;&amp; (!IsQuestCompleted(7791)))">
+			<Objective QuestName="A Donation of Wool" QuestId="7791" Type="CollectItem" ItemId="2592" CollectCount="60" />
+		</If>
 		<If Condition="(Me.Level &gt;= 26)">
 			<PickUp QuestName="A Donation of Silk" QuestId="7793" GiverName="Clavicus Knavingham" GiverId="14722" X="-8942.03" Y="785.805" Z="97.4045" />
+		</If>
+		<If Condition="((HasQuest(7793)) &amp;&amp; (!IsQuestCompleted(7793)))">
+			<Objective QuestName="A Donation of Silk" QuestId="7793" Type="CollectItem" ItemId="4306" CollectCount="60" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40)">
 			<PickUp QuestName="A Donation of Mageweave" QuestId="7794" GiverName="Clavicus Knavingham" GiverId="14722" X="-8942.03" Y="785.805" Z="97.4045" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50)">
 			<PickUp QuestName="A Donation of Runecloth" QuestId="7795" GiverName="Clavicus Knavingham" GiverId="14722" X="-8942.03" Y="785.805" Z="97.4045" />
+		</If>
+		<If Condition="((HasQuest(7795)) &amp;&amp; (!IsQuestCompleted(7795)))">
+			<Objective QuestName="A Donation of Runecloth" QuestId="7795" Type="CollectItem" ItemId="14047" CollectCount="60" />
 		</If>
 		<If Condition="(Me.Level &gt;= 20)">
 			<PickUp QuestName="Speaking of Fortitude" QuestId="343" GiverName="Brother Kristoff" GiverId="1444" X="-8623.24" Y="766.655" Z="97.4033" />

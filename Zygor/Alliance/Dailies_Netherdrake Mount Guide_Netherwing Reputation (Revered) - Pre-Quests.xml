@@ -70,13 +70,13 @@
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11092) &amp;&amp; (GetFactionReputation(932) &gt;= 1)">
 			<PickUp QuestName="Kill Them All!" QuestId="11099" GiverName="Overlord Mor'ghor" GiverId="23139" X="-5085" Y="578.657" Z="86.6483" />
 		</If>
-		<If Condition="HasItem(32621) &amp;&amp; !HasQuest(11041) &amp;&amp; !IsQuestCompleted(11041) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014)">
-			<PickUp QuestName="A Job Unfinished..." QuestId="11041" GiverName="Partially Digested Hand" GiverId="32621" GiverType="Item" />
-		</If>
 		<If Condition="!HasItem(32621) &amp;&amp; !HasQuest(11041) &amp;&amp; !IsQuestCompleted(11041)">
 			<CustomBehavior File="CollectThings" CollectItemId="32621" CollectItemCount="1" HuntingGroundRadius="120" MobId="23267" X="-5115.44" Y="144.561" Z="130.161">
 				<Hotspot X="-5115.44" Y="144.561" Z="130.161" />
 			</CustomBehavior>
+		</If>
+		<If Condition="HasItem(32621) &amp;&amp; !HasQuest(11041) &amp;&amp; !IsQuestCompleted(11041) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014)">
+			<PickUp QuestName="A Job Unfinished..." QuestId="11041" GiverName="Partially Digested Hand" GiverId="32621" GiverType="Item" />
 		</If>
 		<Objective QuestName="A Job Unfinished..." QuestId="11041" Type="KillMob" MobId="23269" KillCount="1" />
 		<Objective QuestName="A Job Unfinished..." QuestId="11041" Type="KillMob" MobId="23264" KillCount="10" />
