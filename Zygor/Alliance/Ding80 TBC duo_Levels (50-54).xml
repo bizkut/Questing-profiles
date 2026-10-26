@@ -1292,7 +1292,7 @@
 			<PickUp QuestName="Petty Squabbles" QuestId="2783" GiverName="Ambassador Ardalan" GiverId="7826" X="-10997.5" Y="-3505.23" Z="103.211" />
 		</If>
 		<TurnIn QuestName="Petty Squabbles" QuestId="2783" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
-		<If Condition="(Me.Level &gt;= 45)">
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; (IsQuestCompleted(2623) || IsQuestCompleted(2783))">
 			<PickUp QuestName="A Tale of Sorrow" QuestId="2801" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
 		</If>
 		<!-- REVIEW Q2801 A Tale of Sorrow: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1383,8 +1383,8 @@
 		<If Condition="(Me.Level &gt;= 48)">
 			<PickUp QuestName="Verifying the Corruption" QuestId="5156" GiverName="Taronn Redfeather" GiverId="10921" X="4004.65" Y="-1284.46" Z="254.349" />
 		</If>
-		<!-- Q4512: Empty Cursed Ooze Jar (11914) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q4512: Empty Tainted Ooze Jar (11948) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q4512: Empty Cursed Ooze Jar (11914) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q4512: Empty Tainted Ooze Jar (11948) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="The Corruption of the Jadefire" QuestId="4421" Type="KillMob" MobId="9454" KillCount="1" />
 		<Objective QuestName="The Corruption of the Jadefire" QuestId="4421" Type="KillMob" MobId="7109" KillCount="11" />
 		<Objective QuestName="The Corruption of the Jadefire" QuestId="4421" Type="KillMob" MobId="7110" KillCount="9" />
@@ -1397,7 +1397,7 @@
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warlock))">
 			<TurnIn QuestName="An Imp's Request" QuestId="8419" TurnInName="Impsy" TurnInId="14470" X="5407.59" Y="-736.618" Z="344.249" />
-			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 50)">
+			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(8419) || IsQuestCompleted(8420))">
 				<PickUp QuestName="The Wrong Stuff" QuestId="8421" GiverName="Impsy" GiverId="14470" X="5407.59" Y="-736.618" Z="344.249" />
 			</If>
 			<TurnIn QuestName="What Niby Commands" QuestId="7601" TurnInName="Impsy" TurnInId="14470" X="5407.59" Y="-736.618" Z="344.249" />
@@ -1604,7 +1604,7 @@
 		<If Condition="((HasQuest(3461)) &amp;&amp; (!IsQuestCompleted(3461)))">
 			<CustomBehavior File="AbandonQuest" QuestId="3461" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q4512 A Little Slime Goes a Long Way: helper item 11914 Empty Cursed Ooze Jar has no dropping creature near the guide coordinates; helper item 11948 Empty Tainted Ooze Jar has no dropping creature near the guide coordinates; item 11947 Filled Cursed Ooze Jar has no drop or chest near the guide coordinates; item 11949 Filled Tainted Ooze Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q4512 A Little Slime Goes a Long Way: helper item 11914 Empty Cursed Ooze Jar has no creature or object source near the guide coordinates; helper item 11948 Empty Tainted Ooze Jar has no creature or object source near the guide coordinates; item 11947 Filled Cursed Ooze Jar has no drop or chest near the guide coordinates; item 11949 Filled Tainted Ooze Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4512)) &amp;&amp; (IsQuestCompleted(4512)))">
 			<TurnIn QuestName="A Little Slime Goes a Long Way" QuestId="4512" TurnInName="Laris Geardawdle" TurnInId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
 		</If>
@@ -1633,15 +1633,20 @@
 		</If>
 		<Objective QuestName="Sprinkle's Secret Ingredient" QuestId="2641" Type="CollectItem" ItemId="8526" CollectCount="1" />
 		<Objective QuestName="The Ancient Egg" QuestId="4787" Type="CollectItem" ItemId="12402" CollectCount="1" />
+		<If Condition="HasQuest(2994) &amp;&amp; !IsQuestCompleted(2994) &amp;&amp; GetItemCount(9472) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="2994" CollectItemId="9472" CollectItemCount="1" HuntingGroundRadius="120" MobId="7995" X="-542.119" Y="-3864.6" Z="230.69">
+				<Hotspot X="-542.119" Y="-3864.6" Z="230.69" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Saving Sharpbeak" QuestId="2994" Type="UseObject" ObjectId="144070" UseCount="1" />
 		<TurnIn QuestName="Saving Sharpbeak" QuestId="2994" TurnInName="Gryphon Master Talonaxe" TurnInId="5636" X="325.182" Y="-1950.5" Z="197.708" />
 		<TurnIn QuestName="Rise of the Silithid" QuestId="162" TurnInName="Gracina Spiritmight" TurnInId="7740" X="9634.06" Y="2495.63" Z="1354.89" />
-		<If Condition="(Me.Level &gt;= 50) &amp;&amp; !IsQuestCompleted(4494) &amp;&amp; !HasQuest(4494)">
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(162) || IsQuestCompleted(4267)) &amp;&amp; !IsQuestCompleted(4494) &amp;&amp; !HasQuest(4494)">
 			<PickUp QuestName="March of the Silithid" QuestId="4493" GiverName="Gracina Spiritmight" GiverId="7740" X="9634.06" Y="2495.63" Z="1354.89" />
 		</If>
 		<TurnIn QuestName="Prayer to Elune" QuestId="3378" TurnInName="Astarii Starseeker" TurnInId="4090" X="9667.02" Y="2532.66" Z="1360.08" />
 		<TurnIn QuestName="March of the Silithid" QuestId="4493" TurnInName="Alchemist Pestlezugg" TurnInId="5594" X="-7115.3" Y="-3729.93" Z="8.8567" />
-		<If Condition="(Me.Level &gt;= 50)">
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(4493) || IsQuestCompleted(4494))">
 			<PickUp QuestName="Bungle in the Jungle" QuestId="4496" GiverName="Alchemist Pestlezugg" GiverId="5594" X="-7115.3" Y="-3729.93" Z="8.8567" />
 		</If>
 		<TurnIn QuestName="Sprinkle's Secret Ingredient" QuestId="2641" TurnInName="Sprinkle" TurnInId="7583" X="-7111.11" Y="-3741.78" Z="8.6093" />
@@ -1861,7 +1866,7 @@
 			<PickUp QuestName="Good Natured Emma" QuestId="5048" GiverName="Royal Factor Bathrilor" GiverId="10782" X="-8552.63" Y="729.489" Z="108.848" />
 		</If>
 		<TurnIn QuestName="Good Natured Emma" QuestId="5048" TurnInName="Ol' Emma" TurnInId="3520" X="-8656.45" Y="676.937" Z="108.141" />
-		<If Condition="(Me.Level &gt;= 50)">
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(5048) || IsQuestCompleted(5049))">
 			<PickUp QuestName="Good Luck Charm" QuestId="5050" GiverName="Ol' Emma" GiverId="3520" X="-8656.45" Y="676.937" Z="108.141" />
 		</If>
 		<If Condition="(Me.Level &gt;= 56)">

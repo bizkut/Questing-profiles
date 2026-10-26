@@ -788,7 +788,9 @@
 			<TurnIn QuestName="Call of Earth" QuestId="1518" TurnInName="Canaga Earthcaller" TurnInId="5887" X="-630.02" Y="-4204.55" Z="38.2173" />
 		</If>
 		<TurnIn QuestName="Vile Familiars" QuestId="792" TurnInName="Zureetha Fargaze" TurnInId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
-		<PickUp QuestName="Burning Blade Medallion" QuestId="794" GiverName="Zureetha Fargaze" GiverId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
+		<If Condition="(IsQuestCompleted(792) || IsQuestCompleted(1499))">
+			<PickUp QuestName="Burning Blade Medallion" QuestId="794" GiverName="Zureetha Fargaze" GiverId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
+		</If>
 		<TurnIn QuestName="Thazz'ril's Pick" QuestId="6394" TurnInName="Foreman Thazz'ril" TurnInId="11378" X="-611.587" Y="-4322.08" Z="40.0927" />
 		<Objective QuestName="Burning Blade Medallion" QuestId="794" Type="CollectItem" ItemId="4859" CollectCount="1" />
 		<TurnIn QuestName="Burning Blade Medallion" QuestId="794" TurnInName="Zureetha Fargaze" TurnInId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
@@ -835,7 +837,9 @@
 				<Hotspot X="-245.52" Y="-5119.95" Z="42.6406" />
 			</CustomBehavior>
 		</If>
-		<!-- Q830: Aged Envelope (4881) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(830) &amp;&amp; !IsQuestCompleted(830) &amp;&amp; GetItemCount(4881) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="830" MobId="3239" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-223.825" Y="-5095.61" Z="49.3529" />
+		</If>
 		<If Condition="HasItem(4881) &amp;&amp; !HasQuest(830) &amp;&amp; !IsQuestCompleted(830)">
 			<PickUp QuestName="The Admiral's Orders" QuestId="830" GiverName="Aged Envelope" GiverId="4881" GiverType="Item" />
 		</If>
@@ -846,13 +850,7 @@
 		<If Condition="(Me.Level &gt;= 3) &amp;&amp; IsQuestCompleted(784)">
 			<PickUp QuestName="From The Wreckage...." QuestId="825" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		</If>
-		<!-- REVIEW Q830 The Admiral's Orders: helper item 4881 Aged Envelope has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(830)) &amp;&amp; (IsQuestCompleted(830)))">
-			<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
-		</If>
-		<If Condition="((HasQuest(830)) &amp;&amp; (!IsQuestCompleted(830)))">
-			<CustomBehavior File="AbandonQuest" QuestId="830" Type="Incomplete" />
-		</If>
+		<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		<If Condition="IsQuestCompleted(830)">
 			<PickUp QuestName="The Admiral's Orders" QuestId="831" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		</If>

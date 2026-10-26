@@ -973,7 +973,9 @@
 		</If>
 		<TurnIn QuestName="Natural Enemies" QuestId="9743" TurnInName="Fahssn" TurnInId="17923" X="-205.36" Y="8516.55" Z="22.8028" />
 		<Objective QuestName="The Sporelings' Plight" QuestId="9739" Type="CollectItem" ItemId="24290" CollectCount="10" />
-		<!-- Q9919: Mature Spore Sac (24290) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(9919) &amp;&amp; !IsQuestCompleted(9919) &amp;&amp; GetItemCount(24290) &lt; 40">
+			<CustomBehavior File="InteractWith" QuestId="9919" MobId="182069" ObjectType="GameObject" Loot="True" NumOfTimes="40" CollectionDistance="200" X="-193.181" Y="8728.99" Z="20.4169" />
+		</If>
 		<If Condition="((HasQuest(9701)) &amp;&amp; (!IsQuestCompleted(9701)))">
 			<RunTo X="-111.149" Y="8751.44" Z="18.6635" />
 		</If>

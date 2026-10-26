@@ -269,17 +269,13 @@
 		<If Condition="(Me.Level &gt;= 28)">
 			<PickUp QuestName="The Brassbolts Brothers" QuestId="1179" GiverName="Pilot Longbeard" GiverId="2092" X="-5065.23" Y="-1288.6" Z="502.047" />
 		</If>
-		<!-- Q1100: Henrig Lonebrow's Journal (5791) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(1100) &amp;&amp; !IsQuestCompleted(1100) &amp;&amp; GetItemCount(5791) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="1100" MobId="19861" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-4680.84" Y="-1785.27" Z="-41.0243" />
+		</If>
 		<If Condition="HasItem(5791) &amp;&amp; !HasQuest(1100) &amp;&amp; !IsQuestCompleted(1100) &amp;&amp; (Me.Level &gt;= 23)">
 			<PickUp QuestName="Lonebrow's Journal" QuestId="1100" GiverName="Henrig Lonebrow's Journal" GiverId="5791" GiverType="Item" />
 		</If>
-		<!-- REVIEW Q1100 Lonebrow's Journal: helper item 5791 Henrig Lonebrow's Journal has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(1100)) &amp;&amp; (IsQuestCompleted(1100)))">
-			<TurnIn QuestName="Lonebrow's Journal" QuestId="1100" TurnInName="Falfindel Waywarder" TurnInId="4048" X="-4524.14" Y="-787.884" Z="-41.5917" />
-		</If>
-		<If Condition="((HasQuest(1100)) &amp;&amp; (!IsQuestCompleted(1100)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1100" Type="Incomplete" />
-		</If>
+		<TurnIn QuestName="Lonebrow's Journal" QuestId="1100" TurnInName="Falfindel Waywarder" TurnInId="4048" X="-4524.14" Y="-787.884" Z="-41.5917" />
 		<If Condition="(Me.Level &gt;= 28)">
 			<PickUp QuestName="Rocket Car Parts" QuestId="1110" GiverName="Kravel Koalbeard" GiverId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
 		</If>
@@ -320,7 +316,7 @@
 			<PickUp QuestName="Encrusted Tail Fins" QuestId="1107" GiverName="Wizzle Brassbolts" GiverId="4453" X="-6228.86" Y="-3871.63" Z="-58.6667" />
 		</If>
 		<TurnIn QuestName="Salt Flat Venom" QuestId="1104" TurnInName="Fizzle Brassbolts" TurnInId="4454" X="-6229.03" Y="-3868.18" Z="-58.6667" />
-		<If Condition="(Me.Level &gt;= 26)">
+		<If Condition="(Me.Level &gt;= 26) &amp;&amp; (IsQuestCompleted(1104) || IsQuestCompleted(1105))">
 			<PickUp QuestName="Martek the Exiled" QuestId="1106" GiverName="Fizzle Brassbolts" GiverId="4454" X="-6229.03" Y="-3868.18" Z="-58.6667" />
 		</If>
 		<TurnIn QuestName="Rocket Car Parts" QuestId="1110" TurnInName="Kravel Koalbeard" TurnInId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
@@ -424,7 +420,7 @@
 		</If>
 		<Objective QuestName="Razzeric's Tweaking" QuestId="1187" Type="CollectItem" ItemId="5862" CollectCount="1" />
 		<TurnIn QuestName="Back to Booty Bay" QuestId="1118" TurnInName="Crank Fizzlebub" TurnInId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
-		<If Condition="(Me.Level &gt;= 35)">
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; (IsQuestCompleted(621) || IsQuestCompleted(1118))">
 			<PickUp QuestName="Zanzil's Mixture and a Fool's Stout" QuestId="1119" GiverName="Crank Fizzlebub" GiverId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
 		</If>
 		<TurnIn QuestName="Zanzil's Mixture and a Fool's Stout" QuestId="1119" TurnInName="Kravel Koalbeard" TurnInId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
@@ -432,7 +428,7 @@
 			<PickUp QuestName="Get the Gnomes Drunk" QuestId="1120" GiverName="Kravel Koalbeard" GiverId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
 		</If>
 		<TurnIn QuestName="Get the Gnomes Drunk" QuestId="1120" TurnInName="Gnome Pit Boss" TurnInId="4495" X="-6223.58" Y="-3846.19" Z="-58.6667" />
-		<If Condition="(Me.Level &gt;= 35)">
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; (IsQuestCompleted(1120) || IsQuestCompleted(1121))">
 			<PickUp QuestName="Report Back to Fizzlebub" QuestId="1122" GiverName="Kravel Koalbeard" GiverId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
 		</If>
 		<TurnIn QuestName="Razzeric's Tweaking" QuestId="1187" TurnInName="Razzeric" TurnInId="4706" X="-6198.75" Y="-3967.77" Z="-58.6667" />

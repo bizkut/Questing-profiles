@@ -111,7 +111,9 @@
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="At The Enemy's Gates" QuestId="13855" GiverName="Airae Starseeker" GiverId="33654" X="8632.64" Y="652.755" Z="550.343" />
 		</If>
-		<!-- Q13758: Winter Hyacinth (45000) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13758) &amp;&amp; !IsQuestCompleted(13758) &amp;&amp; GetItemCount(45000) &lt; 4">
+			<CustomBehavior File="InteractWith" QuestId="13758" MobId="194213" ObjectType="GameObject" Loot="True" NumOfTimes="4" CollectionDistance="200" X="6259.9" Y="996.022" Z="148.676" />
+		</If>
 		<If Condition="HasQuest(13759) &amp;&amp; !IsQuestCompleted(13759) &amp;&amp; GetItemCount(45005) &lt; 1">
 			<CustomBehavior File="CollectThings" QuestId="13759" CollectItemId="45005" CollectItemCount="1" HuntingGroundRadius="120" MobId="33289" X="5143.46" Y="-76.0675" Z="347.415">
 				<Hotspot X="5143.46" Y="-76.0675" Z="347.415" />
@@ -128,7 +130,7 @@
 		<If Condition="((HasQuest(13757)) &amp;&amp; (!IsQuestCompleted(13757)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13757" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13758 A Worthy Weapon: helper item 45000 Winter Hyacinth has no dropping creature near the guide coordinates; item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13758 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13758)) &amp;&amp; (IsQuestCompleted(13758)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13758" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 		</If>

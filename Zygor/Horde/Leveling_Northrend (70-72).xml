@@ -1051,7 +1051,7 @@
 			<PickUp QuestName="The Defense of Warsong Hold" QuestId="11596" GiverName="High Overlord Saurfang" GiverId="25256" X="2835.02" Y="6182.44" Z="84.6827" />
 		</If>
 		<TurnIn QuestName="The Defense of Warsong Hold" QuestId="11596" TurnInName="Overlord Razgor" TurnInId="25279" X="2784.95" Y="6081.02" Z="77.7719" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11595) || IsQuestCompleted(11596) || IsQuestCompleted(11597))">
 			<PickUp QuestName="Taking Back Mightstone Quarry" QuestId="11598" GiverName="Overlord Razgor" GiverId="25279" X="2784.95" Y="6081.02" Z="77.7719" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68)">
@@ -1262,7 +1262,7 @@
 		<Objective QuestName="Mobu's Pneumatic Tank Transjigamarig" QuestId="11643" Type="CollectItem" ItemId="34785" CollectCount="1" />
 		<TurnIn QuestName="Mobu's Pneumatic Tank Transjigamarig" QuestId="11643" TurnInName="Mobu" TurnInId="25475" X="2814.19" Y="6720.13" Z="9.7948" />
 		<TurnIn QuestName="Super Strong Metal Plates!" QuestId="11644" TurnInName="Mobu" TurnInId="25475" X="2814.19" Y="6720.13" Z="9.7948" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11643) || IsQuestCompleted(11644))">
 			<PickUp QuestName="Tanks a lot..." QuestId="11651" GiverName="Mobu" GiverId="25475" X="2814.19" Y="6720.13" Z="9.7948" />
 		</If>
 		<TurnIn QuestName="Tanks a lot..." QuestId="11651" TurnInName="Gorge the Corpsegrinder" TurnInId="25329" X="2819.51" Y="6711.8" Z="10.7805" />
@@ -1315,7 +1315,7 @@
 			<PickUp QuestName="Too Close For Comfort" QuestId="11574" GiverName="Endorah" GiverId="25247" X="2794.36" Y="6165.11" Z="85.1555" />
 		</If>
 		<TurnIn QuestName="Seek Out Karuk!" QuestId="11662" TurnInName="Karuk" TurnInId="25435" X="1996.48" Y="5853.81" Z="36.03" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11662) || IsQuestCompleted(12141))">
 			<PickUp QuestName="Karuk's Oath" QuestId="11613" GiverName="Karuk" GiverId="25435" X="1996.48" Y="5853.81" Z="36.03" />
 		</If>
 		<Objective QuestName="Karuk's Oath" QuestId="11613" Type="KillMob" MobId="25522" KillCount="6" />
@@ -1508,7 +1508,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11610" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Too Close For Comfort" QuestId="11574" TurnInName="Librarian Donathan" TurnInId="25262" X="3615.93" Y="5961.46" Z="136.3" />
-		<If Condition="(Me.Level &gt;= 69)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11574) || IsQuestCompleted(11575))">
 			<PickUp QuestName="Prison Break" QuestId="11587" GiverName="Librarian Donathan" GiverId="25262" X="3615.93" Y="5961.46" Z="136.3" />
 		</If>
 		<If Condition="(Me.Level &gt;= 69)">
@@ -1657,6 +1657,18 @@
 			</CustomBehavior>
 		</If>
 		<Objective QuestName="Keep the Secret Safe" QuestId="11914" Type="CollectItem" ItemId="35493" CollectCount="5" />
+		<If Condition="HasQuest(11936) &amp;&amp; !IsQuestCompleted(11936) &amp;&amp; GetItemCount(35586) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11936" CollectItemId="35586" CollectItemCount="1" HuntingGroundRadius="120" MobId="25728" X="4021.77" Y="6927.94" Z="165.955">
+				<Hotspot X="4021.77" Y="6927.94" Z="165.955" />
+				<Hotspot X="4082.2" Y="6888.15" Z="167.542" />
+				<Hotspot X="4114.5" Y="6919.72" Z="168.47" />
+				<Hotspot X="4089.45" Y="6842.39" Z="168.299" />
+				<Hotspot X="4008.38" Y="6776.67" Z="161.801" />
+				<Hotspot X="3949.39" Y="6782.82" Z="153.945" />
+				<Hotspot X="3917.06" Y="6817.92" Z="150.507" />
+				<Hotspot X="4124.63" Y="7092.05" Z="170.516" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
 		<TurnIn QuestName="Hatching a Plan" QuestId="11936" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11936)">

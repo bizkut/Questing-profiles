@@ -390,7 +390,7 @@
 		<Objective QuestName="Salt Flat Venom" QuestId="1104" Type="CollectItem" ItemId="5794" CollectCount="6" />
 		<TurnIn QuestName="Hardened Shells" QuestId="1105" TurnInName="Wizzle Brassbolts" TurnInId="4453" X="-6228.86" Y="-3871.63" Z="-58.6667" />
 		<TurnIn QuestName="Salt Flat Venom" QuestId="1104" TurnInName="Fizzle Brassbolts" TurnInId="4454" X="-6229.03" Y="-3868.18" Z="-58.6667" />
-		<If Condition="(Me.Level &gt;= 26)">
+		<If Condition="(Me.Level &gt;= 26) &amp;&amp; (IsQuestCompleted(1104) || IsQuestCompleted(1105))">
 			<PickUp QuestName="Martek the Exiled" QuestId="1106" GiverName="Fizzle Brassbolts" GiverId="4454" X="-6229.03" Y="-3868.18" Z="-58.6667" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30)">
@@ -488,7 +488,7 @@
 		</If>
 		<Objective QuestName="Study of the Elements: Rock" QuestId="712" Type="CollectItem" ItemId="4628" CollectCount="5" />
 		<TurnIn QuestName="Study of the Elements: Rock" QuestId="712" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
-		<If Condition="(Me.Level &gt;= 35)">
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; (IsQuestCompleted(712) || IsQuestCompleted(714))">
 			<PickUp QuestName="This Is Going to Be Hard" QuestId="734" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
 		</If>
 		<TurnIn QuestName="This Is Going to Be Hard" QuestId="734" TurnInName="Lucien Tosselwrench" TurnInId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />

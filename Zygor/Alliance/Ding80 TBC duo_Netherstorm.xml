@@ -1059,7 +1059,7 @@
 		</If>
 		<TurnIn QuestName="Assisting the Consortium" QuestId="10263" TurnInName="Nether-Stalker Khay'ji" TurnInId="19880" X="3069.96" Y="3674.86" Z="142.527" />
 		<TurnIn QuestName="Assisting the Consortium" QuestId="10264" TurnInName="Nether-Stalker Khay'ji" TurnInId="19880" X="3069.96" Y="3674.86" Z="142.527" />
-		<If Condition="(Me.Level &gt;= 67)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10263) || IsQuestCompleted(10264))">
 			<PickUp QuestName="Consortium Crystal Collection" QuestId="10265" GiverName="Nether-Stalker Khay'ji" GiverId="19880" X="3069.96" Y="3674.86" Z="142.527" />
 		</If>
 		<TurnIn QuestName="A Mystifying Vision" QuestId="11042" TurnInName="Rocket-Chief Fuselage" TurnInId="19570" X="3041.8" Y="3658.85" Z="143.406" />
@@ -1477,7 +1477,7 @@
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10321) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="Shutting Down Manaforge Duro" QuestId="10322" GiverName="Anchorite Karja" GiverId="19467" X="3071.05" Y="3697.33" Z="142.528" />
 		</If>
-		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10313) || IsQuestCompleted(10321)) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="Sunfury Briefings" QuestId="10328" GiverName="Exarch Orelis" GiverId="19466" X="3070.84" Y="3695.18" Z="142.465" />
 		</If>
 		<TurnIn QuestName="Request for Assistance" QuestId="10266" TurnInName="Gahruj" TurnInId="20066" X="3339.77" Y="2881.75" Z="144.381" />

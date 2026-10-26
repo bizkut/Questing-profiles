@@ -32,10 +32,10 @@
 			<CustomBehavior File="RunCode" Code="AppDomain.CurrentDomain.SetData(&quot;BackToProfile&quot;, @&quot;..\Zygor\Alliance\Dailies_The Burning Crusade_Sha'tari Skyguard_Sha'tari Skyguard Terokk Farming&quot;);" />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Outland" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11004)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11004) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="More Shadow Dust" QuestId="11006" GiverName="Severin" GiverId="23042" X="-3407.59" Y="3624.57" Z="278.075" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11885)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11885) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="Tokens of the Descendants" QuestId="11074" GiverName="Hazzik" GiverId="23306" X="-3410.85" Y="3614.86" Z="278.234" />
 		</If>
 	</QuestOrder>

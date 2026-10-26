@@ -46,7 +46,7 @@
 			<CustomBehavior File="RunCode" Code="AppDomain.CurrentDomain.SetData(&quot;BackToProfile&quot;, @&quot;..\Zygor\Horde\Dailies_The Burning Crusade_Sha'tari Skyguard_Sha'tari Skyguard Daily Quests&quot;);" />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Outland" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11098)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11098) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="Fires Over Skettis" QuestId="11008" GiverName="Sky Sergeant Doryn" GiverId="23048" X="-3401.09" Y="3597.87" Z="277.412" />
 		</If>
 		<!-- REVIEW Q11008 Fires Over Skettis: objective 22991 Monstrous Kaliri Egg Trigger x20: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -56,7 +56,7 @@
 		<If Condition="((HasQuest(11008)) &amp;&amp; (!IsQuestCompleted(11008)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11008" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="Escape from Skettis" QuestId="11085" GiverName="Skyguard Prisoner" GiverId="23383" X="-4106.62" Y="3029.94" Z="344.877" />
 		</If>
 		<!-- REVIEW Q11085 Escape from Skettis: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -66,7 +66,7 @@
 		<If Condition="((HasQuest(11085)) &amp;&amp; (!IsQuestCompleted(11085)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11085" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11010)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; (IsQuestCompleted(11010) || IsQuestCompleted(11102))">
 			<PickUp QuestName="Bomb Them Again!" QuestId="11023" GiverName="Sky Sergeant Vanderlip" GiverId="23120" X="2495.25" Y="7350.9" Z="380.334" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11065)">

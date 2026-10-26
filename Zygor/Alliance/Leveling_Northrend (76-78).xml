@@ -925,8 +925,8 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12137)">
 			<PickUp QuestName="Jin'arrak's End" QuestId="12152" GiverName="Kraz" GiverId="26886" X="4322.28" Y="-4990.64" Z="20.4613" />
 		</If>
-		<!-- Q12152: Infused Drakkari Offering (37063) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q12152 Jin'arrak's End: helper item 37063 Infused Drakkari Offering has no dropping creature near the guide coordinates; use item 37063: target 27199 Warlord Jin'arrak has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q12152: Infused Drakkari Offering (37063) is needed but nothing near the guide coordinates drops it -->
+		<!-- REVIEW Q12152 Jin'arrak's End: helper item 37063 Infused Drakkari Offering has no creature or object source near the guide coordinates; use item 37063: target 27199 Warlord Jin'arrak has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12152)) &amp;&amp; (IsQuestCompleted(12152)))">
 			<TurnIn QuestName="Jin'arrak's End" QuestId="12152" TurnInName="Kraz" TurnInId="26886" X="4322.28" Y="-4990.64" Z="20.4613" />
 		</If>
@@ -1166,7 +1166,7 @@
 		<If Condition="((HasQuest(12649)) &amp;&amp; (!IsQuestCompleted(12649)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12649" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 74)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; (IsQuestCompleted(12648) || IsQuestCompleted(12649))">
 			<PickUp QuestName="Infiltrating Voltarus" QuestId="12661" GiverName="Stefan Vadu" GiverId="28518" X="5211.84" Y="-1302.07" Z="242.486" />
 		</If>
 		<TurnIn QuestName="Crusader Forward Camp" QuestId="12894" TurnInName="Crusader MacKellar" TurnInId="29689" X="5539.37" Y="-1862.18" Z="238.352" />
@@ -1336,7 +1336,7 @@
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12740)">
 			<PickUp QuestName="New Orders for Sergeant Stackhammer" QuestId="12505" GiverName="Commander Kunz" GiverId="28039" X="5450.91" Y="-2610.93" Z="306.993" />
 		</If>
-		<If Condition="(Me.Level &gt;= 74)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; (IsQuestCompleted(12503) || IsQuestCompleted(12740))">
 			<PickUp QuestName="Pa'Troll" QuestId="12596" GiverName="Commander Kunz" GiverId="28039" X="5450.91" Y="-2610.93" Z="306.993" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12740)">
@@ -1497,7 +1497,7 @@
 		<Objective QuestName="Skimmer Spinnerets" QuestId="12553" Type="CollectItem" ItemId="38514" CollectCount="5" />
 		<TurnIn QuestName="Death to the Necromagi" QuestId="12552" TurnInName="Sergeant Moonshard" TurnInId="28283" X="5270.25" Y="-3499.32" Z="291.678" />
 		<TurnIn QuestName="Skimmer Spinnerets" QuestId="12553" TurnInName="Specialist Cogwheel" TurnInId="28284" X="5270.21" Y="-3509.2" Z="291.694" />
-		<If Condition="(Me.Level &gt;= 74)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12553)">
 			<PickUp QuestName="Crashed Sprayer" QuestId="12583" GiverName="Specialist Cogwheel" GiverId="28284" X="5270.21" Y="-3509.2" Z="291.694" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12552)">
@@ -1512,7 +1512,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12606" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Crashed Sprayer" QuestId="12583" TurnInName="Specialist Cogwheel" TurnInId="28284" X="5270.21" Y="-3509.2" Z="291.694" />
-		<If Condition="(Me.Level &gt;= 74)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12583)">
 			<PickUp QuestName="A Tangled Skein" QuestId="12555" GiverName="Specialist Cogwheel" GiverId="28284" X="5270.21" Y="-3509.2" Z="291.694" />
 		</If>
 		<Objective QuestName="Pure Evil" QuestId="12584" Type="CollectItem" ItemId="38562" CollectCount="10" />
@@ -1750,12 +1750,12 @@
 				<Hotspot X="6434" Y="-3786.79" Z="470.799" />
 			</CustomBehavior>
 		</If>
-		<!-- Q12712: Tiki Dervish Ceremony (39314) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12712: Tiki Dervish Ceremony (39314) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Enchanted Tiki Warriors" QuestId="12708" Type="KillMob" MobId="28882" KillCount="12" />
 		<Objective QuestName="Hexed Caches" QuestId="12709" Type="CollectItem" ItemId="39301" CollectCount="12" />
 		<Objective QuestName="The Key of Warlord Zol'Maz" QuestId="12712" Type="CollectItem" ItemId="39318" CollectCount="1" />
 		<TurnIn QuestName="Just Checkin'" QuestId="13099" TurnInName="Chronicler Bah'Kini" TurnInId="30676" X="6972.23" Y="-4098.52" Z="479.503" />
-		<!-- REVIEW Q12712 The Key of Warlord Zol'Maz: helper item 39314 Tiki Dervish Ceremony has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12712 The Key of Warlord Zol'Maz: helper item 39314 Tiki Dervish Ceremony has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12712)) &amp;&amp; (IsQuestCompleted(12712)))">
 			<TurnIn QuestName="The Key of Warlord Zol'Maz" QuestId="12712" TurnInName="Har'koa" TurnInId="28401" X="5746.51" Y="-3608.83" Z="387.191" />
 		</If>
@@ -1867,7 +1867,7 @@
 		<If Condition="((HasQuest(12592)) &amp;&amp; (!IsQuestCompleted(12592)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12592" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12520)">
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; (IsQuestCompleted(12520) || IsQuestCompleted(12549))">
 			<PickUp QuestName="Crocolisk Mastery: The Trial" QuestId="12551" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
 		</If>
 		<TurnIn QuestName="Rhino Mastery: The Chase" QuestId="12526" TurnInName="Oracle Soo-rahm" TurnInId="28191" X="5355.12" Y="5814.42" Z="-74.0425" />
@@ -1982,10 +1982,10 @@
 		<If Condition="((HasQuest(12530)) &amp;&amp; (!IsQuestCompleted(12530)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12530" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12530)">
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; (IsQuestCompleted(12529) || IsQuestCompleted(12530))">
 			<PickUp QuestName="The Wasp Hunter's Apprentice" QuestId="12533" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		</If>
-		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12529)">
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; (IsQuestCompleted(12529) || IsQuestCompleted(12530))">
 			<PickUp QuestName="The Sapphire Queen" QuestId="12534" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
 		</If>
 		<CustomBehavior File="LoadProfile" ProfileName="Leveling_Northrend (78-80)" />

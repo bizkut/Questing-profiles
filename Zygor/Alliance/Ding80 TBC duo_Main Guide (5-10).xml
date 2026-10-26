@@ -285,9 +285,7 @@
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Ding80 TBC duo_Main Guide (5-10)");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
 		</If>
-		<If Condition="(Me.Level &gt;= 5)">
-			<PickUp QuestName="Beer Basted Boar Ribs" QuestId="384" GiverName="Ragnar Thunderbrew" GiverId="1267" X="-5596.21" Y="-504.132" Z="400.714" />
-		</If>
+		<!-- SKIP pickup Q384 Beer Basted Boar Ribs: needs skill line 185 at 1, which a profile cannot check -->
 		<If Condition="((Me.Race == WoWRace.Dwarf)) || ((Me.Race == WoWRace.Gnome))">
 			<TurnIn QuestName="Supplies to Tannok" QuestId="2160" TurnInName="Tannok Frosthammer" TurnInId="6806" X="-5590.81" Y="-523.344" Z="399.735" />
 		</If>
@@ -322,7 +320,7 @@
 		<Objective QuestName="Ammo for Rumbleshot" QuestId="5541" Type="CollectItem" ItemId="13850" CollectCount="1" />
 		<Objective QuestName="The Grizzled Den" QuestId="313" Type="CollectItem" ItemId="2671" CollectCount="8" />
 		<TurnIn QuestName="Ammo for Rumbleshot" QuestId="5541" TurnInName="Hegnar Rumbleshot" TurnInId="1243" X="-6015.51" Y="-201.511" Z="407.437" />
-		<!-- REVIEW Q384 Beer Basted Boar Ribs: item 2894 Rhapsody Malt has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q384 Beer Basted Boar Ribs: needs profession skill 185 (1); item 2894 Rhapsody Malt has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(384)) &amp;&amp; (IsQuestCompleted(384)))">
 			<TurnIn QuestName="Beer Basted Boar Ribs" QuestId="384" TurnInName="Ragnar Thunderbrew" TurnInId="1267" X="-5596.21" Y="-504.132" Z="400.714" />
 		</If>

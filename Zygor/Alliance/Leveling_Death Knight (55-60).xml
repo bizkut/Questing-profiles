@@ -547,7 +547,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12678" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Tonight We Dine In Havenshire" QuestId="12679" TurnInName="Orithos the Sky Darkener" TurnInId="28647" X="2322.23" Y="-5748.33" Z="154.042" />
-		<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 55)">
+		<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 55) &amp;&amp; (IsQuestCompleted(12679) || IsQuestCompleted(12687) || IsQuestCompleted(12733))">
 			<PickUp QuestName="Gothik the Harvester" QuestId="12697" GiverName="Prince Valanar" GiverId="28377" X="2371.37" Y="-5701.04" Z="154.005" />
 		</If>
 		<TurnIn QuestName="Gothik the Harvester" QuestId="12697" TurnInName="Gothik the Harvester" TurnInId="28658" X="2348.77" Y="-5758.28" Z="154.058" />
@@ -702,7 +702,7 @@
 		<If Condition="((HasQuest(12746)) &amp;&amp; (!IsQuestCompleted(12746)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12746" Type="Incomplete" />
 		</If>
-		<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 55)">
+		<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 55) &amp;&amp; (IsQuestCompleted(12739) || IsQuestCompleted(12742) || IsQuestCompleted(12743) || IsQuestCompleted(12744) || IsQuestCompleted(12745) || IsQuestCompleted(12746) || IsQuestCompleted(12747) || IsQuestCompleted(12748) || IsQuestCompleted(12749) || IsQuestCompleted(12750))">
 			<PickUp QuestName="A Sort Of Homecoming" QuestId="12751" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1380.47" Y="-5711.57" Z="136.488" />
 		</If>
 		<TurnIn QuestName="A Sort Of Homecoming" QuestId="12751" TurnInName="Thassarian" TurnInId="28913" X="1397.51" Y="-5827.42" Z="137.271" />
@@ -945,7 +945,7 @@
 			<PickUp QuestName="Good Natured Emma" QuestId="5048" GiverName="Royal Factor Bathrilor" GiverId="10782" X="-8552.63" Y="729.489" Z="108.848" />
 		</If>
 		<TurnIn QuestName="Good Natured Emma" QuestId="5048" TurnInName="Ol' Emma" TurnInId="3520" X="-8656.45" Y="676.937" Z="108.141" />
-		<If Condition="(Me.Level &gt;= 50)">
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(5048) || IsQuestCompleted(5049))">
 			<PickUp QuestName="Good Luck Charm" QuestId="5050" GiverName="Ol' Emma" GiverId="3520" X="-8656.45" Y="676.937" Z="108.141" />
 		</If>
 		<If Condition="(Me.Level &gt;= 56)">

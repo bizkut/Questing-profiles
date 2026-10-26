@@ -991,7 +991,7 @@
 		<Objective QuestName="A Grim Discovery" QuestId="2974" Type="CollectItem" ItemId="9460" CollectCount="20" />
 		<TurnIn QuestName="Zukk'ash Infestation" QuestId="7730" TurnInName="Hadoken Swiftstrider" TurnInId="7875" X="-4334.14" Y="235.574" Z="25.7076" />
 		<TurnIn QuestName="Stinglasher" QuestId="7731" TurnInName="Hadoken Swiftstrider" TurnInId="7875" X="-4334.14" Y="235.574" Z="25.7076" />
-		<If Condition="(Me.Level &gt;= 39)">
+		<If Condition="(Me.Level &gt;= 39) &amp;&amp; (IsQuestCompleted(7730) || IsQuestCompleted(7731))">
 			<PickUp QuestName="Zukk'ash Report" QuestId="7732" GiverName="Hadoken Swiftstrider" GiverId="7875" X="-4334.14" Y="235.574" Z="25.7076" />
 		</If>
 		<TurnIn QuestName="A Grim Discovery" QuestId="2974" TurnInName="Krueg Skullsplitter" TurnInId="4544" X="-4346.8" Y="163.777" Z="34.1652" />

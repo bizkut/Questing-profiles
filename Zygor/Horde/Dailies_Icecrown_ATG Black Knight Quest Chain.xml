@@ -106,7 +106,7 @@
 		</If>
 		<Objective QuestName="The Black Knight of Silverpine?" QuestId="13634" Type="CollectItem" ItemId="45062" CollectCount="1" />
 		<TurnIn QuestName="The Black Knight of Silverpine?" QuestId="13634" TurnInName="Crusader Rhydalla" TurnInId="33417" X="8464.64" Y="1089.84" Z="554.493" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13633) || IsQuestCompleted(13634))">
 			<PickUp QuestName="The Seer's Crystal" QuestId="13641" GiverName="Crusader Rhydalla" GiverId="33417" X="8464.64" Y="1089.84" Z="554.493" />
 		</If>
 		<Objective QuestName="The Seer's Crystal" QuestId="13641" Type="CollectItem" ItemId="45064" CollectCount="1" />

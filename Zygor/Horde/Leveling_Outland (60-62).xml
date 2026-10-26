@@ -492,9 +492,14 @@
 		</If>
 		<Objective QuestName="Doorway to the Abyss" QuestId="10392" Type="KillMob" MobId="19298" KillCount="1" />
 		<Objective QuestName="Doorway to the Abyss" QuestId="10392" Type="CollectItem" ItemId="29795" CollectCount="1" />
+		<If Condition="HasQuest(10392) &amp;&amp; !IsQuestCompleted(10392) &amp;&amp; GetItemCount(29795) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10392" CollectItemId="29795" CollectItemCount="1" HuntingGroundRadius="120" MobId="19298" X="569.779" Y="2797.71" Z="218.62">
+				<Hotspot X="569.779" Y="2797.71" Z="218.62" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Doorway to the Abyss" QuestId="10392" Type="UseObject" ObjectId="182935" UseCount="1" />
 		<TurnIn QuestName="Doorway to the Abyss" QuestId="10392" TurnInName="Nazgrel" TurnInId="3230" X="242.997" Y="2698.2" Z="89.8427" />
-		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10392)">
+		<If Condition="(Me.Level &gt;= 58) &amp;&amp; (IsQuestCompleted(10392) || IsQuestCompleted(10393))">
 			<PickUp QuestName="The Agony and the Darkness" QuestId="10389" GiverName="Magister Bloodhawk" GiverId="21175" X="240.444" Y="2692.6" Z="89.8273" />
 		</If>
 		<Objective QuestName="I Work... For the Horde!" QuestId="10086" Type="CollectItem" ItemId="25912" CollectCount="8" />
@@ -619,12 +624,12 @@
 				<Hotspot X="-1019.98" Y="1990.64" Z="69.6215" />
 			</CustomBehavior>
 		</If>
-		<!-- Q10792: Burning Bleeding Hollow Torch (31346) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q10792: Burning Bleeding Hollow Torch (31346) is needed but nothing near the guide coordinates drops it -->
 		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31346" MobId="20815" NumOfTimes="1" Range="5" CollectionDistance="200" X="-934.393" Y="1934.01" Z="82.0316" />
 		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31346" MobId="20814" NumOfTimes="1" Range="5" CollectionDistance="200" X="-1043.44" Y="2002.14" Z="76.0305" />
 		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31346" MobId="20816" NumOfTimes="1" Range="5" CollectionDistance="200" X="-1145.41" Y="2064.83" Z="80.7826" />
 		<CustomBehavior File="UseItemOn" QuestId="10792" ItemId="31346" MobId="20813" NumOfTimes="1" Range="5" CollectionDistance="200" X="-1152.89" Y="1961.49" Z="92.9795" />
-		<!-- REVIEW Q10792 Zeth'Gor Must Burn!: helper item 31346 Burning Bleeding Hollow Torch has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10792 Zeth'Gor Must Burn!: helper item 31346 Burning Bleeding Hollow Torch has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10792)) &amp;&amp; (IsQuestCompleted(10792)))">
 			<TurnIn QuestName="Zeth'Gor Must Burn!" QuestId="10792" TurnInName="Captain Darkhowl" TurnInId="22107" X="-1319.35" Y="2378.33" Z="88.6272" />
 		</If>

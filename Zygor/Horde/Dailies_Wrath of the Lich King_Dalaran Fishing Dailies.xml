@@ -36,52 +36,42 @@
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Horde\Dailies_Wrath of the Lich King_Dalaran Fishing Dailies");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Northrend" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(13830) &amp;&amp; !HasQuest(13830) &amp;&amp; !IsQuestCompleted(13832) &amp;&amp; !HasQuest(13832) &amp;&amp; !IsQuestCompleted(13834) &amp;&amp; !HasQuest(13834) &amp;&amp; !IsQuestCompleted(13836) &amp;&amp; !HasQuest(13836)">
-			<PickUp QuestName="Blood Is Thicker" QuestId="13833" GiverName="Marcia Chase" GiverId="28742" X="5707.31" Y="612.214" Z="646.791" />
-		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(13830) &amp;&amp; !HasQuest(13830) &amp;&amp; !IsQuestCompleted(13832) &amp;&amp; !HasQuest(13832) &amp;&amp; !IsQuestCompleted(13833) &amp;&amp; !HasQuest(13833) &amp;&amp; !IsQuestCompleted(13836) &amp;&amp; !HasQuest(13836)">
-			<PickUp QuestName="Dangerously Delicious" QuestId="13834" GiverName="Marcia Chase" GiverId="28742" X="5707.31" Y="612.214" Z="646.791" />
-		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(13830) &amp;&amp; !HasQuest(13830) &amp;&amp; !IsQuestCompleted(13833) &amp;&amp; !HasQuest(13833) &amp;&amp; !IsQuestCompleted(13834) &amp;&amp; !HasQuest(13834) &amp;&amp; !IsQuestCompleted(13836) &amp;&amp; !HasQuest(13836)">
-			<PickUp QuestName="Jewel Of The Sewers" QuestId="13832" GiverName="Marcia Chase" GiverId="28742" X="5707.31" Y="612.214" Z="646.791" />
-		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(13830) &amp;&amp; !HasQuest(13830) &amp;&amp; !IsQuestCompleted(13832) &amp;&amp; !HasQuest(13832) &amp;&amp; !IsQuestCompleted(13833) &amp;&amp; !HasQuest(13833) &amp;&amp; !IsQuestCompleted(13834) &amp;&amp; !HasQuest(13834)">
-			<PickUp QuestName="Disarmed!" QuestId="13836" GiverName="Marcia Chase" GiverId="28742" X="5707.31" Y="612.214" Z="646.791" />
-		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(13832) &amp;&amp; !HasQuest(13832) &amp;&amp; !IsQuestCompleted(13833) &amp;&amp; !HasQuest(13833) &amp;&amp; !IsQuestCompleted(13834) &amp;&amp; !HasQuest(13834) &amp;&amp; !IsQuestCompleted(13836) &amp;&amp; !HasQuest(13836)">
-			<PickUp QuestName="The Ghostfish" QuestId="13830" GiverName="Marcia Chase" GiverId="28742" X="5707.31" Y="612.214" Z="646.791" />
-		</If>
-		<!-- Q13836: Bloated Slippery Eel (45328) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13830: Phantom Ghostfish (45902) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q13833 Blood Is Thicker: item 45905 Bloodtooth Frenzy has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- SKIP pickup Q13833 Blood Is Thicker: needs skill line 356 at 1, which a profile cannot check -->
+		<!-- SKIP pickup Q13834 Dangerously Delicious: needs skill line 356 at 1, which a profile cannot check -->
+		<!-- SKIP pickup Q13832 Jewel Of The Sewers: needs skill line 356 at 1, which a profile cannot check -->
+		<!-- SKIP pickup Q13836 Disarmed!: needs skill line 356 at 1, which a profile cannot check -->
+		<!-- SKIP pickup Q13830 The Ghostfish: needs skill line 356 at 1, which a profile cannot check -->
+		<!-- Q13836: Bloated Slippery Eel (45328) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q13830: Phantom Ghostfish (45902) is needed but nothing near the guide coordinates drops it -->
+		<!-- REVIEW Q13833 Blood Is Thicker: needs profession skill 356 (1); item 45905 Bloodtooth Frenzy has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13833)) &amp;&amp; (IsQuestCompleted(13833)))">
 			<TurnIn QuestName="Blood Is Thicker" QuestId="13833" TurnInName="Marcia Chase" TurnInId="28742" X="5707.31" Y="612.214" Z="646.791" />
 		</If>
 		<If Condition="((HasQuest(13833)) &amp;&amp; (!IsQuestCompleted(13833)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13833" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13834 Dangerously Delicious: item 45904 Terrorfish has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13834 Dangerously Delicious: needs profession skill 356 (1); item 45904 Terrorfish has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13834)) &amp;&amp; (IsQuestCompleted(13834)))">
 			<TurnIn QuestName="Dangerously Delicious" QuestId="13834" TurnInName="Marcia Chase" TurnInId="28742" X="5707.31" Y="612.214" Z="646.791" />
 		</If>
 		<If Condition="((HasQuest(13834)) &amp;&amp; (!IsQuestCompleted(13834)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13834" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13832 Jewel Of The Sewers: item 45903 Corroded Jewelry has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13832 Jewel Of The Sewers: needs profession skill 356 (1); item 45903 Corroded Jewelry has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13832)) &amp;&amp; (IsQuestCompleted(13832)))">
 			<TurnIn QuestName="Jewel Of The Sewers" QuestId="13832" TurnInName="Marcia Chase" TurnInId="28742" X="5707.31" Y="612.214" Z="646.791" />
 		</If>
 		<If Condition="((HasQuest(13832)) &amp;&amp; (!IsQuestCompleted(13832)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13832" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13830 The Ghostfish: helper item 45902 Phantom Ghostfish has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13830 The Ghostfish: needs profession skill 356 (1); helper item 45902 Phantom Ghostfish has no creature or object source near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13830)) &amp;&amp; (IsQuestCompleted(13830)))">
 			<TurnIn QuestName="The Ghostfish" QuestId="13830" TurnInName="Marcia Chase" TurnInId="28742" X="5707.31" Y="612.214" Z="646.791" />
 		</If>
 		<If Condition="((HasQuest(13830)) &amp;&amp; (!IsQuestCompleted(13830)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13830" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13836 Disarmed!: helper item 45328 Bloated Slippery Eel has no dropping creature near the guide coordinates; item 45323 Severed Arm has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13836 Disarmed!: needs profession skill 356 (1); helper item 45328 Bloated Slippery Eel has no creature or object source near the guide coordinates; item 45323 Severed Arm has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13836)) &amp;&amp; (IsQuestCompleted(13836)))">
 			<TurnIn QuestName="Disarmed!" QuestId="13836" TurnInName="Olisarra the Kind" TurnInId="28706" X="5860.29" Y="749.055" Z="640.669" />
 		</If>

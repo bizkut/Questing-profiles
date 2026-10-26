@@ -799,7 +799,7 @@
 			<PickUp QuestName="A Disturbance In The West" QuestId="12439" GiverName="Vas the Unstable" GiverId="27158" X="3879.56" Y="-798.472" Z="221.188" />
 		</If>
 		<TurnIn QuestName="A Disturbance In The West" QuestId="12439" TurnInName="Rodney Wells" TurnInId="26878" X="3712.43" Y="-694.86" Z="215.36" />
-		<If Condition="(Me.Level &gt;= 71) &amp;&amp; !IsQuestCompleted(11995) &amp;&amp; !HasQuest(11995)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12439) &amp;&amp; !IsQuestCompleted(11995) &amp;&amp; !HasQuest(11995)">
 			<PickUp QuestName="To Stars' Rest!" QuestId="12440" GiverName="Rodney Wells" GiverId="26878" X="3712.43" Y="-694.86" Z="215.36" />
 		</If>
 		<TurnIn QuestName="To Stars' Rest!" QuestId="12440" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
@@ -1056,19 +1056,21 @@
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12276)">
 			<PickUp QuestName="Leave Nothing to Chance" QuestId="12277" GiverName="Slinkin the Demo-gnome" GiverId="27412" X="3996.67" Y="-945.023" Z="105.89" />
 		</If>
-		<!-- Q12277: Wintergarde Mine Bomb (37465) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12277) &amp;&amp; !IsQuestCompleted(12277) &amp;&amp; GetItemCount(37465) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12277" MobId="189288" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="4029.91" Y="-901.004" Z="108.917" />
+		</If>
 		<Objective QuestName="The Bleeding Ore" QuestId="12272" Type="CollectItem" ItemId="37359" CollectCount="10" />
 		<Objective QuestName="Not In Our Mine" QuestId="12269" Type="CollectItem" ItemId="37411" CollectCount="10" />
 		<TurnIn QuestName="Not In Our Mine" QuestId="12269" TurnInName="Highlord Leoric Von Zeldig" TurnInId="27156" X="3692.51" Y="-736.212" Z="213.33" />
 		<TurnIn QuestName="The Bleeding Ore" QuestId="12272" TurnInName="Siege Engineer Quarterflash" TurnInId="27159" X="3694.25" Y="-738.813" Z="213.581" />
-		<!-- REVIEW Q12277 Leave Nothing to Chance: helper item 37465 Wintergarde Mine Bomb has no dropping creature near the guide coordinates; objective 27436 Upper Wintergarde Mine Shaft x1: not attackable; objective 27437 Lower Wintergarde Mine Shaft x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12277 Leave Nothing to Chance: objective 27436 Upper Wintergarde Mine Shaft x1: not attackable; objective 27437 Lower Wintergarde Mine Shaft x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12277)) &amp;&amp; (IsQuestCompleted(12277)))">
 			<TurnIn QuestName="Leave Nothing to Chance" QuestId="12277" TurnInName="Siege Engineer Quarterflash" TurnInId="27159" X="3694.25" Y="-738.813" Z="213.581" />
 		</If>
 		<If Condition="((HasQuest(12277)) &amp;&amp; (!IsQuestCompleted(12277)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12277" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12272) || IsQuestCompleted(12277))">
 			<PickUp QuestName="Understanding the Scourge War Machine" QuestId="12281" GiverName="Siege Engineer Quarterflash" GiverId="27159" X="3694.25" Y="-738.813" Z="213.581" />
 		</If>
 		<!-- REVIEW Q12253 Rescue from Town Square: objective 27359 Trapped Wintergarde Villager x6: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1115,7 +1117,7 @@
 		<If Condition="((HasQuest(12321)) &amp;&amp; (!IsQuestCompleted(12321)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12321" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12281) || IsQuestCompleted(12321))">
 			<PickUp QuestName="Into Hostile Territory" QuestId="12325" GiverName="High Commander Halford Wyrmbane" GiverId="27136" X="3767.5" Y="-775.048" Z="196.087" />
 		</If>
 		<TurnIn QuestName="Into Hostile Territory" QuestId="12325" TurnInName="Duke August Foehammer" TurnInId="27157" X="3841.22" Y="-1402.29" Z="144.478" />
@@ -1405,11 +1407,11 @@
 		</If>
 		<TurnIn QuestName="Tales of Destruction" QuestId="12266" TurnInName="Nalice" TurnInId="27765" X="3548.31" Y="258.034" Z="342.804" />
 		<TurnIn QuestName="Audience With The Dragon Queen" QuestId="12495" TurnInName="Alexstrasza the Life-Binder" TurnInId="26917" X="3531.02" Y="271.403" Z="342.804" />
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12495) || IsQuestCompleted(12496))">
 			<PickUp QuestName="Galakrond and the Scourge" QuestId="12497" GiverName="Alexstrasza the Life-Binder" GiverId="26917" X="3531.02" Y="271.403" Z="342.804" />
 		</If>
 		<TurnIn QuestName="Informing the Queen" QuestId="12123" TurnInName="Alexstrasza the Life-Binder" TurnInId="26917" X="3531.02" Y="271.403" Z="342.804" />
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12123) || IsQuestCompleted(12124))">
 			<PickUp QuestName="Report to Lord Afrasastrasz" QuestId="12435" GiverName="Alexstrasza the Life-Binder" GiverId="26917" X="3531.02" Y="271.403" Z="342.804" />
 		</If>
 		<TurnIn QuestName="The Fate of the Ruby Dragonshrine" QuestId="12419" TurnInName="Krasus" TurnInId="27990" X="3529.38" Y="273.873" Z="342.804" />
@@ -1421,7 +1423,7 @@
 		<If Condition="(Me.Level &gt;= 72)">
 			<PickUp QuestName="Cycle of Life" QuestId="12454" GiverName="Nishera the Garden Keeper" GiverId="27255" X="2827.62" Y="-20.4965" Z="0.5493" />
 		</If>
-		<!-- Q12458: 140458 (140458) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12458: 140458 (140458) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Cycle of Life" QuestId="12454" Type="KillMob" MobId="27244" KillCount="5" />
 		<TurnIn QuestName="Cycle of Life" QuestId="12454" TurnInName="Nishera the Garden Keeper" TurnInId="27255" X="2827.62" Y="-20.4965" Z="0.5493" />
 		<!-- SKIP Q12456 The Plume of Alystros: group quest (3 players) -->
@@ -1434,7 +1436,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12456" Type="Incomplete" />
 		</If>
 		<Objective QuestName="Seeds of the Lashers" QuestId="12458" Type="CollectItem" ItemId="37882" CollectCount="3" />
-		<!-- REVIEW Q12458 Seeds of the Lashers: helper item 140458 140458 has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12458 Seeds of the Lashers: helper item 140458 140458 has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12458)) &amp;&amp; (IsQuestCompleted(12458)))">
 			<TurnIn QuestName="Seeds of the Lashers" QuestId="12458" TurnInName="Lord Itharius" TurnInId="27785" X="3539.55" Y="285.5" Z="342.804" />
 		</If>

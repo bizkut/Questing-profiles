@@ -882,8 +882,10 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11278)">
 			<PickUp QuestName="Trust is Earned" QuestId="11460" GiverName="Hidalgo the Master Falconer" GiverId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
-		<!-- Q11460: Fjord Grub (34102) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q11460 Trust is Earned: helper item 34102 Fjord Grub has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11460) &amp;&amp; !IsQuestCompleted(11460) &amp;&amp; GetItemCount(34102) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="11460" MobId="186938" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="465.528" Y="-5963.1" Z="313.397" />
+		</If>
+		<!-- REVIEW Q11460 Trust is Earned: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11460)) &amp;&amp; (IsQuestCompleted(11460)))">
 			<TurnIn QuestName="Trust is Earned" QuestId="11460" TurnInName="Hidalgo the Master Falconer" TurnInId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
@@ -893,8 +895,10 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11460)">
 			<PickUp QuestName="The Ransacked Caravan" QuestId="11465" GiverName="Hidalgo the Master Falconer" GiverId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
-		<!-- Q11465: Fjord Grub (34102) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q11465 The Ransacked Caravan: helper item 34102 Fjord Grub has no dropping creature near the guide coordinates; item 34112 Fjord Turkey has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11465) &amp;&amp; !IsQuestCompleted(11465) &amp;&amp; GetItemCount(34102) &lt; 5">
+			<CustomBehavior File="InteractWith" QuestId="11465" MobId="186938" ObjectType="GameObject" Loot="True" NumOfTimes="5" CollectionDistance="200" X="465.528" Y="-5963.1" Z="313.397" />
+		</If>
+		<!-- REVIEW Q11465 The Ransacked Caravan: item 34112 Fjord Turkey has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11465)) &amp;&amp; (IsQuestCompleted(11465)))">
 			<TurnIn QuestName="The Ransacked Caravan" QuestId="11465" TurnInName="Hidalgo the Master Falconer" TurnInId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
@@ -904,8 +908,10 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11465)">
 			<PickUp QuestName="Falcon Versus Hawk" QuestId="11468" GiverName="Hidalgo the Master Falconer" GiverId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
-		<!-- Q11468: Fjord Grub (34102) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q11468 Falcon Versus Hawk: helper item 34102 Fjord Grub has no dropping creature near the guide coordinates; item 34120 Fjord Hawk has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11468) &amp;&amp; !IsQuestCompleted(11468) &amp;&amp; GetItemCount(34102) &lt; 10">
+			<CustomBehavior File="InteractWith" QuestId="11468" MobId="186938" ObjectType="GameObject" Loot="True" NumOfTimes="10" CollectionDistance="200" X="465.528" Y="-5963.1" Z="313.397" />
+		</If>
+		<!-- REVIEW Q11468 Falcon Versus Hawk: item 34120 Fjord Hawk has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11468)) &amp;&amp; (IsQuestCompleted(11468)))">
 			<TurnIn QuestName="Falcon Versus Hawk" QuestId="11468" TurnInName="Hidalgo the Master Falconer" TurnInId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
@@ -995,7 +1001,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11483" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="We Have the Technology" QuestId="11484" TurnInName="Walt" TurnInId="24807" X="475.726" Y="-5935.29" Z="308.804" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11483) || IsQuestCompleted(11484))">
 			<PickUp QuestName="Iron Rune Constructs and You: Rocket Jumping" QuestId="11485" GiverName="Walt" GiverId="24807" X="475.726" Y="-5935.29" Z="308.804" />
 		</If>
 		<!-- REVIEW Q11485 Iron Rune Constructs and You: Rocket Jumping: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1045,7 +1051,7 @@
 		<If Condition="((HasQuest(11495)) &amp;&amp; (!IsQuestCompleted(11495)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11495" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11494) || IsQuestCompleted(11495))">
 			<PickUp QuestName="News From the East" QuestId="11501" GiverName="Walt" GiverId="24807" X="475.726" Y="-5935.29" Z="308.804" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68)">
@@ -1213,7 +1219,7 @@
 		<TurnIn QuestName="The Frozen Heart of Isuldof" QuestId="11512" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		<TurnIn QuestName="The Shield of the Aesirites" QuestId="11530" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		<TurnIn QuestName="The Staff of Storm's Fury" QuestId="11511" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11511) || IsQuestCompleted(11512) || IsQuestCompleted(11530) || IsQuestCompleted(11567))">
 			<PickUp QuestName="A Return to Resting" QuestId="11568" GiverName="Orfus of Kamagua" GiverId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="11568" ItemId="34624" MobId="24874" NumOfTimes="1" Range="5" CollectionDistance="200" X="-17.782" Y="-4883.05" Z="302.573" />
@@ -1264,7 +1270,7 @@
 		</If>
 		<TurnIn QuestName="To Westguard Keep!" QuestId="11291" TurnInName="Captain Adams" TurnInId="23749" X="1333.45" Y="-3143.48" Z="172.275" />
 		<TurnIn QuestName="News From the East" QuestId="11501" TurnInName="Captain Adams" TurnInId="23749" X="1333.45" Y="-3143.48" Z="172.275" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11501)">
 			<PickUp QuestName="The Clutches of Evil" QuestId="11157" GiverName="Captain Adams" GiverId="23749" X="1333.45" Y="-3143.48" Z="172.275" />
 		</If>
 		<Objective QuestName="One Size Does Not Fit All" QuestId="11190" Type="CollectItem" ItemId="33123" CollectCount="10" />
@@ -1521,7 +1527,7 @@
 		<If Condition="(Me.Level &gt;= 68)">
 			<PickUp QuestName="The Yeti Next Door" QuestId="11284" GiverName="Foreman Colbey" GiverId="24176" X="2487.1" Y="-5036.1" Z="282.818" />
 		</If>
-		<!-- Q11284: Giant Yeti Meal (33477) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q11284: Giant Yeti Meal (33477) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Down to the Wire" QuestId="11269" Type="CollectItem" ItemId="33348" CollectCount="10" />
 		<Objective QuestName="Preying Upon the Weak" QuestId="11292" Type="CollectItem" ItemId="33487" CollectCount="8" />
 		<!-- REVIEW Q11322 The Cleansing: get 27959 Your Inner Turmoil x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1620,7 +1626,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11239" Type="Incomplete" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="11284" ItemId="33477" MobId="24178" NumOfTimes="1" Range="5" CollectionDistance="200" X="2638.73" Y="-5057.32" Z="295.801" />
-		<!-- REVIEW Q11284 The Yeti Next Door: helper item 33477 Giant Yeti Meal has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11284 The Yeti Next Door: helper item 33477 Giant Yeti Meal has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11284)) &amp;&amp; (IsQuestCompleted(11284)))">
 			<TurnIn QuestName="The Yeti Next Door" QuestId="11284" TurnInName="Foreman Colbey" TurnInId="24176" X="2487.1" Y="-5036.1" Z="282.818" />
 		</If>
@@ -1641,7 +1647,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11418" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="The Enigmatic Frost Nymphs" QuestId="11302" TurnInName="Lurielle" TurnInId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
-		<If Condition="(Me.Level &gt;= 69)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11302) || IsQuestCompleted(11312))">
 			<PickUp QuestName="Spirits of the Ice" QuestId="11313" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
 		<Objective QuestName="Spirits of the Ice" QuestId="11313" Type="CollectItem" ItemId="33605" CollectCount="15" />
@@ -1668,10 +1674,10 @@
 		<If Condition="((HasQuest(11315)) &amp;&amp; (!IsQuestCompleted(11315)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11315" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11314)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11314) || IsQuestCompleted(11315))">
 			<PickUp QuestName="Spawn of the Twisted Glade" QuestId="11316" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
-		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11315)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11314) || IsQuestCompleted(11315))">
 			<PickUp QuestName="Seeds of the Blacksouled Keepers" QuestId="11319" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="11316" ItemId="33607" MobId="23874" NumOfTimes="10" Range="5" CollectionDistance="200" X="2303.25" Y="-4661.66" Z="221.15" />

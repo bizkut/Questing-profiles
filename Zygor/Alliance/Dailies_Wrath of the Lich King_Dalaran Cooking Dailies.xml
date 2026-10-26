@@ -63,28 +63,22 @@
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Dailies_Wrath of the Lich King_Dalaran Cooking Dailies");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Northrend" />
 		</If>
-		<If Condition="(Me.Level &gt;= 65) &amp;&amp; !IsQuestCompleted(13088) &amp;&amp; !HasQuest(13088)">
-			<PickUp QuestName="Northern Cooking" QuestId="13087" GiverName="Brom Brewbaster" GiverId="26905" X="615.058" Y="-4916.97" Z="18.7611" />
-		</If>
+		<!-- SKIP pickup Q13087 Northern Cooking: needs skill line 185 at 350, which a profile cannot check -->
 		<Objective QuestName="Northern Cooking" QuestId="13087" Type="CollectItem" ItemId="43013" CollectCount="4" />
-		<TurnIn QuestName="Northern Cooking" QuestId="13087" TurnInName="Brom Brewbaster" TurnInId="26905" X="615.058" Y="-4916.97" Z="18.7611" />
-		<If Condition="(Me.Level &gt;= 65) &amp;&amp; !IsQuestCompleted(13100) &amp;&amp; !HasQuest(13100) &amp;&amp; !IsQuestCompleted(13101) &amp;&amp; !HasQuest(13101) &amp;&amp; !IsQuestCompleted(13102) &amp;&amp; !HasQuest(13102) &amp;&amp; !IsQuestCompleted(13107) &amp;&amp; !HasQuest(13107)">
-			<PickUp QuestName="Cheese for Glowergold" QuestId="13103" GiverName="Katherine Lee" GiverId="28705" X="5707.61" Y="715.535" Z="642.573" />
+		<!-- REVIEW Q13087 Northern Cooking: needs profession skill 185 (350). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13087)) &amp;&amp; (IsQuestCompleted(13087)))">
+			<TurnIn QuestName="Northern Cooking" QuestId="13087" TurnInName="Brom Brewbaster" TurnInId="26905" X="615.058" Y="-4916.97" Z="18.7611" />
 		</If>
-		<If Condition="(Me.Level &gt;= 65) &amp;&amp; !IsQuestCompleted(13100) &amp;&amp; !HasQuest(13100) &amp;&amp; !IsQuestCompleted(13102) &amp;&amp; !HasQuest(13102) &amp;&amp; !IsQuestCompleted(13103) &amp;&amp; !HasQuest(13103) &amp;&amp; !IsQuestCompleted(13107) &amp;&amp; !HasQuest(13107)">
-			<PickUp QuestName="Convention at the Legerdemain" QuestId="13101" GiverName="Katherine Lee" GiverId="28705" X="5707.61" Y="715.535" Z="642.573" />
+		<If Condition="((HasQuest(13087)) &amp;&amp; (!IsQuestCompleted(13087)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13087" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 65) &amp;&amp; !IsQuestCompleted(13101) &amp;&amp; !HasQuest(13101) &amp;&amp; !IsQuestCompleted(13102) &amp;&amp; !HasQuest(13102) &amp;&amp; !IsQuestCompleted(13103) &amp;&amp; !HasQuest(13103) &amp;&amp; !IsQuestCompleted(13107) &amp;&amp; !HasQuest(13107)">
-			<PickUp QuestName="Infused Mushroom Meatloaf" QuestId="13100" GiverName="Katherine Lee" GiverId="28705" X="5707.61" Y="715.535" Z="642.573" />
-		</If>
-		<If Condition="(Me.Level &gt;= 65) &amp;&amp; !IsQuestCompleted(13100) &amp;&amp; !HasQuest(13100) &amp;&amp; !IsQuestCompleted(13101) &amp;&amp; !HasQuest(13101) &amp;&amp; !IsQuestCompleted(13102) &amp;&amp; !HasQuest(13102) &amp;&amp; !IsQuestCompleted(13103) &amp;&amp; !HasQuest(13103)">
-			<PickUp QuestName="Mustard Dogs!" QuestId="13107" GiverName="Katherine Lee" GiverId="28705" X="5707.61" Y="715.535" Z="642.573" />
-		</If>
-		<If Condition="(Me.Level &gt;= 65) &amp;&amp; !IsQuestCompleted(13100) &amp;&amp; !HasQuest(13100) &amp;&amp; !IsQuestCompleted(13101) &amp;&amp; !HasQuest(13101) &amp;&amp; !IsQuestCompleted(13103) &amp;&amp; !HasQuest(13103) &amp;&amp; !IsQuestCompleted(13107) &amp;&amp; !HasQuest(13107)">
-			<PickUp QuestName="Sewer Stew" QuestId="13102" GiverName="Katherine Lee" GiverId="28705" X="5707.61" Y="715.535" Z="642.573" />
-		</If>
-		<!-- Q13103: Aged Dalaran Limburger (43137) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13103: Half Full Dalaran Wine Glass (43138) is needed but no creature near the guide coordinates drops it -->
+		<!-- SKIP pickup Q13103 Cheese for Glowergold: needs skill line 185 at 350, which a profile cannot check -->
+		<!-- SKIP pickup Q13101 Convention at the Legerdemain: needs skill line 185 at 350, which a profile cannot check -->
+		<!-- SKIP pickup Q13100 Infused Mushroom Meatloaf: needs skill line 185 at 350, which a profile cannot check -->
+		<!-- SKIP pickup Q13107 Mustard Dogs!: needs skill line 185 at 350, which a profile cannot check -->
+		<!-- SKIP pickup Q13102 Sewer Stew: needs skill line 185 at 350, which a profile cannot check -->
+		<!-- Q13103: Aged Dalaran Limburger (43137) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q13103: Half Full Dalaran Wine Glass (43138) is needed but nothing near the guide coordinates drops it -->
 		<If Condition="HasQuest(13101) &amp;&amp; !IsQuestCompleted(13101) &amp;&amp; GetItemCount(43013) &lt; 4">
 			<CustomBehavior File="CollectThings" QuestId="13101" CollectItemId="43013" CollectItemCount="4" HuntingGroundRadius="120" MobId="25452" MobId2="26271" MobId3="26272" MobId4="26273" MobId5="26426" MobId6="26467" X="3765.84" Y="1914.57" Z="95.5112">
 				<Hotspot X="3765.84" Y="1914.57" Z="95.5112" />
@@ -109,7 +103,7 @@
 				<Hotspot X="3791.22" Y="1864.72" Z="105.05" />
 			</CustomBehavior>
 		</If>
-		<!-- Q13100: Infused Mushroom (43100) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13100: Infused Mushroom (43100) is needed but nothing near the guide coordinates drops it -->
 		<If Condition="HasQuest(13107) &amp;&amp; !IsQuestCompleted(13107) &amp;&amp; GetItemCount(43012) &lt; 4">
 			<CustomBehavior File="CollectThings" QuestId="13107" CollectItemId="43012" CollectItemCount="4" HuntingGroundRadius="120" MobId="25487" MobId2="25488" MobId3="25489" MobId4="25968" X="3170.23" Y="5968.76" Z="96.3616">
 				<Hotspot X="3170.23" Y="5968.76" Z="96.3616" />
@@ -122,8 +116,8 @@
 				<Hotspot X="3354.17" Y="5970.83" Z="74.9231" />
 			</CustomBehavior>
 		</If>
-		<!-- Q13107: Wild Mustard (43143) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13107: Rhino Dogs (34752) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13107: Wild Mustard (43143) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q13107: Rhino Dogs (34752) is needed but nothing near the guide coordinates drops it -->
 		<If Condition="HasQuest(13102) &amp;&amp; !IsQuestCompleted(13102) &amp;&amp; GetItemCount(43148) &lt; 4">
 			<CustomBehavior File="CollectThings" QuestId="13102" CollectItemId="43148" CollectItemCount="4" HuntingGroundRadius="120" MobId="31233" X="5660.36" Y="645.282" Z="150.381">
 				<Hotspot X="5660.36" Y="645.282" Z="150.381" />
@@ -148,35 +142,35 @@
 				<Hotspot X="3791.22" Y="1864.72" Z="105.05" />
 			</CustomBehavior>
 		</If>
-		<!-- REVIEW Q13103 Cheese for Glowergold: helper item 43137 Aged Dalaran Limburger has no dropping creature near the guide coordinates; helper item 43138 Half Full Dalaran Wine Glass has no dropping creature near the guide coordinates; item 43136 Wine and Cheese Platter has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13103 Cheese for Glowergold: needs profession skill 185 (350); helper item 43137 Aged Dalaran Limburger has no creature or object source near the guide coordinates; helper item 43138 Half Full Dalaran Wine Glass has no creature or object source near the guide coordinates; item 43136 Wine and Cheese Platter has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13103)) &amp;&amp; (IsQuestCompleted(13103)))">
 			<TurnIn QuestName="Cheese for Glowergold" QuestId="13103" TurnInName="Ranid Glowergold" TurnInId="28718" X="5912.55" Y="748.528" Z="641.163" />
 		</If>
 		<If Condition="((HasQuest(13103)) &amp;&amp; (!IsQuestCompleted(13103)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13103" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13101 Convention at the Legerdemain: item 43128 Jug of Wine has no drop or chest near the guide coordinates; item 34747 Northern Stew has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13101 Convention at the Legerdemain: needs profession skill 185 (350); item 43128 Jug of Wine has no drop or chest near the guide coordinates; item 34747 Northern Stew has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13101)) &amp;&amp; (IsQuestCompleted(13101)))">
 			<TurnIn QuestName="Convention at the Legerdemain" QuestId="13101" TurnInName="Arille Azuregaze" TurnInId="29049" X="5859.81" Y="645.384" Z="647.514" />
 		</If>
 		<If Condition="((HasQuest(13101)) &amp;&amp; (!IsQuestCompleted(13101)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13101" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13100 Infused Mushroom Meatloaf: helper item 43100 Infused Mushroom has no dropping creature near the guide coordinates; item 43099 Infused Mushroom Meatloaf has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13100 Infused Mushroom Meatloaf: needs profession skill 185 (350); helper item 43100 Infused Mushroom has no creature or object source near the guide coordinates; item 43099 Infused Mushroom Meatloaf has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13100)) &amp;&amp; (IsQuestCompleted(13100)))">
 			<TurnIn QuestName="Infused Mushroom Meatloaf" QuestId="13100" TurnInName="Orton Bennet" TurnInId="29527" X="5759.1" Y="618.335" Z="661.092" />
 		</If>
 		<If Condition="((HasQuest(13100)) &amp;&amp; (!IsQuestCompleted(13100)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13100" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13107 Mustard Dogs!: helper item 43143 Wild Mustard has no dropping creature near the guide coordinates; helper item 34752 Rhino Dogs has no dropping creature near the guide coordinates; item 43144 Mustard Dog Basket! has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13107 Mustard Dogs!: needs profession skill 185 (350); helper item 43143 Wild Mustard has no creature or object source near the guide coordinates; helper item 34752 Rhino Dogs has no creature or object source near the guide coordinates; item 43144 Mustard Dog Basket! has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13107)) &amp;&amp; (IsQuestCompleted(13107)))">
 			<TurnIn QuestName="Mustard Dogs!" QuestId="13107" TurnInName="Archmage Pentarus" TurnInId="28160" X="5833.99" Y="483.519" Z="658.261" />
 		</If>
 		<If Condition="((HasQuest(13107)) &amp;&amp; (!IsQuestCompleted(13107)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13107" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13102 Sewer Stew: item 43149 Vegetable Stew has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13102 Sewer Stew: needs profession skill 185 (350); item 43149 Vegetable Stew has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13102)) &amp;&amp; (IsQuestCompleted(13102)))">
 			<TurnIn QuestName="Sewer Stew" QuestId="13102" TurnInName="Ajay Green" TurnInId="29532" X="5759.18" Y="716.138" Z="618.635" />
 		</If>

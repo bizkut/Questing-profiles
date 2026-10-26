@@ -51,7 +51,7 @@
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11058)">
 			<PickUp QuestName="The Relic's Emanation" QuestId="11080" GiverName="Chu'a'lor" GiverId="23233" X="2335.24" Y="7285.18" Z="365.617" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11010)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; (IsQuestCompleted(11010) || IsQuestCompleted(11102))">
 			<PickUp QuestName="Bomb Them Again!" QuestId="11023" GiverName="Sky Sergeant Vanderlip" GiverId="23120" X="2495.25" Y="7350.9" Z="380.334" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11065)">

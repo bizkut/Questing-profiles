@@ -468,7 +468,7 @@
 			<PickUp QuestName="Botanical Legwork" QuestId="9799" GiverName="Apprentice Vishael" GiverId="20233" X="-4059.43" Y="-13718.8" Z="72.9697" />
 		</If>
 		<TurnIn QuestName="Replenishing the Healing Crystals" QuestId="9280" TurnInName="Proenitus" TurnInId="16477" X="-4039.4" Y="-13773.7" Z="75.3083" />
-		<If Condition="IsQuestCompleted(9280)">
+		<If Condition="(IsQuestCompleted(9280) || IsQuestCompleted(9369))">
 			<PickUp QuestName="Urgent Delivery!" QuestId="9409" GiverName="Proenitus" GiverId="16477" X="-4039.4" Y="-13773.7" Z="75.3083" />
 		</If>
 		<TurnIn QuestName="Urgent Delivery!" QuestId="9409" TurnInName="Zalduun" TurnInId="16502" X="-4120.99" Y="-13762.1" Z="73.588" />
@@ -850,7 +850,7 @@
 		<TurnIn QuestName="Murlocs... Why Here? Why Now?" QuestId="9562" TurnInName="Gurf" TurnInId="17441" X="-3431.17" Y="-12316.5" Z="14.2924" />
 		<TurnIn QuestName="Gurf's Dignity" QuestId="9564" TurnInName="Gurf" TurnInId="17441" X="-3431.17" Y="-12316.5" Z="14.2924" />
 		<TurnIn QuestName="Beasts of the Apocalypse!" QuestId="9560" TurnInName="Moordo" TurnInId="17442" X="-3442.68" Y="-12322.2" Z="14.1547" />
-		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(9559)">
+		<If Condition="(Me.Level &gt;= 7) &amp;&amp; (IsQuestCompleted(9559) || IsQuestCompleted(9560))">
 			<PickUp QuestName="Search Stillpine Hold" QuestId="9565" GiverName="High Chief Stillpine" GiverId="17440" X="-3353.36" Y="-12400.5" Z="26.0876" />
 		</If>
 		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(9562)">
@@ -891,10 +891,10 @@
 		<TurnIn QuestName="Warn Your People" QuestId="9622" TurnInName="Exarch Menelaous" TurnInId="17116" X="-4167.46" Y="-12417.9" Z="41.9126" />
 		<TurnIn QuestName="Coming of Age" QuestId="9623" TurnInName="Torallius the Pack Handler" TurnInId="17584" X="-3972.18" Y="-11927.5" Z="-0.67" />
 		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Shaman)))">
-			<!-- Q9467: Orb of Returning (24335) is needed but no creature near the guide coordinates drops it -->
+			<!-- Q9467: Orb of Returning (24335) is needed but nothing near the guide coordinates drops it -->
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Shaman)))">
-			<!-- REVIEW Q9467 Call of Fire: item 23682 Ritual Torch has no drop or chest near the guide coordinates; helper item 24335 Orb of Returning has no dropping creature near the guide coordinates; item 23688 Hauteur's Ashes has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<!-- REVIEW Q9467 Call of Fire: item 23682 Ritual Torch has no drop or chest near the guide coordinates; helper item 24335 Orb of Returning has no creature or object source near the guide coordinates; item 23688 Hauteur's Ashes has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(9467)) &amp;&amp; (IsQuestCompleted(9467)))">
 				<TurnIn QuestName="Call of Fire" QuestId="9467" TurnInName="Temper" TurnInId="17205" X="-3285.64" Y="-12924.1" Z="11.7715" />
 			</If>

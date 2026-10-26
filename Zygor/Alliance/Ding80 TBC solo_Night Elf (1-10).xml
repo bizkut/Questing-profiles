@@ -536,8 +536,14 @@
 		<If Condition="IsQuestCompleted(928)">
 			<PickUp QuestName="Crown of the Earth" QuestId="929" GiverName="Corithras Moonrage" GiverId="3515" X="9736.91" Y="956.063" Z="1294.19" />
 		</If>
-		<PickUp QuestName="Recipe of the Kaldorei" QuestId="4161" GiverName="Zarrin" GiverId="6286" X="9751.02" Y="906.196" Z="1295.6" />
-		<TurnIn QuestName="Recipe of the Kaldorei" QuestId="4161" TurnInName="Zarrin" TurnInId="6286" X="9751.02" Y="906.196" Z="1295.6" />
+		<!-- SKIP pickup Q4161 Recipe of the Kaldorei: needs skill line 185 at 1, which a profile cannot check -->
+		<!-- REVIEW Q4161 Recipe of the Kaldorei: needs profession skill 185 (1). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4161)) &amp;&amp; (IsQuestCompleted(4161)))">
+			<TurnIn QuestName="Recipe of the Kaldorei" QuestId="4161" TurnInName="Zarrin" TurnInId="6286" X="9751.02" Y="906.196" Z="1295.6" />
+		</If>
+		<If Condition="((HasQuest(4161)) &amp;&amp; (!IsQuestCompleted(4161)))">
+			<CustomBehavior File="AbandonQuest" QuestId="4161" Type="Incomplete" />
+		</If>
 		<TurnIn QuestName="A Troubling Breeze" QuestId="475" TurnInName="Gaerolas Talvethren" TurnInId="2107" X="9845.15" Y="440.93" Z="1317.27" />
 		<If Condition="(Me.Level &gt;= 4) &amp;&amp; IsQuestCompleted(475)">
 			<PickUp QuestName="Gnarlpine Corruption" QuestId="476" GiverName="Gaerolas Talvethren" GiverId="2107" X="9845.15" Y="440.93" Z="1317.27" />

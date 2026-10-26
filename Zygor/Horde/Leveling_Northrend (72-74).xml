@@ -1001,7 +1001,7 @@
 		<If Condition="((HasQuest(11285)) &amp;&amp; (!IsQuestCompleted(11285)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11285" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11283) || IsQuestCompleted(11285))">
 			<PickUp QuestName="The Ambush" QuestId="11303" GiverName="Sergeant Gorth" GiverId="24027" X="1541.28" Y="-5697.27" Z="250.059" />
 		</If>
 		<TurnIn QuestName="The Ambush" QuestId="11303" TurnInName="Lydell" TurnInId="24458" X="1634.11" Y="-5380.04" Z="191.162" />
@@ -1065,8 +1065,8 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11305)">
 			<PickUp QuestName="Apply Heat and Stir" QuestId="11306" GiverName="Chief Plaguebringer Harris" GiverId="24251" X="441.617" Y="-4637.97" Z="246.481" />
 		</If>
-		<!-- Q11306: Flask of Vrykul Blood (33615) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q11306 Apply Heat and Stir: helper item 33615 Flask of Vrykul Blood has no dropping creature near the guide coordinates; item 33617 Balanced Concoction has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q11306: Flask of Vrykul Blood (33615) is needed but nothing near the guide coordinates drops it -->
+		<!-- REVIEW Q11306 Apply Heat and Stir: helper item 33615 Flask of Vrykul Blood has no creature or object source near the guide coordinates; item 33617 Balanced Concoction has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11306)) &amp;&amp; (IsQuestCompleted(11306)))">
 			<TurnIn QuestName="Apply Heat and Stir" QuestId="11306" TurnInName="Chief Plaguebringer Harris" TurnInId="24251" X="441.617" Y="-4637.97" Z="246.481" />
 		</If>
@@ -1277,7 +1277,7 @@
 		<TurnIn QuestName="The Frozen Heart of Isuldof" QuestId="11512" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		<TurnIn QuestName="The Shield of the Aesirites" QuestId="11530" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		<TurnIn QuestName="The Staff of Storm's Fury" QuestId="11511" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11511) || IsQuestCompleted(11512) || IsQuestCompleted(11530) || IsQuestCompleted(11567))">
 			<PickUp QuestName="A Return to Resting" QuestId="11568" GiverName="Orfus of Kamagua" GiverId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="11568" ItemId="34624" MobId="24874" NumOfTimes="1" Range="5" CollectionDistance="200" X="-17.782" Y="-4883.05" Z="302.573" />
@@ -1392,7 +1392,7 @@
 			<PickUp QuestName="The Book of Runes" QuestId="11350" GiverName="Longrunner Pembe" GiverId="24362" X="2622.85" Y="-4374.22" Z="276.327" />
 		</If>
 		<TurnIn QuestName="The Frozen Glade" QuestId="11312" TurnInName="Lurielle" TurnInId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
-		<If Condition="(Me.Level &gt;= 69)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11302) || IsQuestCompleted(11312))">
 			<PickUp QuestName="Spirits of the Ice" QuestId="11313" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
 		<Objective QuestName="Spirits of the Ice" QuestId="11313" Type="CollectItem" ItemId="33605" CollectCount="15" />
@@ -1419,10 +1419,10 @@
 		<If Condition="((HasQuest(11315)) &amp;&amp; (!IsQuestCompleted(11315)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11315" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11314)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11314) || IsQuestCompleted(11315))">
 			<PickUp QuestName="Spawn of the Twisted Glade" QuestId="11316" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
-		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11315)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11314) || IsQuestCompleted(11315))">
 			<PickUp QuestName="Seeds of the Blacksouled Keepers" QuestId="11319" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="11316" ItemId="33607" MobId="23874" NumOfTimes="10" Range="5" CollectionDistance="200" X="2303.25" Y="-4661.66" Z="221.15" />
@@ -1681,7 +1681,7 @@
 			<PickUp QuestName="Let Them Not Rise!" QuestId="12211" GiverName="Apothecary Vicky Levine" GiverId="27248" X="3221.88" Y="-691.37" Z="167.209" />
 		</If>
 		<TurnIn QuestName="To Venomspite!" QuestId="12182" TurnInName="Chief Plaguebringer Middleton" TurnInId="27172" X="3226.72" Y="-728.937" Z="168.146" />
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12182) || IsQuestCompleted(12189))">
 			<PickUp QuestName="The Forsaken Blight and You: How Not to Die" QuestId="12188" GiverName="Chief Plaguebringer Middleton" GiverId="27172" X="3226.72" Y="-728.937" Z="168.146" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71)">

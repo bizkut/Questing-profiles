@@ -126,7 +126,7 @@
 				<Hotspot X="8530.87" Y="1557.36" Z="643.617" />
 			</CustomBehavior>
 		</If>
-		<!-- Q14145: Fresh Chum (47036) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q14145: Fresh Chum (47036) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Rescue at Sea" QuestId="14136" Type="KillMob" MobId="34947" KillCount="8" />
 		<Objective QuestName="Rescue at Sea" QuestId="14136" Type="KillMob" MobId="34907" KillCount="3" />
 		<Objective QuestName="A Leg Up" QuestId="14143" Type="CollectItem" ItemId="46859" CollectCount="10" />
@@ -163,7 +163,7 @@
 		<If Condition="((HasQuest(14141)) &amp;&amp; (!IsQuestCompleted(14141)))">
 			<CustomBehavior File="AbandonQuest" QuestId="14141" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q14145 What Do You Feed a Yeti, Anyway?: helper item 47036 Fresh Chum has no dropping creature near the guide coordinates; item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q14145 What Do You Feed a Yeti, Anyway?: helper item 47036 Fresh Chum has no creature or object source near the guide coordinates; item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14145)) &amp;&amp; (IsQuestCompleted(14145)))">
 			<TurnIn QuestName="What Do You Feed a Yeti, Anyway?" QuestId="14145" TurnInName="Tylos Dawnrunner" TurnInId="34914" X="8422.19" Y="673.261" Z="550.554" />
 		</If>

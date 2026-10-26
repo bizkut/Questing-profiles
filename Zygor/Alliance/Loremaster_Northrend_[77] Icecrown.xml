@@ -884,7 +884,7 @@
 		<If Condition="((HasQuest(13008)) &amp;&amp; (!IsQuestCompleted(13008)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13008" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13008) || IsQuestCompleted(13039) || IsQuestCompleted(13040))">
 			<PickUp QuestName="If There Are Survivors..." QuestId="13044" GiverName="Crusade Commander Entari" GiverId="30223" X="6255.77" Y="-17.8645" Z="410.131" />
 		</If>
 		<TurnIn QuestName="If There Are Survivors..." QuestId="13044" TurnInName="Penumbrius" TurnInId="30227" X="6123.02" Y="-12.6066" Z="383.594" />
@@ -953,7 +953,7 @@
 		<Objective QuestName="The Scourgestone" QuestId="13122" Type="CollectItem" ItemId="43169" CollectCount="15" />
 		<TurnIn QuestName="The Purging Of Scourgeholme" QuestId="13118" TurnInName="The Ebon Watcher" TurnInId="30596" X="6376.66" Y="239.053" Z="396.047" />
 		<TurnIn QuestName="The Scourgestone" QuestId="13122" TurnInName="The Ebon Watcher" TurnInId="30596" X="6376.66" Y="239.053" Z="396.047" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13118) || IsQuestCompleted(13122))">
 			<PickUp QuestName="The Air Stands Still" QuestId="13125" GiverName="The Ebon Watcher" GiverId="30596" X="6376.66" Y="239.053" Z="396.047" />
 		</If>
 		<!-- REVIEW Q13110 The Restless Dead: objective 30546 [UNUSED] Reanimated Crusader x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -973,7 +973,7 @@
 		<If Condition="((HasQuest(13125)) &amp;&amp; (!IsQuestCompleted(13125)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13125" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13110) || IsQuestCompleted(13125) || IsQuestCompleted(13130) || IsQuestCompleted(13135))">
 			<PickUp QuestName="Into The Frozen Heart Of Northrend" QuestId="13139" GiverName="Father Gustav" GiverId="30683" X="6383.94" Y="246.866" Z="396.434" />
 		</If>
 		<TurnIn QuestName="Into The Frozen Heart Of Northrend" QuestId="13139" TurnInName="Highlord Tirion Fordring" TurnInId="30677" X="6259.58" Y="50.4208" Z="388.509" />
@@ -1022,7 +1022,7 @@
 		<If Condition="((HasQuest(12887)) &amp;&amp; (!IsQuestCompleted(12887)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12887" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(12887) || IsQuestCompleted(12892))">
 			<PickUp QuestName="I Have an Idea, But First..." QuestId="12891" GiverName="Baron Sliver" GiverId="29804" X="8395.01" Y="2675.19" Z="657.913" />
 		</If>
 		<Objective QuestName="I Have an Idea, But First..." QuestId="12891" Type="CollectItem" ItemId="41359" CollectCount="1" />
@@ -1065,9 +1065,9 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13073)">
 			<PickUp QuestName="Hope Within the Emerald Nightmare" QuestId="13074" GiverName="Keeper Remulos" GiverId="11832" X="7848.3" Y="-2216.35" Z="470.888" />
 		</If>
-		<!-- Q13074: Emerald Acorn (43006) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13074: Emerald Acorn (43006) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Hope Within the Emerald Nightmare" QuestId="13074" Type="CollectItem" ItemId="44790" CollectCount="3" />
-		<!-- REVIEW Q13074 Hope Within the Emerald Nightmare: helper item 43006 Emerald Acorn has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13074 Hope Within the Emerald Nightmare: helper item 43006 Emerald Acorn has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13074)) &amp;&amp; (IsQuestCompleted(13074)))">
 			<TurnIn QuestName="Hope Within the Emerald Nightmare" QuestId="13074" TurnInName="Keeper Remulos" TurnInId="11832" X="7848.3" Y="-2216.35" Z="470.888" />
 		</If>
@@ -1120,7 +1120,7 @@
 			<PickUp QuestName="Borrowed Technology" QuestId="13291" GiverName="Chief Engineer Boltwrench" GiverId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
 		<TurnIn QuestName="The Shadow Vault" QuestId="12898" TurnInName="Baron Sliver" TurnInId="29343" X="8385.21" Y="2757.21" Z="656.702" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(12898) || IsQuestCompleted(12899))">
 			<PickUp QuestName="The Duke" QuestId="12938" GiverName="Baron Sliver" GiverId="29343" X="8385.21" Y="2757.21" Z="656.702" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77)">
@@ -1163,7 +1163,7 @@
 			<PickUp QuestName="Let the Baron Know" QuestId="12951" GiverName="Vaelen the Flayed" GiverId="30056" X="8429.11" Y="2870.46" Z="606.349" />
 		</If>
 		<TurnIn QuestName="Let the Baron Know" QuestId="12951" TurnInName="Baron Sliver" TurnInId="29343" X="8385.21" Y="2757.21" Z="656.702" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(12992) || IsQuestCompleted(13084))">
 			<PickUp QuestName="Vaelen Has Returned" QuestId="13085" GiverName="Baron Sliver" GiverId="29343" X="8385.21" Y="2757.21" Z="656.702" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77)">
@@ -1329,7 +1329,7 @@
 		<Objective QuestName="Death's Gaze" QuestId="13120" Type="UseObject" ObjectId="192915" UseCount="1" />
 		<Objective QuestName="Death's Gaze" QuestId="13120" Type="UseObject" ObjectId="192916" UseCount="1" />
 		<TurnIn QuestName="Death's Gaze" QuestId="13120" TurnInName="Darkrider Arly" TurnInId="30631" X="6654.15" Y="3224.66" Z="810.501" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13119) || IsQuestCompleted(13120))">
 			<PickUp QuestName="Spill Their Blood" QuestId="13134" GiverName="Darkrider Arly" GiverId="30631" X="6654.15" Y="3224.66" Z="810.501" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77)">
@@ -1373,9 +1373,15 @@
 			<PickUp QuestName="The Runesmiths of Malykriss" QuestId="13140" GiverName="Crusader Olakin Sainrith" GiverId="30708" X="6648.77" Y="3217.7" Z="810.501" />
 		</If>
 		<Objective QuestName="The Runesmiths of Malykriss" QuestId="13140" Type="CollectItem" ItemId="43291" CollectCount="5" />
-		<!-- Q13291: Pile of Bones (43609) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13291: Abandoned Armor (43616) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13291: Abandoned Helm (43610) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13291) &amp;&amp; !IsQuestCompleted(13291) &amp;&amp; GetItemCount(43609) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13291" MobId="193199" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6671.72" Y="1132.24" Z="274.067" />
+		</If>
+		<If Condition="HasQuest(13291) &amp;&amp; !IsQuestCompleted(13291) &amp;&amp; GetItemCount(43616) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13291" MobId="193201" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6685.35" Y="1122.79" Z="275.925" />
+		</If>
+		<If Condition="HasQuest(13291) &amp;&amp; !IsQuestCompleted(13291) &amp;&amp; GetItemCount(43610) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13291" MobId="193200" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6730.6" Y="1168.45" Z="274.451" />
+		</If>
 		<Objective QuestName="Poke and Prod" QuestId="13287" Type="KillMob" MobId="31140" KillCount="5" />
 		<Objective QuestName="Poke and Prod" QuestId="13287" Type="KillMob" MobId="31155" KillCount="5" />
 		<Objective QuestName="Poke and Prod" QuestId="13287" Type="KillMob" MobId="31145" KillCount="5" />
@@ -1411,14 +1417,14 @@
 			<PickUp QuestName="Exploiting an Opening" QuestId="13386" GiverName="Thassarian" GiverId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
 		<!-- SKIP Q13294 Against the Giants: group quest (3 players) -->
-		<!-- REVIEW Q13291 Borrowed Technology: helper item 43609 Pile of Bones has no dropping creature near the guide coordinates; helper item 43616 Abandoned Armor has no dropping creature near the guide coordinates; helper item 43610 Abandoned Helm has no dropping creature near the guide coordinates; objective 31364 Frostbrood Skytalon KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13291 Borrowed Technology: objective 31364 Frostbrood Skytalon KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13291)) &amp;&amp; (IsQuestCompleted(13291)))">
 			<TurnIn QuestName="Borrowed Technology" QuestId="13291" TurnInName="Chief Engineer Boltwrench" TurnInId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
 		<If Condition="((HasQuest(13291)) &amp;&amp; (!IsQuestCompleted(13291)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13291" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13291)">
 			<PickUp QuestName="Killohertz" QuestId="13383" GiverName="Chief Engineer Boltwrench" GiverId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
 		<TurnIn QuestName="Exploiting an Opening" QuestId="13386" TurnInName="Captain Kendall" TurnInId="31444" X="5802.4" Y="2198.67" Z="514.367" />
@@ -1482,7 +1488,7 @@
 			<PickUp QuestName="Sneak Preview" QuestId="13315" GiverName="Thassarian" GiverId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
 		<TurnIn QuestName="Killohertz" QuestId="13383" TurnInName="Kibli Killohertz" TurnInId="32444" X="7623.05" Y="2060.18" Z="600.359" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13263) || IsQuestCompleted(13389))">
 			<PickUp QuestName="Parting Gifts" QuestId="13168" GiverName="Keritose Bloodblade" GiverId="30946" X="8401.19" Y="2681.06" Z="657.544" />
 		</If>
 		<!-- REVIEW Q13168 Parting Gifts: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1525,7 +1531,7 @@
 		<Objective QuestName="Seeds of Chaos" QuestId="13172" Type="KillMob" MobId="31555" KillCount="80" />
 		<TurnIn QuestName="Seeds of Chaos" QuestId="13172" TurnInName="Keritose Bloodblade" TurnInId="30946" X="8401.19" Y="2681.06" Z="657.544" />
 		<TurnIn QuestName="Amidst the Confusion" QuestId="13174" TurnInName="Keritose Bloodblade" TurnInId="30946" X="8401.19" Y="2681.06" Z="657.544" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13172) || IsQuestCompleted(13174))">
 			<PickUp QuestName="Vereth the Cunning" QuestId="13155" GiverName="Keritose Bloodblade" GiverId="30946" X="8401.19" Y="2681.06" Z="657.544" />
 		</If>
 		<!-- REVIEW Q13121 Through the Eye: objective 30750 Through the Eye Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1645,7 +1651,7 @@
 		<Objective QuestName="A Visit to the Doctor" QuestId="13152" Type="UseObject" ObjectId="193025" UseCount="1" />
 		<Objective QuestName="A Visit to the Doctor" QuestId="13152" Type="KillMob" MobId="30993" KillCount="1" />
 		<TurnIn QuestName="A Visit to the Doctor" QuestId="13152" TurnInName="Darkrider Arly" TurnInId="30631" X="6654.15" Y="3224.66" Z="810.501" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13152) || IsQuestCompleted(13211))">
 			<PickUp QuestName="Killing Two Scourge With One Skeleton" QuestId="13144" GiverName="Darkrider Arly" GiverId="30631" X="6654.15" Y="3224.66" Z="810.501" />
 		</If>
 		<!-- REVIEW Q13144 Killing Two Scourge With One Skeleton: objective 30995 Patches Chain Target x3: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1666,9 +1672,13 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13212)">
 			<PickUp QuestName="Putting Olakin Back Together Again" QuestId="13220" GiverName="Darkrider Arly" GiverId="30631" X="6654.15" Y="3224.66" Z="810.501" />
 		</If>
-		<!-- Q13220: Spool of Thread (43567) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13220: The Doctor's Cleaver (43568) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q13220 Putting Olakin Back Together Again: helper item 43567 Spool of Thread has no dropping creature near the guide coordinates; helper item 43568 The Doctor's Cleaver has no dropping creature near the guide coordinates; objective 31235 Crusader Olakin Sainrith x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(13220) &amp;&amp; !IsQuestCompleted(13220) &amp;&amp; GetItemCount(43567) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="13220" MobId="193091" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="6636.1" Y="3211.47" Z="668.52" />
+		</If>
+		<If Condition="HasQuest(13220) &amp;&amp; !IsQuestCompleted(13220) &amp;&amp; GetItemCount(43568) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="13220" MobId="193092" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="6598.86" Y="3145.67" Z="667.008" />
+		</If>
+		<!-- REVIEW Q13220 Putting Olakin Back Together Again: objective 31235 Crusader Olakin Sainrith x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13220)) &amp;&amp; (IsQuestCompleted(13220)))">
 			<TurnIn QuestName="Putting Olakin Back Together Again" QuestId="13220" TurnInName="Darkrider Arly" TurnInId="30631" X="6654.15" Y="3224.66" Z="810.501" />
 		</If>
@@ -1828,7 +1838,7 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13320)">
 			<PickUp QuestName="Retest Now" QuestId="13321" GiverName="Chief Engineer Boltwrench" GiverId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
-		<!-- Q13342: Dark Matter (44434) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13342: Dark Matter (44434) is needed but nothing near the guide coordinates drops it -->
 		<If Condition="HasQuest(13345) &amp;&amp; !IsQuestCompleted(13345) &amp;&amp; GetItemCount(44459) &lt; 1">
 			<CustomBehavior File="CollectThings" QuestId="13345" CollectItemId="44459" CollectItemCount="1" HuntingGroundRadius="120" MobId="32297" X="8191.2" Y="2154.79" Z="499.738">
 				<Hotspot X="8191.2" Y="2154.79" Z="499.738" />
@@ -1856,11 +1866,11 @@
 				<Hotspot X="8216" Y="2248.72" Z="499.82" />
 			</CustomBehavior>
 		</If>
-		<!-- Q13321: Writhing Mass (44304) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13321: Writhing Mass (44304) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Sindragosa's Fall" QuestId="13397" Type="KillMob" MobId="31731" KillCount="5" />
 		<Objective QuestName="Sindragosa's Fall" QuestId="13397" Type="KillMob" MobId="31738" KillCount="8" />
 		<Objective QuestName="Sindragosa's Fall" QuestId="13397" Type="KillMob" MobId="31783" KillCount="3" />
-		<!-- REVIEW Q13342 Not a Bug: helper item 44434 Dark Matter has no dropping creature near the guide coordinates; objective 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13342 Not a Bug: helper item 44434 Dark Matter has no creature or object source near the guide coordinates; objective 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13342)) &amp;&amp; (IsQuestCompleted(13342)))">
 			<TurnIn QuestName="Not a Bug" QuestId="13342" TurnInName="Thassarian" TurnInId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
@@ -1879,7 +1889,7 @@
 			<PickUp QuestName="Raise the Barricades" QuestId="13332" GiverName="Thassarian" GiverId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
 		<!-- SKIP Q13346 No Rest For The Wicked: group quest (5 players) -->
-		<!-- REVIEW Q13321 Retest Now: helper item 44304 Writhing Mass has no dropping creature near the guide coordinates; objective 32266 Writhing Mass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13321 Retest Now: helper item 44304 Writhing Mass has no creature or object source near the guide coordinates; objective 32266 Writhing Mass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13321)) &amp;&amp; (IsQuestCompleted(13321)))">
 			<TurnIn QuestName="Retest Now" QuestId="13321" TurnInName="Chief Engineer Boltwrench" TurnInId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
@@ -1894,11 +1904,19 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13398)">
 			<PickUp QuestName="Time for Answers" QuestId="13399" GiverName="Matthias Lehner" GiverId="32423" X="7854.05" Y="957.014" Z="450.898" />
 		</If>
-		<!-- Q13346: Alumeth's Skull (44476) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13346: Alumeth's Heart (44477) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13346: Alumeth's Scepter (44478) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13346: Alumeth's Robes (44479) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13346: Alumeth's Remains (44480) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13346) &amp;&amp; !IsQuestCompleted(13346) &amp;&amp; GetItemCount(44476) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="13346" MobId="193943" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="8172.78" Y="2277.67" Z="499.737" />
+		</If>
+		<If Condition="HasQuest(13346) &amp;&amp; !IsQuestCompleted(13346) &amp;&amp; GetItemCount(44477) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="13346" MobId="193944" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="8145.19" Y="2131.56" Z="499.737" />
+		</If>
+		<If Condition="HasQuest(13346) &amp;&amp; !IsQuestCompleted(13346) &amp;&amp; GetItemCount(44478) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="13346" MobId="193945" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="8182.36" Y="2130.85" Z="499.737" />
+		</If>
+		<If Condition="HasQuest(13346) &amp;&amp; !IsQuestCompleted(13346) &amp;&amp; GetItemCount(44479) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="13346" MobId="193946" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="8216.51" Y="2120.83" Z="499.737" />
+		</If>
+		<!-- Q13346: Alumeth's Remains (44480) is needed but nothing near the guide coordinates drops it -->
 		<TurnIn QuestName="Time for Answers" QuestId="13399" TurnInName="Matthias Lehner" TurnInId="32497" X="6364.04" Y="2328.19" Z="473.12" />
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13399)">
 			<PickUp QuestName="The Hunter and the Prince" QuestId="13400" GiverName="Matthias Lehner" GiverId="32497" X="6364.04" Y="2328.19" Z="473.12" />
@@ -1920,7 +1938,7 @@
 		<If Condition="((HasQuest(13332)) &amp;&amp; (!IsQuestCompleted(13332)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13332" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13346 No Rest For The Wicked: group quest (5 players); helper item 44476 Alumeth's Skull has no dropping creature near the guide coordinates; helper item 44477 Alumeth's Heart has no dropping creature near the guide coordinates; helper item 44478 Alumeth's Scepter has no dropping creature near the guide coordinates; helper item 44479 Alumeth's Robes has no dropping creature near the guide coordinates; helper item 44480 Alumeth's Remains has no dropping creature near the guide coordinates; objective 32300 Alumeth the Ascended x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13346 No Rest For The Wicked: group quest (5 players); helper item 44480 Alumeth's Remains has no creature or object source near the guide coordinates; objective 32300 Alumeth the Ascended x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13346)) &amp;&amp; (IsQuestCompleted(13346)))">
 			<TurnIn QuestName="No Rest For The Wicked" QuestId="13346" TurnInName="Thassarian" TurnInId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>

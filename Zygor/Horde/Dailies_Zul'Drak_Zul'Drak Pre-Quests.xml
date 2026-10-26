@@ -82,7 +82,7 @@
 		<If Condition="((HasQuest(12740)) &amp;&amp; (!IsQuestCompleted(12740)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12740" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 74)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; (IsQuestCompleted(12503) || IsQuestCompleted(12740))">
 			<PickUp QuestName="Pa'Troll" QuestId="12596" GiverName="Commander Kunz" GiverId="28039" X="5450.91" Y="-2610.93" Z="306.993" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; HasQuest(12596)">

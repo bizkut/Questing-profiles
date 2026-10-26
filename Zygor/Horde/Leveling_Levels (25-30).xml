@@ -662,24 +662,20 @@
 		</If>
 		<Objective QuestName="Ordanus" QuestId="1088" Type="CollectItem" ItemId="5686" CollectCount="1" />
 		<TurnIn QuestName="Sharptalon's Claw" QuestId="2" TurnInName="Senani Thunderheart" TurnInId="12696" X="2310.52" Y="-2554.7" Z="101.948" />
-		<If Condition="(Me.Level &gt;= 20)">
+		<If Condition="(Me.Level &gt;= 20) &amp;&amp; (IsQuestCompleted(2) || IsQuestCompleted(23) || IsQuestCompleted(24))">
 			<PickUp QuestName="The Hunt Completed" QuestId="247" GiverName="Senani Thunderheart" GiverId="12696" X="2310.52" Y="-2554.7" Z="101.948" />
 		</If>
 		<TurnIn QuestName="Ordanus" QuestId="1088" TurnInName="Braelyn Firehand" TurnInId="4198" X="949.228" Y="1002.23" Z="103.836" />
 		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(1088)">
 			<PickUp QuestName="The Den" QuestId="1089" GiverName="Braelyn Firehand" GiverId="4198" X="949.228" Y="1002.23" Z="103.836" />
 		</If>
-		<!-- Q1089: Gatekeeper's Key (5687) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(1089) &amp;&amp; !IsQuestCompleted(1089) &amp;&amp; GetItemCount(5687) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="1089" MobId="19595" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="2415.62" Y="1785.69" Z="393.665" />
+		</If>
 		<Objective QuestName="The Den" QuestId="1089" Type="CollectItem" ItemId="5690" CollectCount="1" />
 		<Objective QuestName="The Den" QuestId="1089" Type="CollectItem" ItemId="5691" CollectCount="1" />
 		<Objective QuestName="The Den" QuestId="1089" Type="CollectItem" ItemId="5689" CollectCount="1" />
-		<!-- REVIEW Q1089 The Den: helper item 5687 Gatekeeper's Key has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(1089)) &amp;&amp; (IsQuestCompleted(1089)))">
-			<TurnIn QuestName="The Den" QuestId="1089" TurnInName="Talon Den Hoard" TurnInId="19599" TurnInType="Object" X="2562.67" Y="1947.02" Z="347.03" />
-		</If>
-		<If Condition="((HasQuest(1089)) &amp;&amp; (!IsQuestCompleted(1089)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1089" Type="Incomplete" />
-		</If>
+		<TurnIn QuestName="The Den" QuestId="1089" TurnInName="Talon Den Hoard" TurnInId="19599" TurnInType="Object" X="2562.67" Y="1947.02" Z="347.03" />
 		<CustomBehavior File="LoadProfile" ProfileName="Leveling_Levels (30-35)" />
 	</QuestOrder>
 </HBProfile>

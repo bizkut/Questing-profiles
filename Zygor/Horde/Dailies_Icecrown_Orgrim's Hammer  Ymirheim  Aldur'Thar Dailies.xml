@@ -106,8 +106,8 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13356)">
 			<PickUp QuestName="Retest Now" QuestId="13357" GiverName="Chief Engineer Copperclaw" GiverId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
-		<!-- Q13357: Writhing Mass (44304) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13365: Dark Matter (44434) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13357: Writhing Mass (44304) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q13365: Dark Matter (44434) is needed but nothing near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13373)">
 			<PickUp QuestName="Riding the Wavelength: The Bombardment" QuestId="13406" GiverName="Fringe Engineer Tezzla" GiverId="32430" X="7897.96" Y="2057.59" Z="600.36" />
 		</If>
@@ -160,9 +160,15 @@
 		<If Condition="((HasQuest(13301)) &amp;&amp; (!IsQuestCompleted(13301)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13301" Type="Incomplete" />
 		</If>
-		<!-- Q13261: Abandoned Armor (43616) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13261: Abandoned Helm (43610) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13261: Pile of Bones (43609) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13261) &amp;&amp; !IsQuestCompleted(13261) &amp;&amp; GetItemCount(43616) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13261" MobId="193201" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6723.57" Y="1041.84" Z="287.952" />
+		</If>
+		<If Condition="HasQuest(13261) &amp;&amp; !IsQuestCompleted(13261) &amp;&amp; GetItemCount(43610) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13261" MobId="193200" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6759.65" Y="1025.41" Z="294.841" />
+		</If>
+		<If Condition="HasQuest(13261) &amp;&amp; !IsQuestCompleted(13261) &amp;&amp; GetItemCount(43609) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13261" MobId="193199" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6759.61" Y="1049.35" Z="289.959" />
+		</If>
 		<!-- REVIEW Q13353 Drag and Drop: collect 32229 Drag Drop KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13353)) &amp;&amp; (IsQuestCompleted(13353)))">
 			<TurnIn QuestName="Drag and Drop" QuestId="13353" TurnInName="Koltira Deathweaver" TurnInId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
@@ -170,7 +176,7 @@
 		<If Condition="((HasQuest(13353)) &amp;&amp; (!IsQuestCompleted(13353)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13353" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13365 Not a Bug: helper item 44434 Dark Matter has no dropping creature near the guide coordinates; objective 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13365 Not a Bug: helper item 44434 Dark Matter has no creature or object source near the guide coordinates; objective 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13365)) &amp;&amp; (IsQuestCompleted(13365)))">
 			<TurnIn QuestName="Not a Bug" QuestId="13365" TurnInName="Koltira Deathweaver" TurnInId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
 		</If>
@@ -194,14 +200,14 @@
 		<If Condition="((HasQuest(13302)) &amp;&amp; (!IsQuestCompleted(13302)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13302" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13261 Volatility: helper item 43616 Abandoned Armor has no dropping creature near the guide coordinates; helper item 43610 Abandoned Helm has no dropping creature near the guide coordinates; helper item 43609 Pile of Bones has no dropping creature near the guide coordinates; objective 31364 Frostbrood Skytalon KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13261 Volatility: objective 31364 Frostbrood Skytalon KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13261)) &amp;&amp; (IsQuestCompleted(13261)))">
 			<TurnIn QuestName="Volatility" QuestId="13261" TurnInName="Chief Engineer Copperclaw" TurnInId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
 		<If Condition="((HasQuest(13261)) &amp;&amp; (!IsQuestCompleted(13261)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13261" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13357 Retest Now: helper item 44304 Writhing Mass has no dropping creature near the guide coordinates; objective 32266 Writhing Mass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13357 Retest Now: helper item 44304 Writhing Mass has no creature or object source near the guide coordinates; objective 32266 Writhing Mass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13357)) &amp;&amp; (IsQuestCompleted(13357)))">
 			<TurnIn QuestName="Retest Now" QuestId="13357" TurnInName="Chief Engineer Copperclaw" TurnInId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>

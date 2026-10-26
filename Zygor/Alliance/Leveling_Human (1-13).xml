@@ -1034,7 +1034,7 @@
 				<PickUp QuestName="The Tome of Divinity" QuestId="1642" GiverName="Tome of Divinity" GiverId="6775" GiverType="Item" />
 			</If>
 			<TurnIn QuestName="The Tome of Divinity" QuestId="1642" TurnInName="Duthorian Rall" TurnInId="6171" X="-8546" Y="845.796" Z="106.601" />
-			<If Condition="((Me.Race == WoWRace.Human)) &amp;&amp; ((Me.Class == WoWClass.Paladin)) &amp;&amp; (Me.Level &gt;= 12)">
+			<If Condition="((Me.Race == WoWRace.Human)) &amp;&amp; ((Me.Class == WoWClass.Paladin)) &amp;&amp; (Me.Level &gt;= 12) &amp;&amp; (IsQuestCompleted(1642) || IsQuestCompleted(2998) || IsQuestCompleted(3681))">
 				<PickUp QuestName="The Tome of Divinity" QuestId="1643" GiverName="Duthorian Rall" GiverId="6171" X="-8546" Y="845.796" Z="106.601" />
 			</If>
 		</If>

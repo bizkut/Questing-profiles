@@ -770,7 +770,7 @@
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3913)">
 			<PickUp QuestName="Linken's Sword" QuestId="3914" GiverName="A Conspicuous Gravestone" GiverId="148504" GiverType="Object" X="-7211.86" Y="-3931.95" Z="8.9327" />
 		</If>
-		<!-- Q4513: Empty Pure Sample Jar (11953) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q4513: Empty Pure Sample Jar (11953) is needed but nothing near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(4289)">
 			<PickUp QuestName="The Mighty U'cha" QuestId="4301" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
@@ -909,7 +909,7 @@
 		<TurnIn QuestName="Toxic Horrors" QuestId="5086" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		<TurnIn QuestName="Moontouched Wildkin" QuestId="978" TurnInName="Erelas Ambersky" TurnInId="7916" X="8707.46" Y="988.88" Z="14.1964" />
 		<TurnIn QuestName="The New Frontier" QuestId="1019" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" X="10173" Y="2569.92" Z="1366.96" />
-		<If Condition="(Me.Level &gt;= 54)">
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; (IsQuestCompleted(1015) || IsQuestCompleted(1019) || IsQuestCompleted(1047))">
 			<PickUp QuestName="The New Frontier" QuestId="6761" GiverName="Arch Druid Fandral Staghelm" GiverId="3516" X="10173" Y="2569.92" Z="1366.96" />
 		</If>
 		<TurnIn QuestName="The New Frontier" QuestId="6761" TurnInName="Mathrengyl Bearwalker" TurnInId="4217" X="10179" Y="2563.98" Z="1340.13" />
@@ -917,13 +917,13 @@
 			<PickUp QuestName="Rabine Saturna" QuestId="6762" GiverName="Mathrengyl Bearwalker" GiverId="4217" X="10179" Y="2563.98" Z="1340.13" />
 		</If>
 		<TurnIn QuestName="Rabine Saturna" QuestId="6762" TurnInName="Rabine Saturna" TurnInId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
-		<If Condition="(Me.Level &gt;= 54)">
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; (IsQuestCompleted(1123) || IsQuestCompleted(6762))">
 			<PickUp QuestName="Wasteland" QuestId="1124" GiverName="Rabine Saturna" GiverId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
 		</If>
 		<If Condition="(Me.Level &gt;= 54)">
 			<PickUp QuestName="Taking Back Silithus" QuestId="8275" GiverName="Cenarion Emissary Jademoon" GiverId="15187" X="-4818.88" Y="-1176.41" Z="502.278" />
 		</If>
-		<!-- REVIEW Q4513 A Little Slime Goes a Long Way: helper item 11953 Empty Pure Sample Jar has no dropping creature near the guide coordinates; item 11954 Filled Pure Sample Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q4513 A Little Slime Goes a Long Way: helper item 11953 Empty Pure Sample Jar has no creature or object source near the guide coordinates; item 11954 Filled Pure Sample Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4513)) &amp;&amp; (IsQuestCompleted(4513)))">
 			<TurnIn QuestName="A Little Slime Goes a Long Way" QuestId="4513" TurnInName="Laris Geardawdle" TurnInId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
 		</If>
@@ -1158,7 +1158,7 @@
 			<PickUp QuestName="Good Natured Emma" QuestId="5048" GiverName="Royal Factor Bathrilor" GiverId="10782" X="-8552.63" Y="729.489" Z="108.848" />
 		</If>
 		<TurnIn QuestName="Good Natured Emma" QuestId="5048" TurnInName="Ol' Emma" TurnInId="3520" X="-8656.45" Y="676.937" Z="108.141" />
-		<If Condition="(Me.Level &gt;= 50)">
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(5048) || IsQuestCompleted(5049))">
 			<PickUp QuestName="Good Luck Charm" QuestId="5050" GiverName="Ol' Emma" GiverId="3520" X="-8656.45" Y="676.937" Z="108.141" />
 		</If>
 		<If Condition="(Me.Level &gt;= 56)">
@@ -1313,7 +1313,7 @@
 		<TurnIn QuestName="Demon Dogs" QuestId="5542" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<TurnIn QuestName="Blood Tinged Skies" QuestId="5543" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<TurnIn QuestName="Carrion Grubbage" QuestId="5544" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
-		<If Condition="(Me.Level &gt;= 52)">
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; (IsQuestCompleted(5542) || IsQuestCompleted(5543) || IsQuestCompleted(5544))">
 			<PickUp QuestName="Redemption" QuestId="5742" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		</If>
 		<!-- REVIEW Q5742 Redemption: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

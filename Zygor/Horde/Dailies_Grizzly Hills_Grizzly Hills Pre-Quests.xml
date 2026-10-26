@@ -57,7 +57,7 @@
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Horde\Dailies_Grizzly Hills_Grizzly Hills Pre-Quests");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Northrend" />
 		</If>
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; (IsQuestCompleted(12208) || IsQuestCompleted(12210))">
 			<PickUp QuestName="Filling the Cages" QuestId="11984" GiverName="Samir" GiverId="26424" X="3850.49" Y="-1960.48" Z="208.511" />
 		</If>
 		<!-- REVIEW Q11984 Filling the Cages: use item 35736: target 26444 Quest Invisman - Filling the Cages has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -70,8 +70,10 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11984)">
 			<PickUp QuestName="Truce?" QuestId="11989" GiverName="Drakuru" GiverId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
-		<!-- Q11989: Dull Carving Knife (38083) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q11989 Truce?: helper item 38083 Dull Carving Knife has no dropping creature near the guide coordinates; use item 38083: target 27921 Drakuru Handshake KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11989) &amp;&amp; !IsQuestCompleted(11989) &amp;&amp; GetItemCount(38083) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="11989" MobId="190208" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="3843.83" Y="-1978.63" Z="210.318" />
+		</If>
+		<!-- REVIEW Q11989 Truce?: use item 38083: target 27921 Drakuru Handshake KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11989)) &amp;&amp; (IsQuestCompleted(11989)))">
 			<TurnIn QuestName="Truce?" QuestId="11989" TurnInName="Drakuru" TurnInId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
@@ -93,8 +95,10 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11990)">
 			<PickUp QuestName="Scourgekabob" QuestId="12484" GiverName="Prigmon" GiverId="26519" X="3882.44" Y="-1936.45" Z="209.169" />
 		</If>
-		<!-- Q12484: Scourged Troll Mummy (38149) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q12484 Scourgekabob: helper item 38149 Scourged Troll Mummy has no dropping creature near the guide coordinates; use item 38149: target 27929 Mummified Carcass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(12484) &amp;&amp; !IsQuestCompleted(12484) &amp;&amp; GetItemCount(38149) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12484" MobId="190223" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="3876.54" Y="-1934.75" Z="208.894" />
+		</If>
+		<!-- REVIEW Q12484 Scourgekabob: use item 38149: target 27929 Mummified Carcass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12484)) &amp;&amp; (IsQuestCompleted(12484)))">
 			<TurnIn QuestName="Scourgekabob" QuestId="12484" TurnInName="Mack Fearsen" TurnInId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
 		</If>

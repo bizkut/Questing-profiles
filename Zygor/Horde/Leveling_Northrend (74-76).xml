@@ -1142,7 +1142,7 @@
 		<If Condition="((HasQuest(12127)) &amp;&amp; (!IsQuestCompleted(12127)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12127" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12125) || IsQuestCompleted(12126) || IsQuestCompleted(12127))">
 			<PickUp QuestName="The Power to Destroy" QuestId="12132" GiverName="Koltira Deathweaver" GiverId="26581" X="3798.49" Y="1601.21" Z="89.7437" />
 		</If>
 		<Objective QuestName="The Power to Destroy" QuestId="12132" Type="KillMob" MobId="26966" KillCount="6" />
@@ -1204,7 +1204,7 @@
 			<PickUp QuestName="Informing the Queen" QuestId="12124" GiverName="Tariolstrasz" GiverId="26443" X="3549.37" Y="379.35" Z="52.3397" />
 		</If>
 		<TurnIn QuestName="Informing the Queen" QuestId="12124" TurnInName="Alexstrasza the Life-Binder" TurnInId="26917" X="3531.02" Y="271.403" Z="342.804" />
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12123) || IsQuestCompleted(12124))">
 			<PickUp QuestName="Report to Lord Afrasastrasz" QuestId="12435" GiverName="Alexstrasza the Life-Binder" GiverId="26917" X="3531.02" Y="271.403" Z="342.804" />
 		</If>
 		<TurnIn QuestName="Report to Lord Afrasastrasz" QuestId="12435" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />
@@ -1442,7 +1442,7 @@
 			<PickUp QuestName="Audience With The Dragon Queen" QuestId="12496" GiverName="Saurfang the Younger" GiverId="25257" X="4899.52" Y="1343.81" Z="231.016" />
 		</If>
 		<TurnIn QuestName="Audience With The Dragon Queen" QuestId="12496" TurnInName="Alexstrasza the Life-Binder" TurnInId="26917" X="3531.02" Y="271.403" Z="342.804" />
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12495) || IsQuestCompleted(12496))">
 			<PickUp QuestName="Galakrond and the Scourge" QuestId="12497" GiverName="Alexstrasza the Life-Binder" GiverId="26917" X="3531.02" Y="271.403" Z="342.804" />
 		</If>
 		<TurnIn QuestName="Galakrond and the Scourge" QuestId="12497" TurnInName="Torastrasza" TurnInId="26949" X="3580.81" Y="289.572" Z="340.923" />
@@ -1512,7 +1512,7 @@
 			<PickUp QuestName="The Conqueror's Task" QuestId="12468" GiverName="Conqueror Krenna" GiverId="26860" X="3270.89" Y="-2197.23" Z="117.456" />
 		</If>
 		<TurnIn QuestName="The Conqueror's Task" QuestId="12468" TurnInName="Sergeant Nazgrim" TurnInId="27388" X="3274.94" Y="-2213.25" Z="117.112" />
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12468)">
 			<PickUp QuestName="A Show of Strength" QuestId="12257" GiverName="Sergeant Nazgrim" GiverId="27388" X="3274.94" Y="-2213.25" Z="117.112" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73)">
@@ -1545,7 +1545,7 @@
 		<Objective QuestName="The Flamebinders' Secrets" QuestId="12256" Type="CollectItem" ItemId="37229" CollectCount="3" />
 		<TurnIn QuestName="A Show of Strength" QuestId="12257" TurnInName="Sergeant Nazgrim" TurnInId="27388" X="3274.94" Y="-2213.25" Z="117.112" />
 		<TurnIn QuestName="The Flamebinders' Secrets" QuestId="12256" TurnInName="Sergeant Nazgrim" TurnInId="27388" X="3274.94" Y="-2213.25" Z="117.112" />
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; (IsQuestCompleted(12256) || IsQuestCompleted(12257))">
 			<PickUp QuestName="The Thane of Voldrune" QuestId="12259" GiverName="Sergeant Nazgrim" GiverId="27388" X="3274.94" Y="-2213.25" Z="117.112" />
 		</If>
 		<Objective QuestName="The Thane of Voldrune" QuestId="12259" Type="KillMob" MobId="27377" KillCount="1" />
@@ -1586,7 +1586,7 @@
 			<PickUp QuestName="Eyes Above" QuestId="12453" GiverName="Windseer Grayhorn" GiverId="27262" X="3316.83" Y="-2291.84" Z="110.191" />
 		</If>
 		<TurnIn QuestName="Good Troll Hunting" QuestId="12208" TurnInName="Samir" TurnInId="26424" X="3850.49" Y="-1960.48" Z="208.511" />
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; (IsQuestCompleted(12208) || IsQuestCompleted(12210))">
 			<PickUp QuestName="Filling the Cages" QuestId="11984" GiverName="Samir" GiverId="26424" X="3850.49" Y="-1960.48" Z="208.511" />
 		</If>
 		<!-- REVIEW Q11984 Filling the Cages: use item 35736: target 26444 Quest Invisman - Filling the Cages has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1599,8 +1599,10 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11984)">
 			<PickUp QuestName="Truce?" QuestId="11989" GiverName="Drakuru" GiverId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
-		<!-- Q11989: Dull Carving Knife (38083) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q11989 Truce?: helper item 38083 Dull Carving Knife has no dropping creature near the guide coordinates; use item 38083: target 27921 Drakuru Handshake KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11989) &amp;&amp; !IsQuestCompleted(11989) &amp;&amp; GetItemCount(38083) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="11989" MobId="190208" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="3843.83" Y="-1978.63" Z="210.318" />
+		</If>
+		<!-- REVIEW Q11989 Truce?: use item 38083: target 27921 Drakuru Handshake KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11989)) &amp;&amp; (IsQuestCompleted(11989)))">
 			<TurnIn QuestName="Truce?" QuestId="11989" TurnInName="Drakuru" TurnInId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
@@ -1625,8 +1627,10 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11990)">
 			<PickUp QuestName="Scourgekabob" QuestId="12484" GiverName="Prigmon" GiverId="26519" X="3882.44" Y="-1936.45" Z="209.169" />
 		</If>
-		<!-- Q12484: Scourged Troll Mummy (38149) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q12484 Scourgekabob: helper item 38149 Scourged Troll Mummy has no dropping creature near the guide coordinates; use item 38149: target 27929 Mummified Carcass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(12484) &amp;&amp; !IsQuestCompleted(12484) &amp;&amp; GetItemCount(38149) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12484" MobId="190223" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="3876.54" Y="-1934.75" Z="208.894" />
+		</If>
+		<!-- REVIEW Q12484 Scourgekabob: use item 38149: target 27929 Mummified Carcass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12484)) &amp;&amp; (IsQuestCompleted(12484)))">
 			<TurnIn QuestName="Scourgekabob" QuestId="12484" TurnInName="Mack Fearsen" TurnInId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
 		</If>
@@ -1767,7 +1771,7 @@
 		<Objective QuestName="The Bear God's Offspring" QuestId="12231" Type="KillMob" MobId="27321" KillCount="1" />
 		<Objective QuestName="A Possible Link" QuestId="12229" Type="CollectItem" ItemId="37251" CollectCount="8" />
 		<TurnIn QuestName="Ruuna the Blind" QuestId="12425" TurnInName="Ruuna the Blind" TurnInId="27581" X="3836.79" Y="-3421.57" Z="293.104" />
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; (IsQuestCompleted(12161) || IsQuestCompleted(12425))">
 			<PickUp QuestName="Ruuna's Request" QuestId="12328" GiverName="Ruuna the Blind" GiverId="27581" X="3836.79" Y="-3421.57" Z="293.104" />
 		</If>
 		<Objective QuestName="Ruuna's Request" QuestId="12328" Type="CollectItem" ItemId="37662" CollectCount="4" />

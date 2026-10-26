@@ -680,7 +680,7 @@
 			<PickUp QuestName="Botanical Legwork" QuestId="9799" GiverName="Apprentice Vishael" GiverId="20233" X="-4059.43" Y="-13718.8" Z="72.9697" />
 		</If>
 		<TurnIn QuestName="Replenishing the Healing Crystals" QuestId="9280" TurnInName="Proenitus" TurnInId="16477" X="-4039.4" Y="-13773.7" Z="75.3083" />
-		<If Condition="IsQuestCompleted(9280)">
+		<If Condition="(IsQuestCompleted(9280) || IsQuestCompleted(9369))">
 			<PickUp QuestName="Urgent Delivery!" QuestId="9409" GiverName="Proenitus" GiverId="16477" X="-4039.4" Y="-13773.7" Z="75.3083" />
 		</If>
 		<TurnIn QuestName="Urgent Delivery!" QuestId="9409" TurnInName="Zalduun" TurnInId="16502" X="-4120.99" Y="-13762.1" Z="73.588" />
@@ -1088,7 +1088,7 @@
 		</If>
 		<TurnIn QuestName="Murlocs... Why Here? Why Now?" QuestId="9562" TurnInName="Gurf" TurnInId="17441" X="-3431.17" Y="-12316.5" Z="14.2924" />
 		<TurnIn QuestName="Gurf's Dignity" QuestId="9564" TurnInName="Gurf" TurnInId="17441" X="-3431.17" Y="-12316.5" Z="14.2924" />
-		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(9559)">
+		<If Condition="(Me.Level &gt;= 7) &amp;&amp; (IsQuestCompleted(9559) || IsQuestCompleted(9560))">
 			<PickUp QuestName="Search Stillpine Hold" QuestId="9565" GiverName="High Chief Stillpine" GiverId="17440" X="-3353.36" Y="-12400.5" Z="26.0876" />
 		</If>
 		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(9562)">

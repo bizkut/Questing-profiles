@@ -738,7 +738,7 @@
 		<If Condition="(Me.Level &gt;= 62)">
 			<PickUp QuestName="Rather Be Fishin'" QuestId="10037" GiverName="Seth" GiverId="18653" X="-1612.66" Y="5315.41" Z="-40.2089" />
 		</If>
-		<If Condition="(Me.Level &gt;= 62)">
+		<If Condition="(Me.Level &gt;= 62) &amp;&amp; (IsQuestCompleted(10862) || IsQuestCompleted(10863) || IsQuestCompleted(10908))">
 			<PickUp QuestName="The Eyes of Skettis" QuestId="10847" GiverName="Rilak the Redeemed" GiverId="22292" X="-1656.93" Y="5448.97" Z="-40.3227" />
 		</If>
 		<!-- REVIEW Q10211 City of Light: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

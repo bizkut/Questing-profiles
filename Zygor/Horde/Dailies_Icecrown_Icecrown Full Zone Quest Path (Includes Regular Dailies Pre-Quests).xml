@@ -808,7 +808,7 @@
 		<If Condition="((HasQuest(13008)) &amp;&amp; (!IsQuestCompleted(13008)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13008" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13008) || IsQuestCompleted(13039) || IsQuestCompleted(13040))">
 			<PickUp QuestName="If There Are Survivors..." QuestId="13044" GiverName="Crusade Commander Entari" GiverId="30223" X="6255.77" Y="-17.8645" Z="410.131" />
 		</If>
 		<TurnIn QuestName="If There Are Survivors..." QuestId="13044" TurnInName="Penumbrius" TurnInId="30227" X="6123.02" Y="-12.6066" Z="383.594" />
@@ -879,7 +879,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="13118" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="The Scourgestone" QuestId="13122" TurnInName="The Ebon Watcher" TurnInId="30596" X="6376.66" Y="239.053" Z="396.047" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13118) || IsQuestCompleted(13122))">
 			<PickUp QuestName="The Air Stands Still" QuestId="13125" GiverName="The Ebon Watcher" GiverId="30596" X="6376.66" Y="239.053" Z="396.047" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="13125" ItemId="43206" MobId="30829" NumOfTimes="1" Range="5" CollectionDistance="200" X="6839.02" Y="594.445" Z="427.23" />
@@ -897,7 +897,7 @@
 		<Objective QuestName="The Stone That Started A Revolution" QuestId="13130" Type="CollectItem" ItemId="43218" CollectCount="10" />
 		<TurnIn QuestName="The Stone That Started A Revolution" QuestId="13130" TurnInName="Crusade Architect Silas" TurnInId="30686" X="6370.63" Y="232.238" Z="396.046" />
 		<TurnIn QuestName="It Could Kill Us All" QuestId="13135" TurnInName="Crusade Engineer Spitzpatrick" TurnInId="30714" X="6371.69" Y="239.699" Z="396.9" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13110) || IsQuestCompleted(13125) || IsQuestCompleted(13130) || IsQuestCompleted(13135))">
 			<PickUp QuestName="Into The Frozen Heart Of Northrend" QuestId="13139" GiverName="Father Gustav" GiverId="30683" X="6383.94" Y="246.866" Z="396.434" />
 		</If>
 		<TurnIn QuestName="Into The Frozen Heart Of Northrend" QuestId="13139" TurnInName="Highlord Tirion Fordring" TurnInId="30677" X="6259.58" Y="50.4208" Z="388.509" />
@@ -1063,9 +1063,15 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13238)">
 			<PickUp QuestName="Volatility" QuestId="13239" GiverName="Chief Engineer Copperclaw" GiverId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
-		<!-- Q13239: Abandoned Armor (43616) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13239: Abandoned Helm (43610) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13239: Pile of Bones (43609) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13239) &amp;&amp; !IsQuestCompleted(13239) &amp;&amp; GetItemCount(43616) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13239" MobId="193201" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6723.57" Y="1041.84" Z="287.952" />
+		</If>
+		<If Condition="HasQuest(13239) &amp;&amp; !IsQuestCompleted(13239) &amp;&amp; GetItemCount(43610) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13239" MobId="193200" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6759.65" Y="1025.41" Z="294.841" />
+		</If>
+		<If Condition="HasQuest(13239) &amp;&amp; !IsQuestCompleted(13239) &amp;&amp; GetItemCount(43609) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13239" MobId="193199" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6759.61" Y="1049.35" Z="289.959" />
+		</If>
 		<Objective QuestName="Poke and Prod" QuestId="13237" Type="KillMob" MobId="31140" KillCount="5" />
 		<Objective QuestName="Poke and Prod" QuestId="13237" Type="KillMob" MobId="31155" KillCount="5" />
 		<Objective QuestName="Poke and Prod" QuestId="13237" Type="KillMob" MobId="31145" KillCount="5" />
@@ -1073,7 +1079,7 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13237)">
 			<PickUp QuestName="That's Abominable!" QuestId="13264" GiverName="Koltira Deathweaver" GiverId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
 		</If>
-		<!-- REVIEW Q13239 Volatility: helper item 43616 Abandoned Armor has no dropping creature near the guide coordinates; helper item 43610 Abandoned Helm has no dropping creature near the guide coordinates; helper item 43609 Pile of Bones has no dropping creature near the guide coordinates; use item 43608: target 31364 Frostbrood Skytalon KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13239 Volatility: use item 43608: target 31364 Frostbrood Skytalon KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13239)) &amp;&amp; (IsQuestCompleted(13239)))">
 			<TurnIn QuestName="Volatility" QuestId="13239" TurnInName="Chief Engineer Copperclaw" TurnInId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
@@ -1115,7 +1121,7 @@
 		<If Condition="((HasQuest(12892)) &amp;&amp; (!IsQuestCompleted(12892)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12892" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(12887) || IsQuestCompleted(12892))">
 			<PickUp QuestName="I Have an Idea, But First..." QuestId="12891" GiverName="Baron Sliver" GiverId="29804" X="8395.01" Y="2675.19" Z="657.913" />
 		</If>
 		<Objective QuestName="I Have an Idea, But First..." QuestId="12891" Type="CollectItem" ItemId="41359" CollectCount="1" />
@@ -1164,7 +1170,7 @@
 		<CustomBehavior File="UseItemOn" QuestId="13355" ItemId="44251" MobId="32242" NumOfTimes="1" Range="5" CollectionDistance="200" X="8038.9" Y="2374.5" Z="487.758" />
 		<Objective QuestName="Chain of Command" QuestId="13354" Type="KillMob" MobId="32291" KillCount="1" />
 		<TurnIn QuestName="The Shadow Vault" QuestId="12899" TurnInName="Baron Sliver" TurnInId="29343" X="8385.21" Y="2757.21" Z="656.702" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(12898) || IsQuestCompleted(12899))">
 			<PickUp QuestName="The Duke" QuestId="12938" GiverName="Baron Sliver" GiverId="29343" X="8385.21" Y="2757.21" Z="656.702" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77)">
@@ -1210,7 +1216,7 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13084)">
 			<PickUp QuestName="Leave Our Mark" QuestId="12995" GiverName="Baron Sliver" GiverId="29343" X="8385.21" Y="2757.21" Z="656.702" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(12992) || IsQuestCompleted(13084))">
 			<PickUp QuestName="Vaelen Has Returned" QuestId="13085" GiverName="Baron Sliver" GiverId="29343" X="8385.21" Y="2757.21" Z="656.702" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77)">
@@ -1254,9 +1260,9 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13355)">
 			<PickUp QuestName="Retest Now" QuestId="13356" GiverName="Chief Engineer Copperclaw" GiverId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
-		<!-- Q13356: Writhing Mass (44304) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13358: Dark Matter (44434) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q13358 Not a Bug: helper item 44434 Dark Matter has no dropping creature near the guide coordinates; goal 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q13356: Writhing Mass (44304) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q13358: Dark Matter (44434) is needed but nothing near the guide coordinates drops it -->
+		<!-- REVIEW Q13358 Not a Bug: helper item 44434 Dark Matter has no creature or object source near the guide coordinates; goal 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13358)) &amp;&amp; (IsQuestCompleted(13358)))">
 			<TurnIn QuestName="Not a Bug" QuestId="13358" TurnInName="Koltira Deathweaver" TurnInId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
 		</If>
@@ -1264,7 +1270,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="13358" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q13366 Need More Info: group quest (3 players) -->
-		<!-- REVIEW Q13356 Retest Now: helper item 44304 Writhing Mass has no dropping creature near the guide coordinates; use item 44304: target 32266 Writhing Mass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13356 Retest Now: helper item 44304 Writhing Mass has no creature or object source near the guide coordinates; use item 44304: target 32266 Writhing Mass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13356)) &amp;&amp; (IsQuestCompleted(13356)))">
 			<TurnIn QuestName="Retest Now" QuestId="13356" TurnInName="Chief Engineer Copperclaw" TurnInId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
@@ -1391,7 +1397,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="13119" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Death's Gaze" QuestId="13120" TurnInName="Darkrider Arly" TurnInId="30631" X="6654.15" Y="3224.66" Z="810.501" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13119) || IsQuestCompleted(13120))">
 			<PickUp QuestName="Spill Their Blood" QuestId="13134" GiverName="Darkrider Arly" GiverId="30631" X="6654.15" Y="3224.66" Z="810.501" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="13134" ItemId="43242" MobId="192932" MobType="GameObject" NumOfTimes="5" Range="5" CollectionDistance="200" X="6503.98" Y="3309.26" Z="664.927" />
@@ -1550,7 +1556,7 @@
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="To the Rise with all Due Haste!" QuestId="12806" GiverName="Baron Sliver" GiverId="29343" X="8385.21" Y="2757.21" Z="656.702" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13263) || IsQuestCompleted(13389))">
 			<PickUp QuestName="Parting Gifts" QuestId="13168" GiverName="Keritose Bloodblade" GiverId="30946" X="8401.19" Y="2681.06" Z="657.544" />
 		</If>
 		<!-- REVIEW Q13168 Parting Gifts: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1593,7 +1599,7 @@
 		<Objective QuestName="Amidst the Confusion" QuestId="13174" Type="CollectItem" ItemId="43688" CollectCount="1" />
 		<TurnIn QuestName="Seeds of Chaos" QuestId="13172" TurnInName="Keritose Bloodblade" TurnInId="30946" X="8401.19" Y="2681.06" Z="657.544" />
 		<TurnIn QuestName="Amidst the Confusion" QuestId="13174" TurnInName="Keritose Bloodblade" TurnInId="30946" X="8401.19" Y="2681.06" Z="657.544" />
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13172) || IsQuestCompleted(13174))">
 			<PickUp QuestName="Vereth the Cunning" QuestId="13155" GiverName="Keritose Bloodblade" GiverId="30946" X="8401.19" Y="2681.06" Z="657.544" />
 		</If>
 		<TurnIn QuestName="To the Rise with all Due Haste!" QuestId="12806" TurnInName="Lord-Commander Arete" TurnInId="29344" X="7413.87" Y="4218.32" Z="315.422" />
@@ -1700,7 +1706,7 @@
 		<If Condition="((HasQuest(13211)) &amp;&amp; (!IsQuestCompleted(13211)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13211" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13152) || IsQuestCompleted(13211))">
 			<PickUp QuestName="Killing Two Scourge With One Skeleton" QuestId="13144" GiverName="Darkrider Arly" GiverId="30631" X="6654.15" Y="3224.66" Z="810.501" />
 		</If>
 		<!-- REVIEW Q13144 Killing Two Scourge With One Skeleton: goal 30995 Patches Chain Target x3: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

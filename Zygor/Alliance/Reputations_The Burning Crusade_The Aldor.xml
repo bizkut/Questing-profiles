@@ -561,7 +561,7 @@
 			<PickUp QuestName="Shutting Down Manaforge Duro" QuestId="10322" GiverName="Anchorite Karja" GiverId="19467" X="3071.05" Y="3697.33" Z="142.528" />
 		</If>
 		<TurnIn QuestName="Attack on Manaforge Coruu" QuestId="10246" TurnInName="Exarch Orelis" TurnInId="19466" X="3070.84" Y="3695.18" Z="142.465" />
-		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10313) || IsQuestCompleted(10321)) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="Sunfury Briefings" QuestId="10328" GiverName="Exarch Orelis" GiverId="19466" X="3070.84" Y="3695.18" Z="142.465" />
 		</If>
 		<Objective QuestName="Sunfury Briefings" QuestId="10328" Type="CollectItem" ItemId="29546" CollectCount="1" />
@@ -707,7 +707,7 @@
 		<If Condition="((HasQuest(10669)) &amp;&amp; (!IsQuestCompleted(10669)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10669" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(10641) || IsQuestCompleted(10668) || IsQuestCompleted(10669))">
 			<PickUp QuestName="Illidan's Pupil" QuestId="10646" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
 		<!-- REVIEW Q10646 Illidan's Pupil: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

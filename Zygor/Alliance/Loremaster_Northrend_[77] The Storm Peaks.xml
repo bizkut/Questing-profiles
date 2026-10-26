@@ -674,7 +674,7 @@
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="Ore Repossession" QuestId="12830" GiverName="Tore Rumblewrench" GiverId="29430" X="6404.13" Y="-1122.33" Z="426.433" />
 		</If>
-		<!-- Q12828: U.D.E.D. (40686) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12828: U.D.E.D. (40686) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Ample Inspiration" QuestId="12828" Type="CollectItem" ItemId="40728" CollectCount="8" />
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="Only Partly Forgotten" QuestId="12831" GiverName="Injured Goblin Miner" GiverId="29434" X="6646.12" Y="-1111.91" Z="427.432" />
@@ -690,7 +690,7 @@
 		<TurnIn QuestName="Ore Repossession" QuestId="12830" TurnInName="Tore Rumblewrench" TurnInId="29430" X="6404.13" Y="-1122.33" Z="426.433" />
 		<Objective QuestName="A Delicate Touch" QuestId="12820" Type="KillMob" MobId="29618" KillCount="12" />
 		<TurnIn QuestName="A Delicate Touch" QuestId="12820" TurnInName="Ricket" TurnInId="29428" X="6152.99" Y="-1069.41" Z="402.843" />
-		<!-- REVIEW Q12828 Ample Inspiration: helper item 40686 U.D.E.D. has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12828 Ample Inspiration: helper item 40686 U.D.E.D. has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12828)) &amp;&amp; (IsQuestCompleted(12828)))">
 			<TurnIn QuestName="Ample Inspiration" QuestId="12828" TurnInName="Ricket" TurnInId="29428" X="6152.99" Y="-1069.41" Z="402.843" />
 		</If>
@@ -1205,7 +1205,9 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12873)">
 			<PickUp QuestName="Fervor of the Frostborn" QuestId="12874" GiverName="Yorg Stormheart" GiverId="29593" X="6653.1" Y="-310.577" Z="989.468" />
 		</If>
-		<!-- Q12874: Battered Storm Hammer (42624) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12874) &amp;&amp; !IsQuestCompleted(12874) &amp;&amp; GetItemCount(42624) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12874" MobId="192243" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="8531.9" Y="-1971.44" Z="1467.57" />
+		</If>
 		<CustomBehavior File="UseItemOn" QuestId="12874" ItemId="42624" MobId="30142" NumOfTimes="1" Range="5" CollectionDistance="200" X="8392.7" Y="-1970.14" Z="1461.84" />
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="You Can't Miss Him" QuestId="12966" GiverName="King Jokkum" GiverId="30105" X="7345.9" Y="-2812.95" Z="798.571" />
@@ -1267,10 +1269,10 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12987" Type="Incomplete" />
 		</If>
 		<Objective QuestName="Raising Hodir's Spear" QuestId="13001" Type="CollectItem" ItemId="42542" CollectCount="3" />
-		<!-- Q13011: Icemaw Bear Flank (42733) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13011: Icemaw Bear Flank (42733) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Raising Hodir's Spear" QuestId="13001" Type="CollectItem" ItemId="42541" CollectCount="3" />
 		<TurnIn QuestName="Raising Hodir's Spear" QuestId="13001" TurnInName="Lorekeeper Randvir" TurnInId="30252" X="7397.65" Y="-2770.25" Z="771.041" />
-		<!-- REVIEW Q13011 Jormuttar is Soo Fat...: helper item 42733 Icemaw Bear Flank has no dropping creature near the guide coordinates; use item 42733: target 30340 Jormuttar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13011 Jormuttar is Soo Fat...: helper item 42733 Icemaw Bear Flank has no creature or object source near the guide coordinates; use item 42733: target 30340 Jormuttar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13011)) &amp;&amp; (IsQuestCompleted(13011)))">
 			<TurnIn QuestName="Jormuttar is Soo Fat..." QuestId="13011" TurnInName="King Jokkum" TurnInId="30105" X="7345.9" Y="-2812.95" Z="798.571" />
 		</If>
@@ -1281,7 +1283,7 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13009)">
 			<PickUp QuestName="Veranus" QuestId="13050" GiverName="Thorim" GiverId="29445" X="7448.98" Y="-534.783" Z="1896.95" />
 		</If>
-		<!-- REVIEW Q12874 Fervor of the Frostborn: helper item 42624 Battered Storm Hammer has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12874 Fervor of the Frostborn: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12874)) &amp;&amp; (IsQuestCompleted(12874)))">
 			<TurnIn QuestName="Fervor of the Frostborn" QuestId="12874" TurnInName="Yorg Stormheart" TurnInId="29593" X="6653.1" Y="-310.577" Z="989.468" />
 		</If>
@@ -1357,7 +1359,7 @@
 		<If Condition="((HasQuest(13035)) &amp;&amp; (!IsQuestCompleted(13035)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13035" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13035)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13005) || IsQuestCompleted(13035))">
 			<PickUp QuestName="The Reckoning" QuestId="13047" GiverName="Thorim" GiverId="30295" X="7761.1" Y="-2160.86" Z="1233.33" />
 		</If>
 		<!-- REVIEW Q12986 Fate of the Titans: objective 30315 Temple of Invention Bunny x1: not attackable; objective 30317 Temple of Winter Bunny x1: not attackable; objective 30316 Temple of Life Bunny x1: kill credit or scripted event; objective 30318 Temple of Order Bunny x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

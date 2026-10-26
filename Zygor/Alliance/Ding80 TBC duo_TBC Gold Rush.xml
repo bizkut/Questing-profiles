@@ -735,7 +735,7 @@
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Kalimdor" />
 		</If>
 		<TurnIn QuestName="Rabine Saturna" QuestId="6762" TurnInName="Rabine Saturna" TurnInId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
-		<If Condition="(Me.Level &gt;= 54)">
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; (IsQuestCompleted(1123) || IsQuestCompleted(6762))">
 			<PickUp QuestName="Wasteland" QuestId="1124" GiverName="Rabine Saturna" GiverId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
 		</If>
 		<If Condition="(Me.Level &gt;= 56)">
@@ -946,7 +946,7 @@
 		<TurnIn QuestName="Demon Dogs" QuestId="5542" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<TurnIn QuestName="Blood Tinged Skies" QuestId="5543" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<TurnIn QuestName="Carrion Grubbage" QuestId="5544" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
-		<If Condition="(Me.Level &gt;= 52)">
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; (IsQuestCompleted(5542) || IsQuestCompleted(5543) || IsQuestCompleted(5544))">
 			<PickUp QuestName="Redemption" QuestId="5742" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		</If>
 		<!-- REVIEW Q5742 Redemption: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1067,7 +1067,7 @@
 		</If>
 		<TurnIn QuestName="Villains of Darrowshire" QuestId="5181" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
 		<TurnIn QuestName="Heroes of Darrowshire" QuestId="5168" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
-		<If Condition="(Me.Level &gt;= 50)">
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(5168) || IsQuestCompleted(5181))">
 			<PickUp QuestName="Marauders of Darrowshire" QuestId="5206" GiverName="Carlin Redpath" GiverId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
 		</If>
 		<!-- REVIEW Q5211 Defenders of Darrowshire: goal 11064 Darrowshire Spirit x15: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1277,7 +1277,7 @@
 		<If Condition="((HasQuest(8309)) &amp;&amp; (!IsQuestCompleted(8309)))">
 			<CustomBehavior File="AbandonQuest" QuestId="8309" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 58)">
+		<If Condition="(Me.Level &gt;= 58) &amp;&amp; (IsQuestCompleted(8309) || IsQuestCompleted(8310))">
 			<PickUp QuestName="Unraveling the Mystery" QuestId="8314" GiverName="Rutgar Glyphshaper" GiverId="15170" X="-8013.06" Y="1099.65" Z="4.7188" />
 		</If>
 		<TurnIn QuestName="Unraveling the Mystery" QuestId="8314" TurnInName="Geologist Larksbane" TurnInId="15183" X="-6828.49" Y="807.223" Z="52.0997" />

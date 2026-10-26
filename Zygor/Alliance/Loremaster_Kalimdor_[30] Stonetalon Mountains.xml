@@ -355,17 +355,17 @@
 		</If>
 		<TurnIn QuestName="Ineptitude + Chemicals = Fun" QuestId="1074" TurnInName="Gaxim Rustfizzle" TurnInId="4077" X="730.224" Y="339.513" Z="64.4819" />
 		<TurnIn QuestName="Special Delivery for Gaxim" QuestId="1077" TurnInName="Gaxim Rustfizzle" TurnInId="4077" X="730.224" Y="339.513" Z="64.4819" />
-		<If Condition="(Me.Level &gt;= 17) &amp;&amp; IsQuestCompleted(1074)">
+		<If Condition="(Me.Level &gt;= 17) &amp;&amp; (IsQuestCompleted(1074) || IsQuestCompleted(1077))">
 			<PickUp QuestName="Covert Ops - Alpha" QuestId="1079" GiverName="Gaxim Rustfizzle" GiverId="4077" X="730.224" Y="339.513" Z="64.4819" />
 		</If>
-		<If Condition="(Me.Level &gt;= 17) &amp;&amp; IsQuestCompleted(1077)">
+		<If Condition="(Me.Level &gt;= 17) &amp;&amp; (IsQuestCompleted(1074) || IsQuestCompleted(1077))">
 			<PickUp QuestName="Covert Ops - Beta" QuestId="1080" GiverName="Gaxim Rustfizzle" GiverId="4077" X="730.224" Y="339.513" Z="64.4819" />
 		</If>
 		<Objective QuestName="Covert Ops - Alpha" QuestId="1079" Type="CollectItem" ItemId="5718" CollectCount="1" />
 		<Objective QuestName="Covert Ops - Beta" QuestId="1080" Type="CollectItem" ItemId="5717" CollectCount="1" />
 		<TurnIn QuestName="Covert Ops - Alpha" QuestId="1079" TurnInName="Gaxim Rustfizzle" TurnInId="4077" X="730.224" Y="339.513" Z="64.4819" />
 		<TurnIn QuestName="Covert Ops - Beta" QuestId="1080" TurnInName="Gaxim Rustfizzle" TurnInId="4077" X="730.224" Y="339.513" Z="64.4819" />
-		<If Condition="(Me.Level &gt;= 17)">
+		<If Condition="(Me.Level &gt;= 17) &amp;&amp; (IsQuestCompleted(1079) || IsQuestCompleted(1080))">
 			<PickUp QuestName="Kaela's Update" QuestId="1091" GiverName="Gaxim Rustfizzle" GiverId="4077" X="730.224" Y="339.513" Z="64.4819" />
 		</If>
 		<TurnIn QuestName="Kaela's Update" QuestId="1091" TurnInName="Kaela Shadowspear" TurnInId="4080" X="739.977" Y="320.772" Z="63.4123" />
@@ -379,7 +379,7 @@
 		<Objective QuestName="Enraged Spirits" QuestId="1083" Type="CollectItem" ItemId="5659" CollectCount="8" />
 		<TurnIn QuestName="Enraged Spirits" QuestId="1083" TurnInName="Kaela Shadowspear" TurnInId="4080" X="739.977" Y="320.772" Z="63.4123" />
 		<TurnIn QuestName="Wounded Ancients" QuestId="1084" TurnInName="Kaela Shadowspear" TurnInId="4080" X="739.977" Y="320.772" Z="63.4123" />
-		<If Condition="(Me.Level &gt;= 17)">
+		<If Condition="(Me.Level &gt;= 17) &amp;&amp; (IsQuestCompleted(1083) || IsQuestCompleted(1084))">
 			<PickUp QuestName="Update for Sentinel Thenysil" QuestId="1082" GiverName="Kaela Shadowspear" GiverId="4080" X="739.977" Y="320.772" Z="63.4123" />
 		</If>
 		<TurnIn QuestName="Update for Sentinel Thenysil" QuestId="1082" TurnInName="Sentinel Thenysil" TurnInId="4079" X="2758.97" Y="-312.097" Z="110.88" />

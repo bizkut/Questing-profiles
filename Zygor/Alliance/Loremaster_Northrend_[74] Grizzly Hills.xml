@@ -733,7 +733,7 @@
 		<If Condition="(Me.Level &gt;= 73)">
 			<PickUp QuestName="The Hills Have Us" QuestId="12511" GiverName="Gryphon Commander Urik" GiverId="27317" X="3700.82" Y="-696.887" Z="215.694" />
 		</If>
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; (IsQuestCompleted(12222) || IsQuestCompleted(12223))">
 			<PickUp QuestName="Mmm... Amberseeds!" QuestId="12225" GiverName="Amberseed" GiverId="188667" GiverType="Object" X="3432.31" Y="-2779.9" Z="203.25" />
 		</If>
 		<TurnIn QuestName="Mmm... Amberseeds!" QuestId="12225" TurnInName="Master Woodsman Anderhol" TurnInId="27277" X="3417.8" Y="-2795.63" Z="201.604" />
@@ -843,7 +843,7 @@
 		<TurnIn QuestName="Seeking Solvent" QuestId="12443" TurnInName="Barblefink" TurnInId="27495" X="2710.95" Y="-2319.22" Z="21.1799" />
 		<Objective QuestName="The Thane of Voldrune" QuestId="12255" Type="KillMob" MobId="27377" KillCount="1" />
 		<TurnIn QuestName="Troll Season!" QuestId="12210" TurnInName="Samir" TurnInId="26424" X="3850.49" Y="-1960.48" Z="208.511" />
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; (IsQuestCompleted(12208) || IsQuestCompleted(12210))">
 			<PickUp QuestName="Filling the Cages" QuestId="11984" GiverName="Samir" GiverId="26424" X="3850.49" Y="-1960.48" Z="208.511" />
 		</If>
 		<!-- REVIEW Q11984 Filling the Cages: objective 26444 Quest Invisman - Filling the Cages x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -856,8 +856,10 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11984)">
 			<PickUp QuestName="Truce?" QuestId="11989" GiverName="Drakuru" GiverId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
-		<!-- Q11989: Dull Carving Knife (38083) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q11989 Truce?: helper item 38083 Dull Carving Knife has no dropping creature near the guide coordinates; objective 27921 Drakuru Handshake KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11989) &amp;&amp; !IsQuestCompleted(11989) &amp;&amp; GetItemCount(38083) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="11989" MobId="190208" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="3843.83" Y="-1978.63" Z="210.318" />
+		</If>
+		<!-- REVIEW Q11989 Truce?: objective 27921 Drakuru Handshake KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11989)) &amp;&amp; (IsQuestCompleted(11989)))">
 			<TurnIn QuestName="Truce?" QuestId="11989" TurnInName="Drakuru" TurnInId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
@@ -882,8 +884,10 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11990)">
 			<PickUp QuestName="Scourgekabob" QuestId="12484" GiverName="Prigmon" GiverId="26519" X="3882.44" Y="-1936.45" Z="209.169" />
 		</If>
-		<!-- Q12484: Scourged Troll Mummy (38149) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q12484 Scourgekabob: helper item 38149 Scourged Troll Mummy has no dropping creature near the guide coordinates; objective 27929 Mummified Carcass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(12484) &amp;&amp; !IsQuestCompleted(12484) &amp;&amp; GetItemCount(38149) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12484" MobId="190223" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="3876.54" Y="-1934.75" Z="208.894" />
+		</If>
+		<!-- REVIEW Q12484 Scourgekabob: objective 27929 Mummified Carcass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12484)) &amp;&amp; (IsQuestCompleted(12484)))">
 			<TurnIn QuestName="Scourgekabob" QuestId="12484" TurnInName="Mack Fearsen" TurnInId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
 		</If>
@@ -958,7 +962,7 @@
 		<TurnIn QuestName="Northern Hospitality" QuestId="12299" TurnInName="Sergei" TurnInId="27486" X="4264.55" Y="-2500.44" Z="231.658" />
 		<Objective QuestName="Wolfsbane Root" QuestId="12307" Type="UseObject" ObjectId="189313" UseCount="8" />
 		<TurnIn QuestName="Wolfsbane Root" QuestId="12307" TurnInName="Katja" TurnInId="27545" X="4351.15" Y="-2455.02" Z="239.175" />
-		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12299)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; (IsQuestCompleted(12299) || IsQuestCompleted(12307))">
 			<PickUp QuestName="Test of Mettle" QuestId="12300" GiverName="Sergei" GiverId="27486" X="4264.55" Y="-2500.44" Z="231.658" />
 		</If>
 		<Objective QuestName="Test of Mettle" QuestId="12300" Type="KillMob" MobId="27493" KillCount="1" />
@@ -978,7 +982,7 @@
 		<If Condition="((HasQuest(12308)) &amp;&amp; (!IsQuestCompleted(12308)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12308" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12308)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; (IsQuestCompleted(12308) || IsQuestCompleted(13524))">
 			<PickUp QuestName="A Swift Response" QuestId="12310" GiverName="Lieutenant Dumont" GiverId="26875" X="3410.84" Y="-2781.71" Z="202.283" />
 		</If>
 		<Objective QuestName="A Swift Response" QuestId="12310" Type="KillMob" MobId="27547" KillCount="1" />
@@ -1006,10 +1010,10 @@
 		<If Condition="((HasQuest(12220)) &amp;&amp; (!IsQuestCompleted(12220)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12220" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12220)">
 			<PickUp QuestName="A Possible Link" QuestId="12246" GiverName="Hierophant Thayreen" GiverId="27295" X="3435.23" Y="-2746.36" Z="199.472" />
 		</If>
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12219)">
 			<PickUp QuestName="Children of Ursoc" QuestId="12247" GiverName="Hierophant Thayreen" GiverId="27295" X="3435.23" Y="-2746.36" Z="199.472" />
 		</If>
 		<Objective QuestName="A Possible Link" QuestId="12246" Type="CollectItem" ItemId="37251" CollectCount="8" />
@@ -1021,10 +1025,10 @@
 		<If Condition="((HasQuest(12247)) &amp;&amp; (!IsQuestCompleted(12247)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12247" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12246)">
 			<PickUp QuestName="Vordrassil's Sapling" QuestId="12248" GiverName="Hierophant Thayreen" GiverId="27295" X="3435.23" Y="-2746.36" Z="199.472" />
 		</If>
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12247)">
 			<PickUp QuestName="Vordrassil's Seeds" QuestId="12250" GiverName="Hierophant Thayreen" GiverId="27295" X="3435.23" Y="-2746.36" Z="199.472" />
 		</If>
 		<Objective QuestName="Vordrassil's Seeds" QuestId="12250" Type="CollectItem" ItemId="37302" CollectCount="8" />
@@ -1117,7 +1121,7 @@
 			<PickUp QuestName="Ruuna the Blind" QuestId="12161" GiverName="Private Arun" GiverId="27582" X="4600.83" Y="-4217.67" Z="178.757" />
 		</If>
 		<TurnIn QuestName="Ruuna the Blind" QuestId="12161" TurnInName="Ruuna the Blind" TurnInId="27581" X="3836.79" Y="-3421.57" Z="293.104" />
-		<If Condition="(Me.Level &gt;= 73)">
+		<If Condition="(Me.Level &gt;= 73) &amp;&amp; (IsQuestCompleted(12161) || IsQuestCompleted(12425))">
 			<PickUp QuestName="Ruuna's Request" QuestId="12328" GiverName="Ruuna the Blind" GiverId="27581" X="3836.79" Y="-3421.57" Z="293.104" />
 		</If>
 		<Objective QuestName="Ruuna's Request" QuestId="12328" Type="CollectItem" ItemId="37662" CollectCount="4" />
@@ -1174,9 +1178,11 @@
 		<If Condition="(Me.Level &gt;= 73)">
 			<PickUp QuestName="The Damaged Journal" QuestId="11986" GiverName="Battered Journal" GiverId="188261" GiverType="Object" X="4824.81" Y="-4485.91" Z="198.894" />
 		</If>
-		<!-- Q11986: Missing Journal Page (35737) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(11986) &amp;&amp; !IsQuestCompleted(11986) &amp;&amp; GetItemCount(35737) &lt; 8">
+			<CustomBehavior File="InteractWith" QuestId="11986" MobId="188262" MobId2="188263" ObjectType="GameObject" Loot="True" NumOfTimes="8" CollectionDistance="200" X="4730.19" Y="-4470.36" Z="195.616" />
+		</If>
 		<Objective QuestName="Brothers in Battle" QuestId="12002" Type="KillMob" MobId="26284" KillCount="10" />
-		<!-- REVIEW Q11986 The Damaged Journal: helper item 35737 Missing Journal Page has no dropping creature near the guide coordinates; item 35738 Brann Bronzebeard's Journal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11986 The Damaged Journal: item 35738 Brann Bronzebeard's Journal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11986)) &amp;&amp; (IsQuestCompleted(11986)))">
 			<TurnIn QuestName="The Damaged Journal" QuestId="11986" TurnInName="Torthen Deepdig" TurnInId="26361" X="4556.24" Y="-4247.67" Z="170.603" />
 		</If>
@@ -1203,18 +1209,14 @@
 			<PickUp QuestName="The Fate of Orlond" QuestId="12010" GiverName="Brugar Stoneshear" GiverId="26226" X="4551.79" Y="-4250.05" Z="170.576" />
 		</If>
 		<TurnIn QuestName="Find Kurun!" QuestId="11981" TurnInName="Kurun" TurnInId="26260" X="4894.46" Y="-4563.21" Z="347.919" />
-		<If Condition="(Me.Level &gt;= 72) &amp;&amp; IsQuestCompleted(11981)">
+		<If Condition="(Me.Level &gt;= 72) &amp;&amp; (IsQuestCompleted(11981) || IsQuestCompleted(12074))">
 			<PickUp QuestName="Raining Down Destruction" QuestId="11982" GiverName="Kurun" GiverId="26260" X="4894.46" Y="-4563.21" Z="347.919" />
 		</If>
-		<!-- Q11982: Boulder (35734) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(11982) &amp;&amp; !IsQuestCompleted(11982) &amp;&amp; GetItemCount(35734) &lt; 5">
+			<CustomBehavior File="InteractWith" QuestId="11982" MobId="188260" ObjectType="GameObject" Loot="True" NumOfTimes="5" CollectionDistance="200" X="5106.3" Y="-4874.65" Z="301.63" />
+		</If>
 		<Objective QuestName="Raining Down Destruction" QuestId="11982" Type="KillMob" MobId="26264" KillCount="5" />
-		<!-- REVIEW Q11982 Raining Down Destruction: helper item 35734 Boulder has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(11982)) &amp;&amp; (IsQuestCompleted(11982)))">
-			<TurnIn QuestName="Raining Down Destruction" QuestId="11982" TurnInName="Kurun" TurnInId="26260" X="4894.46" Y="-4563.21" Z="347.919" />
-		</If>
-		<If Condition="((HasQuest(11982)) &amp;&amp; (!IsQuestCompleted(11982)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11982" Type="Incomplete" />
-		</If>
+		<TurnIn QuestName="Raining Down Destruction" QuestId="11982" TurnInName="Kurun" TurnInId="26260" X="4894.46" Y="-4563.21" Z="347.919" />
 		<If Condition="(Me.Level &gt;= 72) &amp;&amp; IsQuestCompleted(11982)">
 			<PickUp QuestName="Rallying the Troops" QuestId="12070" GiverName="Kurun" GiverId="26260" X="4894.46" Y="-4563.21" Z="347.919" />
 		</If>
@@ -1239,10 +1241,17 @@
 		<If Condition="(Me.Level &gt;= 72) &amp;&amp; IsQuestCompleted(11985)">
 			<PickUp QuestName="Gavrock" QuestId="12081" GiverName="Kurun" GiverId="26260" X="4894.46" Y="-4563.21" Z="347.919" />
 		</If>
+		<!-- Q11993: NPC Equip 36745 (36745) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="The Runic Prophecies" QuestId="11993" Type="UseObject" ObjectId="188264" UseCount="1" />
 		<Objective QuestName="The Runic Prophecies" QuestId="11993" Type="UseObject" ObjectId="188288" UseCount="1" />
 		<Objective QuestName="The Runic Prophecies" QuestId="11993" Type="UseObject" ObjectId="188289" UseCount="1" />
-		<TurnIn QuestName="The Runic Prophecies" QuestId="11993" TurnInName="Torthen Deepdig" TurnInId="26361" X="4556.24" Y="-4247.67" Z="170.603" />
+		<!-- REVIEW Q11993 The Runic Prophecies: helper item 36745 NPC Equip 36745 has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11993)) &amp;&amp; (IsQuestCompleted(11993)))">
+			<TurnIn QuestName="The Runic Prophecies" QuestId="11993" TurnInName="Torthen Deepdig" TurnInId="26361" X="4556.24" Y="-4247.67" Z="170.603" />
+		</If>
+		<If Condition="((HasQuest(11993)) &amp;&amp; (!IsQuestCompleted(11993)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11993" Type="Incomplete" />
+		</If>
 		<!-- REVIEW Q12014 Steady as a Rock?: item 35819 Thor Modan Stability Profile has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12014)) &amp;&amp; (IsQuestCompleted(12014)))">
 			<TurnIn QuestName="Steady as a Rock?" QuestId="12014" TurnInName="Brugar Stoneshear" TurnInId="26226" X="4551.79" Y="-4250.05" Z="170.576" />
@@ -1362,9 +1371,11 @@
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12137)">
 			<PickUp QuestName="Jin'arrak's End" QuestId="12152" GiverName="Kraz" GiverId="26886" X="4322.28" Y="-4990.64" Z="20.4613" />
 		</If>
-		<!-- Q12152: Sacred Drakkari Offering (36870) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q12152: Infused Drakkari Offering (37063) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q12152 Jin'arrak's End: helper item 36870 Sacred Drakkari Offering has no dropping creature near the guide coordinates; helper item 37063 Infused Drakkari Offering has no dropping creature near the guide coordinates; objective 27199 Warlord Jin'arrak x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(12152) &amp;&amp; !IsQuestCompleted(12152) &amp;&amp; GetItemCount(36870) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12152" MobId="188530" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="4828.67" Y="-4851.31" Z="25.4657" />
+		</If>
+		<!-- Q12152: Infused Drakkari Offering (37063) is needed but nothing near the guide coordinates drops it -->
+		<!-- REVIEW Q12152 Jin'arrak's End: helper item 37063 Infused Drakkari Offering has no creature or object source near the guide coordinates; objective 27199 Warlord Jin'arrak x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12152)) &amp;&amp; (IsQuestCompleted(12152)))">
 			<TurnIn QuestName="Jin'arrak's End" QuestId="12152" TurnInName="Kraz" TurnInId="26886" X="4322.28" Y="-4990.64" Z="20.4613" />
 		</If>

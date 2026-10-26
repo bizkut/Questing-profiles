@@ -95,7 +95,7 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12695)">
 			<PickUp QuestName="Appeasing the Great Rain Stone" QuestId="12704" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
-		<!-- Q12704: Lafoo's Bug Bag (38622) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12704: Lafoo's Bug Bag (38622) is needed but nothing near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12695) &amp;&amp; !IsQuestCompleted(12726) &amp;&amp; !HasQuest(12726) &amp;&amp; !IsQuestCompleted(12736) &amp;&amp; !HasQuest(12736) &amp;&amp; !IsQuestCompleted(12737) &amp;&amp; !HasQuest(12737)">
 			<PickUp QuestName="A Cleansing Song" QuestId="12735" GiverName="Oracle Soo-nee" GiverId="29006" X="5648.67" Y="4605.62" Z="-132.056" />
 		</If>
@@ -117,9 +117,15 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12695) &amp;&amp; !IsQuestCompleted(12761) &amp;&amp; !HasQuest(12761) &amp;&amp; !IsQuestCompleted(12762) &amp;&amp; !HasQuest(12762)">
 			<PickUp QuestName="Will of the Titans" QuestId="12705" GiverName="Oracle Soo-dow" GiverId="29149" X="5726.03" Y="4569.98" Z="-119.875" />
 		</If>
-		<!-- Q12761: Crystal of the Violent Storm (39694) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q12761: Crystal of Unstable Energy (39693) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q12761: Crystal of the Frozen Grip (39689) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12761) &amp;&amp; !IsQuestCompleted(12761) &amp;&amp; GetItemCount(39694) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12761" MobId="191209" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="5089.34" Y="5489.4" Z="-93.4327" />
+		</If>
+		<If Condition="HasQuest(12761) &amp;&amp; !IsQuestCompleted(12761) &amp;&amp; GetItemCount(39693) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12761" MobId="191209" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="5089.34" Y="5489.4" Z="-93.4327" />
+		</If>
+		<If Condition="HasQuest(12761) &amp;&amp; !IsQuestCompleted(12761) &amp;&amp; GetItemCount(39689) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12761" MobId="191209" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="5089.34" Y="5489.4" Z="-93.4327" />
+		</If>
 		<If Condition="HasQuest(12705) &amp;&amp; !IsQuestCompleted(12705) &amp;&amp; GetItemCount(39266) &lt; 1">
 			<CustomBehavior File="CollectThings" QuestId="12705" CollectItemId="39266" CollectItemCount="1" HuntingGroundRadius="120" MobId="28078" MobId2="28079" X="5065.9" Y="5941" Z="-60.7081">
 				<Hotspot X="5065.9" Y="5941" Z="-60.7081" />
@@ -134,13 +140,7 @@
 		</If>
 		<Objective QuestName="Will of the Titans" QuestId="12705" Type="KillMob" MobId="28078" KillCount="50" />
 		<Objective QuestName="Mastery of the Crystals" QuestId="12761" Type="KillMob" MobId="28078" KillCount="50" />
-		<!-- REVIEW Q12761 Mastery of the Crystals: helper item 39694 Crystal of the Violent Storm has no dropping creature near the guide coordinates; helper item 39693 Crystal of Unstable Energy has no dropping creature near the guide coordinates; helper item 39689 Crystal of the Frozen Grip has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(12761)) &amp;&amp; (IsQuestCompleted(12761)))">
-			<TurnIn QuestName="Mastery of the Crystals" QuestId="12761" TurnInName="Lightningcaller Soo-met" TurnInId="28107" X="5040.47" Y="5502.82" Z="-88.3044" />
-		</If>
-		<If Condition="((HasQuest(12761)) &amp;&amp; (!IsQuestCompleted(12761)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12761" Type="Incomplete" />
-		</If>
+		<TurnIn QuestName="Mastery of the Crystals" QuestId="12761" TurnInName="Lightningcaller Soo-met" TurnInId="28107" X="5040.47" Y="5502.82" Z="-88.3044" />
 		<Objective QuestName="Power of the Great Ones" QuestId="12762" Type="KillMob" MobId="28078" KillCount="30" />
 		<!-- REVIEW Q12762 Power of the Great Ones: item 39748 Energized Polished Crystal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12762)) &amp;&amp; (IsQuestCompleted(12762)))">
@@ -178,7 +178,7 @@
 		<If Condition="((HasQuest(12726)) &amp;&amp; (!IsQuestCompleted(12726)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12726" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q12704 Appeasing the Great Rain Stone: helper item 38622 Lafoo's Bug Bag has no dropping creature near the guide coordinates; item 38575 Shiny Treasures has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12704 Appeasing the Great Rain Stone: helper item 38622 Lafoo's Bug Bag has no creature or object source near the guide coordinates; item 38575 Shiny Treasures has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12704)) &amp;&amp; (IsQuestCompleted(12704)))">
 			<TurnIn QuestName="Appeasing the Great Rain Stone" QuestId="12704" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>

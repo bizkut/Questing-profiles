@@ -873,6 +873,11 @@
 				<Hotspot X="2849.36" Y="5229.06" Z="13.0336" />
 			</CustomBehavior>
 		</If>
+		<If Condition="HasQuest(11904) &amp;&amp; !IsQuestCompleted(11904) &amp;&amp; GetItemCount(35705) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11904" CollectItemId="35705" CollectItemCount="1" HuntingGroundRadius="120" MobId="26252" X="2849.36" Y="5229.06" Z="13.0336">
+				<Hotspot X="2849.36" Y="5229.06" Z="13.0336" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Fruits of Our Labor" QuestId="11904" Type="UseObject" ObjectId="188104" UseCount="1" />
 		<TurnIn QuestName="Fruits of Our Labor" QuestId="11904" TurnInName="Gerald Green" TurnInId="26083" X="2483.26" Y="5215.05" Z="30.2763" />
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11904)">
@@ -1284,7 +1289,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11610" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Nick of Time" QuestId="11575" TurnInName="Librarian Donathan" TurnInId="25262" X="3615.93" Y="5961.46" Z="136.3" />
-		<If Condition="(Me.Level &gt;= 69)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11574) || IsQuestCompleted(11575))">
 			<PickUp QuestName="Prison Break" QuestId="11587" GiverName="Librarian Donathan" GiverId="25262" X="3615.93" Y="5961.46" Z="136.3" />
 		</If>
 		<If Condition="(Me.Level &gt;= 69)">
@@ -1456,6 +1461,18 @@
 		</If>
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11967)">
 			<PickUp QuestName="Springing the Trap" QuestId="11969" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
+		</If>
+		<If Condition="HasQuest(11936) &amp;&amp; !IsQuestCompleted(11936) &amp;&amp; GetItemCount(35586) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11936" CollectItemId="35586" CollectItemCount="1" HuntingGroundRadius="120" MobId="25728" X="3603.81" Y="7151.87" Z="221.859">
+				<Hotspot X="3603.81" Y="7151.87" Z="221.859" />
+				<Hotspot X="3619.05" Y="7192.14" Z="219.747" />
+				<Hotspot X="3562.78" Y="7189.18" Z="225.075" />
+				<Hotspot X="3514.75" Y="7146.97" Z="217.131" />
+				<Hotspot X="3492.84" Y="7109.36" Z="214.988" />
+				<Hotspot X="3514.82" Y="7074.38" Z="209.062" />
+				<Hotspot X="3556.04" Y="7055.76" Z="204.917" />
+				<Hotspot X="3649.99" Y="7020.45" Z="166.278" />
+			</CustomBehavior>
 		</If>
 		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
 		<Objective QuestName="Reading the Meters" QuestId="11900" Type="UseObject" ObjectId="188100" UseCount="1" />

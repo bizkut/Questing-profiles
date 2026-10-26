@@ -364,7 +364,7 @@
 		<TurnIn QuestName="Demon Dogs" QuestId="5542" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<TurnIn QuestName="Blood Tinged Skies" QuestId="5543" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<TurnIn QuestName="Carrion Grubbage" QuestId="5544" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
-		<If Condition="(Me.Level &gt;= 52)">
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; (IsQuestCompleted(5542) || IsQuestCompleted(5543) || IsQuestCompleted(5544))">
 			<PickUp QuestName="Redemption" QuestId="5742" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		</If>
 		<!-- REVIEW Q5742 Redemption: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -523,7 +523,7 @@
 		<If Condition="((HasQuest(5211)) &amp;&amp; (!IsQuestCompleted(5211)))">
 			<CustomBehavior File="AbandonQuest" QuestId="5211" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 50)">
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(5168) || IsQuestCompleted(5181))">
 			<PickUp QuestName="Marauders of Darrowshire" QuestId="5206" GiverName="Carlin Redpath" GiverId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
 		</If>
 		<!-- REVIEW Q9664 Establishing New Outposts: goal 17690 &lt;TXT&gt;Eastwall Capture Quest Doodad x1: not attackable; goal 17696 &lt;TXT&gt;Northpass Capture Quest Doodad x1: not attackable; goal 17698 &lt;TXT&gt;Plaguewood Capture Quest Doodad x1: not attackable; goal 17689 &lt;TXT&gt;Crown Guard Capture Quest Doodad x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

@@ -534,7 +534,7 @@
 		</If>
 		<TurnIn QuestName="Hints of a New Plague?" QuestId="661" TurnInName="Phin Odelic" TurnInId="2711" X="-859.667" Y="-544.376" Z="10.1443" />
 		<TurnIn QuestName="Myzrael's Allies" QuestId="653" TurnInName="Gerrig Bonegrip" TurnInId="2786" X="-4598.87" Y="-1115.45" Z="505.022" />
-		<If Condition="(Me.Level &gt;= 30)">
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; (IsQuestCompleted(653) || IsQuestCompleted(688))">
 			<PickUp QuestName="Theldurin the Lost" QuestId="687" GiverName="Gerrig Bonegrip" GiverId="2786" X="-4598.87" Y="-1115.45" Z="505.022" />
 		</If>
 		<TurnIn QuestName="Malin's Request" QuestId="697" TurnInName="Archmage Malin" TurnInId="2708" X="-9009" Y="846.395" Z="105.942" />

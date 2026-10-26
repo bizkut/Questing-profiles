@@ -807,7 +807,7 @@
 		<Objective QuestName="Hardened Shells" QuestId="1105" Type="CollectItem" ItemId="5795" CollectCount="9" />
 		<TurnIn QuestName="Hardened Shells" QuestId="1105" TurnInName="Wizzle Brassbolts" TurnInId="4453" X="-6228.86" Y="-3871.63" Z="-58.6667" />
 		<TurnIn QuestName="Salt Flat Venom" QuestId="1104" TurnInName="Fizzle Brassbolts" TurnInId="4454" X="-6229.03" Y="-3868.18" Z="-58.6667" />
-		<If Condition="(Me.Level &gt;= 26)">
+		<If Condition="(Me.Level &gt;= 26) &amp;&amp; (IsQuestCompleted(1104) || IsQuestCompleted(1105))">
 			<PickUp QuestName="Martek the Exiled" QuestId="1106" GiverName="Fizzle Brassbolts" GiverId="4454" X="-6229.03" Y="-3868.18" Z="-58.6667" />
 		</If>
 		<Objective QuestName="Load Lightening" QuestId="1176" Type="CollectItem" ItemId="5848" CollectCount="10" />
@@ -964,7 +964,7 @@
 		<Objective QuestName="Tiger Mastery" QuestId="188" Type="CollectItem" ItemId="3879" CollectCount="1" />
 		<TurnIn QuestName="Tiger Mastery" QuestId="188" TurnInName="Ajeck Rouack" TurnInId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
 		<TurnIn QuestName="Supplies to Private Thorsen" QuestId="198" TurnInName="Private Thorsen" TurnInId="738" X="-11313.9" Y="-202.766" Z="75.576" />
-		<If Condition="(Me.Level &gt;= 30)">
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; (IsQuestCompleted(203) || IsQuestCompleted(204))">
 			<PickUp QuestName="Special Forces" QuestId="574" GiverName="Sergeant Yohwa" GiverId="733" X="-11310.4" Y="-205.115" Z="75.3625" />
 		</If>
 		<TurnIn QuestName="Return to Corporal Kaleb" QuestId="622" TurnInName="Corporal Kaleb" TurnInId="770" X="-11309.1" Y="-187.431" Z="75.6492" />
@@ -1158,7 +1158,7 @@
 		</If>
 		<TurnIn QuestName="James Hyal" QuestId="1302" TurnInName="Clerk Lendry" TurnInId="5083" X="-3721.74" Y="-4538.6" Z="25.917" />
 		<TurnIn QuestName="They Call Him Smiling Jim" QuestId="1282" TurnInName="Captain Garran Vimes" TurnInId="4944" X="-3735.06" Y="-4556.2" Z="27.2108" />
-		<If Condition="(Me.Level &gt;= 30)">
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; (IsQuestCompleted(1282) || IsQuestCompleted(1302))">
 			<PickUp QuestName="Inspecting the Ruins" QuestId="11123" GiverName="Captain Garran Vimes" GiverId="4944" X="-3735.06" Y="-4556.2" Z="27.2108" />
 		</If>
 		<!-- REVIEW Q11126 Traitors Among Us: goal 23602 Deserter Agitator x5: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

@@ -209,7 +209,7 @@
 			<PickUp QuestName="The Skyguard Outpost" QuestId="11062" GiverName="Chu'a'lor" GiverId="23233" X="2335.24" Y="7285.18" Z="365.617" />
 		</If>
 		<TurnIn QuestName="The Skyguard Outpost" QuestId="11062" TurnInName="Sky Commander Keller" TurnInId="23334" X="2503.06" Y="7360.36" Z="380.453" />
-		<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.DeathKnight) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(11102) &amp;&amp; !HasQuest(11102)">
+		<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.DeathKnight) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; (IsQuestCompleted(11030) || IsQuestCompleted(11058)) &amp;&amp; !IsQuestCompleted(11102) &amp;&amp; !HasQuest(11102)">
 			<PickUp QuestName="Bombing Run" QuestId="11010" GiverName="Sky Sergeant Vanderlip" GiverId="23120" X="2495.25" Y="7350.9" Z="380.334" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.Druid)) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(11010) &amp;&amp; !HasQuest(11010)">

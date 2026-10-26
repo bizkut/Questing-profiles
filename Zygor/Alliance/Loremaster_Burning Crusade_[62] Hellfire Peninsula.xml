@@ -883,6 +883,11 @@
 		<Objective QuestName="Beneath Thrallmar" QuestId="10630" Type="KillMob" MobId="18976" KillCount="1" />
 		<TurnIn QuestName="Beneath Thrallmar" QuestId="10630" TurnInName="Foreman Razelcraz" TurnInId="16915" X="430.101" Y="2886.58" Z="52.3558" />
 		<Objective QuestName="Invasion Point: Annihilator" QuestId="10397" Type="KillMob" MobId="19298" KillCount="1" />
+		<If Condition="HasQuest(10397) &amp;&amp; !IsQuestCompleted(10397) &amp;&amp; GetItemCount(29795) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="10397" CollectItemId="29795" CollectItemCount="1" HuntingGroundRadius="120" MobId="19298" X="569.779" Y="2797.71" Z="218.62">
+				<Hotspot X="569.779" Y="2797.71" Z="218.62" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Invasion Point: Annihilator" QuestId="10397" Type="UseObject" ObjectId="182935" UseCount="1" />
 		<TurnIn QuestName="Invasion Point: Annihilator" QuestId="10397" TurnInName="Field Marshal Brock" TurnInId="20793" X="497.948" Y="2012.61" Z="112.777" />
 		<If Condition="(Me.Level &gt;= 58)">

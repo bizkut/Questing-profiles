@@ -312,7 +312,7 @@
 		</If>
 		<TurnIn QuestName="The Fate of the Ruby Dragonshrine" QuestId="12419" TurnInName="Krasus" TurnInId="27990" X="3529.38" Y="273.873" Z="342.804" />
 		<TurnIn QuestName="Informing the Queen" QuestId="12124" TurnInName="Alexstrasza the Life-Binder" TurnInId="26917" X="3531.02" Y="271.403" Z="342.804" />
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12123) || IsQuestCompleted(12124))">
 			<PickUp QuestName="Report to Lord Afrasastrasz" QuestId="12435" GiverName="Alexstrasza the Life-Binder" GiverId="26917" X="3531.02" Y="271.403" Z="342.804" />
 		</If>
 		<TurnIn QuestName="Report to Lord Afrasastrasz" QuestId="12435" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />
@@ -353,6 +353,16 @@
 				<Hotspot X="3917.06" Y="6817.92" Z="150.507" />
 				<Hotspot X="3949.39" Y="6782.82" Z="153.945" />
 				<Hotspot X="3792.45" Y="6622.14" Z="157.409" />
+			</CustomBehavior>
+		</If>
+		<If Condition="HasQuest(11936) &amp;&amp; !IsQuestCompleted(11936) &amp;&amp; GetItemCount(35586) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11936" CollectItemId="35586" CollectItemCount="1" HuntingGroundRadius="120" MobId="25728" X="3583.83" Y="6845.97" Z="174.005">
+				<Hotspot X="3583.83" Y="6845.97" Z="174.005" />
+				<Hotspot X="3690.53" Y="6820.61" Z="160.952" />
+				<Hotspot X="3749.79" Y="6890.08" Z="154.591" />
+				<Hotspot X="3848" Y="6748.06" Z="150.504" />
+				<Hotspot X="3792.45" Y="6622.14" Z="157.409" />
+				<Hotspot X="3847.82" Y="6543.21" Z="173.041" />
 			</CustomBehavior>
 		</If>
 		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />

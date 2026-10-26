@@ -740,7 +740,7 @@
 		<If Condition="((HasQuest(4288)) &amp;&amp; (!IsQuestCompleted(4288)))">
 			<CustomBehavior File="AbandonQuest" QuestId="4288" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 47)">
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; (IsQuestCompleted(4285) || IsQuestCompleted(4287) || IsQuestCompleted(4288))">
 			<PickUp QuestName="Making Sense of It" QuestId="4321" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
 		<!-- REVIEW Q4321 Making Sense of It: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -956,12 +956,14 @@
 			<PickUp QuestName="A Call to Arms: The Plaguelands!" QuestId="5095" GiverName="Bluff Runner Windstrider" GiverId="10881" X="-1231.21" Y="136.75" Z="133.132" />
 		</If>
 		<TurnIn QuestName="The New Frontier" QuestId="1018" TurnInName="Arch Druid Hamuul Runetotem" TurnInId="5769" X="-1048.74" Y="-303.954" Z="159.114" />
-		<If Condition="(Me.Level &gt;= 54)">
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; (IsQuestCompleted(1000) || IsQuestCompleted(1004) || IsQuestCompleted(1018))">
 			<PickUp QuestName="Rabine Saturna" QuestId="1123" GiverName="Arch Druid Hamuul Runetotem" GiverId="5769" X="-1048.74" Y="-303.954" Z="159.114" />
 		</If>
 		<TurnIn QuestName="The Strength of Corruption" QuestId="4120" TurnInName="Talo Thornhoof" TurnInId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
 		<TurnIn QuestName="Camp Mojache" QuestId="7492" TurnInName="Talo Thornhoof" TurnInId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
-		<!-- Q3909: Evoroot (11242) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(3909) &amp;&amp; !IsQuestCompleted(3909) &amp;&amp; GetItemCount(11242) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="3909" MobId="164798" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-2838.42" Y="2341.7" Z="41.704" />
+		</If>
 		<TurnIn QuestName="Forces of Jaedenar" QuestId="5155" TurnInName="Greta Mosshoof" TurnInId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
 		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(5155)">
 			<PickUp QuestName="Collection of the Corrupt Water" QuestId="5157" GiverName="Greta Mosshoof" GiverId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
@@ -974,7 +976,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="5156" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Cleansing Felwood" QuestId="4102" TurnInName="Maybess Riverbreeze" TurnInId="9529" X="3946.78" Y="-1046.39" Z="246.118" />
-		<!-- Q5882: Cenarion Beacon (11511) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q5882: Cenarion Beacon (11511) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Salve via Hunting" QuestId="5882" Type="CollectItem" ItemId="11515" CollectCount="6" />
 		<Objective QuestName="A Husband's Last Battle" QuestId="6162" Type="CollectItem" ItemId="15879" CollectCount="1" />
 		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(4102)">
@@ -1006,7 +1008,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="5157" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Rabine Saturna" QuestId="1123" TurnInName="Rabine Saturna" TurnInId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
-		<If Condition="(Me.Level &gt;= 54)">
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; (IsQuestCompleted(1123) || IsQuestCompleted(6762))">
 			<PickUp QuestName="Wasteland" QuestId="1124" GiverName="Rabine Saturna" GiverId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; !IsQuestCompleted(5142) &amp;&amp; !HasQuest(5142)">
@@ -1030,7 +1032,7 @@
 		<If Condition="HasItem(12771) &amp;&amp; !HasQuest(5083) &amp;&amp; !IsQuestCompleted(5083) &amp;&amp; (Me.Level &gt;= 52)">
 			<PickUp QuestName="Winterfall Firewater" QuestId="5083" GiverName="Empty Firewater Flask" GiverId="12771" GiverType="Item" />
 		</If>
-		<!-- REVIEW Q3909 The Videre Elixir: item 11243 Videre Elixir has no drop or chest near the guide coordinates; helper item 11242 Evoroot has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q3909 The Videre Elixir: item 11243 Videre Elixir has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(3909)) &amp;&amp; (IsQuestCompleted(3909)))">
 			<TurnIn QuestName="The Videre Elixir" QuestId="3909" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		</If>
@@ -1157,7 +1159,9 @@
 		<If Condition="(Me.Level &gt;= 50)">
 			<PickUp QuestName="Scarlet Diversions" QuestId="5096" GiverName="High Executor Derrington" GiverId="10837" X="1760.79" Y="-723.177" Z="59.9819" />
 		</If>
-		<!-- Q5096: Flame in a Bottle (12814) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(5096) &amp;&amp; !IsQuestCompleted(5096) &amp;&amp; GetItemCount(12814) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="5096" MobId="176092" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="1756.07" Y="-724.743" Z="60.1272" />
+		</If>
 		<TurnIn QuestName="The Everlook Report" QuestId="6029" TurnInName="Argent Officer Garush" TurnInId="10839" X="1775.48" Y="-725.93" Z="59.4157" />
 		<If Condition="(Me.Level &gt;= 50)">
 			<PickUp QuestName="Better Late Than Never" QuestId="5021" GiverName="Janice Felstone" GiverId="10778" X="1817.14" Y="-1234.57" Z="65.1924" />
@@ -1166,7 +1170,7 @@
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5021)">
 			<PickUp QuestName="Better Late Than Never" QuestId="5023" GiverName="Janice's Parcel" GiverId="175894" GiverType="Object" X="1783.06" Y="-1248.57" Z="59.8121" />
 		</If>
-		<!-- REVIEW Q5096 Scarlet Diversions: helper item 12814 Flame in a Bottle has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q5096 Scarlet Diversions: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(5096)) &amp;&amp; (IsQuestCompleted(5096)))">
 			<TurnIn QuestName="Scarlet Diversions" QuestId="5096" TurnInName="High Executor Derrington" TurnInId="10837" X="1760.79" Y="-723.177" Z="59.9819" />
 		</If>
@@ -1282,7 +1286,7 @@
 		<TurnIn QuestName="Demon Dogs" QuestId="5542" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<TurnIn QuestName="Blood Tinged Skies" QuestId="5543" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<TurnIn QuestName="Carrion Grubbage" QuestId="5544" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
-		<If Condition="(Me.Level &gt;= 52)">
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; (IsQuestCompleted(5542) || IsQuestCompleted(5543) || IsQuestCompleted(5544))">
 			<PickUp QuestName="Redemption" QuestId="5742" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		</If>
 		<!-- REVIEW Q5742 Redemption: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

@@ -987,10 +987,8 @@
 		<If Condition="((HasQuest(714)) &amp;&amp; (!IsQuestCompleted(714)))">
 			<CustomBehavior File="AbandonQuest" QuestId="714" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(714)">
-			<PickUp QuestName="Liquid Stone" QuestId="715" GiverName="Lucien Tosselwrench" GiverId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />
-		</If>
-		<!-- REVIEW Q715 Liquid Stone: item 3823 Lesser Invisibility Potion has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- SKIP pickup Q715 Liquid Stone: needs skill line 171 at 0, which a profile cannot check -->
+		<!-- REVIEW Q715 Liquid Stone: item 3823 Lesser Invisibility Potion has no drop or chest near the guide coordinates; needs profession skill 171 (0). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(715)) &amp;&amp; (IsQuestCompleted(715)))">
 			<TurnIn QuestName="Liquid Stone" QuestId="715" TurnInName="Lucien Tosselwrench" TurnInId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />
 		</If>
@@ -1035,7 +1033,7 @@
 		<TurnIn QuestName="Badlands Reagent Run" QuestId="2258" TurnInName="Jarkal Mossmeld" TurnInId="6868" X="-6653.35" Y="-2139.33" Z="251.908" />
 		<Objective QuestName="Study of the Elements: Rock" QuestId="712" Type="CollectItem" ItemId="4628" CollectCount="5" />
 		<TurnIn QuestName="Study of the Elements: Rock" QuestId="712" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
-		<If Condition="(Me.Level &gt;= 35)">
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; (IsQuestCompleted(712) || IsQuestCompleted(714))">
 			<PickUp QuestName="This Is Going to Be Hard" QuestId="734" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
 		</If>
 		<TurnIn QuestName="This Is Going to Be Hard" QuestId="734" TurnInName="Lucien Tosselwrench" TurnInId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />
@@ -1213,7 +1211,7 @@
 		<If Condition="((HasQuest(11161)) &amp;&amp; (!IsQuestCompleted(11161)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11161" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(11161)">
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; (IsQuestCompleted(11160) || IsQuestCompleted(11161))">
 			<PickUp QuestName="Spirits of Stonemaul Hold" QuestId="11159" GiverName="Brogg" GiverId="23579" X="-4622.45" Y="-3172.48" Z="34.8962" />
 		</If>
 		<TurnIn QuestName="Catch a Dragon by the Tail" QuestId="11217" TurnInName="Gizzix Grimegurgle" TurnInId="23570" X="-4587.82" Y="-3155.6" Z="34.9767" />

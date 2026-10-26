@@ -864,7 +864,7 @@
 		<If Condition="((HasQuest(12648)) &amp;&amp; (!IsQuestCompleted(12648)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12648" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 74)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; (IsQuestCompleted(12648) || IsQuestCompleted(12649))">
 			<PickUp QuestName="Infiltrating Voltarus" QuestId="12661" GiverName="Stefan Vadu" GiverId="28518" X="5211.84" Y="-1302.07" Z="242.486" />
 		</If>
 		<!-- REVIEW Q12649 Suit Up!: item 38698 Bitter Plasma has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -874,7 +874,7 @@
 		<If Condition="((HasQuest(12649)) &amp;&amp; (!IsQuestCompleted(12649)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12649" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 74)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; (IsQuestCompleted(12648) || IsQuestCompleted(12649))">
 			<PickUp QuestName="Infiltrating Voltarus" QuestId="12661" GiverName="Stefan Vadu" GiverId="28518" X="5211.84" Y="-1302.07" Z="242.486" />
 		</If>
 		<Objective QuestName="Gymer's Salvation" QuestId="12914" Type="CollectItem" ItemId="41504" CollectCount="6" />
@@ -894,7 +894,7 @@
 		</If>
 		<Objective QuestName="The Storm King's Vengeance" QuestId="12919" Type="KillMob" MobId="29872" KillCount="1" />
 		<Objective QuestName="The Storm King's Vengeance" QuestId="12919" Type="KillMob" MobId="29821" KillCount="1" />
-		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12649) &amp;&amp; !IsQuestCompleted(12664) &amp;&amp; !HasQuest(12664)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; (IsQuestCompleted(12238) || IsQuestCompleted(12649)) &amp;&amp; !IsQuestCompleted(12664) &amp;&amp; !HasQuest(12664)">
 			<PickUp QuestName="Reunited" QuestId="12663" GiverName="Overlord Drakuru" GiverId="28503" X="6131.88" Y="-1951.97" Z="417.778" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12648) &amp;&amp; !IsQuestCompleted(12663) &amp;&amp; !HasQuest(12663)">
@@ -1035,7 +1035,7 @@
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12740)">
 			<PickUp QuestName="New Orders for Sergeant Stackhammer" QuestId="12505" GiverName="Commander Kunz" GiverId="28039" X="5450.91" Y="-2610.93" Z="306.993" />
 		</If>
-		<If Condition="(Me.Level &gt;= 74)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; (IsQuestCompleted(12503) || IsQuestCompleted(12740))">
 			<PickUp QuestName="Pa'Troll" QuestId="12596" GiverName="Commander Kunz" GiverId="28039" X="5450.91" Y="-2610.93" Z="306.993" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12740)">
@@ -1087,7 +1087,7 @@
 			<PickUp QuestName="Malas the Corrupter" QuestId="12554" GiverName="Sergeant Moonshard" GiverId="28283" X="5270.25" Y="-3499.32" Z="291.678" />
 		</If>
 		<TurnIn QuestName="Skimmer Spinnerets" QuestId="12553" TurnInName="Specialist Cogwheel" TurnInId="28284" X="5270.21" Y="-3509.2" Z="291.694" />
-		<If Condition="(Me.Level &gt;= 74)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12553)">
 			<PickUp QuestName="Crashed Sprayer" QuestId="12583" GiverName="Specialist Cogwheel" GiverId="28284" X="5270.21" Y="-3509.2" Z="291.694" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12552)">
@@ -1095,7 +1095,7 @@
 		</If>
 		<Objective QuestName="Crashed Sprayer" QuestId="12583" Type="CollectItem" ItemId="38560" CollectCount="1" />
 		<TurnIn QuestName="Crashed Sprayer" QuestId="12583" TurnInName="Specialist Cogwheel" TurnInId="28284" X="5270.21" Y="-3509.2" Z="291.694" />
-		<If Condition="(Me.Level &gt;= 74)">
+		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12583)">
 			<PickUp QuestName="A Tangled Skein" QuestId="12555" GiverName="Specialist Cogwheel" GiverId="28284" X="5270.21" Y="-3509.2" Z="291.694" />
 		</If>
 		<Objective QuestName="Malas the Corrupter" QuestId="12554" Type="CollectItem" ItemId="38521" CollectCount="1" />
@@ -1179,15 +1179,11 @@
 		<If Condition="((HasQuest(12557)) &amp;&amp; (!IsQuestCompleted(12557)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12557" Type="Incomplete" />
 		</If>
-		<!-- Q12799: Ancient Ectoplasm (38335) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12799) &amp;&amp; !IsQuestCompleted(12799) &amp;&amp; GetItemCount(38335) &lt; 5">
+			<CustomBehavior File="InteractWith" QuestId="12799" MobId="190461" ObjectType="GameObject" Loot="True" NumOfTimes="5" CollectionDistance="200" X="5950.63" Y="-2346.77" Z="296.292" />
+		</If>
 		<Objective QuestName="Siphoning the Spirits" QuestId="12799" Type="CollectItem" ItemId="40066" CollectCount="5" />
-		<!-- REVIEW Q12799 Siphoning the Spirits: helper item 38335 Ancient Ectoplasm has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(12799)) &amp;&amp; (IsQuestCompleted(12799)))">
-			<TurnIn QuestName="Siphoning the Spirits" QuestId="12799" TurnInName="Captain Arnath" TurnInId="28045" X="5929.84" Y="-2378.66" Z="293.924" />
-		</If>
-		<If Condition="((HasQuest(12799)) &amp;&amp; (!IsQuestCompleted(12799)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12799" Type="Incomplete" />
-		</If>
+		<TurnIn QuestName="Siphoning the Spirits" QuestId="12799" TurnInName="Captain Arnath" TurnInId="28045" X="5929.84" Y="-2378.66" Z="293.924" />
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12799)">
 			<PickUp QuestName="Stocking the Shelves" QuestId="12609" GiverName="Captain Arnath" GiverId="28045" X="5929.84" Y="-2378.66" Z="293.924" />
 		</If>
@@ -1500,7 +1496,7 @@
 				<Hotspot X="6434" Y="-3786.79" Z="470.799" />
 			</CustomBehavior>
 		</If>
-		<!-- Q12712: Tiki Dervish Ceremony (39314) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12712: Tiki Dervish Ceremony (39314) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Hexed Caches" QuestId="12709" Type="CollectItem" ItemId="39301" CollectCount="12" />
 		<Objective QuestName="The Key of Warlord Zol'Maz" QuestId="12712" Type="CollectItem" ItemId="39318" CollectCount="1" />
 		<If Condition="(Me.Level &gt;= 74)">
@@ -1518,7 +1514,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12707" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Hexed Caches" QuestId="12709" TurnInName="Chronicler To'kini" TurnInId="28527" X="5740.27" Y="-3595.09" Z="387.024" />
-		<!-- REVIEW Q12712 The Key of Warlord Zol'Maz: helper item 39314 Tiki Dervish Ceremony has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12712 The Key of Warlord Zol'Maz: helper item 39314 Tiki Dervish Ceremony has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12712)) &amp;&amp; (IsQuestCompleted(12712)))">
 			<TurnIn QuestName="The Key of Warlord Zol'Maz" QuestId="12712" TurnInName="Har'koa" TurnInId="28401" X="5746.51" Y="-3608.83" Z="387.191" />
 		</If>

@@ -345,7 +345,7 @@
 			<PickUp QuestName="Petty Squabbles" QuestId="2783" GiverName="Ambassador Ardalan" GiverId="7826" X="-10997.5" Y="-3505.23" Z="103.211" />
 		</If>
 		<TurnIn QuestName="Petty Squabbles" QuestId="2783" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
-		<If Condition="(Me.Level &gt;= 45)">
+		<If Condition="(Me.Level &gt;= 45) &amp;&amp; (IsQuestCompleted(2623) || IsQuestCompleted(2783))">
 			<PickUp QuestName="A Tale of Sorrow" QuestId="2801" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
 		</If>
 		<!-- REVIEW Q2801 A Tale of Sorrow: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

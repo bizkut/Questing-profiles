@@ -832,7 +832,7 @@
 		<Objective QuestName="Bad Medicine" QuestId="204" Type="CollectItem" ItemId="2633" CollectCount="7" />
 		<TurnIn QuestName="The Second Rebellion" QuestId="203" TurnInName="Sergeant Yohwa" TurnInId="733" X="-11310.4" Y="-205.115" Z="75.3625" />
 		<TurnIn QuestName="Bad Medicine" QuestId="204" TurnInName="Sergeant Yohwa" TurnInId="733" X="-11310.4" Y="-205.115" Z="75.3625" />
-		<If Condition="(Me.Level &gt;= 30)">
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; (IsQuestCompleted(203) || IsQuestCompleted(204))">
 			<PickUp QuestName="Special Forces" QuestId="574" GiverName="Sergeant Yohwa" GiverId="733" X="-11310.4" Y="-205.115" Z="75.3625" />
 		</If>
 		<TurnIn QuestName="The Hidden Key" QuestId="328" TurnInName="Bookie Herod's Strongbox" TurnInId="288" TurnInType="Object" X="-11490.5" Y="-945.307" Z="29.399" />
@@ -1083,17 +1083,13 @@
 		</If>
 		<TurnIn QuestName="Cracking Maury's Foot" QuestId="613" TurnInName='"Sea Wolf" MacKinley' TurnInId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
 		<TurnIn QuestName="Excelsior" QuestId="628" TurnInName="Drizzlik" TurnInId="2495" X="-14469.6" Y="415.382" Z="25.452" />
-		<!-- Q594: Carefully Folded Note (4098) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(594) &amp;&amp; !IsQuestCompleted(594) &amp;&amp; GetItemCount(4098) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="594" MobId="2560" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-14307.3" Y="32.8229" Z="0.1416" />
+		</If>
 		<If Condition="HasItem(4098) &amp;&amp; !HasQuest(594) &amp;&amp; !IsQuestCompleted(594) &amp;&amp; (Me.Level &gt;= 42)">
 			<PickUp QuestName="Message in a Bottle" QuestId="594" GiverName="Carefully Folded Note" GiverId="4098" GiverType="Item" />
 		</If>
-		<!-- REVIEW Q594 Message in a Bottle: helper item 4098 Carefully Folded Note has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(594)) &amp;&amp; (IsQuestCompleted(594)))">
-			<TurnIn QuestName="Message in a Bottle" QuestId="594" TurnInName="Princess Poobah" TurnInId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
-		</If>
-		<If Condition="((HasQuest(594)) &amp;&amp; (!IsQuestCompleted(594)))">
-			<CustomBehavior File="AbandonQuest" QuestId="594" Type="Incomplete" />
-		</If>
+		<TurnIn QuestName="Message in a Bottle" QuestId="594" TurnInName="Princess Poobah" TurnInId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
 		<If Condition="(Me.Level &gt;= 42) &amp;&amp; IsQuestCompleted(594)">
 			<PickUp QuestName="Message in a Bottle" QuestId="630" GiverName="Princess Poobah" GiverId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
 		</If>

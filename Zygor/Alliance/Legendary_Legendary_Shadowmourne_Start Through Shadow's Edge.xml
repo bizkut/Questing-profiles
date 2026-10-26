@@ -29,9 +29,9 @@
 		<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 80) &amp;&amp; (GetFactionReputation(1156) &gt;= 3000)">
 			<PickUp QuestName="The Sacred and the Corrupt" QuestId="24545" GiverName="Highlord Darion Mograine" GiverId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
 		</If>
-		<!-- Q24545: Rusted Bonespike Pauldrons (49980) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q24545: Handguards of Winter's Respite (49979) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q24545 The Sacred and the Corrupt: item 49869 Light's Vengeance has no drop or chest near the guide coordinates; item 49908 Primordial Saronite has no drop or chest near the guide coordinates; helper item 49980 Rusted Bonespike Pauldrons has no dropping creature near the guide coordinates; helper item 49979 Handguards of Winter's Respite has no dropping creature near the guide coordinates; item 50226 Festergut's Acidic Blood has no drop or chest near the guide coordinates; item 50231 Rotface's Acidic Blood has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q24545: Rusted Bonespike Pauldrons (49980) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q24545: Handguards of Winter's Respite (49979) is needed but nothing near the guide coordinates drops it -->
+		<!-- REVIEW Q24545 The Sacred and the Corrupt: item 49869 Light's Vengeance has no drop or chest near the guide coordinates; item 49908 Primordial Saronite has no drop or chest near the guide coordinates; helper item 49980 Rusted Bonespike Pauldrons has no creature or object source near the guide coordinates; helper item 49979 Handguards of Winter's Respite has no creature or object source near the guide coordinates; item 50226 Festergut's Acidic Blood has no drop or chest near the guide coordinates; item 50231 Rotface's Acidic Blood has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(24545)) &amp;&amp; (IsQuestCompleted(24545)))">
 			<TurnIn QuestName="The Sacred and the Corrupt" QuestId="24545" TurnInName="Runeforge" TurnInId="201742" TurnInType="Object" X="-59.4583" Y="2157.47" Z="30.6542" />
 		</If>

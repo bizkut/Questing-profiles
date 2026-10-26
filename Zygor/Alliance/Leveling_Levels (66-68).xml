@@ -978,10 +978,10 @@
 		<If Condition="((HasQuest(10108)) &amp;&amp; (!IsQuestCompleted(10108)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10108" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(10107)">
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; (IsQuestCompleted(10107) || IsQuestCompleted(10108))">
 			<PickUp QuestName="Armaments for Deception" QuestId="9928" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
-		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(10108)">
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; (IsQuestCompleted(10107) || IsQuestCompleted(10108))">
 			<PickUp QuestName="Ruthless Cunning" QuestId="9927" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
 		<Objective QuestName="Armaments for Deception" QuestId="9928" Type="CollectItem" ItemId="25554" CollectCount="10" />
@@ -1166,7 +1166,7 @@
 		<If Condition="((HasQuest(10557)) &amp;&amp; (!IsQuestCompleted(10557)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10557" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10584)">
+		<If Condition="(Me.Level &gt;= 62) &amp;&amp; (IsQuestCompleted(10557) || IsQuestCompleted(10584))">
 			<PickUp QuestName="Test Flight: The Singing Ridge" QuestId="10710" GiverName="Tally Zapnabber" GiverId="21460" X="1935.01" Y="5575.74" Z="263.753" />
 		</If>
 		<!-- REVIEW Q10584 Picking Up Some Power Converters: use item 30656: target 21731 Encased Electromental has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

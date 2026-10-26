@@ -170,13 +170,13 @@
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014)">
 			<PickUp QuestName="Netherwing Crystals" QuestId="11015" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014) &amp;&amp; !IsQuestCompleted(11017) &amp;&amp; !HasQuest(11017) &amp;&amp; !IsQuestCompleted(11018) &amp;&amp; !HasQuest(11018)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014) &amp;&amp; !IsQuestCompleted(11017) &amp;&amp; !HasQuest(11017) &amp;&amp; !IsQuestCompleted(11018) &amp;&amp; !HasQuest(11018) &amp;&amp; SkinningSkill.CurrentValue &gt;= 350">
 			<PickUp QuestName="Nethermine Flayer Hide" QuestId="11016" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014) &amp;&amp; !IsQuestCompleted(11016) &amp;&amp; !HasQuest(11016) &amp;&amp; !IsQuestCompleted(11017) &amp;&amp; !HasQuest(11017)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014) &amp;&amp; !IsQuestCompleted(11016) &amp;&amp; !HasQuest(11016) &amp;&amp; !IsQuestCompleted(11017) &amp;&amp; !HasQuest(11017) &amp;&amp; MiningSkill.CurrentValue &gt;= 350">
 			<PickUp QuestName="Nethercite Ore" QuestId="11018" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014) &amp;&amp; !IsQuestCompleted(11016) &amp;&amp; !HasQuest(11016) &amp;&amp; !IsQuestCompleted(11018) &amp;&amp; !HasQuest(11018)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11014) &amp;&amp; !IsQuestCompleted(11016) &amp;&amp; !HasQuest(11016) &amp;&amp; !IsQuestCompleted(11018) &amp;&amp; !HasQuest(11018) &amp;&amp; HerbalismSkill.CurrentValue &gt;= 350">
 			<PickUp QuestName="Netherdust Pollen" QuestId="11017" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11054) &amp;&amp; (GetFactionReputation(1015) &gt;= 3000)">

@@ -148,7 +148,7 @@
 				<Hotspot X="8530.87" Y="1557.36" Z="643.617" />
 			</CustomBehavior>
 		</If>
-		<!-- Q14112: Fresh Chum (47036) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q14112: Fresh Chum (47036) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Rescue at Sea" QuestId="14152" Type="KillMob" MobId="34947" KillCount="8" />
 		<Objective QuestName="Rescue at Sea" QuestId="14152" Type="KillMob" MobId="34907" KillCount="3" />
 		<Objective QuestName="A Leg Up" QuestId="14074" Type="CollectItem" ItemId="46859" CollectCount="10" />
@@ -175,7 +175,7 @@
 		<If Condition="((HasQuest(14090)) &amp;&amp; (!IsQuestCompleted(14090)))">
 			<CustomBehavior File="AbandonQuest" QuestId="14090" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q14112 What Do You Feed a Yeti, Anyway?: helper item 47036 Fresh Chum has no dropping creature near the guide coordinates; item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q14112 What Do You Feed a Yeti, Anyway?: helper item 47036 Fresh Chum has no creature or object source near the guide coordinates; item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14112)) &amp;&amp; (IsQuestCompleted(14112)))">
 			<TurnIn QuestName="What Do You Feed a Yeti, Anyway?" QuestId="14112" TurnInName="Savinia Loresong" TurnInId="34912" X="8609.2" Y="664.914" Z="550.323" />
 		</If>

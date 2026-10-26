@@ -378,7 +378,9 @@
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
-			<!-- Q13753: Winter Hyacinth (45000) is needed but no creature near the guide coordinates drops it -->
+			<If Condition="HasQuest(13753) &amp;&amp; !IsQuestCompleted(13753) &amp;&amp; GetItemCount(45000) &lt; 4">
+				<CustomBehavior File="InteractWith" QuestId="13753" MobId="194213" ObjectType="GameObject" Loot="True" NumOfTimes="4" CollectionDistance="200" X="6259.9" Y="996.022" Z="148.676" />
+			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<If Condition="HasQuest(13754) &amp;&amp; !IsQuestCompleted(13754) &amp;&amp; GetItemCount(45005) &lt; 1">
@@ -403,7 +405,7 @@
 			<If Condition="((HasQuest(13752)) &amp;&amp; (!IsQuestCompleted(13752)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13752" Type="Incomplete" />
 			</If>
-			<!-- REVIEW Q13753 A Worthy Weapon: helper item 45000 Winter Hyacinth has no dropping creature near the guide coordinates; item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<!-- REVIEW Q13753 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13753)) &amp;&amp; (IsQuestCompleted(13753)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13753" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
@@ -456,7 +458,9 @@
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
-			<!-- Q13742: Winter Hyacinth (45000) is needed but no creature near the guide coordinates drops it -->
+			<If Condition="HasQuest(13742) &amp;&amp; !IsQuestCompleted(13742) &amp;&amp; GetItemCount(45000) &lt; 4">
+				<CustomBehavior File="InteractWith" QuestId="13742" MobId="194213" ObjectType="GameObject" Loot="True" NumOfTimes="4" CollectionDistance="200" X="6259.9" Y="996.022" Z="148.676" />
+			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
 			<If Condition="HasQuest(13743) &amp;&amp; !IsQuestCompleted(13743) &amp;&amp; GetItemCount(45005) &lt; 1">
@@ -481,7 +485,7 @@
 			<If Condition="((HasQuest(13741)) &amp;&amp; (!IsQuestCompleted(13741)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13741" Type="Incomplete" />
 			</If>
-			<!-- REVIEW Q13742 A Worthy Weapon: helper item 45000 Winter Hyacinth has no dropping creature near the guide coordinates; item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<!-- REVIEW Q13742 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13742)) &amp;&amp; (IsQuestCompleted(13742)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13742" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
@@ -534,7 +538,9 @@
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
-			<!-- Q13600: Winter Hyacinth (45000) is needed but no creature near the guide coordinates drops it -->
+			<If Condition="HasQuest(13600) &amp;&amp; !IsQuestCompleted(13600) &amp;&amp; GetItemCount(45000) &lt; 4">
+				<CustomBehavior File="InteractWith" QuestId="13600" MobId="194213" ObjectType="GameObject" Loot="True" NumOfTimes="4" CollectionDistance="200" X="6259.9" Y="996.022" Z="148.676" />
+			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
 			<If Condition="HasQuest(13616) &amp;&amp; !IsQuestCompleted(13616) &amp;&amp; GetItemCount(45005) &lt; 1">
@@ -559,7 +565,7 @@
 			<If Condition="((HasQuest(13603)) &amp;&amp; (!IsQuestCompleted(13603)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13603" Type="Incomplete" />
 			</If>
-			<!-- REVIEW Q13600 A Worthy Weapon: helper item 45000 Winter Hyacinth has no dropping creature near the guide coordinates; item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<!-- REVIEW Q13600 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13600)) &amp;&amp; (IsQuestCompleted(13600)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13600" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
@@ -612,7 +618,9 @@
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
-			<!-- Q13758: Winter Hyacinth (45000) is needed but no creature near the guide coordinates drops it -->
+			<If Condition="HasQuest(13758) &amp;&amp; !IsQuestCompleted(13758) &amp;&amp; GetItemCount(45000) &lt; 4">
+				<CustomBehavior File="InteractWith" QuestId="13758" MobId="194213" ObjectType="GameObject" Loot="True" NumOfTimes="4" CollectionDistance="200" X="6259.9" Y="996.022" Z="148.676" />
+			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
 			<If Condition="HasQuest(13759) &amp;&amp; !IsQuestCompleted(13759) &amp;&amp; GetItemCount(45005) &lt; 1">
@@ -637,7 +645,7 @@
 			<If Condition="((HasQuest(13757)) &amp;&amp; (!IsQuestCompleted(13757)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13757" Type="Incomplete" />
 			</If>
-			<!-- REVIEW Q13758 A Worthy Weapon: helper item 45000 Winter Hyacinth has no dropping creature near the guide coordinates; item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<!-- REVIEW Q13758 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13758)) &amp;&amp; (IsQuestCompleted(13758)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13758" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
@@ -690,7 +698,9 @@
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
-			<!-- Q13747: Winter Hyacinth (45000) is needed but no creature near the guide coordinates drops it -->
+			<If Condition="HasQuest(13747) &amp;&amp; !IsQuestCompleted(13747) &amp;&amp; GetItemCount(45000) &lt; 4">
+				<CustomBehavior File="InteractWith" QuestId="13747" MobId="194213" ObjectType="GameObject" Loot="True" NumOfTimes="4" CollectionDistance="200" X="6259.9" Y="996.022" Z="148.676" />
+			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
 			<If Condition="HasQuest(13748) &amp;&amp; !IsQuestCompleted(13748) &amp;&amp; GetItemCount(45005) &lt; 1">
@@ -715,7 +725,7 @@
 			<If Condition="((HasQuest(13746)) &amp;&amp; (!IsQuestCompleted(13746)))">
 				<CustomBehavior File="AbandonQuest" QuestId="13746" Type="Incomplete" />
 			</If>
-			<!-- REVIEW Q13747 A Worthy Weapon: helper item 45000 Winter Hyacinth has no dropping creature near the guide coordinates; item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<!-- REVIEW Q13747 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(13747)) &amp;&amp; (IsQuestCompleted(13747)))">
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13747" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>

@@ -1026,6 +1026,11 @@
 				<Hotspot X="2849.36" Y="5229.06" Z="13.0336" />
 			</CustomBehavior>
 		</If>
+		<If Condition="HasQuest(11904) &amp;&amp; !IsQuestCompleted(11904) &amp;&amp; GetItemCount(35705) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11904" CollectItemId="35705" CollectItemCount="1" HuntingGroundRadius="120" MobId="26252" X="2849.36" Y="5229.06" Z="13.0336">
+				<Hotspot X="2849.36" Y="5229.06" Z="13.0336" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Fruits of Our Labor" QuestId="11904" Type="UseObject" ObjectId="188104" UseCount="1" />
 		<TurnIn QuestName="Fruits of Our Labor" QuestId="11904" TurnInName="Gerald Green" TurnInId="26083" X="2483.26" Y="5215.05" Z="30.2763" />
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11904)">
@@ -1066,7 +1071,7 @@
 			<PickUp QuestName="Cowards and Fools" QuestId="11932" GiverName="Private Brau" GiverId="25395" X="2151.78" Y="5303.29" Z="15.5018" />
 		</If>
 		<TurnIn QuestName="A Diplomatic Mission" QuestId="12141" TurnInName="Karuk" TurnInId="25435" X="1996.48" Y="5853.81" Z="36.03" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11662) || IsQuestCompleted(12141))">
 			<PickUp QuestName="Karuk's Oath" QuestId="11613" GiverName="Karuk" GiverId="25435" X="1996.48" Y="5853.81" Z="36.03" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68)">
@@ -1277,7 +1282,7 @@
 		<Objective QuestName="Leading the Ancestors Home" QuestId="11610" Type="KillMob" MobId="25399" KillCount="1" />
 		<TurnIn QuestName="Leading the Ancestors Home" QuestId="11610" TurnInName="Elder Atkanok" TurnInId="187565" TurnInType="Object" X="3519.76" Y="5421.07" Z="40.9974" />
 		<TurnIn QuestName="Nick of Time" QuestId="11575" TurnInName="Librarian Donathan" TurnInId="25262" X="3615.93" Y="5961.46" Z="136.3" />
-		<If Condition="(Me.Level &gt;= 69)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11574) || IsQuestCompleted(11575))">
 			<PickUp QuestName="Prison Break" QuestId="11587" GiverName="Librarian Donathan" GiverId="25262" X="3615.93" Y="5961.46" Z="136.3" />
 		</If>
 		<If Condition="(Me.Level &gt;= 69)">
@@ -1424,6 +1429,16 @@
 		<Objective QuestName="The Cell" QuestId="11943" Type="CollectItem" ItemId="35669" CollectCount="1" />
 		<Objective QuestName="The Cell" QuestId="11943" Type="CollectItem" ItemId="35668" CollectCount="1" />
 		<Objective QuestName="Keep the Secret Safe" QuestId="11914" Type="CollectItem" ItemId="35493" CollectCount="5" />
+		<If Condition="HasQuest(11936) &amp;&amp; !IsQuestCompleted(11936) &amp;&amp; GetItemCount(35586) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11936" CollectItemId="35586" CollectItemCount="1" HuntingGroundRadius="120" MobId="25728" X="3583.83" Y="6845.97" Z="174.005">
+				<Hotspot X="3583.83" Y="6845.97" Z="174.005" />
+				<Hotspot X="3690.53" Y="6820.61" Z="160.952" />
+				<Hotspot X="3749.79" Y="6890.08" Z="154.591" />
+				<Hotspot X="3848" Y="6748.06" Z="150.504" />
+				<Hotspot X="3792.45" Y="6622.14" Z="157.409" />
+				<Hotspot X="3847.82" Y="6543.21" Z="173.041" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
 		<TurnIn QuestName="Hatching a Plan" QuestId="11936" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11936)">
@@ -1447,7 +1462,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11946" Type="Incomplete" />
 		</If>
 		<!-- SKIP pickup Q11951 Bait and Switch: no quest giver with a spawn in the database -->
-		<!-- Q11951: Augmented Arcane Prison (35671) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q11951: Augmented Arcane Prison (35671) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Cracking the Code" QuestId="11931" Type="CollectItem" ItemId="35628" CollectCount="1" />
 		<Objective QuestName="Cracking the Code" QuestId="11931" Type="CollectItem" ItemId="35629" CollectCount="3" />
 		<Objective QuestName="Bait and Switch" QuestId="11951" Type="CollectItem" ItemId="35685" CollectCount="10" />
@@ -1756,8 +1771,8 @@
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11658)">
 			<PickUp QuestName="It Was The Orcs, Honest!" QuestId="11670" GiverName="Crafty Wobblesprocket" GiverId="25477" X="4172.79" Y="5254.92" Z="26.2426" />
 		</If>
-		<!-- Q11670: Warsong Banner (34869) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q11670 It Was The Orcs, Honest!: helper item 34869 Warsong Banner has no dropping creature near the guide coordinates; item 34870 Warsong Orc Disguise has no drop or chest near the guide coordinates; objective 25581 It Was The Orcs, Honest! Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q11670: Warsong Banner (34869) is needed but nothing near the guide coordinates drops it -->
+		<!-- REVIEW Q11670 It Was The Orcs, Honest!: helper item 34869 Warsong Banner has no creature or object source near the guide coordinates; item 34870 Warsong Orc Disguise has no drop or chest near the guide coordinates; objective 25581 It Was The Orcs, Honest! Kill Credit Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11670)) &amp;&amp; (IsQuestCompleted(11670)))">
 			<TurnIn QuestName="It Was The Orcs, Honest!" QuestId="11670" TurnInName="Crafty Wobblesprocket" TurnInId="25477" X="4172.79" Y="5254.92" Z="26.2426" />
 		</If>

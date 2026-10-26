@@ -904,7 +904,7 @@
 		<Objective QuestName="Baleheim Must Burn!" QuestId="11285" Type="KillMob" MobId="24185" KillCount="1" />
 		<Objective QuestName="Baleheim Must Burn!" QuestId="11285" Type="KillMob" MobId="24184" KillCount="1" />
 		<TurnIn QuestName="Baleheim Must Burn!" QuestId="11285" TurnInName="Sergeant Gorth" TurnInId="24027" X="1541.28" Y="-5697.27" Z="250.059" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11283) || IsQuestCompleted(11285))">
 			<PickUp QuestName="The Ambush" QuestId="11303" GiverName="Sergeant Gorth" GiverId="24027" X="1541.28" Y="-5697.27" Z="250.059" />
 		</If>
 		<TurnIn QuestName="The Ambush" QuestId="11303" TurnInName="Lydell" TurnInId="24458" X="1634.11" Y="-5380.04" Z="191.162" />
@@ -943,7 +943,7 @@
 			<PickUp QuestName="Keeping Watch on the Interlopers" QuestId="11297" GiverName="Junat the Wanderer" GiverId="24234" X="2696.28" Y="-4325.72" Z="289.99" />
 		</If>
 		<TurnIn QuestName="The Frozen Glade" QuestId="11312" TurnInName="Lurielle" TurnInId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
-		<If Condition="(Me.Level &gt;= 69)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11302) || IsQuestCompleted(11312))">
 			<PickUp QuestName="Spirits of the Ice" QuestId="11313" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
 		<Objective QuestName="Spirits of the Ice" QuestId="11313" Type="CollectItem" ItemId="33605" CollectCount="15" />
@@ -1021,10 +1021,10 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11314" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Wild Vines" QuestId="11315" TurnInName="Lurielle" TurnInId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
-		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11314)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11314) || IsQuestCompleted(11315))">
 			<PickUp QuestName="Spawn of the Twisted Glade" QuestId="11316" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
-		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11315)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11314) || IsQuestCompleted(11315))">
 			<PickUp QuestName="Seeds of the Blacksouled Keepers" QuestId="11319" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
 		<Objective QuestName="Spawn of the Twisted Glade" QuestId="11316" Type="KillMob" MobId="23874" KillCount="10" />
@@ -1534,7 +1534,7 @@
 		<TurnIn QuestName="The Staff of Storm's Fury" QuestId="11511" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		<TurnIn QuestName="The Frozen Heart of Isuldof" QuestId="11512" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		<TurnIn QuestName="The Ancient Armor of the Kvaldir" QuestId="11567" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11511) || IsQuestCompleted(11512) || IsQuestCompleted(11530) || IsQuestCompleted(11567))">
 			<PickUp QuestName="A Return to Resting" QuestId="11568" GiverName="Orfus of Kamagua" GiverId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		</If>
 		<!-- REVIEW Q11280 Draconis Gastritis: objective 24170 Draconis Gastritis Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

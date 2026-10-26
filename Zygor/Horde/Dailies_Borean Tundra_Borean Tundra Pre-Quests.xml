@@ -94,6 +94,18 @@
 				<Hotspot X="3847.82" Y="6543.21" Z="173.041" />
 			</CustomBehavior>
 		</If>
+		<If Condition="HasQuest(11936) &amp;&amp; !IsQuestCompleted(11936) &amp;&amp; GetItemCount(35586) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="11936" CollectItemId="35586" CollectItemCount="1" HuntingGroundRadius="120" MobId="25728" X="4021.77" Y="6927.94" Z="165.955">
+				<Hotspot X="4021.77" Y="6927.94" Z="165.955" />
+				<Hotspot X="4082.2" Y="6888.15" Z="167.542" />
+				<Hotspot X="4114.5" Y="6919.72" Z="168.47" />
+				<Hotspot X="4089.45" Y="6842.39" Z="168.299" />
+				<Hotspot X="4008.38" Y="6776.67" Z="161.801" />
+				<Hotspot X="3949.39" Y="6782.82" Z="153.945" />
+				<Hotspot X="3917.06" Y="6817.92" Z="150.507" />
+				<Hotspot X="4124.63" Y="7092.05" Z="170.516" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
 		<TurnIn QuestName="Hatching a Plan" QuestId="11936" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11936)">

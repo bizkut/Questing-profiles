@@ -1194,7 +1194,7 @@
 			<PickUp QuestName="Distraction at Manaforge B'naar" QuestId="10241" GiverName="Exarch Orelis" GiverId="19466" X="3070.84" Y="3695.18" Z="142.465" />
 		</If>
 		<TurnIn QuestName="Assisting the Consortium" QuestId="10263" TurnInName="Nether-Stalker Khay'ji" TurnInId="19880" X="3069.96" Y="3674.86" Z="142.527" />
-		<If Condition="(Me.Level &gt;= 67)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10263) || IsQuestCompleted(10264))">
 			<PickUp QuestName="Consortium Crystal Collection" QuestId="10265" GiverName="Nether-Stalker Khay'ji" GiverId="19880" X="3069.96" Y="3674.86" Z="142.527" />
 		</If>
 		<TurnIn QuestName="Off To Area 52" QuestId="10183" TurnInName="Rocket-Chief Fuselage" TurnInId="19570" X="3041.8" Y="3658.85" Z="143.406" />
@@ -1620,7 +1620,7 @@
 		</If>
 		<TurnIn QuestName="Return to Thalodien" QuestId="10200" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
 		<TurnIn QuestName="Attack on Manaforge Coruu" QuestId="10246" TurnInName="Exarch Orelis" TurnInId="19466" X="3070.84" Y="3695.18" Z="142.465" />
-		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10313) || IsQuestCompleted(10321)) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="Sunfury Briefings" QuestId="10328" GiverName="Exarch Orelis" GiverId="19466" X="3070.84" Y="3695.18" Z="142.465" />
 		</If>
 		<!-- REVIEW Q10321 Shutting Down Manaforge Coruu: goal 20417 Coruu Control Console x1: kill credit or scripted event; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

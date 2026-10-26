@@ -300,7 +300,7 @@
 		<If Condition="(Me.Level &gt;= 77)">
 			<PickUp QuestName="The Fate Of The Fallen" QuestId="14107" GiverName="Crusader Silverdawn" GiverId="35094" X="8461.79" Y="1084.64" Z="554.586" />
 		</If>
-		<!-- Q14145: Fresh Chum (47036) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q14145: Fresh Chum (47036) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Rescue at Sea" QuestId="14136" Type="KillMob" MobId="34947" KillCount="8" />
 		<Objective QuestName="Rescue at Sea" QuestId="14136" Type="KillMob" MobId="34907" KillCount="3" />
 		<Objective QuestName="A Leg Up" QuestId="14143" Type="CollectItem" ItemId="46859" CollectCount="10" />
@@ -379,9 +379,15 @@
 		<If Condition="((HasQuest(13301)) &amp;&amp; (!IsQuestCompleted(13301)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13301" Type="Incomplete" />
 		</If>
-		<!-- Q13261: Abandoned Armor (43616) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13261: Abandoned Helm (43610) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13261: Pile of Bones (43609) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13261) &amp;&amp; !IsQuestCompleted(13261) &amp;&amp; GetItemCount(43616) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13261" MobId="193201" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6723.57" Y="1041.84" Z="287.952" />
+		</If>
+		<If Condition="HasQuest(13261) &amp;&amp; !IsQuestCompleted(13261) &amp;&amp; GetItemCount(43610) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13261" MobId="193200" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6759.65" Y="1025.41" Z="294.841" />
+		</If>
+		<If Condition="HasQuest(13261) &amp;&amp; !IsQuestCompleted(13261) &amp;&amp; GetItemCount(43609) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13261" MobId="193199" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6759.61" Y="1049.35" Z="289.959" />
+		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13373)">
 			<PickUp QuestName="Riding the Wavelength: The Bombardment" QuestId="13406" GiverName="Fringe Engineer Tezzla" GiverId="32430" X="7897.96" Y="2057.59" Z="600.36" />
 		</If>
@@ -403,8 +409,8 @@
 		<If Condition="((HasQuest(13376)) &amp;&amp; (!IsQuestCompleted(13376)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13376" Type="Incomplete" />
 		</If>
-		<!-- Q13357: Writhing Mass (44304) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13365: Dark Matter (44434) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13357: Writhing Mass (44304) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q13365: Dark Matter (44434) is needed but nothing near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13084)">
 			<PickUp QuestName="Leave Our Mark" QuestId="12995" GiverName="Baron Sliver" GiverId="29343" X="8385.21" Y="2757.21" Z="656.702" />
 		</If>
@@ -449,7 +455,7 @@
 		<If Condition="((HasQuest(13353)) &amp;&amp; (!IsQuestCompleted(13353)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13353" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13365 Not a Bug: helper item 44434 Dark Matter has no dropping creature near the guide coordinates; objective 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13365 Not a Bug: helper item 44434 Dark Matter has no creature or object source near the guide coordinates; objective 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13365)) &amp;&amp; (IsQuestCompleted(13365)))">
 			<TurnIn QuestName="Not a Bug" QuestId="13365" TurnInName="Koltira Deathweaver" TurnInId="29795" X="45.6197" Y="7.2932" Z="30.0955" />
 		</If>
@@ -473,14 +479,14 @@
 		<If Condition="((HasQuest(13302)) &amp;&amp; (!IsQuestCompleted(13302)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13302" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13261 Volatility: helper item 43616 Abandoned Armor has no dropping creature near the guide coordinates; helper item 43610 Abandoned Helm has no dropping creature near the guide coordinates; helper item 43609 Pile of Bones has no dropping creature near the guide coordinates; objective 31364 Frostbrood Skytalon KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13261 Volatility: objective 31364 Frostbrood Skytalon KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13261)) &amp;&amp; (IsQuestCompleted(13261)))">
 			<TurnIn QuestName="Volatility" QuestId="13261" TurnInName="Chief Engineer Copperclaw" TurnInId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
 		<If Condition="((HasQuest(13261)) &amp;&amp; (!IsQuestCompleted(13261)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13261" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13357 Retest Now: helper item 44304 Writhing Mass has no dropping creature near the guide coordinates; objective 32266 Writhing Mass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13357 Retest Now: helper item 44304 Writhing Mass has no creature or object source near the guide coordinates; objective 32266 Writhing Mass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13357)) &amp;&amp; (IsQuestCompleted(13357)))">
 			<TurnIn QuestName="Retest Now" QuestId="13357" TurnInName="Chief Engineer Copperclaw" TurnInId="30825" X="38.4745" Y="0.0384" Z="10.1868" />
 		</If>
@@ -613,7 +619,7 @@
 		<If Condition="((HasQuest(14141)) &amp;&amp; (!IsQuestCompleted(14141)))">
 			<CustomBehavior File="AbandonQuest" QuestId="14141" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q14145 What Do You Feed a Yeti, Anyway?: helper item 47036 Fresh Chum has no dropping creature near the guide coordinates; item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q14145 What Do You Feed a Yeti, Anyway?: helper item 47036 Fresh Chum has no creature or object source near the guide coordinates; item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14145)) &amp;&amp; (IsQuestCompleted(14145)))">
 			<TurnIn QuestName="What Do You Feed a Yeti, Anyway?" QuestId="14145" TurnInName="Tylos Dawnrunner" TurnInId="34914" X="8422.19" Y="673.261" Z="550.554" />
 		</If>

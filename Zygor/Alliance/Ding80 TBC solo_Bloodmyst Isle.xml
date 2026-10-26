@@ -1550,7 +1550,7 @@
 			<TurnIn QuestName="Beasts of the Apocalypse!" QuestId="9560" TurnInName="Moordo" TurnInId="17442" X="-3442.68" Y="-12322.2" Z="14.1547" />
 		</If>
 		<If Condition="!((Me.Race == WoWRace.Draenei))">
-			<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(9559)">
+			<If Condition="(Me.Level &gt;= 7) &amp;&amp; (IsQuestCompleted(9559) || IsQuestCompleted(9560))">
 				<PickUp QuestName="Search Stillpine Hold" QuestId="9565" GiverName="High Chief Stillpine" GiverId="17440" X="-3353.36" Y="-12400.5" Z="26.0876" />
 			</If>
 		</If>
@@ -2057,7 +2057,7 @@
 			<PickUp QuestName="Into the Dream" QuestId="9688" GiverName="Prince Toreth" GiverId="17674" X="-1507.09" Y="-12525.4" Z="4.8416" />
 		</If>
 		<TurnIn QuestName="The Bloodcurse Legacy" QuestId="9672" TurnInName="Captain Edward Hanes" TurnInId="17712" X="-1251.07" Y="-12657.3" Z="0.8849" />
-		<If Condition="(Me.Level &gt;= 15)">
+		<If Condition="(Me.Level &gt;= 15) &amp;&amp; (IsQuestCompleted(9672) || IsQuestCompleted(9751))">
 			<PickUp QuestName="The Bloodcursed Naga" QuestId="9674" GiverName="Captain Edward Hanes" GiverId="17712" X="-1251.07" Y="-12657.3" Z="0.8849" />
 		</If>
 		<Objective QuestName="The Bloodcursed Naga" QuestId="9674" Type="KillMob" MobId="17713" KillCount="10" />

@@ -535,7 +535,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12678" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Tonight We Dine In Havenshire" QuestId="12679" TurnInName="Orithos the Sky Darkener" TurnInId="28647" X="2322.23" Y="-5748.33" Z="154.042" />
-		<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 55)">
+		<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 55) &amp;&amp; (IsQuestCompleted(12679) || IsQuestCompleted(12687) || IsQuestCompleted(12733))">
 			<PickUp QuestName="Gothik the Harvester" QuestId="12697" GiverName="Prince Valanar" GiverId="28377" X="2371.37" Y="-5701.04" Z="154.005" />
 		</If>
 		<TurnIn QuestName="Gothik the Harvester" QuestId="12697" TurnInName="Gothik the Harvester" TurnInId="28658" X="2348.77" Y="-5758.28" Z="154.058" />
@@ -690,7 +690,7 @@
 		<If Condition="((HasQuest(12750)) &amp;&amp; (!IsQuestCompleted(12750)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12750" Type="Incomplete" />
 		</If>
-		<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 55)">
+		<If Condition="((Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 55) &amp;&amp; (IsQuestCompleted(12739) || IsQuestCompleted(12742) || IsQuestCompleted(12743) || IsQuestCompleted(12744) || IsQuestCompleted(12745) || IsQuestCompleted(12746) || IsQuestCompleted(12747) || IsQuestCompleted(12748) || IsQuestCompleted(12749) || IsQuestCompleted(12750))">
 			<PickUp QuestName="A Sort Of Homecoming" QuestId="12751" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1380.47" Y="-5711.57" Z="136.488" />
 		</If>
 		<TurnIn QuestName="A Sort Of Homecoming" QuestId="12751" TurnInName="Thassarian" TurnInId="28913" X="1397.51" Y="-5827.42" Z="137.271" />
@@ -843,7 +843,9 @@
 		<If Condition="(Me.Level &gt;= 50)">
 			<PickUp QuestName="Scarlet Diversions" QuestId="5096" GiverName="High Executor Derrington" GiverId="10837" X="1760.79" Y="-723.177" Z="59.9819" />
 		</If>
-		<!-- Q5096: Flame in a Bottle (12814) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(5096) &amp;&amp; !IsQuestCompleted(5096) &amp;&amp; GetItemCount(12814) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="5096" MobId="176092" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="1756.07" Y="-724.743" Z="60.1272" />
+		</If>
 		<If Condition="(Me.Level &gt;= 50)">
 			<PickUp QuestName="Better Late Than Never" QuestId="5021" GiverName="Janice Felstone" GiverId="10778" X="1817.14" Y="-1234.57" Z="65.1924" />
 		</If>
@@ -851,7 +853,7 @@
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5021)">
 			<PickUp QuestName="Better Late Than Never" QuestId="5023" GiverName="Janice's Parcel" GiverId="175894" GiverType="Object" X="1783.06" Y="-1248.57" Z="59.8121" />
 		</If>
-		<!-- REVIEW Q5096 Scarlet Diversions: helper item 12814 Flame in a Bottle has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q5096 Scarlet Diversions: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(5096)) &amp;&amp; (IsQuestCompleted(5096)))">
 			<TurnIn QuestName="Scarlet Diversions" QuestId="5096" TurnInName="High Executor Derrington" TurnInId="10837" X="1760.79" Y="-723.177" Z="59.9819" />
 		</If>
@@ -969,7 +971,7 @@
 			<PickUp QuestName="The Jeremiah Blues" QuestId="5049" GiverName="Royal Overseer Bauhaus" GiverId="10781" X="1601.69" Y="203.622" Z="-55.2596" />
 		</If>
 		<TurnIn QuestName="The Jeremiah Blues" QuestId="5049" TurnInName="Jeremiah Payson" TurnInId="8403" X="1595.27" Y="224.662" Z="-62.0162" />
-		<If Condition="(Me.Level &gt;= 50)">
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(5048) || IsQuestCompleted(5049))">
 			<PickUp QuestName="Good Luck Charm" QuestId="5050" GiverName="Jeremiah Payson" GiverId="8403" X="1595.27" Y="224.662" Z="-62.0162" />
 		</If>
 		<TurnIn QuestName="Good Luck Charm" QuestId="5050" TurnInName="Janice Felstone" TurnInId="10778" X="1817.14" Y="-1234.57" Z="65.1924" />
@@ -1003,7 +1005,7 @@
 		<TurnIn QuestName="Demon Dogs" QuestId="5542" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<TurnIn QuestName="Blood Tinged Skies" QuestId="5543" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<TurnIn QuestName="Carrion Grubbage" QuestId="5544" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
-		<If Condition="(Me.Level &gt;= 52)">
+		<If Condition="(Me.Level &gt;= 52) &amp;&amp; (IsQuestCompleted(5542) || IsQuestCompleted(5543) || IsQuestCompleted(5544))">
 			<PickUp QuestName="Redemption" QuestId="5742" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		</If>
 		<!-- REVIEW Q5742 Redemption: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

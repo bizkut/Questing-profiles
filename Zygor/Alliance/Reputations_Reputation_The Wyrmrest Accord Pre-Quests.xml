@@ -139,7 +139,7 @@
 			<PickUp QuestName="Informing the Queen" QuestId="12123" GiverName="Tariolstrasz" GiverId="26443" X="3549.37" Y="379.35" Z="52.3397" />
 		</If>
 		<TurnIn QuestName="Informing the Queen" QuestId="12123" TurnInName="Alexstrasza the Life-Binder" TurnInId="26917" X="3531.02" Y="271.403" Z="342.804" />
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12123) || IsQuestCompleted(12124))">
 			<PickUp QuestName="Report to Lord Afrasastrasz" QuestId="12435" GiverName="Alexstrasza the Life-Binder" GiverId="26917" X="3531.02" Y="271.403" Z="342.804" />
 		</If>
 		<CustomBehavior File="LoadProfile" ProfileName="Reputations_Reputation_The Wyrmrest Accord Dailies" />

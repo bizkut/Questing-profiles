@@ -230,10 +230,10 @@
 		<If Condition="((HasQuest(12530)) &amp;&amp; (!IsQuestCompleted(12530)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12530" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12530)">
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; (IsQuestCompleted(12529) || IsQuestCompleted(12530))">
 			<PickUp QuestName="The Wasp Hunter's Apprentice" QuestId="12533" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		</If>
-		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12529)">
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; (IsQuestCompleted(12529) || IsQuestCompleted(12530))">
 			<PickUp QuestName="The Sapphire Queen" QuestId="12534" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
 		</If>
 		<Objective QuestName="The Wasp Hunter's Apprentice" QuestId="12533" Type="KillMob" MobId="28086" KillCount="6" />
@@ -241,7 +241,7 @@
 		<Objective QuestName="The Sapphire Queen" QuestId="12534" Type="CollectItem" ItemId="38477" CollectCount="1" />
 		<TurnIn QuestName="The Wasp Hunter's Apprentice" QuestId="12533" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		<TurnIn QuestName="The Sapphire Queen" QuestId="12534" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
-		<If Condition="(Me.Level &gt;= 76)">
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; (IsQuestCompleted(12533) || IsQuestCompleted(12534))">
 			<PickUp QuestName="Flown the Coop!" QuestId="12532" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
 		</If>
 		<!-- REVIEW Q12532 Flown the Coop!: item 38483 Captured Chicken has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -261,7 +261,7 @@
 		<Objective QuestName="The Underground Menace" QuestId="12531" Type="CollectItem" ItemId="38473" CollectCount="1" />
 		<TurnIn QuestName="The Underground Menace" QuestId="12531" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		<TurnIn QuestName="Mischief in the Making" QuestId="12535" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
-		<If Condition="(Me.Level &gt;= 76)">
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; (IsQuestCompleted(12531) || IsQuestCompleted(12535))">
 			<PickUp QuestName="A Rough Ride" QuestId="12536" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		</If>
 		<!-- SKIP turn-in Q12536 A Rough Ride: no turn-in NPC with a spawn in the database -->
@@ -320,7 +320,7 @@
 		<If Condition="((HasQuest(12571)) &amp;&amp; (!IsQuestCompleted(12571)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12571" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 76)">
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; (IsQuestCompleted(12571) || IsQuestCompleted(12572))">
 			<PickUp QuestName="Making Peace" QuestId="12573" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
 		<!-- REVIEW Q12572 Gods like Shiny Things: no quest giver in the database; item 38575 Shiny Treasures has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -362,7 +362,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="12575" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Forced Hand" QuestId="12576" TurnInName="Mistcaller Soo-gan" TurnInId="28114" X="6165" Y="5092.98" Z="-97.2936" />
-		<If Condition="(Me.Level &gt;= 76)">
+		<If Condition="(Me.Level &gt;= 76) &amp;&amp; (IsQuestCompleted(12575) || IsQuestCompleted(12576))">
 			<PickUp QuestName="Home Time!" QuestId="12577" GiverName="Mistcaller Soo-gan" GiverId="28114" X="6165" Y="5092.98" Z="-97.2936" />
 		</If>
 		<TurnIn QuestName="Home Time!" QuestId="12577" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />

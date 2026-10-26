@@ -961,7 +961,7 @@
 		</If>
 		<TurnIn QuestName="The Bloodcurse Legacy" QuestId="9751" TurnInName="Captain Edward Hanes" TurnInId="17712" X="-1251.07" Y="-12657.3" Z="0.8849" />
 		<TurnIn QuestName="The Bloodcurse Legacy" QuestId="9672" TurnInName="Captain Edward Hanes" TurnInId="17712" X="-1251.07" Y="-12657.3" Z="0.8849" />
-		<If Condition="(Me.Level &gt;= 15)">
+		<If Condition="(Me.Level &gt;= 15) &amp;&amp; (IsQuestCompleted(9672) || IsQuestCompleted(9751))">
 			<PickUp QuestName="The Bloodcursed Naga" QuestId="9674" GiverName="Captain Edward Hanes" GiverId="17712" X="-1251.07" Y="-12657.3" Z="0.8849" />
 		</If>
 		<Objective QuestName="The Bloodcursed Naga" QuestId="9674" Type="KillMob" MobId="17713" KillCount="10" />

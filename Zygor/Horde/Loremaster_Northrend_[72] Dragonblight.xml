@@ -964,7 +964,7 @@
 			<PickUp QuestName="Let Them Not Rise!" QuestId="12211" GiverName="Apothecary Vicky Levine" GiverId="27248" X="3221.88" Y="-691.37" Z="167.209" />
 		</If>
 		<TurnIn QuestName="To Venomspite!" QuestId="12182" TurnInName="Chief Plaguebringer Middleton" TurnInId="27172" X="3226.72" Y="-728.937" Z="168.146" />
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12182) || IsQuestCompleted(12189))">
 			<PickUp QuestName="The Forsaken Blight and You: How Not to Die" QuestId="12188" GiverName="Chief Plaguebringer Middleton" GiverId="27172" X="3226.72" Y="-728.937" Z="168.146" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71)">
@@ -1395,7 +1395,7 @@
 		<If Condition="(Me.Level &gt;= 72)">
 			<PickUp QuestName="Cycle of Life" QuestId="12454" GiverName="Nishera the Garden Keeper" GiverId="27255" X="2827.62" Y="-20.4965" Z="0.5493" />
 		</If>
-		<!-- Q12458: 140458 (140458) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12458: 140458 (140458) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Cycle of Life" QuestId="12454" Type="KillMob" MobId="27244" KillCount="5" />
 		<TurnIn QuestName="Cycle of Life" QuestId="12454" TurnInName="Nishera the Garden Keeper" TurnInId="27255" X="2827.62" Y="-20.4965" Z="0.5493" />
 		<Objective QuestName="Emerald Dragon Tears" QuestId="12200" Type="CollectItem" ItemId="37124" CollectCount="8" />
@@ -1516,7 +1516,7 @@
 		<Objective QuestName="Fire Upon the Waters" QuestId="12243" Type="KillMob" MobId="28013" KillCount="1" />
 		<TurnIn QuestName="Fire Upon the Waters" QuestId="12243" TurnInName="Apothecary Vicky Levine" TurnInId="27248" X="3221.88" Y="-691.37" Z="167.209" />
 		<Objective QuestName="Seeds of the Lashers" QuestId="12458" Type="CollectItem" ItemId="37882" CollectCount="3" />
-		<!-- REVIEW Q12458 Seeds of the Lashers: helper item 140458 140458 has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q12458 Seeds of the Lashers: helper item 140458 140458 has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12458)) &amp;&amp; (IsQuestCompleted(12458)))">
 			<TurnIn QuestName="Seeds of the Lashers" QuestId="12458" TurnInName="Lord Itharius" TurnInId="27785" X="3539.55" Y="285.5" Z="342.804" />
 		</If>
@@ -1543,7 +1543,7 @@
 		<If Condition="((HasQuest(12127)) &amp;&amp; (!IsQuestCompleted(12127)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12127" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12125) || IsQuestCompleted(12126) || IsQuestCompleted(12127))">
 			<PickUp QuestName="The Power to Destroy" QuestId="12132" GiverName="Koltira Deathweaver" GiverId="26581" X="3798.49" Y="1601.21" Z="89.7437" />
 		</If>
 		<Objective QuestName="The Power to Destroy" QuestId="12132" Type="KillMob" MobId="26966" KillCount="6" />
@@ -1625,7 +1625,7 @@
 		</If>
 		<TurnIn QuestName="Tales of Destruction" QuestId="12266" TurnInName="Nalice" TurnInId="27765" X="3548.31" Y="258.034" Z="342.804" />
 		<TurnIn QuestName="Audience With The Dragon Queen" QuestId="12496" TurnInName="Alexstrasza the Life-Binder" TurnInId="26917" X="3531.02" Y="271.403" Z="342.804" />
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12495) || IsQuestCompleted(12496))">
 			<PickUp QuestName="Galakrond and the Scourge" QuestId="12497" GiverName="Alexstrasza the Life-Binder" GiverId="26917" X="3531.02" Y="271.403" Z="342.804" />
 		</If>
 		<TurnIn QuestName="Galakrond and the Scourge" QuestId="12497" TurnInName="Torastrasza" TurnInId="26949" X="3580.81" Y="289.572" Z="340.923" />
@@ -1665,7 +1665,7 @@
 			<PickUp QuestName="Informing the Queen" QuestId="12124" GiverName="Tariolstrasz" GiverId="26443" X="3549.37" Y="379.35" Z="52.3397" />
 		</If>
 		<TurnIn QuestName="Informing the Queen" QuestId="12124" TurnInName="Alexstrasza the Life-Binder" TurnInId="26917" X="3531.02" Y="271.403" Z="342.804" />
-		<If Condition="(Me.Level &gt;= 71)">
+		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12123) || IsQuestCompleted(12124))">
 			<PickUp QuestName="Report to Lord Afrasastrasz" QuestId="12435" GiverName="Alexstrasza the Life-Binder" GiverId="26917" X="3531.02" Y="271.403" Z="342.804" />
 		</If>
 		<TurnIn QuestName="Report to Lord Afrasastrasz" QuestId="12435" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />

@@ -709,7 +709,7 @@
 			<PickUp QuestName="Speak with Rilak the Redeemed" QuestId="10908" GiverName="Kirrik the Awakened" GiverId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
 		</If>
 		<TurnIn QuestName="Speak with Rilak the Redeemed" QuestId="10908" TurnInName="Rilak the Redeemed" TurnInId="22292" X="-1656.93" Y="5448.97" Z="-40.3227" />
-		<If Condition="(Me.Level &gt;= 62)">
+		<If Condition="(Me.Level &gt;= 62) &amp;&amp; (IsQuestCompleted(10862) || IsQuestCompleted(10863) || IsQuestCompleted(10908))">
 			<PickUp QuestName="The Eyes of Skettis" QuestId="10847" GiverName="Rilak the Redeemed" GiverId="22292" X="-1656.93" Y="5448.97" Z="-40.3227" />
 		</If>
 		<Objective QuestName="Rather Be Fishin'" QuestId="10037" Type="CollectItem" ItemId="25891" CollectCount="8" />

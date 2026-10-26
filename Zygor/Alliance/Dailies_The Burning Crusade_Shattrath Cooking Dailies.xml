@@ -54,18 +54,10 @@
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Dailies_The Burning Crusade_Shattrath Cooking Dailies");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Outland" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(11377) &amp;&amp; !HasQuest(11377) &amp;&amp; !IsQuestCompleted(11379) &amp;&amp; !HasQuest(11379) &amp;&amp; !IsQuestCompleted(11380) &amp;&amp; !HasQuest(11380)">
-			<PickUp QuestName="Soup for the Soul" QuestId="11381" GiverName="The Rokk" GiverId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />
-		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(11377) &amp;&amp; !HasQuest(11377) &amp;&amp; !IsQuestCompleted(11380) &amp;&amp; !HasQuest(11380) &amp;&amp; !IsQuestCompleted(11381) &amp;&amp; !HasQuest(11381)">
-			<PickUp QuestName="Super Hot Stew" QuestId="11379" GiverName="The Rokk" GiverId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />
-		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(11377) &amp;&amp; !HasQuest(11377) &amp;&amp; !IsQuestCompleted(11379) &amp;&amp; !HasQuest(11379) &amp;&amp; !IsQuestCompleted(11381) &amp;&amp; !HasQuest(11381)">
-			<PickUp QuestName="Manalicious" QuestId="11380" GiverName="The Rokk" GiverId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />
-		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(11379) &amp;&amp; !HasQuest(11379) &amp;&amp; !IsQuestCompleted(11380) &amp;&amp; !HasQuest(11380) &amp;&amp; !IsQuestCompleted(11381) &amp;&amp; !HasQuest(11381)">
-			<PickUp QuestName="Revenge is Tasty" QuestId="11377" GiverName="The Rokk" GiverId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />
-		</If>
+		<!-- SKIP pickup Q11381 Soup for the Soul: needs skill line 185 at 275, which a profile cannot check -->
+		<!-- SKIP pickup Q11379 Super Hot Stew: needs skill line 185 at 275, which a profile cannot check -->
+		<!-- SKIP pickup Q11380 Manalicious: needs skill line 185 at 275, which a profile cannot check -->
+		<!-- SKIP pickup Q11377 Revenge is Tasty: needs skill line 185 at 275, which a profile cannot check -->
 		<If Condition="HasQuest(11381) &amp;&amp; !IsQuestCompleted(11381) &amp;&amp; GetItemCount(27678) &lt; 4">
 			<CustomBehavior File="CollectThings" QuestId="11381" CollectItemId="27678" CollectItemCount="4" HuntingGroundRadius="120" MobId="17132" MobId2="17133" MobId3="18205" MobId4="18259" X="-2578.94" Y="7762.35" Z="-37.5349">
 				<Hotspot X="-2578.94" Y="7762.35" Z="-37.5349" />
@@ -121,22 +113,28 @@
 				<Hotspot X="-3629.08" Y="3563.67" Z="295.001" />
 			</CustomBehavior>
 		</If>
-		<!-- REVIEW Q11381 Soup for the Soul: item 33850 Spiritual Soup has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11381 Soup for the Soul: needs profession skill 185 (275); item 33850 Spiritual Soup has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11381)) &amp;&amp; (IsQuestCompleted(11381)))">
 			<TurnIn QuestName="Soup for the Soul" QuestId="11381" TurnInName="The Rokk" TurnInId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />
 		</If>
 		<If Condition="((HasQuest(11381)) &amp;&amp; (!IsQuestCompleted(11381)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11381" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q11379 Super Hot Stew: item 33848 Demon Broiled Surprise has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11379 Super Hot Stew: needs profession skill 185 (275); item 33848 Demon Broiled Surprise has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11379)) &amp;&amp; (IsQuestCompleted(11379)))">
 			<TurnIn QuestName="Super Hot Stew" QuestId="11379" TurnInName="The Rokk" TurnInId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />
 		</If>
 		<If Condition="((HasQuest(11379)) &amp;&amp; (!IsQuestCompleted(11379)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11379" Type="Incomplete" />
 		</If>
-		<TurnIn QuestName="Manalicious" QuestId="11380" TurnInName="The Rokk" TurnInId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />
-		<!-- REVIEW Q11377 Revenge is Tasty: item 33839 Kaliri Stew has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11380 Manalicious: needs profession skill 185 (275). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(11380)) &amp;&amp; (IsQuestCompleted(11380)))">
+			<TurnIn QuestName="Manalicious" QuestId="11380" TurnInName="The Rokk" TurnInId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />
+		</If>
+		<If Condition="((HasQuest(11380)) &amp;&amp; (!IsQuestCompleted(11380)))">
+			<CustomBehavior File="AbandonQuest" QuestId="11380" Type="Incomplete" />
+		</If>
+		<!-- REVIEW Q11377 Revenge is Tasty: needs profession skill 185 (275); item 33839 Kaliri Stew has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11377)) &amp;&amp; (IsQuestCompleted(11377)))">
 			<TurnIn QuestName="Revenge is Tasty" QuestId="11377" TurnInName="The Rokk" TurnInId="24393" X="-1609.3" Y="5328.65" Z="-39.5993" />
 		</If>

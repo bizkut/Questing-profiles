@@ -982,7 +982,7 @@
 			<If Condition="((HasQuest(1804)) &amp;&amp; (!IsQuestCompleted(1804)))">
 				<CustomBehavior File="AbandonQuest" QuestId="1804" Type="Incomplete" />
 			</If>
-			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 30)">
+			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 30) &amp;&amp; (IsQuestCompleted(1804) || IsQuestCompleted(1805))">
 				<PickUp QuestName="The Binding" QuestId="1795" GiverName="Strahad Farsan" GiverId="6251" X="-785.912" Y="-3723.26" Z="40.5152" />
 			</If>
 			<TurnIn QuestName="Knowledge of the Orb of Orahil" QuestId="4965" TurnInName="Menara Voidrender" TurnInId="6266" X="-782.55" Y="-3711.31" Z="41.3629" />
@@ -1001,7 +1001,7 @@
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1264)">
 			<PickUp QuestName="The Missing Diplomat" QuestId="1265" GiverName="Commander Samaul" GiverId="4964" X="-3738.17" Y="-4546.25" Z="27.1275" />
 		</If>
-		<If Condition="(Me.Level &gt;= 30)">
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; (IsQuestCompleted(1282) || IsQuestCompleted(1302))">
 			<PickUp QuestName="Inspecting the Ruins" QuestId="11123" GiverName="Captain Garran Vimes" GiverId="4944" X="-3735.06" Y="-4556.2" Z="27.2108" />
 		</If>
 		<If Condition="(Me.Level &gt;= 37)">

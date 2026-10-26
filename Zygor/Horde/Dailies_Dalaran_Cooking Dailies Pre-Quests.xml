@@ -57,11 +57,15 @@
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Horde\Dailies_Dalaran_Cooking Dailies Pre-Quests");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Northrend" />
 		</If>
-		<If Condition="(Me.Level &gt;= 65) &amp;&amp; !IsQuestCompleted(13090) &amp;&amp; !HasQuest(13090)">
-			<PickUp QuestName="Northern Cooking" QuestId="13089" GiverName="Thomas Kolichio" GiverId="26953" X="1927.98" Y="-6150.21" Z="23.0406" />
-		</If>
+		<!-- SKIP pickup Q13089 Northern Cooking: needs skill line 185 at 350, which a profile cannot check -->
 		<Objective QuestName="Northern Cooking" QuestId="13089" Type="CollectItem" ItemId="43013" CollectCount="4" />
-		<TurnIn QuestName="Northern Cooking" QuestId="13089" TurnInName="Thomas Kolichio" TurnInId="26953" X="1927.98" Y="-6150.21" Z="23.0406" />
+		<!-- REVIEW Q13089 Northern Cooking: needs profession skill 185 (350). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(13089)) &amp;&amp; (IsQuestCompleted(13089)))">
+			<TurnIn QuestName="Northern Cooking" QuestId="13089" TurnInName="Thomas Kolichio" TurnInId="26953" X="1927.98" Y="-6150.21" Z="23.0406" />
+		</If>
+		<If Condition="((HasQuest(13089)) &amp;&amp; (!IsQuestCompleted(13089)))">
+			<CustomBehavior File="AbandonQuest" QuestId="13089" Type="Incomplete" />
+		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Dalaran\Cooking Dailies Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>
 </HBProfile>

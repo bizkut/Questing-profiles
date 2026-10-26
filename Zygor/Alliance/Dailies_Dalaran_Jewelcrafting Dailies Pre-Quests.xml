@@ -31,10 +31,8 @@
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Dailies_Dalaran_Jewelcrafting Dailies Pre-Quests");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Northrend" />
 		</If>
-		<If Condition="(Me.Level &gt;= 65)">
-			<PickUp QuestName="Finish the Shipment" QuestId="13041" GiverName="Timothy Jones" GiverId="28701" X="5871.05" Y="714.891" Z="643.176" />
-		</If>
-		<!-- REVIEW Q13041 Finish the Shipment: item 36923 Chalcedony has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- SKIP pickup Q13041 Finish the Shipment: needs skill line 755 at 375, which a profile cannot check -->
+		<!-- REVIEW Q13041 Finish the Shipment: needs profession skill 755 (375); item 36923 Chalcedony has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13041)) &amp;&amp; (IsQuestCompleted(13041)))">
 			<TurnIn QuestName="Finish the Shipment" QuestId="13041" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>

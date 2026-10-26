@@ -484,7 +484,7 @@
 			<PickUp QuestName="Spy Hunter" QuestId="12994" GiverName="Frostworg Denmother" GiverId="30294" X="7365.76" Y="-2674.17" Z="747.048" />
 		</If>
 		<Objective QuestName="Raising Hodir's Spear" QuestId="13001" Type="CollectItem" ItemId="42542" CollectCount="3" />
-		<!-- Q13011: Icemaw Bear Flank (42733) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13011: Icemaw Bear Flank (42733) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Raising Hodir's Spear" QuestId="13001" Type="CollectItem" ItemId="42541" CollectCount="3" />
 		<Objective QuestName="Polishing the Helm" QuestId="13006" Type="CollectItem" ItemId="42640" CollectCount="5" />
 		<TurnIn QuestName="A New Beginning" QuestId="13009" TurnInName="Thorim" TurnInId="29445" X="7448.98" Y="-534.783" Z="1896.95" />
@@ -518,7 +518,7 @@
 		</If>
 		<TurnIn QuestName="Polishing the Helm" QuestId="13006" TurnInName="Hodir's Helm" TurnInId="192080" TurnInType="Object" X="7390.14" Y="-2725.38" Z="874.256" />
 		<TurnIn QuestName="Raising Hodir's Spear" QuestId="13001" TurnInName="Lorekeeper Randvir" TurnInId="30252" X="7397.65" Y="-2770.25" Z="771.041" />
-		<!-- REVIEW Q13011 Jormuttar is Soo Fat...: helper item 42733 Icemaw Bear Flank has no dropping creature near the guide coordinates; use item 42733: target 30340 Jormuttar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13011 Jormuttar is Soo Fat...: helper item 42733 Icemaw Bear Flank has no creature or object source near the guide coordinates; use item 42733: target 30340 Jormuttar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13011)) &amp;&amp; (IsQuestCompleted(13011)))">
 			<TurnIn QuestName="Jormuttar is Soo Fat..." QuestId="13011" TurnInName="King Jokkum" TurnInId="30105" X="7345.9" Y="-2812.95" Z="798.571" />
 		</If>
@@ -557,7 +557,7 @@
 		<If Condition="((HasQuest(13035)) &amp;&amp; (!IsQuestCompleted(13035)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13035" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13035)">
+		<If Condition="(Me.Level &gt;= 77) &amp;&amp; (IsQuestCompleted(13005) || IsQuestCompleted(13035))">
 			<PickUp QuestName="The Reckoning" QuestId="13047" GiverName="Thorim" GiverId="30295" X="7761.1" Y="-2160.86" Z="1233.33" />
 		</If>
 		<!-- REVIEW Q13047 The Reckoning: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

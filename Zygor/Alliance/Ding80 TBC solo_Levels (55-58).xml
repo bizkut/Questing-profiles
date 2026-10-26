@@ -596,7 +596,7 @@
 		</If>
 		<TurnIn QuestName="Glyphed Oaken Branch" QuestId="4986" TurnInName="Mathrengyl Bearwalker" TurnInId="4217" X="10179" Y="2563.98" Z="1340.13" />
 		<TurnIn QuestName="Rise of the Silithid" QuestId="162" TurnInName="Gracina Spiritmight" TurnInId="7740" X="9634.06" Y="2495.63" Z="1354.89" />
-		<If Condition="(Me.Level &gt;= 50) &amp;&amp; !IsQuestCompleted(4494) &amp;&amp; !HasQuest(4494)">
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(162) || IsQuestCompleted(4267)) &amp;&amp; !IsQuestCompleted(4494) &amp;&amp; !HasQuest(4494)">
 			<PickUp QuestName="March of the Silithid" QuestId="4493" GiverName="Gracina Spiritmight" GiverId="7740" X="9634.06" Y="2495.63" Z="1354.89" />
 		</If>
 		<!-- REVIEW Q3378 Prayer to Elune: item 10458 Prayer to Elune has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -607,7 +607,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="3378" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="March of the Silithid" QuestId="4493" TurnInName="Alchemist Pestlezugg" TurnInId="5594" X="-7115.3" Y="-3729.93" Z="8.8567" />
-		<If Condition="(Me.Level &gt;= 50)">
+		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(4493) || IsQuestCompleted(4494))">
 			<PickUp QuestName="Bungle in the Jungle" QuestId="4496" GiverName="Alchemist Pestlezugg" GiverId="5594" X="-7115.3" Y="-3729.93" Z="8.8567" />
 		</If>
 		<!-- REVIEW Q3444 The Stone Circle: item 10556 Stone Circle has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -793,7 +793,7 @@
 		<If Condition="((HasQuest(4288)) &amp;&amp; (!IsQuestCompleted(4288)))">
 			<CustomBehavior File="AbandonQuest" QuestId="4288" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 47)">
+		<If Condition="(Me.Level &gt;= 47) &amp;&amp; (IsQuestCompleted(4285) || IsQuestCompleted(4287) || IsQuestCompleted(4288))">
 			<PickUp QuestName="Making Sense of It" QuestId="4321" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
 		<!-- REVIEW Q4321 Making Sense of It: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

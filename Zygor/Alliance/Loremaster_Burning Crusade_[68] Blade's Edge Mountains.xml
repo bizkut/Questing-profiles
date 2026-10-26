@@ -763,7 +763,7 @@
 		<If Condition="((HasQuest(10557)) &amp;&amp; (!IsQuestCompleted(10557)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10557" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10584)">
+		<If Condition="(Me.Level &gt;= 62) &amp;&amp; (IsQuestCompleted(10557) || IsQuestCompleted(10584))">
 			<PickUp QuestName="Test Flight: The Singing Ridge" QuestId="10710" GiverName="Tally Zapnabber" GiverId="21460" X="1935.01" Y="5575.74" Z="263.753" />
 		</If>
 		<!-- REVIEW Q10584 Picking Up Some Power Converters: use item 30656: target 21731 Encased Electromental has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -782,7 +782,7 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10584)">
 			<PickUp QuestName="Cutting Your Teeth" QuestId="10632" GiverName="Razak Ironsides" GiverId="21118" X="1898.28" Y="5588.86" Z="267.58" />
 		</If>
-		<!-- Q10710: Tally's Waiver (Signed) (30539) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q10710: Tally's Waiver (Signed) (30539) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Ride the Lightning" QuestId="10657" Type="CollectItem" ItemId="30849" CollectCount="5" />
 		<Objective QuestName="Cutting Your Teeth" QuestId="10632" Type="CollectItem" ItemId="30798" CollectCount="5" />
 		<Objective QuestName="Ridgespine Menace" QuestId="10620" Type="KillMob" MobId="20714" KillCount="10" />
@@ -795,7 +795,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="10609" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Cutting Your Teeth" QuestId="10632" TurnInName="Razak Ironsides" TurnInId="21118" X="1898.28" Y="5588.86" Z="267.58" />
-		<!-- REVIEW Q10710 Test Flight: The Singing Ridge: helper item 30539 Tally's Waiver (Signed) has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10710 Test Flight: The Singing Ridge: helper item 30539 Tally's Waiver (Signed) has no creature or object source near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10710)) &amp;&amp; (IsQuestCompleted(10710)))">
 			<TurnIn QuestName="Test Flight: The Singing Ridge" QuestId="10710" TurnInName="Tally Zapnabber" TurnInId="21460" X="1935.01" Y="5575.74" Z="263.753" />
 		</If>
@@ -1089,7 +1089,7 @@
 				<Hotspot X="3111.11" Y="7129.98" Z="152.609" />
 			</CustomBehavior>
 		</If>
-		<!-- Q10722: Overseer Disguise (31122) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q10722: Overseer Disguise (31122) is needed but nothing near the guide coordinates drops it -->
 		<TurnIn QuestName="Slaughter at Boulder'mok" QuestId="10803" TurnInName="Lieutenant Fairweather" TurnInId="22150" X="3036.01" Y="5483.13" Z="147.07" />
 		<!-- REVIEW Q10802 Gorgrom the Dragon-Eater: objective 22434 [DND]Ogre Pike Planted Credit x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10802)) &amp;&amp; (IsQuestCompleted(10802)))">
@@ -1115,7 +1115,7 @@
 		<If Condition="((HasQuest(10747)) &amp;&amp; (!IsQuestCompleted(10747)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10747" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q10722 Meeting at the Blackwing Coven: helper item 31122 Overseer Disguise has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10722 Meeting at the Blackwing Coven: helper item 31122 Overseer Disguise has no creature or object source near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10722)) &amp;&amp; (IsQuestCompleted(10722)))">
 			<TurnIn QuestName="Meeting at the Blackwing Coven" QuestId="10722" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
 		</If>
@@ -1135,7 +1135,9 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10829)">
 			<PickUp QuestName="Exorcising the Trees" QuestId="10830" GiverName="Treebole" GiverId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>
-		<!-- Q10830: Grishnath Orb (31495) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(10830) &amp;&amp; !IsQuestCompleted(10830) &amp;&amp; GetItemCount(31495) &lt; 5">
+			<CustomBehavior File="InteractWith" QuestId="10830" MobId="182941" ObjectType="GameObject" Loot="True" NumOfTimes="5" CollectionDistance="200" X="3649.88" Y="6679.62" Z="174.752" />
+		</If>
 		<If Condition="HasQuest(10830) &amp;&amp; !IsQuestCompleted(10830) &amp;&amp; GetItemCount(31517) &lt; 5">
 			<CustomBehavior File="CollectThings" QuestId="10830" CollectItemId="31517" CollectItemCount="5" HuntingGroundRadius="120" MobId="21042" X="3401.39" Y="6839.35" Z="169.9">
 				<Hotspot X="3401.39" Y="6839.35" Z="169.9" />
@@ -1148,8 +1150,8 @@
 				<Hotspot X="3350.65" Y="7053.47" Z="159.414" />
 			</CustomBehavior>
 		</If>
-		<!-- Q10830: Exorcism Feather (31518) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q10830 Exorcising the Trees: helper item 31495 Grishnath Orb has no dropping creature near the guide coordinates; helper item 31518 Exorcism Feather has no dropping creature near the guide coordinates; objective 22226 Koi-Koi Spirit x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q10830: Exorcism Feather (31518) is needed but nothing near the guide coordinates drops it -->
+		<!-- REVIEW Q10830 Exorcising the Trees: helper item 31518 Exorcism Feather has no creature or object source near the guide coordinates; objective 22226 Koi-Koi Spirit x5: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10830)) &amp;&amp; (IsQuestCompleted(10830)))">
 			<TurnIn QuestName="Exorcising the Trees" QuestId="10830" TurnInName="Treebole" TurnInId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>
@@ -1283,7 +1285,7 @@
 		</If>
 		<TurnIn QuestName="The Skyguard Outpost" QuestId="11062" TurnInName="Sky Commander Keller" TurnInId="23334" X="2503.06" Y="7360.36" Z="380.453" />
 		<If Condition="!((Me.Class == WoWClass.Druid))">
-			<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.DeathKnight) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(11102) &amp;&amp; !HasQuest(11102)">
+			<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.DeathKnight) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; (IsQuestCompleted(11030) || IsQuestCompleted(11058)) &amp;&amp; !IsQuestCompleted(11102) &amp;&amp; !HasQuest(11102)">
 				<PickUp QuestName="Bombing Run" QuestId="11010" GiverName="Sky Sergeant Vanderlip" GiverId="23120" X="2495.25" Y="7350.9" Z="380.334" />
 			</If>
 		</If>
@@ -1300,7 +1302,7 @@
 			<Objective QuestName="Bombing Run" QuestId="11102" Type="KillMob" MobId="23118" KillCount="15" />
 			<TurnIn QuestName="Bombing Run" QuestId="11102" TurnInName="Sky Sergeant Vanderlip" TurnInId="23120" X="2495.25" Y="7350.9" Z="380.334" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11010)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; (IsQuestCompleted(11010) || IsQuestCompleted(11102))">
 			<PickUp QuestName="Bomb Them Again!" QuestId="11023" GiverName="Sky Sergeant Vanderlip" GiverId="23120" X="2495.25" Y="7350.9" Z="380.334" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70)">

@@ -3365,6 +3365,11 @@
 				<Hotspot X="1982.9" Y="1376.01" Z="63.0515" />
 			</CustomBehavior>
 		</If>
+		<If Condition="HasQuest(6395) &amp;&amp; !IsQuestCompleted(6395) &amp;&amp; GetItemCount(16333) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="6395" CollectItemId="16333" CollectItemCount="1" HuntingGroundRadius="120" MobId="1919" X="1982.9" Y="1376.01" Z="63.0515">
+				<Hotspot X="1982.9" Y="1376.01" Z="63.0515" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="Marla's Last Wish" QuestId="6395" Type="UseObject" ObjectId="178090" UseCount="1" />
 		<TurnIn QuestName="Scavenging Deathknell" QuestId="3902" TurnInName="Deathguard Saltain" TurnInId="1740" X="1861.17" Y="1605.02" Z="95.0318" />
 		<TurnIn QuestName="Night Web's Hollow" QuestId="380" TurnInName="Executor Arren" TurnInId="1570" X="1848.82" Y="1580.47" Z="94.7451" />
@@ -3790,7 +3795,17 @@
 		<Objective QuestName="Humbert's Sword" QuestId="547" Type="CollectItem" ItemId="3693" CollectCount="1" />
 		<TurnIn QuestName="WANTED: Syndicate Personnel" QuestId="549" TurnInName="High Executor Darthalia" TurnInId="2215" X="-33.3555" Y="-927.892" Z="54.5261" />
 		<TurnIn QuestName="Humbert's Sword" QuestId="547" TurnInName="Deathguard Humbert" TurnInId="2419" X="-31.1004" Y="-941.497" Z="54.6636" />
+		<If Condition="HasQuest(498) &amp;&amp; !IsQuestCompleted(498) &amp;&amp; GetItemCount(3467) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="498" CollectItemId="3467" CollectItemCount="1" HuntingGroundRadius="120" MobId="2427" X="-492.277" Y="-1480.43" Z="88.0715">
+				<Hotspot X="-492.277" Y="-1480.43" Z="88.0715" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="The Rescue" QuestId="498" Type="UseObject" ObjectId="1721" UseCount="1" />
+		<If Condition="HasQuest(498) &amp;&amp; !IsQuestCompleted(498) &amp;&amp; GetItemCount(3499) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="498" CollectItemId="3499" CollectItemCount="1" HuntingGroundRadius="120" MobId="2428" X="-465.482" Y="-1476.91" Z="90.2819">
+				<Hotspot X="-465.482" Y="-1476.91" Z="90.2819" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="The Rescue" QuestId="498" Type="UseObject" ObjectId="1722" UseCount="1" />
 		<TurnIn QuestName="The Rescue" QuestId="498" TurnInName="Krusk" TurnInId="2229" X="-40.6782" Y="-956.998" Z="56.2796" />
 		<If Condition="(Me.Level &gt;= 30)">
@@ -4469,7 +4484,9 @@
 		<TurnIn QuestName="Sting of the Scorpid" QuestId="789" TurnInName="Gornek" TurnInId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		<TurnIn QuestName="Sarkoth" QuestId="804" TurnInName="Gornek" TurnInId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		<TurnIn QuestName="Vile Familiars" QuestId="792" TurnInName="Zureetha Fargaze" TurnInId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
-		<PickUp QuestName="Burning Blade Medallion" QuestId="794" GiverName="Zureetha Fargaze" GiverId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
+		<If Condition="(IsQuestCompleted(792) || IsQuestCompleted(1499))">
+			<PickUp QuestName="Burning Blade Medallion" QuestId="794" GiverName="Zureetha Fargaze" GiverId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
+		</If>
 		<TurnIn QuestName="Thazz'ril's Pick" QuestId="6394" TurnInName="Foreman Thazz'ril" TurnInId="11378" X="-611.587" Y="-4322.08" Z="40.0927" />
 		<Objective QuestName="Burning Blade Medallion" QuestId="794" Type="CollectItem" ItemId="4859" CollectCount="1" />
 		<TurnIn QuestName="Burning Blade Medallion" QuestId="794" TurnInName="Zureetha Fargaze" TurnInId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
@@ -4540,7 +4557,9 @@
 				<Hotspot X="-245.52" Y="-5119.95" Z="42.6406" />
 			</CustomBehavior>
 		</If>
-		<!-- Q830: Aged Envelope (4881) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(830) &amp;&amp; !IsQuestCompleted(830) &amp;&amp; GetItemCount(4881) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="830" MobId="3239" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-223.825" Y="-5095.61" Z="49.3529" />
+		</If>
 		<If Condition="HasItem(4881) &amp;&amp; !HasQuest(830) &amp;&amp; !IsQuestCompleted(830)">
 			<PickUp QuestName="The Admiral's Orders" QuestId="830" GiverName="Aged Envelope" GiverId="4881" GiverType="Item" />
 		</If>
@@ -4549,13 +4568,7 @@
 		<If Condition="(Me.Level &gt;= 3) &amp;&amp; IsQuestCompleted(784)">
 			<PickUp QuestName="From The Wreckage...." QuestId="825" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		</If>
-		<!-- REVIEW Q830 The Admiral's Orders: helper item 4881 Aged Envelope has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(830)) &amp;&amp; (IsQuestCompleted(830)))">
-			<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
-		</If>
-		<If Condition="((HasQuest(830)) &amp;&amp; (!IsQuestCompleted(830)))">
-			<CustomBehavior File="AbandonQuest" QuestId="830" Type="Incomplete" />
-		</If>
+		<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		<If Condition="IsQuestCompleted(830)">
 			<PickUp QuestName="The Admiral's Orders" QuestId="831" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		</If>
@@ -4787,6 +4800,13 @@
 		</If>
 		<Objective QuestName="Consumed by Hatred" QuestId="899" Type="CollectItem" ItemId="5085" CollectCount="60" />
 		<TurnIn QuestName="Stolen Silver" QuestId="3281" TurnInName="Gazrog" TurnInId="3464" X="-435.952" Y="-2639.21" Z="96.3588" />
+		<If Condition="HasQuest(905) &amp;&amp; !IsQuestCompleted(905) &amp;&amp; GetItemCount(5165) &lt; 1">
+			<CustomBehavior File="CollectThings" QuestId="905" CollectItemId="5165" CollectItemCount="1" HuntingGroundRadius="120" MobId="3254" MobId2="3255" MobId3="3256" X="-617.486" Y="-2710.46" Z="96.7657">
+				<Hotspot X="-617.486" Y="-2710.46" Z="96.7657" />
+				<Hotspot X="-711.661" Y="-2782.88" Z="91.9826" />
+				<Hotspot X="-491.298" Y="-2473.44" Z="93.6667" />
+			</CustomBehavior>
+		</If>
 		<Objective QuestName="The Angry Scytheclaws" QuestId="905" Type="UseObject" ObjectId="6907" UseCount="1" />
 		<Objective QuestName="The Angry Scytheclaws" QuestId="905" Type="UseObject" ObjectId="6908" UseCount="1" />
 		<Objective QuestName="The Angry Scytheclaws" QuestId="905" Type="UseObject" ObjectId="6906" UseCount="1" />

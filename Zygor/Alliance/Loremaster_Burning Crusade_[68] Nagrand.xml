@@ -1125,10 +1125,10 @@
 		<If Condition="((HasQuest(10108)) &amp;&amp; (!IsQuestCompleted(10108)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10108" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(10107)">
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; (IsQuestCompleted(10107) || IsQuestCompleted(10108))">
 			<PickUp QuestName="Armaments for Deception" QuestId="9928" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
-		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(10108)">
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; (IsQuestCompleted(10107) || IsQuestCompleted(10108))">
 			<PickUp QuestName="Ruthless Cunning" QuestId="9927" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
 		<Objective QuestName="Armaments for Deception" QuestId="9928" Type="CollectItem" ItemId="25554" CollectCount="10" />
@@ -1400,7 +1400,7 @@
 		<If Condition="((HasQuest(10669)) &amp;&amp; (!IsQuestCompleted(10669)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10669" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(10641) || IsQuestCompleted(10668) || IsQuestCompleted(10669))">
 			<PickUp QuestName="Illidan's Pupil" QuestId="10646" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
 		<!-- REVIEW Q10646 Illidan's Pupil: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

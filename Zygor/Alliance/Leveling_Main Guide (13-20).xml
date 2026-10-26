@@ -1014,10 +1014,12 @@
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
-			<!-- Q29: Shrine Bauble (15877) is needed but no creature near the guide coordinates drops it -->
+			<If Condition="HasQuest(29) &amp;&amp; !IsQuestCompleted(29) &amp;&amp; GetItemCount(15877) &lt; 1">
+				<CustomBehavior File="InteractWith" QuestId="29" MobId="177785" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="7634.21" Y="-2634.78" Z="396.328" />
+			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
-			<!-- REVIEW Q29 Trial of the Lake: helper item 15877 Shrine Bauble has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<!-- REVIEW Q29 Trial of the Lake: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(29)) &amp;&amp; (IsQuestCompleted(29)))">
 				<TurnIn QuestName="Trial of the Lake" QuestId="29" TurnInName="Tajarri" TurnInId="11799" X="7874.23" Y="-2224.18" Z="469.159" />
 			</If>
@@ -1029,13 +1031,17 @@
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
-			<!-- Q272: Half Pendant of Aquatic Agility (15883) is needed but no creature near the guide coordinates drops it -->
+			<If Condition="HasQuest(272) &amp;&amp; !IsQuestCompleted(272) &amp;&amp; GetItemCount(15883) &lt; 1">
+				<CustomBehavior File="InteractWith" QuestId="272" MobId="177792" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="7838.95" Y="-259.246" Z="-26.4806" />
+			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
-			<!-- Q272: Half Pendant of Aquatic Endurance (15882) is needed but no creature near the guide coordinates drops it -->
+			<If Condition="HasQuest(272) &amp;&amp; !IsQuestCompleted(272) &amp;&amp; GetItemCount(15882) &lt; 1">
+				<CustomBehavior File="InteractWith" QuestId="272" MobId="177844" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-10172.7" Y="2391.19" Z="-139.476" />
+			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
-			<!-- REVIEW Q272 Trial of the Sea Lion: helper item 15883 Half Pendant of Aquatic Agility has no dropping creature near the guide coordinates; helper item 15882 Half Pendant of Aquatic Endurance has no dropping creature near the guide coordinates; item 15885 Pendant of the Sea Lion has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<!-- REVIEW Q272 Trial of the Sea Lion: item 15885 Pendant of the Sea Lion has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(272)) &amp;&amp; (IsQuestCompleted(272)))">
 				<TurnIn QuestName="Trial of the Sea Lion" QuestId="272" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
 			</If>

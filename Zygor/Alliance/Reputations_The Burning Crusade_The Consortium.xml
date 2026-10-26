@@ -466,7 +466,7 @@
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9893) &amp;&amp; (GetFactionReputation(933) &gt;= 3000)">
 			<PickUp QuestName="More Obsidian Warbeads" QuestId="9892" GiverName="Gezhe" GiverId="18265" X="-2087.02" Y="8562.94" Z="22.0969" />
 		</If>
-		<If Condition="(Me.Level &gt;= 67)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10263) || IsQuestCompleted(10264))">
 			<PickUp QuestName="Consortium Crystal Collection" QuestId="10265" GiverName="Nether-Stalker Khay'ji" GiverId="19880" X="3069.96" Y="3674.86" Z="142.527" />
 		</If>
 		<Objective QuestName="Consortium Crystal Collection" QuestId="10265" Type="CollectItem" ItemId="28829" CollectCount="1" />

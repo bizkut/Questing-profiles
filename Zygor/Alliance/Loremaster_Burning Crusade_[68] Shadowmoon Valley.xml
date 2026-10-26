@@ -1048,7 +1048,7 @@
 		<Objective QuestName="Spleendid!" QuestId="10661" Type="CollectItem" ItemId="30819" CollectCount="8" />
 		<Objective QuestName="A Ghost in the Machine" QuestId="10642" Type="CollectItem" ItemId="30716" CollectCount="15" />
 		<TurnIn QuestName="The Hand of Gul'dan" QuestId="10680" TurnInName="Earthmender Torlok" TurnInId="21024" X="-3600.15" Y="1904.57" Z="47.3654" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(10680) || IsQuestCompleted(10681))">
 			<PickUp QuestName="Enraged Spirits of Fire and Earth" QuestId="10458" GiverName="Earthmender Torlok" GiverId="21024" X="-3600.15" Y="1904.57" Z="47.3654" />
 		</If>
 		<!-- REVIEW Q10458 Enraged Spirits of Fire and Earth: objective 21092 Credit Marker: Earth x8: not attackable; objective 21094 Credit Marker: Fire x8: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1100,7 +1100,7 @@
 			<PickUp QuestName="Teron Gorefiend - Lore and Legend" QuestId="10644" GiverName="Zorus the Judicator" GiverId="21774" X="-3970.86" Y="2191.12" Z="101.885" />
 		</If>
 		<TurnIn QuestName="Find the Deserter" QuestId="10759" TurnInName="Parshah" TurnInId="22024" X="-3412.86" Y="2291.42" Z="63.1161" />
-		<If Condition="(Me.Level &gt;= 67)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10759) || IsQuestCompleted(10761))">
 			<PickUp QuestName="Asghar's Totem" QuestId="10777" GiverName="Parshah" GiverId="22024" X="-3412.86" Y="2291.42" Z="63.1161" />
 		</If>
 		<Objective QuestName="Asghar's Totem" QuestId="10777" Type="CollectItem" ItemId="31169" CollectCount="1" />
@@ -1189,7 +1189,7 @@
 		<If Condition="((HasQuest(10585)) &amp;&amp; (!IsQuestCompleted(10585)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10585" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 67)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10583) || IsQuestCompleted(10585))">
 			<PickUp QuestName="Bring Down the Warbringer!" QuestId="10586" GiverName="Stormer Ewan Wildwing" GiverId="21471" X="-3461.75" Y="2000.4" Z="96.9005" />
 		</If>
 		<Objective QuestName="Bring Down the Warbringer!" QuestId="10586" Type="KillMob" MobId="21287" KillCount="1" />
@@ -1351,9 +1351,10 @@
 			<CustomBehavior File="AbandonQuest" QuestId="10858" Type="Incomplete" />
 		</If>
 		<!-- SKIP Q10866 Zuluhed the Whacked: group quest (5 players) -->
-		<!-- Q10866: Zuluhed's Key (31664) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q10866: Zuluhed's Key (31664) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q10866: Zuluhed's Key (31664) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Zuluhed the Whacked" QuestId="10866" Type="UseObject" ObjectId="185156" UseCount="1" />
-		<!-- REVIEW Q10866 Zuluhed the Whacked: group quest (5 players); kill 11980 Zuluhed the Whacked x1: kill credit or scripted event; helper item 31664 Zuluhed's Key has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10866 Zuluhed the Whacked: group quest (5 players); kill 11980 Zuluhed the Whacked x1: kill credit or scripted event; helper item 31664 Zuluhed's Key has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10866)) &amp;&amp; (IsQuestCompleted(10866)))">
 			<TurnIn QuestName="Zuluhed the Whacked" QuestId="10866" TurnInName="Karynaku" TurnInId="22112" X="-4200.89" Y="382.464" Z="118.055" />
 		</If>
@@ -1364,7 +1365,7 @@
 			<PickUp QuestName="Ally of the Netherwing" QuestId="10870" GiverName="Karynaku" GiverId="22112" X="-4200.89" Y="382.464" Z="118.055" />
 		</If>
 		<TurnIn QuestName="Ally of the Netherwing" QuestId="10870" TurnInName="Mordenai" TurnInId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11012)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11012) &amp;&amp; HasSpell(34091)">
 			<PickUp QuestName="In Service of the Illidari" QuestId="11013" GiverName="Mordenai" GiverId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
 		</If>
 		<!-- REVIEW Q10481 Enraged Spirits of Air: objective 21096 Credit Marker: Air x10: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1595,7 +1596,7 @@
 		<Objective QuestName="The Ashtongue Corruptors" QuestId="10574" Type="CollectItem" ItemId="30691" CollectCount="1" />
 		<Objective QuestName="The Ashtongue Corruptors" QuestId="10685" Type="CollectItem" ItemId="30691" CollectCount="1" />
 		<TurnIn QuestName="In Service of the Illidari" QuestId="11013" TurnInName="Overlord Mor'ghor" TurnInId="23139" X="-5085" Y="578.657" Z="86.6483" />
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11013)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11013) &amp;&amp; HasSpell(34091)">
 			<PickUp QuestName="Enter the Taskmaster" QuestId="11014" GiverName="Overlord Mor'ghor" GiverId="23139" X="-5085" Y="578.657" Z="86.6483" />
 		</If>
 		<TurnIn QuestName="Enter the Taskmaster" QuestId="11014" TurnInName="Taskmaster Varkule Dragonbreath" TurnInId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
@@ -1618,7 +1619,7 @@
 		</If>
 		<TurnIn QuestName="The Warden's Cage" QuestId="10686" TurnInName="Sanoru" TurnInId="21826" X="-3765.8" Y="1071.98" Z="58.3175" />
 		<TurnIn QuestName="The Warden's Cage" QuestId="10575" TurnInName="Sanoru" TurnInId="21826" X="-3765.8" Y="1071.98" Z="58.3175" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(10575) || IsQuestCompleted(10686))">
 			<PickUp QuestName="Proof of Allegiance" QuestId="10622" GiverName="Sanoru" GiverId="21826" X="-3765.8" Y="1071.98" Z="58.3175" />
 		</If>
 		<Objective QuestName="Proof of Allegiance" QuestId="10622" Type="KillMob" MobId="21827" KillCount="1" />
@@ -1635,7 +1636,7 @@
 			<PickUp QuestName="The Bundle of Bloodthistle" QuestId="10550" GiverName="Tobias the Filth Gorger" GiverId="21411" X="-2083.83" Y="5299.95" Z="-37.2236" />
 		</If>
 		<TurnIn QuestName="The Hermit Smith" QuestId="10662" TurnInName="David Wayne" TurnInId="21465" X="-2389.1" Y="2895.6" Z="-55.6795" />
-		<If Condition="(Me.Level &gt;= 67)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10662) || IsQuestCompleted(10663))">
 			<PickUp QuestName="Additional Materials" QuestId="10664" GiverName="David Wayne" GiverId="21465" X="-2389.1" Y="2895.6" Z="-55.6795" />
 		</If>
 		<TurnIn QuestName="The Bundle of Bloodthistle" QuestId="10550" TurnInName="Borak, Son of Oronok" TurnInId="21293" X="-4044.39" Y="1609.47" Z="94.7241" />
@@ -1766,7 +1767,7 @@
 		<If Condition="((HasQuest(10669)) &amp;&amp; (!IsQuestCompleted(10669)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10669" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(10641) || IsQuestCompleted(10668) || IsQuestCompleted(10669))">
 			<PickUp QuestName="Illidan's Pupil" QuestId="10646" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
 		<!-- REVIEW Q10646 Illidan's Pupil: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1840,9 +1841,9 @@
 		<If Condition="((HasQuest(11052)) &amp;&amp; (!IsQuestCompleted(11052)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11052" Type="Incomplete" />
 		</If>
-		<!-- Q10664: Knothide Leather (21887) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q10664: Knothide Leather (21887) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q10664 Additional Materials: helper item 21887 Knothide Leather has no dropping creature near the guide coordinates; item 23793 Heavy Knothide Leather has no drop or chest near the guide coordinates; item 23784 Adamantite Frame has no drop or chest near the guide coordinates; item 30823 Demon Warding Totem has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- Q10664: Knothide Leather (21887) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q10664: Knothide Leather (21887) is needed but nothing near the guide coordinates drops it -->
+		<!-- REVIEW Q10664 Additional Materials: helper item 21887 Knothide Leather has no creature or object source near the guide coordinates; item 23793 Heavy Knothide Leather has no drop or chest near the guide coordinates; item 23784 Adamantite Frame has no drop or chest near the guide coordinates; item 30823 Demon Warding Totem has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10664)) &amp;&amp; (IsQuestCompleted(10664)))">
 			<TurnIn QuestName="Additional Materials" QuestId="10664" TurnInName="David Wayne" TurnInId="21465" X="-2389.1" Y="2895.6" Z="-55.6795" />
 		</If>
@@ -1869,10 +1870,10 @@
 		<If Condition="((HasQuest(10666)) &amp;&amp; (!IsQuestCompleted(10666)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10666" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10665)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10665) || IsQuestCompleted(10666))">
 			<PickUp QuestName="Tear of the Earthmother" QuestId="10670" GiverName="David Wayne" GiverId="21465" X="-2389.1" Y="2895.6" Z="-55.6795" />
 		</If>
-		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10666)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10665) || IsQuestCompleted(10666))">
 			<PickUp QuestName="Underworld Loam" QuestId="10667" GiverName="David Wayne" GiverId="21465" X="-2389.1" Y="2895.6" Z="-55.6795" />
 		</If>
 		<!-- REVIEW Q10670 Tear of the Earthmother: item 30829 Tear of the Earthmother has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1889,7 +1890,7 @@
 		<If Condition="((HasQuest(10667)) &amp;&amp; (!IsQuestCompleted(10667)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10667" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 67)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10667) || IsQuestCompleted(10670))">
 			<PickUp QuestName="Bane of the Illidari" QuestId="10676" GiverName="David Wayne" GiverId="21465" X="-2389.1" Y="2895.6" Z="-55.6795" />
 		</If>
 		<TurnIn QuestName="Bane of the Illidari" QuestId="10676" TurnInName="David Wayne" TurnInId="21465" X="-2389.1" Y="2895.6" Z="-55.6795" />

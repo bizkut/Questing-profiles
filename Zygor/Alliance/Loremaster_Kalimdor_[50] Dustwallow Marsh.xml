@@ -388,7 +388,7 @@
 			<PickUp QuestName="Mission to Mudsprocket" QuestId="11214" GiverName="Lieutenant Aden" GiverId="23951" X="-3682.86" Y="-4391.41" Z="10.7306" />
 		</If>
 		<TurnIn QuestName="James Hyal" QuestId="1302" TurnInName="Clerk Lendry" TurnInId="5083" X="-3721.74" Y="-4538.6" Z="25.917" />
-		<If Condition="(Me.Level &gt;= 30)">
+		<If Condition="(Me.Level &gt;= 30) &amp;&amp; (IsQuestCompleted(1282) || IsQuestCompleted(1302))">
 			<PickUp QuestName="Inspecting the Ruins" QuestId="11123" GiverName="Captain Garran Vimes" GiverId="4944" X="-3735.06" Y="-4556.2" Z="27.2108" />
 		</If>
 		<TurnIn QuestName="A Disturbing Development" QuestId="11136" TurnInName="Captain Wymor" TurnInId="5086" X="-3469.49" Y="-4107.24" Z="17.1079" />
@@ -666,7 +666,7 @@
 		<If Condition="((HasQuest(11161)) &amp;&amp; (!IsQuestCompleted(11161)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11161" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(11161)">
+		<If Condition="(Me.Level &gt;= 35) &amp;&amp; (IsQuestCompleted(11160) || IsQuestCompleted(11161))">
 			<PickUp QuestName="Spirits of Stonemaul Hold" QuestId="11159" GiverName="Brogg" GiverId="23579" X="-4622.45" Y="-3172.48" Z="34.8962" />
 		</If>
 		<Objective QuestName="Catch a Dragon by the Tail" QuestId="11217" Type="CollectItem" ItemId="33175" CollectCount="8" />

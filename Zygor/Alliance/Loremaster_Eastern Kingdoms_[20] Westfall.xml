@@ -444,7 +444,7 @@
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(136)">
 			<PickUp QuestName="Captain Sanders' Hidden Treasure" QuestId="138" GiverName="Captain's Footlocker" GiverId="35" GiverType="Object" X="-10514.2" Y="2109.99" Z="2.6882" />
 		</If>
-		<!-- Q399: Bloodscalp Channeling Staff (1998) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q399: Bloodscalp Channeling Staff (1998) is needed but nothing near the guide coordinates drops it -->
 		<TurnIn QuestName="Captain Sanders' Hidden Treasure" QuestId="138" TurnInName="Broken Barrel" TurnInId="36" TurnInType="Object" X="-10515.2" Y="1598.61" Z="44.0296" />
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(138)">
 			<PickUp QuestName="Captain Sanders' Hidden Treasure" QuestId="139" GiverName="Broken Barrel" GiverId="36" GiverType="Object" X="-10515.2" Y="1598.61" Z="44.0296" />
@@ -507,7 +507,7 @@
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
-			<!-- REVIEW Q399 Humble Beginnings: helper item 1998 Bloodscalp Channeling Staff has no dropping creature near the guide coordinates; item 2998 A Simple Compass has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<!-- REVIEW Q399 Humble Beginnings: helper item 1998 Bloodscalp Channeling Staff has no creature or object source near the guide coordinates; item 2998 A Simple Compass has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 			<If Condition="((HasQuest(399)) &amp;&amp; (IsQuestCompleted(399)))">
 				<TurnIn QuestName="Humble Beginnings" QuestId="399" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
 			</If>
@@ -536,7 +536,7 @@
 		<If Condition="(Me.Level &gt;= 14) &amp;&amp; IsQuestCompleted(135)">
 			<PickUp QuestName="The Defias Brotherhood" QuestId="141" GiverName="Master Mathias Shaw" GiverId="332" X="-8815.27" Y="362.3" Z="109.604" />
 		</If>
-		<!-- REVIEW Q399 Humble Beginnings: helper item 1998 Bloodscalp Channeling Staff has no dropping creature near the guide coordinates; item 2998 A Simple Compass has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q399 Humble Beginnings: helper item 1998 Bloodscalp Channeling Staff has no creature or object source near the guide coordinates; item 2998 A Simple Compass has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(399)) &amp;&amp; (IsQuestCompleted(399)))">
 			<TurnIn QuestName="Humble Beginnings" QuestId="399" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
 		</If>

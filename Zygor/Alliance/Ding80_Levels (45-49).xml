@@ -1047,11 +1047,19 @@
 		<If Condition="(Me.Level &gt;= 44)">
 			<PickUp QuestName="The Giant Guardian" QuestId="2844" GiverName="Rockbiter" GiverId="7765" X="-3385.91" Y="2495.84" Z="23.5588" />
 		</If>
-		<!-- Q2879: Byltan Essence (9258) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q2879: Samha Essence (9257) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q2879: Imbel Essence (9256) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q2879: Lahassa Essence (9255) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q2879 The Stave of Equinex: helper item 9258 Byltan Essence has no dropping creature near the guide coordinates; helper item 9257 Samha Essence has no dropping creature near the guide coordinates; helper item 9256 Imbel Essence has no dropping creature near the guide coordinates; helper item 9255 Lahassa Essence has no dropping creature near the guide coordinates; item 9306 Stave of Equinex has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(2879) &amp;&amp; !IsQuestCompleted(2879) &amp;&amp; GetItemCount(9258) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="2879" MobId="142185" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-3098.4" Y="2765.83" Z="71.9319" />
+		</If>
+		<If Condition="HasQuest(2879) &amp;&amp; !IsQuestCompleted(2879) &amp;&amp; GetItemCount(9257) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="2879" MobId="142188" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-2953.11" Y="2624.45" Z="69.1637" />
+		</If>
+		<If Condition="HasQuest(2879) &amp;&amp; !IsQuestCompleted(2879) &amp;&amp; GetItemCount(9256) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="2879" MobId="142187" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-2803.89" Y="2666.9" Z="73.4469" />
+		</If>
+		<If Condition="HasQuest(2879) &amp;&amp; !IsQuestCompleted(2879) &amp;&amp; GetItemCount(9255) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="2879" MobId="142186" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-2930.95" Y="2817.98" Z="71.2819" />
+		</If>
+		<!-- REVIEW Q2879 The Stave of Equinex: item 9306 Stave of Equinex has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2879)) &amp;&amp; (IsQuestCompleted(2879)))">
 			<TurnIn QuestName="The Stave of Equinex" QuestId="2879" TurnInName="Equinex Monolith" TurnInId="144063" TurnInType="Object" X="-2976.94" Y="2743.2" Z="53.0054" />
 		</If>
@@ -1115,7 +1123,7 @@
 			<PickUp QuestName="Noxious Lair Investigation" QuestId="82" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
 		</If>
 		<TurnIn QuestName="The Sunken Temple" QuestId="3445" TurnInName="Marvon Rivetseeker" TurnInId="7771" X="-7987.52" Y="-3855.62" Z="17.8158" />
-		<If Condition="(Me.Level &gt;= 46)">
+		<If Condition="(Me.Level &gt;= 46) &amp;&amp; (IsQuestCompleted(3380) || IsQuestCompleted(3445))">
 			<PickUp QuestName="The Stone Circle" QuestId="3444" GiverName="Marvon Rivetseeker" GiverId="7771" X="-7987.52" Y="-3855.62" Z="17.8158" />
 		</If>
 		<If Condition="(Me.Level &gt;= 43)">
@@ -1206,7 +1214,7 @@
 		<If Condition="((HasQuest(648)) &amp;&amp; (!IsQuestCompleted(648)))">
 			<CustomBehavior File="AbandonQuest" QuestId="648" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 40)">
+		<If Condition="(Me.Level &gt;= 40) &amp;&amp; (IsQuestCompleted(648) || IsQuestCompleted(836) || IsQuestCompleted(2767))">
 			<PickUp QuestName="An OOX of Your Own" QuestId="3721" GiverName="Oglethorpe Obnoticus" GiverId="7406" X="-14417" Y="411.288" Z="22.7816" />
 		</If>
 		<CustomBehavior File="LoadProfile" ProfileName="Ding80_Levels (50-54)" />

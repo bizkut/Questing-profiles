@@ -535,10 +535,10 @@
 		<If Condition="((HasQuest(10107)) &amp;&amp; (!IsQuestCompleted(10107)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10107" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(10107)">
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; (IsQuestCompleted(10107) || IsQuestCompleted(10108))">
 			<PickUp QuestName="Armaments for Deception" QuestId="9928" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
-		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(10108)">
+		<If Condition="(Me.Level &gt;= 64) &amp;&amp; (IsQuestCompleted(10107) || IsQuestCompleted(10108))">
 			<PickUp QuestName="Ruthless Cunning" QuestId="9927" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
 		<Objective QuestName="Armaments for Deception" QuestId="9928" Type="CollectItem" ItemId="25554" CollectCount="10" />
@@ -574,7 +574,7 @@
 			<PickUp QuestName="Message to Garadar" QuestId="9934" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
 		<TurnIn QuestName="Message to Garadar" QuestId="9934" TurnInName="Garrosh" TurnInId="18063" X="-1344.67" Y="7232.62" Z="33.5608" />
-		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10011)">
+		<If Condition="(Me.Level &gt;= 66) &amp;&amp; (IsQuestCompleted(9868) || IsQuestCompleted(9934) || IsQuestCompleted(10011))">
 			<PickUp QuestName="A Visit With the Greatmother" QuestId="10044" GiverName="Garrosh" GiverId="18063" X="-1344.67" Y="7232.62" Z="33.5608" />
 		</If>
 		<!-- REVIEW Q10044 A Visit With the Greatmother: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

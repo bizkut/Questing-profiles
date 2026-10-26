@@ -92,13 +92,19 @@
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13321)">
 			<PickUp QuestName="Retest Now" QuestId="13322" GiverName="Chief Engineer Boltwrench" GiverId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
-		<!-- Q13322: Writhing Mass (44304) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13344: Dark Matter (44434) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q13322: Writhing Mass (44304) is needed but nothing near the guide coordinates drops it -->
+		<!-- Q13344: Dark Matter (44434) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Capture More Dispatches" QuestId="13333" Type="CollectItem" ItemId="44220" CollectCount="6" />
 		<Objective QuestName="Blood of the Chosen" QuestId="13336" Type="KillMob" MobId="31258" KillCount="20" />
-		<!-- Q13292: Abandoned Armor (43616) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13292: Abandoned Helm (43610) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q13292: Pile of Bones (43609) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(13292) &amp;&amp; !IsQuestCompleted(13292) &amp;&amp; GetItemCount(43616) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13292" MobId="193201" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6723.57" Y="1041.84" Z="287.952" />
+		</If>
+		<If Condition="HasQuest(13292) &amp;&amp; !IsQuestCompleted(13292) &amp;&amp; GetItemCount(43610) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13292" MobId="193200" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6759.65" Y="1025.41" Z="294.841" />
+		</If>
+		<If Condition="HasQuest(13292) &amp;&amp; !IsQuestCompleted(13292) &amp;&amp; GetItemCount(43609) &lt; 3">
+			<CustomBehavior File="InteractWith" QuestId="13292" MobId="193199" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6759.61" Y="1049.35" Z="289.959" />
+		</If>
 		<TurnIn QuestName="Capture More Dispatches" QuestId="13333" TurnInName="High Captain Justin Bartlett" TurnInId="30344" X="43.6738" Y="0.1213" Z="25.1341" />
 		<!-- REVIEW Q13289 That's Abominable!: use item 43968: target 31743 Icy Ghoul KC Bunny has no spawn (kill credit or scripted event); use item 43968: target 32168 Vicious Geist KC Bunny has no spawn (kill credit or scripted event); use item 43968: target 32167 Risen Skeleton KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13289)) &amp;&amp; (IsQuestCompleted(13289)))">
@@ -114,7 +120,7 @@
 		<If Condition="((HasQuest(13323)) &amp;&amp; (!IsQuestCompleted(13323)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13323" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13344 Not a Bug: helper item 44434 Dark Matter has no dropping creature near the guide coordinates; goal 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13344 Not a Bug: helper item 44434 Dark Matter has no creature or object source near the guide coordinates; goal 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13344)) &amp;&amp; (IsQuestCompleted(13344)))">
 			<TurnIn QuestName="Not a Bug" QuestId="13344" TurnInName="Thassarian" TurnInId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
@@ -129,14 +135,14 @@
 			<CustomBehavior File="AbandonQuest" QuestId="13300" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Blood of the Chosen" QuestId="13336" TurnInName="Knight-Captain Drosche" TurnInId="32302" X="54.6648" Y="-6.9431" Z="40.0874" />
-		<!-- REVIEW Q13292 The Solution Solution: helper item 43616 Abandoned Armor has no dropping creature near the guide coordinates; helper item 43610 Abandoned Helm has no dropping creature near the guide coordinates; helper item 43609 Pile of Bones has no dropping creature near the guide coordinates; use item 44048: target 31364 Frostbrood Skytalon KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13292 The Solution Solution: use item 44048: target 31364 Frostbrood Skytalon KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13292)) &amp;&amp; (IsQuestCompleted(13292)))">
 			<TurnIn QuestName="The Solution Solution" QuestId="13292" TurnInName="Chief Engineer Boltwrench" TurnInId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
 		<If Condition="((HasQuest(13292)) &amp;&amp; (!IsQuestCompleted(13292)))">
 			<CustomBehavior File="AbandonQuest" QuestId="13292" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q13322 Retest Now: helper item 44304 Writhing Mass has no dropping creature near the guide coordinates; use item 44304: target 32266 Writhing Mass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q13322 Retest Now: helper item 44304 Writhing Mass has no creature or object source near the guide coordinates; use item 44304: target 32266 Writhing Mass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13322)) &amp;&amp; (IsQuestCompleted(13322)))">
 			<TurnIn QuestName="Retest Now" QuestId="13322" TurnInName="Chief Engineer Boltwrench" TurnInId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>

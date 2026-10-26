@@ -143,7 +143,7 @@
 			<CustomBehavior File="RunCode" Code="AppDomain.CurrentDomain.SetData(&quot;BackToProfile&quot;, @&quot;..\Zygor\Alliance\Reputations_The Burning Crusade_Sha'tari Skyguard&quot;);" />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Outland" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="Threat from Above" QuestId="11096" GiverName="Yuula" GiverId="23449" X="-1842.58" Y="5294.96" Z="-12.3448" />
 		</If>
 		<!-- REVIEW Q11096 Threat from Above: objective 23450 Gordunni Proxy x20: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -153,14 +153,14 @@
 		<If Condition="((HasQuest(11096)) &amp;&amp; (!IsQuestCompleted(11096)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11096" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11096)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11096) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="To Skettis!" QuestId="11098" GiverName="Yuula" GiverId="23449" X="-1842.58" Y="5294.96" Z="-12.3448" />
 		</If>
 		<TurnIn QuestName="To Skettis!" QuestId="11098" TurnInName="Sky Sergeant Doryn" TurnInId="23048" X="-3401.09" Y="3597.87" Z="277.412" />
-		<If Condition="(Me.Level &gt;= 70)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="Hungry Nether Rays" QuestId="11093" GiverName="Skyguard Handler Deesak" GiverId="23415" X="-3369.23" Y="3654.53" Z="284.865" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="World of Shadows" QuestId="11004" GiverName="Severin" GiverId="23042" X="-3407.59" Y="3624.57" Z="278.075" />
 		</If>
 		<Objective QuestName="World of Shadows" QuestId="11004" Type="CollectItem" ItemId="32388" CollectCount="6" />
@@ -177,26 +177,26 @@
 		</If>
 		<Objective QuestName="Secrets of the Talonpriests" QuestId="11005" Type="KillMob" MobId="23068" KillCount="1" />
 		<Objective QuestName="Secrets of the Talonpriests" QuestId="11005" Type="KillMob" MobId="23066" KillCount="1" />
-		<If Condition="HasItem(32523) &amp;&amp; !HasQuest(11021) &amp;&amp; !IsQuestCompleted(11021) &amp;&amp; (Me.Level &gt;= 70)">
+		<If Condition="HasItem(32523) &amp;&amp; !HasQuest(11021) &amp;&amp; !IsQuestCompleted(11021) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="Ishaal's Almanac" QuestId="11021" GiverName="Ishaal's Almanac" GiverId="32523" GiverType="Item" />
 		</If>
 		<Objective QuestName="Secrets of the Talonpriests" QuestId="11005" Type="KillMob" MobId="23067" KillCount="1" />
 		<TurnIn QuestName="Secrets of the Talonpriests" QuestId="11005" TurnInName="Sky Commander Adaris" TurnInId="23038" X="-3408.26" Y="3622.71" Z="278.075" />
 		<TurnIn QuestName="Ishaal's Almanac" QuestId="11021" TurnInName="Sky Commander Adaris" TurnInId="23038" X="-3408.26" Y="3622.71" Z="278.075" />
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11021)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11021) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="An Ally in Lower City" QuestId="11024" GiverName="Sky Commander Adaris" GiverId="23038" X="-3408.26" Y="3622.71" Z="278.075" />
 		</If>
 		<TurnIn QuestName="An Ally in Lower City" QuestId="11024" TurnInName="Rilak the Redeemed" TurnInId="22292" X="-1656.93" Y="5448.97" Z="-40.3227" />
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11024)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11024) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="Countdown to Doom" QuestId="11028" GiverName="Rilak the Redeemed" GiverId="22292" X="-1656.93" Y="5448.97" Z="-40.3227" />
 		</If>
 		<TurnIn QuestName="Countdown to Doom" QuestId="11028" TurnInName="Sky Commander Adaris" TurnInId="23038" X="-3408.26" Y="3622.71" Z="278.075" />
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11028)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11028) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="Hazzik's Bargain" QuestId="11056" GiverName="Hazzik" GiverId="23306" X="-3410.85" Y="3614.86" Z="278.234" />
 		</If>
 		<Objective QuestName="Hazzik's Bargain" QuestId="11056" Type="CollectItem" ItemId="32687" CollectCount="1" />
 		<TurnIn QuestName="Hazzik's Bargain" QuestId="11056" TurnInName="Hazzik" TurnInId="23306" X="-3410.85" Y="3614.86" Z="278.234" />
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11056)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11056) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="A Shabby Disguise" QuestId="11029" GiverName="Hazzik" GiverId="23306" X="-3410.85" Y="3614.86" Z="278.234" />
 		</If>
 		<!-- REVIEW Q11029 A Shabby Disguise: item 32742 Adversarial Bloodlines has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -219,10 +219,10 @@
 				<Hotspot X="-3603.7" Y="3502.74" Z="279.394" />
 			</CustomBehavior>
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11004)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11004) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="More Shadow Dust" QuestId="11006" GiverName="Severin" GiverId="23042" X="-3407.59" Y="3624.57" Z="278.075" />
 		</If>
-		<!-- Q11885: Elixir of Shadows (32446) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q11885: Elixir of Shadows (32446) is needed but nothing near the guide coordinates drops it -->
 		<If Condition="HasQuest(11885) &amp;&amp; !IsQuestCompleted(11885) &amp;&amp; GetItemCount(32620) &lt; 40">
 			<CustomBehavior File="CollectThings" QuestId="11885" CollectItemId="32620" CollectItemCount="40" HuntingGroundRadius="120" MobId="21651" MobId2="21763" MobId3="21787" X="-3689.96" Y="3739.63" Z="278.65">
 				<Hotspot X="-3689.96" Y="3739.63" Z="278.65" />
@@ -233,14 +233,14 @@
 				<Hotspot X="-3862.81" Y="3671.75" Z="335.951" />
 			</CustomBehavior>
 		</If>
-		<!-- REVIEW Q11885 Adversarial Blood: group quest (3 players); helper item 32446 Elixir of Shadows has no dropping creature near the guide coordinates; kill 23163 Gezzarak the Huntress x1: kill credit or scripted event; kill 23161 Darkscreecher Akkarai x1: kill credit or scripted event; kill 23165 Karrog x1: kill credit or scripted event; kill 23162 Vakkiz the Windrager x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11885 Adversarial Blood: group quest (3 players); helper item 32446 Elixir of Shadows has no creature or object source near the guide coordinates; kill 23163 Gezzarak the Huntress x1: kill credit or scripted event; kill 23161 Darkscreecher Akkarai x1: kill credit or scripted event; kill 23165 Karrog x1: kill credit or scripted event; kill 23162 Vakkiz the Windrager x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11885)) &amp;&amp; (IsQuestCompleted(11885)))">
 			<TurnIn QuestName="Adversarial Blood" QuestId="11885" TurnInName="Hazzik" TurnInId="23306" X="-3410.85" Y="3614.86" Z="278.234" />
 		</If>
 		<If Condition="((HasQuest(11885)) &amp;&amp; (!IsQuestCompleted(11885)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11885" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11885)">
+		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11885) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="Tokens of the Descendants" QuestId="11074" GiverName="Hazzik" GiverId="23306" X="-3410.85" Y="3614.86" Z="278.234" />
 		</If>
 		<!-- SKIP Q11073 Terokk's Downfall: group quest (5 players) -->
@@ -365,7 +365,7 @@
 			<PickUp QuestName="The Skyguard Outpost" QuestId="11062" GiverName="Chu'a'lor" GiverId="23233" X="2335.24" Y="7285.18" Z="365.617" />
 		</If>
 		<TurnIn QuestName="The Skyguard Outpost" QuestId="11062" TurnInName="Sky Commander Keller" TurnInId="23334" X="2503.06" Y="7360.36" Z="380.453" />
-		<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.DeathKnight) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(11102) &amp;&amp; !HasQuest(11102)">
+		<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.Hunter) || (Me.Class == WoWClass.Rogue) || (Me.Class == WoWClass.Priest) || (Me.Class == WoWClass.DeathKnight) || (Me.Class == WoWClass.Shaman) || (Me.Class == WoWClass.Mage) || (Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; (IsQuestCompleted(11030) || IsQuestCompleted(11058)) &amp;&amp; !IsQuestCompleted(11102) &amp;&amp; !HasQuest(11102)">
 			<PickUp QuestName="Bombing Run" QuestId="11010" GiverName="Sky Sergeant Vanderlip" GiverId="23120" X="2495.25" Y="7350.9" Z="380.334" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.Druid)) &amp;&amp; (Me.Level &gt;= 70) &amp;&amp; !IsQuestCompleted(11010) &amp;&amp; !HasQuest(11010)">

@@ -914,9 +914,9 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11244)">
 			<PickUp QuestName="The Path to Payback" QuestId="11420" GiverName="Guard Captain Zorek" GiverId="23728" X="600.131" Y="-5032.45" Z="5.4653" />
 		</If>
-		<!-- Q11333: Reagent Pouch (6652) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q11333: Reagent Pouch (6652) is needed but nothing near the guide coordinates drops it -->
 		<Objective QuestName="Into the World of Spirits" QuestId="11333" Type="CollectItem" ItemId="33635" CollectCount="1" />
-		<!-- REVIEW Q11333 Into the World of Spirits: helper item 6652 Reagent Pouch has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11333 Into the World of Spirits: helper item 6652 Reagent Pouch has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11333)) &amp;&amp; (IsQuestCompleted(11333)))">
 			<TurnIn QuestName="Into the World of Spirits" QuestId="11333" TurnInName="Thoralius the Wise" TurnInId="23975" X="638.255" Y="-5013.19" Z="4.6539" />
 		</If>
@@ -1037,8 +1037,10 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11278)">
 			<PickUp QuestName="Trust is Earned" QuestId="11460" GiverName="Hidalgo the Master Falconer" GiverId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
-		<!-- Q11460: Fjord Grub (34102) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q11460 Trust is Earned: helper item 34102 Fjord Grub has no dropping creature near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11460) &amp;&amp; !IsQuestCompleted(11460) &amp;&amp; GetItemCount(34102) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="11460" MobId="186938" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="514.01" Y="-5980.92" Z="314.407" />
+		</If>
+		<!-- REVIEW Q11460 Trust is Earned: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11460)) &amp;&amp; (IsQuestCompleted(11460)))">
 			<TurnIn QuestName="Trust is Earned" QuestId="11460" TurnInName="Hidalgo the Master Falconer" TurnInId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
@@ -1064,7 +1066,9 @@
 			<PickUp QuestName="We Have the Technology" QuestId="11484" GiverName="Walt" GiverId="24807" X="475.726" Y="-5935.29" Z="308.804" />
 		</If>
 		<Objective QuestName="We Have the Technology" QuestId="11484" Type="CollectItem" ItemId="34136" CollectCount="1" />
-		<!-- Q11465: Fjord Grub (34102) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(11465) &amp;&amp; !IsQuestCompleted(11465) &amp;&amp; GetItemCount(34102) &lt; 5">
+			<CustomBehavior File="InteractWith" QuestId="11465" MobId="186938" ObjectType="GameObject" Loot="True" NumOfTimes="5" CollectionDistance="200" X="465.528" Y="-5963.1" Z="313.397" />
+		</If>
 		<TurnIn QuestName="Harpoon Master Yavus" QuestId="11430" TurnInName="Lieutenant Icehammer" TurnInId="24634" X="1223.97" Y="-5293.33" Z="179.426" />
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11430)">
 			<PickUp QuestName="It Goes to 11..." QuestId="11421" GiverName="Lieutenant Icehammer" GiverId="24634" X="1223.97" Y="-5293.33" Z="179.426" />
@@ -1104,10 +1108,10 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11483" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="We Have the Technology" QuestId="11484" TurnInName="Walt" TurnInId="24807" X="475.726" Y="-5935.29" Z="308.804" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11483) || IsQuestCompleted(11484))">
 			<PickUp QuestName="Iron Rune Constructs and You: Rocket Jumping" QuestId="11485" GiverName="Walt" GiverId="24807" X="475.726" Y="-5935.29" Z="308.804" />
 		</If>
-		<!-- REVIEW Q11465 The Ransacked Caravan: helper item 34102 Fjord Grub has no dropping creature near the guide coordinates; item 34112 Fjord Turkey has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11465 The Ransacked Caravan: item 34112 Fjord Turkey has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11465)) &amp;&amp; (IsQuestCompleted(11465)))">
 			<TurnIn QuestName="The Ransacked Caravan" QuestId="11465" TurnInName="Hidalgo the Master Falconer" TurnInId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
@@ -1150,8 +1154,10 @@
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11491)">
 			<PickUp QuestName="The Delicate Sound of Thunder" QuestId="11495" GiverName="Walt" GiverId="24807" X="475.726" Y="-5935.29" Z="308.804" />
 		</If>
-		<!-- Q11468: Fjord Grub (34102) is needed but no creature near the guide coordinates drops it -->
-		<!-- REVIEW Q11468 Falcon Versus Hawk: helper item 34102 Fjord Grub has no dropping creature near the guide coordinates; item 34120 Fjord Hawk has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="HasQuest(11468) &amp;&amp; !IsQuestCompleted(11468) &amp;&amp; GetItemCount(34102) &lt; 10">
+			<CustomBehavior File="InteractWith" QuestId="11468" MobId="186938" ObjectType="GameObject" Loot="True" NumOfTimes="10" CollectionDistance="200" X="329.61" Y="-5551.04" Z="309.192" />
+		</If>
+		<!-- REVIEW Q11468 Falcon Versus Hawk: item 34120 Fjord Hawk has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11468)) &amp;&amp; (IsQuestCompleted(11468)))">
 			<TurnIn QuestName="Falcon Versus Hawk" QuestId="11468" TurnInName="Hidalgo the Master Falconer" TurnInId="24750" X="497.639" Y="-5948.49" Z="314.395" />
 		</If>
@@ -1175,7 +1181,7 @@
 		<If Condition="((HasQuest(11495)) &amp;&amp; (!IsQuestCompleted(11495)))">
 			<CustomBehavior File="AbandonQuest" QuestId="11495" Type="Incomplete" />
 		</If>
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11494) || IsQuestCompleted(11495))">
 			<PickUp QuestName="News From the East" QuestId="11501" GiverName="Walt" GiverId="24807" X="475.726" Y="-5935.29" Z="308.804" />
 		</If>
 		<!-- REVIEW Q11470 There Exists No Honor Among Birds: item 34123 Fjord Hawk Egg has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1190,7 +1196,7 @@
 		</If>
 		<TurnIn QuestName="To Westguard Keep!" QuestId="11291" TurnInName="Captain Adams" TurnInId="23749" X="1333.45" Y="-3143.48" Z="172.275" />
 		<TurnIn QuestName="News From the East" QuestId="11501" TurnInName="Captain Adams" TurnInId="23749" X="1333.45" Y="-3143.48" Z="172.275" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(11501)">
 			<PickUp QuestName="The Clutches of Evil" QuestId="11157" GiverName="Captain Adams" GiverId="23749" X="1333.45" Y="-3143.48" Z="172.275" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68)">
@@ -1417,7 +1423,7 @@
 		<TurnIn QuestName="The Frozen Heart of Isuldof" QuestId="11512" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		<TurnIn QuestName="The Shield of the Aesirites" QuestId="11530" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		<TurnIn QuestName="The Ancient Armor of the Kvaldir" QuestId="11567" TurnInName="Orfus of Kamagua" TurnInId="23804" X="687.807" Y="-3830.52" Z="249.701" />
-		<If Condition="(Me.Level &gt;= 68)">
+		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(11511) || IsQuestCompleted(11512) || IsQuestCompleted(11530) || IsQuestCompleted(11567))">
 			<PickUp QuestName="A Return to Resting" QuestId="11568" GiverName="Orfus of Kamagua" GiverId="23804" X="687.807" Y="-3830.52" Z="249.701" />
 		</If>
 		<Objective QuestName="A Return to Resting" QuestId="11568" Type="KillMob" MobId="24874" KillCount="1" />
@@ -1582,9 +1588,9 @@
 				<Hotspot X="2936.06" Y="-4510.92" Z="284.598" />
 			</CustomBehavior>
 		</If>
-		<!-- Q11284: Giant Yeti Meal (33477) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q11284: Giant Yeti Meal (33477) is needed but nothing near the guide coordinates drops it -->
 		<CustomBehavior File="UseItemOn" QuestId="11284" ItemId="33477" MobId="24178" NumOfTimes="1" Range="5" CollectionDistance="200" X="2638.73" Y="-5057.32" Z="295.801" />
-		<!-- REVIEW Q11284 The Yeti Next Door: helper item 33477 Giant Yeti Meal has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11284 The Yeti Next Door: helper item 33477 Giant Yeti Meal has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11284)) &amp;&amp; (IsQuestCompleted(11284)))">
 			<TurnIn QuestName="The Yeti Next Door" QuestId="11284" TurnInName="Foreman Colbey" TurnInId="24176" X="2487.1" Y="-5036.1" Z="282.818" />
 		</If>
@@ -1634,7 +1640,7 @@
 			</CustomBehavior>
 		</If>
 		<TurnIn QuestName="The Enigmatic Frost Nymphs" QuestId="11302" TurnInName="Lurielle" TurnInId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
-		<If Condition="(Me.Level &gt;= 69)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11302) || IsQuestCompleted(11312))">
 			<PickUp QuestName="Spirits of the Ice" QuestId="11313" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
 		<Objective QuestName="Spirits of the Ice" QuestId="11313" Type="CollectItem" ItemId="33605" CollectCount="15" />
@@ -1654,10 +1660,10 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11314" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Wild Vines" QuestId="11315" TurnInName="Lurielle" TurnInId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
-		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11314)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11314) || IsQuestCompleted(11315))">
 			<PickUp QuestName="Spawn of the Twisted Glade" QuestId="11316" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
-		<If Condition="(Me.Level &gt;= 69) &amp;&amp; IsQuestCompleted(11315)">
+		<If Condition="(Me.Level &gt;= 69) &amp;&amp; (IsQuestCompleted(11314) || IsQuestCompleted(11315))">
 			<PickUp QuestName="Seeds of the Blacksouled Keepers" QuestId="11319" GiverName="Lurielle" GiverId="24117" X="2195.11" Y="-5115.1" Z="236.583" />
 		</If>
 		<!-- REVIEW Q11410 The One That Got Away: use item 34013: target 24500 Frostfin has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

@@ -943,7 +943,9 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10829)">
 			<PickUp QuestName="Exorcising the Trees" QuestId="10830" GiverName="Treebole" GiverId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>
-		<!-- Q10830: Grishnath Orb (31495) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(10830) &amp;&amp; !IsQuestCompleted(10830) &amp;&amp; GetItemCount(31495) &lt; 5">
+			<CustomBehavior File="InteractWith" QuestId="10830" MobId="182941" ObjectType="GameObject" Loot="True" NumOfTimes="5" CollectionDistance="200" X="3649.88" Y="6679.62" Z="174.752" />
+		</If>
 		<If Condition="HasQuest(10830) &amp;&amp; !IsQuestCompleted(10830) &amp;&amp; GetItemCount(31517) &lt; 5">
 			<CustomBehavior File="CollectThings" QuestId="10830" CollectItemId="31517" CollectItemCount="5" HuntingGroundRadius="120" MobId="21042" X="3381.69" Y="7221.6" Z="153.264">
 				<Hotspot X="3381.69" Y="7221.6" Z="153.264" />
@@ -954,7 +956,7 @@
 				<Hotspot X="3347.04" Y="6923.75" Z="163.005" />
 			</CustomBehavior>
 		</If>
-		<!-- REVIEW Q10830 Exorcising the Trees: helper item 31495 Grishnath Orb has no dropping creature near the guide coordinates; use item 31495: target 22226 Koi-Koi Spirit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10830 Exorcising the Trees: use item 31495: target 22226 Koi-Koi Spirit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10830)) &amp;&amp; (IsQuestCompleted(10830)))">
 			<TurnIn QuestName="Exorcising the Trees" QuestId="10830" TurnInName="Treebole" TurnInId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>
@@ -995,7 +997,7 @@
 			<PickUp QuestName="Assisting the Consortium" QuestId="10263" GiverName="Anchorite Karja" GiverId="19467" X="3071.05" Y="3697.33" Z="142.528" />
 		</If>
 		<TurnIn QuestName="Assisting the Consortium" QuestId="10263" TurnInName="Nether-Stalker Khay'ji" TurnInId="19880" X="3069.96" Y="3674.86" Z="142.527" />
-		<If Condition="(Me.Level &gt;= 67)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10263) || IsQuestCompleted(10264))">
 			<PickUp QuestName="Consortium Crystal Collection" QuestId="10265" GiverName="Nether-Stalker Khay'ji" GiverId="19880" X="3069.96" Y="3674.86" Z="142.527" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
@@ -1357,7 +1359,7 @@
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10321) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="Shutting Down Manaforge Duro" QuestId="10322" GiverName="Anchorite Karja" GiverId="19467" X="3071.05" Y="3697.33" Z="142.528" />
 		</If>
-		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
+		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10313) || IsQuestCompleted(10321)) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="Sunfury Briefings" QuestId="10328" GiverName="Exarch Orelis" GiverId="19466" X="3070.84" Y="3695.18" Z="142.465" />
 		</If>
 		<TurnIn QuestName="Request for Assistance" QuestId="10266" TurnInName="Gahruj" TurnInId="20066" X="3339.77" Y="2881.75" Z="144.381" />

@@ -341,7 +341,7 @@
 		<TurnIn QuestName="The New Frontier" QuestId="1015" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" X="10173" Y="2569.92" Z="1366.96" />
 		<TurnIn QuestName="The New Frontier" QuestId="1019" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" X="10173" Y="2569.92" Z="1366.96" />
 		<TurnIn QuestName="The New Frontier" QuestId="1047" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" X="10173" Y="2569.92" Z="1366.96" />
-		<If Condition="(Me.Level &gt;= 54)">
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; (IsQuestCompleted(1015) || IsQuestCompleted(1019) || IsQuestCompleted(1047))">
 			<PickUp QuestName="The New Frontier" QuestId="6761" GiverName="Arch Druid Fandral Staghelm" GiverId="3516" X="10173" Y="2569.92" Z="1366.96" />
 		</If>
 		<TurnIn QuestName="The New Frontier" QuestId="6761" TurnInName="Mathrengyl Bearwalker" TurnInId="4217" X="10179" Y="2563.98" Z="1340.13" />
@@ -349,7 +349,7 @@
 			<PickUp QuestName="Rabine Saturna" QuestId="6762" GiverName="Mathrengyl Bearwalker" GiverId="4217" X="10179" Y="2563.98" Z="1340.13" />
 		</If>
 		<TurnIn QuestName="Rabine Saturna" QuestId="6762" TurnInName="Rabine Saturna" TurnInId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
-		<If Condition="(Me.Level &gt;= 54)">
+		<If Condition="(Me.Level &gt;= 54) &amp;&amp; (IsQuestCompleted(1123) || IsQuestCompleted(6762))">
 			<PickUp QuestName="Wasteland" QuestId="1124" GiverName="Rabine Saturna" GiverId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
 		</If>
 		<If Condition="(Me.Level &gt;= 56)">
@@ -366,7 +366,9 @@
 		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(1125)">
 			<PickUp QuestName="Hive in the Tower" QuestId="1126" GiverName="Layo Starstrike" GiverId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
 		</If>
-		<!-- Q1126: Silithid Goo (17345) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(1126) &amp;&amp; !IsQuestCompleted(1126) &amp;&amp; GetItemCount(17345) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="1126" MobId="178553" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="-7179.28" Y="435.092" Z="64.374" />
+		</If>
 		<TurnIn QuestName="Taking Back Silithus" QuestId="8275" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
 		<If Condition="(Me.Level &gt;= 54)">
 			<PickUp QuestName="Securing the Supply Lines" QuestId="8280" GiverName="Windcaller Proudhorn" GiverId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
@@ -395,7 +397,7 @@
 		<If Condition="HasItem(20461) &amp;&amp; !HasQuest(8308) &amp;&amp; !IsQuestCompleted(8308) &amp;&amp; (Me.Level &gt;= 58)">
 			<PickUp QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" GiverName="Brann Bronzebeard's Lost Letter" GiverId="20461" GiverType="Item" />
 		</If>
-		<!-- REVIEW Q1126 Hive in the Tower: helper item 17345 Silithid Goo has no dropping creature near the guide coordinates; item 17346 Encrusted Silithid Object has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q1126 Hive in the Tower: item 17346 Encrusted Silithid Object has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(1126)) &amp;&amp; (IsQuestCompleted(1126)))">
 			<TurnIn QuestName="Hive in the Tower" QuestId="1126" TurnInName="Layo Starstrike" TurnInId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
 		</If>

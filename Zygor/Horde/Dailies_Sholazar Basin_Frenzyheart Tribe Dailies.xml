@@ -95,7 +95,7 @@
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12692)">
 			<PickUp QuestName="Chicken Party!" QuestId="12702" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
 		</If>
-		<!-- Q12702: Goregek's Shackles (38619) is needed but no creature near the guide coordinates drops it -->
+		<!-- Q12702: Goregek's Shackles (38619) is needed but nothing near the guide coordinates drops it -->
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(12692) &amp;&amp; !IsQuestCompleted(12732) &amp;&amp; !HasQuest(12732) &amp;&amp; !IsQuestCompleted(12734) &amp;&amp; !HasQuest(12734) &amp;&amp; !IsQuestCompleted(12741) &amp;&amp; !HasQuest(12741)">
 			<PickUp QuestName="A Hero's Headgear" QuestId="12758" GiverName="Rejek" GiverId="29043" X="5270.12" Y="4501.99" Z="-82.8075" />
 		</If>
@@ -171,21 +171,21 @@
 			</CustomBehavior>
 		</If>
 		<Objective QuestName="Kartak's Rampage" QuestId="12703" Type="KillMob" MobId="28111" KillCount="50" />
-		<!-- Q12759: Spike Bomb (39697) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q12759: Ensnaring Trap (39695) is needed but no creature near the guide coordinates drops it -->
-		<!-- Q12759: Volatile Trap (39696) is needed but no creature near the guide coordinates drops it -->
+		<If Condition="HasQuest(12759) &amp;&amp; !IsQuestCompleted(12759) &amp;&amp; GetItemCount(39697) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12759" MobId="191210" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="4873.98" Y="5884.18" Z="-39.0242" />
+		</If>
+		<If Condition="HasQuest(12759) &amp;&amp; !IsQuestCompleted(12759) &amp;&amp; GetItemCount(39695) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12759" MobId="191210" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="4873.98" Y="5884.18" Z="-39.0242" />
+		</If>
+		<If Condition="HasQuest(12759) &amp;&amp; !IsQuestCompleted(12759) &amp;&amp; GetItemCount(39696) &lt; 1">
+			<CustomBehavior File="InteractWith" QuestId="12759" MobId="191210" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="4873.98" Y="5884.18" Z="-39.0242" />
+		</If>
 		<TurnIn QuestName="Kartak's Rampage" QuestId="12703" TurnInName="Shaman Jakjek" TurnInId="28106" X="4891.31" Y="5905.05" Z="-40.6086" />
 		<Objective QuestName="Secret Strength of the Frenzyheart" QuestId="12760" Type="KillMob" MobId="28111" KillCount="30" />
 		<TurnIn QuestName="Secret Strength of the Frenzyheart" QuestId="12760" TurnInName="Shaman Jakjek" TurnInId="28106" X="4891.31" Y="5905.05" Z="-40.6086" />
 		<Objective QuestName="Tools of War" QuestId="12759" Type="KillMob" MobId="28111" KillCount="50" />
-		<!-- REVIEW Q12759 Tools of War: helper item 39697 Spike Bomb has no dropping creature near the guide coordinates; helper item 39695 Ensnaring Trap has no dropping creature near the guide coordinates; helper item 39696 Volatile Trap has no dropping creature near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(12759)) &amp;&amp; (IsQuestCompleted(12759)))">
-			<TurnIn QuestName="Tools of War" QuestId="12759" TurnInName="Shaman Jakjek" TurnInId="28106" X="4891.31" Y="5905.05" Z="-40.6086" />
-		</If>
-		<If Condition="((HasQuest(12759)) &amp;&amp; (!IsQuestCompleted(12759)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12759" Type="Incomplete" />
-		</If>
-		<!-- REVIEW Q12702 Chicken Party!: helper item 38619 Goregek's Shackles has no dropping creature near the guide coordinates; item 38483 Captured Chicken has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<TurnIn QuestName="Tools of War" QuestId="12759" TurnInName="Shaman Jakjek" TurnInId="28106" X="4891.31" Y="5905.05" Z="-40.6086" />
+		<!-- REVIEW Q12702 Chicken Party!: helper item 38619 Goregek's Shackles has no creature or object source near the guide coordinates; item 38483 Captured Chicken has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12702)) &amp;&amp; (IsQuestCompleted(12702)))">
 			<TurnIn QuestName="Chicken Party!" QuestId="12702" TurnInName="Elder Harkek" TurnInId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
 		</If>
