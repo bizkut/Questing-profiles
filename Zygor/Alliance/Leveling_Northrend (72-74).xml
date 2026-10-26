@@ -562,6 +562,13 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="11284" Name="The Yeti Next Door">
+		<Objective Type="KillMob" MobId="24178" KillCount="1">
+			<Hotspots>
+				<Hotspot X="2638.73" Y="-5057.32" Z="295.801" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="11414" Name="Brother Betrayers">
 		<Objective Type="KillMob" MobId="24516" KillCount="1">
 			<Hotspots>
@@ -1630,6 +1637,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11239" Type="Incomplete" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="11284" ItemId="33477" MobId="24178" NumOfTimes="1" Range="5" CollectionDistance="200" X="2638.73" Y="-5057.32" Z="295.801" />
+		<Objective QuestName="The Yeti Next Door" QuestId="11284" Type="KillMob" MobId="24178" KillCount="1" />
 		<!-- REVIEW Q11284 The Yeti Next Door: helper item 33477 Giant Yeti Meal has no creature or object source near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11284)) &amp;&amp; (IsQuestCompleted(11284)))">
 			<TurnIn QuestName="The Yeti Next Door" QuestId="11284" TurnInName="Foreman Colbey" TurnInId="24176" X="2487.1" Y="-5036.1" Z="282.818" />

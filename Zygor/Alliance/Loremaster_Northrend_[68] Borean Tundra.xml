@@ -188,6 +188,13 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="11626" Name="The Emissary">
+		<Objective Type="KillMob" MobId="26452" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1494.11" Y="5583.75" Z="-64.5754" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="11866" Name="Ears of Our Enemies">
 		<Objective Type="CollectItem" ItemId="35188" CollectCount="15">
 			<CollectFrom>
@@ -1092,6 +1099,7 @@
 			<PickUp QuestName="The Emissary" QuestId="11626" GiverName="Veehja" GiverId="25450" X="1802.59" Y="6057.35" Z="3.2101" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="11626" ItemId="35850" MobId="26452" NumOfTimes="1" Range="5" CollectionDistance="200" X="1494.11" Y="5583.75" Z="-64.5754" />
+		<Objective QuestName="The Emissary" QuestId="11626" Type="KillMob" MobId="26452" KillCount="1" />
 		<!-- REVIEW Q11626 The Emissary: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11626)) &amp;&amp; (IsQuestCompleted(11626)))">
 			<TurnIn QuestName="The Emissary" QuestId="11626" TurnInName="Karuk" TurnInId="25435" X="1996.48" Y="5853.81" Z="36.03" />
