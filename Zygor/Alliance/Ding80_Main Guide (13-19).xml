@@ -899,7 +899,7 @@
 				<TurnIn QuestName="The Principal Source" QuestId="6122" TurnInName="Alanndarian Nightsong" TurnInId="3702" X="6557.88" Y="472.97" Z="9.0979" />
 			</If>
 			<If Condition="((HasQuest(6122)) &amp;&amp; (!IsQuestCompleted(6122)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6122" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6122" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -929,7 +929,7 @@
 				<TurnIn QuestName="Curing the Sick" QuestId="6124" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
 			</If>
 			<If Condition="((HasQuest(6124)) &amp;&amp; (!IsQuestCompleted(6124)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6124" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6124" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -957,7 +957,7 @@
 				<TurnIn QuestName="Surena Caledon" QuestId="1688" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
 			</If>
 			<If Condition="((HasQuest(1688)) &amp;&amp; (!IsQuestCompleted(1688)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1688" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1688" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warlock))">
@@ -971,7 +971,7 @@
 				<TurnIn QuestName="The Binding" QuestId="1689" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
 			</If>
 			<If Condition="((HasQuest(1689)) &amp;&amp; (!IsQuestCompleted(1689)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1689" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1689" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((HasQuest(399)) &amp;&amp; (!IsQuestCompleted(399)))">
@@ -1100,7 +1100,7 @@
 			<TurnIn QuestName="Resupplying the Excavation" QuestId="273" TurnInName="Huldar" TurnInId="2057" X="-5762.77" Y="-3433.36" Z="305.765" />
 		</If>
 		<If Condition="((HasQuest(273)) &amp;&amp; (!IsQuestCompleted(273)))">
-			<CustomBehavior File="AbandonQuest" QuestId="273" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="273" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(273)">
 			<PickUp QuestName="After the Ambush" QuestId="454" GiverName="Huldar" GiverId="2057" X="-5762.77" Y="-3433.36" Z="305.765" />
@@ -1114,7 +1114,7 @@
 			<TurnIn QuestName="Protecting the Shipment" QuestId="309" TurnInName="Prospector Ironband" TurnInId="1344" X="-5694.65" Y="-3812.45" Z="321.7" />
 		</If>
 		<If Condition="((HasQuest(309)) &amp;&amp; (!IsQuestCompleted(309)))">
-			<CustomBehavior File="AbandonQuest" QuestId="309" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="309" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Gathering Idols" QuestId="297" Type="CollectItem" ItemId="2636" CollectCount="8" />
 		<TurnIn QuestName="Gathering Idols" QuestId="297" TurnInName="Magmar Fellhew" TurnInId="1345" X="-5713.75" Y="-3783.78" Z="323.018" />
@@ -1206,7 +1206,7 @@
 		</If>
 		<!-- SKIP turn-in Q944 The Master's Glaive: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(944)) &amp;&amp; (!IsQuestCompleted(944)))">
-			<CustomBehavior File="AbandonQuest" QuestId="944" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="944" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q949 The Twilight Camp: no quest giver with a spawn in the database -->
 		<!-- REVIEW Q949 The Twilight Camp: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1214,7 +1214,7 @@
 			<TurnIn QuestName="The Twilight Camp" QuestId="949" TurnInName="Twilight Tome" TurnInId="12666" TurnInType="Object" X="4575.75" Y="417.029" Z="34.9274" />
 		</If>
 		<If Condition="((HasQuest(949)) &amp;&amp; (!IsQuestCompleted(949)))">
-			<CustomBehavior File="AbandonQuest" QuestId="949" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="949" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(949)">
 			<PickUp QuestName="Return to Onu" QuestId="950" GiverName="Twilight Tome" GiverId="12666" GiverType="Object" X="4575.75" Y="417.029" Z="34.9274" />
@@ -1253,14 +1253,14 @@
 			<TurnIn QuestName="The Sleeper Has Awakened" QuestId="5321" TurnInName="Liladris Moonriver" TurnInId="11219" X="3305.22" Y="127.885" Z="16.1994" />
 		</If>
 		<If Condition="((HasQuest(5321)) &amp;&amp; (!IsQuestCompleted(5321)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5321" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5321" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q5713 One Shot.  One Kill.: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(5713)) &amp;&amp; (IsQuestCompleted(5713)))">
 			<TurnIn QuestName="One Shot.  One Kill." QuestId="5713" TurnInName="Sentinel Onaeya" TurnInId="11806" X="3261.17" Y="165.819" Z="9.4194" />
 		</If>
 		<If Condition="((HasQuest(5713)) &amp;&amp; (!IsQuestCompleted(5713)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5713" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5713" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Tower of Althalaxx" QuestId="967" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
 		<!-- REVIEW Q945 Therylune's Escape: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1268,7 +1268,7 @@
 			<TurnIn QuestName="Therylune's Escape" QuestId="945" TurnInName="Therysil" TurnInId="3585" X="2677.34" Y="394.207" Z="69.8261" />
 		</If>
 		<If Condition="((HasQuest(945)) &amp;&amp; (!IsQuestCompleted(945)))">
-			<CustomBehavior File="AbandonQuest" QuestId="945" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="945" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Onward to Ashenvale" QuestId="10752" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
 		<!-- REVIEW Q731 The Absent Minded Prospector: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1276,7 +1276,7 @@
 			<TurnIn QuestName="The Absent Minded Prospector" QuestId="731" TurnInName="Archaeologist Hollee" TurnInId="2913" X="6506.35" Y="489.304" Z="6.8245" />
 		</If>
 		<If Condition="((HasQuest(731)) &amp;&amp; (!IsQuestCompleted(731)))">
-			<CustomBehavior File="AbandonQuest" QuestId="731" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="731" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(731)">
 			<PickUp QuestName="The Absent Minded Prospector" QuestId="741" GiverName="Archaeologist Hollee" GiverId="2913" X="6506.35" Y="489.304" Z="6.8245" />

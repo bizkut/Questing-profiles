@@ -467,7 +467,7 @@
 			<TurnIn QuestName="Look To The Stars" QuestId="174" TurnInName="Viktori Prism'Antras" TurnInId="276" X="-10581.1" Y="-1321.31" Z="50.3933" />
 		</If>
 		<If Condition="((HasQuest(174)) &amp;&amp; (!IsQuestCompleted(174)))">
-			<CustomBehavior File="AbandonQuest" QuestId="174" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="174" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(174)">
 			<PickUp QuestName="Look To The Stars" QuestId="175" GiverName="Viktori Prism'Antras" GiverId="276" X="-10581.1" Y="-1321.31" Z="50.3933" />
@@ -664,7 +664,7 @@
 			<TurnIn QuestName="Seasoned Wolf Kabobs" QuestId="90" TurnInName="Chef Grual" TurnInId="272" X="-10507.7" Y="-1161.96" Z="28.1995" />
 		</If>
 		<If Condition="((HasQuest(90)) &amp;&amp; (!IsQuestCompleted(90)))">
-			<CustomBehavior File="AbandonQuest" QuestId="90" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="90" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Dusky Crab Cakes" QuestId="93" TurnInName="Chef Grual" TurnInId="272" X="-10507.7" Y="-1161.96" Z="28.1995" />
 		<If Condition="(Me.Level &gt;= 17) &amp;&amp; IsQuestCompleted(93)">
@@ -700,7 +700,7 @@
 			<TurnIn QuestName="The Night Watch" QuestId="57" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
 		</If>
 		<If Condition="((HasQuest(57)) &amp;&amp; (!IsQuestCompleted(57)))">
-			<CustomBehavior File="AbandonQuest" QuestId="57" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="57" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Mor'Ladim" QuestId="228" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
 		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(57)">
@@ -758,7 +758,7 @@
 			<TurnIn QuestName="Bride of the Embalmer" QuestId="253" TurnInName="Lord Ello Ebonlocke" TurnInId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
 		</If>
 		<If Condition="((HasQuest(253)) &amp;&amp; (!IsQuestCompleted(253)))">
-			<CustomBehavior File="AbandonQuest" QuestId="253" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="253" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Missing Diplomat" QuestId="1245" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1245)">
@@ -773,7 +773,7 @@
 			<TurnIn QuestName="The Missing Diplomat" QuestId="1447" TurnInName="Dashel Stonefist" TurnInId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
 		</If>
 		<If Condition="((HasQuest(1447)) &amp;&amp; (!IsQuestCompleted(1447)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1447" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1447" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1447)">
 			<PickUp QuestName="The Missing Diplomat" QuestId="1247" GiverName="Dashel Stonefist" GiverId="4961" X="-8681.14" Y="432.794" Z="99.2405" />

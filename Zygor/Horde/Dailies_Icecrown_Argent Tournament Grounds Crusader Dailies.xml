@@ -77,21 +77,21 @@
 			<TurnIn QuestName="Drottinn Hrothgar" QuestId="14101" TurnInName="High Crusader Adelard" TurnInId="34882" X="8460.23" Y="1087.09" Z="554.492" />
 		</If>
 		<If Condition="((HasQuest(14101)) &amp;&amp; (!IsQuestCompleted(14101)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14101" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14101" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q14102 Mistcaller Yngvar: use item 47009: target 34965 Mistcaller Yngvar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14102)) &amp;&amp; (IsQuestCompleted(14102)))">
 			<TurnIn QuestName="Mistcaller Yngvar" QuestId="14102" TurnInName="High Crusader Adelard" TurnInId="34882" X="8460.23" Y="1087.09" Z="554.492" />
 		</If>
 		<If Condition="((HasQuest(14102)) &amp;&amp; (!IsQuestCompleted(14102)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14102" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14102" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q14104 Ornolf The Scarred: use item 47029: target 35012 Ornolf the Scarred has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14104)) &amp;&amp; (IsQuestCompleted(14104)))">
 			<TurnIn QuestName="Ornolf The Scarred" QuestId="14104" TurnInName="High Crusader Adelard" TurnInId="34882" X="8460.23" Y="1087.09" Z="554.492" />
 		</If>
 		<If Condition="((HasQuest(14104)) &amp;&amp; (!IsQuestCompleted(14104)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14104" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14104" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Get Kraken!" QuestId="14108" Type="KillMob" MobId="35009" KillCount="6" />
 		<!-- REVIEW Q14108 Get Kraken!: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -106,7 +106,7 @@
 			<TurnIn QuestName="The Fate Of The Fallen" QuestId="14107" TurnInName="Crusader Silverdawn" TurnInId="35094" X="8461.79" Y="1084.64" Z="554.586" />
 		</If>
 		<If Condition="((HasQuest(14107)) &amp;&amp; (!IsQuestCompleted(14107)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14107" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14107" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Argent Tournament Grounds Crusader Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

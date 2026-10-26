@@ -848,7 +848,7 @@
 				<TurnIn QuestName="The Principal Source" QuestId="6122" TurnInName="Alanndarian Nightsong" TurnInId="3702" X="6557.88" Y="472.97" Z="9.0979" />
 			</If>
 			<If Condition="((HasQuest(6122)) &amp;&amp; (!IsQuestCompleted(6122)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6122" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6122" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -878,7 +878,7 @@
 				<TurnIn QuestName="Curing the Sick" QuestId="6124" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
 			</If>
 			<If Condition="((HasQuest(6124)) &amp;&amp; (!IsQuestCompleted(6124)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6124" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6124" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -926,7 +926,7 @@
 			<TurnIn QuestName="Plagued Lands" QuestId="2118" TurnInName="Tharnariun Treetender" TurnInId="3701" X="6437.48" Y="397.48" Z="11.7883" />
 		</If>
 		<If Condition="((HasQuest(2118)) &amp;&amp; (!IsQuestCompleted(2118)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2118" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2118" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(2118)">
 			<PickUp QuestName="Cleansing of the Infected" QuestId="2138" GiverName="Tharnariun Treetender" GiverId="3701" X="6437.48" Y="397.48" Z="11.7883" />
@@ -950,7 +950,7 @@
 			<TurnIn QuestName="As Water Cascades" QuestId="4812" TurnInName="Mysterious Red Crystal" TurnInId="175524" TurnInType="Object" X="6207.82" Y="-157.763" Z="80.9614" />
 		</If>
 		<If Condition="((HasQuest(4812)) &amp;&amp; (!IsQuestCompleted(4812)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4812" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4812" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(4812)">
 			<PickUp QuestName="The Fragments Within" QuestId="4813" GiverName="Mysterious Red Crystal" GiverId="175524" GiverType="Object" X="6207.82" Y="-157.763" Z="80.9614" />
@@ -983,7 +983,7 @@
 			<TurnIn QuestName="The Cliffspring River" QuestId="4762" TurnInName="Thundris Windweaver" TurnInId="3649" X="6580.97" Y="492.292" Z="8.3174" />
 		</If>
 		<If Condition="((HasQuest(4762)) &amp;&amp; (!IsQuestCompleted(4762)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4762" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4762" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 9)">
 			<PickUp QuestName="Tools of the Highborne" QuestId="958" GiverName="Thundris Windweaver" GiverId="3649" X="6580.97" Y="492.292" Z="8.3174" />
@@ -1033,7 +1033,7 @@
 				<TurnIn QuestName="Trial of the Lake" QuestId="29" TurnInName="Tajarri" TurnInId="11799" X="7874.23" Y="-2224.18" Z="469.159" />
 			</If>
 			<If Condition="((HasQuest(29)) &amp;&amp; (!IsQuestCompleted(29)))">
-				<CustomBehavior File="AbandonQuest" QuestId="29" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="29" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -1057,7 +1057,7 @@
 				<TurnIn QuestName="Trial of the Sea Lion" QuestId="272" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
 			</If>
 			<If Condition="((HasQuest(272)) &amp;&amp; (!IsQuestCompleted(272)))">
-				<CustomBehavior File="AbandonQuest" QuestId="272" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="272" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">

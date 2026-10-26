@@ -596,7 +596,7 @@
 			<TurnIn QuestName="Resupplying the Excavation" QuestId="273" TurnInName="Huldar" TurnInId="2057" X="-5762.77" Y="-3433.36" Z="305.765" />
 		</If>
 		<If Condition="((HasQuest(273)) &amp;&amp; (!IsQuestCompleted(273)))">
-			<CustomBehavior File="AbandonQuest" QuestId="273" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="273" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(273)">
 			<PickUp QuestName="After the Ambush" QuestId="454" GiverName="Huldar" GiverId="2057" X="-5762.77" Y="-3433.36" Z="305.765" />
@@ -610,7 +610,7 @@
 			<TurnIn QuestName="Protecting the Shipment" QuestId="309" TurnInName="Prospector Ironband" TurnInId="1344" X="-5694.65" Y="-3812.45" Z="321.7" />
 		</If>
 		<If Condition="((HasQuest(309)) &amp;&amp; (!IsQuestCompleted(309)))">
-			<CustomBehavior File="AbandonQuest" QuestId="309" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="309" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Find Bingles" QuestId="2039" TurnInName="Bingles Blastenheimer" TurnInId="6577" X="-5368.99" Y="-3746.97" Z="304.797" />
 		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(2039)">

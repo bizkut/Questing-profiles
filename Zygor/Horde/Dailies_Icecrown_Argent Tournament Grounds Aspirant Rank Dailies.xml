@@ -70,21 +70,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13673" TurnInName="Magister Edien Sunhollow" TurnInId="33542" X="8407.53" Y="661.218" Z="550.424" />
 		</If>
 		<If Condition="((HasQuest(13673)) &amp;&amp; (!IsQuestCompleted(13673)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13673" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13673" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13674 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13674)) &amp;&amp; (IsQuestCompleted(13674)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13674" TurnInName="Magister Edien Sunhollow" TurnInId="33542" X="8407.53" Y="661.218" Z="550.424" />
 		</If>
 		<If Condition="((HasQuest(13674)) &amp;&amp; (!IsQuestCompleted(13674)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13674" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13674" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13675 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13675)) &amp;&amp; (IsQuestCompleted(13675)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13675" TurnInName="Magister Edien Sunhollow" TurnInId="33542" X="8407.53" Y="661.218" Z="550.424" />
 		</If>
 		<If Condition="((HasQuest(13675)) &amp;&amp; (!IsQuestCompleted(13675)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13675" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13675" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13676 Training In The Field: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13676)) &amp;&amp; (IsQuestCompleted(13676)))">
@@ -98,14 +98,14 @@
 			<TurnIn QuestName="Learning The Reins" QuestId="13677" TurnInName="Galathia Brightdawn" TurnInId="33659" X="8405.28" Y="662.8" Z="550.341" />
 		</If>
 		<If Condition="((HasQuest(13677)) &amp;&amp; (!IsQuestCompleted(13677)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13677" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13677" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13678 Up To The Challenge: item 45192 Aspirant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13678)) &amp;&amp; (IsQuestCompleted(13678)))">
 			<TurnIn QuestName="Up To The Challenge" QuestId="13678" TurnInName="Magister Edien Sunhollow" TurnInId="33542" X="8407.53" Y="661.218" Z="550.424" />
 		</If>
 		<If Condition="((HasQuest(13678)) &amp;&amp; (!IsQuestCompleted(13678)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13678" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13678" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Argent Tournament Grounds Aspirant Rank Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

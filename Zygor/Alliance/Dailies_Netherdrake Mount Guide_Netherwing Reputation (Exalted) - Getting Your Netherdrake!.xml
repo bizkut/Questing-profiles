@@ -46,7 +46,7 @@
 			<TurnIn QuestName="Lord Illidan Stormrage" QuestId="11108" TurnInName="Barthamus" TurnInId="23433" X="-1615.71" Y="5265" Z="-40.6624" />
 		</If>
 		<If Condition="((HasQuest(11108)) &amp;&amp; (!IsQuestCompleted(11108)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11108" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11108" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11108) &amp;&amp; !IsQuestCompleted(11109) &amp;&amp; !HasQuest(11109) &amp;&amp; !IsQuestCompleted(11110) &amp;&amp; !HasQuest(11110) &amp;&amp; !IsQuestCompleted(11111) &amp;&amp; !HasQuest(11111) &amp;&amp; !IsQuestCompleted(11112) &amp;&amp; !HasQuest(11112) &amp;&amp; !IsQuestCompleted(11114) &amp;&amp; !HasQuest(11114) &amp;&amp; (GetFactionReputation(1015) &gt;= 42000)">
 			<PickUp QuestName="Voranaku the Violet Netherwing Drake" QuestId="11113" GiverName="Voranaku" GiverId="23466" X="-1623.18" Y="5272.59" Z="-40.898" />

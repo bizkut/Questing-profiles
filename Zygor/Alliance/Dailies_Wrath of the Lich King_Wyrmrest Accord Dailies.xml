@@ -202,7 +202,7 @@
 			<TurnIn QuestName="Rifle the Bodies" QuestId="12000" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
 		<If Condition="((HasQuest(12000)) &amp;&amp; (!IsQuestCompleted(12000)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12000" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12000" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12000)">
 			<PickUp QuestName="Prevent the Accord" QuestId="12004" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
@@ -222,7 +222,7 @@
 			<TurnIn QuestName="Projections and Plans" QuestId="12060" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
 		<If Condition="((HasQuest(12060)) &amp;&amp; (!IsQuestCompleted(12060)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12060" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12060" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12060)">
 			<PickUp QuestName="The Focus on the Beach" QuestId="12065" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
@@ -240,7 +240,7 @@
 			<TurnIn QuestName="The Focus on the Beach" QuestId="12065" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
 		<If Condition="((HasQuest(12065)) &amp;&amp; (!IsQuestCompleted(12065)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12065" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12065" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12065)">
 			<PickUp QuestName="Atop the Woodlands" QuestId="12083" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
@@ -266,7 +266,7 @@
 			<TurnIn QuestName="The End of the Line" QuestId="12107" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
 		<If Condition="((HasQuest(12107)) &amp;&amp; (!IsQuestCompleted(12107)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12107" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12107" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12107)">
 			<PickUp QuestName="Gaining an Audience" QuestId="12119" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
@@ -290,7 +290,7 @@
 			<TurnIn QuestName="Heated Battle" QuestId="12416" TurnInName="Ceristrasz" TurnInId="27506" X="3703.88" Y="699.021" Z="89.2857" />
 		</If>
 		<If Condition="((HasQuest(12416)) &amp;&amp; (!IsQuestCompleted(12416)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12416" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12416" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12416)">
 			<PickUp QuestName="Return to the Earth" QuestId="12417" GiverName="Ceristrasz" GiverId="27506" X="3703.88" Y="699.021" Z="89.2857" />
@@ -329,14 +329,14 @@
 			<TurnIn QuestName="Defending Wyrmrest Temple" QuestId="12372" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />
 		</If>
 		<If Condition="((HasQuest(12372)) &amp;&amp; (!IsQuestCompleted(12372)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12372 Defending Wyrmrest Temple: objective 27698 Defending Wyrmrest Temple Kill Credit Bunny x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12372)) &amp;&amp; (IsQuestCompleted(12372)))">
 			<TurnIn QuestName="Defending Wyrmrest Temple" QuestId="12372" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />
 		</If>
 		<If Condition="((HasQuest(12372)) &amp;&amp; (!IsQuestCompleted(12372)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 69)">
 			<PickUp QuestName="Basic Training" QuestId="11918" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
@@ -378,7 +378,7 @@
 			<TurnIn QuestName="Drake Hunt" QuestId="11919" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		</If>
 		<If Condition="((HasQuest(11919)) &amp;&amp; (!IsQuestCompleted(11919)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11919" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11919" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 80)">
 			<PickUp QuestName="Corastrasza" QuestId="13412" GiverName="Librarian Serrah" GiverId="26110" X="3576.48" Y="6640.39" Z="195.176" />
@@ -397,7 +397,7 @@
 			<TurnIn QuestName="Drake Hunt" QuestId="11940" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		</If>
 		<If Condition="((HasQuest(11940)) &amp;&amp; (!IsQuestCompleted(11940)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11940" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11940" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 80) &amp;&amp; IsQuestCompleted(13413)">
 			<PickUp QuestName="Aces High!" QuestId="13414" GiverName="Corastrasza" GiverId="32548" X="3944.48" Y="6870.9" Z="527.405" />

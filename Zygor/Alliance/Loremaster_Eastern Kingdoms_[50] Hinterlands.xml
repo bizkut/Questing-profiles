@@ -338,7 +338,7 @@
 			<TurnIn QuestName="Rescue OOX-09/HL!" QuestId="836" TurnInName="Oglethorpe Obnoticus" TurnInId="7406" X="-14417" Y="411.288" Z="22.7816" />
 		</If>
 		<If Condition="((HasQuest(836)) &amp;&amp; (!IsQuestCompleted(836)))">
-			<CustomBehavior File="AbandonQuest" QuestId="836" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="836" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Whiskey Slim's Lost Grog" QuestId="580" TurnInName="Whiskey Slim" TurnInId="2491" X="-14463.6" Y="489.274" Z="15.205" />
 		<TurnIn QuestName="Sprinkle's Secret Ingredient" QuestId="2641" TurnInName="Sprinkle" TurnInId="7583" X="-7111.11" Y="-3741.78" Z="8.6093" />

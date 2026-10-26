@@ -368,7 +368,7 @@
 			<TurnIn QuestName="Collection of the Corrupt Water" QuestId="5157" TurnInName="Greta Mosshoof" TurnInId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
 		</If>
 		<If Condition="((HasQuest(5157)) &amp;&amp; (!IsQuestCompleted(5157)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5157" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5157" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(5157)">
 			<PickUp QuestName="Seeking Spiritual Aid" QuestId="5158" GiverName="Greta Mosshoof" GiverId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
@@ -379,7 +379,7 @@
 			<TurnIn QuestName="Further Corruption" QuestId="4906" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
 		</If>
 		<If Condition="((HasQuest(4906)) &amp;&amp; (!IsQuestCompleted(4906)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4906" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4906" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 49) &amp;&amp; IsQuestCompleted(939)">
 			<PickUp QuestName="Felbound Ancients" QuestId="4441" GiverName="Eridan Bluewind" GiverId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
@@ -408,7 +408,7 @@
 			<TurnIn QuestName="Felbound Ancients" QuestId="4441" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
 		</If>
 		<If Condition="((HasQuest(4441)) &amp;&amp; (!IsQuestCompleted(4441)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4441" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4441" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 49) &amp;&amp; IsQuestCompleted(4441)">
 			<PickUp QuestName="Purified!" QuestId="4442" GiverName="Eridan Bluewind" GiverId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
@@ -434,7 +434,7 @@
 			<TurnIn QuestName="Rescue From Jaedenar" QuestId="5203" TurnInName="Jessir Moonbow" TurnInId="11019" X="3989.55" Y="-1310.75" Z="253.62" />
 		</If>
 		<If Condition="((HasQuest(5203)) &amp;&amp; (!IsQuestCompleted(5203)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5203" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5203" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 49) &amp;&amp; IsQuestCompleted(5203)">
 			<PickUp QuestName="Retribution of the Light" QuestId="5204" GiverName="Jessir Moonbow" GiverId="11019" X="3989.55" Y="-1310.75" Z="253.62" />
@@ -467,14 +467,14 @@
 			<TurnIn QuestName="Ancient Spirit" QuestId="4261" TurnInName="Kayneth Stillwind" TurnInId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
 		</If>
 		<If Condition="((HasQuest(4261)) &amp;&amp; (!IsQuestCompleted(4261)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4261" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4261" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q4512 A Little Slime Goes a Long Way: helper item 11914 Empty Cursed Ooze Jar has no creature or object source near the guide coordinates; helper item 11948 Empty Tainted Ooze Jar has no creature or object source near the guide coordinates; item 11947 Filled Cursed Ooze Jar has no drop or chest near the guide coordinates; item 11949 Filled Tainted Ooze Jar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4512)) &amp;&amp; (IsQuestCompleted(4512)))">
 			<TurnIn QuestName="A Little Slime Goes a Long Way" QuestId="4512" TurnInName="Laris Geardawdle" TurnInId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
 		</If>
 		<If Condition="((HasQuest(4512)) &amp;&amp; (!IsQuestCompleted(4512)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4512" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4512" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

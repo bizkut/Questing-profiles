@@ -601,7 +601,7 @@
 			<TurnIn QuestName="Prayer to Elune" QuestId="3378" TurnInName="Astarii Starseeker" TurnInId="4090" X="9667.02" Y="2532.66" Z="1360.08" />
 		</If>
 		<If Condition="((HasQuest(3378)) &amp;&amp; (!IsQuestCompleted(3378)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3378" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3378" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="March of the Silithid" QuestId="4493" TurnInName="Alchemist Pestlezugg" TurnInId="5594" X="-7115.3" Y="-3729.93" Z="8.8567" />
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(4493) || IsQuestCompleted(4494))">
@@ -612,7 +612,7 @@
 			<TurnIn QuestName="The Stone Circle" QuestId="3444" TurnInName="Marvon Rivetseeker" TurnInId="7771" X="-7987.52" Y="-3855.62" Z="17.8158" />
 		</If>
 		<If Condition="((HasQuest(3444)) &amp;&amp; (!IsQuestCompleted(3444)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3444" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3444" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 47)">
 			<PickUp QuestName="The Apes of Un'Goro" QuestId="4289" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
@@ -637,7 +637,7 @@
 			<TurnIn QuestName="The Scent of Lar'korwi" QuestId="4291" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
 		<If Condition="((HasQuest(4291)) &amp;&amp; (!IsQuestCompleted(4291)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4291" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4291" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="HasItem(11116) &amp;&amp; !HasQuest(3884) &amp;&amp; !IsQuestCompleted(3884) &amp;&amp; (Me.Level &gt;= 48)">
 			<PickUp QuestName="Williden's Journal" QuestId="3884" GiverName="A Mangled Journal" GiverId="11116" GiverType="Item" />
@@ -653,7 +653,7 @@
 			<TurnIn QuestName="It's a Secret to Everybody" QuestId="3845" TurnInName="Linken" TurnInId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
 		</If>
 		<If Condition="((HasQuest(3845)) &amp;&amp; (!IsQuestCompleted(3845)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3845" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3845" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3845)">
 			<PickUp QuestName="It's a Secret to Everybody" QuestId="3908" GiverName="Linken" GiverId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
@@ -740,7 +740,7 @@
 			<TurnIn QuestName="Chasing A-Me 01" QuestId="4245" TurnInName="Karna Remtravel" TurnInId="9618" X="-6298.29" Y="-1182.65" Z="-269.101" />
 		</If>
 		<If Condition="((HasQuest(4245)) &amp;&amp; (!IsQuestCompleted(4245)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4245" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4245" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="974" ItemId="12472" MobId="10541" NumOfTimes="1" Range="5" CollectionDistance="200" X="-7092.4" Y="-1305.86" Z="-186.075" />
 		<!-- REVIEW Q974 Finding the Source: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -758,7 +758,7 @@
 			<TurnIn QuestName="The Bait for Lar'korwi" QuestId="4292" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
 		<If Condition="((HasQuest(4292)) &amp;&amp; (!IsQuestCompleted(4292)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4292" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4292" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Mighty U'cha" QuestId="4301" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		<TurnIn QuestName="Lost!" QuestId="4492" TurnInName="Ringo" TurnInId="9999" X="-7196.18" Y="-1387.11" Z="-231.449" />
@@ -771,7 +771,7 @@
 			<TurnIn QuestName="A Little Help From My Friends" QuestId="4491" TurnInName="Spraggle Frock" TurnInId="9997" X="-6176.27" Y="-1080.49" Z="-203.81" />
 		</If>
 		<If Condition="((HasQuest(4491)) &amp;&amp; (!IsQuestCompleted(4491)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4491" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4491" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Expedition Salvation" QuestId="3881" TurnInName="Williden Marshal" TurnInId="9270" X="-6142.71" Y="-1092.69" Z="-200.187" />
 		<!-- REVIEW Q3883 Alien Ecology: item 11131 Hive Wall Sample has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -779,7 +779,7 @@
 			<TurnIn QuestName="Alien Ecology" QuestId="3883" TurnInName="Hol'anyee Marshal" TurnInId="9271" X="-6145.24" Y="-1090.56" Z="-200.204" />
 		</If>
 		<If Condition="((HasQuest(3883)) &amp;&amp; (!IsQuestCompleted(3883)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3883" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3883" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Roll the Bones" QuestId="3882" TurnInName="Spark Nilminer" TurnInId="9272" X="-6149.73" Y="-1076.11" Z="-198.908" />
 		<!-- REVIEW Q4285 The Northern Pylon: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -787,21 +787,21 @@
 			<TurnIn QuestName="The Northern Pylon" QuestId="4285" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
 		<If Condition="((HasQuest(4285)) &amp;&amp; (!IsQuestCompleted(4285)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4285" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4285" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q4287 The Eastern Pylon: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4287)) &amp;&amp; (IsQuestCompleted(4287)))">
 			<TurnIn QuestName="The Eastern Pylon" QuestId="4287" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
 		<If Condition="((HasQuest(4287)) &amp;&amp; (!IsQuestCompleted(4287)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4287" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4287" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q4288 The Western Pylon: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4288)) &amp;&amp; (IsQuestCompleted(4288)))">
 			<TurnIn QuestName="The Western Pylon" QuestId="4288" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
 		<If Condition="((HasQuest(4288)) &amp;&amp; (!IsQuestCompleted(4288)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4288" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4288" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; (IsQuestCompleted(4285) || IsQuestCompleted(4287) || IsQuestCompleted(4288))">
 			<PickUp QuestName="Making Sense of It" QuestId="4321" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
@@ -811,7 +811,7 @@
 			<TurnIn QuestName="Making Sense of It" QuestId="4321" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
 		<If Condition="((HasQuest(4321)) &amp;&amp; (!IsQuestCompleted(4321)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4321" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4321" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Muigin and Larion" QuestId="4141" TurnInName="Muigin" TurnInId="9119" X="-6204.39" Y="-1055.46" Z="-197.748" />
 		<TurnIn QuestName="Shizzle's Flyer" QuestId="4503" TurnInName="Shizzle" TurnInId="9998" X="-6252.45" Y="-1103.26" Z="-218.343" />
@@ -838,7 +838,7 @@
 			<TurnIn QuestName="Felbound Ancients" QuestId="4441" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
 		</If>
 		<If Condition="((HasQuest(4441)) &amp;&amp; (!IsQuestCompleted(4441)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4441" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4441" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 49) &amp;&amp; IsQuestCompleted(4441)">
 			<PickUp QuestName="Purified!" QuestId="4442" GiverName="Eridan Bluewind" GiverId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
@@ -948,7 +948,7 @@
 			<TurnIn QuestName="Shy-Rotam" QuestId="5056" TurnInName="Storm Shadowhoof" TurnInId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
 		</If>
 		<If Condition="((HasQuest(5056)) &amp;&amp; (!IsQuestCompleted(5056)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5056" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5056" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(5056)">
 			<PickUp QuestName="Past Endeavors" QuestId="5057" GiverName="Storm Shadowhoof" GiverId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
@@ -967,7 +967,7 @@
 			<TurnIn QuestName="Threat of the Winterfall" QuestId="5082" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		</If>
 		<If Condition="((HasQuest(5082)) &amp;&amp; (!IsQuestCompleted(5082)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5082" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5082" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Winterfall Firewater" QuestId="5083" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		<!-- REVIEW Q8464 Winterfall Activity: use item 12771: target 7439 Winterfall Shaman has no spawn (kill credit or scripted event); use item 12771: target 7438 Winterfall Ursa has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -975,7 +975,7 @@
 			<TurnIn QuestName="Winterfall Activity" QuestId="8464" TurnInName="Salfa" TurnInId="11556" X="6900.44" Y="-2285.77" Z="586.148" />
 		</If>
 		<If Condition="((HasQuest(8464)) &amp;&amp; (!IsQuestCompleted(8464)))">
-			<CustomBehavior File="AbandonQuest" QuestId="8464" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="8464" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="HasItem(20741) &amp;&amp; !HasQuest(8470) &amp;&amp; !IsQuestCompleted(8470) &amp;&amp; (Me.Level &gt;= 45)">
 			<PickUp QuestName="Deadwood Ritual Totem" QuestId="8470" GiverName="Deadwood Ritual Totem" GiverId="20741" GiverType="Item" />
@@ -990,7 +990,7 @@
 			<TurnIn QuestName="Rescue From Jaedenar" QuestId="5203" TurnInName="Jessir Moonbow" TurnInId="11019" X="3989.55" Y="-1310.75" Z="253.62" />
 		</If>
 		<If Condition="((HasQuest(5203)) &amp;&amp; (!IsQuestCompleted(5203)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5203" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5203" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Dousing the Flames of Protection" QuestId="5165" TurnInName="Greta Mosshoof" TurnInId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
 		<!-- REVIEW Q4261 Ancient Spirit: no quest giver in the database; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -998,7 +998,7 @@
 			<TurnIn QuestName="Ancient Spirit" QuestId="4261" TurnInName="Kayneth Stillwind" TurnInId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
 		</If>
 		<If Condition="((HasQuest(4261)) &amp;&amp; (!IsQuestCompleted(4261)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4261" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4261" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Moontouched Wildkin" QuestId="978" TurnInName="Erelas Ambersky" TurnInId="7916" X="8707.46" Y="988.88" Z="14.1964" />
 		<If Condition="(Me.Level &gt;= 47)">
@@ -1009,7 +1009,7 @@
 			<TurnIn QuestName="Un'Goro Soil" QuestId="3764" TurnInName="Jenal" TurnInId="9047" X="10180.2" Y="2605.13" Z="1322.15" />
 		</If>
 		<If Condition="((HasQuest(3764)) &amp;&amp; (!IsQuestCompleted(3764)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3764" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3764" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="LoadProfile" ProfileName="Ding80_Hellfire Peninsula" />
 	</QuestOrder>

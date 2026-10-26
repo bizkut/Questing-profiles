@@ -94,7 +94,7 @@
 				<TurnIn QuestName="Among the Champions" QuestId="13814" TurnInName="Illyrie Nightfall" TurnInId="33770" X="8587.27" Y="829.251" Z="547.463" />
 			</If>
 			<If Condition="((HasQuest(13814)) &amp;&amp; (!IsQuestCompleted(13814)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13814" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13814" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\ATG Champion Rank Dailies - Death Knight Only: done for today" LogColor="Green" />

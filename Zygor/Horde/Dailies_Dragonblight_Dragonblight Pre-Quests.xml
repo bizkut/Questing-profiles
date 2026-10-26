@@ -112,7 +112,7 @@
 			<TurnIn QuestName="The Focus on the Beach" QuestId="12066" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		</If>
 		<If Condition="((HasQuest(12066)) &amp;&amp; (!IsQuestCompleted(12066)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12066" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12066" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12066)">
 			<PickUp QuestName="Atop the Woodlands" QuestId="12084" GiverName="Image of Archmage Aethas Sunreaver" GiverId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
@@ -141,7 +141,7 @@
 			<TurnIn QuestName="The End of the Line" QuestId="12110" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		</If>
 		<If Condition="((HasQuest(12110)) &amp;&amp; (!IsQuestCompleted(12110)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12110" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12110" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12110)">
 			<PickUp QuestName="Gaining an Audience" QuestId="12122" GiverName="Image of Archmage Aethas Sunreaver" GiverId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
@@ -165,7 +165,7 @@
 			<TurnIn QuestName="Heated Battle" QuestId="12448" TurnInName="Vargastrasz" TurnInId="27763" X="3671.93" Y="1216.94" Z="142.939" />
 		</If>
 		<If Condition="((HasQuest(12448)) &amp;&amp; (!IsQuestCompleted(12448)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12448" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12448" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12448)">
 			<PickUp QuestName="Return to the Earth" QuestId="12449" GiverName="Vargastrasz" GiverId="27763" X="3671.93" Y="1216.94" Z="142.939" />
@@ -206,7 +206,7 @@
 			<TurnIn QuestName="Defending Wyrmrest Temple" QuestId="12372" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />
 		</If>
 		<If Condition="((HasQuest(12372)) &amp;&amp; (!IsQuestCompleted(12372)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Dragonblight\Dragonblight Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>

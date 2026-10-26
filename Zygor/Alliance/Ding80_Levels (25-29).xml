@@ -547,7 +547,7 @@
 			<TurnIn QuestName="Seasoned Wolf Kabobs" QuestId="90" TurnInName="Chef Grual" TurnInId="272" X="-10507.7" Y="-1161.96" Z="28.1995" />
 		</If>
 		<If Condition="((HasQuest(90)) &amp;&amp; (!IsQuestCompleted(90)))">
-			<CustomBehavior File="AbandonQuest" QuestId="90" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="90" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Zombie Juice" QuestId="158" TurnInName="Tavernkeep Smitts" TurnInId="273" X="-10517.4" Y="-1158.66" Z="28.1995" />
 		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(158)">
@@ -614,7 +614,7 @@
 			<TurnIn QuestName="The Night Watch" QuestId="57" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
 		</If>
 		<If Condition="((HasQuest(57)) &amp;&amp; (!IsQuestCompleted(57)))">
-			<CustomBehavior File="AbandonQuest" QuestId="57" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="57" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(57)">
 			<PickUp QuestName="The Night Watch" QuestId="58" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
@@ -899,7 +899,7 @@
 			<TurnIn QuestName="Morbent Fel" QuestId="55" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
 		</If>
 		<If Condition="((HasQuest(55)) &amp;&amp; (!IsQuestCompleted(55)))">
-			<CustomBehavior File="AbandonQuest" QuestId="55" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="55" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Worgen in the Woods" QuestId="222" Type="KillMob" MobId="206" KillCount="8" />
 		<Objective QuestName="Worgen in the Woods" QuestId="222" Type="KillMob" MobId="920" KillCount="8" />
@@ -913,7 +913,7 @@
 			<TurnIn QuestName="Bride of the Embalmer" QuestId="253" TurnInName="Lord Ello Ebonlocke" TurnInId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
 		</If>
 		<If Condition="((HasQuest(253)) &amp;&amp; (!IsQuestCompleted(253)))">
-			<CustomBehavior File="AbandonQuest" QuestId="253" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="253" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Legend of Stalvan" QuestId="98" TurnInName="Madame Eva" TurnInId="265" X="-10532" Y="-1213.64" Z="28.2175" />
 		<TurnIn QuestName="The Missing Diplomat" QuestId="1245" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
@@ -929,7 +929,7 @@
 			<TurnIn QuestName="The Missing Diplomat" QuestId="1447" TurnInName="Dashel Stonefist" TurnInId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
 		</If>
 		<If Condition="((HasQuest(1447)) &amp;&amp; (!IsQuestCompleted(1447)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1447" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1447" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1447)">
 			<PickUp QuestName="The Missing Diplomat" QuestId="1247" GiverName="Dashel Stonefist" GiverId="4961" X="-8681.14" Y="432.794" Z="99.2405" />

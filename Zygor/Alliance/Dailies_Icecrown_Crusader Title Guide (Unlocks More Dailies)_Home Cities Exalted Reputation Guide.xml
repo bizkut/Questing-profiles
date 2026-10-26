@@ -2054,7 +2054,7 @@
 			<TurnIn QuestName="Beer Basted Boar Ribs" QuestId="384" TurnInName="Ragnar Thunderbrew" TurnInId="1267" X="-5596.21" Y="-504.132" Z="400.714" />
 		</If>
 		<If Condition="((HasQuest(384)) &amp;&amp; (!IsQuestCompleted(384)))">
-			<CustomBehavior File="AbandonQuest" QuestId="384" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="384" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(420)">
 			<PickUp QuestName="Frostmane Hold" QuestId="287" GiverName="Senir Whitebeard" GiverId="1252" X="-5644.37" Y="-499.163" Z="396.752" />
@@ -2242,7 +2242,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="921" TurnInName="Tenaron Stormgrip" TurnInId="3514" X="10492.5" Y="807.28" Z="1397.35" />
 		</If>
 		<If Condition="((HasQuest(921)) &amp;&amp; (!IsQuestCompleted(921)))">
-			<CustomBehavior File="AbandonQuest" QuestId="921" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="921" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(921)">
 			<PickUp QuestName="Crown of the Earth" QuestId="928" GiverName="Tenaron Stormgrip" GiverId="3514" X="10492.5" Y="807.28" Z="1397.35" />
@@ -2292,7 +2292,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="929" TurnInName="Corithras Moonrage" TurnInId="3515" X="9736.91" Y="956.063" Z="1294.19" />
 		</If>
 		<If Condition="((HasQuest(929)) &amp;&amp; (!IsQuestCompleted(929)))">
-			<CustomBehavior File="AbandonQuest" QuestId="929" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="929" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(929)">
 			<PickUp QuestName="Crown of the Earth" QuestId="933" GiverName="Corithras Moonrage" GiverId="3515" X="9736.91" Y="956.063" Z="1294.19" />
@@ -2318,7 +2318,7 @@
 			<TurnIn QuestName="Ferocitas the Dream Eater" QuestId="2459" TurnInName="Tallonkai Swiftroot" TurnInId="3567" X="9898.59" Y="984.968" Z="1354.89" />
 		</If>
 		<If Condition="((HasQuest(2459)) &amp;&amp; (!IsQuestCompleted(2459)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2459" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2459" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 5)">
 			<PickUp QuestName="The Road to Darnassus" QuestId="487" GiverName="Moon Priestess Amara" GiverId="2151" X="9852.4" Y="972.153" Z="1305.5" />
@@ -2341,7 +2341,7 @@
 			<TurnIn QuestName="Druid of the Claw" QuestId="2561" TurnInName="Oben Rageclaw" TurnInId="7317" X="9740.98" Y="1526.17" Z="1280.4" />
 		</If>
 		<If Condition="((HasQuest(2561)) &amp;&amp; (!IsQuestCompleted(2561)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2561" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2561" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Relics of Wakening" QuestId="483" TurnInName="Athridas Bearmantle" TurnInId="2078" X="9887.53" Y="965.54" Z="1313.9" />
 		<If Condition="(Me.Level &gt;= 4) &amp;&amp; IsQuestCompleted(483)">
@@ -2358,7 +2358,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="933" TurnInName="Corithras Moonrage" TurnInId="3515" X="9736.91" Y="956.063" Z="1294.19" />
 		</If>
 		<If Condition="((HasQuest(933)) &amp;&amp; (!IsQuestCompleted(933)))">
-			<CustomBehavior File="AbandonQuest" QuestId="933" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="933" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(933)">
 			<PickUp QuestName="Crown of the Earth" QuestId="7383" GiverName="Corithras Moonrage" GiverId="3515" X="9736.91" Y="956.063" Z="1294.19" />
@@ -2377,7 +2377,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="7383" TurnInName="Corithras Moonrage" TurnInId="3515" X="9736.91" Y="956.063" Z="1294.19" />
 		</If>
 		<If Condition="((HasQuest(7383)) &amp;&amp; (!IsQuestCompleted(7383)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7383" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7383" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(7383)">
 			<PickUp QuestName="Crown of the Earth" QuestId="935" GiverName="Corithras Moonrage" GiverId="3515" X="9736.91" Y="956.063" Z="1294.19" />
@@ -2461,7 +2461,7 @@
 			<TurnIn QuestName="As Water Cascades" QuestId="4812" TurnInName="Mysterious Red Crystal" TurnInId="175524" TurnInType="Object" X="6207.82" Y="-157.763" Z="80.9614" />
 		</If>
 		<If Condition="((HasQuest(4812)) &amp;&amp; (!IsQuestCompleted(4812)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4812" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4812" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(4812)">
 			<PickUp QuestName="The Fragments Within" QuestId="4813" GiverName="Mysterious Red Crystal" GiverId="175524" GiverType="Object" X="6207.82" Y="-157.763" Z="80.9614" />
@@ -2574,7 +2574,7 @@
 			<TurnIn QuestName="Inoculation" QuestId="9303" TurnInName="Vindicator Aldar" TurnInId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
 		</If>
 		<If Condition="((HasQuest(9303)) &amp;&amp; (!IsQuestCompleted(9303)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9303" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9303" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(9303)">
 			<PickUp QuestName="The Missing Scout" QuestId="9309" GiverName="Vindicator Aldar" GiverId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
@@ -2616,7 +2616,7 @@
 			<TurnIn QuestName="Red Snapper - Very Tasty!" QuestId="9452" TurnInName="Diktynna" TurnInId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
 		</If>
 		<If Condition="((HasQuest(9452)) &amp;&amp; (!IsQuestCompleted(9452)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9452" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9452" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 4) &amp;&amp; IsQuestCompleted(9452)">
 			<PickUp QuestName="Find Acteon!" QuestId="9453" GiverName="Diktynna" GiverId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
@@ -2726,7 +2726,7 @@
 			<TurnIn QuestName="Learning the Language" QuestId="9538" TurnInName="Totem of Akida" TurnInId="17360" X="-4177.67" Y="-12512.5" Z="44.403" />
 		</If>
 		<If Condition="((HasQuest(9538)) &amp;&amp; (!IsQuestCompleted(9538)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9538" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9538" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 8) &amp;&amp; IsQuestCompleted(9538)">
 			<PickUp QuestName="Totem of Coo" QuestId="9539" GiverName="Totem of Akida" GiverId="17360" X="-4177.67" Y="-12512.5" Z="44.403" />
@@ -2759,7 +2759,7 @@
 			<TurnIn QuestName="The Prophecy of Akida" QuestId="9544" TurnInName="Arugoo of the Stillpine" TurnInId="17114" X="-4180.54" Y="-12509.6" Z="44.4447" />
 		</If>
 		<If Condition="((HasQuest(9544)) &amp;&amp; (!IsQuestCompleted(9544)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9544" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9544" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(9544)">
 			<PickUp QuestName="Stillpine Hold" QuestId="9559" GiverName="Arugoo of the Stillpine" GiverId="17114" X="-4180.54" Y="-12509.6" Z="44.4447" />

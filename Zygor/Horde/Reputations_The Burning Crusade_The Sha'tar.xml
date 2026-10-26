@@ -439,7 +439,7 @@
 			<TurnIn QuestName="Don't Kill the Fat One" QuestId="9889" TurnInName="Unkor the Ruthless" TurnInId="18262" X="-3276.79" Y="5999.96" Z="-2.5538" />
 		</If>
 		<If Condition="((HasQuest(9889)) &amp;&amp; (!IsQuestCompleted(9889)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9889" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9889" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9889)">
 			<PickUp QuestName="Success!" QuestId="9890" GiverName="Unkor the Ruthless" GiverId="18262" X="-3276.79" Y="5999.96" Z="-2.5538" />
@@ -480,14 +480,14 @@
 			<TurnIn QuestName="The Totem of Kar'dash" QuestId="9868" TurnInName="Garrosh" TurnInId="18063" X="-1344.67" Y="7232.62" Z="33.5608" />
 		</If>
 		<If Condition="((HasQuest(9868)) &amp;&amp; (!IsQuestCompleted(9868)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9868" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9868" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10107 Diplomatic Measures: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10107)) &amp;&amp; (IsQuestCompleted(10107)))">
 			<TurnIn QuestName="Diplomatic Measures" QuestId="10107" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
 		<If Condition="((HasQuest(10107)) &amp;&amp; (!IsQuestCompleted(10107)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10107" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10107" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; (IsQuestCompleted(10107) || IsQuestCompleted(10108))">
 			<PickUp QuestName="Armaments for Deception" QuestId="9928" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
@@ -502,7 +502,7 @@
 			<TurnIn QuestName="Ruthless Cunning" QuestId="9927" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
 		<If Condition="((HasQuest(9927)) &amp;&amp; (!IsQuestCompleted(9927)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9927" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9927" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9927)">
 			<PickUp QuestName="Returning the Favor" QuestId="9931" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
@@ -515,14 +515,14 @@
 			<TurnIn QuestName="Returning the Favor" QuestId="9931" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
 		<If Condition="((HasQuest(9931)) &amp;&amp; (!IsQuestCompleted(9931)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9931" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9931" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q9932 Body of Evidence: objective 18395 Warmaul Pyre Credit Marker x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9932)) &amp;&amp; (IsQuestCompleted(9932)))">
 			<TurnIn QuestName="Body of Evidence" QuestId="9932" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
 		<If Condition="((HasQuest(9932)) &amp;&amp; (!IsQuestCompleted(9932)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9932" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9932" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9931)">
 			<PickUp QuestName="Message to Garadar" QuestId="9934" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
@@ -536,7 +536,7 @@
 			<TurnIn QuestName="A Visit With the Greatmother" QuestId="10044" TurnInName="Greatmother Geyah" TurnInId="18141" X="-1222.05" Y="7162.91" Z="57.3886" />
 		</If>
 		<If Condition="((HasQuest(10044)) &amp;&amp; (!IsQuestCompleted(10044)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10044" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10044" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10044)">
 			<PickUp QuestName="Material Components" QuestId="10045" GiverName="Greatmother Geyah" GiverId="18141" X="-1222.05" Y="7162.91" Z="57.3886" />
@@ -563,7 +563,7 @@
 			<TurnIn QuestName="A Visit With The Ancestors" QuestId="10085" TurnInName="Mother Kashur" TurnInId="18687" X="-2210.08" Y="8820.06" Z="16.3197" />
 		</If>
 		<If Condition="((HasQuest(10085)) &amp;&amp; (!IsQuestCompleted(10085)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10085" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10085" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10085)">
 			<PickUp QuestName="When Spirits Speak" QuestId="10101" GiverName="Mother Kashur" GiverId="18687" X="-2210.08" Y="8820.06" Z="16.3197" />
@@ -578,7 +578,7 @@
 		</If>
 		<!-- SKIP turn-in Q10167 Auchindoun...: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(10167)) &amp;&amp; (!IsQuestCompleted(10167)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10167" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10167" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP Q10168 What the Soul Sees: group quest (3 players) -->
 		<If Condition="(Me.Level &gt;= 64)">
@@ -633,21 +633,21 @@
 			<TurnIn QuestName="Trial of the Naaru: Mercy" QuestId="10884" TurnInName="A'dal" TurnInId="18481" X="-1863.68" Y="5430.04" Z="-9.6055" />
 		</If>
 		<If Condition="((HasQuest(10884)) &amp;&amp; (!IsQuestCompleted(10884)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10884" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10884" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10885 Trial of the Naaru: Strength: item 31721 Kalithresh's Trident has no drop or chest near the guide coordinates; item 31722 Murmur's Essence has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10885)) &amp;&amp; (IsQuestCompleted(10885)))">
 			<TurnIn QuestName="Trial of the Naaru: Strength" QuestId="10885" TurnInName="A'dal" TurnInId="18481" X="-1863.68" Y="5430.04" Z="-9.6055" />
 		</If>
 		<If Condition="((HasQuest(10885)) &amp;&amp; (!IsQuestCompleted(10885)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10885" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10885" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10886 Trial of the Naaru: Tenacity: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10886)) &amp;&amp; (IsQuestCompleted(10886)))">
 			<TurnIn QuestName="Trial of the Naaru: Tenacity" QuestId="10886" TurnInName="A'dal" TurnInId="18481" X="-1863.68" Y="5430.04" Z="-9.6055" />
 		</If>
 		<If Condition="((HasQuest(10886)) &amp;&amp; (!IsQuestCompleted(10886)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10886" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10886" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; (IsQuestCompleted(10263) || IsQuestCompleted(10264))">
 			<PickUp QuestName="Consortium Crystal Collection" QuestId="10265" GiverName="Nether-Stalker Khay'ji" GiverId="19880" X="3069.96" Y="3674.86" Z="142.527" />
@@ -685,7 +685,7 @@
 			<TurnIn QuestName="Triangulation Point One" QuestId="10269" TurnInName="Dealer Hazzin" TurnInId="20092" X="4294.48" Y="2230.37" Z="124.322" />
 		</If>
 		<If Condition="((HasQuest(10269)) &amp;&amp; (!IsQuestCompleted(10269)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10269" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10269" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10269)">
 			<PickUp QuestName="Triangulation Point Two" QuestId="10275" GiverName="Dealer Hazzin" GiverId="20092" X="4294.48" Y="2230.37" Z="124.322" />
@@ -695,7 +695,7 @@
 			<TurnIn QuestName="Triangulation Point Two" QuestId="10275" TurnInName="Wind Trader Tuluman" TurnInId="20112" X="4045.84" Y="3553.27" Z="121.416" />
 		</If>
 		<If Condition="((HasQuest(10275)) &amp;&amp; (!IsQuestCompleted(10275)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10275" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10275" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10275)">
 			<PickUp QuestName="Full Triangle" QuestId="10276" GiverName="Wind Trader Tuluman" GiverId="20112" X="4045.84" Y="3553.27" Z="121.416" />
@@ -714,7 +714,7 @@
 			<TurnIn QuestName="How to Break Into the Arcatraz" QuestId="10704" TurnInName="A'dal" TurnInId="18481" X="-1863.68" Y="5430.04" Z="-9.6055" />
 		</If>
 		<If Condition="((HasQuest(10704)) &amp;&amp; (!IsQuestCompleted(10704)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10704" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10704" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; !IsQuestCompleted(10568) &amp;&amp; !HasQuest(10568) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
 			<PickUp QuestName="Tablets of Baa'ri" QuestId="10683" GiverName="Arcanist Thelis" GiverId="21955" X="-4133.09" Y="1131.08" Z="44.6151" />
@@ -791,7 +791,7 @@
 		<!-- SKIP Q10781 Battle of the Crimson Watch: group quest (5 players) -->
 		<!-- SKIP turn-in Q11052 Akama's Promise: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(11052)) &amp;&amp; (!IsQuestCompleted(11052)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11052" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11052" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

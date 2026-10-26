@@ -65,7 +65,7 @@
 			<TurnIn QuestName="Northern Cooking" QuestId="13087" TurnInName="Brom Brewbaster" TurnInId="26905" X="615.058" Y="-4916.97" Z="18.7611" />
 		</If>
 		<If Condition="((HasQuest(13087)) &amp;&amp; (!IsQuestCompleted(13087)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13087" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13087" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Dalaran\Cooking Dailies Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>

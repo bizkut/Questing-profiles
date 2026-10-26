@@ -127,21 +127,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13768" TurnInName="Zul'tore" TurnInId="33372" X="8401.49" Y="680.507" Z="550.252" />
 		</If>
 		<If Condition="((HasQuest(13768)) &amp;&amp; (!IsQuestCompleted(13768)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13768" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13768" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13769 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13769)) &amp;&amp; (IsQuestCompleted(13769)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13769" TurnInName="Zul'tore" TurnInId="33372" X="8401.49" Y="680.507" Z="550.252" />
 		</If>
 		<If Condition="((HasQuest(13769)) &amp;&amp; (!IsQuestCompleted(13769)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13769" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13769" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13770 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13770)) &amp;&amp; (IsQuestCompleted(13770)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13770" TurnInName="Zul'tore" TurnInId="33372" X="8401.49" Y="680.507" Z="550.252" />
 		</If>
 		<If Condition="((HasQuest(13770)) &amp;&amp; (!IsQuestCompleted(13770)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13770" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13770" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Valiant's Field Training" QuestId="13771" TurnInName="Shadow Hunter Mezil-kree" TurnInId="33540" X="8398.83" Y="675.579" Z="550.34" />
 		<!-- REVIEW Q13772 The Grand Melee: item 45127 Mark of the Valiant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -149,7 +149,7 @@
 			<TurnIn QuestName="The Grand Melee" QuestId="13772" TurnInName="Gahju" TurnInId="33545" X="8406.47" Y="682.454" Z="550.341" />
 		</If>
 		<If Condition="((HasQuest(13772)) &amp;&amp; (!IsQuestCompleted(13772)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13772" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13772" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="At The Enemy's Gates" QuestId="13857" TurnInName="Gahju" TurnInId="33545" X="8406.47" Y="682.454" Z="550.341" />
 		<!-- REVIEW Q13719 The Valiant's Charge: item 44987 Valiant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -157,7 +157,7 @@
 			<TurnIn QuestName="The Valiant's Charge" QuestId="13719" TurnInName="Zul'tore" TurnInId="33372" X="8401.49" Y="680.507" Z="550.252" />
 		</If>
 		<If Condition="((HasQuest(13719)) &amp;&amp; (!IsQuestCompleted(13719)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13719" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13719" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13719)">
 			<PickUp QuestName="The Valiant's Challenge" QuestId="13727" GiverName="Zul'tore" GiverId="33372" X="8401.49" Y="680.507" Z="550.252" />
@@ -167,7 +167,7 @@
 			<TurnIn QuestName="The Valiant's Challenge" QuestId="13727" TurnInName="Zul'tore" TurnInId="33372" X="8401.49" Y="680.507" Z="550.252" />
 		</If>
 		<If Condition="((HasQuest(13727)) &amp;&amp; (!IsQuestCompleted(13727)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13727" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13727" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Crusader Title Guide (Unlocks More Dailies)\Troll Champion Rank: done for today" LogColor="Green" />
 	</QuestOrder>

@@ -485,7 +485,7 @@
 			<TurnIn QuestName="Torek's Assault" QuestId="6544" TurnInName="Ertog Ragetusk" TurnInId="12877" X="2271.91" Y="-2511.46" Z="102.637" />
 		</If>
 		<If Condition="((HasQuest(6544)) &amp;&amp; (!IsQuestCompleted(6544)))">
-			<CustomBehavior File="AbandonQuest" QuestId="6544" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="6544" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Ashenvale Outrunners" QuestId="6503" TurnInName="Kuray'bin" TurnInId="12867" X="2054.63" Y="-2400.39" Z="87.825" />
 		<If Condition="HasItem(16304) &amp;&amp; !HasQuest(24) &amp;&amp; !IsQuestCompleted(24) &amp;&amp; (Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(6383)">
@@ -506,7 +506,7 @@
 			<TurnIn QuestName="Vorsha the Lasher" QuestId="6641" TurnInName="Warsong Runner" TurnInId="12863" X="3357.72" Y="995.135" Z="4.7661" />
 		</If>
 		<If Condition="((HasQuest(6641)) &amp;&amp; (!IsQuestCompleted(6641)))">
-			<CustomBehavior File="AbandonQuest" QuestId="6641" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="6641" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Between a Rock and a Thistlefur" QuestId="216" Type="KillMob" MobId="3925" KillCount="8" />
 		<Objective QuestName="Between a Rock and a Thistlefur" QuestId="216" Type="KillMob" MobId="3924" KillCount="8" />
@@ -521,7 +521,7 @@
 			<TurnIn QuestName="Freedom to Ruul" QuestId="6482" TurnInName="Yama Snowhoof" TurnInId="12837" X="2331.42" Y="-2573.9" Z="102.857" />
 		</If>
 		<If Condition="((HasQuest(6482)) &amp;&amp; (!IsQuestCompleted(6482)))">
-			<CustomBehavior File="AbandonQuest" QuestId="6482" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="6482" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Shadumbra's Head" QuestId="24" TurnInName="Senani Thunderheart" TurnInId="12696" X="2310.52" Y="-2554.7" Z="101.948" />
 		<Objective QuestName="Satyr Horns" QuestId="6441" Type="CollectItem" ItemId="5481" CollectCount="16" />
@@ -533,7 +533,7 @@
 			<TurnIn QuestName="The Sacred Flame" QuestId="1195" TurnInName="Zangen Stonehoof" TurnInId="4721" X="-1207.75" Y="-57.0394" Z="158.601" />
 		</If>
 		<If Condition="((HasQuest(1195)) &amp;&amp; (!IsQuestCompleted(1195)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1195" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1195" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(1195)">
 			<PickUp QuestName="The Sacred Flame" QuestId="1196" GiverName="Zangen Stonehoof" GiverId="4721" X="-1207.75" Y="-57.0394" Z="158.601" />
@@ -587,14 +587,14 @@
 			<TurnIn QuestName="Homeward Bound" QuestId="4770" TurnInName="Motega Firemane" TurnInId="10428" X="-4915.57" Y="-1381.18" Z="-52.6008" />
 		</If>
 		<If Condition="((HasQuest(4770)) &amp;&amp; (!IsQuestCompleted(4770)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4770" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4770" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q5088 Arikara: item 12925 Arikara Serpent Skin has no drop or chest near the guide coordinates; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(5088)) &amp;&amp; (IsQuestCompleted(5088)))">
 			<TurnIn QuestName="Arikara" QuestId="5088" TurnInName="Motega Firemane" TurnInId="10428" X="-4915.57" Y="-1381.18" Z="-52.6008" />
 		</If>
 		<If Condition="((HasQuest(5088)) &amp;&amp; (!IsQuestCompleted(5088)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5088" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5088" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Different Approach" QuestId="9431" TurnInName="Wizlo Bearingshiner" TurnInId="10941" X="-4921.56" Y="-1376.35" Z="-52.529" />
 		<If Condition="(Me.Level &gt;= 24) &amp;&amp; IsQuestCompleted(9431)">
@@ -607,7 +607,7 @@
 			<TurnIn QuestName="Free at Last" QuestId="4904" TurnInName="Thalia Amberhide" TurnInId="10645" X="-5480.67" Y="-2456.03" Z="89.3671" />
 		</If>
 		<If Condition="((HasQuest(4904)) &amp;&amp; (!IsQuestCompleted(4904)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4904" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4904" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((HasQuest(5064)) &amp;&amp; (!IsQuestCompleted(5064)))">
 			<Objective QuestName="Grimtotem Spying" QuestId="5064" Type="CollectItem" ItemId="12765" CollectCount="1" />
@@ -642,14 +642,14 @@
 			<TurnIn QuestName="Protect Kanati Greycloud" QuestId="4966" TurnInName="Kanati Greycloud" TurnInId="10638" X="-4906.05" Y="-1366.99" Z="-52.6008" />
 		</If>
 		<If Condition="((HasQuest(4966)) &amp;&amp; (!IsQuestCompleted(4966)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4966" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4966" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q9433 A Dip in the Moonwell: item 23670 Thalanaar Moonwell Water has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9433)) &amp;&amp; (IsQuestCompleted(9433)))">
 			<TurnIn QuestName="A Dip in the Moonwell" QuestId="9433" TurnInName="Wizlo Bearingshiner" TurnInId="10941" X="-4921.56" Y="-1376.35" Z="-52.529" />
 		</If>
 		<If Condition="((HasQuest(9433)) &amp;&amp; (!IsQuestCompleted(9433)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9433" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9433" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 24) &amp;&amp; IsQuestCompleted(9433)">
 			<PickUp QuestName="Testing the Tonic" QuestId="9434" GiverName="Wizlo Bearingshiner" GiverId="10941" X="-4921.56" Y="-1376.35" Z="-52.529" />
@@ -660,7 +660,7 @@
 			<TurnIn QuestName="Test of Endurance" QuestId="1150" TurnInName="Dorn Plainstalker" TurnInId="2986" X="-5183.59" Y="-2806.95" Z="-6.9201" />
 		</If>
 		<If Condition="((HasQuest(1150)) &amp;&amp; (!IsQuestCompleted(1150)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1150" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1150" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1150)">
 			<PickUp QuestName="Test of Strength" QuestId="1151" GiverName="Dorn Plainstalker" GiverId="2986" X="-5183.59" Y="-2806.95" Z="-6.9201" />

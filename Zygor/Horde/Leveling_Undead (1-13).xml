@@ -904,7 +904,7 @@
 			<TurnIn QuestName="A Rogue's Deal" QuestId="590" TurnInName="Calvin Montague" TurnInId="6784" X="2126.65" Y="1305.98" Z="53.9885" />
 		</If>
 		<If Condition="((HasQuest(590)) &amp;&amp; (!IsQuestCompleted(590)))">
-			<CustomBehavior File="AbandonQuest" QuestId="590" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="590" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Fields of Grief" QuestId="365" Type="CollectItem" ItemId="2846" CollectCount="10" />
 		<Objective QuestName="At War With The Scarlet Crusade" QuestId="427" Type="KillMob" MobId="1535" KillCount="10" />
@@ -946,7 +946,7 @@
 			<TurnIn QuestName="The Chill of Death" QuestId="375" TurnInName="Gretchen Dedmar" TurnInId="1521" X="2249.06" Y="236.785" Z="41.2981" />
 		</If>
 		<If Condition="((HasQuest(375)) &amp;&amp; (!IsQuestCompleted(375)))">
-			<CustomBehavior File="AbandonQuest" QuestId="375" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="375" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Graverobbers" QuestId="358" TurnInName="Magistrate Sevren" TurnInId="1499" X="2305.91" Y="265.164" Z="38.7532" />
 		<If Condition="(Me.Level &gt;= 6) &amp;&amp; IsQuestCompleted(358)">
@@ -1000,7 +1000,7 @@
 				<TurnIn QuestName="Ulag the Cleaver" QuestId="1819" TurnInName="Deathguard Dillinger" TurnInId="1496" X="2287.66" Y="403.372" Z="34.0048" />
 			</If>
 			<If Condition="((HasQuest(1819)) &amp;&amp; (!IsQuestCompleted(1819)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1819" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1819" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Undead) &amp;&amp; (Me.Class == WoWClass.Warlock)))">
@@ -1033,7 +1033,7 @@
 				<TurnIn QuestName="The Binding" QuestId="1471" TurnInName="Carendin Halgar" TurnInId="5675" X="1711.59" Y="57.1672" Z="-62.2059" />
 			</If>
 			<If Condition="((HasQuest(1471)) &amp;&amp; (!IsQuestCompleted(1471)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1471" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1471" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<Objective QuestName="At War With The Scarlet Crusade" QuestId="370" Type="KillMob" MobId="1662" KillCount="1" />
@@ -1091,14 +1091,14 @@
 			<TurnIn QuestName="The Dormant Shade" QuestId="410" TurnInName="Lillith's Dinner Table" TurnInId="1557" TurnInType="Object" X="2485.43" Y="22.1354" Z="26.8835" />
 		</If>
 		<If Condition="((HasQuest(410)) &amp;&amp; (!IsQuestCompleted(410)))">
-			<CustomBehavior File="AbandonQuest" QuestId="410" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="410" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q409 Proving Allegiance: kill 1946 Lillith Nefara x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(409)) &amp;&amp; (IsQuestCompleted(409)))">
 			<TurnIn QuestName="Proving Allegiance" QuestId="409" TurnInName="Gunther Arcanus" TurnInId="1497" X="2574.63" Y="-48.2606" Z="33.7965" />
 		</If>
 		<If Condition="((HasQuest(409)) &amp;&amp; (!IsQuestCompleted(409)))">
-			<CustomBehavior File="AbandonQuest" QuestId="409" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="409" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 5) &amp;&amp; IsQuestCompleted(409)">
 			<PickUp QuestName="The Prodigal Lich Returns" QuestId="411" GiverName="Gunther Arcanus" GiverId="1497" X="2574.63" Y="-48.2606" Z="33.7965" />

@@ -733,7 +733,7 @@
 			<TurnIn QuestName="Fel Spirits" QuestId="10909" TurnInName="Assistant Klatu" TurnInId="22430" X="-710.679" Y="2734.28" Z="101.675" />
 		</If>
 		<If Condition="((HasQuest(10909)) &amp;&amp; (!IsQuestCompleted(10909)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10909" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10909" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Digging for Prayer Beads" QuestId="10916" TurnInName="Assistant Klatu" TurnInId="22430" X="-710.679" Y="2734.28" Z="101.675" />
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10909)">
@@ -849,7 +849,7 @@
 			<TurnIn QuestName="As the Crow Flies" QuestId="9718" TurnInName="Ysiel Windsinger" TurnInId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
 		</If>
 		<If Condition="((HasQuest(9718)) &amp;&amp; (!IsQuestCompleted(9718)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9718" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9718" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 61) &amp;&amp; IsQuestCompleted(9718)">
 			<PickUp QuestName="Balance Must Be Preserved" QuestId="9720" GiverName="Ysiel Windsinger" GiverId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
@@ -859,7 +859,7 @@
 			<TurnIn QuestName="Blessings of the Ancients" QuestId="9785" TurnInName="Windcaller Blackhoof" TurnInId="18070" X="-234.269" Y="5434.77" Z="22.521" />
 		</If>
 		<If Condition="((HasQuest(9785)) &amp;&amp; (!IsQuestCompleted(9785)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9785" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9785" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="9720" ItemId="24355" MobId="17998" NumOfTimes="1" Range="5" CollectionDistance="200" X="-755.97" Y="5925.65" Z="19.0132" />
 		<CustomBehavior File="UseItemOn" QuestId="9720" ItemId="24355" MobId="17999" NumOfTimes="1" Range="5" CollectionDistance="200" X="-213.254" Y="6302.23" Z="21.7091" />

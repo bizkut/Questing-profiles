@@ -282,7 +282,7 @@
 				<TurnIn QuestName="Beat Bartleby" QuestId="1640" TurnInName="Bartleby" TurnInId="6090" X="-8604.47" Y="389.102" Z="103.025" />
 			</If>
 			<If Condition="((HasQuest(1640)) &amp;&amp; (!IsQuestCompleted(1640)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1640" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1640" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior))">

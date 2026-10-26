@@ -454,7 +454,7 @@
 			<TurnIn QuestName="Mission: The Abyssal Shelf" QuestId="10162" TurnInName="Forward Commander To'arch" TurnInId="19273" X="-19.8447" Y="2136.61" Z="114.085" />
 		</If>
 		<If Condition="((HasQuest(10162)) &amp;&amp; (!IsQuestCompleted(10162)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10162" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10162" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Orc) || (Me.Race == WoWRace.Undead) || (Me.Race == WoWRace.Tauren) || (Me.Race == WoWRace.Troll)) &amp;&amp; (Me.Level &gt;= 60)">
 			<PickUp QuestName="Falcon Watch" QuestId="9498" GiverName="Martik Tor'seldori" GiverId="16577" X="134.006" Y="2689.84" Z="85.8942" />
@@ -565,7 +565,7 @@
 			<TurnIn QuestName="Bloody Vengeance" QuestId="10250" TurnInName="Althen the Historian" TurnInId="19736" X="-1335.32" Y="2351.09" Z="89.0748" />
 		</If>
 		<If Condition="((HasQuest(10250)) &amp;&amp; (!IsQuestCompleted(10250)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10250" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10250" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10250)">
 			<PickUp QuestName="Honor the Fallen" QuestId="10258" GiverName="Althen the Historian" GiverId="19736" X="-1335.32" Y="2351.09" Z="89.0748" />
@@ -593,7 +593,7 @@
 			<TurnIn QuestName="Boiling Blood" QuestId="10538" TurnInName="Apothecary Albreck" TurnInId="21279" X="-1334.64" Y="2381.99" Z="89.0748" />
 		</If>
 		<If Condition="((HasQuest(10538)) &amp;&amp; (!IsQuestCompleted(10538)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10538" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10538" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10538)">
 			<PickUp QuestName="Apothecary Antonivich" QuestId="10835" GiverName="Apothecary Albreck" GiverId="21279" X="-1334.64" Y="2381.99" Z="89.0748" />
@@ -606,7 +606,7 @@
 			<TurnIn QuestName="The Eyes of Grillok" QuestId="10813" TurnInName="Zezzak" TurnInId="22231" X="-1337.77" Y="2355.06" Z="89.0385" />
 		</If>
 		<If Condition="((HasQuest(10813)) &amp;&amp; (!IsQuestCompleted(10813)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10813" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10813" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10813)">
 			<PickUp QuestName='Grillok "Darkeye"' QuestId="10834" GiverName="Zezzak" GiverId="22231" X="-1337.77" Y="2355.06" Z="89.0385" />
@@ -634,7 +634,7 @@
 			<TurnIn QuestName="Zeth'Gor Must Burn!" QuestId="10792" TurnInName="Captain Darkhowl" TurnInId="22107" X="-1319.35" Y="2378.33" Z="88.6272" />
 		</If>
 		<If Condition="((HasQuest(10792)) &amp;&amp; (!IsQuestCompleted(10792)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10792" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10792" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName='Grillok "Darkeye"' QuestId="10834" TurnInName="Zezzak" TurnInId="22231" X="-1337.77" Y="2355.06" Z="89.0385" />
 		<TurnIn QuestName="Investigate the Crash" QuestId="10213" TurnInName='"Screaming" Screed Luckheed' TurnInId="19367" X="-1096.86" Y="3001.19" Z="8.2781" />
@@ -676,7 +676,7 @@
 			<TurnIn QuestName="Helboar, the Other White Meat" QuestId="9361" TurnInName="Legassi" TurnInId="19344" X="-1095.95" Y="2996.35" Z="8.2736" />
 		</If>
 		<If Condition="((HasQuest(9361)) &amp;&amp; (!IsQuestCompleted(9361)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9361" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9361" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(9361)">
 			<PickUp QuestName="Smooth as Butter" QuestId="9356" GiverName="Legassi" GiverId="19344" X="-1095.95" Y="2996.35" Z="8.2736" />
@@ -688,7 +688,7 @@
 			<TurnIn QuestName="The Warp Rifts" QuestId="10278" TurnInName="Ogath the Mad" TurnInId="19683" X="-1326.43" Y="2344.15" Z="89.0385" />
 		</If>
 		<If Condition="((HasQuest(10278)) &amp;&amp; (!IsQuestCompleted(10278)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10278" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10278" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10278)">
 			<PickUp QuestName="Void Ridge" QuestId="10294" GiverName="Ogath the Mad" GiverId="19683" X="-1326.43" Y="2344.15" Z="89.0385" />
@@ -715,7 +715,7 @@
 			<TurnIn QuestName="A Burden of Souls" QuestId="10864" TurnInName="Apothecary Antonivich" TurnInId="16588" X="225.656" Y="2839.38" Z="131.424" />
 		</If>
 		<If Condition="((HasQuest(10864)) &amp;&amp; (!IsQuestCompleted(10864)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10864" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10864" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10864)">
 			<PickUp QuestName="The Demoniac Scryer" QuestId="10838" GiverName="Apothecary Antonivich" GiverId="16588" X="225.656" Y="2839.38" Z="131.424" />
@@ -728,7 +728,7 @@
 			<TurnIn QuestName="The Demoniac Scryer" QuestId="10838" TurnInName="Apothecary Antonivich" TurnInId="16588" X="225.656" Y="2839.38" Z="131.424" />
 		</If>
 		<If Condition="((HasQuest(10838)) &amp;&amp; (!IsQuestCompleted(10838)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10838" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10838" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10838)">
 			<PickUp QuestName="Report to Nazgrel" QuestId="10875" GiverName="Apothecary Antonivich" GiverId="16588" X="225.656" Y="2839.38" Z="131.424" />
@@ -743,7 +743,7 @@
 			<TurnIn QuestName="Shizz Work" QuestId="10629" TurnInName="Foreman Razelcraz" TurnInId="16915" X="430.101" Y="2886.58" Z="52.3558" />
 		</If>
 		<If Condition="((HasQuest(10629)) &amp;&amp; (!IsQuestCompleted(10629)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10629" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10629" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10629)">
 			<PickUp QuestName="Beneath Thrallmar" QuestId="10630" GiverName="Foreman Razelcraz" GiverId="16915" X="430.101" Y="2886.58" Z="52.3558" />
@@ -757,7 +757,7 @@
 			<TurnIn QuestName="From the Abyss" QuestId="10295" TurnInName="Ogath the Mad" TurnInId="19683" X="-1326.43" Y="2344.15" Z="89.0385" />
 		</If>
 		<If Condition="((HasQuest(10295)) &amp;&amp; (!IsQuestCompleted(10295)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10295" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10295" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10087 Burn It Up... For the Horde!: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10087)) &amp;&amp; (IsQuestCompleted(10087)))">

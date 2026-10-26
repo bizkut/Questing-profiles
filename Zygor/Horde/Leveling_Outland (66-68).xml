@@ -714,7 +714,7 @@
 			<TurnIn QuestName="The Final Code" QuestId="10447" TurnInName="Tooki" TurnInId="18447" X="-2653.61" Y="4381.12" Z="36.2226" />
 		</If>
 		<If Condition="((HasQuest(10447)) &amp;&amp; (!IsQuestCompleted(10447)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10447" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10447" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10447)">
 			<PickUp QuestName="Letting Earthbinder Tavgren Know" QuestId="10006" GiverName="Tooki" GiverId="18447" X="-2653.61" Y="4381.12" Z="36.2226" />
@@ -858,7 +858,7 @@
 			<TurnIn QuestName="Finding the Survivors" QuestId="9948" TurnInName="Elder Ungriz" TurnInId="18415" X="-1291.87" Y="8507.99" Z="16.0798" />
 		</If>
 		<If Condition="((HasQuest(9948)) &amp;&amp; (!IsQuestCompleted(9948)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9948" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9948" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Muck Diving" QuestId="9815" Type="CollectItem" ItemId="24469" CollectCount="5" />
 		<Objective QuestName="Once Were Warriors" QuestId="9865" Type="KillMob" MobId="18207" KillCount="20" />
@@ -910,7 +910,7 @@
 			<TurnIn QuestName="Don't Kill the Fat One" QuestId="9889" TurnInName="Unkor the Ruthless" TurnInId="18262" X="-3276.79" Y="5999.96" Z="-2.5538" />
 		</If>
 		<If Condition="((HasQuest(9889)) &amp;&amp; (!IsQuestCompleted(9889)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9889" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9889" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9889)">
 			<PickUp QuestName="Success!" QuestId="9890" GiverName="Unkor the Ruthless" GiverId="18262" X="-3276.79" Y="5999.96" Z="-2.5538" />
@@ -1003,7 +1003,7 @@
 			<TurnIn QuestName="Diplomatic Measures" QuestId="10107" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
 		<If Condition="((HasQuest(10107)) &amp;&amp; (!IsQuestCompleted(10107)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10107" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10107" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; (IsQuestCompleted(10107) || IsQuestCompleted(10108))">
 			<PickUp QuestName="Armaments for Deception" QuestId="9928" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
@@ -1033,7 +1033,7 @@
 			<TurnIn QuestName="Wanted: Giselda the Crone" QuestId="9935" TurnInName="Warden Bullrok" TurnInId="18407" X="-1356.12" Y="7213.31" Z="33.717" />
 		</If>
 		<If Condition="((HasQuest(9935)) &amp;&amp; (!IsQuestCompleted(9935)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9935" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9935" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q9849 Shattering the Veil: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9849)) &amp;&amp; (IsQuestCompleted(9849)))">
@@ -1124,7 +1124,7 @@
 			<TurnIn QuestName="Vision Guide" QuestId="10525" TurnInName="Rokgah Bloodgrip" TurnInId="21311" X="2276.08" Y="5981.62" Z="142.788" />
 		</If>
 		<If Condition="((HasQuest(10525)) &amp;&amp; (!IsQuestCompleted(10525)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10525" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10525" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10525)">
 			<PickUp QuestName="The Thunderspike" QuestId="10526" GiverName="Rokgah Bloodgrip" GiverId="21311" X="2276.08" Y="5981.62" Z="142.788" />
@@ -1144,7 +1144,7 @@
 			<TurnIn QuestName="Bladespire Kegger" QuestId="10545" TurnInName="T'chali the Witch Doctor" TurnInId="21349" X="1793.14" Y="6406.45" Z="-11.5" />
 		</If>
 		<If Condition="((HasQuest(10545)) &amp;&amp; (!IsQuestCompleted(10545)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10545" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10545" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10545)">
 			<PickUp QuestName="Grimnok and Korgaah, I Am For You!" QuestId="10543" GiverName="T'chali the Witch Doctor" GiverId="21349" X="1793.14" Y="6406.45" Z="-11.5" />

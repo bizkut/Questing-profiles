@@ -507,7 +507,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="921" TurnInName="Tenaron Stormgrip" TurnInId="3514" X="10492.5" Y="807.28" Z="1397.35" />
 		</If>
 		<If Condition="((HasQuest(921)) &amp;&amp; (!IsQuestCompleted(921)))">
-			<CustomBehavior File="AbandonQuest" QuestId="921" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="921" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(921)">
 			<PickUp QuestName="Crown of the Earth" QuestId="928" GiverName="Tenaron Stormgrip" GiverId="3514" X="10492.5" Y="807.28" Z="1397.35" />
@@ -544,7 +544,7 @@
 			<TurnIn QuestName="Recipe of the Kaldorei" QuestId="4161" TurnInName="Zarrin" TurnInId="6286" X="9751.02" Y="906.196" Z="1295.6" />
 		</If>
 		<If Condition="((HasQuest(4161)) &amp;&amp; (!IsQuestCompleted(4161)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4161" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4161" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Troubling Breeze" QuestId="475" TurnInName="Gaerolas Talvethren" TurnInId="2107" X="9845.15" Y="440.93" Z="1317.27" />
 		<If Condition="(Me.Level &gt;= 4) &amp;&amp; IsQuestCompleted(475)">
@@ -558,7 +558,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="929" TurnInName="Corithras Moonrage" TurnInId="3515" X="9736.91" Y="956.063" Z="1294.19" />
 		</If>
 		<If Condition="((HasQuest(929)) &amp;&amp; (!IsQuestCompleted(929)))">
-			<CustomBehavior File="AbandonQuest" QuestId="929" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="929" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(929)">
 			<PickUp QuestName="Crown of the Earth" QuestId="933" GiverName="Corithras Moonrage" GiverId="3515" X="9736.91" Y="956.063" Z="1294.19" />
@@ -588,7 +588,7 @@
 			<TurnIn QuestName="Ferocitas the Dream Eater" QuestId="2459" TurnInName="Tallonkai Swiftroot" TurnInId="3567" X="9898.59" Y="984.968" Z="1354.89" />
 		</If>
 		<If Condition="((HasQuest(2459)) &amp;&amp; (!IsQuestCompleted(2459)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2459" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2459" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 5)">
 			<PickUp QuestName="The Road to Darnassus" QuestId="487" GiverName="Moon Priestess Amara" GiverId="2151" X="9852.4" Y="972.153" Z="1305.5" />
@@ -599,7 +599,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="933" TurnInName="Corithras Moonrage" TurnInId="3515" X="9736.91" Y="956.063" Z="1294.19" />
 		</If>
 		<If Condition="((HasQuest(933)) &amp;&amp; (!IsQuestCompleted(933)))">
-			<CustomBehavior File="AbandonQuest" QuestId="933" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="933" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(933)">
 			<PickUp QuestName="Crown of the Earth" QuestId="7383" GiverName="Corithras Moonrage" GiverId="3515" X="9736.91" Y="956.063" Z="1294.19" />
@@ -628,7 +628,7 @@
 			<TurnIn QuestName="Mist" QuestId="938" TurnInName="Sentinel Arynia Cloudsbreak" TurnInId="3519" X="10665.1" Y="1863.57" Z="1324.51" />
 		</If>
 		<If Condition="((HasQuest(938)) &amp;&amp; (!IsQuestCompleted(938)))">
-			<CustomBehavior File="AbandonQuest" QuestId="938" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="938" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Enchanted Glade" QuestId="937" TurnInName="Sentinel Arynia Cloudsbreak" TurnInId="3519" X="10665.1" Y="1863.57" Z="1324.51" />
 		<If Condition="(Me.Level &gt;= 6) &amp;&amp; IsQuestCompleted(937)">
@@ -660,14 +660,14 @@
 			<TurnIn QuestName="Sathrah's Sacrifice" QuestId="2520" TurnInName="Priestess A'moora" TurnInId="7313" X="9631.88" Y="2550.45" Z="1354.89" />
 		</If>
 		<If Condition="((HasQuest(2520)) &amp;&amp; (!IsQuestCompleted(2520)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2520" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2520" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q7383 Crown of the Earth: item 18151 Filled Amethyst Phial has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(7383)) &amp;&amp; (IsQuestCompleted(7383)))">
 			<TurnIn QuestName="Crown of the Earth" QuestId="7383" TurnInName="Corithras Moonrage" TurnInId="3515" X="9736.91" Y="956.063" Z="1294.19" />
 		</If>
 		<If Condition="((HasQuest(7383)) &amp;&amp; (!IsQuestCompleted(7383)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7383" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7383" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(7383)">
 			<PickUp QuestName="Crown of the Earth" QuestId="935" GiverName="Corithras Moonrage" GiverId="3515" X="9736.91" Y="956.063" Z="1294.19" />
@@ -719,7 +719,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6063" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 			</If>
 			<If Condition="((HasQuest(6063)) &amp;&amp; (!IsQuestCompleted(6063)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6063" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6063" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -733,7 +733,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6101" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 			</If>
 			<If Condition="((HasQuest(6101)) &amp;&amp; (!IsQuestCompleted(6101)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6101" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6101" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -747,7 +747,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6102" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 			</If>
 			<If Condition="((HasQuest(6102)) &amp;&amp; (!IsQuestCompleted(6102)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6102" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6102" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -780,7 +780,7 @@
 				<TurnIn QuestName="Great Bear Spirit" QuestId="5929" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
 			</If>
 			<If Condition="((HasQuest(5929)) &amp;&amp; (!IsQuestCompleted(5929)))">
-				<CustomBehavior File="AbandonQuest" QuestId="5929" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="5929" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -814,7 +814,7 @@
 				<TurnIn QuestName="Body and Heart" QuestId="6001" TurnInName="Mathrengyl Bearwalker" TurnInId="4217" X="10179" Y="2563.98" Z="1340.13" />
 			</If>
 			<If Condition="((HasQuest(6001)) &amp;&amp; (!IsQuestCompleted(6001)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6001" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6001" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<TurnIn QuestName="Return to Nessa" QuestId="6343" TurnInName="Nessa Shadowsong" TurnInId="10118" X="8694.04" Y="950.259" Z="12.9087" />

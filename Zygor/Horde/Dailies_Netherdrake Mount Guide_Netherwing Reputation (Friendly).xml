@@ -214,7 +214,7 @@
 			<TurnIn QuestName="A Slow Death" QuestId="11020" TurnInName="Yarzill the Merc" TurnInId="23141" X="-5117.53" Y="593.779" Z="85.1407" />
 		</If>
 		<If Condition="((HasQuest(11020)) &amp;&amp; (!IsQuestCompleted(11020)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11020" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11020" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Not-So-Friendly Skies..." QuestId="11035" TurnInName="Yarzill the Merc" TurnInId="23141" X="-5117.53" Y="593.779" Z="85.1407" />
 		<TurnIn QuestName="Netherwing Crystals" QuestId="11015" TurnInName="Taskmaster Varkule Dragonbreath" TurnInId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
@@ -223,7 +223,7 @@
 			<TurnIn QuestName="Nethermine Flayer Hide" QuestId="11016" TurnInName="Taskmaster Varkule Dragonbreath" TurnInId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
 		</If>
 		<If Condition="((HasQuest(11016)) &amp;&amp; (!IsQuestCompleted(11016)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11016" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11016" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Nethercite Ore" QuestId="11018" TurnInName="Taskmaster Varkule Dragonbreath" TurnInId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
 		<TurnIn QuestName="Netherdust Pollen" QuestId="11017" TurnInName="Taskmaster Varkule Dragonbreath" TurnInId="23140" X="-5114.44" Y="588.484" Z="85.8724" />

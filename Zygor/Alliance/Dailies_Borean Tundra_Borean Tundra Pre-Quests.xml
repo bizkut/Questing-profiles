@@ -111,7 +111,7 @@
 			<TurnIn QuestName="Drake Hunt" QuestId="11919" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		</If>
 		<If Condition="((HasQuest(11919)) &amp;&amp; (!IsQuestCompleted(11919)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11919" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11919" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 80)">
 			<PickUp QuestName="Corastrasza" QuestId="13412" GiverName="Librarian Serrah" GiverId="26110" X="3576.48" Y="6640.39" Z="195.176" />

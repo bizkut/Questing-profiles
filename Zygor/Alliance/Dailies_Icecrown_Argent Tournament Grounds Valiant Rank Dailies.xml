@@ -306,7 +306,7 @@
 			<TurnIn QuestName="The Aspirant's Challenge" QuestId="13679" TurnInName="Arcanist Taelis" TurnInId="33625" X="8615.71" Y="648.842" Z="550.35" />
 		</If>
 		<If Condition="((HasQuest(13679)) &amp;&amp; (!IsQuestCompleted(13679)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13679" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13679" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human)) &amp;&amp; (Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13679)">
 			<PickUp QuestName="A Valiant Of Stormwind" QuestId="13684" GiverName="Arcanist Taelis" GiverId="33625" X="8615.71" Y="648.842" Z="550.35" />
@@ -423,7 +423,7 @@
 				<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13752" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
 			<If Condition="((HasQuest(13752)) &amp;&amp; (!IsQuestCompleted(13752)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13752" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13752" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
@@ -432,7 +432,7 @@
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13753" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
 			<If Condition="((HasQuest(13753)) &amp;&amp; (!IsQuestCompleted(13753)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13753" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13753" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
@@ -441,7 +441,7 @@
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13754" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
 			<If Condition="((HasQuest(13754)) &amp;&amp; (!IsQuestCompleted(13754)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13754" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13754" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
@@ -453,7 +453,7 @@
 				<TurnIn QuestName="The Grand Melee" QuestId="13756" TurnInName="Ranii" TurnInId="33656" X="8629.63" Y="669.079" Z="550.173" />
 			</If>
 			<If Condition="((HasQuest(13756)) &amp;&amp; (!IsQuestCompleted(13756)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13756" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13756" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
@@ -519,7 +519,7 @@
 				<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13741" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
 			<If Condition="((HasQuest(13741)) &amp;&amp; (!IsQuestCompleted(13741)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13741" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13741" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
@@ -528,7 +528,7 @@
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13742" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
 			<If Condition="((HasQuest(13742)) &amp;&amp; (!IsQuestCompleted(13742)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13742" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13742" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
@@ -537,7 +537,7 @@
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13743" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
 			<If Condition="((HasQuest(13743)) &amp;&amp; (!IsQuestCompleted(13743)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13743" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13743" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
@@ -549,7 +549,7 @@
 				<TurnIn QuestName="The Grand Melee" QuestId="13745" TurnInName="Clara Tumblebrew" TurnInId="33309" X="8608.91" Y="637.616" Z="550.255" />
 			</If>
 			<If Condition="((HasQuest(13745)) &amp;&amp; (!IsQuestCompleted(13745)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13745" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13745" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
@@ -615,7 +615,7 @@
 				<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13603" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
 			<If Condition="((HasQuest(13603)) &amp;&amp; (!IsQuestCompleted(13603)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13603" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13603" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
@@ -624,7 +624,7 @@
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13600" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
 			<If Condition="((HasQuest(13600)) &amp;&amp; (!IsQuestCompleted(13600)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13600" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13600" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
@@ -633,7 +633,7 @@
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13616" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
 			<If Condition="((HasQuest(13616)) &amp;&amp; (!IsQuestCompleted(13616)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13616" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13616" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
@@ -645,7 +645,7 @@
 				<TurnIn QuestName="The Grand Melee" QuestId="13665" TurnInName="Captain Joseph Holley" TurnInId="33223" X="8623.98" Y="639.313" Z="550.252" />
 			</If>
 			<If Condition="((HasQuest(13665)) &amp;&amp; (!IsQuestCompleted(13665)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13665" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13665" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
@@ -711,7 +711,7 @@
 				<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13757" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
 			<If Condition="((HasQuest(13757)) &amp;&amp; (!IsQuestCompleted(13757)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13757" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13757" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
@@ -720,7 +720,7 @@
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13758" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
 			<If Condition="((HasQuest(13758)) &amp;&amp; (!IsQuestCompleted(13758)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13758" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13758" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
@@ -729,7 +729,7 @@
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13759" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
 			<If Condition="((HasQuest(13759)) &amp;&amp; (!IsQuestCompleted(13759)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13759" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13759" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
@@ -741,7 +741,7 @@
 				<TurnIn QuestName="The Grand Melee" QuestId="13761" TurnInName="Airae Starseeker" TurnInId="33654" X="8632.64" Y="652.755" Z="550.343" />
 			</If>
 			<If Condition="((HasQuest(13761)) &amp;&amp; (!IsQuestCompleted(13761)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13761" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13761" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
@@ -807,7 +807,7 @@
 				<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13746" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
 			<If Condition="((HasQuest(13746)) &amp;&amp; (!IsQuestCompleted(13746)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13746" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13746" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
@@ -816,7 +816,7 @@
 				<TurnIn QuestName="A Worthy Weapon" QuestId="13747" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
 			<If Condition="((HasQuest(13747)) &amp;&amp; (!IsQuestCompleted(13747)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13747" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13747" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
@@ -825,7 +825,7 @@
 				<TurnIn QuestName="The Edge Of Winter" QuestId="13748" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
 			<If Condition="((HasQuest(13748)) &amp;&amp; (!IsQuestCompleted(13748)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13748" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13748" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
@@ -837,7 +837,7 @@
 				<TurnIn QuestName="The Grand Melee" QuestId="13750" TurnInName="Flickin Gearspanner" TurnInId="33649" X="8595.79" Y="645.937" Z="550.168" />
 			</If>
 			<If Condition="((HasQuest(13750)) &amp;&amp; (!IsQuestCompleted(13750)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13750" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13750" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
@@ -849,7 +849,7 @@
 				<TurnIn QuestName="The Valiant's Charge" QuestId="13718" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
 			<If Condition="((HasQuest(13718)) &amp;&amp; (!IsQuestCompleted(13718)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13718" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13718" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
@@ -863,7 +863,7 @@
 				<TurnIn QuestName="The Valiant's Charge" QuestId="13717" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
 			<If Condition="((HasQuest(13717)) &amp;&amp; (!IsQuestCompleted(13717)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13717" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13717" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
@@ -877,7 +877,7 @@
 				<TurnIn QuestName="The Valiant's Charge" QuestId="13714" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
 			<If Condition="((HasQuest(13714)) &amp;&amp; (!IsQuestCompleted(13714)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13714" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13714" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
@@ -891,7 +891,7 @@
 				<TurnIn QuestName="The Valiant's Charge" QuestId="13715" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
 			<If Condition="((HasQuest(13715)) &amp;&amp; (!IsQuestCompleted(13715)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13715" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13715" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
@@ -905,7 +905,7 @@
 				<TurnIn QuestName="The Valiant's Charge" QuestId="13716" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
 			<If Condition="((HasQuest(13716)) &amp;&amp; (!IsQuestCompleted(13716)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13716" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13716" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
@@ -919,7 +919,7 @@
 				<TurnIn QuestName="The Valiant's Challenge" QuestId="13699" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 			</If>
 			<If Condition="((HasQuest(13699)) &amp;&amp; (!IsQuestCompleted(13699)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13699" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13699" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
@@ -933,7 +933,7 @@
 				<TurnIn QuestName="The Valiant's Challenge" QuestId="13725" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 			</If>
 			<If Condition="((HasQuest(13725)) &amp;&amp; (!IsQuestCompleted(13725)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13725" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13725" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.NightElf))">
@@ -947,7 +947,7 @@
 				<TurnIn QuestName="The Valiant's Challenge" QuestId="13713" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 			</If>
 			<If Condition="((HasQuest(13713)) &amp;&amp; (!IsQuestCompleted(13713)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13713" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13713" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Dwarf))">
@@ -961,7 +961,7 @@
 				<TurnIn QuestName="The Valiant's Challenge" QuestId="13723" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 			</If>
 			<If Condition="((HasQuest(13723)) &amp;&amp; (!IsQuestCompleted(13723)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13723" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13723" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Gnome))">
@@ -975,7 +975,7 @@
 				<TurnIn QuestName="The Valiant's Challenge" QuestId="13724" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 			</If>
 			<If Condition="((HasQuest(13724)) &amp;&amp; (!IsQuestCompleted(13724)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13724" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13724" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">

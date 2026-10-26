@@ -801,7 +801,7 @@
 			<TurnIn QuestName="Wing Commander Gryphongar" QuestId="10344" TurnInName="Wing Commander Gryphongar" TurnInId="20232" X="315.337" Y="1442.1" Z="0.9818" />
 		</If>
 		<If Condition="((HasQuest(10344)) &amp;&amp; (!IsQuestCompleted(10344)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10344" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10344" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10344)">
 			<PickUp QuestName="Mission: The Abyssal Shelf" QuestId="10163" GiverName="Wing Commander Gryphongar" GiverId="20232" X="315.337" Y="1442.1" Z="0.9818" />
@@ -834,7 +834,7 @@
 			<TurnIn QuestName="Enemy of my Enemy..." QuestId="10396" TurnInName="Field Marshal Brock" TurnInId="20793" X="497.948" Y="2012.61" Z="112.777" />
 		</If>
 		<If Condition="((HasQuest(10396)) &amp;&amp; (!IsQuestCompleted(10396)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10396" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10396" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10396)">
 			<PickUp QuestName="Invasion Point: Annihilator" QuestId="10397" GiverName="Field Marshal Brock" GiverId="20793" X="497.948" Y="2012.61" Z="112.777" />
@@ -870,7 +870,7 @@
 			<TurnIn QuestName="Shizz Work" QuestId="10629" TurnInName="Foreman Razelcraz" TurnInId="16915" X="430.101" Y="2886.58" Z="52.3558" />
 		</If>
 		<If Condition="((HasQuest(10629)) &amp;&amp; (!IsQuestCompleted(10629)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10629" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10629" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10629)">
 			<PickUp QuestName="Beneath Thrallmar" QuestId="10630" GiverName="Foreman Razelcraz" GiverId="16915" X="430.101" Y="2886.58" Z="52.3558" />
@@ -941,7 +941,7 @@
 			<TurnIn QuestName="Helboar, the Other White Meat" QuestId="9361" TurnInName="Legassi" TurnInId="19344" X="-1095.95" Y="2996.35" Z="8.2736" />
 		</If>
 		<If Condition="((HasQuest(9361)) &amp;&amp; (!IsQuestCompleted(9361)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9361" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9361" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(9361)">
 			<PickUp QuestName="Smooth as Butter" QuestId="9356" GiverName="Legassi" GiverId="19344" X="-1095.95" Y="2996.35" Z="8.2736" />
@@ -963,7 +963,7 @@
 			<TurnIn QuestName="Laying Waste to the Unwanted" QuestId="10078" TurnInName="Dumphry" TurnInId="21209" X="-595.426" Y="2899.24" Z="59.3098" />
 		</If>
 		<If Condition="((HasQuest(10078)) &amp;&amp; (!IsQuestCompleted(10078)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10078" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10078" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Unyielding Souls" QuestId="10050" TurnInName="Honor Guard Wesilow" TurnInId="16827" X="-597.186" Y="2912.03" Z="59.2966" />
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10050)">
@@ -1022,7 +1022,7 @@
 			<TurnIn QuestName="Cleansing the Waters" QuestId="9427" TurnInName="Amaan the Wise" TurnInId="16796" X="222.804" Y="4330.04" Z="119.341" />
 		</If>
 		<If Condition="((HasQuest(9427)) &amp;&amp; (!IsQuestCompleted(9427)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9427" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9427" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Missing Missive" QuestId="9373" TurnInName="Thiah Redmane" TurnInId="16991" X="-312.485" Y="4728.77" Z="17.3123" />
 		<TurnIn QuestName="Helping the Cenarion Post" QuestId="10443" TurnInName="Thiah Redmane" TurnInId="16991" X="-312.485" Y="4728.77" Z="17.3123" />
@@ -1039,7 +1039,7 @@
 			<TurnIn QuestName="Testing the Antidote" QuestId="10255" TurnInName="Thiah Redmane" TurnInId="16991" X="-312.485" Y="4728.77" Z="17.3123" />
 		</If>
 		<If Condition="((HasQuest(10255)) &amp;&amp; (!IsQuestCompleted(10255)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10255" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10255" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Cruel Taskmasters" QuestId="9399" Type="KillMob" MobId="17058" KillCount="4" />
 		<Objective QuestName="Sha'naar Relics" QuestId="9430" Type="CollectItem" ItemId="23642" CollectCount="10" />
@@ -1060,7 +1060,7 @@
 			<TurnIn QuestName="The Dreghood Elders" QuestId="10368" TurnInName="Naladu" TurnInId="19361" X="-760.262" Y="4699.16" Z="67.2593" />
 		</If>
 		<If Condition="((HasQuest(10368)) &amp;&amp; (!IsQuestCompleted(10368)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10368" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10368" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(10368)">
 			<PickUp QuestName="Arzeth's Demise" QuestId="10369" GiverName="Naladu" GiverId="19361" X="-760.262" Y="4699.16" Z="67.2593" />
@@ -1070,7 +1070,7 @@
 			<TurnIn QuestName="Arzeth's Demise" QuestId="10369" TurnInName="Naladu" TurnInId="19361" X="-760.262" Y="4699.16" Z="67.2593" />
 		</If>
 		<If Condition="((HasQuest(10369)) &amp;&amp; (!IsQuestCompleted(10369)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10369" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10369" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Longbeards" QuestId="9558" TurnInName="Gremni Longbeard" TurnInId="16850" X="-1003.98" Y="4305.97" Z="68.0723" />
 		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(9558)">
@@ -1087,7 +1087,7 @@
 			<TurnIn QuestName="Gaining Mirren's Trust" QuestId="9563" TurnInName="Mirren Longbeard" TurnInId="16851" X="-1010.14" Y="4301.38" Z="68.1336" />
 		</If>
 		<If Condition="((HasQuest(9563)) &amp;&amp; (!IsQuestCompleted(9563)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9563" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9563" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(9563)">
 			<PickUp QuestName="The Finest Down" QuestId="9420" GiverName="Mirren Longbeard" GiverId="16851" X="-1010.14" Y="4301.38" Z="68.1336" />
@@ -1100,7 +1100,7 @@
 		</If>
 		<!-- SKIP turn-in Q9418 Avruu's Orb: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(9418)) &amp;&amp; (!IsQuestCompleted(9418)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9418" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9418" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Arakkoa Threat" QuestId="9417" TurnInName="Gremni Longbeard" TurnInId="16850" X="-1003.98" Y="4305.97" Z="68.0723" />
 		<TurnIn QuestName="The Finest Down" QuestId="9420" TurnInName="Mirren Longbeard" TurnInId="16851" X="-1010.14" Y="4301.38" Z="68.1336" />
@@ -1151,7 +1151,7 @@
 			<TurnIn QuestName="Fel Spirits" QuestId="10909" TurnInName="Assistant Klatu" TurnInId="22430" X="-710.679" Y="2734.28" Z="101.675" />
 		</If>
 		<If Condition="((HasQuest(10909)) &amp;&amp; (!IsQuestCompleted(10909)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10909" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10909" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Digging for Prayer Beads" QuestId="10916" TurnInName="Assistant Klatu" TurnInId="22430" X="-710.679" Y="2734.28" Z="101.675" />
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(10909)">
@@ -1183,14 +1183,14 @@
 			<TurnIn QuestName="An Ambitious Plan" QuestId="9383" TurnInName="Elsaana" TurnInId="17006" X="218.691" Y="4340.88" Z="119.341" />
 		</If>
 		<If Condition="((HasQuest(9383)) &amp;&amp; (!IsQuestCompleted(9383)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9383" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9383" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q9545 The Seer's Relic: use item 23645: target 17413 Sedai Quest Credit Marker has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9545)) &amp;&amp; (IsQuestCompleted(9545)))">
 			<TurnIn QuestName="The Seer's Relic" QuestId="9545" TurnInName="Amaan the Wise" TurnInId="16796" X="222.804" Y="4330.04" Z="119.341" />
 		</If>
 		<If Condition="((HasQuest(9545)) &amp;&amp; (!IsQuestCompleted(9545)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9545" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9545" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="The Rock Flayer Matriarch" QuestId="9490" Type="CollectItem" ItemId="23687" CollectCount="1" />
 		<If Condition="(Me.Level &gt;= 61)">
@@ -1224,7 +1224,7 @@
 			<TurnIn QuestName="Natural Remedies" QuestId="10351" TurnInName="Earthbinder Galandria Nightbreeze" TurnInId="19294" X="-294.766" Y="4715.08" Z="28.301" />
 		</If>
 		<If Condition="((HasQuest(10351)) &amp;&amp; (!IsQuestCompleted(10351)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10351" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10351" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Cenarion Expedition" QuestId="9912" TurnInName="Ysiel Windsinger" TurnInId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
 	</QuestOrder>

@@ -854,7 +854,7 @@
 			<TurnIn QuestName="Kodo Roundup" QuestId="5561" TurnInName="Smeed Scrabblescrew" TurnInId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
 		</If>
 		<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5561" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5561" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Bone Collector" QuestId="5501" Type="CollectItem" ItemId="13703" CollectCount="10" />
 		<If Condition="(Me.Level &gt;= 30)">
@@ -890,7 +890,7 @@
 			<TurnIn QuestName="Book of the Ancients" QuestId="6027" TurnInName="Azore Aldamort" TurnInId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
 		</If>
 		<If Condition="((HasQuest(6027)) &amp;&amp; (!IsQuestCompleted(6027)))">
-			<CustomBehavior File="AbandonQuest" QuestId="6027" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="6027" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1455" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
 		<!-- REVIEW Q1440 Return to Vahlarriel: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -898,7 +898,7 @@
 			<TurnIn QuestName="Return to Vahlarriel" QuestId="1440" TurnInName="Vahlarriel Demonslayer" TurnInId="5642" X="97.8138" Y="1246.16" Z="164.155" />
 		</If>
 		<If Condition="((HasQuest(1440)) &amp;&amp; (!IsQuestCompleted(1440)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1440" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1440" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Goblin Sponsorship" QuestId="1178" TurnInName="Gazlowe" TurnInId="3391" X="-835.563" Y="-3728.66" Z="26.3746" />
 		<If Condition="(Me.Level &gt;= 29) &amp;&amp; IsQuestCompleted(1178)">
@@ -1103,7 +1103,7 @@
 			<TurnIn QuestName="Sunken Treasure" QuestId="665" TurnInName="Doctor Draxlegauge" TurnInId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
 		</If>
 		<If Condition="((HasQuest(665)) &amp;&amp; (!IsQuestCompleted(665)))">
-			<CustomBehavior File="AbandonQuest" QuestId="665" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="665" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(665)">
 			<PickUp QuestName="Sunken Treasure" QuestId="666" GiverName="Doctor Draxlegauge" GiverId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
@@ -1146,7 +1146,7 @@
 			<TurnIn QuestName="Hints of a New Plague?" QuestId="660" TurnInName="Quae" TurnInId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
 		</If>
 		<If Condition="((HasQuest(660)) &amp;&amp; (!IsQuestCompleted(660)))">
-			<CustomBehavior File="AbandonQuest" QuestId="660" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="660" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(660)">
 			<PickUp QuestName="Hints of a New Plague?" QuestId="661" GiverName="Quae" GiverId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
@@ -1180,7 +1180,7 @@
 			<TurnIn QuestName="Traitors Among Us" QuestId="11126" TurnInName="Calia Hastings" TurnInId="23566" X="-3819.74" Y="-4562.35" Z="9.1422" />
 		</If>
 		<If Condition="((HasQuest(11126)) &amp;&amp; (!IsQuestCompleted(11126)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11126" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11126" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 32) &amp;&amp; IsQuestCompleted(11126)">
 			<PickUp QuestName="Propaganda War" QuestId="11128" GiverName="Calia Hastings" GiverId="23566" X="-3819.74" Y="-4562.35" Z="9.1422" />
@@ -1195,7 +1195,7 @@
 			<TurnIn QuestName="Discrediting the Deserters" QuestId="11133" TurnInName="Calia Hastings" TurnInId="23566" X="-3819.74" Y="-4562.35" Z="9.1422" />
 		</If>
 		<If Condition="((HasQuest(11133)) &amp;&amp; (!IsQuestCompleted(11133)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11133" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11133" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 32) &amp;&amp; IsQuestCompleted(11133)">
 			<PickUp QuestName="The End of the Deserters" QuestId="11134" GiverName="Calia Hastings" GiverId="23566" X="-3819.74" Y="-4562.35" Z="9.1422" />
@@ -1248,7 +1248,7 @@
 			<TurnIn QuestName="What's Haunting Witch Hill?" QuestId="11180" TurnInName="Mordant Grimsby" TurnInId="23843" X="-2948.36" Y="-3893.17" Z="35.0324" />
 		</If>
 		<If Condition="((HasQuest(11180)) &amp;&amp; (!IsQuestCompleted(11180)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11180" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11180" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11180)">
 			<PickUp QuestName="The Witch's Bane" QuestId="11181" GiverName="Mordant Grimsby" GiverId="23843" X="-2948.36" Y="-3893.17" Z="35.0324" />

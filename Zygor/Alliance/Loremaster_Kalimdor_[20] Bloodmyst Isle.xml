@@ -684,7 +684,7 @@
 			<TurnIn QuestName="Elekks Are Serious Business" QuestId="9625" TurnInName="Vorkhan the Elekk Herder" TurnInId="17586" X="-2670.2" Y="-12131.4" Z="17.2069" />
 		</If>
 		<If Condition="((HasQuest(9625)) &amp;&amp; (!IsQuestCompleted(9625)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9625" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9625" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 8) &amp;&amp; IsQuestCompleted(9625)">
 			<PickUp QuestName="Alien Predators" QuestId="9634" GiverName="Vorkhan the Elekk Herder" GiverId="17586" X="-2670.2" Y="-12131.4" Z="17.2069" />
@@ -697,7 +697,7 @@
 			<TurnIn QuestName="The Kessel Run" QuestId="9663" TurnInName="Kessel" TurnInId="17649" X="-2662.24" Y="-12130.1" Z="17.4634" />
 		</If>
 		<If Condition="((HasQuest(9663)) &amp;&amp; (!IsQuestCompleted(9663)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9663" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9663" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(9663)">
 			<PickUp QuestName="Declaration of Power" QuestId="9666" GiverName="Kessel" GiverId="17649" X="-2662.24" Y="-12130.1" Z="17.4634" />
@@ -723,7 +723,7 @@
 			<TurnIn QuestName="Declaration of Power" QuestId="9666" TurnInName="Kessel" TurnInId="17649" X="-2662.24" Y="-12130.1" Z="17.4634" />
 		</If>
 		<If Condition="((HasQuest(9666)) &amp;&amp; (!IsQuestCompleted(9666)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9666" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9666" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(9666)">
 			<PickUp QuestName="Report to Exarch Admetius" QuestId="9668" GiverName="Kessel" GiverId="17649" X="-2662.24" Y="-12130.1" Z="17.4634" />
@@ -739,7 +739,7 @@
 			<TurnIn QuestName="Saving Princess Stillpine" QuestId="9667" TurnInName="Stillpine Ambassador Frasaboo" TurnInId="18803" X="-1975.23" Y="-11874.5" Z="49.3356" />
 		</If>
 		<If Condition="((HasQuest(9667)) &amp;&amp; (!IsQuestCompleted(9667)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9667" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9667" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10)">
 			<PickUp QuestName="Mac'Aree Mushroom Menagerie" QuestId="9648" GiverName="Jessera of Mac'Aree" GiverId="17663" X="-1994.23" Y="-11915.8" Z="51.5202" />
@@ -768,7 +768,7 @@
 			<TurnIn QuestName="Catch and Release" QuestId="9629" TurnInName="Morae" TurnInId="17434" X="-2014.22" Y="-11812.1" Z="53.9252" />
 		</If>
 		<If Condition="((HasQuest(9629)) &amp;&amp; (!IsQuestCompleted(9629)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9629" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9629" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(9629)">
 			<PickUp QuestName="Victims of Corruption" QuestId="9574" GiverName="Morae" GiverId="17434" X="-2014.22" Y="-11812.1" Z="53.9252" />
@@ -788,7 +788,7 @@
 			<TurnIn QuestName="Learning from the Crystals" QuestId="9581" TurnInName="Harbinger Mikolaas" TurnInId="17423" X="-1915.55" Y="-11790.6" Z="64.6045" />
 		</If>
 		<If Condition="((HasQuest(9581)) &amp;&amp; (!IsQuestCompleted(9581)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9581" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9581" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(9581)">
 			<PickUp QuestName="The Missing Survey Team" QuestId="9620" GiverName="Harbinger Mikolaas" GiverId="17423" X="-1915.55" Y="-11790.6" Z="64.6045" />
@@ -834,7 +834,7 @@
 			<TurnIn QuestName="The Second Sample" QuestId="9584" TurnInName="Harbinger Mikolaas" TurnInId="17423" X="-1915.55" Y="-11790.6" Z="64.6045" />
 		</If>
 		<If Condition="((HasQuest(9584)) &amp;&amp; (!IsQuestCompleted(9584)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9584" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9584" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(9584)">
 			<PickUp QuestName="The Final Sample" QuestId="9585" GiverName="Harbinger Mikolaas" GiverId="17423" X="-1915.55" Y="-11790.6" Z="64.6045" />
@@ -887,7 +887,7 @@
 			<TurnIn QuestName="The Final Sample" QuestId="9585" TurnInName="Harbinger Mikolaas" TurnInId="17423" X="-1915.55" Y="-11790.6" Z="64.6045" />
 		</If>
 		<If Condition="((HasQuest(9585)) &amp;&amp; (!IsQuestCompleted(9585)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9585" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9585" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 16)">
 			<PickUp QuestName="Talk to the Hand" QuestId="10064" GiverName="Harbinger Mikolaas" GiverId="17423" X="-1915.55" Y="-11790.6" Z="64.6045" />
@@ -957,7 +957,7 @@
 			<TurnIn QuestName="Razormaw" QuestId="9689" TurnInName="Prince Toreth" TurnInId="17674" X="-1507.09" Y="-12525.4" Z="4.8416" />
 		</If>
 		<If Condition="((HasQuest(9689)) &amp;&amp; (!IsQuestCompleted(9689)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9689" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9689" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Bloodcurse Legacy" QuestId="9751" TurnInName="Captain Edward Hanes" TurnInId="17712" X="-1251.07" Y="-12657.3" Z="0.8849" />
 		<TurnIn QuestName="The Bloodcurse Legacy" QuestId="9672" TurnInName="Captain Edward Hanes" TurnInId="17712" X="-1251.07" Y="-12657.3" Z="0.8849" />
@@ -979,7 +979,7 @@
 			<TurnIn QuestName="Ending the Bloodcurse" QuestId="9683" TurnInName="Captain Edward Hanes" TurnInId="17712" X="-1251.07" Y="-12657.3" Z="0.8849" />
 		</If>
 		<If Condition="((HasQuest(9683)) &amp;&amp; (!IsQuestCompleted(9683)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9683" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9683" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Ysera's Tears" QuestId="9649" TurnInName="Jessera of Mac'Aree" TurnInId="17663" X="-1994.23" Y="-11915.8" Z="51.5202" />
 		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(9700)">
@@ -1008,7 +1008,7 @@
 			<TurnIn QuestName="Don't Drink the Water" QuestId="9748" TurnInName="Vindicator Aesom" TurnInId="17844" X="-1963.4" Y="-11887.4" Z="49.0988" />
 		</If>
 		<If Condition="((HasQuest(9748)) &amp;&amp; (!IsQuestCompleted(9748)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9748" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9748" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(9748)">
 			<PickUp QuestName="Limits of Physical Exhaustion" QuestId="9746" GiverName="Vindicator Aesom" GiverId="17844" X="-1963.4" Y="-11887.4" Z="49.0988" />
@@ -1018,7 +1018,7 @@
 			<TurnIn QuestName="Matis the Cruel" QuestId="9711" TurnInName="Vindicator Kuros" TurnInId="17843" X="-1959.44" Y="-11890.1" Z="49.2366" />
 		</If>
 		<If Condition="((HasQuest(9711)) &amp;&amp; (!IsQuestCompleted(9711)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9711" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9711" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Limits of Physical Exhaustion" QuestId="9746" Type="KillMob" MobId="17608" KillCount="10" />
 		<Objective QuestName="Limits of Physical Exhaustion" QuestId="9746" Type="KillMob" MobId="17607" KillCount="10" />
@@ -1047,7 +1047,7 @@
 				<TurnIn QuestName="What We Don't Know..." QuestId="9756" TurnInName="Exarch Admetius" TurnInId="17658" X="-1915.68" Y="-11793.8" Z="64.6045" />
 			</If>
 			<If Condition="((HasQuest(9756)) &amp;&amp; (!IsQuestCompleted(9756)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9756" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9756" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
@@ -1116,7 +1116,7 @@
 			<TurnIn QuestName="They're Alive! Maybe..." QuestId="9670" TurnInName="Researcher Cornelius" TurnInId="17686" X="-1505.5" Y="-10886.6" Z="64.9206" />
 		</If>
 		<If Condition="((HasQuest(9670)) &amp;&amp; (!IsQuestCompleted(9670)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9670" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9670" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Missing Expedition" QuestId="9669" TurnInName="Achelus" TurnInId="17676" X="-1998.69" Y="-11812.1" Z="54.7612" />
 		<If Condition="((Me.Race == WoWRace.Draenei))">
@@ -1125,7 +1125,7 @@
 				<TurnIn QuestName="Ending Their World" QuestId="9759" TurnInName="Exarch Admetius" TurnInId="17658" X="-1915.68" Y="-11793.8" Z="64.6045" />
 			</If>
 			<If Condition="((HasQuest(9759)) &amp;&amp; (!IsQuestCompleted(9759)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9759" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9759" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<TurnIn QuestName="Critters of the Void" QuestId="9741" TurnInName="Vindicator Aesom" TurnInId="17844" X="-1963.4" Y="-11887.4" Z="49.0988" />

@@ -765,7 +765,7 @@
 			<TurnIn QuestName="Favor for Krazek" QuestId="627" TurnInName="Krazek" TurnInId="773" X="-14453.3" Y="501.465" Z="26.3593" />
 		</If>
 		<If Condition="((HasQuest(627)) &amp;&amp; (!IsQuestCompleted(627)))">
-			<CustomBehavior File="AbandonQuest" QuestId="627" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="627" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 32) &amp;&amp; IsQuestCompleted(627)">
 			<PickUp QuestName="Return to Corporal Kaleb" QuestId="622" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />
@@ -1004,7 +1004,7 @@
 			<TurnIn QuestName="Stranglethorn Fever" QuestId="348" TurnInName="Fin Fizracket" TurnInId="2486" X="-14433.2" Y="458.988" Z="15.5349" />
 		</If>
 		<If Condition="((HasQuest(348)) &amp;&amp; (!IsQuestCompleted(348)))">
-			<CustomBehavior File="AbandonQuest" QuestId="348" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="348" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Return to MacKinley" QuestId="607" TurnInName='"Sea Wolf" MacKinley' TurnInId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(607)">
@@ -1119,7 +1119,7 @@
 			<TurnIn QuestName="The Curse of the Tides" QuestId="611" TurnInName="Baron Revilgaz" TurnInId="2496" X="-14439" Y="483.483" Z="28.9285" />
 		</If>
 		<If Condition="((HasQuest(611)) &amp;&amp; (!IsQuestCompleted(611)))">
-			<CustomBehavior File="AbandonQuest" QuestId="611" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="611" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

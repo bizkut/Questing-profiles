@@ -272,7 +272,7 @@
 			<TurnIn QuestName="Target: Felstone Field" QuestId="5216" TurnInName="Scourge Cauldron" TurnInId="176361" TurnInType="Object" X="1738.88" Y="-1184.93" Z="59.2689" />
 		</If>
 		<If Condition="((HasQuest(5216)) &amp;&amp; (!IsQuestCompleted(5216)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5216" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5216" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5216)">
 			<PickUp QuestName="Return to Chillwind Camp" QuestId="5217" GiverName="Scourge Cauldron" GiverId="176361" GiverType="Object" X="1738.88" Y="-1184.93" Z="59.2689" />
@@ -303,7 +303,7 @@
 			<TurnIn QuestName="Alas, Andorhal" QuestId="211" TurnInName="Commander Ashlam Valorfist" TurnInId="10838" X="957.713" Y="-1419.47" Z="66.347" />
 		</If>
 		<If Condition="((HasQuest(211)) &amp;&amp; (!IsQuestCompleted(211)))">
-			<CustomBehavior File="AbandonQuest" QuestId="211" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="211" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 55) &amp;&amp; IsQuestCompleted(5097)">
 			<PickUp QuestName="Scholomance" QuestId="5533" GiverName="Commander Ashlam Valorfist" GiverId="10838" X="957.713" Y="-1419.47" Z="66.347" />
@@ -317,7 +317,7 @@
 			<TurnIn QuestName="Target: Dalson's Tears" QuestId="5219" TurnInName="Scourge Cauldron" TurnInId="177289" TurnInType="Object" X="1878.8" Y="-1568.91" Z="58.9335" />
 		</If>
 		<If Condition="((HasQuest(5219)) &amp;&amp; (!IsQuestCompleted(5219)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5219" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5219" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5219)">
 			<PickUp QuestName="Return to Chillwind Camp" QuestId="5220" GiverName="Scourge Cauldron" GiverId="177289" GiverType="Object" X="1878.8" Y="-1568.91" Z="58.9335" />
@@ -369,7 +369,7 @@
 			<TurnIn QuestName="Tomb of the Lightbringer" QuestId="9446" TurnInName="High Priestess MacDonnell" TurnInId="11053" X="944.298" Y="-1431.14" Z="64.0076" />
 		</If>
 		<If Condition="((HasQuest(9446)) &amp;&amp; (!IsQuestCompleted(9446)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9446" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9446" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Better Late Than Never" QuestId="5022" TurnInName="Royal Factor Bathrilor" TurnInId="10782" X="-8552.63" Y="729.489" Z="108.848" />
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5022)">
@@ -409,14 +409,14 @@
 			<TurnIn QuestName="Two Halves Become One" QuestId="5051" TurnInName="Janice Felstone" TurnInId="10778" X="1817.14" Y="-1234.57" Z="65.1924" />
 		</If>
 		<If Condition="((HasQuest(5051)) &amp;&amp; (!IsQuestCompleted(5051)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5051" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5051" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q5222 Target: Writhing Haunt: item 13197 Writhing Haunt Cauldron Key has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(5222)) &amp;&amp; (IsQuestCompleted(5222)))">
 			<TurnIn QuestName="Target: Writhing Haunt" QuestId="5222" TurnInName="Scourge Cauldron" TurnInId="176393" TurnInType="Object" X="1485.84" Y="-1863.15" Z="58.4416" />
 		</If>
 		<If Condition="((HasQuest(5222)) &amp;&amp; (!IsQuestCompleted(5222)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5222" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5222" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5222)">
 			<PickUp QuestName="Return to Chillwind Camp" QuestId="5223" GiverName="Scourge Cauldron" GiverId="176393" GiverType="Object" X="1485.84" Y="-1863.15" Z="58.4416" />
@@ -447,7 +447,7 @@
 			<TurnIn QuestName="Target: Gahrron's Withering" QuestId="5225" TurnInName="Scourge Cauldron" TurnInId="176392" TurnInType="Object" X="1690.47" Y="-2272.56" Z="58.9362" />
 		</If>
 		<If Condition="((HasQuest(5225)) &amp;&amp; (!IsQuestCompleted(5225)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5225" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5225" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5225)">
 			<PickUp QuestName="Return to Chillwind Camp" QuestId="5226" GiverName="Scourge Cauldron" GiverId="176392" GiverType="Object" X="1690.47" Y="-2272.56" Z="58.9362" />
@@ -467,7 +467,7 @@
 			<TurnIn QuestName="Pamela's Doll" QuestId="5149" TurnInName="Pamela Redpath" TurnInId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
 		</If>
 		<If Condition="((HasQuest(5149)) &amp;&amp; (!IsQuestCompleted(5149)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5149" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5149" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5149)">
 			<PickUp QuestName="Uncle Carlin" QuestId="5241" GiverName="Pamela Redpath" GiverId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
@@ -505,7 +505,7 @@
 			<TurnIn QuestName="A Matter of Time" QuestId="4971" TurnInName="Chromie" TurnInId="10667" X="1452.81" Y="-1279.91" Z="68.6052" />
 		</If>
 		<If Condition="((HasQuest(4971)) &amp;&amp; (!IsQuestCompleted(4971)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4971" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4971" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(4971)">
 			<PickUp QuestName="Counting Out Time" QuestId="4972" GiverName="Chromie" GiverId="10667" X="1452.81" Y="-1279.91" Z="68.6052" />

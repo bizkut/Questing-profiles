@@ -236,7 +236,7 @@
 		<If Condition="(((Me.Race == WoWRace.Human) &amp;&amp; (Me.Class == WoWClass.Warlock)))">
 			<!-- SKIP turn-in Q1598 The Stolen Tome: no turn-in NPC with a spawn in the database -->
 			<If Condition="((HasQuest(1598)) &amp;&amp; (!IsQuestCompleted(1598)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1598" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1598" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<TurnIn QuestName="Grape Manifest" QuestId="3905" TurnInName="Brother Neals" TurnInId="952" X="-8902.13" Y="-181.646" Z="113.24" />

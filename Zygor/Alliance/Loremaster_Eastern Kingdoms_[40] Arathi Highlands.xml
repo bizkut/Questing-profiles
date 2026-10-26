@@ -452,7 +452,7 @@
 			<TurnIn QuestName="Hints of a New Plague?" QuestId="660" TurnInName="Quae" TurnInId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
 		</If>
 		<If Condition="((HasQuest(660)) &amp;&amp; (!IsQuestCompleted(660)))">
-			<CustomBehavior File="AbandonQuest" QuestId="660" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="660" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(660)">
 			<PickUp QuestName="Hints of a New Plague?" QuestId="661" GiverName="Quae" GiverId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
@@ -492,7 +492,7 @@
 			<TurnIn QuestName="Sunken Treasure" QuestId="665" TurnInName="Doctor Draxlegauge" TurnInId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
 		</If>
 		<If Condition="((HasQuest(665)) &amp;&amp; (!IsQuestCompleted(665)))">
-			<CustomBehavior File="AbandonQuest" QuestId="665" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="665" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(665)">
 			<PickUp QuestName="Sunken Treasure" QuestId="666" GiverName="Doctor Draxlegauge" GiverId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
@@ -558,7 +558,7 @@
 			<TurnIn QuestName="Summoning the Princess" QuestId="656" TurnInName="Shards of Myzrael" TurnInId="138492" TurnInType="Object" X="-942.842" Y="-3116.75" Z="48.4206" />
 		</If>
 		<If Condition="((HasQuest(656)) &amp;&amp; (!IsQuestCompleted(656)))">
-			<CustomBehavior File="AbandonQuest" QuestId="656" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="656" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Sunken Treasure" QuestId="670" TurnInName="Shakes O'Breen" TurnInId="2610" X="-2086.35" Y="-2028.79" Z="3.3717" />
 		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(670)">
@@ -569,7 +569,7 @@
 			<TurnIn QuestName="Death From Below" QuestId="667" TurnInName="Shakes O'Breen" TurnInId="2610" X="-2086.35" Y="-2028.79" Z="3.3717" />
 		</If>
 		<If Condition="((HasQuest(667)) &amp;&amp; (!IsQuestCompleted(667)))">
-			<CustomBehavior File="AbandonQuest" QuestId="667" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="667" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

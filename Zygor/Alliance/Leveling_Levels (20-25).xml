@@ -677,7 +677,7 @@
 				<TurnIn QuestName="The Binding" QuestId="1739" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
 			</If>
 			<If Condition="((HasQuest(1739)) &amp;&amp; (!IsQuestCompleted(1739)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1739" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1739" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((HasQuest(92)) &amp;&amp; (!IsQuestCompleted(92)))">
@@ -785,7 +785,7 @@
 		</If>
 		<!-- SKIP turn-in Q944 The Master's Glaive: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(944)) &amp;&amp; (!IsQuestCompleted(944)))">
-			<CustomBehavior File="AbandonQuest" QuestId="944" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="944" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q949 The Twilight Camp: no quest giver with a spawn in the database -->
 		<!-- REVIEW Q949 The Twilight Camp: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -793,7 +793,7 @@
 			<TurnIn QuestName="The Twilight Camp" QuestId="949" TurnInName="Twilight Tome" TurnInId="12666" TurnInType="Object" X="4575.75" Y="417.029" Z="34.9274" />
 		</If>
 		<If Condition="((HasQuest(949)) &amp;&amp; (!IsQuestCompleted(949)))">
-			<CustomBehavior File="AbandonQuest" QuestId="949" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="949" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(949)">
 			<PickUp QuestName="Return to Onu" QuestId="950" GiverName="Twilight Tome" GiverId="12666" GiverType="Object" X="4575.75" Y="417.029" Z="34.9274" />
@@ -814,7 +814,7 @@
 			<TurnIn QuestName="The Sleeper Has Awakened" QuestId="5321" TurnInName="Liladris Moonriver" TurnInId="11219" X="3305.22" Y="127.885" Z="16.1994" />
 		</If>
 		<If Condition="((HasQuest(5321)) &amp;&amp; (!IsQuestCompleted(5321)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5321" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5321" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Tower of Althalaxx" QuestId="967" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
 		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(967)">
@@ -828,7 +828,7 @@
 			<TurnIn QuestName="Therylune's Escape" QuestId="945" TurnInName="Therysil" TurnInId="3585" X="2677.34" Y="394.207" Z="69.8261" />
 		</If>
 		<If Condition="((HasQuest(945)) &amp;&amp; (!IsQuestCompleted(945)))">
-			<CustomBehavior File="AbandonQuest" QuestId="945" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="945" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 17)">
 			<PickUp QuestName="On Guard in Stonetalon" QuestId="1070" GiverName="Sentinel Thenysil" GiverId="4079" X="2758.97" Y="-312.097" Z="110.88" />
@@ -928,7 +928,7 @@
 			<TurnIn QuestName="Elemental Bracers" QuestId="1016" TurnInName="Sentinel Velene Starstrike" TurnInId="3885" X="2089.5" Y="-1171.56" Z="101.876" />
 		</If>
 		<If Condition="((HasQuest(1016)) &amp;&amp; (!IsQuestCompleted(1016)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1016" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1016" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 16)">
 			<PickUp QuestName="Super Reaper 6000" QuestId="1093" GiverName="Ziz Fizziks" GiverId="4201" X="878.289" Y="365.192" Z="23.2634" />
@@ -963,7 +963,7 @@
 			<TurnIn QuestName="Escape Through Force" QuestId="994" TurnInName="Terenthis" TurnInId="3693" X="6434.59" Y="362.807" Z="14.0243" />
 		</If>
 		<If Condition="((HasQuest(994)) &amp;&amp; (!IsQuestCompleted(994)))">
-			<CustomBehavior File="AbandonQuest" QuestId="994" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="994" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Scroll from Mauren" QuestId="1075" TurnInName="Collin Mauren" TurnInId="4078" X="-8999.45" Y="801.736" Z="105.47" />
 		<TurnIn QuestName="An Old Colleague" QuestId="1072" TurnInName="Lomac Gearstrip" TurnInId="4081" X="-4842.96" Y="-1283.51" Z="501.951" />
@@ -1003,7 +1003,7 @@
 			<TurnIn QuestName="The Third Fleet" QuestId="288" TurnInName="First Mate Fitzsimmons" TurnInId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
 		</If>
 		<If Condition="((HasQuest(288)) &amp;&amp; (!IsQuestCompleted(288)))">
-			<CustomBehavior File="AbandonQuest" QuestId="288" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="288" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 19)">
 			<PickUp QuestName="Digging Through the Ooze" QuestId="470" GiverName="Sida" GiverId="2111" X="-3746.29" Y="-877.423" Z="10.1325" />

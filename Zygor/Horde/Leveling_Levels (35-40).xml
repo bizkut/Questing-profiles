@@ -888,7 +888,7 @@
 			<TurnIn QuestName="Bloodscalp Ears" QuestId="189" TurnInName="Kebok" TurnInId="737" X="-14449.8" Y="497.925" Z="26.3693" />
 		</If>
 		<If Condition="((HasQuest(189)) &amp;&amp; (!IsQuestCompleted(189)))">
-			<CustomBehavior File="AbandonQuest" QuestId="189" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="189" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((HasQuest(213)) &amp;&amp; (!IsQuestCompleted(213)))">
 			<Objective QuestName="Hostile Takeover" QuestId="213" Type="CollectItem" ItemId="4106" CollectCount="8" />
@@ -1022,7 +1022,7 @@
 			<TurnIn QuestName="An Unusual Patron" QuestId="9457" TurnInName="Nemeth Hawkeye" TurnInId="17094" X="-12385.7" Y="180.811" Z="2.6231" />
 		</If>
 		<If Condition="((HasQuest(9457)) &amp;&amp; (!IsQuestCompleted(9457)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9457" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9457" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((HasQuest(629)) &amp;&amp; (!IsQuestCompleted(629)))">
 			<Objective QuestName="The Vile Reef" QuestId="629" Type="CollectItem" ItemId="4094" CollectCount="1" />
@@ -1065,7 +1065,7 @@
 			<TurnIn QuestName="Sunken Treasure" QuestId="665" TurnInName="Doctor Draxlegauge" TurnInId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
 		</If>
 		<If Condition="((HasQuest(665)) &amp;&amp; (!IsQuestCompleted(665)))">
-			<CustomBehavior File="AbandonQuest" QuestId="665" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="665" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(665)">
 			<PickUp QuestName="Sunken Treasure" QuestId="666" GiverName="Doctor Draxlegauge" GiverId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
@@ -1199,7 +1199,7 @@
 			<TurnIn QuestName="What's Haunting Witch Hill?" QuestId="11180" TurnInName="Mordant Grimsby" TurnInId="23843" X="-2948.36" Y="-3893.17" Z="35.0324" />
 		</If>
 		<If Condition="((HasQuest(11180)) &amp;&amp; (!IsQuestCompleted(11180)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11180" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11180" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11180)">
 			<PickUp QuestName="The Witch's Bane" QuestId="11181" GiverName="Mordant Grimsby" GiverId="23843" X="-2948.36" Y="-3893.17" Z="35.0324" />
@@ -1214,7 +1214,7 @@
 			<TurnIn QuestName="Cleansing Witch Hill" QuestId="11183" TurnInName="Mordant Grimsby" TurnInId="23843" X="-2948.36" Y="-3893.17" Z="35.0324" />
 		</If>
 		<If Condition="((HasQuest(11183)) &amp;&amp; (!IsQuestCompleted(11183)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11183" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11183" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30)">
 			<PickUp QuestName="Stinky's Escape" QuestId="1270" GiverName='"Stinky" Ignatz' GiverId="4880" X="-2646.43" Y="-3436.07" Z="35.3732" />
@@ -1227,7 +1227,7 @@
 			<TurnIn QuestName="Twilight of the Dawn Runner" QuestId="9437" TurnInName="Balandar Brightstar" TurnInId="17095" X="-3144.24" Y="-2857.7" Z="34.3922" />
 		</If>
 		<If Condition="((HasQuest(9437)) &amp;&amp; (!IsQuestCompleted(9437)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9437" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9437" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Jarl Needs Eyes" QuestId="1206" TurnInName='"Swamp Eye" Jarl' TurnInId="4792" X="-2952.76" Y="-3885.41" Z="34.3089" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1238)">
@@ -1242,7 +1242,7 @@
 			<TurnIn QuestName="Stinky's Escape" QuestId="1270" TurnInName="Mebok Mizzyrix" TurnInId="3446" X="-928.982" Y="-3697.23" Z="8.0664" />
 		</If>
 		<If Condition="((HasQuest(1270)) &amp;&amp; (!IsQuestCompleted(1270)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1270" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1270" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 37)">
 			<PickUp QuestName="The Bloodsail Buccaneers" QuestId="595" GiverName="First Mate Crazz" GiverId="2490" X="-14411.1" Y="427.967" Z="8.9573" />

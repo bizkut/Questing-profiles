@@ -37,7 +37,7 @@
 			<TurnIn QuestName="Finish the Shipment" QuestId="13041" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(13041)) &amp;&amp; (!IsQuestCompleted(13041)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13041" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13041" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Dalaran\Jewelcrafting Dailies Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>

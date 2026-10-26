@@ -45,7 +45,7 @@
 			<TurnIn QuestName="Planning for the Future" QuestId="11960" TurnInName="Trapper Mau'i" TurnInId="26228" X="2794.68" Y="920.762" Z="22.4113" />
 		</If>
 		<If Condition="((HasQuest(11960)) &amp;&amp; (!IsQuestCompleted(11960)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11960" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11960" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Dragonblight\Moa'ki Harbor Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

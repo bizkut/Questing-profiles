@@ -1063,7 +1063,7 @@
 			<TurnIn QuestName="Sprinkle's Secret Ingredient" QuestId="2641" TurnInName="Sprinkle" TurnInId="7583" X="-7111.11" Y="-3741.78" Z="8.6093" />
 		</If>
 		<If Condition="((HasQuest(2641)) &amp;&amp; (!IsQuestCompleted(2641)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2641" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2641" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 44) &amp;&amp; IsQuestCompleted(2641)">
 			<PickUp QuestName="Delivery for Marin" QuestId="2661" GiverName="Sprinkle" GiverId="7583" X="-7111.11" Y="-3741.78" Z="8.6093" />
@@ -1109,7 +1109,7 @@
 			<TurnIn QuestName="Divine Retribution" QuestId="3441" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		</If>
 		<If Condition="((HasQuest(3441)) &amp;&amp; (!IsQuestCompleted(3441)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3441" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3441" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3441)">
 			<PickUp QuestName="The Flawless Flame" QuestId="3442" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
@@ -1136,7 +1136,7 @@
 			<TurnIn QuestName="Caught!" QuestId="4449" TurnInName="Wooden Outhouse" TurnInId="173265" TurnInType="Object" X="-7024.78" Y="-1786.5" Z="265.828" />
 		</If>
 		<If Condition="((HasQuest(4449)) &amp;&amp; (!IsQuestCompleted(4449)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4449" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4449" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 43) &amp;&amp; IsQuestCompleted(4449)">
 			<PickUp QuestName="Ledger from Tanaris" QuestId="4450" GiverName="Wooden Outhouse" GiverId="173265" GiverType="Object" X="-7024.78" Y="-1786.5" Z="265.828" />
@@ -1148,7 +1148,7 @@
 		</If>
 		<!-- SKIP turn-in Q3367 Suntara Stones: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(3367)) &amp;&amp; (!IsQuestCompleted(3367)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3367" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3367" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q3368 Suntara Stones: no quest giver with a spawn in the database -->
 		<TurnIn QuestName="The Flawless Flame" QuestId="3442" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
@@ -1168,7 +1168,7 @@
 			<TurnIn QuestName="Suntara Stones" QuestId="3368" TurnInName="Curator Thorius" TurnInId="8256" X="-4654.31" Y="-1281.54" Z="503.382" />
 		</If>
 		<If Condition="((HasQuest(3368)) &amp;&amp; (!IsQuestCompleted(3368)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3368" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3368" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3368)">
 			<PickUp QuestName="Dwarven Justice" QuestId="3371" GiverName="Curator Thorius" GiverId="8256" X="-4654.31" Y="-1281.54" Z="503.382" />
@@ -1208,7 +1208,7 @@
 			<TurnIn QuestName="Prayer to Elune" QuestId="3377" TurnInName="Zamael Lunthistle" TurnInId="8436" X="-6491.07" Y="-982.717" Z="335.561" />
 		</If>
 		<If Condition="((HasQuest(3377)) &amp;&amp; (!IsQuestCompleted(3377)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3377" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3377" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3377)">
 			<PickUp QuestName="Prayer to Elune" QuestId="3378" GiverName="Zamael Lunthistle" GiverId="8436" X="-6491.07" Y="-982.717" Z="335.561" />
@@ -1223,14 +1223,14 @@
 			<TurnIn QuestName="The Torch of Retribution" QuestId="3453" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		</If>
 		<If Condition="((HasQuest(3453)) &amp;&amp; (!IsQuestCompleted(3453)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3453" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3453" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3453)">
 			<PickUp QuestName="The Torch of Retribution" QuestId="3454" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		</If>
 		<!-- SKIP turn-in Q3454 The Torch of Retribution: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(3454)) &amp;&amp; (!IsQuestCompleted(3454)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3454" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3454" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3454)">
 			<PickUp QuestName="Squire Maltrake" QuestId="3462" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
@@ -1265,7 +1265,7 @@
 			<TurnIn QuestName="A Tale of Sorrow" QuestId="2801" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
 		</If>
 		<If Condition="((HasQuest(2801)) &amp;&amp; (!IsQuestCompleted(2801)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2801" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2801" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Ledger from Tanaris" QuestId="4450" Type="CollectItem" ItemId="11723" CollectCount="1" />
 		<!-- REVIEW Q3566 Rise, Obsidion!: item 10447 Head of Lathoric the Black has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1273,7 +1273,7 @@
 			<TurnIn QuestName="Rise, Obsidion!" QuestId="3566" TurnInName="Curator Thorius" TurnInId="8256" X="-4654.31" Y="-1281.54" Z="503.382" />
 		</If>
 		<If Condition="((HasQuest(3566)) &amp;&amp; (!IsQuestCompleted(3566)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3566" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3566" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Prayer to Elune" QuestId="3378" TurnInName="Astarii Starseeker" TurnInId="4090" X="9667.02" Y="2532.66" Z="1360.08" />
 		<TurnIn QuestName="Rise of the Silithid" QuestId="162" TurnInName="Gracina Spiritmight" TurnInId="7740" X="9634.06" Y="2495.63" Z="1354.89" />
@@ -1320,7 +1320,7 @@
 			<TurnIn QuestName="The Scent of Lar'korwi" QuestId="4291" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
 		<If Condition="((HasQuest(4291)) &amp;&amp; (!IsQuestCompleted(4291)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4291" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4291" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(4291)">
 			<PickUp QuestName="The Bait for Lar'korwi" QuestId="4292" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
@@ -1336,7 +1336,7 @@
 			<TurnIn QuestName="It's a Secret to Everybody" QuestId="3845" TurnInName="Linken" TurnInId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
 		</If>
 		<If Condition="((HasQuest(3845)) &amp;&amp; (!IsQuestCompleted(3845)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3845" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3845" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3845)">
 			<PickUp QuestName="It's a Secret to Everybody" QuestId="3908" GiverName="Linken" GiverId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
@@ -1391,7 +1391,7 @@
 			<TurnIn QuestName="The Bait for Lar'korwi" QuestId="4292" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
 		<If Condition="((HasQuest(4292)) &amp;&amp; (!IsQuestCompleted(4292)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4292" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4292" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Apes of Un'Goro" QuestId="4289" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		<Objective QuestName="Bungle in the Jungle" QuestId="4496" Type="CollectItem" ItemId="11837" CollectCount="1" />
@@ -1423,7 +1423,7 @@
 			<TurnIn QuestName="A Little Help From My Friends" QuestId="4491" TurnInName="Spraggle Frock" TurnInId="9997" X="-6176.27" Y="-1080.49" Z="-203.81" />
 		</If>
 		<If Condition="((HasQuest(4491)) &amp;&amp; (!IsQuestCompleted(4491)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4491" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4491" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Expedition Salvation" QuestId="3881" TurnInName="Williden Marshal" TurnInId="9270" X="-6142.71" Y="-1092.69" Z="-200.187" />
 		<!-- REVIEW Q3883 Alien Ecology: item 11131 Hive Wall Sample has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1431,7 +1431,7 @@
 			<TurnIn QuestName="Alien Ecology" QuestId="3883" TurnInName="Hol'anyee Marshal" TurnInId="9271" X="-6145.24" Y="-1090.56" Z="-200.204" />
 		</If>
 		<If Condition="((HasQuest(3883)) &amp;&amp; (!IsQuestCompleted(3883)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3883" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3883" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Roll the Bones" QuestId="3882" TurnInName="Spark Nilminer" TurnInId="9272" X="-6149.73" Y="-1076.11" Z="-198.908" />
 		<!-- REVIEW Q4285 The Northern Pylon: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1439,21 +1439,21 @@
 			<TurnIn QuestName="The Northern Pylon" QuestId="4285" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
 		<If Condition="((HasQuest(4285)) &amp;&amp; (!IsQuestCompleted(4285)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4285" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4285" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q4287 The Eastern Pylon: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4287)) &amp;&amp; (IsQuestCompleted(4287)))">
 			<TurnIn QuestName="The Eastern Pylon" QuestId="4287" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
 		<If Condition="((HasQuest(4287)) &amp;&amp; (!IsQuestCompleted(4287)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4287" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4287" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q4288 The Western Pylon: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4288)) &amp;&amp; (IsQuestCompleted(4288)))">
 			<TurnIn QuestName="The Western Pylon" QuestId="4288" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
 		<If Condition="((HasQuest(4288)) &amp;&amp; (!IsQuestCompleted(4288)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4288" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4288" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; (IsQuestCompleted(4285) || IsQuestCompleted(4287) || IsQuestCompleted(4288))">
 			<PickUp QuestName="Making Sense of It" QuestId="4321" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
@@ -1463,7 +1463,7 @@
 			<TurnIn QuestName="Making Sense of It" QuestId="4321" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		</If>
 		<If Condition="((HasQuest(4321)) &amp;&amp; (!IsQuestCompleted(4321)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4321" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4321" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Muigin and Larion" QuestId="4141" TurnInName="Muigin" TurnInId="9119" X="-6204.39" Y="-1055.46" Z="-197.748" />
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(4141)">
@@ -1478,7 +1478,7 @@
 			<TurnIn QuestName="Un'Goro Soil" QuestId="3764" TurnInName="Jenal" TurnInId="9047" X="10180.2" Y="2605.13" Z="1322.15" />
 		</If>
 		<If Condition="((HasQuest(3764)) &amp;&amp; (!IsQuestCompleted(3764)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3764" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3764" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3764)">
 			<PickUp QuestName="Morrowgrain Research" QuestId="3781" GiverName="Arch Druid Fandral Staghelm" GiverId="3516" X="10173" Y="2569.92" Z="1366.96" />
@@ -1527,7 +1527,7 @@
 		</If>
 		<!-- SKIP turn-in Q3449 Arcane Runes: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(3449)) &amp;&amp; (!IsQuestCompleted(3449)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3449" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3449" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q3461 Return to Tymor: no quest giver with a spawn in the database -->
 		<If Condition="(Me.Level &gt;= 48)">
@@ -1578,7 +1578,7 @@
 			<TurnIn QuestName="Collection of the Corrupt Water" QuestId="5157" TurnInName="Greta Mosshoof" TurnInId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
 		</If>
 		<If Condition="((HasQuest(5157)) &amp;&amp; (!IsQuestCompleted(5157)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5157" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5157" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(5157)">
 			<PickUp QuestName="Seeking Spiritual Aid" QuestId="5158" GiverName="Greta Mosshoof" GiverId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
@@ -1630,7 +1630,7 @@
 			<TurnIn QuestName="Further Corruption" QuestId="4906" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
 		</If>
 		<If Condition="((HasQuest(4906)) &amp;&amp; (!IsQuestCompleted(4906)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4906" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4906" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 49) &amp;&amp; IsQuestCompleted(939)">
 			<PickUp QuestName="Felbound Ancients" QuestId="4441" GiverName="Eridan Bluewind" GiverId="9116" X="4008.81" Y="-1310.94" Z="254.58" />

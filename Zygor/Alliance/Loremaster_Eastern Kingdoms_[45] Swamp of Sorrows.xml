@@ -223,7 +223,7 @@
 			<TurnIn QuestName="Galen's Escape" QuestId="1393" TurnInName="Galen's Strongbox" TurnInId="32569" TurnInType="Object" X="-10228.8" Y="-3319.46" Z="22.3632" />
 		</If>
 		<If Condition="((HasQuest(1393)) &amp;&amp; (!IsQuestCompleted(1393)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1393" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1393" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Lost Caravan" QuestId="1421" TurnInName="Watcher Biggs" TurnInId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1421)">

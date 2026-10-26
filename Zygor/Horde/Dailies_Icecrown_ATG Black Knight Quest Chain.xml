@@ -134,7 +134,7 @@
 			<TurnIn QuestName="There's Something About the Squire" QuestId="13654" TurnInName="Crusader Rhydalla" TurnInId="33417" X="8464.64" Y="1089.84" Z="554.493" />
 		</If>
 		<If Condition="((HasQuest(13654)) &amp;&amp; (!IsQuestCompleted(13654)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13654" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13654" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13654)">
 			<PickUp QuestName="The Black Knight's Orders" QuestId="13663" GiverName="Crusader Rhydalla" GiverId="33417" X="8464.64" Y="1089.84" Z="554.493" />
@@ -146,7 +146,7 @@
 			<TurnIn QuestName="The Black Knight's Orders" QuestId="13663" TurnInName="Crusader Rhydalla" TurnInId="33417" X="8464.64" Y="1089.84" Z="554.493" />
 		</If>
 		<If Condition="((HasQuest(13663)) &amp;&amp; (!IsQuestCompleted(13663)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13663" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13663" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13663)">
 			<PickUp QuestName="The Black Knight's Fall" QuestId="13664" GiverName="Crusader Rhydalla" GiverId="33417" X="8464.64" Y="1089.84" Z="554.493" />
@@ -156,7 +156,7 @@
 			<TurnIn QuestName="The Black Knight's Fall" QuestId="13664" TurnInName="Crusader Rhydalla" TurnInId="33417" X="8464.64" Y="1089.84" Z="554.493" />
 		</If>
 		<If Condition="((HasQuest(13664)) &amp;&amp; (!IsQuestCompleted(13664)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13664" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13664" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13664)">
 			<PickUp QuestName="The Black Knight's Curse" QuestId="14016" GiverName="Crusader Rhydalla" GiverId="33417" X="8464.64" Y="1089.84" Z="554.493" />
@@ -166,7 +166,7 @@
 			<TurnIn QuestName="The Black Knight's Curse" QuestId="14016" TurnInName="Crusader Rhydalla" TurnInId="33417" X="8464.64" Y="1089.84" Z="554.493" />
 		</If>
 		<If Condition="((HasQuest(14016)) &amp;&amp; (!IsQuestCompleted(14016)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14016" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14016" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(14016)">
 			<PickUp QuestName="The Black Knight's Fate" QuestId="14017" GiverName="Crusader Rhydalla" GiverId="33417" X="8464.64" Y="1089.84" Z="554.493" />

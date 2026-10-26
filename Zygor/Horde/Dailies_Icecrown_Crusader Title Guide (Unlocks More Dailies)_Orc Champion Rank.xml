@@ -127,21 +127,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13762" TurnInName="Mokra the Skullcrusher" TurnInId="33361" X="8398.04" Y="648.065" Z="550.344" />
 		</If>
 		<If Condition="((HasQuest(13762)) &amp;&amp; (!IsQuestCompleted(13762)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13762" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13762" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13763 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13763)) &amp;&amp; (IsQuestCompleted(13763)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13763" TurnInName="Mokra the Skullcrusher" TurnInId="33361" X="8398.04" Y="648.065" Z="550.344" />
 		</If>
 		<If Condition="((HasQuest(13763)) &amp;&amp; (!IsQuestCompleted(13763)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13763" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13763" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13764 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13764)) &amp;&amp; (IsQuestCompleted(13764)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13764" TurnInName="Mokra the Skullcrusher" TurnInId="33361" X="8398.04" Y="648.065" Z="550.344" />
 		</If>
 		<If Condition="((HasQuest(13764)) &amp;&amp; (!IsQuestCompleted(13764)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13764" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13764" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Valiant's Field Training" QuestId="13765" TurnInName="Akinos" TurnInId="33405" X="8403.98" Y="646.323" Z="550.259" />
 		<!-- REVIEW Q13767 The Grand Melee: item 45127 Mark of the Valiant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -149,7 +149,7 @@
 			<TurnIn QuestName="The Grand Melee" QuestId="13767" TurnInName="Morah Worgsister" TurnInId="33544" X="8399.17" Y="652.768" Z="550.345" />
 		</If>
 		<If Condition="((HasQuest(13767)) &amp;&amp; (!IsQuestCompleted(13767)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13767" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13767" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="At The Enemy's Gates" QuestId="13856" TurnInName="Morah Worgsister" TurnInId="33544" X="8399.17" Y="652.768" Z="550.345" />
 		<!-- REVIEW Q13697 The Valiant's Charge: item 44987 Valiant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -157,7 +157,7 @@
 			<TurnIn QuestName="The Valiant's Charge" QuestId="13697" TurnInName="Mokra the Skullcrusher" TurnInId="33361" X="8398.04" Y="648.065" Z="550.344" />
 		</If>
 		<If Condition="((HasQuest(13697)) &amp;&amp; (!IsQuestCompleted(13697)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13697" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13697" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13697)">
 			<PickUp QuestName="The Valiant's Challenge" QuestId="13726" GiverName="Mokra the Skullcrusher" GiverId="33361" X="8398.04" Y="648.065" Z="550.344" />
@@ -167,7 +167,7 @@
 			<TurnIn QuestName="The Valiant's Challenge" QuestId="13726" TurnInName="Mokra the Skullcrusher" TurnInId="33361" X="8398.04" Y="648.065" Z="550.344" />
 		</If>
 		<If Condition="((HasQuest(13726)) &amp;&amp; (!IsQuestCompleted(13726)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13726" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13726" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Crusader Title Guide (Unlocks More Dailies)\Orc Champion Rank: done for today" LogColor="Green" />
 	</QuestOrder>

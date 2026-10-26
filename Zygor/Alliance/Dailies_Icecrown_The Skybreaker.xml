@@ -111,28 +111,28 @@
 			<TurnIn QuestName="That's Abominable!" QuestId="13289" TurnInName="Thassarian" TurnInId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
 		<If Condition="((HasQuest(13289)) &amp;&amp; (!IsQuestCompleted(13289)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13289" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13289" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13323 Drag and Drop: collect 32229 Drag Drop KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13323)) &amp;&amp; (IsQuestCompleted(13323)))">
 			<TurnIn QuestName="Drag and Drop" QuestId="13323" TurnInName="Thassarian" TurnInId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
 		<If Condition="((HasQuest(13323)) &amp;&amp; (!IsQuestCompleted(13323)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13323" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13323" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13344 Not a Bug: helper item 44434 Dark Matter has no creature or object source near the guide coordinates; goal 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13344)) &amp;&amp; (IsQuestCompleted(13344)))">
 			<TurnIn QuestName="Not a Bug" QuestId="13344" TurnInName="Thassarian" TurnInId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
 		<If Condition="((HasQuest(13344)) &amp;&amp; (!IsQuestCompleted(13344)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13344" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13344" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13300 Slaves to Saronite: goal 31866 Slaves to Saronite Kill Credit Bunny x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13300)) &amp;&amp; (IsQuestCompleted(13300)))">
 			<TurnIn QuestName="Slaves to Saronite" QuestId="13300" TurnInName="Absalan the Pious" TurnInId="31259" X="16.8761" Y="-17.8635" Z="20.4597" />
 		</If>
 		<If Condition="((HasQuest(13300)) &amp;&amp; (!IsQuestCompleted(13300)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13300" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13300" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Blood of the Chosen" QuestId="13336" TurnInName="Knight-Captain Drosche" TurnInId="32302" X="54.6648" Y="-6.9431" Z="40.0874" />
 		<!-- REVIEW Q13292 The Solution Solution: use item 44048: target 31364 Frostbrood Skytalon KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -140,14 +140,14 @@
 			<TurnIn QuestName="The Solution Solution" QuestId="13292" TurnInName="Chief Engineer Boltwrench" TurnInId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
 		<If Condition="((HasQuest(13292)) &amp;&amp; (!IsQuestCompleted(13292)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13292" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13292" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13322 Retest Now: helper item 44304 Writhing Mass has no creature or object source near the guide coordinates; use item 44304: target 32266 Writhing Mass KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13322)) &amp;&amp; (IsQuestCompleted(13322)))">
 			<TurnIn QuestName="Retest Now" QuestId="13322" TurnInName="Chief Engineer Boltwrench" TurnInId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
 		<If Condition="((HasQuest(13322)) &amp;&amp; (!IsQuestCompleted(13322)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13322" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13322" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\The Skybreaker: done for today" LogColor="Green" />
 	</QuestOrder>

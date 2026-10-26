@@ -94,7 +94,7 @@
 			<TurnIn QuestName="Shred the Alliance" QuestId="12270" TurnInName="Grekk" TurnInId="27423" X="4379.31" Y="-2921.89" Z="309.674" />
 		</If>
 		<If Condition="((HasQuest(12270)) &amp;&amp; (!IsQuestCompleted(12270)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12270" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12270" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Making Repairs" QuestId="12280" TurnInName="Lurz" TurnInId="27422" X="4375.69" Y="-2913.61" Z="309.611" />
 		<!-- REVIEW Q12284 Keep 'Em on Their Heels: goal 27453 Blue Sky Kill Credit Bunny - Grizzly Hills x15: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -102,14 +102,14 @@
 			<TurnIn QuestName="Keep 'Em on Their Heels" QuestId="12284" TurnInName="Commander Bargok" TurnInId="27451" X="4361.63" Y="-2920.85" Z="309.522" />
 		</If>
 		<If Condition="((HasQuest(12284)) &amp;&amp; (!IsQuestCompleted(12284)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12284" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12284" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12288 Overwhelmed!: use item 37568: target 27466 Kill Credit Bunny - Wounded Skirmishers has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12288)) &amp;&amp; (IsQuestCompleted(12288)))">
 			<TurnIn QuestName="Overwhelmed!" QuestId="12288" TurnInName="Aumana" TurnInId="27464" X="4370.96" Y="-2887.4" Z="307.35" />
 		</If>
 		<If Condition="((HasQuest(12288)) &amp;&amp; (!IsQuestCompleted(12288)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12288" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12288" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Grizzly Hills\Blue Sky Logging Grounds Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

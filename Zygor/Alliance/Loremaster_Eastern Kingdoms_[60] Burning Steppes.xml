@@ -129,7 +129,7 @@
 			<TurnIn QuestName="The Smoldering Ruins of Thaurissan" QuestId="3702" TurnInName="Royal Historian Archesonus" TurnInId="8879" X="-4861.04" Y="-1016.93" Z="505.798" />
 		</If>
 		<If Condition="((HasQuest(3702)) &amp;&amp; (!IsQuestCompleted(3702)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3702" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3702" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(3702)">
 			<PickUp QuestName="The Smoldering Ruins of Thaurissan" QuestId="3701" GiverName="Royal Historian Archesonus" GiverId="8879" X="-4861.04" Y="-1016.93" Z="505.798" />
@@ -165,14 +165,14 @@
 			<TurnIn QuestName="A Taste of Flame" QuestId="4022" TurnInName="Cyrus Therepentous" TurnInId="9459" X="-7647.31" Y="-3051.95" Z="131.25" />
 		</If>
 		<If Condition="((HasQuest(4022)) &amp;&amp; (!IsQuestCompleted(4022)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4022" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4022" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q4023 A Taste of Flame: item 10575 Black Dragonflight Molt has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4023)) &amp;&amp; (IsQuestCompleted(4023)))">
 			<TurnIn QuestName="A Taste of Flame" QuestId="4023" TurnInName="Cyrus Therepentous" TurnInId="9459" X="-7647.31" Y="-3051.95" Z="131.25" />
 		</If>
 		<If Condition="((HasQuest(4023)) &amp;&amp; (!IsQuestCompleted(4023)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4023" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4023" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Gor'tesh the Brute Lord" QuestId="3824" Type="CollectItem" ItemId="11080" CollectCount="1" />
 		<Objective QuestName="FIFTY! YEP!" QuestId="4283" Type="CollectItem" ItemId="11467" CollectCount="50" />
@@ -186,14 +186,14 @@
 			<TurnIn QuestName="Broodling Essence" QuestId="4726" TurnInName="Tinkee Steamboil" TurnInId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
 		</If>
 		<If Condition="((HasQuest(4726)) &amp;&amp; (!IsQuestCompleted(4726)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4726" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4726" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q4296 Tablet of the Seven: item 11470 Tablet Transcript has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(4296)) &amp;&amp; (IsQuestCompleted(4296)))">
 			<TurnIn QuestName="Tablet of the Seven" QuestId="4296" TurnInName="Maxwort Uberglint" TurnInId="9536" X="-7497.99" Y="-2175.15" Z="165.61" />
 		</If>
 		<If Condition="((HasQuest(4296)) &amp;&amp; (!IsQuestCompleted(4296)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4296" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4296" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Ogre Head On A Stick = Party" QuestId="3825" Type="UseObject" ObjectId="160840" UseCount="1" />
 		<TurnIn QuestName="Ogre Head On A Stick = Party" QuestId="3825" TurnInName="Oralius" TurnInId="9177" X="-8371.9" Y="-2743.43" Z="186.183" />
@@ -202,7 +202,7 @@
 			<TurnIn QuestName="The Smoldering Ruins of Thaurissan" QuestId="3701" TurnInName="Royal Historian Archesonus" TurnInId="8879" X="-4861.04" Y="-1016.93" Z="505.798" />
 		</If>
 		<If Condition="((HasQuest(3701)) &amp;&amp; (!IsQuestCompleted(3701)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3701" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3701" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

@@ -460,7 +460,7 @@
 			<TurnIn QuestName="City of Light" QuestId="10211" TurnInName="Khadgar" TurnInId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
 		</If>
 		<If Condition="((HasQuest(10211)) &amp;&amp; (!IsQuestCompleted(10211)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10211" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10211" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(10211) &amp;&amp; !IsQuestCompleted(10551) &amp;&amp; !HasQuest(10551)">
 			<PickUp QuestName="Allegiance to the Scryers" QuestId="10552" GiverName="Khadgar" GiverId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
@@ -506,7 +506,7 @@
 			<TurnIn QuestName="Bloodgem Crystals" QuestId="10204" TurnInName="Magistrix Larynna" TurnInId="19469" X="3077.69" Y="3696.48" Z="142.559" />
 		</If>
 		<If Condition="((HasQuest(10204)) &amp;&amp; (!IsQuestCompleted(10204)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10204" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10204" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Shutting Down Manaforge B'naar" QuestId="10329" Type="CollectItem" ItemId="29366" CollectCount="1" />
 		<!-- REVIEW Q10329 Shutting Down Manaforge B'naar: objective 20209 B'naar Control Console x1: kill credit or scripted event; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -514,7 +514,7 @@
 			<TurnIn QuestName="Shutting Down Manaforge B'naar" QuestId="10329" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
 		</If>
 		<If Condition="((HasQuest(10329)) &amp;&amp; (!IsQuestCompleted(10329)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10329" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10329" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10329) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
 			<PickUp QuestName="Stealth Flight" QuestId="10194" GiverName="Spymaster Thalodien" GiverId="19468" X="3074.95" Y="3699.25" Z="142.576" />
@@ -539,7 +539,7 @@
 			<TurnIn QuestName="Information Gathering" QuestId="10198" TurnInName="Caledis Brightdawn" TurnInId="19840" X="2237.67" Y="2793.89" Z="128.813" />
 		</If>
 		<If Condition="((HasQuest(10198)) &amp;&amp; (!IsQuestCompleted(10198)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10198" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10198" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10198) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
 			<PickUp QuestName="Shutting Down Manaforge Coruu" QuestId="10330" GiverName="Caledis Brightdawn" GiverId="19840" X="2237.67" Y="2793.89" Z="128.813" />
@@ -550,7 +550,7 @@
 			<TurnIn QuestName="Shutting Down Manaforge Coruu" QuestId="10330" TurnInName="Caledis Brightdawn" TurnInId="19840" X="2237.67" Y="2793.89" Z="128.813" />
 		</If>
 		<If Condition="((HasQuest(10330)) &amp;&amp; (!IsQuestCompleted(10330)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10330" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10330" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10330)">
 			<PickUp QuestName="Return to Thalodien" QuestId="10200" GiverName="Caledis Brightdawn" GiverId="19840" X="2237.67" Y="2793.89" Z="128.813" />
@@ -571,7 +571,7 @@
 			<TurnIn QuestName="Shutting Down Manaforge Duro" QuestId="10338" TurnInName="Spymaster Thalodien" TurnInId="19468" X="3074.95" Y="3699.25" Z="142.576" />
 		</If>
 		<If Condition="((HasQuest(10338)) &amp;&amp; (!IsQuestCompleted(10338)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10338" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10338" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Kick Them While They're Down" QuestId="10341" TurnInName="Magistrix Larynna" TurnInId="19469" X="3077.69" Y="3696.48" Z="142.559" />
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10341) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
@@ -618,7 +618,7 @@
 			<TurnIn QuestName="A Necessary Distraction" QuestId="10688" TurnInName="Larissa Sunstrike" TurnInId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
 		</If>
 		<If Condition="((HasQuest(10688)) &amp;&amp; (!IsQuestCompleted(10688)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10688" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10688" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10688) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
 			<PickUp QuestName="Altruis" QuestId="10689" GiverName="Larissa Sunstrike" GiverId="21954" X="-4080.77" Y="1159.61" Z="44.5094" />
@@ -668,7 +668,7 @@
 			<TurnIn QuestName="Against the Legion" QuestId="10641" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
 		<If Condition="((HasQuest(10641)) &amp;&amp; (!IsQuestCompleted(10641)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10641" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10641" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Against the Illidari" QuestId="10668" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		<!-- REVIEW Q10669 Against All Odds: use item 30853: target 21894 Xeleth has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -676,7 +676,7 @@
 			<TurnIn QuestName="Against All Odds" QuestId="10669" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
 		<If Condition="((HasQuest(10669)) &amp;&amp; (!IsQuestCompleted(10669)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10669" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10669" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; (IsQuestCompleted(10641) || IsQuestCompleted(10668) || IsQuestCompleted(10669))">
 			<PickUp QuestName="Illidan's Pupil" QuestId="10646" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
@@ -686,7 +686,7 @@
 			<TurnIn QuestName="Illidan's Pupil" QuestId="10646" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
 		<If Condition="((HasQuest(10646)) &amp;&amp; (!IsQuestCompleted(10646)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10646" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10646" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10646)">
 			<PickUp QuestName="The Book of Fel Names" QuestId="10649" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
@@ -696,7 +696,7 @@
 			<TurnIn QuestName="The Book of Fel Names" QuestId="10649" TurnInName="Altruis the Sufferer" TurnInId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
 		</If>
 		<If Condition="((HasQuest(10649)) &amp;&amp; (!IsQuestCompleted(10649)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10649" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10649" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10649) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
 			<PickUp QuestName="Return to the Scryers" QuestId="10691" GiverName="Altruis the Sufferer" GiverId="18417" X="-1545.36" Y="8785.48" Z="35.2683" />
@@ -711,7 +711,7 @@
 			<TurnIn QuestName="Synthesis of Power" QuestId="10416" TurnInName="Voren'thal the Seer" TurnInId="18530" X="-2272.61" Y="5576.36" Z="80.0374" />
 		</If>
 		<If Condition="((HasQuest(10416)) &amp;&amp; (!IsQuestCompleted(10416)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10416" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10416" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68) &amp;&amp; IsQuestCompleted(10656)">
 			<PickUp QuestName="More Sunfury Signets" QuestId="10658" GiverName="Magistrix Fyalenn" GiverId="18531" X="-2183.15" Y="5544.87" Z="64.1556" />

@@ -770,7 +770,7 @@
 				<TurnIn QuestName="The Binding" QuestId="1513" TurnInName="Gan'rul Bloodeye" TurnInId="5875" X="1850.31" Y="-4357.3" Z="-14.6936" />
 			</If>
 			<If Condition="((HasQuest(1513)) &amp;&amp; (!IsQuestCompleted(1513)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1513" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1513" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Shaman))">
@@ -800,7 +800,7 @@
 				<TurnIn QuestName="Call of Water" QuestId="1535" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 			</If>
 			<If Condition="((HasQuest(1535)) &amp;&amp; (!IsQuestCompleted(1535)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1535" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1535" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Shaman))">
@@ -814,7 +814,7 @@
 				<TurnIn QuestName="Call of Water" QuestId="1536" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 			</If>
 			<If Condition="((HasQuest(1536)) &amp;&amp; (!IsQuestCompleted(1536)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1536" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1536" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Shaman))">
@@ -828,7 +828,7 @@
 				<TurnIn QuestName="Call of Water" QuestId="1534" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 			</If>
 			<If Condition="((HasQuest(1534)) &amp;&amp; (!IsQuestCompleted(1534)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1534" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1534" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Shaman))">
@@ -858,7 +858,7 @@
 		<If Condition="((Me.Class == WoWClass.Shaman))">
 			<!-- SKIP turn-in Q100 Call of Water: no turn-in NPC with a spawn in the database -->
 			<If Condition="((HasQuest(100)) &amp;&amp; (!IsQuestCompleted(100)))">
-				<CustomBehavior File="AbandonQuest" QuestId="100" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="100" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Shaman))">
@@ -870,7 +870,7 @@
 				<TurnIn QuestName="Call of Water" QuestId="96" TurnInName="Islen Waterseer" TurnInId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
 			</If>
 			<If Condition="((HasQuest(96)) &amp;&amp; (!IsQuestCompleted(96)))">
-				<CustomBehavior File="AbandonQuest" QuestId="96" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="96" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(Me.Level &gt;= 20)">
@@ -958,14 +958,14 @@
 			<TurnIn QuestName="Free From the Hold" QuestId="898" TurnInName="Captain Thalo'thas Brightsun" TurnInId="3339" X="-1024.59" Y="-3688.91" Z="23.1962" />
 		</If>
 		<If Condition="((HasQuest(898)) &amp;&amp; (!IsQuestCompleted(898)))">
-			<CustomBehavior File="AbandonQuest" QuestId="898" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="898" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q851 Verog the Dervish: item 5023 Verog's Head has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(851)) &amp;&amp; (IsQuestCompleted(851)))">
 			<TurnIn QuestName="Verog the Dervish" QuestId="851" TurnInName="Regthar Deathgate" TurnInId="3389" X="-307.136" Y="-1971.95" Z="96.48" />
 		</If>
 		<If Condition="((HasQuest(851)) &amp;&amp; (!IsQuestCompleted(851)))">
-			<CustomBehavior File="AbandonQuest" QuestId="851" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="851" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 13)">
 			<PickUp QuestName="Blood Feeders" QuestId="6461" GiverName="Xen'Zilla" GiverId="12816" X="-177.568" Y="-233.317" Z="8.8796" />
@@ -1145,7 +1145,7 @@
 			<TurnIn QuestName="Ishamuhale" QuestId="882" TurnInName="Jorn Skyseer" TurnInId="3387" X="-2382.81" Y="-1922.69" Z="95.8663" />
 		</If>
 		<If Condition="((HasQuest(882)) &amp;&amp; (!IsQuestCompleted(882)))">
-			<CustomBehavior File="AbandonQuest" QuestId="882" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="882" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(882)">
 			<PickUp QuestName="Enraged Thunder Lizards" QuestId="907" GiverName="Jorn Skyseer" GiverId="3387" X="-2382.81" Y="-1922.69" Z="95.8663" />

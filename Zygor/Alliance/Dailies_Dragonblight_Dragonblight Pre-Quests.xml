@@ -131,7 +131,7 @@
 			<TurnIn QuestName="Projections and Plans" QuestId="12060" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
 		<If Condition="((HasQuest(12060)) &amp;&amp; (!IsQuestCompleted(12060)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12060" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12060" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12060)">
 			<PickUp QuestName="The Focus on the Beach" QuestId="12065" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
@@ -144,7 +144,7 @@
 			<TurnIn QuestName="The Focus on the Beach" QuestId="12065" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
 		<If Condition="((HasQuest(12065)) &amp;&amp; (!IsQuestCompleted(12065)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12065" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12065" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12065)">
 			<PickUp QuestName="Atop the Woodlands" QuestId="12083" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
@@ -169,7 +169,7 @@
 			<TurnIn QuestName="The End of the Line" QuestId="12107" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
 		<If Condition="((HasQuest(12107)) &amp;&amp; (!IsQuestCompleted(12107)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12107" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12107" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12107)">
 			<PickUp QuestName="Gaining an Audience" QuestId="12119" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
@@ -193,7 +193,7 @@
 			<TurnIn QuestName="Heated Battle" QuestId="12416" TurnInName="Ceristrasz" TurnInId="27506" X="3703.88" Y="699.021" Z="89.2857" />
 		</If>
 		<If Condition="((HasQuest(12416)) &amp;&amp; (!IsQuestCompleted(12416)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12416" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12416" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12416)">
 			<PickUp QuestName="Return to the Earth" QuestId="12417" GiverName="Ceristrasz" GiverId="27506" X="3703.88" Y="699.021" Z="89.2857" />
@@ -228,7 +228,7 @@
 			<TurnIn QuestName="Defending Wyrmrest Temple" QuestId="12372" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />
 		</If>
 		<If Condition="((HasQuest(12372)) &amp;&amp; (!IsQuestCompleted(12372)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Dragonblight\Dragonblight Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>

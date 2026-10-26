@@ -53,21 +53,21 @@
 			<TurnIn QuestName="Mastery Of Melee" QuestId="13829" TurnInName="Magister Edien Sunhollow" TurnInId="33542" X="8407.53" Y="661.218" Z="550.424" />
 		</If>
 		<If Condition="((HasQuest(13829)) &amp;&amp; (!IsQuestCompleted(13829)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13829" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13829" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13839 Mastery Of The Charge: objective 33972 Rugan Steelbelly x1: not attackable; objective 33340 [DND] Tournament - Mounted Melee - Target Dummy - Charge Bunny x2: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13839)) &amp;&amp; (IsQuestCompleted(13839)))">
 			<TurnIn QuestName="Mastery Of The Charge" QuestId="13839" TurnInName="Amariel Sunsworn" TurnInId="33658" X="8407.26" Y="658.419" Z="550.341" />
 		</If>
 		<If Condition="((HasQuest(13839)) &amp;&amp; (!IsQuestCompleted(13839)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13839" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13839" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13838 Mastery Of The Shield-Breaker: objective 33974 Valis Windchaser x1: not attackable; objective 33339 [DND] Tournament - Ranged Target Dummy - Bunny x2: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13838)) &amp;&amp; (IsQuestCompleted(13838)))">
 			<TurnIn QuestName="Mastery Of The Shield-Breaker" QuestId="13838" TurnInName="Galathia Brightdawn" TurnInId="33659" X="8405.28" Y="662.8" Z="550.341" />
 		</If>
 		<If Condition="((HasQuest(13838)) &amp;&amp; (!IsQuestCompleted(13838)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13838" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13838" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Argent Tournament Grounds Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>

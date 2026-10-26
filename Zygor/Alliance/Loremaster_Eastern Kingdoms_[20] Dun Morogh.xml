@@ -492,7 +492,7 @@
 			<TurnIn QuestName="Search for Incendicite" QuestId="466" TurnInName="Pilot Stonegear" TurnInId="1377" X="-5473.19" Y="-641.798" Z="393.3" />
 		</If>
 		<If Condition="((HasQuest(466)) &amp;&amp; (!IsQuestCompleted(466)))">
-			<CustomBehavior File="AbandonQuest" QuestId="466" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="466" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 5)">
 			<PickUp QuestName="Ammo for Rumbleshot" QuestId="5541" GiverName="Loslor Rudge" GiverId="1694" X="-5499.7" Y="-664.575" Z="395.395" />
@@ -509,7 +509,7 @@
 			<TurnIn QuestName="Beer Basted Boar Ribs" QuestId="384" TurnInName="Ragnar Thunderbrew" TurnInId="1267" X="-5596.21" Y="-504.132" Z="400.714" />
 		</If>
 		<If Condition="((HasQuest(384)) &amp;&amp; (!IsQuestCompleted(384)))">
-			<CustomBehavior File="AbandonQuest" QuestId="384" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="384" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Stocking Jetsteam" QuestId="317" TurnInName="Pilot Bellowfiz" TurnInId="1378" X="-5466.53" Y="-632.141" Z="393.939" />
 		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(317)">
@@ -554,7 +554,7 @@
 			<TurnIn QuestName="Gnogaine" QuestId="2926" TurnInName="Ozzie Togglevolt" TurnInId="1268" X="-5498.29" Y="-457.874" Z="395.644" />
 		</If>
 		<If Condition="((HasQuest(2926)) &amp;&amp; (!IsQuestCompleted(2926)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2926" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2926" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Operation Recombobulation" QuestId="412" TurnInName="Razzle Sprysprocket" TurnInId="1269" X="-5497.94" Y="-455.835" Z="395.438" />
 		<TurnIn QuestName="Return to Bellowfiz" QuestId="320" TurnInName="Pilot Bellowfiz" TurnInId="1378" X="-5466.53" Y="-632.141" Z="393.939" />

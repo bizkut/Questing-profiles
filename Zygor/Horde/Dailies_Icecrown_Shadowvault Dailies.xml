@@ -64,7 +64,7 @@
 			<TurnIn QuestName="Leave Our Mark" QuestId="12995" TurnInName="Baron Sliver" TurnInId="29343" X="8385.21" Y="2757.21" Z="656.702" />
 		</If>
 		<If Condition="((HasQuest(12995)) &amp;&amp; (!IsQuestCompleted(12995)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12995" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12995" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Shoot 'Em Up" QuestId="13069" Type="KillMob" MobId="30330" KillCount="15" />
 		<TurnIn QuestName="Shoot 'Em Up" QuestId="13069" TurnInName="The Leaper" TurnInId="30074" X="8380.47" Y="2717.56" Z="655.178" />
@@ -73,7 +73,7 @@
 			<TurnIn QuestName="Vile Like Fire!" QuestId="13071" TurnInName="Vile" TurnInId="30216" X="8374.06" Y="2738.74" Z="655.211" />
 		</If>
 		<If Condition="((HasQuest(13071)) &amp;&amp; (!IsQuestCompleted(13071)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13071" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13071" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Shadowvault Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

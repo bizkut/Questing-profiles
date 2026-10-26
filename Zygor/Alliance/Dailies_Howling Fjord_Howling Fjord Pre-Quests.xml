@@ -117,7 +117,7 @@
 			<TurnIn QuestName="I've Got a Flying Machine!" QuestId="11390" TurnInName="Steel Gate Chief Archaeologist" TurnInId="24399" X="1964.97" Y="-3258.86" Z="134.707" />
 		</If>
 		<If Condition="((HasQuest(11390)) &amp;&amp; (!IsQuestCompleted(11390)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11390" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11390" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Howling Fjord\Howling Fjord Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>

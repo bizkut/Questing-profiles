@@ -69,7 +69,7 @@
 			<TurnIn QuestName="Northern Cooking" QuestId="13089" TurnInName="Thomas Kolichio" TurnInId="26953" X="1927.98" Y="-6150.21" Z="23.0406" />
 		</If>
 		<If Condition="((HasQuest(13089)) &amp;&amp; (!IsQuestCompleted(13089)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13089" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13089" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q13115 Cheese for Glowergold: needs skill line 185 at 350, which a profile cannot check -->
 		<!-- SKIP pickup Q13113 Convention at the Legerdemain: needs skill line 185 at 350, which a profile cannot check -->
@@ -146,35 +146,35 @@
 			<TurnIn QuestName="Cheese for Glowergold" QuestId="13115" TurnInName="Ranid Glowergold" TurnInId="28718" X="5912.55" Y="748.528" Z="641.163" />
 		</If>
 		<If Condition="((HasQuest(13115)) &amp;&amp; (!IsQuestCompleted(13115)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13115" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13115" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13113 Convention at the Legerdemain: needs profession skill 185 (350); item 43128 Jug of Wine has no drop or chest near the guide coordinates; item 34747 Northern Stew has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13113)) &amp;&amp; (IsQuestCompleted(13113)))">
 			<TurnIn QuestName="Convention at the Legerdemain" QuestId="13113" TurnInName="Arille Azuregaze" TurnInId="29049" X="5859.81" Y="645.384" Z="647.514" />
 		</If>
 		<If Condition="((HasQuest(13113)) &amp;&amp; (!IsQuestCompleted(13113)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13113" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13113" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13112 Infused Mushroom Meatloaf: needs profession skill 185 (350); helper item 43100 Infused Mushroom has no creature or object source near the guide coordinates; item 43099 Infused Mushroom Meatloaf has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13112)) &amp;&amp; (IsQuestCompleted(13112)))">
 			<TurnIn QuestName="Infused Mushroom Meatloaf" QuestId="13112" TurnInName="Orton Bennet" TurnInId="29527" X="5759.1" Y="618.335" Z="661.092" />
 		</If>
 		<If Condition="((HasQuest(13112)) &amp;&amp; (!IsQuestCompleted(13112)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13112" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13112" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13116 Mustard Dogs!: needs profession skill 185 (350); helper item 43143 Wild Mustard has no creature or object source near the guide coordinates; helper item 34752 Rhino Dogs has no creature or object source near the guide coordinates; item 43144 Mustard Dog Basket! has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13116)) &amp;&amp; (IsQuestCompleted(13116)))">
 			<TurnIn QuestName="Mustard Dogs!" QuestId="13116" TurnInName="Archmage Pentarus" TurnInId="28160" X="5833.99" Y="483.519" Z="658.261" />
 		</If>
 		<If Condition="((HasQuest(13116)) &amp;&amp; (!IsQuestCompleted(13116)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13116" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13116" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13114 Sewer Stew: needs profession skill 185 (350); item 43149 Vegetable Stew has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13114)) &amp;&amp; (IsQuestCompleted(13114)))">
 			<TurnIn QuestName="Sewer Stew" QuestId="13114" TurnInName="Ajay Green" TurnInId="29532" X="5759.18" Y="716.138" Z="618.635" />
 		</If>
 		<If Condition="((HasQuest(13114)) &amp;&amp; (!IsQuestCompleted(13114)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13114" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13114" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Wrath of the Lich King\Dalaran Cooking Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

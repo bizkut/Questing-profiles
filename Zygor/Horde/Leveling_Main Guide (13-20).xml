@@ -791,7 +791,7 @@
 				<TurnIn QuestName="The Principal Source" QuestId="6127" TurnInName="Tonga Runetotem" TurnInId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
 			</If>
 			<If Condition="((HasQuest(6127)) &amp;&amp; (!IsQuestCompleted(6127)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6127" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6127" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Tauren) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -821,7 +821,7 @@
 				<TurnIn QuestName="Curing the Sick" QuestId="6129" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
 			</If>
 			<If Condition="((HasQuest(6129)) &amp;&amp; (!IsQuestCompleted(6129)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6129" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6129" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Tauren) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -965,7 +965,7 @@
 				<TurnIn QuestName="Trial of the Lake" QuestId="28" TurnInName="Tajarri" TurnInId="11799" X="7874.23" Y="-2224.18" Z="469.159" />
 			</If>
 			<If Condition="((HasQuest(28)) &amp;&amp; (!IsQuestCompleted(28)))">
-				<CustomBehavior File="AbandonQuest" QuestId="28" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="28" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Tauren) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -989,7 +989,7 @@
 				<TurnIn QuestName="Trial of the Sea Lion" QuestId="30" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
 			</If>
 			<If Condition="((HasQuest(30)) &amp;&amp; (!IsQuestCompleted(30)))">
-				<CustomBehavior File="AbandonQuest" QuestId="30" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="30" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Tauren) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -1092,7 +1092,7 @@
 			<TurnIn QuestName="Lost in Battle" QuestId="4921" TurnInName="Mankrik" TurnInId="3432" X="-520.983" Y="-2641.41" Z="95.8708" />
 		</If>
 		<If Condition="((HasQuest(4921)) &amp;&amp; (!IsQuestCompleted(4921)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4921" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4921" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Prowlers of the Barrens" QuestId="903" Type="CollectItem" ItemId="5096" CollectCount="7" />
 		<Objective QuestName="Harpy Lieutenants" QuestId="875" Type="CollectItem" ItemId="5065" CollectCount="6" />
@@ -1128,7 +1128,7 @@
 			<TurnIn QuestName="The Escape" QuestId="863" TurnInName="Sputtervalve" TurnInId="3442" X="-902.036" Y="-3759.4" Z="11.6138" />
 		</If>
 		<If Condition="((HasQuest(863)) &amp;&amp; (!IsQuestCompleted(863)))">
-			<CustomBehavior File="AbandonQuest" QuestId="863" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="863" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 16)">
 			<PickUp QuestName="Ziz Fizziks" QuestId="1483" GiverName="Sputtervalve" GiverId="3442" X="-902.036" Y="-3759.4" Z="11.6138" />
@@ -1164,7 +1164,7 @@
 			<TurnIn QuestName="Echeyakee" QuestId="881" TurnInName="Sergra Darkthorn" TurnInId="3338" X="-482.475" Y="-2670.19" Z="97.522" />
 		</If>
 		<If Condition="((HasQuest(881)) &amp;&amp; (!IsQuestCompleted(881)))">
-			<CustomBehavior File="AbandonQuest" QuestId="881" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="881" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(881)">
 			<PickUp QuestName="The Angry Scytheclaws" QuestId="905" GiverName="Sergra Darkthorn" GiverId="3338" X="-482.475" Y="-2670.19" Z="97.522" />

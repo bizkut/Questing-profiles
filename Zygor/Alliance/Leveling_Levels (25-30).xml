@@ -727,7 +727,7 @@
 				<TurnIn QuestName="Call of Water" QuestId="9504" TurnInName="Aqueous" TurnInId="17275" X="-1110.26" Y="-11128.9" Z="-78.3828" />
 			</If>
 			<If Condition="((HasQuest(9504)) &amp;&amp; (!IsQuestCompleted(9504)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9504" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9504" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Shaman)))">
@@ -741,7 +741,7 @@
 				<TurnIn QuestName="Call of Water" QuestId="9508" TurnInName="Aqueous" TurnInId="17275" X="-1110.26" Y="-11128.9" Z="-78.3828" />
 			</If>
 			<If Condition="((HasQuest(9508)) &amp;&amp; (!IsQuestCompleted(9508)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9508" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9508" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Shaman)))">
@@ -826,7 +826,7 @@
 			<TurnIn QuestName="Missing In Action" QuestId="219" TurnInName="Marshal Marris" TurnInId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
 		</If>
 		<If Condition="((HasQuest(219)) &amp;&amp; (!IsQuestCompleted(219)))">
-			<CustomBehavior File="AbandonQuest" QuestId="219" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="219" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Howling in the Hills" QuestId="126" TurnInName="Verner Osgood" TurnInId="415" X="-9259.44" Y="-2243.22" Z="64.0584" />
 		<TurnIn QuestName="Blackrock Bounty" QuestId="128" TurnInName="Guard Howe" TurnInId="903" X="-9412.65" Y="-2255.45" Z="67.6043" />
@@ -846,7 +846,7 @@
 			<TurnIn QuestName="Look To The Stars" QuestId="174" TurnInName="Viktori Prism'Antras" TurnInId="276" X="-10581.1" Y="-1321.31" Z="50.3933" />
 		</If>
 		<If Condition="((HasQuest(174)) &amp;&amp; (!IsQuestCompleted(174)))">
-			<CustomBehavior File="AbandonQuest" QuestId="174" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="174" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(174)">
 			<PickUp QuestName="Look To The Stars" QuestId="175" GiverName="Viktori Prism'Antras" GiverId="276" X="-10581.1" Y="-1321.31" Z="50.3933" />
@@ -974,7 +974,7 @@
 			<TurnIn QuestName="The Night Watch" QuestId="57" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
 		</If>
 		<If Condition="((HasQuest(57)) &amp;&amp; (!IsQuestCompleted(57)))">
-			<CustomBehavior File="AbandonQuest" QuestId="57" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="57" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(57)">
 			<PickUp QuestName="The Night Watch" QuestId="58" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
@@ -1090,7 +1090,7 @@
 			<TurnIn QuestName="Bride of the Embalmer" QuestId="253" TurnInName="Lord Ello Ebonlocke" TurnInId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
 		</If>
 		<If Condition="((HasQuest(253)) &amp;&amp; (!IsQuestCompleted(253)))">
-			<CustomBehavior File="AbandonQuest" QuestId="253" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="253" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="LoadProfile" ProfileName="Leveling_Levels (30-35)" />
 	</QuestOrder>

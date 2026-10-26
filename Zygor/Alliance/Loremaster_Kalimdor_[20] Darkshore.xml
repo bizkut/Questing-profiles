@@ -548,7 +548,7 @@
 			<TurnIn QuestName="Plagued Lands" QuestId="2118" TurnInName="Tharnariun Treetender" TurnInId="3701" X="6437.48" Y="397.48" Z="11.7883" />
 		</If>
 		<If Condition="((HasQuest(2118)) &amp;&amp; (!IsQuestCompleted(2118)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2118" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2118" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(2118)">
 			<PickUp QuestName="Cleansing of the Infected" QuestId="2138" GiverName="Tharnariun Treetender" GiverId="3701" X="6437.48" Y="397.48" Z="11.7883" />
@@ -580,7 +580,7 @@
 			<TurnIn QuestName="As Water Cascades" QuestId="4812" TurnInName="Mysterious Red Crystal" TurnInId="175524" TurnInType="Object" X="6207.82" Y="-157.763" Z="80.9614" />
 		</If>
 		<If Condition="((HasQuest(4812)) &amp;&amp; (!IsQuestCompleted(4812)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4812" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4812" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(4812)">
 			<PickUp QuestName="The Fragments Within" QuestId="4813" GiverName="Mysterious Red Crystal" GiverId="175524" GiverType="Object" X="6207.82" Y="-157.763" Z="80.9614" />
@@ -677,7 +677,7 @@
 			<TurnIn QuestName="The Cliffspring River" QuestId="4762" TurnInName="Thundris Windweaver" TurnInId="3649" X="6580.97" Y="492.292" Z="8.3174" />
 		</If>
 		<If Condition="((HasQuest(4762)) &amp;&amp; (!IsQuestCompleted(4762)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4762" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4762" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 9)">
 			<PickUp QuestName="Tools of the Highborne" QuestId="958" GiverName="Thundris Windweaver" GiverId="3649" X="6580.97" Y="492.292" Z="8.3174" />
@@ -713,7 +713,7 @@
 			<TurnIn QuestName="The Blackwood Corrupted" QuestId="4763" TurnInName="Thundris Windweaver" TurnInId="3649" X="6580.97" Y="492.292" Z="8.3174" />
 		</If>
 		<If Condition="((HasQuest(4763)) &amp;&amp; (!IsQuestCompleted(4763)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4763" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4763" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 18)">
 			<PickUp QuestName="Onward to Ashenvale" QuestId="10752" GiverName="Thundris Windweaver" GiverId="3649" X="6580.97" Y="492.292" Z="8.3174" />
@@ -767,7 +767,7 @@
 		</If>
 		<!-- SKIP turn-in Q944 The Master's Glaive: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(944)) &amp;&amp; (!IsQuestCompleted(944)))">
-			<CustomBehavior File="AbandonQuest" QuestId="944" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="944" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q949 The Twilight Camp: no quest giver with a spawn in the database -->
 		<!-- REVIEW Q949 The Twilight Camp: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -775,7 +775,7 @@
 			<TurnIn QuestName="The Twilight Camp" QuestId="949" TurnInName="Twilight Tome" TurnInId="12666" TurnInType="Object" X="4575.75" Y="417.029" Z="34.9274" />
 		</If>
 		<If Condition="((HasQuest(949)) &amp;&amp; (!IsQuestCompleted(949)))">
-			<CustomBehavior File="AbandonQuest" QuestId="949" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="949" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 12) &amp;&amp; IsQuestCompleted(949)">
 			<PickUp QuestName="Return to Onu" QuestId="950" GiverName="Twilight Tome" GiverId="12666" GiverType="Object" X="4575.75" Y="417.029" Z="34.9274" />
@@ -813,7 +813,7 @@
 			<TurnIn QuestName="The Sleeper Has Awakened" QuestId="5321" TurnInName="Liladris Moonriver" TurnInId="11219" X="3305.22" Y="127.885" Z="16.1994" />
 		</If>
 		<If Condition="((HasQuest(5321)) &amp;&amp; (!IsQuestCompleted(5321)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5321" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5321" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Tower of Althalaxx" QuestId="967" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
 		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(967)">
@@ -829,7 +829,7 @@
 			<TurnIn QuestName="Therylune's Escape" QuestId="945" TurnInName="Therysil" TurnInId="3585" X="2677.34" Y="394.207" Z="69.8261" />
 		</If>
 		<If Condition="((HasQuest(945)) &amp;&amp; (!IsQuestCompleted(945)))">
-			<CustomBehavior File="AbandonQuest" QuestId="945" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="945" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="The Tower of Althalaxx" QuestId="973" Type="CollectItem" ItemId="5533" CollectCount="1" />
 		<TurnIn QuestName="Onward to Ashenvale" QuestId="10752" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
@@ -842,7 +842,7 @@
 			<TurnIn QuestName="The Tower of Althalaxx" QuestId="1140" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
 		</If>
 		<If Condition="((HasQuest(1140)) &amp;&amp; (!IsQuestCompleted(1140)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1140" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1140" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(1140)">
 			<PickUp QuestName="The Tower of Althalaxx" QuestId="1167" GiverName="Delgren the Purifier" GiverId="3663" X="3185.46" Y="189.38" Z="4.7517" />
@@ -854,7 +854,7 @@
 			<TurnIn QuestName="The Absent Minded Prospector" QuestId="731" TurnInName="Archaeologist Hollee" TurnInId="2913" X="6506.35" Y="489.304" Z="6.8245" />
 		</If>
 		<If Condition="((HasQuest(731)) &amp;&amp; (!IsQuestCompleted(731)))">
-			<CustomBehavior File="AbandonQuest" QuestId="731" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="731" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 15) &amp;&amp; IsQuestCompleted(731)">
 			<PickUp QuestName="The Absent Minded Prospector" QuestId="741" GiverName="Archaeologist Hollee" GiverId="2913" X="6506.35" Y="489.304" Z="6.8245" />
@@ -864,7 +864,7 @@
 			<TurnIn QuestName="Escape Through Force" QuestId="994" TurnInName="Terenthis" TurnInId="3693" X="6434.59" Y="362.807" Z="14.0243" />
 		</If>
 		<If Condition="((HasQuest(994)) &amp;&amp; (!IsQuestCompleted(994)))">
-			<CustomBehavior File="AbandonQuest" QuestId="994" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="994" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Tower of Althalaxx" QuestId="1167" TurnInName="Balthule Shadowstrike" TurnInId="3661" X="7246.63" Y="-658.966" Z="34.622" />
 		<If Condition="(Me.Level &gt;= 13) &amp;&amp; IsQuestCompleted(1167)">
@@ -903,7 +903,7 @@
 			<TurnIn QuestName="Gyromast's Revenge" QuestId="2078" TurnInName="Gelkak Gyromast" TurnInId="6667" X="7744.51" Y="-769.238" Z="5.4445" />
 		</If>
 		<If Condition="((HasQuest(2078)) &amp;&amp; (!IsQuestCompleted(2078)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2078" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2078" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Mathystra Relics" QuestId="951" Type="CollectItem" ItemId="5273" CollectCount="6" />
 		<TurnIn QuestName="Mathystra Relics" QuestId="951" TurnInName="Onu" TurnInId="3616" X="5002.01" Y="88.8183" Z="52.7788" />

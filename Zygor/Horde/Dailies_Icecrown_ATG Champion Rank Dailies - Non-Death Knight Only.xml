@@ -76,7 +76,7 @@
 				<TurnIn QuestName="Among the Champions" QuestId="13811" TurnInName="Luuri" TurnInId="33771" X="8451.65" Y="1058.68" Z="554.493" />
 			</If>
 			<If Condition="((HasQuest(13811)) &amp;&amp; (!IsQuestCompleted(13811)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13811" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13811" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">

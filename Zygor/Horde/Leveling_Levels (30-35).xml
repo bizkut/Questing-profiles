@@ -683,7 +683,7 @@
 				<TurnIn QuestName="The Affray" QuestId="1719" TurnInName="Klannoc Macleod" TurnInId="6236" X="-1709.14" Y="-4330.07" Z="4.3339" />
 			</If>
 			<If Condition="((HasQuest(1719)) &amp;&amp; (!IsQuestCompleted(1719)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1719" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1719" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Shaman))">
@@ -842,7 +842,7 @@
 			<TurnIn QuestName="Kodo Roundup" QuestId="5561" TurnInName="Smeed Scrabblescrew" TurnInId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
 		</If>
 		<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5561" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5561" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Kolkar of Desolace" QuestId="1362" TurnInName="Felgur Twocuts" TurnInId="5395" X="-1333.66" Y="1706.99" Z="89.9855" />
 		<If Condition="(Me.Level &gt;= 30)">
@@ -943,14 +943,14 @@
 			<TurnIn QuestName="Catch of the Day" QuestId="5386" TurnInName="Nataka Longhorn" TurnInId="11259" X="-1221.01" Y="1742.1" Z="90.7142" />
 		</If>
 		<If Condition="((HasQuest(5386)) &amp;&amp; (!IsQuestCompleted(5386)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5386" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5386" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q1435 The Burning of Spirits: item 6435 Infused Burning Gem has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(1435)) &amp;&amp; (IsQuestCompleted(1435)))">
 			<TurnIn QuestName="The Burning of Spirits" QuestId="1435" TurnInName="Maurin Bonesplitter" TurnInId="4498" X="-1150.1" Y="1884.43" Z="88.9691" />
 		</If>
 		<If Condition="((HasQuest(1435)) &amp;&amp; (!IsQuestCompleted(1435)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1435" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1435" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Corrupter" QuestId="1482" TurnInName="Maurin Bonesplitter" TurnInId="4498" X="-1150.1" Y="1884.43" Z="88.9691" />
 		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1482)">
@@ -965,14 +965,14 @@
 			<TurnIn QuestName="Book of the Ancients" QuestId="6027" TurnInName="Azore Aldamort" TurnInId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
 		</If>
 		<If Condition="((HasQuest(6027)) &amp;&amp; (!IsQuestCompleted(6027)))">
-			<CustomBehavior File="AbandonQuest" QuestId="6027" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="6027" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q5381 Hand of Iruxos: item 13542 Demon Box has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(5381)) &amp;&amp; (IsQuestCompleted(5381)))">
 			<TurnIn QuestName="Hand of Iruxos" QuestId="5381" TurnInName="Taiga Wisemane" TurnInId="11624" X="-1592.93" Y="3072.68" Z="49.0746" />
 		</If>
 		<If Condition="((HasQuest(5381)) &amp;&amp; (!IsQuestCompleted(5381)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5381" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5381" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Other Fish to Fry" QuestId="6143" TurnInName="Drulzegar Skraghook" TurnInId="12340" X="-1732.59" Y="3184.92" Z="4.1139" />
 		<TurnIn QuestName="Clam Bait" QuestId="6142" TurnInName="Mai'Lahii" TurnInId="12031" X="-1705.49" Y="3215.33" Z="8.0161" />

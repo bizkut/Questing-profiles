@@ -42,7 +42,7 @@
 			<TurnIn QuestName="King of the Mountain" QuestId="13280" TurnInName="Frazzle Geargrinder" TurnInId="31776" X="6810.88" Y="1869.7" Z="579.6" />
 		</If>
 		<If Condition="((HasQuest(13280)) &amp;&amp; (!IsQuestCompleted(13280)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13280" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13280" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Ymirheim: done for today" LogColor="Green" />
 	</QuestOrder>

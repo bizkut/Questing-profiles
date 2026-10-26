@@ -827,7 +827,7 @@
 			<TurnIn QuestName="As the Crow Flies" QuestId="9718" TurnInName="Ysiel Windsinger" TurnInId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
 		</If>
 		<If Condition="((HasQuest(9718)) &amp;&amp; (!IsQuestCompleted(9718)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9718" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9718" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 61) &amp;&amp; IsQuestCompleted(9718)">
 			<PickUp QuestName="Balance Must Be Preserved" QuestId="9720" GiverName="Ysiel Windsinger" GiverId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
@@ -1002,7 +1002,7 @@
 			<TurnIn QuestName="Blessings of the Ancients" QuestId="9785" TurnInName="Windcaller Blackhoof" TurnInId="18070" X="-234.269" Y="5434.77" Z="22.521" />
 		</If>
 		<If Condition="((HasQuest(9785)) &amp;&amp; (!IsQuestCompleted(9785)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9785" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9785" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Warning the Cenarion Circle" QuestId="9724" TurnInName="Amythiel Mistwalker" TurnInId="16885" X="-314.819" Y="4711.44" Z="18.4204" />
 		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(9724)">
@@ -1051,7 +1051,7 @@
 			<TurnIn QuestName="Messenger to the Feralfen" QuestId="9803" TurnInName="Anchorite Ahuurn" TurnInId="18003" X="280.43" Y="6046.59" Z="130.391" />
 		</If>
 		<If Condition="((HasQuest(9803)) &amp;&amp; (!IsQuestCompleted(9803)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9803" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9803" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Maktu's Revenge" QuestId="9905" TurnInName="Maktu" TurnInId="18010" X="1020.84" Y="7383.45" Z="36.3243" />
 		<TurnIn QuestName="Stinger Venom" QuestId="9830" TurnInName="Puluu" TurnInId="18009" X="974.863" Y="7421.65" Z="31.9895" />

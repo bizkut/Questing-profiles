@@ -862,21 +862,21 @@
 			<TurnIn QuestName="Essential Artificials" QuestId="2924" TurnInName="Klockmort Spannerspan" TurnInId="6169" X="-4812.48" Y="-1250.62" Z="502.014" />
 		</If>
 		<If Condition="((HasQuest(2924)) &amp;&amp; (!IsQuestCompleted(2924)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2924" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2924" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q2930 Data Rescue: item 9316 Prismatic Punch Card has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2930)) &amp;&amp; (IsQuestCompleted(2930)))">
 			<TurnIn QuestName="Data Rescue" QuestId="2930" TurnInName="Master Mechanic Castpipe" TurnInId="7950" X="-4823.04" Y="-1265.7" Z="501.951" />
 		</If>
 		<If Condition="((HasQuest(2930)) &amp;&amp; (!IsQuestCompleted(2930)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2930" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2930" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q2929 The Grand Betrayal: use item 9326: target 7800 Mekgineer Thermaplugg has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2929)) &amp;&amp; (IsQuestCompleted(2929)))">
 			<TurnIn QuestName="The Grand Betrayal" QuestId="2929" TurnInName="High Tinker Mekkatorque" TurnInId="7937" X="-4827.63" Y="-1257.16" Z="506.119" />
 		</If>
 		<If Condition="((HasQuest(2929)) &amp;&amp; (!IsQuestCompleted(2929)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2929" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2929" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Save Techbot's Brain!" QuestId="2922" TurnInName="Tinkmaster Overspark" TurnInId="7944" X="-4834.77" Y="-1263.45" Z="501.951" />
 		<If Condition="((Me.Class == WoWClass.Warrior))">
@@ -889,14 +889,14 @@
 			<TurnIn QuestName="Gnogaine" QuestId="2926" TurnInName="Ozzie Togglevolt" TurnInId="1268" X="-5498.29" Y="-457.874" Z="395.644" />
 		</If>
 		<If Condition="((HasQuest(2926)) &amp;&amp; (!IsQuestCompleted(2926)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2926" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2926" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q378 The Fury Runs Deep: item 3640 Head of Deepfury has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(378)) &amp;&amp; (IsQuestCompleted(378)))">
 			<TurnIn QuestName="The Fury Runs Deep" QuestId="378" TurnInName="Motley Garmason" TurnInId="1074" X="-2650.41" Y="-2443.47" Z="80.1627" />
 		</If>
 		<If Condition="((HasQuest(378)) &amp;&amp; (!IsQuestCompleted(378)))">
-			<CustomBehavior File="AbandonQuest" QuestId="378" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="378" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28)">
 			<PickUp QuestName="The Thandol Span" QuestId="631" GiverName="Rhag Garmason" GiverId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
@@ -1040,7 +1040,7 @@
 				<TurnIn QuestName="The Affray" QuestId="1719" TurnInName="Klannoc Macleod" TurnInId="6236" X="-1709.14" Y="-4330.07" Z="4.3339" />
 			</If>
 			<If Condition="((HasQuest(1719)) &amp;&amp; (!IsQuestCompleted(1719)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1719" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1719" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior))">
@@ -1082,14 +1082,14 @@
 			<TurnIn QuestName="Willix the Importer" QuestId="1144" TurnInName="Willix the Importer" TurnInId="4508" X="2194.38" Y="1791.69" Z="65.5727" />
 		</If>
 		<If Condition="((HasQuest(1144)) &amp;&amp; (!IsQuestCompleted(1144)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1144" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1144" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q1101 The Crone of the Kraul: item 5792 Razorflank's Medallion has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(1101)) &amp;&amp; (IsQuestCompleted(1101)))">
 			<TurnIn QuestName="The Crone of the Kraul" QuestId="1101" TurnInName="Falfindel Waywarder" TurnInId="4048" X="-4524.14" Y="-787.884" Z="-41.5917" />
 		</If>
 		<If Condition="((HasQuest(1101)) &amp;&amp; (!IsQuestCompleted(1101)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1101" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1101" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warlock))">
 			<Objective QuestName="Tome of the Cabal" QuestId="1802" Type="CollectItem" ItemId="6997" CollectCount="1" />
@@ -1139,7 +1139,7 @@
 			<TurnIn QuestName="Blueleaf Tubers" QuestId="1221" TurnInName="Mebok Mizzyrix" TurnInId="3446" X="-928.982" Y="-3697.23" Z="8.0664" />
 		</If>
 		<If Condition="((HasQuest(1221)) &amp;&amp; (!IsQuestCompleted(1221)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1221" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1221" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Goblin Sponsorship" QuestId="1178" TurnInName="Gazlowe" TurnInId="3391" X="-835.563" Y="-3728.66" Z="26.3746" />
 		<If Condition="(Me.Level &gt;= 29) &amp;&amp; IsQuestCompleted(1178)">
@@ -1155,7 +1155,7 @@
 			<TurnIn QuestName="A Fine Mess" QuestId="2904" TurnInName="Scooty" TurnInId="7853" X="-14464.9" Y="459.585" Z="15.2488" />
 		</If>
 		<If Condition="((HasQuest(2904)) &amp;&amp; (!IsQuestCompleted(2904)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2904" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2904" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30)">
 			<PickUp QuestName="Singing Blue Shards" QuestId="605" GiverName="Crank Fizzlebub" GiverId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
@@ -1261,7 +1261,7 @@
 			<TurnIn QuestName="Bartolo's Yeti Fur Cloak" QuestId="565" TurnInName="Bartolo Ginsetti" TurnInId="2438" X="-784.662" Y="-515.103" Z="17.7243" />
 		</If>
 		<If Condition="((HasQuest(565)) &amp;&amp; (!IsQuestCompleted(565)))">
-			<CustomBehavior File="AbandonQuest" QuestId="565" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="565" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Costly Menace" QuestId="564" TurnInName="Darren Malvew" TurnInId="2382" X="-793.884" Y="-610.77" Z="15.2482" />
 		<TurnIn QuestName="Encrypted Letter" QuestId="511" TurnInName="Loremaster Dibbs" TurnInId="2277" X="-817.945" Y="-551.606" Z="15.4026" />
@@ -1319,7 +1319,7 @@
 				<TurnIn QuestName="The Binding" QuestId="1739" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
 			</If>
 			<If Condition="((HasQuest(1739)) &amp;&amp; (!IsQuestCompleted(1739)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1739" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1739" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(Me.Level &gt;= 30)">
@@ -1433,7 +1433,7 @@
 			<TurnIn QuestName="Favor for Krazek" QuestId="627" TurnInName="Krazek" TurnInId="773" X="-14453.3" Y="501.465" Z="26.3593" />
 		</If>
 		<If Condition="((HasQuest(627)) &amp;&amp; (!IsQuestCompleted(627)))">
-			<CustomBehavior File="AbandonQuest" QuestId="627" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="627" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 32) &amp;&amp; IsQuestCompleted(627)">
 			<PickUp QuestName="Return to Corporal Kaleb" QuestId="622" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />

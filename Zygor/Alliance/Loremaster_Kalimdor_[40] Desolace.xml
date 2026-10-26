@@ -409,7 +409,7 @@
 			<TurnIn QuestName="Kodo Roundup" QuestId="5561" TurnInName="Smeed Scrabblescrew" TurnInId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
 		</If>
 		<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5561" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5561" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Centaur Bounty" QuestId="1387" Type="CollectItem" ItemId="6067" CollectCount="15" />
 		<Objective QuestName="Down the Scarlet Path" QuestId="261" Type="KillMob" MobId="11561" KillCount="30" />
@@ -422,7 +422,7 @@
 			<TurnIn QuestName="Ghost-o-plasm Round Up" QuestId="6134" TurnInName="Hornizz Brimbuzzle" TurnInId="6019" X="-1401.4" Y="2082.97" Z="61.939" />
 		</If>
 		<If Condition="((HasQuest(6134)) &amp;&amp; (!IsQuestCompleted(6134)))">
-			<CustomBehavior File="AbandonQuest" QuestId="6134" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="6134" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1459" Type="CollectItem" ItemId="6248" CollectCount="7" />
 		<Objective QuestName="Raid on the Kolkar" QuestId="1384" Type="CollectItem" ItemId="6079" CollectCount="10" />
@@ -466,7 +466,7 @@
 			<TurnIn QuestName="Book of the Ancients" QuestId="6027" TurnInName="Azore Aldamort" TurnInId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
 		</If>
 		<If Condition="((HasQuest(6027)) &amp;&amp; (!IsQuestCompleted(6027)))">
-			<CustomBehavior File="AbandonQuest" QuestId="6027" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="6027" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1466" Type="CollectItem" ItemId="6250" CollectCount="10" />
 		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1466" Type="CollectItem" ItemId="6251" CollectCount="10" />
@@ -485,7 +485,7 @@
 			<TurnIn QuestName="Return to Vahlarriel" QuestId="1440" TurnInName="Vahlarriel Demonslayer" TurnInId="5642" X="97.8138" Y="1246.16" Z="164.155" />
 		</If>
 		<If Condition="((HasQuest(1440)) &amp;&amp; (!IsQuestCompleted(1440)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1440" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1440" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1456" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1456)">
@@ -528,14 +528,14 @@
 			<TurnIn QuestName="Get Me Out of Here!" QuestId="6132" TurnInName="Hornizz Brimbuzzle" TurnInId="6019" X="-1401.4" Y="2082.97" Z="61.939" />
 		</If>
 		<If Condition="((HasQuest(6132)) &amp;&amp; (!IsQuestCompleted(6132)))">
-			<CustomBehavior File="AbandonQuest" QuestId="6132" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="6132" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q1380 Khan Hratha: item 6077 Maraudine Key Fragment has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(1380)) &amp;&amp; (IsQuestCompleted(1380)))">
 			<TurnIn QuestName="Khan Hratha" QuestId="1380" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
 		</If>
 		<If Condition="((HasQuest(1380)) &amp;&amp; (!IsQuestCompleted(1380)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1380" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1380" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q5943 Gizelton Caravan: no quest giver with a spawn in the database -->
 		<!-- REVIEW Q5943 Gizelton Caravan: no quest giver in the database; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -543,7 +543,7 @@
 			<TurnIn QuestName="Gizelton Caravan" QuestId="5943" TurnInName="Smeed Scrabblescrew" TurnInId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
 		</If>
 		<If Condition="((HasQuest(5943)) &amp;&amp; (!IsQuestCompleted(5943)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5943" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5943" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

@@ -768,7 +768,7 @@
 			<TurnIn QuestName="Inoculation" QuestId="9303" TurnInName="Vindicator Aldar" TurnInId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
 		</If>
 		<If Condition="((HasQuest(9303)) &amp;&amp; (!IsQuestCompleted(9303)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9303" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9303" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(9303)">
 			<PickUp QuestName="The Missing Scout" QuestId="9309" GiverName="Vindicator Aldar" GiverId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
@@ -810,7 +810,7 @@
 			<TurnIn QuestName="Red Snapper - Very Tasty!" QuestId="9452" TurnInName="Diktynna" TurnInId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
 		</If>
 		<If Condition="((HasQuest(9452)) &amp;&amp; (!IsQuestCompleted(9452)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9452" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9452" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 4) &amp;&amp; IsQuestCompleted(9452)">
 			<PickUp QuestName="Find Acteon!" QuestId="9453" GiverName="Diktynna" GiverId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
@@ -920,7 +920,7 @@
 			<TurnIn QuestName="Learning the Language" QuestId="9538" TurnInName="Totem of Akida" TurnInId="17360" X="-4177.67" Y="-12512.5" Z="44.403" />
 		</If>
 		<If Condition="((HasQuest(9538)) &amp;&amp; (!IsQuestCompleted(9538)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9538" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9538" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 8) &amp;&amp; IsQuestCompleted(9538)">
 			<PickUp QuestName="Totem of Coo" QuestId="9539" GiverName="Totem of Akida" GiverId="17360" X="-4177.67" Y="-12512.5" Z="44.403" />
@@ -953,7 +953,7 @@
 			<TurnIn QuestName="The Prophecy of Akida" QuestId="9544" TurnInName="Arugoo of the Stillpine" TurnInId="17114" X="-4180.54" Y="-12509.6" Z="44.4447" />
 		</If>
 		<If Condition="((HasQuest(9544)) &amp;&amp; (!IsQuestCompleted(9544)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9544" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9544" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(9544)">
 			<PickUp QuestName="Stillpine Hold" QuestId="9559" GiverName="Arugoo of the Stillpine" GiverId="17114" X="-4180.54" Y="-12509.6" Z="44.4447" />
@@ -1016,7 +1016,7 @@
 				<TurnIn QuestName="Call of Fire" QuestId="9467" TurnInName="Temper" TurnInId="17205" X="-3285.64" Y="-12924.1" Z="11.7715" />
 			</If>
 			<If Condition="((HasQuest(9467)) &amp;&amp; (!IsQuestCompleted(9467)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9467" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9467" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Shaman)))">
@@ -1062,7 +1062,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="9591" TurnInName="Huntress Kella Nightbow" TurnInId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
 			</If>
 			<If Condition="((HasQuest(9591)) &amp;&amp; (!IsQuestCompleted(9591)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9591" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9591" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -1076,7 +1076,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="9592" TurnInName="Huntress Kella Nightbow" TurnInId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
 			</If>
 			<If Condition="((HasQuest(9592)) &amp;&amp; (!IsQuestCompleted(9592)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9592" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9592" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -1090,7 +1090,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="9593" TurnInName="Huntress Kella Nightbow" TurnInId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
 			</If>
 			<If Condition="((HasQuest(9593)) &amp;&amp; (!IsQuestCompleted(9593)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9593" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9593" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Hunter)))">

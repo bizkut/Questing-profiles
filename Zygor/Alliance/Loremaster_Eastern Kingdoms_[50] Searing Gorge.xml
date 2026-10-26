@@ -386,7 +386,7 @@
 			<TurnIn QuestName="Divine Retribution" QuestId="3441" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		</If>
 		<If Condition="((HasQuest(3441)) &amp;&amp; (!IsQuestCompleted(3441)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3441" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3441" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3441)">
 			<PickUp QuestName="The Flawless Flame" QuestId="3442" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
@@ -429,7 +429,7 @@
 		</If>
 		<!-- SKIP turn-in Q3367 Suntara Stones: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(3367)) &amp;&amp; (!IsQuestCompleted(3367)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3367" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3367" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q3368 Suntara Stones: no quest giver with a spawn in the database -->
 		<TurnIn QuestName="The Flawless Flame" QuestId="3442" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
@@ -449,7 +449,7 @@
 			<TurnIn QuestName="Suntara Stones" QuestId="3368" TurnInName="Curator Thorius" TurnInId="8256" X="-4654.31" Y="-1281.54" Z="503.382" />
 		</If>
 		<If Condition="((HasQuest(3368)) &amp;&amp; (!IsQuestCompleted(3368)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3368" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3368" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3368)">
 			<PickUp QuestName="Dwarven Justice" QuestId="3371" GiverName="Curator Thorius" GiverId="8256" X="-4654.31" Y="-1281.54" Z="503.382" />
@@ -488,7 +488,7 @@
 			<TurnIn QuestName="Prayer to Elune" QuestId="3377" TurnInName="Zamael Lunthistle" TurnInId="8436" X="-6491.07" Y="-982.717" Z="335.561" />
 		</If>
 		<If Condition="((HasQuest(3377)) &amp;&amp; (!IsQuestCompleted(3377)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3377" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3377" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3377)">
 			<PickUp QuestName="Prayer to Elune" QuestId="3378" GiverName="Zamael Lunthistle" GiverId="8436" X="-6491.07" Y="-982.717" Z="335.561" />
@@ -503,14 +503,14 @@
 			<TurnIn QuestName="The Torch of Retribution" QuestId="3453" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		</If>
 		<If Condition="((HasQuest(3453)) &amp;&amp; (!IsQuestCompleted(3453)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3453" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3453" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3453)">
 			<PickUp QuestName="The Torch of Retribution" QuestId="3454" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		</If>
 		<!-- SKIP turn-in Q3454 The Torch of Retribution: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(3454)) &amp;&amp; (!IsQuestCompleted(3454)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3454" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3454" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3454)">
 			<PickUp QuestName="Squire Maltrake" QuestId="3462" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
@@ -544,7 +544,7 @@
 			<TurnIn QuestName="Rise, Obsidion!" QuestId="3566" TurnInName="Curator Thorius" TurnInId="8256" X="-4654.31" Y="-1281.54" Z="503.382" />
 		</If>
 		<If Condition="((HasQuest(3566)) &amp;&amp; (!IsQuestCompleted(3566)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3566" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3566" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Ledger from Tanaris" QuestId="4450" Type="CollectItem" ItemId="11723" CollectCount="1" />
 		<TurnIn QuestName="Prayer to Elune" QuestId="3378" TurnInName="Astarii Starseeker" TurnInId="4090" X="9667.02" Y="2532.66" Z="1360.08" />

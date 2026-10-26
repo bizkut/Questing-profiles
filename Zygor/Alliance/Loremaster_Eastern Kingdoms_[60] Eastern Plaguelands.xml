@@ -351,7 +351,7 @@
 			<TurnIn QuestName="Pamela's Doll" QuestId="5149" TurnInName="Pamela Redpath" TurnInId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
 		</If>
 		<If Condition="((HasQuest(5149)) &amp;&amp; (!IsQuestCompleted(5149)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5149" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5149" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5149)">
 			<PickUp QuestName="Uncle Carlin" QuestId="5241" GiverName="Pamela Redpath" GiverId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
@@ -372,7 +372,7 @@
 			<TurnIn QuestName="Redemption" QuestId="5742" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		</If>
 		<If Condition="((HasQuest(5742)) &amp;&amp; (!IsQuestCompleted(5742)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5742" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5742" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(5742)">
 			<PickUp QuestName="Of Forgotten Memories" QuestId="5781" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
@@ -385,7 +385,7 @@
 			<TurnIn QuestName="Of Forgotten Memories" QuestId="5781" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		</If>
 		<If Condition="((HasQuest(5781)) &amp;&amp; (!IsQuestCompleted(5781)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5781" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5781" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(5781)">
 			<PickUp QuestName="Of Lost Honor" QuestId="5845" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
@@ -442,7 +442,7 @@
 			<TurnIn QuestName="Savage Flora" QuestId="9136" TurnInName="Rayne" TurnInId="16135" X="2277.14" Y="-5328.59" Z="88.8296" />
 		</If>
 		<If Condition="((HasQuest(9136)) &amp;&amp; (!IsQuestCompleted(9136)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9136" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9136" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 55)">
 			<PickUp QuestName="Bonescythe Digs" QuestId="9126" GiverName="Rohan the Assassin" GiverId="16131" X="2289.73" Y="-5337.32" Z="90.9632" />
@@ -458,7 +458,7 @@
 			<TurnIn QuestName="The Elemental Equation" QuestId="9128" TurnInName="Archmage Angela Dosantos" TurnInId="16116" X="2296.01" Y="-5340.98" Z="90.8799" />
 		</If>
 		<If Condition="((HasQuest(9128)) &amp;&amp; (!IsQuestCompleted(9128)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9128" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9128" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 55)">
 			<PickUp QuestName="Binding the Dreadnaught" QuestId="9131" GiverName="Korfax, Champion of the Light" GiverId="16112" X="2300.91" Y="-5351.64" Z="91.6577" />
@@ -468,7 +468,7 @@
 			<TurnIn QuestName="Binding the Dreadnaught" QuestId="9131" TurnInName="Korfax, Champion of the Light" TurnInId="16112" X="2300.91" Y="-5351.64" Z="91.6577" />
 		</If>
 		<If Condition="((HasQuest(9131)) &amp;&amp; (!IsQuestCompleted(9131)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9131" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9131" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50)">
 			<PickUp QuestName="Zaeldarr the Outcast" QuestId="6021" GiverName="Caretaker Alen" GiverId="11038" X="2151.72" Y="-5264.51" Z="95.873" />
@@ -501,7 +501,7 @@
 		</If>
 		<!-- SKIP turn-in Q5904 A Plague Upon Thee: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(5904)) &amp;&amp; (!IsQuestCompleted(5904)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5904" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5904" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q6389 A Plague Upon Thee: no quest giver with a spawn in the database -->
 		<Objective QuestName="Heroes of Darrowshire" QuestId="5168" Type="CollectItem" ItemId="12954" CollectCount="1" />
@@ -510,7 +510,7 @@
 			<TurnIn QuestName="A Plague Upon Thee" QuestId="6389" TurnInName="Nathaniel Dumah" TurnInId="11616" X="934.77" Y="-1450.32" Z="62.7314" />
 		</If>
 		<If Condition="((HasQuest(6389)) &amp;&amp; (!IsQuestCompleted(6389)))">
-			<CustomBehavior File="AbandonQuest" QuestId="6389" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="6389" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Zaeldarr the Outcast" QuestId="6021" Type="CollectItem" ItemId="15785" CollectCount="1" />
 		<TurnIn QuestName="Hameya's Plea" QuestId="6024" TurnInName="Mound of Dirt" TurnInId="177675" TurnInType="Object" X="1576.2" Y="-3270.77" Z="87.885" />
@@ -521,7 +521,7 @@
 			<TurnIn QuestName="Defenders of Darrowshire" QuestId="5211" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
 		</If>
 		<If Condition="((HasQuest(5211)) &amp;&amp; (!IsQuestCompleted(5211)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5211" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5211" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; (IsQuestCompleted(5168) || IsQuestCompleted(5181))">
 			<PickUp QuestName="Marauders of Darrowshire" QuestId="5206" GiverName="Carlin Redpath" GiverId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
@@ -531,7 +531,7 @@
 			<TurnIn QuestName="Establishing New Outposts" QuestId="9664" TurnInName="Emissary Whitebeard" TurnInId="17069" X="2267.96" Y="-5332.84" Z="87.2677" />
 		</If>
 		<If Condition="((HasQuest(9664)) &amp;&amp; (!IsQuestCompleted(9664)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9664" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9664" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Bonescythe Digs" QuestId="9126" TurnInName="Rohan the Assassin" TurnInId="16131" X="2289.73" Y="-5337.32" Z="90.9632" />
 		<TurnIn QuestName="Cryptstalker Armor Doesn't Make Itself..." QuestId="9124" TurnInName="Huntsman Leopold" TurnInId="16132" X="2288.55" Y="-5340.35" Z="90.9632" />
@@ -540,7 +540,7 @@
 			<TurnIn QuestName="Marauders of Darrowshire" QuestId="5206" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
 		</If>
 		<If Condition="((HasQuest(5206)) &amp;&amp; (!IsQuestCompleted(5206)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5206" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5206" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5206)">
 			<PickUp QuestName="Return to Chromie" QuestId="5941" GiverName="Carlin Redpath" GiverId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
@@ -554,7 +554,7 @@
 			<TurnIn QuestName="The Battle of Darrowshire" QuestId="5721" TurnInName="Pamela Redpath" TurnInId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
 		</If>
 		<If Condition="((HasQuest(5721)) &amp;&amp; (!IsQuestCompleted(5721)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5721" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5721" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(5721)">
 			<PickUp QuestName="Hidden Treasures" QuestId="5942" GiverName="Pamela Redpath" GiverId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />

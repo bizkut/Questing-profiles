@@ -1238,7 +1238,7 @@
 			<TurnIn QuestName="Screecher Spirits" QuestId="3520" TurnInName="Yeh'kinya" TurnInId="8579" X="-6903.4" Y="-4840.94" Z="8.4641" />
 		</If>
 		<If Condition="((HasQuest(3520)) &amp;&amp; (!IsQuestCompleted(3520)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3520" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3520" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Scrimshank Redemption" QuestId="10" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
 		<If Condition="(Me.Level &gt;= 39) &amp;&amp; IsQuestCompleted(10)">
@@ -1285,7 +1285,7 @@
 			<TurnIn QuestName="Divine Retribution" QuestId="3441" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		</If>
 		<If Condition="((HasQuest(3441)) &amp;&amp; (!IsQuestCompleted(3441)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3441" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3441" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3441)">
 			<PickUp QuestName="The Flawless Flame" QuestId="3442" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
@@ -1308,7 +1308,7 @@
 			<TurnIn QuestName="Caught!" QuestId="4449" TurnInName="Wooden Outhouse" TurnInId="173265" TurnInType="Object" X="-7024.78" Y="-1786.5" Z="265.828" />
 		</If>
 		<If Condition="((HasQuest(4449)) &amp;&amp; (!IsQuestCompleted(4449)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4449" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4449" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 43) &amp;&amp; IsQuestCompleted(4449)">
 			<PickUp QuestName="Ledger from Tanaris" QuestId="4450" GiverName="Wooden Outhouse" GiverId="173265" GiverType="Object" X="-7024.78" Y="-1786.5" Z="265.828" />
@@ -1346,14 +1346,14 @@
 			<TurnIn QuestName="The Torch of Retribution" QuestId="3453" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		</If>
 		<If Condition="((HasQuest(3453)) &amp;&amp; (!IsQuestCompleted(3453)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3453" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3453" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3453)">
 			<PickUp QuestName="The Torch of Retribution" QuestId="3454" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		</If>
 		<!-- SKIP turn-in Q3454 The Torch of Retribution: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(3454)) &amp;&amp; (!IsQuestCompleted(3454)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3454" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3454" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3454)">
 			<PickUp QuestName="Squire Maltrake" QuestId="3462" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
@@ -1379,7 +1379,7 @@
 			<TurnIn QuestName="Fall From Grace" QuestId="2784" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
 		</If>
 		<If Condition="((HasQuest(2784)) &amp;&amp; (!IsQuestCompleted(2784)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2784" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2784" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2784)">
 			<PickUp QuestName="The Disgraced One" QuestId="2621" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
@@ -1407,7 +1407,7 @@
 			<TurnIn QuestName="A Tale of Sorrow" QuestId="2801" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
 		</If>
 		<If Condition="((HasQuest(2801)) &amp;&amp; (!IsQuestCompleted(2801)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2801" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2801" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Cortello's Riddle" QuestId="625" TurnInName="Musty Scroll" TurnInId="2555" TurnInType="Object" X="-4348.37" Y="-2607.68" Z="38.2624" />
 		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(625)">
@@ -1478,7 +1478,7 @@
 			<TurnIn QuestName="Betrayed" QuestId="3506" TurnInName="Ag'tor Bloodfist" TurnInId="8576" X="3601.08" Y="-4405.69" Z="115.398" />
 		</If>
 		<If Condition="((HasQuest(3506)) &amp;&amp; (!IsQuestCompleted(3506)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3506" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3506" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 44) &amp;&amp; IsQuestCompleted(3506)">
 			<PickUp QuestName="Betrayed" QuestId="3507" GiverName="Ag'tor Bloodfist" GiverId="8576" X="3601.08" Y="-4405.69" Z="115.398" />
@@ -1516,7 +1516,7 @@
 			<TurnIn QuestName="Seeping Corruption" QuestId="3568" TurnInName="Chemist Cuely" TurnInId="8390" X="1420.98" Y="405.895" Z="-85.163" />
 		</If>
 		<If Condition="((HasQuest(3568)) &amp;&amp; (!IsQuestCompleted(3568)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3568" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3568" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3568)">
 			<PickUp QuestName="Seeping Corruption" QuestId="3569" GiverName="Chemist Cuely" GiverId="8390" X="1420.98" Y="405.895" Z="-85.163" />
@@ -1549,7 +1549,7 @@
 			<TurnIn QuestName="Lard Lost His Lunch" QuestId="7840" TurnInName="Lard" TurnInId="14731" X="-622.033" Y="-4583.4" Z="11.7704" />
 		</If>
 		<If Condition="((HasQuest(7840)) &amp;&amp; (!IsQuestCompleted(7840)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7840" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7840" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Snapjaws, Mon!" QuestId="7815" TurnInName="Katoom the Angler" TurnInId="14740" X="-626.071" Y="-4667.71" Z="6.5081" />
 		<TurnIn QuestName="Gammerita, Mon!" QuestId="7816" TurnInName="Katoom the Angler" TurnInId="14740" X="-626.071" Y="-4667.71" Z="6.5081" />
@@ -1635,7 +1635,7 @@
 			<TurnIn QuestName="The Scent of Lar'korwi" QuestId="4291" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
 		<If Condition="((HasQuest(4291)) &amp;&amp; (!IsQuestCompleted(4291)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4291" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4291" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 48) &amp;&amp; IsQuestCompleted(4291)">
 			<PickUp QuestName="The Bait for Lar'korwi" QuestId="4292" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
@@ -1651,7 +1651,7 @@
 			<TurnIn QuestName="It's a Secret to Everybody" QuestId="3845" TurnInName="Linken" TurnInId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
 		</If>
 		<If Condition="((HasQuest(3845)) &amp;&amp; (!IsQuestCompleted(3845)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3845" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3845" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 47) &amp;&amp; IsQuestCompleted(3845)">
 			<PickUp QuestName="It's a Secret to Everybody" QuestId="3908" GiverName="Linken" GiverId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
@@ -1706,7 +1706,7 @@
 			<TurnIn QuestName="Chasing A-Me 01" QuestId="4244" TurnInName="A-Me 01" TurnInId="9623" X="-6380.13" Y="-1970" Z="-257.195" />
 		</If>
 		<If Condition="((HasQuest(4244)) &amp;&amp; (!IsQuestCompleted(4244)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4244" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4244" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Shizzle's Flyer" QuestId="4503" Type="CollectItem" ItemId="11830" CollectCount="8" />
 		<Objective QuestName="Roll the Bones" QuestId="3882" Type="CollectItem" ItemId="11114" CollectCount="8" />
@@ -1722,7 +1722,7 @@
 			<TurnIn QuestName="The Bait for Lar'korwi" QuestId="4292" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
 		<If Condition="((HasQuest(4292)) &amp;&amp; (!IsQuestCompleted(4292)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4292" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4292" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Bungle in the Jungle" QuestId="4496" Type="CollectItem" ItemId="11837" CollectCount="1" />
 		<Objective QuestName="Larion and Muigin" QuestId="4145" Type="KillMob" MobId="6512" KillCount="5" />
@@ -1758,7 +1758,7 @@
 			<TurnIn QuestName="A Little Help From My Friends" QuestId="4491" TurnInName="Spraggle Frock" TurnInId="9997" X="-6176.27" Y="-1080.49" Z="-203.81" />
 		</If>
 		<If Condition="((HasQuest(4491)) &amp;&amp; (!IsQuestCompleted(4491)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4491" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4491" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Beware of Pterrordax" QuestId="4501" TurnInName="Spraggle Frock" TurnInId="9997" X="-6176.27" Y="-1080.49" Z="-203.81" />
 		<TurnIn QuestName="Roll the Bones" QuestId="3882" TurnInName="Spark Nilminer" TurnInId="9272" X="-6149.73" Y="-1076.11" Z="-198.908" />
@@ -1768,7 +1768,7 @@
 			<TurnIn QuestName="Alien Ecology" QuestId="3883" TurnInName="Hol'anyee Marshal" TurnInId="9271" X="-6145.24" Y="-1090.56" Z="-200.204" />
 		</If>
 		<If Condition="((HasQuest(3883)) &amp;&amp; (!IsQuestCompleted(3883)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3883" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3883" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="LoadProfile" ProfileName="Leveling_Levels (55-60)" />
 	</QuestOrder>

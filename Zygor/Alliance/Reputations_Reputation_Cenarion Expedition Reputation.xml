@@ -569,7 +569,7 @@
 			<TurnIn QuestName="Testing the Antidote" QuestId="10255" TurnInName="Thiah Redmane" TurnInId="16991" X="-312.485" Y="4728.77" Z="17.3123" />
 		</If>
 		<If Condition="((HasQuest(10255)) &amp;&amp; (!IsQuestCompleted(10255)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10255" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10255" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Keep Thornfang Hill Clear!" QuestId="10159" TurnInName="Mahuram Stouthoof" TurnInId="16888" X="-315.264" Y="4716.16" Z="18.3078" />
 		<!-- REVIEW Q10351 Natural Remedies: goal 19305 Goliathon x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -577,7 +577,7 @@
 			<TurnIn QuestName="Natural Remedies" QuestId="10351" TurnInName="Earthbinder Galandria Nightbreeze" TurnInId="19294" X="-294.766" Y="4715.08" Z="28.301" />
 		</If>
 		<If Condition="((HasQuest(10351)) &amp;&amp; (!IsQuestCompleted(10351)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10351" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10351" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 61) &amp;&amp; IsQuestCompleted(9731)">
 			<PickUp QuestName="Warning the Cenarion Circle" QuestId="9724" GiverName="Ysiel Windsinger" GiverId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
@@ -681,7 +681,7 @@
 			<TurnIn QuestName="As the Crow Flies" QuestId="9718" TurnInName="Ysiel Windsinger" TurnInId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
 		</If>
 		<If Condition="((HasQuest(9718)) &amp;&amp; (!IsQuestCompleted(9718)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9718" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9718" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 61) &amp;&amp; IsQuestCompleted(9718)">
 			<PickUp QuestName="Balance Must Be Preserved" QuestId="9720" GiverName="Ysiel Windsinger" GiverId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
@@ -691,7 +691,7 @@
 			<TurnIn QuestName="Blessings of the Ancients" QuestId="9785" TurnInName="Windcaller Blackhoof" TurnInId="18070" X="-234.269" Y="5434.77" Z="22.521" />
 		</If>
 		<If Condition="((HasQuest(9785)) &amp;&amp; (!IsQuestCompleted(9785)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9785" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9785" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="9720" ItemId="24355" MobId="17998" NumOfTimes="1" Range="5" CollectionDistance="200" X="-755.97" Y="5925.65" Z="19.0132" />
 		<CustomBehavior File="UseItemOn" QuestId="9720" ItemId="24355" MobId="17999" NumOfTimes="1" Range="5" CollectionDistance="200" X="-213.254" Y="6302.23" Z="21.7091" />
@@ -760,7 +760,7 @@
 			<TurnIn QuestName="By Any Means Necessary" QuestId="9978" TurnInName="Empoor" TurnInId="18482" X="-1954.98" Y="4752.3" Z="-2.7634" />
 		</If>
 		<If Condition="((HasQuest(9978)) &amp;&amp; (!IsQuestCompleted(9978)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9978" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9978" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(9978)">
 			<PickUp QuestName="Wind Trader Lathrai" QuestId="9979" GiverName="Empoor" GiverId="18482" X="-1954.98" Y="4752.3" Z="-2.7634" />
@@ -778,7 +778,7 @@
 			<TurnIn QuestName="The Infested Protectors" QuestId="10896" TurnInName="Lakotae" TurnInId="22420" X="-2860.59" Y="5038.81" Z="-19.9867" />
 		</If>
 		<If Condition="((HasQuest(10896)) &amp;&amp; (!IsQuestCompleted(10896)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10896" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10896" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Personal Favor" QuestId="10112" TurnInName="Wind Trader Lathrai" TurnInId="18484" X="-1741.71" Y="5191.84" Z="-40.1258" />
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10112)">
@@ -814,7 +814,7 @@
 			<TurnIn QuestName="The Final Code" QuestId="10446" TurnInName="Jenai Starwhisper" TurnInId="18459" X="-2925.6" Y="4004.8" Z="-1.4743" />
 		</If>
 		<If Condition="((HasQuest(10446)) &amp;&amp; (!IsQuestCompleted(10446)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10446" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10446" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10446)">
 			<PickUp QuestName="Letting Earthbinder Tavgren Know" QuestId="10005" GiverName="Jenai Starwhisper" GiverId="18459" X="-2925.6" Y="4004.8" Z="-1.4743" />
@@ -869,7 +869,7 @@
 			<TurnIn QuestName="Creating the Pendant" QuestId="10567" TurnInName="Timeon" TurnInId="21782" X="2993.94" Y="5473.5" Z="145.197" />
 		</If>
 		<If Condition="((HasQuest(10567)) &amp;&amp; (!IsQuestCompleted(10567)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10567" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10567" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10567)">
 			<PickUp QuestName="Whispers of the Raven God" QuestId="10607" GiverName="Timeon" GiverId="21782" X="2993.94" Y="5473.5" Z="145.197" />
@@ -889,7 +889,7 @@
 			<TurnIn QuestName="A Time for Negotiation..." QuestId="10682" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
 		</If>
 		<If Condition="((HasQuest(10682)) &amp;&amp; (!IsQuestCompleted(10682)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10682" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10682" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10682)">
 			<PickUp QuestName="...and a Time for Action" QuestId="10713" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
@@ -924,7 +924,7 @@
 			<TurnIn QuestName="You're Fired!" QuestId="10821" TurnInName="Wildlord Antelarion" TurnInId="22127" X="2959.73" Y="5465.37" Z="144.332" />
 		</If>
 		<If Condition="((HasQuest(10821)) &amp;&amp; (!IsQuestCompleted(10821)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10821" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10821" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10821)">
 			<PickUp QuestName="Death's Door" QuestId="10910" GiverName="Wildlord Antelarion" GiverId="22127" X="2959.73" Y="5465.37" Z="144.332" />
@@ -955,7 +955,7 @@
 			<TurnIn QuestName="Meeting at the Blackwing Coven" QuestId="10722" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
 		</If>
 		<If Condition="((HasQuest(10722)) &amp;&amp; (!IsQuestCompleted(10722)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10722" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10722" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10722)">
 			<PickUp QuestName="Maxnar Must Die!" QuestId="10748" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
@@ -965,7 +965,7 @@
 			<TurnIn QuestName="Whispers of the Raven God" QuestId="10607" TurnInName="Timeon" TurnInId="21782" X="2993.94" Y="5473.5" Z="145.197" />
 		</If>
 		<If Condition="((HasQuest(10607)) &amp;&amp; (!IsQuestCompleted(10607)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10607" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10607" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="HasQuest(10748) &amp;&amp; !IsQuestCompleted(10748) &amp;&amp; GetItemCount(31121) &lt; 5">
 			<CustomBehavior File="CollectThings" QuestId="10748" CollectItemId="31121" CollectItemCount="5" HuntingGroundRadius="120" MobId="21382" MobId2="21383" MobId3="21492" MobId4="21637" MobId5="21809" MobId6="21810" X="3152.57" Y="7090.58" Z="169.336">
@@ -995,7 +995,7 @@
 			<TurnIn QuestName="Fire At Will!" QuestId="10911" TurnInName="Evergrove Druid" TurnInId="22423" X="2216.32" Y="5483.93" Z="230.561" />
 		</If>
 		<If Condition="((HasQuest(10911)) &amp;&amp; (!IsQuestCompleted(10911)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10911" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10911" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10911)">
 			<PickUp QuestName="The Hound-Master" QuestId="10912" GiverName="Evergrove Druid" GiverId="22423" X="2216.32" Y="5483.93" Z="230.561" />
@@ -1006,7 +1006,7 @@
 			<TurnIn QuestName="The Hound-Master" QuestId="10912" TurnInName="Wildlord Antelarion" TurnInId="22127" X="2959.73" Y="5465.37" Z="144.332" />
 		</If>
 		<If Condition="((HasQuest(10912)) &amp;&amp; (!IsQuestCompleted(10912)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10912" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10912" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67)">
 			<PickUp QuestName="Flora of the Eco-Domes" QuestId="10426" GiverName="Aurine Moonblaze" GiverId="20871" X="4245.92" Y="3124.08" Z="180.189" />
@@ -1016,7 +1016,7 @@
 			<TurnIn QuestName="Flora of the Eco-Domes" QuestId="10426" TurnInName="Aurine Moonblaze" TurnInId="20871" X="4245.92" Y="3124.08" Z="180.189" />
 		</If>
 		<If Condition="((HasQuest(10426)) &amp;&amp; (!IsQuestCompleted(10426)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10426" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10426" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10426)">
 			<PickUp QuestName="Creatures of the Eco-Domes" QuestId="10427" GiverName="Aurine Moonblaze" GiverId="20871" X="4245.92" Y="3124.08" Z="180.189" />

@@ -111,7 +111,7 @@
 			<TurnIn QuestName="Troll Patrol: The Alchemist's Apprentice" QuestId="12541" TurnInName="Alchemist Finklestein" TurnInId="28205" X="5934.02" Y="-2348.9" Z="293.924" />
 		</If>
 		<If Condition="((HasQuest(12541)) &amp;&amp; (!IsQuestCompleted(12541)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12541" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12541" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; HasQuest(12587)">
 			<PickUp QuestName="Troll Patrol: Couldn't Care Less" QuestId="12594" GiverName="Captain Grondel" GiverId="28043" X="5541.78" Y="-3004.43" Z="278.475" />
@@ -131,7 +131,7 @@
 			<TurnIn QuestName="Troll Patrol: Whatdya Want, a Medal?" QuestId="12519" TurnInName="Captain Grondel" TurnInId="28043" X="5541.78" Y="-3004.43" Z="278.475" />
 		</If>
 		<If Condition="((HasQuest(12519)) &amp;&amp; (!IsQuestCompleted(12519)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12519" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12519" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; HasQuest(12563)">
 			<PickUp QuestName="Troll Patrol: Done to Death" QuestId="12568" GiverName="Captain Rupert" GiverId="28044" X="5257.52" Y="-3500.32" Z="291.793" />
@@ -147,21 +147,21 @@
 			<TurnIn QuestName="Troll Patrol: Done to Death" QuestId="12568" TurnInName="Captain Rupert" TurnInId="28044" X="5257.52" Y="-3500.32" Z="291.793" />
 		</If>
 		<If Condition="((HasQuest(12568)) &amp;&amp; (!IsQuestCompleted(12568)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12568" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12568" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12509 Troll Patrol: Intestinal Fortitude: objective 28090 Crusade Recruit x5: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12509)) &amp;&amp; (IsQuestCompleted(12509)))">
 			<TurnIn QuestName="Troll Patrol: Intestinal Fortitude" QuestId="12509" TurnInName="Captain Rupert" TurnInId="28044" X="5257.52" Y="-3500.32" Z="291.793" />
 		</If>
 		<If Condition="((HasQuest(12509)) &amp;&amp; (!IsQuestCompleted(12509)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12509" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12509" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12591 Troll Patrol: Throwing Down: objective 28352 Nethurbian Crater KC Bunny x5: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12591)) &amp;&amp; (IsQuestCompleted(12591)))">
 			<TurnIn QuestName="Troll Patrol: Throwing Down" QuestId="12591" TurnInName="Captain Rupert" TurnInId="28044" X="5257.52" Y="-3500.32" Z="291.793" />
 		</If>
 		<If Condition="((HasQuest(12591)) &amp;&amp; (!IsQuestCompleted(12591)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12591" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12591" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; HasQuest(12587)">
 			<PickUp QuestName="Troll Patrol: Can You Dig It?" QuestId="12588" GiverName="Captain Brandon" GiverId="28042" X="5042.04" Y="-3036.95" Z="293.787" />
@@ -178,14 +178,14 @@
 			<TurnIn QuestName="Troll Patrol: Can You Dig It?" QuestId="12588" TurnInName="Captain Brandon" TurnInId="28042" X="5042.04" Y="-3036.95" Z="293.787" />
 		</If>
 		<If Condition="((HasQuest(12588)) &amp;&amp; (!IsQuestCompleted(12588)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12588" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12588" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12502 Troll Patrol: High Standards: objective 28064 Drakkari Pedestal 01 x1: not attackable; objective 28304 Drakkari Pedestal 02 x1: not attackable; objective 28305 Drakkari Pedestal 03 x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12502)) &amp;&amp; (IsQuestCompleted(12502)))">
 			<TurnIn QuestName="Troll Patrol: High Standards" QuestId="12502" TurnInName="Captain Brandon" TurnInId="28042" X="5042.04" Y="-3036.95" Z="293.787" />
 		</If>
 		<If Condition="((HasQuest(12502)) &amp;&amp; (!IsQuestCompleted(12502)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12502" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12502" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Troll Patrol: Something for the Pain" QuestId="12564" TurnInName="Captain Brandon" TurnInId="28042" X="5042.04" Y="-3036.95" Z="293.787" />
 		<!-- REVIEW Q12563 Troll Patrol: objective 28042 Captain Brandon x1: not attackable; objective 28044 Captain Rupert x1: not attackable; objective 28043 Captain Grondel x1: not attackable; objective 28205 Alchemist Finklestein x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -193,21 +193,21 @@
 			<TurnIn QuestName="Troll Patrol" QuestId="12563" TurnInName="Commander Kunz" TurnInId="28039" X="5450.91" Y="-2610.93" Z="306.993" />
 		</If>
 		<If Condition="((HasQuest(12563)) &amp;&amp; (!IsQuestCompleted(12563)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12563" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12563" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12587 Troll Patrol: objective 28042 Captain Brandon x1: not attackable; objective 28044 Captain Rupert x1: not attackable; objective 28043 Captain Grondel x1: not attackable; objective 28205 Alchemist Finklestein x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12587)) &amp;&amp; (IsQuestCompleted(12587)))">
 			<TurnIn QuestName="Troll Patrol" QuestId="12587" TurnInName="Commander Kunz" TurnInId="28039" X="5450.91" Y="-2610.93" Z="306.993" />
 		</If>
 		<If Condition="((HasQuest(12587)) &amp;&amp; (!IsQuestCompleted(12587)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12587" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12587" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12501 Troll Patrol: objective 28042 Captain Brandon x1: not attackable; objective 28044 Captain Rupert x1: not attackable; objective 28043 Captain Grondel x1: not attackable; objective 28205 Alchemist Finklestein x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12501)) &amp;&amp; (IsQuestCompleted(12501)))">
 			<TurnIn QuestName="Troll Patrol" QuestId="12501" TurnInName="Commander Kunz" TurnInId="28039" X="5450.91" Y="-2610.93" Z="306.993" />
 		</If>
 		<If Condition="((HasQuest(12501)) &amp;&amp; (!IsQuestCompleted(12501)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12501" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12501" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74)">
 			<PickUp QuestName="Congratulations!" QuestId="12604" GiverName="Commander Kunz" GiverId="28039" X="5450.91" Y="-2610.93" Z="306.993" />

@@ -55,21 +55,21 @@
 			<TurnIn QuestName="Riding the Red Rocket" QuestId="12437" TurnInName="Commander Howser" TurnInId="27759" X="2484.83" Y="-1888.76" Z="9.7687" />
 		</If>
 		<If Condition="((HasQuest(12437)) &amp;&amp; (!IsQuestCompleted(12437)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12437" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12437" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12316 Keep Them at Bay!: goal 28190 Venture Bay Kill Credit Bunny - Grizzly Hills x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12316)) &amp;&amp; (IsQuestCompleted(12316)))">
 			<TurnIn QuestName="Keep Them at Bay!" QuestId="12316" TurnInName="Lieutenant Stuart" TurnInId="27562" X="2672.99" Y="-2271.95" Z="12.0556" />
 		</If>
 		<If Condition="((HasQuest(12316)) &amp;&amp; (!IsQuestCompleted(12316)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12316" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12316" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12323 Smoke 'Em Out: use item 37621: target 27568 Venture Co. Stables has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12323)) &amp;&amp; (IsQuestCompleted(12323)))">
 			<TurnIn QuestName="Smoke 'Em Out" QuestId="12323" TurnInName="Sergeant Downey" TurnInId="27602" X="2691.33" Y="-2264.73" Z="14.645" />
 		</If>
 		<If Condition="((HasQuest(12323)) &amp;&amp; (!IsQuestCompleted(12323)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12323" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12323" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Grizzly Hills\Venture Bay Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

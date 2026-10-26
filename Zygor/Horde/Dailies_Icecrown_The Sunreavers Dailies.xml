@@ -137,14 +137,14 @@
 			<TurnIn QuestName="Stop The Aggressors" QuestId="14140" TurnInName="Girana the Blooded" TurnInId="34771" X="8420.01" Y="674.24" Z="550.462" />
 		</If>
 		<If Condition="((HasQuest(14140)) &amp;&amp; (!IsQuestCompleted(14140)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14140" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14140" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q14144 The Light's Mercy: objective 34852 Slain Tualiq Villager x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14144)) &amp;&amp; (IsQuestCompleted(14144)))">
 			<TurnIn QuestName="The Light's Mercy" QuestId="14144" TurnInName="Girana the Blooded" TurnInId="34771" X="8420.01" Y="674.24" Z="550.462" />
 		</If>
 		<If Condition="((HasQuest(14144)) &amp;&amp; (!IsQuestCompleted(14144)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14144" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14144" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="You've Really Done It This Time, Kul" QuestId="14142" Type="KillMob" MobId="34956" KillCount="1" />
 		<Objective QuestName="You've Really Done It This Time, Kul" QuestId="14142" Type="KillMob" MobId="34716" KillCount="4" />
@@ -154,21 +154,21 @@
 			<TurnIn QuestName="Breakfast Of Champions" QuestId="14092" TurnInName="Tylos Dawnrunner" TurnInId="34914" X="8422.19" Y="673.261" Z="550.554" />
 		</If>
 		<If Condition="((HasQuest(14092)) &amp;&amp; (!IsQuestCompleted(14092)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14092" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14092" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q14141 Gormok Wants His Snobolds: objective 34899 Snowblind Follower Proxy x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14141)) &amp;&amp; (IsQuestCompleted(14141)))">
 			<TurnIn QuestName="Gormok Wants His Snobolds" QuestId="14141" TurnInName="Tylos Dawnrunner" TurnInId="34914" X="8422.19" Y="673.261" Z="550.554" />
 		</If>
 		<If Condition="((HasQuest(14141)) &amp;&amp; (!IsQuestCompleted(14141)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14141" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14141" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q14145 What Do You Feed a Yeti, Anyway?: helper item 47036 Fresh Chum has no creature or object source near the guide coordinates; item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14145)) &amp;&amp; (IsQuestCompleted(14145)))">
 			<TurnIn QuestName="What Do You Feed a Yeti, Anyway?" QuestId="14145" TurnInName="Tylos Dawnrunner" TurnInId="34914" X="8422.19" Y="673.261" Z="550.554" />
 		</If>
 		<If Condition="((HasQuest(14145)) &amp;&amp; (!IsQuestCompleted(14145)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14145" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14145" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\The Sunreavers Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

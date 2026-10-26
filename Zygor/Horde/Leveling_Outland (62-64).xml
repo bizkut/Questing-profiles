@@ -647,7 +647,7 @@
 			<TurnIn QuestName="The Cleansing Must Be Stopped" QuestId="9370" TurnInName="Ryathen the Somber" TurnInId="16791" X="-569.171" Y="4145.86" Z="68.2169" />
 		</If>
 		<If Condition="((HasQuest(9370)) &amp;&amp; (!IsQuestCompleted(9370)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9370" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9370" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Marking the Path" QuestId="9391" Type="UseObject" ObjectId="181581" UseCount="1" />
 		<Objective QuestName="Marking the Path" QuestId="9391" Type="UseObject" ObjectId="181580" UseCount="1" />
@@ -662,7 +662,7 @@
 			<TurnIn QuestName="Testing the Antidote" QuestId="10255" TurnInName="Thiah Redmane" TurnInId="16991" X="-312.485" Y="4728.77" Z="17.3123" />
 		</If>
 		<If Condition="((HasQuest(10255)) &amp;&amp; (!IsQuestCompleted(10255)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10255" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10255" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Keep Thornfang Hill Clear!" QuestId="10159" Type="KillMob" MobId="19349" KillCount="8" />
 		<Objective QuestName="Keep Thornfang Hill Clear!" QuestId="10159" Type="KillMob" MobId="19350" KillCount="8" />
@@ -684,7 +684,7 @@
 			<TurnIn QuestName="The Dreghood Elders" QuestId="10368" TurnInName="Naladu" TurnInId="19361" X="-760.262" Y="4699.16" Z="67.2593" />
 		</If>
 		<If Condition="((HasQuest(10368)) &amp;&amp; (!IsQuestCompleted(10368)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10368" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10368" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(10368)">
 			<PickUp QuestName="Arzeth's Demise" QuestId="10369" GiverName="Naladu" GiverId="19361" X="-760.262" Y="4699.16" Z="67.2593" />
@@ -694,7 +694,7 @@
 			<TurnIn QuestName="Arzeth's Demise" QuestId="10369" TurnInName="Naladu" TurnInId="19361" X="-760.262" Y="4699.16" Z="67.2593" />
 		</If>
 		<If Condition="((HasQuest(10369)) &amp;&amp; (!IsQuestCompleted(10369)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10369" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10369" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((HasQuest(9387)) &amp;&amp; (!IsQuestCompleted(9387)))">
 			<Objective QuestName="Source of the Corruption" QuestId="9387" Type="CollectItem" ItemId="29113" CollectCount="5" />
@@ -705,21 +705,21 @@
 			<TurnIn QuestName="Life's Finer Pleasures" QuestId="9483" TurnInName="Viera Sunwhisper" TurnInId="17226" X="-657.813" Y="4137.41" Z="64.6336" />
 		</If>
 		<If Condition="((HasQuest(9483)) &amp;&amp; (!IsQuestCompleted(9483)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9483" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9483" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q9472 Arelion's Mistress: goal 17226 Viera Sunwhisper x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9472)) &amp;&amp; (IsQuestCompleted(9472)))">
 			<TurnIn QuestName="Arelion's Mistress" QuestId="9472" TurnInName="Magistrix Carinda" TurnInId="16793" X="-596.007" Y="4177.39" Z="64.9726" />
 		</If>
 		<If Condition="((HasQuest(9472)) &amp;&amp; (!IsQuestCompleted(9472)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9472" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9472" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="HasItem(23580) &amp;&amp; !HasQuest(9418) &amp;&amp; !IsQuestCompleted(9418) &amp;&amp; (Me.Level &gt;= 60)">
 			<PickUp QuestName="Avruu's Orb" QuestId="9418" GiverName="Avruu's Orb" GiverId="23580" GiverType="Item" />
 		</If>
 		<!-- SKIP turn-in Q9418 Avruu's Orb: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(9418)) &amp;&amp; (!IsQuestCompleted(9418)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9418" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9418" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 61)">
 			<PickUp QuestName="The Road to Falcon Watch" QuestId="9375" GiverName="Wounded Blood Elf Pilgrim" GiverId="16993" X="-1137.73" Y="4272.1" Z="14.0485" />
@@ -729,7 +729,7 @@
 			<TurnIn QuestName="The Road to Falcon Watch" QuestId="9375" TurnInName="Taleris Dawngazer" TurnInId="17015" X="-646.951" Y="4176.91" Z="68.5136" />
 		</If>
 		<If Condition="((HasQuest(9375)) &amp;&amp; (!IsQuestCompleted(9375)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9375" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9375" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 61) &amp;&amp; IsQuestCompleted(9375)">
 			<PickUp QuestName="A Pilgrim's Plight" QuestId="9376" GiverName="Taleris Dawngazer" GiverId="17015" X="-646.951" Y="4176.91" Z="68.5136" />
@@ -743,7 +743,7 @@
 			<TurnIn QuestName="Birds of a Feather" QuestId="9397" TurnInName="Falconer Drenna Riverwind" TurnInId="16790" X="-596.347" Y="4108.47" Z="91.0061" />
 		</If>
 		<If Condition="((HasQuest(9397)) &amp;&amp; (!IsQuestCompleted(9397)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9397" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9397" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((HasQuest(10389)) &amp;&amp; (!IsQuestCompleted(10389)))">
 			<Objective QuestName="The Agony and the Darkness" QuestId="10389" Type="KillMob" MobId="16951" KillCount="10" />
@@ -855,7 +855,7 @@
 			<TurnIn QuestName="As the Crow Flies" QuestId="9718" TurnInName="Ysiel Windsinger" TurnInId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
 		</If>
 		<If Condition="((HasQuest(9718)) &amp;&amp; (!IsQuestCompleted(9718)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9718" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9718" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 61) &amp;&amp; IsQuestCompleted(9718)">
 			<PickUp QuestName="Balance Must Be Preserved" QuestId="9720" GiverName="Ysiel Windsinger" GiverId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
@@ -865,7 +865,7 @@
 			<TurnIn QuestName="Blessings of the Ancients" QuestId="9785" TurnInName="Windcaller Blackhoof" TurnInId="18070" X="-234.269" Y="5434.77" Z="22.521" />
 		</If>
 		<If Condition="((HasQuest(9785)) &amp;&amp; (!IsQuestCompleted(9785)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9785" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9785" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="9720" ItemId="24355" MobId="17998" NumOfTimes="1" Range="5" CollectionDistance="200" X="-755.97" Y="5925.65" Z="19.0132" />
 		<CustomBehavior File="UseItemOn" QuestId="9720" ItemId="24355" MobId="17999" NumOfTimes="1" Range="5" CollectionDistance="200" X="-213.254" Y="6302.23" Z="21.7091" />
@@ -967,7 +967,7 @@
 			<TurnIn QuestName="A Spirit Ally?" QuestId="9847" TurnInName="Seer Janidi" TurnInId="18017" X="193.656" Y="7847.36" Z="25.0292" />
 		</If>
 		<If Condition="((HasQuest(9847)) &amp;&amp; (!IsQuestCompleted(9847)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9847" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9847" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Burstcap Mushrooms, Mon!" QuestId="9814" Type="CollectItem" ItemId="24468" CollectCount="6" />
 		<TurnIn QuestName="Burstcap Mushrooms, Mon!" QuestId="9814" TurnInName="Witch Doctor Tor'gash" TurnInId="18014" X="296.559" Y="7821.7" Z="25.4293" />

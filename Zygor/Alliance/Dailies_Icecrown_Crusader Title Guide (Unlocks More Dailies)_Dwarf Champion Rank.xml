@@ -128,21 +128,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13741" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 		</If>
 		<If Condition="((HasQuest(13741)) &amp;&amp; (!IsQuestCompleted(13741)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13741" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13741" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13742 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13742)) &amp;&amp; (IsQuestCompleted(13742)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13742" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 		</If>
 		<If Condition="((HasQuest(13742)) &amp;&amp; (!IsQuestCompleted(13742)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13742" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13742" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13743 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13743)) &amp;&amp; (IsQuestCompleted(13743)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13743" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 		</If>
 		<If Condition="((HasQuest(13743)) &amp;&amp; (!IsQuestCompleted(13743)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13743" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13743" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Valiant's Field Training" QuestId="13744" TurnInName="Rollo Sureshot" TurnInId="33315" X="8615.49" Y="636.736" Z="550.253" />
 		<!-- REVIEW Q13745 The Grand Melee: item 45127 Mark of the Valiant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -150,7 +150,7 @@
 			<TurnIn QuestName="The Grand Melee" QuestId="13745" TurnInName="Clara Tumblebrew" TurnInId="33309" X="8608.91" Y="637.616" Z="550.255" />
 		</If>
 		<If Condition="((HasQuest(13745)) &amp;&amp; (!IsQuestCompleted(13745)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13745" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13745" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="At The Enemy's Gates" QuestId="13851" TurnInName="Clara Tumblebrew" TurnInId="33309" X="8608.91" Y="637.616" Z="550.255" />
 		<!-- REVIEW Q13714 The Valiant's Charge: item 44987 Valiant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -158,7 +158,7 @@
 			<TurnIn QuestName="The Valiant's Charge" QuestId="13714" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 		</If>
 		<If Condition="((HasQuest(13714)) &amp;&amp; (!IsQuestCompleted(13714)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13714" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13714" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13714)">
 			<PickUp QuestName="The Valiant's Challenge" QuestId="13713" GiverName="Lana Stouthammer" GiverId="33312" X="8612.24" Y="637.941" Z="550.426" />
@@ -168,7 +168,7 @@
 			<TurnIn QuestName="The Valiant's Challenge" QuestId="13713" TurnInName="Lana Stouthammer" TurnInId="33312" X="8612.24" Y="637.941" Z="550.426" />
 		</If>
 		<If Condition="((HasQuest(13713)) &amp;&amp; (!IsQuestCompleted(13713)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13713" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13713" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Crusader Title Guide (Unlocks More Dailies)\Dwarf Champion Rank: done for today" LogColor="Green" />
 	</QuestOrder>

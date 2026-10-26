@@ -461,7 +461,7 @@
 			<TurnIn QuestName="Gadgetzan Water Survey" QuestId="992" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
 		</If>
 		<If Condition="((HasQuest(992)) &amp;&amp; (!IsQuestCompleted(992)))">
-			<CustomBehavior File="AbandonQuest" QuestId="992" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="992" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 39) &amp;&amp; IsQuestCompleted(992)">
 			<PickUp QuestName="Noxious Lair Investigation" QuestId="82" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
@@ -475,7 +475,7 @@
 			<TurnIn QuestName="Tooga's Quest" QuestId="1560" TurnInName="Torta" TurnInId="6015" X="-7056.02" Y="-4812.75" Z="0.7901" />
 		</If>
 		<If Condition="((HasQuest(1560)) &amp;&amp; (!IsQuestCompleted(1560)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1560" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1560" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Noxious Lair Investigation" QuestId="82" TurnInName="Alchemist Pestlezugg" TurnInId="5594" X="-7115.3" Y="-3729.93" Z="8.8567" />
 		<If Condition="(Me.Level &gt;= 39) &amp;&amp; IsQuestCompleted(82)">
@@ -508,7 +508,7 @@
 			<TurnIn QuestName="Rescue OOX-17/TN!" QuestId="648" TurnInName="Oglethorpe Obnoticus" TurnInId="7406" X="-14417" Y="411.288" Z="22.7816" />
 		</If>
 		<If Condition="((HasQuest(648)) &amp;&amp; (!IsQuestCompleted(648)))">
-			<CustomBehavior File="AbandonQuest" QuestId="648" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="648" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Deliver to MacKinley" QuestId="2874" TurnInName='"Sea Wolf" MacKinley' TurnInId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
 		<TurnIn QuestName="Rise of the Silithid" QuestId="162" TurnInName="Gracina Spiritmight" TurnInId="7740" X="9634.06" Y="2495.63" Z="1354.89" />

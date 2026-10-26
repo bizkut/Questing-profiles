@@ -64,7 +64,7 @@
 			<TurnIn QuestName="Northern Cooking" QuestId="13089" TurnInName="Thomas Kolichio" TurnInId="26953" X="1927.98" Y="-6150.21" Z="23.0406" />
 		</If>
 		<If Condition="((HasQuest(13089)) &amp;&amp; (!IsQuestCompleted(13089)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13089" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13089" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Dalaran\Cooking Dailies Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>

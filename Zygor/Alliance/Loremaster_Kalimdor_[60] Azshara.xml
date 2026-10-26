@@ -353,7 +353,7 @@
 			<TurnIn QuestName="A Tale of Sorrow" QuestId="2801" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
 		</If>
 		<If Condition="((HasQuest(2801)) &amp;&amp; (!IsQuestCompleted(2801)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2801" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2801" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2801)">
 			<PickUp QuestName="The Stones That Bind Us" QuestId="2681" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
@@ -376,7 +376,7 @@
 		</If>
 		<!-- SKIP turn-in Q2721 Kirith: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(2721)) &amp;&amp; (!IsQuestCompleted(2721)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2721" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2721" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q2743 The Cover of Darkness: no quest giver with a spawn in the database -->
 		<!-- REVIEW Q2743 The Cover of Darkness: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -384,7 +384,7 @@
 			<TurnIn QuestName="The Cover of Darkness" QuestId="2743" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
 		</If>
 		<If Condition="((HasQuest(2743)) &amp;&amp; (!IsQuestCompleted(2743)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2743" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2743" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2743)">
 			<PickUp QuestName="The Demon Hunter" QuestId="2744" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
@@ -440,7 +440,7 @@
 			<TurnIn QuestName="The Demon Hunter" QuestId="2744" TurnInName="Loramus Thalipedes" TurnInId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
 		</If>
 		<If Condition="((HasQuest(2744)) &amp;&amp; (!IsQuestCompleted(2744)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2744" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2744" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2744)">
 			<PickUp QuestName="Loramus" QuestId="3141" GiverName="Loramus Thalipedes" GiverId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
@@ -450,7 +450,7 @@
 			<TurnIn QuestName="Loramus" QuestId="3141" TurnInName="Loramus Thalipedes" TurnInId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
 		</If>
 		<If Condition="((HasQuest(3141)) &amp;&amp; (!IsQuestCompleted(3141)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3141" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3141" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3141)">
 			<PickUp QuestName="Breaking the Ward" QuestId="3508" GiverName="Loramus Thalipedes" GiverId="7783" X="3098.16" Y="-6361.3" Z="8.1937" />
@@ -484,7 +484,7 @@
 		</If>
 		<!-- SKIP turn-in Q3449 Arcane Runes: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(3449)) &amp;&amp; (!IsQuestCompleted(3449)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3449" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3449" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q3461 Return to Tymor: no quest giver with a spawn in the database -->
 		<Objective QuestName="Stormers and Rumblers" QuestId="6805" Type="KillMob" MobId="11744" KillCount="15" />
@@ -495,7 +495,7 @@
 			<TurnIn QuestName="Return to Tymor" QuestId="3461" TurnInName="Tymor" TurnInId="8507" X="-4594.7" Y="-958.391" Z="508.962" />
 		</If>
 		<If Condition="((HasQuest(3461)) &amp;&amp; (!IsQuestCompleted(3461)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3461" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3461" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Formation of Felbane" QuestId="3621" TurnInName="Galvan the Ancient" TurnInId="7802" X="-12033.4" Y="-1003.86" Z="49.8796" />
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3621)">
@@ -506,7 +506,7 @@
 			<TurnIn QuestName="Enchanted Azsharite Fel Weaponry" QuestId="3625" TurnInName="Galvan the Ancient" TurnInId="7802" X="-12033.4" Y="-1003.86" Z="49.8796" />
 		</If>
 		<If Condition="((HasQuest(3625)) &amp;&amp; (!IsQuestCompleted(3625)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3625" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3625" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(3625)">
 			<PickUp QuestName="Return to the Blasted Lands" QuestId="3626" GiverName="Galvan the Ancient" GiverId="7802" X="-12033.4" Y="-1003.86" Z="49.8796" />
@@ -527,7 +527,7 @@
 			<TurnIn QuestName="You Are Rakh'likh, Demon" QuestId="3628" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
 		</If>
 		<If Condition="((HasQuest(3628)) &amp;&amp; (!IsQuestCompleted(3628)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3628" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3628" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Fragments of the Past" QuestId="5246" TurnInName="Aurora Skycaller" TurnInId="10304" X="3232.15" Y="-4256.49" Z="98.206" />
 	</QuestOrder>

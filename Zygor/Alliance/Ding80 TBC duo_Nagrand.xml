@@ -636,7 +636,7 @@
 			<TurnIn QuestName="Bring Me The Egg!" QuestId="10111" TurnInName="Wazat" TurnInId="19035" X="-2428.17" Y="6885.75" Z="4.1961" />
 		</If>
 		<If Condition="((HasQuest(10111)) &amp;&amp; (!IsQuestCompleted(10111)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10111" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10111" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Do My Eyes Deceive Me" QuestId="9917" Type="CollectItem" ItemId="25468" CollectCount="1" />
 		<TurnIn QuestName="Do My Eyes Deceive Me" QuestId="9917" TurnInName="Huntress Bintook" TurnInId="18353" X="-2556.34" Y="7254.19" Z="15.2034" />
@@ -648,7 +648,7 @@
 			<TurnIn QuestName="Not On My Watch!" QuestId="9918" TurnInName="Huntress Bintook" TurnInId="18353" X="-2556.34" Y="7254.19" Z="15.2034" />
 		</If>
 		<If Condition="((HasQuest(9918)) &amp;&amp; (!IsQuestCompleted(9918)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9918" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9918" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9918)">
 			<PickUp QuestName="Mo'mor the Breaker" QuestId="9920" GiverName="Huntress Bintook" GiverId="18353" X="-2556.34" Y="7254.19" Z="15.2034" />
@@ -693,7 +693,7 @@
 			<TurnIn QuestName="HELP!" QuestId="9923" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>
 		<If Condition="((HasQuest(9923)) &amp;&amp; (!IsQuestCompleted(9923)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9923" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9923" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(9923)">
 			<PickUp QuestName="Corki's Gone Missing Again!" QuestId="9924" GiverName="Arechron" GiverId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
@@ -784,14 +784,14 @@
 			<TurnIn QuestName="The Totem of Kar'dash" QuestId="9879" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>
 		<If Condition="((HasQuest(9879)) &amp;&amp; (!IsQuestCompleted(9879)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9879" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9879" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q9924 Corki's Gone Missing Again!: goal 20812 Corki x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9924)) &amp;&amp; (IsQuestCompleted(9924)))">
 			<TurnIn QuestName="Corki's Gone Missing Again!" QuestId="9924" TurnInName="Arechron" TurnInId="18183" X="-2488.78" Y="7230.66" Z="16.321" />
 		</If>
 		<If Condition="((HasQuest(9924)) &amp;&amp; (!IsQuestCompleted(9924)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9924" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9924" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP Q9954 Corki's Ransom: group quest (3 players) -->
 		<!-- REVIEW Q10108 Diplomatic Measures: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -799,7 +799,7 @@
 			<TurnIn QuestName="Diplomatic Measures" QuestId="10108" TurnInName="Lantresor of the Blade" TurnInId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />
 		</If>
 		<If Condition="((HasQuest(10108)) &amp;&amp; (!IsQuestCompleted(10108)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10108" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10108" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; (IsQuestCompleted(10107) || IsQuestCompleted(10108))">
 			<PickUp QuestName="Armaments for Deception" QuestId="9928" GiverName="Lantresor of the Blade" GiverId="18261" X="-2264.14" Y="6217.8" Z="44.4754" />

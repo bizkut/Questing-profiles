@@ -467,7 +467,7 @@
 			<TurnIn QuestName="Inoculation" QuestId="9303" TurnInName="Vindicator Aldar" TurnInId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
 		</If>
 		<If Condition="((HasQuest(9303)) &amp;&amp; (!IsQuestCompleted(9303)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9303" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9303" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(9303)">
 			<PickUp QuestName="The Missing Scout" QuestId="9309" GiverName="Vindicator Aldar" GiverId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
@@ -504,7 +504,7 @@
 			<TurnIn QuestName="Red Snapper - Very Tasty!" QuestId="9452" TurnInName="Diktynna" TurnInId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
 		</If>
 		<If Condition="((HasQuest(9452)) &amp;&amp; (!IsQuestCompleted(9452)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9452" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9452" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 4) &amp;&amp; IsQuestCompleted(9452)">
 			<PickUp QuestName="Find Acteon!" QuestId="9453" GiverName="Diktynna" GiverId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
@@ -539,7 +539,7 @@
 			<TurnIn QuestName="Learning the Language" QuestId="9538" TurnInName="Totem of Akida" TurnInId="17360" X="-4177.67" Y="-12512.5" Z="44.403" />
 		</If>
 		<If Condition="((HasQuest(9538)) &amp;&amp; (!IsQuestCompleted(9538)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9538" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9538" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 8) &amp;&amp; IsQuestCompleted(9538)">
 			<PickUp QuestName="Totem of Coo" QuestId="9539" GiverName="Totem of Akida" GiverId="17360" X="-4177.67" Y="-12512.5" Z="44.403" />
@@ -601,7 +601,7 @@
 			<TurnIn QuestName="A Cry For Help" QuestId="9528" TurnInName="Cowlen" TurnInId="17311" X="-5357.79" Y="-11175.3" Z="6.4322" />
 		</If>
 		<If Condition="((HasQuest(9528)) &amp;&amp; (!IsQuestCompleted(9528)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9528" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9528" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Missing Fisherman" QuestId="10428" TurnInName="Cowlen" TurnInId="17311" X="-5357.79" Y="-11175.3" Z="6.4322" />
 		<If Condition="(Me.Level &gt;= 6) &amp;&amp; IsQuestCompleted(10428)">
@@ -621,7 +621,7 @@
 			<TurnIn QuestName="Tree's Company" QuestId="9531" TurnInName="Admiral Odesyus" TurnInId="17240" X="-4699.57" Y="-12414.8" Z="11.6456" />
 		</If>
 		<If Condition="((HasQuest(9531)) &amp;&amp; (!IsQuestCompleted(9531)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9531" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9531" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 5) &amp;&amp; IsQuestCompleted(9531)">
 			<PickUp QuestName="Show Gnomercy" QuestId="9537" GiverName="Admiral Odesyus" GiverId="17240" X="-4699.57" Y="-12414.8" Z="11.6456" />
@@ -644,7 +644,7 @@
 			<TurnIn QuestName="The Prophecy of Akida" QuestId="9544" TurnInName="Arugoo of the Stillpine" TurnInId="17114" X="-4180.54" Y="-12509.6" Z="44.4447" />
 		</If>
 		<If Condition="((HasQuest(9544)) &amp;&amp; (!IsQuestCompleted(9544)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9544" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9544" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(9544)">
 			<PickUp QuestName="Stillpine Hold" QuestId="9559" GiverName="Arugoo of the Stillpine" GiverId="17114" X="-4180.54" Y="-12509.6" Z="44.4447" />
@@ -704,7 +704,7 @@
 			<TurnIn QuestName="Elekks Are Serious Business" QuestId="9625" TurnInName="Vorkhan the Elekk Herder" TurnInId="17586" X="-2670.2" Y="-12131.4" Z="17.2069" />
 		</If>
 		<If Condition="((HasQuest(9625)) &amp;&amp; (!IsQuestCompleted(9625)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9625" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9625" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

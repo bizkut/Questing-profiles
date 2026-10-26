@@ -531,7 +531,7 @@
 			<TurnIn QuestName="Diagnosis: Critical" QuestId="10424" TurnInName="Ghabar" TurnInId="20811" X="4149.92" Y="3056.21" Z="337.307" />
 		</If>
 		<If Condition="((HasQuest(10424)) &amp;&amp; (!IsQuestCompleted(10424)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10424" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10424" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10424)">
 			<PickUp QuestName="Testing the Prototype" QuestId="10430" GiverName="Ghabar" GiverId="20811" X="4149.92" Y="3056.21" Z="337.307" />
@@ -551,7 +551,7 @@
 			<TurnIn QuestName="Triangulation Point One" QuestId="10269" TurnInName="Dealer Hazzin" TurnInId="20092" X="4294.48" Y="2230.37" Z="124.322" />
 		</If>
 		<If Condition="((HasQuest(10269)) &amp;&amp; (!IsQuestCompleted(10269)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10269" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10269" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10269)">
 			<PickUp QuestName="Triangulation Point Two" QuestId="10275" GiverName="Dealer Hazzin" GiverId="20092" X="4294.48" Y="2230.37" Z="124.322" />
@@ -577,7 +577,7 @@
 		<Objective QuestName="The Ethereum" QuestId="10339" Type="KillMob" MobId="20456" KillCount="2" />
 		<!-- SKIP turn-in Q10339 The Ethereum: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(10339)) &amp;&amp; (!IsQuestCompleted(10339)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10339" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10339" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q10384 Ethereum Data: no quest giver with a spawn in the database -->
 		<Objective QuestName="Ethereum Data" QuestId="10384" Type="CollectItem" ItemId="29582" CollectCount="1" />
@@ -588,24 +588,24 @@
 		</If>
 		<!-- SKIP turn-in Q10384 Ethereum Data: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(10384)) &amp;&amp; (!IsQuestCompleted(10384)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10384" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10384" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q10385 Potential for Brain Damage = High: no quest giver with a spawn in the database -->
 		<Objective QuestName="Potential for Brain Damage = High" QuestId="10385" Type="CollectItem" ItemId="29459" CollectCount="15" />
 		<!-- SKIP turn-in Q10385 Potential for Brain Damage = High: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(10385)) &amp;&amp; (!IsQuestCompleted(10385)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10385" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10385" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q10405 S-A-B-O-T-A-G-E: no quest giver with a spawn in the database -->
 		<Objective QuestName="S-A-B-O-T-A-G-E" QuestId="10405" Type="CollectItem" ItemId="29591" CollectCount="1" />
 		<!-- SKIP turn-in Q10405 S-A-B-O-T-A-G-E: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(10405)) &amp;&amp; (!IsQuestCompleted(10405)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10405" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10405" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q10406 Delivering the Message: no quest giver with a spawn in the database -->
 		<!-- SKIP turn-in Q10406 Delivering the Message: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(10406)) &amp;&amp; (!IsQuestCompleted(10406)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10406" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10406" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68)">
 			<PickUp QuestName="Escape from the Staging Grounds" QuestId="10425" GiverName="Captured Protectorate Vanguard" GiverId="20763" X="4054.57" Y="2288.79" Z="113.711" />
@@ -615,7 +615,7 @@
 			<TurnIn QuestName="Escape from the Staging Grounds" QuestId="10425" TurnInName="Commander Ameer" TurnInId="20448" X="4252.65" Y="2166.07" Z="137.783" />
 		</If>
 		<If Condition="((HasQuest(10425)) &amp;&amp; (!IsQuestCompleted(10425)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10425" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10425" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Captain Tyralius" QuestId="10422" Type="KillMob" MobId="20787" KillCount="1" />
 		<TurnIn QuestName="Captain Tyralius" QuestId="10422" TurnInName="Flesh Handler Viridius" TurnInId="20450" X="4264.46" Y="2180.23" Z="136.346" />
@@ -633,14 +633,14 @@
 			<TurnIn QuestName="The Flesh Lies..." QuestId="10345" TurnInName="Agent Araxes" TurnInId="20551" X="3782.49" Y="2170.66" Z="141.422" />
 		</If>
 		<If Condition="((HasQuest(10345)) &amp;&amp; (!IsQuestCompleted(10345)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10345" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10345" Type="Incomplete" Remember="True" />
 		</If>
-		<!-- REVIEW Q10411 Electro-Shock Goodness!: use item 29737: target 20805 Void Waste Globule has no spawn (kill credit or scripted event); use item 29737: target 20806 Seeping Sludge Globule has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10411 Electro-Shock Goodness!: use item 29737: 20805 Void Waste Globule has no spawn near the guide coordinates; use item 29737: 20806 Seeping Sludge Globule has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10411)) &amp;&amp; (IsQuestCompleted(10411)))">
 			<TurnIn QuestName="Electro-Shock Goodness!" QuestId="10411" TurnInName="Researcher Navuud" TurnInId="20449" X="4245.4" Y="2180.23" Z="137.783" />
 		</If>
 		<If Condition="((HasQuest(10411)) &amp;&amp; (!IsQuestCompleted(10411)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10411" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10411" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Arconus the Insatiable" QuestId="10353" TurnInName="Commander Ameer" TurnInId="20448" X="4252.65" Y="2166.07" Z="137.783" />
 		<TurnIn QuestName="Recipe for Destruction" QuestId="10437" TurnInName="Professor Dabiri" TurnInId="20907" X="4277.2" Y="2132.45" Z="138.642" />
@@ -656,14 +656,14 @@
 		</If>
 		<!-- SKIP turn-in Q10270 A Not-So-Modest Proposal: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(10270)) &amp;&amp; (!IsQuestCompleted(10270)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10270" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10270" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10275 Triangulation Point Two: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10275)) &amp;&amp; (IsQuestCompleted(10275)))">
 			<TurnIn QuestName="Triangulation Point Two" QuestId="10275" TurnInName="Wind Trader Tuluman" TurnInId="20112" X="4045.84" Y="3553.27" Z="121.416" />
 		</If>
 		<If Condition="((HasQuest(10275)) &amp;&amp; (!IsQuestCompleted(10275)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10275" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10275" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10275)">
 			<PickUp QuestName="Full Triangle" QuestId="10276" GiverName="Wind Trader Tuluman" GiverId="20112" X="4045.84" Y="3553.27" Z="121.416" />
@@ -700,7 +700,7 @@
 			<TurnIn QuestName="Surveying the Ruins" QuestId="10335" TurnInName="Zephyrion" TurnInId="20470" X="4160.25" Y="2990.01" Z="336.945" />
 		</If>
 		<If Condition="((HasQuest(10335)) &amp;&amp; (!IsQuestCompleted(10335)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10335" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10335" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Minions of Culuthas" QuestId="10336" TurnInName="Nether-Stalker Nauthis" TurnInId="20471" X="4157.72" Y="2991.28" Z="336.945" />
 		<!-- REVIEW Q10855 Fel Reavers, No Thanks!: objective 22293 Inactive Fel Reaver x1: not attackable; completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -708,7 +708,7 @@
 			<TurnIn QuestName="Fel Reavers, No Thanks!" QuestId="10855" TurnInName="Nether-Stalker Nauthis" TurnInId="20471" X="4157.72" Y="2991.28" Z="336.945" />
 		</If>
 		<If Condition="((HasQuest(10855)) &amp;&amp; (!IsQuestCompleted(10855)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10855" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10855" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10855)">
 			<PickUp QuestName="The Best Defense" QuestId="10856" GiverName="Nether-Stalker Nauthis" GiverId="20471" X="4157.72" Y="2991.28" Z="336.945" />
@@ -723,7 +723,7 @@
 			<TurnIn QuestName="Teleport This!" QuestId="10857" TurnInName="Nether-Stalker Nauthis" TurnInId="20471" X="4157.72" Y="2991.28" Z="336.945" />
 		</If>
 		<If Condition="((HasQuest(10857)) &amp;&amp; (!IsQuestCompleted(10857)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10857" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10857" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; (GetFactionReputation(933) &gt;= 9000)">
 			<PickUp QuestName="A Mission of Mercy" QuestId="10970" GiverName="Commander Ameer" GiverId="20448" X="4252.65" Y="2166.07" Z="137.783" />
@@ -739,7 +739,7 @@
 			<TurnIn QuestName="Ethereum Secrets" QuestId="10971" TurnInName="Commander Ameer" TurnInId="20448" X="4252.65" Y="2166.07" Z="137.783" />
 		</If>
 		<If Condition="((HasQuest(10971)) &amp;&amp; (!IsQuestCompleted(10971)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10971" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10971" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10971) &amp;&amp; (GetFactionReputation(933) &gt;= 9000)">
 			<PickUp QuestName="Ethereum Prisoner I.D. Catalogue" QuestId="10972" GiverName="Commander Ameer" GiverId="20448" X="4252.65" Y="2166.07" Z="137.783" />
@@ -749,7 +749,7 @@
 			<TurnIn QuestName="Ethereum Prisoner I.D. Catalogue" QuestId="10972" TurnInName="Commander Ameer" TurnInId="20448" X="4252.65" Y="2166.07" Z="137.783" />
 		</If>
 		<If Condition="((HasQuest(10972)) &amp;&amp; (!IsQuestCompleted(10972)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10972" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10972" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 67) &amp;&amp; IsQuestCompleted(10262) &amp;&amp; (GetFactionReputation(933) &gt;= 3000)">
 			<PickUp QuestName="Another Heap of Ethereals" QuestId="10308" GiverName="Nether-Stalker Khay'ji" GiverId="19880" X="3069.96" Y="3674.86" Z="142.527" />

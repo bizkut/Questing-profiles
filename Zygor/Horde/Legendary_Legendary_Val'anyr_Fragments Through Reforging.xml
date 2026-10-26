@@ -38,7 +38,7 @@
 			<TurnIn QuestName="Val'anyr, Hammer of Ancient Kings" QuestId="13629" TurnInName="Archivum Console" TurnInId="194555" TurnInType="Object" X="1435.66" Y="118.825" Z="423.619" />
 		</If>
 		<If Condition="((HasQuest(13629)) &amp;&amp; (!IsQuestCompleted(13629)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13629" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13629" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

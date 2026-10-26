@@ -795,7 +795,7 @@
 			<TurnIn QuestName="Nothin' Says Lovin' Like a Big Stinger" QuestId="9898" TurnInName="Reavij" TurnInId="18012" X="124.199" Y="5204.06" Z="22.5011" />
 		</If>
 		<If Condition="((HasQuest(9898)) &amp;&amp; (!IsQuestCompleted(9898)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9898" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9898" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((HasQuest(9720)) &amp;&amp; (!IsQuestCompleted(9720)))">
 			<CustomBehavior File="UseItemOn" QuestId="9720" ItemId="24355" MobId="18002" NumOfTimes="1" Range="5" CollectionDistance="200" X="498.568" Y="8197.98" Z="21.5421" />
@@ -805,7 +805,7 @@
 			<TurnIn QuestName="Balance Must Be Preserved" QuestId="9720" TurnInName="Ysiel Windsinger" TurnInId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
 		</If>
 		<If Condition="((HasQuest(9720)) &amp;&amp; (!IsQuestCompleted(9720)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9720" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9720" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((HasQuest(9731)) &amp;&amp; (!IsQuestCompleted(9731)))">
 			<RunTo X="565.372" Y="6944.28" Z="-14.3311" />
@@ -843,7 +843,7 @@
 			<TurnIn QuestName="City of Light" QuestId="10211" TurnInName="Khadgar" TurnInId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
 		</If>
 		<If Condition="((HasQuest(10211)) &amp;&amp; (!IsQuestCompleted(10211)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10211" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10211" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(10211) &amp;&amp; !IsQuestCompleted(10551) &amp;&amp; !HasQuest(10551)">
 			<PickUp QuestName="Allegiance to the Scryers" QuestId="10552" GiverName="Khadgar" GiverId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
@@ -878,7 +878,7 @@
 			<TurnIn QuestName="By Any Means Necessary" QuestId="9978" TurnInName="Empoor" TurnInId="18482" X="-1954.98" Y="4752.3" Z="-2.7634" />
 		</If>
 		<If Condition="((HasQuest(9978)) &amp;&amp; (!IsQuestCompleted(9978)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9978" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9978" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(9978)">
 			<PickUp QuestName="Wind Trader Lathrai" QuestId="9979" GiverName="Empoor" GiverId="18482" X="-1954.98" Y="4752.3" Z="-2.7634" />
@@ -920,7 +920,7 @@
 			<TurnIn QuestName="The Infested Protectors" QuestId="10896" TurnInName="Lakotae" TurnInId="22420" X="-2860.59" Y="5038.81" Z="-19.9867" />
 		</If>
 		<If Condition="((HasQuest(10896)) &amp;&amp; (!IsQuestCompleted(10896)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10896" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10896" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Before Darkness Falls" QuestId="10878" Type="KillMob" MobId="21902" KillCount="4" />
 		<Objective QuestName="Before Darkness Falls" QuestId="10878" Type="KillMob" MobId="21907" KillCount="2" />
@@ -941,7 +941,7 @@
 			<TurnIn QuestName="Veil Skith: Darkstone of Terokk" QuestId="10839" TurnInName="Kirrik the Awakened" TurnInId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
 		</If>
 		<If Condition="((HasQuest(10839)) &amp;&amp; (!IsQuestCompleted(10839)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10839" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10839" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10839)">
 			<PickUp QuestName="Veil Rhaze: Unliving Evil" QuestId="10848" GiverName="Kirrik the Awakened" GiverId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
@@ -951,7 +951,7 @@
 			<TurnIn QuestName="Missing Friends" QuestId="10852" TurnInName="Ethan" TurnInId="22365" X="-2848.37" Y="5045.6" Z="-18.6129" />
 		</If>
 		<If Condition="((HasQuest(10852)) &amp;&amp; (!IsQuestCompleted(10852)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10852" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10852" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Veil Rhaze: Unliving Evil" QuestId="10848" Type="KillMob" MobId="21198" KillCount="4" />
 		<Objective QuestName="Veil Rhaze: Unliving Evil" QuestId="10848" Type="KillMob" MobId="21200" KillCount="4" />
@@ -972,7 +972,7 @@
 			<TurnIn QuestName="Digging Through Bones" QuestId="10922" TurnInName="Dwarfowitz" TurnInId="22481" X="-3742.71" Y="5410.3" Z="-3.2512" />
 		</If>
 		<If Condition="((HasQuest(10922)) &amp;&amp; (!IsQuestCompleted(10922)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10922" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10922" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="10913" ItemId="31769" MobId="21846" NumOfTimes="8" Range="5" CollectionDistance="200" X="-3749.58" Y="5195.27" Z="-22.6601" />
 		<!-- REVIEW Q10913 An Improper Burial: use item 31769: target 21859 Slain Sha'tar Vindicator has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -980,7 +980,7 @@
 			<TurnIn QuestName="An Improper Burial" QuestId="10913" TurnInName="Commander Ra'vaj" TurnInId="22446" X="-3740.01" Y="5409.07" Z="-3.2495" />
 		</If>
 		<If Condition="((HasQuest(10913)) &amp;&amp; (!IsQuestCompleted(10913)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10913" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10913" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 63) &amp;&amp; IsQuestCompleted(10913)">
 			<PickUp QuestName="A Hero Is Needed" QuestId="10914" GiverName="Commander Ra'vaj" GiverId="22446" X="-3740.01" Y="5409.07" Z="-3.2495" />
@@ -996,14 +996,14 @@
 			<TurnIn QuestName="The Fallen Exarch" QuestId="10915" TurnInName="Commander Ra'vaj" TurnInId="22446" X="-3740.01" Y="5409.07" Z="-3.2495" />
 		</If>
 		<If Condition="((HasQuest(10915)) &amp;&amp; (!IsQuestCompleted(10915)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10915" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10915" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10861 Veil Lithic: Preemptive Strike: kill 22337 Malevolent Hatchling x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10861)) &amp;&amp; (IsQuestCompleted(10861)))">
 			<TurnIn QuestName="Veil Lithic: Preemptive Strike" QuestId="10861" TurnInName="Kirrik the Awakened" TurnInId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
 		</If>
 		<If Condition="((HasQuest(10861)) &amp;&amp; (!IsQuestCompleted(10861)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10861" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10861" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10861)">
 			<PickUp QuestName="Veil Shalas: Signal Fires" QuestId="10874" GiverName="Kirrik the Awakened" GiverId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
@@ -1060,7 +1060,7 @@
 			<TurnIn QuestName="The Skettis Offensive" QuestId="10879" TurnInName="Rilak the Redeemed" TurnInId="22292" X="-1656.93" Y="5448.97" Z="-40.3227" />
 		</If>
 		<If Condition="((HasQuest(10879)) &amp;&amp; (!IsQuestCompleted(10879)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10879" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10879" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Wanted: Bonelashers Dead!" QuestId="10034" Type="KillMob" MobId="18470" KillCount="20" />
 		<Objective QuestName="Olemba Seed Oil" QuestId="9993" Type="CollectItem" ItemId="25745" CollectCount="30" />
@@ -1076,7 +1076,7 @@
 			<TurnIn QuestName="Who Are They?" QuestId="10041" TurnInName="Scout Neftis" TurnInId="18714" X="-2574.84" Y="4975.56" Z="11.0632" />
 		</If>
 		<If Condition="((HasQuest(10041)) &amp;&amp; (!IsQuestCompleted(10041)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10041" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10041" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10041)">
 			<PickUp QuestName="Kill the Shadow Council!" QuestId="10043" GiverName="Scout Neftis" GiverId="18714" X="-2574.84" Y="4975.56" Z="11.0632" />
@@ -1132,7 +1132,7 @@
 			<TurnIn QuestName="And Now, the Moment of Truth" QuestId="10201" TurnInName="Rakoria" TurnInId="18385" X="-2615.73" Y="4376.06" Z="35.5522" />
 		</If>
 		<If Condition="((HasQuest(10201)) &amp;&amp; (!IsQuestCompleted(10201)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10201" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10201" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="LoadProfile" ProfileName="Leveling_Outland (66-68)" />
 	</QuestOrder>

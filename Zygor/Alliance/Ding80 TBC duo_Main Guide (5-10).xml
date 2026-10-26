@@ -327,7 +327,7 @@
 			<TurnIn QuestName="Beer Basted Boar Ribs" QuestId="384" TurnInName="Ragnar Thunderbrew" TurnInId="1267" X="-5596.21" Y="-504.132" Z="400.714" />
 		</If>
 		<If Condition="((HasQuest(384)) &amp;&amp; (!IsQuestCompleted(384)))">
-			<CustomBehavior File="AbandonQuest" QuestId="384" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="384" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Stocking Jetsteam" QuestId="317" TurnInName="Pilot Bellowfiz" TurnInId="1378" X="-5466.53" Y="-632.141" Z="393.939" />
 		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(317)">
@@ -434,7 +434,7 @@
 			<TurnIn QuestName="Deeprun Rat Roundup" QuestId="6661" TurnInName="Monty" TurnInId="12997" X="-19.6312" Y="40.0752" Z="-4.214" />
 		</If>
 		<If Condition="((HasQuest(6661)) &amp;&amp; (!IsQuestCompleted(6661)))">
-			<CustomBehavior File="AbandonQuest" QuestId="6661" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="6661" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(6661)">
 			<PickUp QuestName="Me Brother, Nipsy" QuestId="6662" GiverName="Monty" GiverId="12997" X="-19.6312" Y="40.0752" Z="-4.214" />

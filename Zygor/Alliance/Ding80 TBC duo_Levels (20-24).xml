@@ -681,7 +681,7 @@
 			<TurnIn QuestName="Dry Times" QuestId="116" TurnInName="Barkeep Daniels" TurnInId="346" X="-9211.5" Y="-2145.7" Z="64.4372" />
 		</If>
 		<If Condition="((HasQuest(116)) &amp;&amp; (!IsQuestCompleted(116)))">
-			<CustomBehavior File="AbandonQuest" QuestId="116" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="116" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 18)">
 			<PickUp QuestName="The Totem of Infliction" QuestId="101" GiverName="Madame Eva" GiverId="265" X="-10532" Y="-1213.64" Z="28.2175" />
@@ -801,7 +801,7 @@
 			<TurnIn QuestName="The Third Fleet" QuestId="288" TurnInName="First Mate Fitzsimmons" TurnInId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
 		</If>
 		<If Condition="((HasQuest(288)) &amp;&amp; (!IsQuestCompleted(288)))">
-			<CustomBehavior File="AbandonQuest" QuestId="288" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="288" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(288)">
 			<PickUp QuestName="The Cursed Crew" QuestId="289" GiverName="First Mate Fitzsimmons" GiverId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
@@ -879,7 +879,7 @@
 			<TurnIn QuestName="Missing In Action" QuestId="219" TurnInName="Marshal Marris" TurnInId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
 		</If>
 		<If Condition="((HasQuest(219)) &amp;&amp; (!IsQuestCompleted(219)))">
-			<CustomBehavior File="AbandonQuest" QuestId="219" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="219" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Blackrock Bounty" QuestId="128" TurnInName="Guard Howe" TurnInId="903" X="-9412.65" Y="-2255.45" Z="67.6043" />
 		<CustomBehavior File="LoadProfile" ProfileName="Ding80 TBC duo_Levels (25-29)" />

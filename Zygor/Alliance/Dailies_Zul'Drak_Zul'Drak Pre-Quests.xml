@@ -80,7 +80,7 @@
 			<TurnIn QuestName="Parachutes for the Argent Crusade" QuestId="12740" TurnInName="Commander Falstaav" TurnInId="28059" X="5439.53" Y="-2568.74" Z="304.036" />
 		</If>
 		<If Condition="((HasQuest(12740)) &amp;&amp; (!IsQuestCompleted(12740)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12740" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12740" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; (IsQuestCompleted(12503) || IsQuestCompleted(12740))">
 			<PickUp QuestName="Pa'Troll" QuestId="12596" GiverName="Commander Kunz" GiverId="28039" X="5450.91" Y="-2610.93" Z="306.993" />
@@ -93,7 +93,7 @@
 			<TurnIn QuestName="Lab Work" QuestId="12557" TurnInName="Alchemist Finklestein" TurnInId="28205" X="5934.02" Y="-2348.9" Z="293.924" />
 		</If>
 		<If Condition="((HasQuest(12557)) &amp;&amp; (!IsQuestCompleted(12557)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12557" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12557" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; HasQuest(12596)">
 			<PickUp QuestName="Creature Comforts" QuestId="12599" GiverName="Captain Grondel" GiverId="28043" X="5541.78" Y="-3004.43" Z="278.475" />
@@ -113,14 +113,14 @@
 			<TurnIn QuestName="Throwing Down" QuestId="12598" TurnInName="Captain Rupert" TurnInId="28044" X="5257.52" Y="-3500.32" Z="291.793" />
 		</If>
 		<If Condition="((HasQuest(12598)) &amp;&amp; (!IsQuestCompleted(12598)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12598" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12598" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12596 Pa'Troll: objective 28042 Captain Brandon x1: not attackable; objective 28044 Captain Rupert x1: not attackable; objective 28043 Captain Grondel x1: not attackable; objective 28205 Alchemist Finklestein x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12596)) &amp;&amp; (IsQuestCompleted(12596)))">
 			<TurnIn QuestName="Pa'Troll" QuestId="12596" TurnInName="Commander Kunz" TurnInId="28039" X="5450.91" Y="-2610.93" Z="306.993" />
 		</If>
 		<If Condition="((HasQuest(12596)) &amp;&amp; (!IsQuestCompleted(12596)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12596" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12596" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Zul'Drak\Zul'Drak Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>

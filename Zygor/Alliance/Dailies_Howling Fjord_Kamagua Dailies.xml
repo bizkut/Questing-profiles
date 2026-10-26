@@ -56,7 +56,7 @@
 			<TurnIn QuestName="The Way to His Heart..." QuestId="11472" TurnInName="Anuniaq" TurnInId="24810" X="743.706" Y="-2884.84" Z="7.2546" />
 		</If>
 		<If Condition="((HasQuest(11472)) &amp;&amp; (!IsQuestCompleted(11472)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11472" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11472" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Howling Fjord\Kamagua Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

@@ -1017,7 +1017,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6062" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
 			</If>
 			<If Condition="((HasQuest(6062)) &amp;&amp; (!IsQuestCompleted(6062)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6062" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6062" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Troll) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -1031,7 +1031,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6083" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
 			</If>
 			<If Condition="((HasQuest(6083)) &amp;&amp; (!IsQuestCompleted(6083)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6083" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6083" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Troll) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -1045,7 +1045,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6082" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
 			</If>
 			<If Condition="((HasQuest(6082)) &amp;&amp; (!IsQuestCompleted(6082)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6082" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6082" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Troll) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -1074,7 +1074,7 @@
 			<TurnIn QuestName="Need for a Cure" QuestId="812" TurnInName="Rhinag" TurnInId="3190" X="1279.03" Y="-4188.68" Z="28.0245" />
 		</If>
 		<If Condition="((HasQuest(812)) &amp;&amp; (!IsQuestCompleted(812)))">
-			<CustomBehavior File="AbandonQuest" QuestId="812" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="812" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Lost But Not Forgotten" QuestId="816" Type="CollectItem" ItemId="4891" CollectCount="1" />
 		<Objective QuestName="Dark Storms" QuestId="806" Type="CollectItem" ItemId="4869" CollectCount="1" />
@@ -1109,7 +1109,7 @@
 			<TurnIn QuestName="Hidden Enemies" QuestId="5727" TurnInName="Thrall" TurnInId="4949" X="1919.9" Y="-4123.8" Z="44.3715" />
 		</If>
 		<If Condition="((HasQuest(5727)) &amp;&amp; (!IsQuestCompleted(5727)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5727" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5727" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 9)">
 			<PickUp QuestName="A Recipe For Death" QuestId="447" GiverName="Apothecary Renferrel" GiverId="1937" X="522.449" Y="1652.3" Z="125.843" />
@@ -1143,7 +1143,7 @@
 			<TurnIn QuestName="Escorting Erland" QuestId="435" TurnInName="Rane Yorick" TurnInId="1950" X="1290.69" Y="1204.7" Z="52.8049" />
 		</If>
 		<If Condition="((HasQuest(435)) &amp;&amp; (!IsQuestCompleted(435)))">
-			<CustomBehavior File="AbandonQuest" QuestId="435" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="435" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(435)">
 			<PickUp QuestName="The Deathstalkers' Report" QuestId="449" GiverName="Rane Yorick" GiverId="1950" X="1290.69" Y="1204.7" Z="52.8049" />

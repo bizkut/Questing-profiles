@@ -717,7 +717,7 @@
 			<TurnIn QuestName="Seasoned Wolf Kabobs" QuestId="90" TurnInName="Chef Grual" TurnInId="272" X="-10507.7" Y="-1161.96" Z="28.1995" />
 		</If>
 		<If Condition="((HasQuest(90)) &amp;&amp; (!IsQuestCompleted(90)))">
-			<CustomBehavior File="AbandonQuest" QuestId="90" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="90" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Zombie Juice" QuestId="158" TurnInName="Tavernkeep Smitts" TurnInId="273" X="-10517.4" Y="-1158.66" Z="28.1995" />
 		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(158)">
@@ -819,7 +819,7 @@
 			<TurnIn QuestName="The Night Watch" QuestId="57" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
 		</If>
 		<If Condition="((HasQuest(57)) &amp;&amp; (!IsQuestCompleted(57)))">
-			<CustomBehavior File="AbandonQuest" QuestId="57" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="57" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(57)">
 			<PickUp QuestName="The Night Watch" QuestId="58" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
@@ -1050,14 +1050,14 @@
 			<TurnIn QuestName="Quell The Uprising" QuestId="387" TurnInName="Warden Thelwater" TurnInId="1719" X="-8799.57" Y="828.396" Z="97.754" />
 		</If>
 		<If Condition="((HasQuest(387)) &amp;&amp; (!IsQuestCompleted(387)))">
-			<CustomBehavior File="AbandonQuest" QuestId="387" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="387" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q391 The Stockade Riots: item 2926 Head of Bazil Thredd has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(391)) &amp;&amp; (IsQuestCompleted(391)))">
 			<TurnIn QuestName="The Stockade Riots" QuestId="391" TurnInName="Warden Thelwater" TurnInId="1719" X="-8799.57" Y="828.396" Z="97.754" />
 		</If>
 		<If Condition="((HasQuest(391)) &amp;&amp; (!IsQuestCompleted(391)))">
-			<CustomBehavior File="AbandonQuest" QuestId="391" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="391" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(391)">
 			<PickUp QuestName="The Curious Visitor" QuestId="392" GiverName="Warden Thelwater" GiverId="1719" X="-8799.57" Y="828.396" Z="97.754" />
@@ -1085,7 +1085,7 @@
 			<TurnIn QuestName="The Color of Blood" QuestId="388" TurnInName="Nikova Raskol" TurnInId="1721" X="-8696.33" Y="391.153" Z="102.385" />
 		</If>
 		<If Condition="((HasQuest(388)) &amp;&amp; (!IsQuestCompleted(388)))">
-			<CustomBehavior File="AbandonQuest" QuestId="388" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="388" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Shadow of the Past" QuestId="393" TurnInName="Master Mathias Shaw" TurnInId="332" X="-8815.27" Y="362.3" Z="109.604" />
 		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(393)">
@@ -1130,7 +1130,7 @@
 			<TurnIn QuestName="The Attack!" QuestId="434" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
 		</If>
 		<If Condition="((HasQuest(434)) &amp;&amp; (!IsQuestCompleted(434)))">
-			<CustomBehavior File="AbandonQuest" QuestId="434" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="434" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(434)">
 			<PickUp QuestName="The Head of the Beast" QuestId="394" GiverName="Elling Trias" GiverId="482" X="-8854.12" Y="575.652" Z="101.15" />
@@ -1149,14 +1149,14 @@
 			<TurnIn QuestName="What Comes Around..." QuestId="386" TurnInName="Guard Berton" TurnInId="859" X="-9249.39" Y="-2140.79" Z="64.2329" />
 		</If>
 		<If Condition="((HasQuest(386)) &amp;&amp; (!IsQuestCompleted(386)))">
-			<CustomBehavior File="AbandonQuest" QuestId="386" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="386" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q377 Crime and Punishment: item 3628 Hand of Dextren Ward has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(377)) &amp;&amp; (IsQuestCompleted(377)))">
 			<TurnIn QuestName="Crime and Punishment" QuestId="377" TurnInName="Councilman Millstipe" TurnInId="270" X="-10577" Y="-1108.37" Z="30.0693" />
 		</If>
 		<If Condition="((HasQuest(377)) &amp;&amp; (!IsQuestCompleted(377)))">
-			<CustomBehavior File="AbandonQuest" QuestId="377" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="377" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Worgen in the Woods" QuestId="221" Type="KillMob" MobId="205" KillCount="12" />
 		<TurnIn QuestName="The Missing Diplomat" QuestId="1243" TurnInName="Watcher Backus" TurnInId="840" X="-10512.2" Y="-1186.84" Z="28.2674" />
@@ -1223,7 +1223,7 @@
 			<TurnIn QuestName="Morbent Fel" QuestId="55" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
 		</If>
 		<If Condition="((HasQuest(55)) &amp;&amp; (!IsQuestCompleted(55)))">
-			<CustomBehavior File="AbandonQuest" QuestId="55" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="55" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Worgen in the Woods" QuestId="222" Type="KillMob" MobId="206" KillCount="8" />
 		<Objective QuestName="Worgen in the Woods" QuestId="222" Type="KillMob" MobId="920" KillCount="8" />
@@ -1237,7 +1237,7 @@
 			<TurnIn QuestName="Bride of the Embalmer" QuestId="253" TurnInName="Lord Ello Ebonlocke" TurnInId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
 		</If>
 		<If Condition="((HasQuest(253)) &amp;&amp; (!IsQuestCompleted(253)))">
-			<CustomBehavior File="AbandonQuest" QuestId="253" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="253" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Legend of Stalvan" QuestId="98" TurnInName="Madame Eva" TurnInId="265" X="-10532" Y="-1213.64" Z="28.2175" />
 		<If Condition="((Me.Class == WoWClass.Warlock))">
@@ -1269,7 +1269,7 @@
 			<TurnIn QuestName="The Missing Diplomat" QuestId="1447" TurnInName="Dashel Stonefist" TurnInId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
 		</If>
 		<If Condition="((HasQuest(1447)) &amp;&amp; (!IsQuestCompleted(1447)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1447" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1447" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1447)">
 			<PickUp QuestName="The Missing Diplomat" QuestId="1247" GiverName="Dashel Stonefist" GiverId="4961" X="-8681.14" Y="432.794" Z="99.2405" />

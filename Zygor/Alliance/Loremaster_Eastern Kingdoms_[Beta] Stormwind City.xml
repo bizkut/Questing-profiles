@@ -200,7 +200,7 @@
 			<TurnIn QuestName="The Missing Diplomat" QuestId="1447" TurnInName="Dashel Stonefist" TurnInId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
 		</If>
 		<If Condition="((HasQuest(1447)) &amp;&amp; (!IsQuestCompleted(1447)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1447" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1447" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1447)">
 			<PickUp QuestName="The Missing Diplomat" QuestId="1247" GiverName="Dashel Stonefist" GiverId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
@@ -218,7 +218,7 @@
 			<TurnIn QuestName="The Missing Diplomat" QuestId="1249" TurnInName="Mikhail" TurnInId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
 		</If>
 		<If Condition="((HasQuest(1249)) &amp;&amp; (!IsQuestCompleted(1249)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1249" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1249" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1249)">
 			<PickUp QuestName="The Missing Diplomat" QuestId="1250" GiverName='Tapoke "Slim" Jahn' GiverId="4962" X="-3808.82" Y="-825.612" Z="10.3019" />
@@ -253,7 +253,7 @@
 			<TurnIn QuestName="The Missing Diplomat" QuestId="1324" TurnInName="Archmage Tervosh" TurnInId="4967" X="-3757.47" Y="-4462.28" Z="65.1248" />
 		</If>
 		<If Condition="((HasQuest(1324)) &amp;&amp; (!IsQuestCompleted(1324)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1324" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1324" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1324)">
 			<PickUp QuestName="The Missing Diplomat" QuestId="1267" GiverName="Lady Jaina Proudmoore" GiverId="4968" X="-3749.69" Y="-4454.15" Z="64.9879" />

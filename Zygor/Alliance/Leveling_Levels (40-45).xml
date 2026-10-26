@@ -773,7 +773,7 @@
 			<TurnIn QuestName="Cleansing Witch Hill" QuestId="11183" TurnInName="Mordant Grimsby" TurnInId="23843" X="-2948.36" Y="-3893.17" Z="35.0324" />
 		</If>
 		<If Condition="((HasQuest(11183)) &amp;&amp; (!IsQuestCompleted(11183)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11183" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11183" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 33)">
 			<PickUp QuestName="Raptor Captor" QuestId="11146" GiverName="Sergeant Lukas" GiverId="23723" X="-2840.13" Y="-3424.61" Z="34.7885" />
@@ -808,7 +808,7 @@
 			<TurnIn QuestName="Prisoners of the Grimtotems" QuestId="11145" TurnInName="Sergeant Lukas" TurnInId="23723" X="-2840.13" Y="-3424.61" Z="34.7885" />
 		</If>
 		<If Condition="((HasQuest(11145)) &amp;&amp; (!IsQuestCompleted(11145)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11145" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11145" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Inspecting the Ruins" QuestId="11123" TurnInName="Inspector Tarem" TurnInId="23567" X="-3701.74" Y="-2538.78" Z="69.3945" />
 		<If Condition="(Me.Level &gt;= 30)">
@@ -858,12 +858,12 @@
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11194)">
 			<PickUp QuestName="Nat's Bargain" QuestId="11209" GiverName="Nat Pagle" GiverId="12919" X="-4139.29" Y="-4060.02" Z="2.1228" />
 		</If>
-		<!-- REVIEW Q11209 Nat's Bargain: use item 33166: target 23928 Lurking Shark has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11209 Nat's Bargain: use item 33166: 23928 Lurking Shark has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11209)) &amp;&amp; (IsQuestCompleted(11209)))">
 			<TurnIn QuestName="Nat's Bargain" QuestId="11209" TurnInName="Nat Pagle" TurnInId="12919" X="-4139.29" Y="-4060.02" Z="2.1228" />
 		</If>
 		<If Condition="((HasQuest(11209)) &amp;&amp; (!IsQuestCompleted(11209)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11209" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11209" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11209)">
 			<PickUp QuestName="Oh, It's Real" QuestId="11210" GiverName="Nat Pagle" GiverId="12919" X="-4139.29" Y="-4060.02" Z="2.1228" />
@@ -875,7 +875,7 @@
 			<TurnIn QuestName="Stinky's Escape" QuestId="1222" TurnInName="Morgan Stern" TurnInId="4794" X="-3624.75" Y="-4457.63" Z="13.7054" />
 		</If>
 		<If Condition="((HasQuest(1222)) &amp;&amp; (!IsQuestCompleted(1222)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1222" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1222" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Orc Report" QuestId="1219" TurnInName="Lieutenant Aden" TurnInId="23951" X="-3682.86" Y="-4391.41" Z="10.7306" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1219)">
@@ -908,7 +908,7 @@
 			<TurnIn QuestName="Take Down Tethyr!" QuestId="11198" TurnInName="Major Mills" TurnInId="23905" X="-3826.14" Y="-4634.12" Z="9.3472" />
 		</If>
 		<If Condition="((HasQuest(11198)) &amp;&amp; (!IsQuestCompleted(11198)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11198" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11198" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Black Shield" QuestId="1319" TurnInName="Caz Twosprocket" TurnInId="4941" X="-3798.24" Y="-4374.62" Z="16.8658" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1319)">
@@ -941,7 +941,7 @@
 			<TurnIn QuestName="The Essence of Enmity" QuestId="11161" TurnInName="Brogg" TurnInId="23579" X="-4622.45" Y="-3172.48" Z="34.8962" />
 		</If>
 		<If Condition="((HasQuest(11161)) &amp;&amp; (!IsQuestCompleted(11161)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11161" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11161" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 35) &amp;&amp; (IsQuestCompleted(11160) || IsQuestCompleted(11161))">
 			<PickUp QuestName="Spirits of Stonemaul Hold" QuestId="11159" GiverName="Brogg" GiverId="23579" X="-4622.45" Y="-3172.48" Z="34.8962" />
@@ -953,7 +953,7 @@
 			<TurnIn QuestName="Spirits of Stonemaul Hold" QuestId="11159" TurnInName="Brogg" TurnInId="23579" X="-4622.45" Y="-3172.48" Z="34.8962" />
 		</If>
 		<If Condition="((HasQuest(11159)) &amp;&amp; (!IsQuestCompleted(11159)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11159" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11159" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(11159)">
 			<PickUp QuestName="Challenge to the Black Flight" QuestId="11162" GiverName="Brogg" GiverId="23579" X="-4622.45" Y="-3172.48" Z="34.8962" />
@@ -963,7 +963,7 @@
 			<TurnIn QuestName="Challenge to the Black Flight" QuestId="11162" TurnInName="Brogg" TurnInId="23579" X="-4622.45" Y="-3172.48" Z="34.8962" />
 		</If>
 		<If Condition="((HasQuest(11162)) &amp;&amp; (!IsQuestCompleted(11162)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11162" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11162" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 35)">
 			<PickUp QuestName="Direhorn Raiders" QuestId="11156" GiverName="Apprentice Morlann" GiverId="23600" X="-4043.43" Y="-3395.4" Z="38.2663" />
@@ -986,7 +986,7 @@
 			<TurnIn QuestName="The Grimtotem Weapon" QuestId="11169" TurnInName="Apprentice Garion" TurnInId="23601" X="-4036.64" Y="-3392.86" Z="39.0799" />
 		</If>
 		<If Condition="((HasQuest(11169)) &amp;&amp; (!IsQuestCompleted(11169)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11169" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11169" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Direhorn Raiders" QuestId="11156" TurnInName="Apprentice Morlann" TurnInId="23600" X="-4043.43" Y="-3395.4" Z="38.2663" />
 		<TurnIn QuestName="The Deserters" QuestId="1287" TurnInName="Captain Garran Vimes" TurnInId="4944" X="-3735.06" Y="-4556.2" Z="27.2108" />
@@ -1006,7 +1006,7 @@
 			<TurnIn QuestName="Confirming the Suspicion" QuestId="11144" TurnInName="Captain Darill" TurnInId="23568" X="-2894.49" Y="-3422.32" Z="44.2113" />
 		</If>
 		<If Condition="((HasQuest(11144)) &amp;&amp; (!IsQuestCompleted(11144)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11144" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11144" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Arms of the Grimtotems" QuestId="11148" TurnInName="Captain Darill" TurnInId="23568" X="-2894.49" Y="-3422.32" Z="44.2113" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11144)">
@@ -1038,7 +1038,7 @@
 			<TurnIn QuestName="Peace at Last" QuestId="11152" TurnInName="Captain Garran Vimes" TurnInId="4944" X="-3735.06" Y="-4556.2" Z="27.2108" />
 		</If>
 		<If Condition="((HasQuest(11152)) &amp;&amp; (!IsQuestCompleted(11152)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11152" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11152" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((HasQuest(1187)) &amp;&amp; (!IsQuestCompleted(1187)))">
 			<Objective QuestName="Razzeric's Tweaking" QuestId="1187" Type="CollectItem" ItemId="5862" CollectCount="1" />
@@ -1141,7 +1141,7 @@
 			<TurnIn QuestName="Coolant Heads Prevail" QuestId="713" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
 		</If>
 		<If Condition="((HasQuest(713)) &amp;&amp; (!IsQuestCompleted(713)))">
-			<CustomBehavior File="AbandonQuest" QuestId="713" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="713" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(713)">
 			<PickUp QuestName="Gyro... What?" QuestId="714" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
@@ -1151,7 +1151,7 @@
 			<TurnIn QuestName="Gyro... What?" QuestId="714" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
 		</If>
 		<If Condition="((HasQuest(714)) &amp;&amp; (!IsQuestCompleted(714)))">
-			<CustomBehavior File="AbandonQuest" QuestId="714" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="714" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q715 Liquid Stone: needs skill line 171 at 0, which a profile cannot check -->
 		<!-- REVIEW Q715 Liquid Stone: item 929 Healing Potion has no drop or chest near the guide coordinates; item 3823 Lesser Invisibility Potion has no drop or chest near the guide coordinates; needs profession skill 171 (0). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1159,7 +1159,7 @@
 			<TurnIn QuestName="Liquid Stone" QuestId="715" TurnInName="Lucien Tosselwrench" TurnInId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />
 		</If>
 		<If Condition="((HasQuest(715)) &amp;&amp; (!IsQuestCompleted(715)))">
-			<CustomBehavior File="AbandonQuest" QuestId="715" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="715" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Study of the Elements: Rock" QuestId="710" Type="CollectItem" ItemId="4626" CollectCount="10" />
 		<TurnIn QuestName="Study of the Elements: Rock" QuestId="710" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
@@ -1208,7 +1208,7 @@
 			<TurnIn QuestName="This Is Going to Be Hard" QuestId="778" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
 		</If>
 		<If Condition="((HasQuest(778)) &amp;&amp; (!IsQuestCompleted(778)))">
-			<CustomBehavior File="AbandonQuest" QuestId="778" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="778" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Indurium" QuestId="1108" TurnInName="Martek the Exiled" TurnInId="4618" X="-6763.39" Y="-3129.3" Z="241.384" />
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1108)">

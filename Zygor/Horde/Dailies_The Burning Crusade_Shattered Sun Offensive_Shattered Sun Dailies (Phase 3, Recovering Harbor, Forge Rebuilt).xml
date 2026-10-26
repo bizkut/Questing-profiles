@@ -199,14 +199,14 @@
 			<TurnIn QuestName="Report to Nasuun" QuestId="11517" TurnInName="Exarch Nasuun" TurnInId="24932" X="-1843.86" Y="5494.1" Z="-12.3448" />
 		</If>
 		<If Condition="((HasQuest(11517)) &amp;&amp; (!IsQuestCompleted(11517)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11517" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11517" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11534 Report to Nasuun: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11534)) &amp;&amp; (IsQuestCompleted(11534)))">
 			<TurnIn QuestName="Report to Nasuun" QuestId="11534" TurnInName="Exarch Nasuun" TurnInId="24932" X="-1843.86" Y="5494.1" Z="-12.3448" />
 		</If>
 		<If Condition="((HasQuest(11534)) &amp;&amp; (!IsQuestCompleted(11534)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11534" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11534" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q11523 Arm the Wards!: no quest giver with a spawn in the database -->
 		<!-- SKIP pickup Q11525 Further Conversions: no quest giver with a spawn in the database -->
@@ -227,14 +227,14 @@
 			<TurnIn QuestName="Arm the Wards!" QuestId="11523" TurnInName="Captain Theris Dawnhearth" TurnInId="24967" X="12890.7" Y="-6881.36" Z="10.5983" />
 		</If>
 		<If Condition="((HasQuest(11523)) &amp;&amp; (!IsQuestCompleted(11523)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11523" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11523" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11525 Further Conversions: no quest giver in the database; objective 24991 Converted Sentry Credit x5: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11525)) &amp;&amp; (IsQuestCompleted(11525)))">
 			<TurnIn QuestName="Further Conversions" QuestId="11525" TurnInName="Vindicator Xayann" TurnInId="24965" X="12886.5" Y="-6869.97" Z="10.5939" />
 		</If>
 		<If Condition="((HasQuest(11525)) &amp;&amp; (!IsQuestCompleted(11525)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11525" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11525" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q11537 The Battle Must Go On: no quest giver with a spawn in the database -->
 		<!-- SKIP pickup Q11533 The Air Strikes Must Continue: no quest giver with a spawn in the database -->
@@ -256,21 +256,21 @@
 			<TurnIn QuestName="The Battle Must Go On" QuestId="11537" TurnInName="Harbinger Inuuro" TurnInId="25061" X="12791.2" Y="-6886.97" Z="13.4892" />
 		</If>
 		<If Condition="((HasQuest(11537)) &amp;&amp; (!IsQuestCompleted(11537)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11537" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11537" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11533 The Air Strikes Must Continue: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11533)) &amp;&amp; (IsQuestCompleted(11533)))">
 			<TurnIn QuestName="The Air Strikes Must Continue" QuestId="11533" TurnInName="Battlemage Arynna" TurnInId="25057" X="12790.7" Y="-6883.16" Z="13.4895" />
 		</If>
 		<If Condition="((HasQuest(11533)) &amp;&amp; (!IsQuestCompleted(11533)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11533" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11533" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11547 Know Your Ley Lines: no quest giver in the database; objective 25156 Sunwell - Quest Bunny - Portal x1: not attackable; objective 25154 Sunwell - Quest Bunny - Shrine x1: not attackable; objective 25157 Sunwell - Quest Bunny - Sunwell x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11547)) &amp;&amp; (IsQuestCompleted(11547)))">
 			<TurnIn QuestName="Know Your Ley Lines" QuestId="11547" TurnInName="Astromancer Darnarian" TurnInId="25133" X="12784.4" Y="-6882.24" Z="13.4894" />
 		</If>
 		<If Condition="((HasQuest(11547)) &amp;&amp; (!IsQuestCompleted(11547)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11547" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11547" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Intercept the Reinforcements" QuestId="11542" Type="KillMob" MobId="25090" KillCount="1" />
 		<Objective QuestName="Intercept the Reinforcements" QuestId="11542" Type="KillMob" MobId="25091" KillCount="1" />
@@ -280,14 +280,14 @@
 			<TurnIn QuestName="Intercept the Reinforcements" QuestId="11542" TurnInName="Vindicator Kaalan" TurnInId="25108" X="12703.5" Y="-6984.97" Z="25.7017" />
 		</If>
 		<If Condition="((HasQuest(11542)) &amp;&amp; (!IsQuestCompleted(11542)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11542" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11542" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11539 Taking the Harbor: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11539)) &amp;&amp; (IsQuestCompleted(11539)))">
 			<TurnIn QuestName="Taking the Harbor" QuestId="11539" TurnInName="Magister Ilastar" TurnInId="25069" X="12672.9" Y="-6942.86" Z="36.3555" />
 		</If>
 		<If Condition="((HasQuest(11539)) &amp;&amp; (!IsQuestCompleted(11539)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11539" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11539" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q11514 Maintaining the Sunwell Portal: no quest giver with a spawn in the database -->
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11550)">
@@ -322,14 +322,14 @@
 			<TurnIn QuestName="Blood for Blood" QuestId="11515" TurnInName="Magistrix Seyla" TurnInId="24937" X="875.694" Y="2535.02" Z="298.075" />
 		</If>
 		<If Condition="((HasQuest(11515)) &amp;&amp; (!IsQuestCompleted(11515)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11515" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11515" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11516 Blast the Gateway: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11516)) &amp;&amp; (IsQuestCompleted(11516)))">
 			<TurnIn QuestName="Blast the Gateway" QuestId="11516" TurnInName="Magistrix Seyla" TurnInId="24937" X="875.694" Y="2535.02" Z="298.075" />
 		</If>
 		<If Condition="((HasQuest(11516)) &amp;&amp; (!IsQuestCompleted(11516)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11516" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11516" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="HasQuest(11514) &amp;&amp; !IsQuestCompleted(11514) &amp;&amp; GetItemCount(34248) &lt; 1">
 			<CustomBehavior File="CollectThings" QuestId="11514" CollectItemId="34248" CollectItemCount="1" HuntingGroundRadius="120" MobId="22241" MobId2="22242" MobId3="22243" MobId4="22244" X="3737.82" Y="6078.91" Z="266.809">
@@ -350,14 +350,14 @@
 			<TurnIn QuestName="Maintaining the Sunwell Portal" QuestId="11514" TurnInName="Exarch Nasuun" TurnInId="24932" X="-1843.86" Y="5494.1" Z="-12.3448" />
 		</If>
 		<If Condition="((HasQuest(11514)) &amp;&amp; (!IsQuestCompleted(11514)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11514" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11514" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11877 Sunfury Attack Plans: item 35231 Sunfury Attack Plans has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11877)) &amp;&amp; (IsQuestCompleted(11877)))">
 			<TurnIn QuestName="Sunfury Attack Plans" QuestId="11877" TurnInName="Lord Torvos" TurnInId="25140" X="-1787.24" Y="5315.43" Z="-12.3448" />
 		</If>
 		<If Condition="((HasQuest(11877)) &amp;&amp; (!IsQuestCompleted(11877)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11877" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11877" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Gaining the Advantage" QuestId="11875" TurnInName="Emissary Mordin" TurnInId="19202" X="-1783.84" Y="5314.73" Z="-12.3448" />
 		<!-- REVIEW Q11880 The Multiphase Survey: objective 25882 Multiphase Disturbance x6: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -365,7 +365,7 @@
 			<TurnIn QuestName="The Multiphase Survey" QuestId="11880" TurnInName="Harbinger Haronem" TurnInId="19475" X="-1928.22" Y="5329.93" Z="-12.3282" />
 		</If>
 		<If Condition="((HasQuest(11880)) &amp;&amp; (!IsQuestCompleted(11880)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11880" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11880" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="HasQuest(11544) &amp;&amp; !IsQuestCompleted(11544) &amp;&amp; GetItemCount(34500) &lt; 5">
 			<CustomBehavior File="CollectThings" QuestId="11544" CollectItemId="34500" CollectItemCount="5" HuntingGroundRadius="120" MobId="22081" MobId2="22082" MobId3="22084" X="-3329.19" Y="444.084" Z="99.945">
@@ -384,14 +384,14 @@
 			<TurnIn QuestName="Don't Stop Now...." QuestId="11536" TurnInName="Smith Hauthaa" TurnInId="25046" X="12664.3" Y="-6984.76" Z="14.5446" />
 		</If>
 		<If Condition="((HasQuest(11536)) &amp;&amp; (!IsQuestCompleted(11536)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11536" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11536" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11544 Ata'mal Armaments: no quest giver in the database; item 34501 Cleansed Ata'mal Metal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11544)) &amp;&amp; (IsQuestCompleted(11544)))">
 			<TurnIn QuestName="Ata'mal Armaments" QuestId="11544" TurnInName="Smith Hauthaa" TurnInId="25046" X="12664.3" Y="-6984.76" Z="14.5446" />
 		</If>
 		<If Condition="((HasQuest(11544)) &amp;&amp; (!IsQuestCompleted(11544)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11544" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11544" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\The Burning Crusade\Shattered Sun Offensive\Shattered Sun Dailies (Phase 3, Recovering Harbor, Forge Rebuilt): done for today" LogColor="Green" />
 	</QuestOrder>

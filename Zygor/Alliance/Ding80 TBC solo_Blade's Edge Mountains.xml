@@ -433,7 +433,7 @@
 			<TurnIn QuestName="Scratches" QuestId="10556" TurnInName="Daranelle" TurnInId="21469" X="2035.28" Y="6834.91" Z="173.778" />
 		</If>
 		<If Condition="((HasQuest(10556)) &amp;&amp; (!IsQuestCompleted(10556)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10556" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10556" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Marauding Wolves" QuestId="10456" Type="CollectItem" ItemId="30184" CollectCount="4" />
 		<Objective QuestName="The Den Mother" QuestId="10690" Type="KillMob" MobId="21956" KillCount="1" />
@@ -497,7 +497,7 @@
 			<TurnIn QuestName="Getting the Bladespire Tanked" QuestId="10512" TurnInName="Borgrim Stouthammer" TurnInId="21151" X="2069.85" Y="6816.89" Z="175.68" />
 		</If>
 		<If Condition="((HasQuest(10512)) &amp;&amp; (!IsQuestCompleted(10512)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10512" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10512" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10504 The Bladespire Ogres: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10504)) &amp;&amp; (IsQuestCompleted(10504)))">
@@ -531,7 +531,7 @@
 			<TurnIn QuestName="Test Flight: The Zephyrium Capacitorium" QuestId="10557" TurnInName="Tally Zapnabber" TurnInId="21460" X="1935.01" Y="5575.74" Z="263.753" />
 		</If>
 		<If Condition="((HasQuest(10557)) &amp;&amp; (!IsQuestCompleted(10557)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10557" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10557" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; (IsQuestCompleted(10557) || IsQuestCompleted(10584))">
 			<PickUp QuestName="Test Flight: The Singing Ridge" QuestId="10710" GiverName="Tally Zapnabber" GiverId="21460" X="1935.01" Y="5575.74" Z="263.753" />
@@ -541,7 +541,7 @@
 			<TurnIn QuestName="Picking Up Some Power Converters" QuestId="10584" TurnInName="Toshley" TurnInId="21691" X="1913.95" Y="5562.18" Z="262.792" />
 		</If>
 		<If Condition="((HasQuest(10584)) &amp;&amp; (!IsQuestCompleted(10584)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10584" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10584" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10584)">
 			<PickUp QuestName="Ride the Lightning" QuestId="10657" GiverName="Toshley" GiverId="21691" X="1913.95" Y="5562.18" Z="262.792" />
@@ -554,7 +554,7 @@
 		</If>
 		<Objective QuestName="Ride the Lightning" QuestId="10657" Type="CollectItem" ItemId="30849" CollectCount="5" />
 		<Objective QuestName="Cutting Your Teeth" QuestId="10632" Type="CollectItem" ItemId="30798" CollectCount="5" />
-		<CustomBehavior File="UseItemOn" QuestId="10620" ItemId="30818" MobId="20714" NumOfTimes="10" Range="5" CollectionDistance="200" X="2410.19" Y="5316.98" Z="264.809" />
+		<CustomBehavior File="UseItem" QuestId="10620" ItemId="30818" X="2410.19" Y="5316.98" Z="264.809" />
 		<CustomBehavior File="UseItemOn" QuestId="10608" ItemId="30742" MobId="21189" NumOfTimes="10" Range="5" CollectionDistance="200" X="1641.51" Y="5134.73" Z="265.121" />
 		<TurnIn QuestName="Cutting Your Teeth" QuestId="10632" TurnInName="Razak Ironsides" TurnInId="21118" X="1898.28" Y="5588.86" Z="267.58" />
 		<!-- REVIEW Q10608 Crystal Clear: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -577,12 +577,12 @@
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10620)">
 			<PickUp QuestName="More than a Pound of Flesh" QuestId="10671" GiverName="Dizzy Dina" GiverId="21824" X="1921.62" Y="5569.3" Z="263.822" />
 		</If>
-		<!-- REVIEW Q10657 Ride the Lightning: use item 30818: target 21910 Ride the Lightning Kill Credit Trigger has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q10657 Ride the Lightning: use item 30818: 21910 Ride the Lightning Kill Credit Trigger has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10657)) &amp;&amp; (IsQuestCompleted(10657)))">
 			<TurnIn QuestName="Ride the Lightning" QuestId="10657" TurnInName="Toshley" TurnInId="21691" X="1913.95" Y="5562.18" Z="262.792" />
 		</If>
 		<If Condition="((HasQuest(10657)) &amp;&amp; (!IsQuestCompleted(10657)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10657" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10657" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10657)">
 			<PickUp QuestName="Trapping the Light Fantastic" QuestId="10674" GiverName="Toshley" GiverId="21691" X="1913.95" Y="5562.18" Z="262.792" />
@@ -592,21 +592,21 @@
 			<TurnIn QuestName="What Came First, the Drake or the Egg?" QuestId="10609" TurnInName='Fizit "Doc" Clocktock' TurnInId="21110" X="1944.85" Y="5537.87" Z="266.734" />
 		</If>
 		<If Condition="((HasQuest(10609)) &amp;&amp; (!IsQuestCompleted(10609)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10609" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10609" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10594 Gauging the Resonant Frequency: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10594)) &amp;&amp; (IsQuestCompleted(10594)))">
 			<TurnIn QuestName="Gauging the Resonant Frequency" QuestId="10594" TurnInName="Nickwinkle the Metro-Gnome" TurnInId="21755" X="1914.84" Y="5578.61" Z="263.96" />
 		</If>
 		<If Condition="((HasQuest(10594)) &amp;&amp; (!IsQuestCompleted(10594)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10594" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10594" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10710 Test Flight: The Singing Ridge: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10710)) &amp;&amp; (IsQuestCompleted(10710)))">
 			<TurnIn QuestName="Test Flight: The Singing Ridge" QuestId="10710" TurnInName="Tally Zapnabber" TurnInId="21460" X="1935.01" Y="5575.74" Z="263.753" />
 		</If>
 		<If Condition="((HasQuest(10710)) &amp;&amp; (!IsQuestCompleted(10710)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10710" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10710" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10710)">
 			<PickUp QuestName="Test Flight: Razaan's Landing" QuestId="10711" GiverName="Tally Zapnabber" GiverId="21460" X="1935.01" Y="5575.74" Z="263.753" />
@@ -617,7 +617,7 @@
 			<TurnIn QuestName="Test Flight: Razaan's Landing" QuestId="10711" TurnInName="Tally Zapnabber" TurnInId="21460" X="1935.01" Y="5575.74" Z="263.753" />
 		</If>
 		<If Condition="((HasQuest(10711)) &amp;&amp; (!IsQuestCompleted(10711)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10711" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10711" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10711)">
 			<PickUp QuestName="Test Flight: Ruuan Weald" QuestId="10712" GiverName="Tally Zapnabber" GiverId="21460" X="1935.01" Y="5575.74" Z="263.753" />
@@ -628,7 +628,7 @@
 			<TurnIn QuestName="Trapping the Light Fantastic" QuestId="10674" TurnInName="Toshley" TurnInId="21691" X="1913.95" Y="5562.18" Z="262.792" />
 		</If>
 		<If Condition="((HasQuest(10674)) &amp;&amp; (!IsQuestCompleted(10674)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10674" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10674" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10674)">
 			<PickUp QuestName="Show Them Gnome Mercy!" QuestId="10675" GiverName="Toshley" GiverId="21691" X="1913.95" Y="5562.18" Z="262.792" />
@@ -638,7 +638,7 @@
 			<TurnIn QuestName="Show Them Gnome Mercy!" QuestId="10675" TurnInName="Toshley" TurnInId="21691" X="1913.95" Y="5562.18" Z="262.792" />
 		</If>
 		<If Condition="((HasQuest(10675)) &amp;&amp; (!IsQuestCompleted(10675)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10675" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10675" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65)">
 			<PickUp QuestName="A Time for Negotiation..." QuestId="10682" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
@@ -666,7 +666,7 @@
 			<TurnIn QuestName="Test Flight: Ruuan Weald" QuestId="10712" TurnInName="O'Mally Zapnabber" TurnInId="22020" X="2948.06" Y="5446.82" Z="147.584" />
 		</If>
 		<If Condition="((HasQuest(10712)) &amp;&amp; (!IsQuestCompleted(10712)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10712" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10712" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="UseItemOn" QuestId="10753" ItemId="31384" MobId="21123" NumOfTimes="4" Range="5" CollectionDistance="200" X="3151.71" Y="5094.15" Z="266.877" />
 		<CustomBehavior File="UseItemOn" QuestId="10753" ItemId="31384" MobId="21124" NumOfTimes="4" Range="5" CollectionDistance="200" X="3126.45" Y="5137.86" Z="270.644" />
@@ -712,7 +712,7 @@
 			<TurnIn QuestName="Creating the Pendant" QuestId="10567" TurnInName="Timeon" TurnInId="21782" X="2993.94" Y="5473.5" Z="145.197" />
 		</If>
 		<If Condition="((HasQuest(10567)) &amp;&amp; (!IsQuestCompleted(10567)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10567" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10567" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10567)">
 			<PickUp QuestName="Whispers of the Raven God" QuestId="10607" GiverName="Timeon" GiverId="21782" X="2993.94" Y="5473.5" Z="145.197" />
@@ -722,7 +722,7 @@
 			<TurnIn QuestName="A Time for Negotiation..." QuestId="10682" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
 		</If>
 		<If Condition="((HasQuest(10682)) &amp;&amp; (!IsQuestCompleted(10682)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10682" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10682" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10682)">
 			<PickUp QuestName="...and a Time for Action" QuestId="10713" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
@@ -765,7 +765,7 @@
 			<TurnIn QuestName="You're Fired!" QuestId="10821" TurnInName="Wildlord Antelarion" TurnInId="22127" X="2959.73" Y="5465.37" Z="144.332" />
 		</If>
 		<If Condition="((HasQuest(10821)) &amp;&amp; (!IsQuestCompleted(10821)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10821" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10821" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10821)">
 			<PickUp QuestName="Death's Door" QuestId="10910" GiverName="Wildlord Antelarion" GiverId="22127" X="2959.73" Y="5465.37" Z="144.332" />
@@ -853,14 +853,14 @@
 			<TurnIn QuestName="Whelps of the Wyrmcult" QuestId="10747" TurnInName="Samia Inkling" TurnInId="21983" X="2981.4" Y="5485.77" Z="143.858" />
 		</If>
 		<If Condition="((HasQuest(10747)) &amp;&amp; (!IsQuestCompleted(10747)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10747" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10747" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10722 Meeting at the Blackwing Coven: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10722)) &amp;&amp; (IsQuestCompleted(10722)))">
 			<TurnIn QuestName="Meeting at the Blackwing Coven" QuestId="10722" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
 		</If>
 		<If Condition="((HasQuest(10722)) &amp;&amp; (!IsQuestCompleted(10722)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10722" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10722" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10722)">
 			<PickUp QuestName="Maxnar Must Die!" QuestId="10748" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
@@ -874,14 +874,14 @@
 			<TurnIn QuestName="Whispers of the Raven God" QuestId="10607" TurnInName="Timeon" TurnInId="21782" X="2993.94" Y="5473.5" Z="145.197" />
 		</If>
 		<If Condition="((HasQuest(10607)) &amp;&amp; (!IsQuestCompleted(10607)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10607" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10607" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10802 Gorgrom the Dragon-Eater: use item 31754: target 22434 [DND]Ogre Pike Planted Credit has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10802)) &amp;&amp; (IsQuestCompleted(10802)))">
 			<TurnIn QuestName="Gorgrom the Dragon-Eater" QuestId="10802" TurnInName="Commander Haephus Stonewall" TurnInId="22149" X="3034.59" Y="5483.08" Z="147.203" />
 		</If>
 		<If Condition="((HasQuest(10802)) &amp;&amp; (!IsQuestCompleted(10802)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10802" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10802" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 65) &amp;&amp; IsQuestCompleted(10802)">
 			<PickUp QuestName="Baron Sablemane Has Requested Your Presence" QuestId="10818" GiverName="Commander Haephus Stonewall" GiverId="22149" X="3034.59" Y="5483.08" Z="147.203" />
@@ -911,7 +911,7 @@
 			<TurnIn QuestName="Exorcising the Trees" QuestId="10830" TurnInName="Treebole" TurnInId="22215" X="3609.03" Y="6829.56" Z="136.69" />
 		</If>
 		<If Condition="((HasQuest(10830)) &amp;&amp; (!IsQuestCompleted(10830)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10830" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10830" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="HasQuest(10748) &amp;&amp; !IsQuestCompleted(10748) &amp;&amp; GetItemCount(31121) &lt; 5">
 			<CustomBehavior File="CollectThings" QuestId="10748" CollectItemId="31121" CollectItemCount="5" HuntingGroundRadius="120" MobId="21382" MobId2="21383" MobId3="21492" MobId4="21637" MobId5="21809" MobId6="21810" X="3152.57" Y="7090.58" Z="169.336">

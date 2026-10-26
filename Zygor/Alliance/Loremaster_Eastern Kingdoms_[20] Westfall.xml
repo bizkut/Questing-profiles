@@ -487,7 +487,7 @@
 			<TurnIn QuestName="The Coast Isn't Clear" QuestId="152" TurnInName="Captain Grayson" TurnInId="392" X="-11407.1" Y="1966.15" Z="10.5123" />
 		</If>
 		<If Condition="((HasQuest(152)) &amp;&amp; (!IsQuestCompleted(152)))">
-			<CustomBehavior File="AbandonQuest" QuestId="152" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="152" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The People's Militia" QuestId="14" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
 		<If Condition="(Me.Level &gt;= 14)">
@@ -520,7 +520,7 @@
 				<TurnIn QuestName="Humble Beginnings" QuestId="399" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
 			</If>
 			<If Condition="((HasQuest(399)) &amp;&amp; (!IsQuestCompleted(399)))">
-				<CustomBehavior File="AbandonQuest" QuestId="399" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="399" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Human))">
@@ -551,7 +551,7 @@
 			<TurnIn QuestName="Humble Beginnings" QuestId="399" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
 		</If>
 		<If Condition="((HasQuest(399)) &amp;&amp; (!IsQuestCompleted(399)))">
-			<CustomBehavior File="AbandonQuest" QuestId="399" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="399" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Defias Brotherhood" QuestId="141" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
 		<If Condition="(Me.Level &gt;= 14) &amp;&amp; IsQuestCompleted(141)">

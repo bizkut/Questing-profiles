@@ -96,14 +96,14 @@
 			<TurnIn QuestName="Report to Nasuun" QuestId="11517" TurnInName="Exarch Nasuun" TurnInId="24932" X="-1843.86" Y="5494.1" Z="-12.3448" />
 		</If>
 		<If Condition="((HasQuest(11517)) &amp;&amp; (!IsQuestCompleted(11517)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11517" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11517" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11534 Report to Nasuun: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11534)) &amp;&amp; (IsQuestCompleted(11534)))">
 			<TurnIn QuestName="Report to Nasuun" QuestId="11534" TurnInName="Exarch Nasuun" TurnInId="24932" X="-1843.86" Y="5494.1" Z="-12.3448" />
 		</If>
 		<If Condition="((HasQuest(11534)) &amp;&amp; (!IsQuestCompleted(11534)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11534" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11534" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q11496 The Sanctum Wards: no quest giver with a spawn in the database -->
 		<!-- SKIP pickup Q11524 Erratic Behavior: no quest giver with a spawn in the database -->
@@ -124,14 +124,14 @@
 			<TurnIn QuestName="The Sanctum Wards" QuestId="11496" TurnInName="Captain Theris Dawnhearth" TurnInId="24967" X="12890.7" Y="-6881.36" Z="10.5983" />
 		</If>
 		<If Condition="((HasQuest(11496)) &amp;&amp; (!IsQuestCompleted(11496)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11496" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11496" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11524 Erratic Behavior: no quest giver in the database; objective 24991 Converted Sentry Credit x5: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11524)) &amp;&amp; (IsQuestCompleted(11524)))">
 			<TurnIn QuestName="Erratic Behavior" QuestId="11524" TurnInName="Vindicator Xayann" TurnInId="24965" X="12886.5" Y="-6869.97" Z="10.5939" />
 		</If>
 		<If Condition="((HasQuest(11524)) &amp;&amp; (!IsQuestCompleted(11524)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11524" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11524" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11550)">
 			<PickUp QuestName="Sunfury Attack Plans" QuestId="11877" GiverName="Lord Torvos" GiverId="25140" X="-1787.24" Y="5315.43" Z="-12.3448" />
@@ -165,14 +165,14 @@
 			<TurnIn QuestName="Blood for Blood" QuestId="11515" TurnInName="Magistrix Seyla" TurnInId="24937" X="875.694" Y="2535.02" Z="298.075" />
 		</If>
 		<If Condition="((HasQuest(11515)) &amp;&amp; (!IsQuestCompleted(11515)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11515" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11515" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11516 Blast the Gateway: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11516)) &amp;&amp; (IsQuestCompleted(11516)))">
 			<TurnIn QuestName="Blast the Gateway" QuestId="11516" TurnInName="Magistrix Seyla" TurnInId="24937" X="875.694" Y="2535.02" Z="298.075" />
 		</If>
 		<If Condition="((HasQuest(11516)) &amp;&amp; (!IsQuestCompleted(11516)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11516" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11516" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Gaining the Advantage" QuestId="11875" Type="CollectItem" ItemId="35229" CollectCount="8" />
 		<!-- REVIEW Q11877 Sunfury Attack Plans: item 35231 Sunfury Attack Plans has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -180,7 +180,7 @@
 			<TurnIn QuestName="Sunfury Attack Plans" QuestId="11877" TurnInName="Lord Torvos" TurnInId="25140" X="-1787.24" Y="5315.43" Z="-12.3448" />
 		</If>
 		<If Condition="((HasQuest(11877)) &amp;&amp; (!IsQuestCompleted(11877)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11877" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11877" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Gaining the Advantage" QuestId="11875" TurnInName="Emissary Mordin" TurnInId="19202" X="-1783.84" Y="5314.73" Z="-12.3448" />
 		<!-- REVIEW Q11880 The Multiphase Survey: objective 25882 Multiphase Disturbance x6: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -188,7 +188,7 @@
 			<TurnIn QuestName="The Multiphase Survey" QuestId="11880" TurnInName="Harbinger Haronem" TurnInId="19475" X="-1928.22" Y="5329.93" Z="-12.3282" />
 		</If>
 		<If Condition="((HasQuest(11880)) &amp;&amp; (!IsQuestCompleted(11880)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11880" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11880" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\The Burning Crusade\Shattered Sun Offensive\Shattered Sun Dailies (Phase 1, Capturing Sanctum): done for today" LogColor="Green" />
 	</QuestOrder>

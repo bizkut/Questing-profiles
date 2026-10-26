@@ -505,7 +505,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="921" TurnInName="Tenaron Stormgrip" TurnInId="3514" X="10492.5" Y="807.28" Z="1397.35" />
 		</If>
 		<If Condition="((HasQuest(921)) &amp;&amp; (!IsQuestCompleted(921)))">
-			<CustomBehavior File="AbandonQuest" QuestId="921" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="921" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(921)">
 			<PickUp QuestName="Crown of the Earth" QuestId="928" GiverName="Tenaron Stormgrip" GiverId="3514" X="10492.5" Y="807.28" Z="1397.35" />
@@ -556,7 +556,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="929" TurnInName="Corithras Moonrage" TurnInId="3515" X="9736.91" Y="956.063" Z="1294.19" />
 		</If>
 		<If Condition="((HasQuest(929)) &amp;&amp; (!IsQuestCompleted(929)))">
-			<CustomBehavior File="AbandonQuest" QuestId="929" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="929" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(929)">
 			<PickUp QuestName="Crown of the Earth" QuestId="933" GiverName="Corithras Moonrage" GiverId="3515" X="9736.91" Y="956.063" Z="1294.19" />
@@ -586,7 +586,7 @@
 			<TurnIn QuestName="Ferocitas the Dream Eater" QuestId="2459" TurnInName="Tallonkai Swiftroot" TurnInId="3567" X="9898.59" Y="984.968" Z="1354.89" />
 		</If>
 		<If Condition="((HasQuest(2459)) &amp;&amp; (!IsQuestCompleted(2459)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2459" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2459" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 5)">
 			<PickUp QuestName="The Road to Darnassus" QuestId="487" GiverName="Moon Priestess Amara" GiverId="2151" X="9852.4" Y="972.153" Z="1305.5" />
@@ -609,7 +609,7 @@
 			<TurnIn QuestName="Druid of the Claw" QuestId="2561" TurnInName="Oben Rageclaw" TurnInId="7317" X="9740.98" Y="1526.17" Z="1280.4" />
 		</If>
 		<If Condition="((HasQuest(2561)) &amp;&amp; (!IsQuestCompleted(2561)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2561" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2561" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 4)">
 			<PickUp QuestName="The Glowing Fruit" QuestId="930" GiverName="Strange Fruited Plant" GiverId="6751" GiverType="Object" X="9245.65" Y="1644.85" Z="1303.61" />
@@ -626,7 +626,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="933" TurnInName="Corithras Moonrage" TurnInId="3515" X="9736.91" Y="956.063" Z="1294.19" />
 		</If>
 		<If Condition="((HasQuest(933)) &amp;&amp; (!IsQuestCompleted(933)))">
-			<CustomBehavior File="AbandonQuest" QuestId="933" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="933" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(933)">
 			<PickUp QuestName="Crown of the Earth" QuestId="7383" GiverName="Corithras Moonrage" GiverId="3515" X="9736.91" Y="956.063" Z="1294.19" />
@@ -651,7 +651,7 @@
 			<TurnIn QuestName="Mist" QuestId="938" TurnInName="Sentinel Arynia Cloudsbreak" TurnInId="3519" X="10665.1" Y="1863.57" Z="1324.51" />
 		</If>
 		<If Condition="((HasQuest(938)) &amp;&amp; (!IsQuestCompleted(938)))">
-			<CustomBehavior File="AbandonQuest" QuestId="938" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="938" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Ursal the Mauler" QuestId="486" Type="KillMob" MobId="2039" KillCount="1" />
 		<TurnIn QuestName="The Shimmering Frond" QuestId="931" TurnInName="Denalan" TurnInId="2080" X="9506.92" Y="713.766" Z="1255.99" />
@@ -660,7 +660,7 @@
 			<TurnIn QuestName="Crown of the Earth" QuestId="7383" TurnInName="Corithras Moonrage" TurnInId="3515" X="9736.91" Y="956.063" Z="1294.19" />
 		</If>
 		<If Condition="((HasQuest(7383)) &amp;&amp; (!IsQuestCompleted(7383)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7383" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7383" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="IsQuestCompleted(7383)">
 			<PickUp QuestName="Crown of the Earth" QuestId="935" GiverName="Corithras Moonrage" GiverId="3515" X="9736.91" Y="956.063" Z="1294.19" />

@@ -128,21 +128,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13752" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 		</If>
 		<If Condition="((HasQuest(13752)) &amp;&amp; (!IsQuestCompleted(13752)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13752" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13752" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13753 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13753)) &amp;&amp; (IsQuestCompleted(13753)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13753" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 		</If>
 		<If Condition="((HasQuest(13753)) &amp;&amp; (!IsQuestCompleted(13753)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13753" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13753" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13754 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13754)) &amp;&amp; (IsQuestCompleted(13754)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13754" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 		</If>
 		<If Condition="((HasQuest(13754)) &amp;&amp; (!IsQuestCompleted(13754)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13754" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13754" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Valiant's Field Training" QuestId="13755" TurnInName="Saandos" TurnInId="33655" X="8624.58" Y="672.766" Z="550.343" />
 		<!-- REVIEW Q13756 The Grand Melee: item 45127 Mark of the Valiant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -150,7 +150,7 @@
 			<TurnIn QuestName="The Grand Melee" QuestId="13756" TurnInName="Ranii" TurnInId="33656" X="8629.63" Y="669.079" Z="550.173" />
 		</If>
 		<If Condition="((HasQuest(13756)) &amp;&amp; (!IsQuestCompleted(13756)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13756" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13756" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="At The Enemy's Gates" QuestId="13854" TurnInName="Ranii" TurnInId="33656" X="8629.63" Y="669.079" Z="550.173" />
 		<!-- REVIEW Q13716 The Valiant's Charge: item 44987 Valiant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -158,7 +158,7 @@
 			<TurnIn QuestName="The Valiant's Charge" QuestId="13716" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 		</If>
 		<If Condition="((HasQuest(13716)) &amp;&amp; (!IsQuestCompleted(13716)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13716" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13716" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13716)">
 			<PickUp QuestName="The Valiant's Challenge" QuestId="13724" GiverName="Colosos" GiverId="33593" X="8628.52" Y="671.89" Z="550.25" />
@@ -168,7 +168,7 @@
 			<TurnIn QuestName="The Valiant's Challenge" QuestId="13724" TurnInName="Colosos" TurnInId="33593" X="8628.52" Y="671.89" Z="550.25" />
 		</If>
 		<If Condition="((HasQuest(13724)) &amp;&amp; (!IsQuestCompleted(13724)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13724" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13724" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Crusader Title Guide (Unlocks More Dailies)\Draenei Champion Rank: done for today" LogColor="Green" />
 	</QuestOrder>

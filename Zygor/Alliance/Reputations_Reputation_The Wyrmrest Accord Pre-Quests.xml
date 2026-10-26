@@ -61,7 +61,7 @@
 			<TurnIn QuestName="Rifle the Bodies" QuestId="12000" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
 		<If Condition="((HasQuest(12000)) &amp;&amp; (!IsQuestCompleted(12000)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12000" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12000" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12000)">
 			<PickUp QuestName="Prevent the Accord" QuestId="12004" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
@@ -92,7 +92,7 @@
 			<TurnIn QuestName="The Focus on the Beach" QuestId="12065" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
 		<If Condition="((HasQuest(12065)) &amp;&amp; (!IsQuestCompleted(12065)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12065" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12065" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12065)">
 			<PickUp QuestName="Atop the Woodlands" QuestId="12083" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
@@ -121,7 +121,7 @@
 			<TurnIn QuestName="The End of the Line" QuestId="12107" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		</If>
 		<If Condition="((HasQuest(12107)) &amp;&amp; (!IsQuestCompleted(12107)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12107" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12107" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12107)">
 			<PickUp QuestName="Gaining an Audience" QuestId="12119" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />

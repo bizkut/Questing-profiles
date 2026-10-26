@@ -267,7 +267,7 @@
 		<If Condition="(((Me.Race == WoWRace.Gnome) &amp;&amp; (Me.Class == WoWClass.Warlock)))">
 			<!-- SKIP turn-in Q1599 Beginnings: no turn-in NPC with a spawn in the database -->
 			<If Condition="((HasQuest(1599)) &amp;&amp; (!IsQuestCompleted(1599)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1599" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1599" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Dwarf) &amp;&amp; (Me.Class == WoWClass.Priest)))">

@@ -560,7 +560,7 @@
 			<TurnIn QuestName="Dry Times" QuestId="116" TurnInName="Barkeep Daniels" TurnInId="346" X="-9211.5" Y="-2145.7" Z="64.4372" />
 		</If>
 		<If Condition="((HasQuest(116)) &amp;&amp; (!IsQuestCompleted(116)))">
-			<CustomBehavior File="AbandonQuest" QuestId="116" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="116" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Underbelly Scales" QuestId="122" Type="CollectItem" ItemId="1221" CollectCount="6" />
 		<Objective QuestName="A Baying of Gnolls" QuestId="124" Type="KillMob" MobId="426" KillCount="10" />
@@ -586,7 +586,7 @@
 			<TurnIn QuestName="Missing In Action" QuestId="219" TurnInName="Marshal Marris" TurnInId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />
 		</If>
 		<If Condition="((HasQuest(219)) &amp;&amp; (!IsQuestCompleted(219)))">
-			<CustomBehavior File="AbandonQuest" QuestId="219" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="219" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(20)">
 			<PickUp QuestName="Tharil'zun" QuestId="19" GiverName="Marshal Marris" GiverId="382" X="-9284.03" Y="-2298.16" Z="67.5772" />

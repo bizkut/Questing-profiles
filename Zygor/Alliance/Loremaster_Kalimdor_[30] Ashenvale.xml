@@ -483,7 +483,7 @@
 			<TurnIn QuestName="The Sleeper Has Awakened" QuestId="5321" TurnInName="Liladris Moonriver" TurnInId="11219" X="3305.22" Y="127.885" Z="16.1994" />
 		</If>
 		<If Condition="((HasQuest(5321)) &amp;&amp; (!IsQuestCompleted(5321)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5321" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5321" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 20)">
 			<PickUp QuestName="Bathran's Hair" QuestId="1010" GiverName="Orendil Broadleaf" GiverId="3847" X="3189.6" Y="175.47" Z="4.6855" />
@@ -501,14 +501,14 @@
 			<TurnIn QuestName="Supplies to Auberdine" QuestId="976" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
 		</If>
 		<If Condition="((HasQuest(976)) &amp;&amp; (!IsQuestCompleted(976)))">
-			<CustomBehavior File="AbandonQuest" QuestId="976" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="976" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q945 Therylune's Escape: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(945)) &amp;&amp; (IsQuestCompleted(945)))">
 			<TurnIn QuestName="Therylune's Escape" QuestId="945" TurnInName="Therysil" TurnInId="3585" X="2677.34" Y="394.207" Z="69.8261" />
 		</If>
 		<If Condition="((HasQuest(945)) &amp;&amp; (!IsQuestCompleted(945)))">
-			<CustomBehavior File="AbandonQuest" QuestId="945" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="945" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Draenei))">
 			<TurnIn QuestName="Travel to Astranaar" QuestId="9432" TurnInName="Vindicator Palanaar" TurnInId="17106" X="2762.28" Y="-312.248" Z="110.858" />
@@ -597,7 +597,7 @@
 			<TurnIn QuestName="Elemental Bracers" QuestId="1016" TurnInName="Sentinel Velene Starstrike" TurnInId="3885" X="2089.5" Y="-1171.56" Z="101.876" />
 		</If>
 		<If Condition="((HasQuest(1016)) &amp;&amp; (!IsQuestCompleted(1016)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1016" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1016" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(1016)">
 			<PickUp QuestName="Mage Summoner" QuestId="1017" GiverName="Sentinel Velene Starstrike" GiverId="3885" X="2089.5" Y="-1171.56" Z="101.876" />
@@ -652,7 +652,7 @@
 			<TurnIn QuestName="Raene's Cleansing" QuestId="1027" TurnInName="Shael'dryn" TurnInId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
 		</If>
 		<If Condition="((HasQuest(1027)) &amp;&amp; (!IsQuestCompleted(1027)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1027" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1027" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1027)">
 			<PickUp QuestName="Raene's Cleansing" QuestId="1028" GiverName="Shael'dryn" GiverId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
@@ -696,7 +696,7 @@
 			<TurnIn QuestName="The Howling Vale" QuestId="1022" TurnInName="Sentinel Melyria Frostshadow" TurnInId="3880" X="2977.16" Y="-3261.14" Z="160.496" />
 		</If>
 		<If Condition="((HasQuest(1022)) &amp;&amp; (!IsQuestCompleted(1022)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1022" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1022" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(1022)">
 			<PickUp QuestName="Velinde Starsong" QuestId="1037" GiverName="Sentinel Melyria Frostshadow" GiverId="3880" X="2977.16" Y="-3261.14" Z="160.496" />

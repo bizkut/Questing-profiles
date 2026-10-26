@@ -65,7 +65,7 @@
 			<TurnIn QuestName="Filling the Cages" QuestId="11984" TurnInName="Samir" TurnInId="26424" X="3850.49" Y="-1960.48" Z="208.511" />
 		</If>
 		<If Condition="((HasQuest(11984)) &amp;&amp; (!IsQuestCompleted(11984)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11984" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11984" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11984)">
 			<PickUp QuestName="Truce?" QuestId="11989" GiverName="Drakuru" GiverId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
@@ -73,12 +73,12 @@
 		<If Condition="HasQuest(11989) &amp;&amp; !IsQuestCompleted(11989) &amp;&amp; GetItemCount(38083) &lt; 1">
 			<CustomBehavior File="InteractWith" QuestId="11989" MobId="190208" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="3843.83" Y="-1978.63" Z="210.318" />
 		</If>
-		<!-- REVIEW Q11989 Truce?: use item 38083: target 27921 Drakuru Handshake KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11989 Truce?: use item 38083: 27921 Drakuru Handshake KC Bunny has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11989)) &amp;&amp; (IsQuestCompleted(11989)))">
 			<TurnIn QuestName="Truce?" QuestId="11989" TurnInName="Drakuru" TurnInId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
 		<If Condition="((HasQuest(11989)) &amp;&amp; (!IsQuestCompleted(11989)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11989" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11989" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11989)">
 			<PickUp QuestName="Vial of Visions" QuestId="11990" GiverName="Drakuru" GiverId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
@@ -90,7 +90,7 @@
 			<TurnIn QuestName="Vial of Visions" QuestId="11990" TurnInName="Drakuru" TurnInId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
 		<If Condition="((HasQuest(11990)) &amp;&amp; (!IsQuestCompleted(11990)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11990" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11990" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11990)">
 			<PickUp QuestName="Scourgekabob" QuestId="12484" GiverName="Prigmon" GiverId="26519" X="3882.44" Y="-1936.45" Z="209.169" />
@@ -103,7 +103,7 @@
 			<TurnIn QuestName="Scourgekabob" QuestId="12484" TurnInName="Mack Fearsen" TurnInId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
 		</If>
 		<If Condition="((HasQuest(12484)) &amp;&amp; (!IsQuestCompleted(12484)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12484" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12484" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12484)">
 			<PickUp QuestName="Seared Scourge" QuestId="12029" GiverName="Mack Fearsen" GiverId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
@@ -113,7 +113,7 @@
 			<TurnIn QuestName="Seared Scourge" QuestId="12029" TurnInName="Mack Fearsen" TurnInId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
 		</If>
 		<If Condition="((HasQuest(12029)) &amp;&amp; (!IsQuestCompleted(12029)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12029" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12029" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Grizzly Hills\Grizzly Hills Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>

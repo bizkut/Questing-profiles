@@ -71,21 +71,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13666" TurnInName="Arcanist Taelis" TurnInId="33625" X="8615.71" Y="648.842" Z="550.35" />
 		</If>
 		<If Condition="((HasQuest(13666)) &amp;&amp; (!IsQuestCompleted(13666)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13666" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13666" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13669 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13669)) &amp;&amp; (IsQuestCompleted(13669)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13669" TurnInName="Arcanist Taelis" TurnInId="33625" X="8615.71" Y="648.842" Z="550.35" />
 		</If>
 		<If Condition="((HasQuest(13669)) &amp;&amp; (!IsQuestCompleted(13669)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13669" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13669" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13670 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13670)) &amp;&amp; (IsQuestCompleted(13670)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13670" TurnInName="Arcanist Taelis" TurnInId="33625" X="8615.71" Y="648.842" Z="550.35" />
 		</If>
 		<If Condition="((HasQuest(13670)) &amp;&amp; (!IsQuestCompleted(13670)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13670" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13670" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13671 Training In The Field: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13671)) &amp;&amp; (IsQuestCompleted(13671)))">
@@ -99,14 +99,14 @@
 			<TurnIn QuestName="Learning The Reins" QuestId="13625" TurnInName="Scout Shalyndria" TurnInId="33647" X="8613.52" Y="648.405" Z="550.35" />
 		</If>
 		<If Condition="((HasQuest(13625)) &amp;&amp; (!IsQuestCompleted(13625)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13625" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13625" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13672 Up To The Challenge: item 45192 Aspirant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13672)) &amp;&amp; (IsQuestCompleted(13672)))">
 			<TurnIn QuestName="Up To The Challenge" QuestId="13672" TurnInName="Arcanist Taelis" TurnInId="33625" X="8615.71" Y="648.842" Z="550.35" />
 		</If>
 		<If Condition="((HasQuest(13672)) &amp;&amp; (!IsQuestCompleted(13672)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13672" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13672" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Argent Tournament Grounds Aspirant Rank Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

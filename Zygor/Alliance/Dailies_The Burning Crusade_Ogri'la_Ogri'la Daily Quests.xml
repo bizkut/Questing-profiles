@@ -65,7 +65,7 @@
 			<TurnIn QuestName="The Relic's Emanation" QuestId="11080" TurnInName="Chu'a'lor" TurnInId="23233" X="2335.24" Y="7285.18" Z="365.617" />
 		</If>
 		<If Condition="((HasQuest(11080)) &amp;&amp; (!IsQuestCompleted(11080)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11080" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11080" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Bomb Them Again!" QuestId="11023" Type="KillMob" MobId="23118" KillCount="15" />
 		<TurnIn QuestName="Bomb Them Again!" QuestId="11023" TurnInName="Sky Sergeant Vanderlip" TurnInId="23120" X="2495.25" Y="7350.9" Z="380.334" />
@@ -74,14 +74,14 @@
 			<TurnIn QuestName="Wrangle More Aether Rays!" QuestId="11066" TurnInName="Skyguard Khatie" TurnInId="23335" X="2547.77" Y="7330.44" Z="373.524" />
 		</If>
 		<If Condition="((HasQuest(11066)) &amp;&amp; (!IsQuestCompleted(11066)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11066" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11066" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q11051 Banish More Demons: objective 23327 Banishing Crystal Bunny 02 x15: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11051)) &amp;&amp; (IsQuestCompleted(11051)))">
 			<TurnIn QuestName="Banish More Demons" QuestId="11051" TurnInName="Kronk" TurnInId="23253" X="2313.07" Y="7276.83" Z="365.462" />
 		</If>
 		<If Condition="((HasQuest(11051)) &amp;&amp; (!IsQuestCompleted(11051)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11051" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11051" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\The Burning Crusade\Ogri'la\Ogri'la Daily Quests: done for today" LogColor="Green" />
 	</QuestOrder>

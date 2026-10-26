@@ -698,7 +698,7 @@
 			<TurnIn QuestName="Thirst Unending" QuestId="8346" TurnInName="Arcanist Helion" TurnInId="15297" X="10419.7" Y="-6318.62" Z="35.6568" />
 		</If>
 		<If Condition="((HasQuest(8346)) &amp;&amp; (!IsQuestCompleted(8346)))">
-			<CustomBehavior File="AbandonQuest" QuestId="8346" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="8346" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Report to Lanthan Perilon" QuestId="8327" TurnInName="Lanthan Perilon" TurnInId="15281" X="10302.3" Y="-6229.3" Z="26.7049" />
 		<If Condition="((Me.Race == WoWRace.BloodElf)) &amp;&amp; IsQuestCompleted(8327)">
@@ -869,7 +869,7 @@
 			<TurnIn QuestName="Unexpected Results" QuestId="8488" TurnInName="Apprentice Mirveda" TurnInId="15402" X="8711.23" Y="-7160.89" Z="43.6012" />
 		</If>
 		<If Condition="((HasQuest(8488)) &amp;&amp; (!IsQuestCompleted(8488)))">
-			<CustomBehavior File="AbandonQuest" QuestId="8488" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="8488" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(8488)">
 			<PickUp QuestName="Research Notes" QuestId="9255" GiverName="Apprentice Mirveda" GiverId="15402" X="8711.23" Y="-7160.89" Z="43.6012" />
@@ -922,7 +922,7 @@
 				<TurnIn QuestName="The Rune of Summoning" QuestId="9619" TurnInName="Talionia" TurnInId="16647" X="9773.28" Y="-7301.98" Z="14.7505" />
 			</If>
 			<If Condition="((HasQuest(9619)) &amp;&amp; (!IsQuestCompleted(9619)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9619" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9619" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.BloodElf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -936,7 +936,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="9484" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
 			</If>
 			<If Condition="((HasQuest(9484)) &amp;&amp; (!IsQuestCompleted(9484)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9484" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9484" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.BloodElf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -950,7 +950,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="9486" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
 			</If>
 			<If Condition="((HasQuest(9486)) &amp;&amp; (!IsQuestCompleted(9486)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9486" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9486" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.BloodElf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -964,7 +964,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="9485" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
 			</If>
 			<If Condition="((HasQuest(9485)) &amp;&amp; (!IsQuestCompleted(9485)))">
-				<CustomBehavior File="AbandonQuest" QuestId="9485" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="9485" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.BloodElf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -1034,7 +1034,7 @@
 			<TurnIn QuestName="The Party Never Ends" QuestId="9067" TurnInName="Lord Saltheril" TurnInId="16144" X="8626.61" Y="-6366.06" Z="55.4326" />
 		</If>
 		<If Condition="((HasQuest(9067)) &amp;&amp; (!IsQuestCompleted(9067)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9067" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9067" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 9)">
 			<PickUp QuestName="A Recipe For Death" QuestId="447" GiverName="Apothecary Renferrel" GiverId="1937" X="522.449" Y="1652.3" Z="125.843" />
@@ -1073,7 +1073,7 @@
 			<TurnIn QuestName="Escorting Erland" QuestId="435" TurnInName="Rane Yorick" TurnInId="1950" X="1290.69" Y="1204.7" Z="52.8049" />
 		</If>
 		<If Condition="((HasQuest(435)) &amp;&amp; (!IsQuestCompleted(435)))">
-			<CustomBehavior File="AbandonQuest" QuestId="435" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="435" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Arugal's Folly" QuestId="422" TurnInName="Dalar Dawnweaver" TurnInId="1938" X="552.829" Y="1593.87" Z="130.219" />
 		<!-- REVIEW Q437 The Dead Fields: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

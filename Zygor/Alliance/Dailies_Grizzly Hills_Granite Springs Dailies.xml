@@ -40,7 +40,7 @@
 			<TurnIn QuestName="Seared Scourge" QuestId="12038" TurnInName="Mack Fearsen" TurnInId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
 		</If>
 		<If Condition="((HasQuest(12038)) &amp;&amp; (!IsQuestCompleted(12038)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12038" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12038" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Grizzly Hills\Granite Springs Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

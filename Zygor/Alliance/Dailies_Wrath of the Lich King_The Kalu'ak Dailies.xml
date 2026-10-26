@@ -151,7 +151,7 @@
 			<TurnIn QuestName="The Way to His Heart..." QuestId="11472" TurnInName="Anuniaq" TurnInId="24810" X="743.706" Y="-2884.84" Z="7.2546" />
 		</If>
 		<If Condition="((HasQuest(11472)) &amp;&amp; (!IsQuestCompleted(11472)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11472" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11472" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 68)">
 			<PickUp QuestName="Preparing for the Worst" QuestId="11945" GiverName="Utaik" GiverId="26213" X="3140.63" Y="4884.43" Z="3.1389" />
@@ -166,7 +166,7 @@
 			<TurnIn QuestName="Planning for the Future" QuestId="11960" TurnInName="Trapper Mau'i" TurnInId="26228" X="2794.68" Y="920.762" Z="22.4113" />
 		</If>
 		<If Condition="((HasQuest(11960)) &amp;&amp; (!IsQuestCompleted(11960)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11960" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11960" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Wrath of the Lich King\The Kalu'ak Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

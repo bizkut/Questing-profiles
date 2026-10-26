@@ -128,21 +128,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13746" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 		</If>
 		<If Condition="((HasQuest(13746)) &amp;&amp; (!IsQuestCompleted(13746)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13746" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13746" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13747 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13747)) &amp;&amp; (IsQuestCompleted(13747)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13747" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 		</If>
 		<If Condition="((HasQuest(13747)) &amp;&amp; (!IsQuestCompleted(13747)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13747" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13747" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13748 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13748)) &amp;&amp; (IsQuestCompleted(13748)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13748" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 		</If>
 		<If Condition="((HasQuest(13748)) &amp;&amp; (!IsQuestCompleted(13748)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13748" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13748" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Valiant's Field Training" QuestId="13749" TurnInName="Tickin Gearspanner" TurnInId="33648" X="8599.81" Y="640.831" Z="550.167" />
 		<!-- REVIEW Q13750 The Grand Melee: item 45127 Mark of the Valiant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -150,7 +150,7 @@
 			<TurnIn QuestName="The Grand Melee" QuestId="13750" TurnInName="Flickin Gearspanner" TurnInId="33649" X="8595.79" Y="645.937" Z="550.168" />
 		</If>
 		<If Condition="((HasQuest(13750)) &amp;&amp; (!IsQuestCompleted(13750)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13750" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13750" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="At The Enemy's Gates" QuestId="13852" TurnInName="Flickin Gearspanner" TurnInId="33649" X="8595.79" Y="645.937" Z="550.168" />
 		<!-- REVIEW Q13715 The Valiant's Charge: item 44987 Valiant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -158,7 +158,7 @@
 			<TurnIn QuestName="The Valiant's Charge" QuestId="13715" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 		</If>
 		<If Condition="((HasQuest(13715)) &amp;&amp; (!IsQuestCompleted(13715)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13715" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13715" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13715)">
 			<PickUp QuestName="The Valiant's Challenge" QuestId="13723" GiverName="Ambrose Boltspark" GiverId="33335" X="8598.2" Y="643.694" Z="551.474" />
@@ -168,7 +168,7 @@
 			<TurnIn QuestName="The Valiant's Challenge" QuestId="13723" TurnInName="Ambrose Boltspark" TurnInId="33335" X="8598.2" Y="643.694" Z="551.474" />
 		</If>
 		<If Condition="((HasQuest(13723)) &amp;&amp; (!IsQuestCompleted(13723)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13723" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13723" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Crusader Title Guide (Unlocks More Dailies)\Gnome Champion Rank: done for today" LogColor="Green" />
 	</QuestOrder>

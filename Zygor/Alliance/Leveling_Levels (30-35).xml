@@ -718,7 +718,7 @@
 				<TurnIn QuestName="The Affray" QuestId="1719" TurnInName="Klannoc Macleod" TurnInId="6236" X="-1709.14" Y="-4330.07" Z="4.3339" />
 			</If>
 			<If Condition="((HasQuest(1719)) &amp;&amp; (!IsQuestCompleted(1719)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1719" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1719" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Draenei) &amp;&amp; (Me.Class == WoWClass.Shaman)))">
@@ -865,7 +865,7 @@
 			<TurnIn QuestName="Raene's Cleansing" QuestId="1027" TurnInName="Shael'dryn" TurnInId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
 		</If>
 		<If Condition="((HasQuest(1027)) &amp;&amp; (!IsQuestCompleted(1027)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1027" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1027" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 18) &amp;&amp; IsQuestCompleted(1027)">
 			<PickUp QuestName="Raene's Cleansing" QuestId="1028" GiverName="Shael'dryn" GiverId="3916" X="2896.49" Y="-1387.24" Z="208.145" />
@@ -1117,7 +1117,7 @@
 			<TurnIn QuestName="Favor for Krazek" QuestId="627" TurnInName="Krazek" TurnInId="773" X="-14453.3" Y="501.465" Z="26.3593" />
 		</If>
 		<If Condition="((HasQuest(627)) &amp;&amp; (!IsQuestCompleted(627)))">
-			<CustomBehavior File="AbandonQuest" QuestId="627" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="627" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 32) &amp;&amp; IsQuestCompleted(627)">
 			<PickUp QuestName="Return to Corporal Kaleb" QuestId="622" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />

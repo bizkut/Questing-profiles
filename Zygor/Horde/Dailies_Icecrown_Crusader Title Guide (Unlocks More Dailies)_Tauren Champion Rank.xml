@@ -127,21 +127,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13773" TurnInName="Runok Wildmane" TurnInId="33403" X="8397.64" Y="664.995" Z="550.533" />
 		</If>
 		<If Condition="((HasQuest(13773)) &amp;&amp; (!IsQuestCompleted(13773)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13773" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13773" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13774 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13774)) &amp;&amp; (IsQuestCompleted(13774)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13774" TurnInName="Runok Wildmane" TurnInId="33403" X="8397.64" Y="664.995" Z="550.533" />
 		</If>
 		<If Condition="((HasQuest(13774)) &amp;&amp; (!IsQuestCompleted(13774)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13774" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13774" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13775 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13775)) &amp;&amp; (IsQuestCompleted(13775)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13775" TurnInName="Runok Wildmane" TurnInId="33403" X="8397.64" Y="664.995" Z="550.533" />
 		</If>
 		<If Condition="((HasQuest(13775)) &amp;&amp; (!IsQuestCompleted(13775)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13775" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13775" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Valiant's Field Training" QuestId="13776" TurnInName="Dern Ragetotem" TurnInId="33539" X="8395.87" Y="661.361" Z="550.344" />
 		<!-- REVIEW Q13777 The Grand Melee: item 45127 Mark of the Valiant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -149,7 +149,7 @@
 			<TurnIn QuestName="The Grand Melee" QuestId="13777" TurnInName="Anka Clawhoof" TurnInId="33549" X="8396.95" Y="669.127" Z="550.346" />
 		</If>
 		<If Condition="((HasQuest(13777)) &amp;&amp; (!IsQuestCompleted(13777)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13777" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13777" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="At The Enemy's Gates" QuestId="13858" TurnInName="Anka Clawhoof" TurnInId="33549" X="8396.95" Y="669.127" Z="550.346" />
 		<!-- REVIEW Q13720 The Valiant's Charge: item 44987 Valiant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -157,7 +157,7 @@
 			<TurnIn QuestName="The Valiant's Charge" QuestId="13720" TurnInName="Runok Wildmane" TurnInId="33403" X="8397.64" Y="664.995" Z="550.533" />
 		</If>
 		<If Condition="((HasQuest(13720)) &amp;&amp; (!IsQuestCompleted(13720)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13720" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13720" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13720)">
 			<PickUp QuestName="The Valiant's Challenge" QuestId="13728" GiverName="Runok Wildmane" GiverId="33403" X="8397.64" Y="664.995" Z="550.533" />
@@ -167,7 +167,7 @@
 			<TurnIn QuestName="The Valiant's Challenge" QuestId="13728" TurnInName="Runok Wildmane" TurnInId="33403" X="8397.64" Y="664.995" Z="550.533" />
 		</If>
 		<If Condition="((HasQuest(13728)) &amp;&amp; (!IsQuestCompleted(13728)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13728" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13728" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Crusader Title Guide (Unlocks More Dailies)\Tauren Champion Rank: done for today" LogColor="Green" />
 	</QuestOrder>

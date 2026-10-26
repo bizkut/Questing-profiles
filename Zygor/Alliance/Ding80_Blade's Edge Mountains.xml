@@ -217,7 +217,7 @@
 			<TurnIn QuestName="Scratches" QuestId="10556" TurnInName="Daranelle" TurnInId="21469" X="2035.28" Y="6834.91" Z="173.778" />
 		</If>
 		<If Condition="((HasQuest(10556)) &amp;&amp; (!IsQuestCompleted(10556)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10556" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10556" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Marauding Wolves" QuestId="10456" Type="CollectItem" ItemId="30184" CollectCount="4" />
 		<Objective QuestName="The Den Mother" QuestId="10690" Type="KillMob" MobId="21956" KillCount="1" />
@@ -281,7 +281,7 @@
 			<TurnIn QuestName="Getting the Bladespire Tanked" QuestId="10512" TurnInName="Borgrim Stouthammer" TurnInId="21151" X="2069.85" Y="6816.89" Z="175.68" />
 		</If>
 		<If Condition="((HasQuest(10512)) &amp;&amp; (!IsQuestCompleted(10512)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10512" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10512" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q10504 The Bladespire Ogres: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10504)) &amp;&amp; (IsQuestCompleted(10504)))">

@@ -88,7 +88,7 @@
 			<TurnIn QuestName="Kindness" QuestId="10804" TurnInName="Mordenai" TurnInId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
 		</If>
 		<If Condition="((HasQuest(10804)) &amp;&amp; (!IsQuestCompleted(10804)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10804" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10804" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10804)">
 			<PickUp QuestName="Seek Out Neltharaku" QuestId="10811" GiverName="Mordenai" GiverId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
@@ -102,7 +102,7 @@
 			<TurnIn QuestName="Neltharaku's Tale" QuestId="10814" TurnInName="Neltharaku" TurnInId="21657" X="-4147.19" Y="852.921" Z="112.449" />
 		</If>
 		<If Condition="((HasQuest(10814)) &amp;&amp; (!IsQuestCompleted(10814)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10814" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10814" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10814)">
 			<PickUp QuestName="Infiltrating Dragonmaw Fortress" QuestId="10836" GiverName="Neltharaku" GiverId="21657" X="-4147.19" Y="852.921" Z="112.449" />
@@ -128,7 +128,7 @@
 			<TurnIn QuestName="The Force of Neltharaku" QuestId="10854" TurnInName="Neltharaku" TurnInId="21657" X="-4147.19" Y="852.921" Z="112.449" />
 		</If>
 		<If Condition="((HasQuest(10854)) &amp;&amp; (!IsQuestCompleted(10854)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10854" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10854" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP Q10858 Karynaku: group quest (5 players) -->
 		<!-- SKIP Q10866 Zuluhed the Whacked: group quest (5 players) -->

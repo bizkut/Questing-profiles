@@ -826,7 +826,7 @@
 				<TurnIn QuestName="The Affray" QuestId="1719" TurnInName="Klannoc Macleod" TurnInId="6236" X="-1709.14" Y="-4330.07" Z="4.3339" />
 			</If>
 			<If Condition="((HasQuest(1719)) &amp;&amp; (!IsQuestCompleted(1719)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1719" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1719" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior))">
@@ -1014,7 +1014,7 @@
 			<TurnIn QuestName="Bartolo's Yeti Fur Cloak" QuestId="565" TurnInName="Bartolo Ginsetti" TurnInId="2438" X="-784.662" Y="-515.103" Z="17.7243" />
 		</If>
 		<If Condition="((HasQuest(565)) &amp;&amp; (!IsQuestCompleted(565)))">
-			<CustomBehavior File="AbandonQuest" QuestId="565" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="565" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Costly Menace" QuestId="564" TurnInName="Darren Malvew" TurnInId="2382" X="-793.884" Y="-610.77" Z="15.2482" />
 		<TurnIn QuestName="Encrypted Letter" QuestId="511" TurnInName="Loremaster Dibbs" TurnInId="2277" X="-817.945" Y="-551.606" Z="15.4026" />
@@ -1068,7 +1068,7 @@
 				<TurnIn QuestName="The Binding" QuestId="1739" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
 			</If>
 			<If Condition="((HasQuest(1739)) &amp;&amp; (!IsQuestCompleted(1739)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1739" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1739" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(Me.Level &gt;= 30)">
@@ -1171,7 +1171,7 @@
 			<TurnIn QuestName="Favor for Krazek" QuestId="627" TurnInName="Krazek" TurnInId="773" X="-14453.3" Y="501.465" Z="26.3593" />
 		</If>
 		<If Condition="((HasQuest(627)) &amp;&amp; (!IsQuestCompleted(627)))">
-			<CustomBehavior File="AbandonQuest" QuestId="627" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="627" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 32) &amp;&amp; IsQuestCompleted(627)">
 			<PickUp QuestName="Return to Corporal Kaleb" QuestId="622" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />

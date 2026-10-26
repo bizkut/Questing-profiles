@@ -54,7 +54,7 @@
 			<TurnIn QuestName="Fires Over Skettis" QuestId="11008" TurnInName="Sky Sergeant Doryn" TurnInId="23048" X="-3401.09" Y="3597.87" Z="277.412" />
 		</If>
 		<If Condition="((HasQuest(11008)) &amp;&amp; (!IsQuestCompleted(11008)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11008" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11008" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; HasSpell(34090)">
 			<PickUp QuestName="Escape from Skettis" QuestId="11085" GiverName="Skyguard Prisoner" GiverId="23383" X="-4106.62" Y="3029.94" Z="344.877" />
@@ -64,7 +64,7 @@
 			<TurnIn QuestName="Escape from Skettis" QuestId="11085" TurnInName="Sky Sergeant Doryn" TurnInId="23048" X="-3401.09" Y="3597.87" Z="277.412" />
 		</If>
 		<If Condition="((HasQuest(11085)) &amp;&amp; (!IsQuestCompleted(11085)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11085" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11085" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; (IsQuestCompleted(11010) || IsQuestCompleted(11102))">
 			<PickUp QuestName="Bomb Them Again!" QuestId="11023" GiverName="Sky Sergeant Vanderlip" GiverId="23120" X="2495.25" Y="7350.9" Z="380.334" />
@@ -79,7 +79,7 @@
 			<TurnIn QuestName="Wrangle More Aether Rays!" QuestId="11066" TurnInName="Skyguard Khatie" TurnInId="23335" X="2547.77" Y="7330.44" Z="373.524" />
 		</If>
 		<If Condition="((HasQuest(11066)) &amp;&amp; (!IsQuestCompleted(11066)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11066" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11066" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\The Burning Crusade\Sha'tari Skyguard\Sha'tari Skyguard Daily Quests: done for today" LogColor="Green" />
 	</QuestOrder>

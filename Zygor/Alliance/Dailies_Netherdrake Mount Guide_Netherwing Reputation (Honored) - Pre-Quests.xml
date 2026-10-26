@@ -48,7 +48,7 @@
 			<TurnIn QuestName="Dragonmaw Race: The Ballad of Oldie McOld" QuestId="11064" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11064)) &amp;&amp; (!IsQuestCompleted(11064)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11064" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11064" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11064) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Dragonmaw Race: Trope the Filth-Belcher" QuestId="11067" GiverName="Trope the Filth-Belcher" GiverId="23342" X="-5081.62" Y="640.932" Z="86.6143" />
@@ -58,7 +58,7 @@
 			<TurnIn QuestName="Dragonmaw Race: Trope the Filth-Belcher" QuestId="11067" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11067)) &amp;&amp; (!IsQuestCompleted(11067)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11067" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11067" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11067) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Dragonmaw Race: Corlok the Vet" QuestId="11068" GiverName="Corlok the Vet" GiverId="23344" X="-5072.99" Y="640.034" Z="86.4893" />
@@ -68,7 +68,7 @@
 			<TurnIn QuestName="Dragonmaw Race: Corlok the Vet" QuestId="11068" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11068)) &amp;&amp; (!IsQuestCompleted(11068)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11068" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11068" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11068) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Dragonmaw Race: Wing Commander Ichman" QuestId="11069" GiverName="Wing Commander Ichman" GiverId="23345" X="-5066.31" Y="640.214" Z="86.4967" />
@@ -78,7 +78,7 @@
 			<TurnIn QuestName="Dragonmaw Race: Wing Commander Ichman" QuestId="11069" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11069)) &amp;&amp; (!IsQuestCompleted(11069)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11069" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11069" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11069) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Dragonmaw Race: Wing Commander Mulverick" QuestId="11070" GiverName="Wing Commander Mulverick" GiverId="23346" X="-5060.33" Y="640.436" Z="86.6616" />
@@ -88,7 +88,7 @@
 			<TurnIn QuestName="Dragonmaw Race: Wing Commander Mulverick" QuestId="11070" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11070)) &amp;&amp; (!IsQuestCompleted(11070)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11070" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11070" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11070) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Dragonmaw Race: Captain Skyshatter" QuestId="11071" GiverName="Captain Skyshatter" GiverId="23348" X="-5074.88" Y="625.449" Z="85.9117" />
@@ -98,7 +98,7 @@
 			<TurnIn QuestName="Dragonmaw Race: Captain Skyshatter" QuestId="11071" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11071)) &amp;&amp; (!IsQuestCompleted(11071)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11071" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11071" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

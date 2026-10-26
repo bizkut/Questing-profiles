@@ -402,7 +402,7 @@
 			<TurnIn QuestName="Hive in the Tower" QuestId="1126" TurnInName="Layo Starstrike" TurnInId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
 		</If>
 		<If Condition="((HasQuest(1126)) &amp;&amp; (!IsQuestCompleted(1126)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1126" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1126" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 54) &amp;&amp; IsQuestCompleted(1126)">
 			<PickUp QuestName="Umber, Archivist" QuestId="6844" GiverName="Layo Starstrike" GiverId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
@@ -470,7 +470,7 @@
 			<TurnIn QuestName="Dearest Natalia" QuestId="8304" TurnInName="Commander Mar'alith" TurnInId="15181" X="-6752.38" Y="823.836" Z="57.4635" />
 		</If>
 		<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
-			<CustomBehavior File="AbandonQuest" QuestId="8304" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="8304" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 58) &amp;&amp; IsQuestCompleted(8304)">
 			<PickUp QuestName="Into The Maw of Madness" QuestId="8306" GiverName="Commander Mar'alith" GiverId="15181" X="-6752.38" Y="823.836" Z="57.4635" />

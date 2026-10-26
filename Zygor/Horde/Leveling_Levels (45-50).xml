@@ -946,7 +946,7 @@
 			<TurnIn QuestName="Gordunni Cobalt" QuestId="2987" TurnInName="Orwin Gizzmick" TurnInId="8021" X="-4419.57" Y="180.707" Z="29.337" />
 		</If>
 		<If Condition="((HasQuest(2987)) &amp;&amp; (!IsQuestCompleted(2987)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2987" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2987" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q2975 The Ogres of Feralas: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2975)) &amp;&amp; (IsQuestCompleted(2975)))">
@@ -1113,7 +1113,7 @@
 			<TurnIn QuestName="Rin'ji is Trapped!" QuestId="2742" TurnInName="Rin'ji's Secret" TurnInId="142127" TurnInType="Object" X="-47.878" Y="-4897.72" Z="20.0918" />
 		</If>
 		<If Condition="((HasQuest(2742)) &amp;&amp; (!IsQuestCompleted(2742)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2742" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2742" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 42) &amp;&amp; IsQuestCompleted(2742)">
 			<PickUp QuestName="Rin'ji's Secret" QuestId="2782" GiverName="Rin'ji's Secret" GiverId="142127" GiverType="Object" X="-47.878" Y="-4897.72" Z="20.0918" />
@@ -1169,7 +1169,7 @@
 			<TurnIn QuestName="Grim Message" QuestId="2932" TurnInName="Nimboya" TurnInId="2497" X="-12348.2" Y="168.519" Z="3.165" />
 		</If>
 		<If Condition="((HasQuest(2932)) &amp;&amp; (!IsQuestCompleted(2932)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2932" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2932" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((HasQuest(197)) &amp;&amp; (!IsQuestCompleted(197)))">
 			<Objective QuestName="Raptor Mastery" QuestId="197" Type="CollectItem" ItemId="3877" CollectCount="1" />
@@ -1223,7 +1223,7 @@
 			<TurnIn QuestName="Stranglethorn Fever" QuestId="348" TurnInName="Fin Fizracket" TurnInId="2486" X="-14433.2" Y="458.988" Z="15.5349" />
 		</If>
 		<If Condition="((HasQuest(348)) &amp;&amp; (!IsQuestCompleted(348)))">
-			<CustomBehavior File="AbandonQuest" QuestId="348" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="348" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 47)">
 			<PickUp QuestName="The Strength of Corruption" QuestId="4120" GiverName="Talo Thornhoof" GiverId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
@@ -1233,7 +1233,7 @@
 			<TurnIn QuestName="Testing the Vessel" QuestId="3123" TurnInName="Witch Doctor Uzer'i" TurnInId="8115" X="-4375.68" Y="269.717" Z="25.4947" />
 		</If>
 		<If Condition="((HasQuest(3123)) &amp;&amp; (!IsQuestCompleted(3123)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3123" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3123" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3123)">
 			<PickUp QuestName="Hippogryph Muisek" QuestId="3124" GiverName="Witch Doctor Uzer'i" GiverId="8115" X="-4375.68" Y="269.717" Z="25.4947" />
@@ -1243,7 +1243,7 @@
 			<TurnIn QuestName="Hippogryph Muisek" QuestId="3124" TurnInName="Witch Doctor Uzer'i" TurnInId="8115" X="-4375.68" Y="269.717" Z="25.4947" />
 		</If>
 		<If Condition="((HasQuest(3124)) &amp;&amp; (!IsQuestCompleted(3124)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3124" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3124" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3124)">
 			<PickUp QuestName="Faerie Dragon Muisek" QuestId="3125" GiverName="Witch Doctor Uzer'i" GiverId="8115" X="-4375.68" Y="269.717" Z="25.4947" />
@@ -1253,7 +1253,7 @@
 			<TurnIn QuestName="Faerie Dragon Muisek" QuestId="3125" TurnInName="Witch Doctor Uzer'i" TurnInId="8115" X="-4375.68" Y="269.717" Z="25.4947" />
 		</If>
 		<If Condition="((HasQuest(3125)) &amp;&amp; (!IsQuestCompleted(3125)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3125" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3125" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 45)">
 			<PickUp QuestName="Zapped Giants" QuestId="7003" GiverName="Zorbin Fandazzle" GiverId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
@@ -1267,7 +1267,7 @@
 			<TurnIn QuestName="Zapped Giants" QuestId="7003" TurnInName="Zorbin Fandazzle" TurnInId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
 		</If>
 		<If Condition="((HasQuest(7003)) &amp;&amp; (!IsQuestCompleted(7003)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7003" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7003" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Fuel for the Zapping" QuestId="7721" TurnInName="Zorbin Fandazzle" TurnInId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
 		<Objective QuestName="Improved Quality" QuestId="7734" Type="CollectItem" ItemId="18947" CollectCount="10" />
@@ -1293,7 +1293,7 @@
 			<TurnIn QuestName="Dark Heart" QuestId="3062" TurnInName="Talo Thornhoof" TurnInId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
 		</If>
 		<If Condition="((HasQuest(3062)) &amp;&amp; (!IsQuestCompleted(3062)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3062" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3062" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Vengeance on the Northspring" QuestId="3063" TurnInName="Talo Thornhoof" TurnInId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
 		<If Condition="(Me.Level &gt;= 45)">

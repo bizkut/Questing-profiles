@@ -279,7 +279,7 @@
 			<TurnIn QuestName="Gerenzo's Orders" QuestId="1090" TurnInName="Piznik" TurnInId="4276" X="962.967" Y="-263.785" Z="-5.3182" />
 		</If>
 		<If Condition="((HasQuest(1090)) &amp;&amp; (!IsQuestCompleted(1090)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1090" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1090" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 17) &amp;&amp; IsQuestCompleted(1090)">
 			<PickUp QuestName="Gerenzo's Orders" QuestId="1092" GiverName="Piznik" GiverId="4276" X="962.967" Y="-263.785" Z="-5.3182" />
@@ -348,7 +348,7 @@
 			<TurnIn QuestName="Ineptitude + Chemicals = Fun" QuestId="1073" TurnInName="Lomac Gearstrip" TurnInId="4081" X="-4842.96" Y="-1283.51" Z="501.951" />
 		</If>
 		<If Condition="((HasQuest(1073)) &amp;&amp; (!IsQuestCompleted(1073)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1073" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1073" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 17) &amp;&amp; IsQuestCompleted(1073)">
 			<PickUp QuestName="Ineptitude + Chemicals = Fun" QuestId="1074" GiverName="Lomac Gearstrip" GiverId="4081" X="-4842.96" Y="-1283.51" Z="501.951" />

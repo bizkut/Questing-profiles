@@ -822,7 +822,7 @@
 			<TurnIn QuestName="Freedom for All Creatures" QuestId="2969" TurnInName="Kindal Moonweaver" TurnInId="7956" X="-4481.82" Y="858.533" Z="74.6309" />
 		</If>
 		<If Condition="((HasQuest(2969)) &amp;&amp; (!IsQuestCompleted(2969)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2969" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2969" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 38) &amp;&amp; IsQuestCompleted(2969)">
 			<PickUp QuestName="Doling Justice" QuestId="2970" GiverName="Jer'kai Moonweaver" GiverId="7957" X="-4479.81" Y="858.481" Z="74.6105" />
@@ -890,7 +890,7 @@
 			<TurnIn QuestName="Zapped Giants" QuestId="7003" TurnInName="Zorbin Fandazzle" TurnInId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
 		</If>
 		<If Condition="((HasQuest(7003)) &amp;&amp; (!IsQuestCompleted(7003)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7003" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7003" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Fuel for the Zapping" QuestId="7721" TurnInName="Zorbin Fandazzle" TurnInId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
 		<TurnIn QuestName="Against Lord Shalzaru" QuestId="2870" TurnInName="Latronicus Moonspear" TurnInId="7877" X="-4505.91" Y="3330.33" Z="14.1252" />
@@ -942,7 +942,7 @@
 			<TurnIn QuestName="Freed from the Hive" QuestId="4265" TurnInName="Ginro Hearthkindle" TurnInId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
 		</If>
 		<If Condition="((HasQuest(4265)) &amp;&amp; (!IsQuestCompleted(4265)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4265" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4265" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(4265)">
 			<PickUp QuestName="A Hero's Welcome" QuestId="4266" GiverName="Ginro Hearthkindle" GiverId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
@@ -983,21 +983,21 @@
 			<TurnIn QuestName="Cracking Maury's Foot" QuestId="613" TurnInName='"Sea Wolf" MacKinley' TurnInId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
 		</If>
 		<If Condition="((HasQuest(613)) &amp;&amp; (!IsQuestCompleted(613)))">
-			<CustomBehavior File="AbandonQuest" QuestId="613" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="613" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q2767 Rescue OOX-22/FE!: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2767)) &amp;&amp; (IsQuestCompleted(2767)))">
 			<TurnIn QuestName="Rescue OOX-22/FE!" QuestId="2767" TurnInName="Oglethorpe Obnoticus" TurnInId="7406" X="-14417" Y="411.288" Z="22.7816" />
 		</If>
 		<If Condition="((HasQuest(2767)) &amp;&amp; (!IsQuestCompleted(2767)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2767" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2767" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q656 Summoning the Princess: item 4473 Eldritch Shackles has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(656)) &amp;&amp; (IsQuestCompleted(656)))">
 			<TurnIn QuestName="Summoning the Princess" QuestId="656" TurnInName="Shards of Myzrael" TurnInId="138492" TurnInType="Object" X="-942.842" Y="-3116.75" Z="48.4206" />
 		</If>
 		<If Condition="((HasQuest(656)) &amp;&amp; (!IsQuestCompleted(656)))">
-			<CustomBehavior File="AbandonQuest" QuestId="656" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="656" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="To The Hinterlands" QuestId="1449" TurnInName="Falstad Wildhammer" TurnInId="5635" X="266.603" Y="-2029.53" Z="171.866" />
 		<If Condition="(Me.Level &gt;= 38) &amp;&amp; IsQuestCompleted(1449)">
@@ -1092,7 +1092,7 @@
 			<TurnIn QuestName="The Super Snapper FX" QuestId="2944" TurnInName="Daryn Lightwind" TurnInId="7907" X="8701.16" Y="993.116" Z="23.5854" />
 		</If>
 		<If Condition="((HasQuest(2944)) &amp;&amp; (!IsQuestCompleted(2944)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2944" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2944" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 42) &amp;&amp; IsQuestCompleted(2944)">
 			<PickUp QuestName="Return to Troyas" QuestId="2943" GiverName="Daryn Lightwind" GiverId="7907" X="8701.16" Y="993.116" Z="23.5854" />
@@ -1125,7 +1125,7 @@
 			<TurnIn QuestName="The Stave of Equinex" QuestId="2879" TurnInName="Equinex Monolith" TurnInId="144063" TurnInType="Object" X="-2976.94" Y="2743.2" Z="53.0054" />
 		</If>
 		<If Condition="((HasQuest(2879)) &amp;&amp; (!IsQuestCompleted(2879)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2879" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2879" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 42) &amp;&amp; IsQuestCompleted(2879)">
 			<PickUp QuestName="The Morrow Stone" QuestId="2942" GiverName="Equinex Monolith" GiverId="144063" GiverType="Object" X="-2976.94" Y="2743.2" Z="53.0054" />
@@ -1140,7 +1140,7 @@
 			<TurnIn QuestName="Wandering Shay" QuestId="2845" TurnInName="Rockbiter" TurnInId="7765" X="-3385.91" Y="2495.84" Z="23.5588" />
 		</If>
 		<If Condition="((HasQuest(2845)) &amp;&amp; (!IsQuestCompleted(2845)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2845" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2845" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="HasItem(8705) &amp;&amp; !HasQuest(2766) &amp;&amp; !IsQuestCompleted(2766) &amp;&amp; (Me.Level &gt;= 40)">
 			<PickUp QuestName="Find OOX-22/FE!" QuestId="2766" GiverName="OOX-22/FE Distress Beacon" GiverId="8705" GiverType="Item" />
@@ -1168,7 +1168,7 @@
 			<TurnIn QuestName="The Morrow Stone" QuestId="2942" TurnInName="Troyas Moonbreeze" TurnInId="7764" X="-4474.9" Y="3232.88" Z="13.8295" />
 		</If>
 		<If Condition="((HasQuest(2942)) &amp;&amp; (!IsQuestCompleted(2942)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2942" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2942" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40)">
 			<PickUp QuestName="Troll Temper" QuestId="3042" GiverName="Trenton Lighthammer" GiverId="7804" X="-7197.6" Y="-3766.29" Z="8.8737" />
@@ -1199,7 +1199,7 @@
 			<TurnIn QuestName="Gadgetzan Water Survey" QuestId="992" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
 		</If>
 		<If Condition="((HasQuest(992)) &amp;&amp; (!IsQuestCompleted(992)))">
-			<CustomBehavior File="AbandonQuest" QuestId="992" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="992" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 39) &amp;&amp; IsQuestCompleted(992)">
 			<PickUp QuestName="Noxious Lair Investigation" QuestId="82" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
@@ -1214,8 +1214,8 @@
 		<Objective QuestName="Noxious Lair Investigation" QuestId="82" Type="CollectItem" ItemId="8587" CollectCount="5" />
 		<Objective QuestName="The Dunemaul Compound" QuestId="5863" Type="KillMob" MobId="12046" KillCount="1" />
 		<Objective QuestName="Gahz'ridian" QuestId="3161" Type="CollectItem" ItemId="8443" CollectCount="30" />
-		<CustomBehavior File="UseItemOn" QuestId="5863" ItemId="9978" MobId="5474" NumOfTimes="10" Range="5" CollectionDistance="200" X="-8816.03" Y="-3516.8" Z="8.9834" />
-		<CustomBehavior File="UseItemOn" QuestId="5863" ItemId="9978" MobId="5472" NumOfTimes="10" Range="5" CollectionDistance="200" X="-8917.38" Y="-3549.92" Z="11.1132" />
+		<CustomBehavior File="UseItem" QuestId="5863" ItemId="9978" X="-8816.03" Y="-3516.8" Z="8.9834" />
+		<CustomBehavior File="UseItem" QuestId="5863" ItemId="9978" X="-8917.38" Y="-3549.92" Z="11.1132" />
 		<TurnIn QuestName="Seeing What Happens" QuestId="2946" TurnInName="Uldum Pedestal" TurnInId="142343" TurnInType="Object" X="-9619.27" Y="-2815.05" Z="8.2113" />
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; (IsQuestCompleted(2946) || IsQuestCompleted(2966))">
 			<PickUp QuestName="The Stone Watcher" QuestId="2954" GiverName="Uldum Pedestal" GiverId="142343" GiverType="Object" X="-9619.27" Y="-2815.05" Z="8.2113" />
@@ -1225,7 +1225,7 @@
 			<TurnIn QuestName="The Stone Watcher" QuestId="2954" TurnInName="Uldum Pedestal" TurnInId="142343" TurnInType="Object" X="-9619.27" Y="-2815.05" Z="8.2113" />
 		</If>
 		<If Condition="((HasQuest(2954)) &amp;&amp; (!IsQuestCompleted(2954)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2954" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2954" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2954)">
 			<PickUp QuestName="Return to Ironforge" QuestId="2977" GiverName="Uldum Pedestal" GiverId="142343" GiverType="Object" X="-9619.27" Y="-2815.05" Z="8.2113" />
@@ -1242,7 +1242,7 @@
 			<TurnIn QuestName="Tooga's Quest" QuestId="1560" TurnInName="Torta" TurnInId="6015" X="-7056.02" Y="-4812.75" Z="0.7901" />
 		</If>
 		<If Condition="((HasQuest(1560)) &amp;&amp; (!IsQuestCompleted(1560)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1560" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1560" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 48)">
 			<PickUp QuestName="Yuka Screwspigot" QuestId="4324" GiverName="Yorba Screwspigot" GiverId="9706" X="-6979.65" Y="-4844.17" Z="8.1178" />
@@ -1252,7 +1252,7 @@
 			<TurnIn QuestName="Screecher Spirits" QuestId="3520" TurnInName="Yeh'kinya" TurnInId="8579" X="-6903.4" Y="-4840.94" Z="8.4641" />
 		</If>
 		<If Condition="((HasQuest(3520)) &amp;&amp; (!IsQuestCompleted(3520)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3520" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3520" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3520)">
 			<PickUp QuestName="The Prophecy of Mosh'aru" QuestId="3527" GiverName="Yeh'kinya" GiverId="8579" X="-6903.4" Y="-4840.94" Z="8.4641" />
@@ -1289,47 +1289,47 @@
 			<TurnIn QuestName="Scarab Shells" QuestId="2865" TurnInName="Tran'rek" TurnInId="7876" X="-7105.84" Y="-3776.83" Z="8.7922" />
 		</If>
 		<If Condition="((HasQuest(2865)) &amp;&amp; (!IsQuestCompleted(2865)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2865" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2865" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q3042 Troll Temper: item 9523 Troll Temper has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(3042)) &amp;&amp; (IsQuestCompleted(3042)))">
 			<TurnIn QuestName="Troll Temper" QuestId="3042" TurnInName="Trenton Lighthammer" TurnInId="7804" X="-7197.6" Y="-3766.29" Z="8.8737" />
 		</If>
 		<If Condition="((HasQuest(3042)) &amp;&amp; (!IsQuestCompleted(3042)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3042" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3042" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q2768 Divino-matic Rod: item 8548 Divino-matic Rod has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2768)) &amp;&amp; (IsQuestCompleted(2768)))">
 			<TurnIn QuestName="Divino-matic Rod" QuestId="2768" TurnInName="Chief Engineer Bilgewhizzle" TurnInId="7407" X="-7186.64" Y="-3838.6" Z="8.7467" />
 		</If>
 		<If Condition="((HasQuest(2768)) &amp;&amp; (!IsQuestCompleted(2768)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2768" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2768" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q2770 Gahz'rilla: item 8707 Gahz'rilla's Electrified Scale has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2770)) &amp;&amp; (IsQuestCompleted(2770)))">
 			<TurnIn QuestName="Gahz'rilla" QuestId="2770" TurnInName="Wizzle Brassbolts" TurnInId="4453" X="-6228.86" Y="-3871.63" Z="-58.6667" />
 		</If>
 		<If Condition="((HasQuest(2770)) &amp;&amp; (!IsQuestCompleted(2770)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2770" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2770" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q2846 Tiara of the Deep: item 9234 Tiara of the Deep has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2846)) &amp;&amp; (IsQuestCompleted(2846)))">
 			<TurnIn QuestName="Tiara of the Deep" QuestId="2846" TurnInName="Tabetha" TurnInId="6546" X="-4031.56" Y="-3392.97" Z="38.9974" />
 		</If>
 		<If Condition="((HasQuest(2846)) &amp;&amp; (!IsQuestCompleted(2846)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2846" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2846" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 41)">
 			<PickUp QuestName="Legends of Maraudon" QuestId="7044" GiverName="Cavindra" GiverId="13697" X="-1458.87" Y="2797.62" Z="93.817" />
 		</If>
 		<!-- SKIP turn-in Q7044 Legends of Maraudon: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(7044)) &amp;&amp; (!IsQuestCompleted(7044)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7044" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7044" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q7046 The Scepter of Celebras: no quest giver with a spawn in the database -->
 		<!-- SKIP turn-in Q7046 The Scepter of Celebras: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(7046)) &amp;&amp; (!IsQuestCompleted(7046)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7046" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7046" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q7066 Seed of Life: no quest giver with a spawn in the database -->
 		<!-- REVIEW Q7065 Corruption of Earth and Seed: kill 12201 Princess Theradras x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1337,14 +1337,14 @@
 			<TurnIn QuestName="Corruption of Earth and Seed" QuestId="7065" TurnInName="Keeper Marandis" TurnInId="13698" X="132.224" Y="1363.84" Z="199.158" />
 		</If>
 		<If Condition="((HasQuest(7065)) &amp;&amp; (!IsQuestCompleted(7065)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7065" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7065" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q7041 Vyletongue Corruption: item 17696 Filled Cerulean Vial has no drop or chest near the guide coordinates; use item 17696: target 13696 Noxxious Scion has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(7041)) &amp;&amp; (IsQuestCompleted(7041)))">
 			<TurnIn QuestName="Vyletongue Corruption" QuestId="7041" TurnInName="Talendria" TurnInId="11715" X="185.94" Y="1153.64" Z="168.344" />
 		</If>
 		<If Condition="((HasQuest(7041)) &amp;&amp; (!IsQuestCompleted(7041)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7041" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7041" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Twisted Evils" QuestId="7028" Type="CollectItem" ItemId="17684" CollectCount="15" />
 		<TurnIn QuestName="Twisted Evils" QuestId="7028" TurnInName="Willow" TurnInId="13656" X="-735.863" Y="1437.12" Z="91.2794" />
@@ -1353,7 +1353,7 @@
 			<TurnIn QuestName="The Pariah's Instructions" QuestId="7067" TurnInName="Centaur Pariah" TurnInId="13717" X="-2145.71" Y="1966.42" Z="84.5923" />
 		</If>
 		<If Condition="((HasQuest(7067)) &amp;&amp; (!IsQuestCompleted(7067)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7067" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7067" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="The Scrimshank Redemption" QuestId="10" Type="CollectItem" ItemId="8593" CollectCount="1" />
 		<!-- REVIEW Q3527 The Prophecy of Mosh'aru: item 10660 First Mosh'aru Tablet has no drop or chest near the guide coordinates; item 10661 Second Mosh'aru Tablet has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1361,7 +1361,7 @@
 			<TurnIn QuestName="The Prophecy of Mosh'aru" QuestId="3527" TurnInName="Yeh'kinya" TurnInId="8579" X="-6903.4" Y="-4840.94" Z="8.4641" />
 		</If>
 		<If Condition="((HasQuest(3527)) &amp;&amp; (!IsQuestCompleted(3527)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3527" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3527" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(3527)">
 			<PickUp QuestName="The Ancient Egg" QuestId="4787" GiverName="Yeh'kinya" GiverId="8579" X="-6903.4" Y="-4840.94" Z="8.4641" />
@@ -1391,14 +1391,14 @@
 			<TurnIn QuestName="Rescue OOX-09/HL!" QuestId="836" TurnInName="Oglethorpe Obnoticus" TurnInId="7406" X="-14417" Y="411.288" Z="22.7816" />
 		</If>
 		<If Condition="((HasQuest(836)) &amp;&amp; (!IsQuestCompleted(836)))">
-			<CustomBehavior File="AbandonQuest" QuestId="836" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="836" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q648 Rescue OOX-17/TN!: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(648)) &amp;&amp; (IsQuestCompleted(648)))">
 			<TurnIn QuestName="Rescue OOX-17/TN!" QuestId="648" TurnInName="Oglethorpe Obnoticus" TurnInId="7406" X="-14417" Y="411.288" Z="22.7816" />
 		</If>
 		<If Condition="((HasQuest(648)) &amp;&amp; (!IsQuestCompleted(648)))">
-			<CustomBehavior File="AbandonQuest" QuestId="648" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="648" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; (IsQuestCompleted(648) || IsQuestCompleted(836) || IsQuestCompleted(2767))">
 			<PickUp QuestName="An OOX of Your Own" QuestId="3721" GiverName="Oglethorpe Obnoticus" GiverId="7406" X="-14417" Y="411.288" Z="22.7816" />
@@ -1408,7 +1408,7 @@
 			<TurnIn QuestName="Nekrum's Medallion" QuestId="2991" TurnInName="Thadius Grimshade" TurnInId="8022" X="-11001.5" Y="-3482.74" Z="103.227" />
 		</If>
 		<If Condition="((HasQuest(2991)) &amp;&amp; (!IsQuestCompleted(2991)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2991" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2991" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(2991)">
 			<PickUp QuestName="The Divination" QuestId="2992" GiverName="Thadius Grimshade" GiverId="8022" X="-11001.5" Y="-3482.74" Z="103.227" />

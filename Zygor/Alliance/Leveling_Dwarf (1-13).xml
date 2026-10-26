@@ -802,7 +802,7 @@
 			<TurnIn QuestName="Beer Basted Boar Ribs" QuestId="384" TurnInName="Ragnar Thunderbrew" TurnInId="1267" X="-5596.21" Y="-504.132" Z="400.714" />
 		</If>
 		<If Condition="((HasQuest(384)) &amp;&amp; (!IsQuestCompleted(384)))">
-			<CustomBehavior File="AbandonQuest" QuestId="384" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="384" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Grizzled Den" QuestId="313" TurnInName="Pilot Stonegear" TurnInId="1377" X="-5473.19" Y="-641.798" Z="393.3" />
 		<TurnIn QuestName="Stocking Jetsteam" QuestId="317" TurnInName="Pilot Bellowfiz" TurnInId="1378" X="-5466.53" Y="-632.141" Z="393.939" />
@@ -905,7 +905,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6064" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			</If>
 			<If Condition="((HasQuest(6064)) &amp;&amp; (!IsQuestCompleted(6064)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6064" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6064" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Dwarf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -919,7 +919,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6084" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			</If>
 			<If Condition="((HasQuest(6084)) &amp;&amp; (!IsQuestCompleted(6084)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6084" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6084" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Dwarf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -933,7 +933,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6085" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			</If>
 			<If Condition="((HasQuest(6085)) &amp;&amp; (!IsQuestCompleted(6085)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6085" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6085" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Dwarf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">

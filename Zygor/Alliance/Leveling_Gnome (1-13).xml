@@ -754,7 +754,7 @@
 			<TurnIn QuestName="Beer Basted Boar Ribs" QuestId="384" TurnInName="Ragnar Thunderbrew" TurnInId="1267" X="-5596.21" Y="-504.132" Z="400.714" />
 		</If>
 		<If Condition="((HasQuest(384)) &amp;&amp; (!IsQuestCompleted(384)))">
-			<CustomBehavior File="AbandonQuest" QuestId="384" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="384" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Stocking Jetsteam" QuestId="317" TurnInName="Pilot Bellowfiz" TurnInId="1378" X="-5466.53" Y="-632.141" Z="393.939" />
 		<If Condition="(Me.Level &gt;= 2) &amp;&amp; IsQuestCompleted(317)">
@@ -887,7 +887,7 @@
 				<TurnIn QuestName="The Binding" QuestId="1689" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
 			</If>
 			<If Condition="((HasQuest(1689)) &amp;&amp; (!IsQuestCompleted(1689)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1689" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1689" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<TurnIn QuestName="Stout to Kadrell" QuestId="414" TurnInName="Mountaineer Kadrell" TurnInId="1340" X="-5365.12" Y="-2938.79" Z="326.76" />

@@ -90,7 +90,7 @@
 			<TurnIn QuestName="Return of the Lich Hunter" QuestId="12692" TurnInName="Elder Harkek" TurnInId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
 		</If>
 		<If Condition="((HasQuest(12692)) &amp;&amp; (!IsQuestCompleted(12692)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12692" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12692" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12692)">
 			<PickUp QuestName="Chicken Party!" QuestId="12702" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
@@ -190,14 +190,14 @@
 			<TurnIn QuestName="Chicken Party!" QuestId="12702" TurnInName="Elder Harkek" TurnInId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
 		</If>
 		<If Condition="((HasQuest(12702)) &amp;&amp; (!IsQuestCompleted(12702)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12702" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12702" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12758 A Hero's Headgear: item 39667 Stormwatcher's Head has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12758)) &amp;&amp; (IsQuestCompleted(12758)))">
 			<TurnIn QuestName="A Hero's Headgear" QuestId="12758" TurnInName="Rejek" TurnInId="29043" X="5270.12" Y="4501.99" Z="-82.8075" />
 		</If>
 		<If Condition="((HasQuest(12758)) &amp;&amp; (!IsQuestCompleted(12758)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12758" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12758" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Rejek: First Blood" QuestId="12734" Type="KillMob" MobId="28040" KillCount="1" />
 		<!-- REVIEW Q12734 Rejek: First Blood: objective 36189 Hardknuckle Charger Proxy x1: kill credit or scripted event; objective 29043 Rejek x3: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -205,21 +205,21 @@
 			<TurnIn QuestName="Rejek: First Blood" QuestId="12734" TurnInName="Rejek" TurnInId="29043" X="5270.12" Y="4501.99" Z="-82.8075" />
 		</If>
 		<If Condition="((HasQuest(12734)) &amp;&amp; (!IsQuestCompleted(12734)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12734" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12734" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12741 Strength of the Tempest: item 39614 True Power of the Tempest has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12741)) &amp;&amp; (IsQuestCompleted(12741)))">
 			<TurnIn QuestName="Strength of the Tempest" QuestId="12741" TurnInName="Rejek" TurnInId="29043" X="5270.12" Y="4501.99" Z="-82.8075" />
 		</If>
 		<If Condition="((HasQuest(12741)) &amp;&amp; (!IsQuestCompleted(12741)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12741" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12741" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12732 The Heartblood's Strength: item 39575 Suntouched Heartblood has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12732)) &amp;&amp; (IsQuestCompleted(12732)))">
 			<TurnIn QuestName="The Heartblood's Strength" QuestId="12732" TurnInName="Rejek" TurnInId="29043" X="5270.12" Y="4501.99" Z="-82.8075" />
 		</If>
 		<If Condition="((HasQuest(12732)) &amp;&amp; (!IsQuestCompleted(12732)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12732" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12732" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Sholazar Basin\Frenzyheart Tribe Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

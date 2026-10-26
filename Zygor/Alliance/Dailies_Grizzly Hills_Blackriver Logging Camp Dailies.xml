@@ -44,7 +44,7 @@
 			<TurnIn QuestName="Blackriver Skirmish" QuestId="12444" TurnInName="Scout Captain Carter" TurnInId="27783" X="3424.36" Y="-2680.88" Z="82.0611" />
 		</If>
 		<If Condition="((HasQuest(12444)) &amp;&amp; (!IsQuestCompleted(12444)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12444" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12444" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Grizzly Hills\Blackriver Logging Camp Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

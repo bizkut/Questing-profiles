@@ -128,21 +128,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13757" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 		</If>
 		<If Condition="((HasQuest(13757)) &amp;&amp; (!IsQuestCompleted(13757)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13757" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13757" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13758 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13758)) &amp;&amp; (IsQuestCompleted(13758)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13758" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 		</If>
 		<If Condition="((HasQuest(13758)) &amp;&amp; (!IsQuestCompleted(13758)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13758" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13758" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13759 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13759)) &amp;&amp; (IsQuestCompleted(13759)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13759" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 		</If>
 		<If Condition="((HasQuest(13759)) &amp;&amp; (!IsQuestCompleted(13759)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13759" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13759" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Valiant's Field Training" QuestId="13760" TurnInName="Illestria Bladesinger" TurnInId="33652" X="8633.15" Y="659.213" Z="550.343" />
 		<!-- REVIEW Q13761 The Grand Melee: item 45127 Mark of the Valiant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -150,7 +150,7 @@
 			<TurnIn QuestName="The Grand Melee" QuestId="13761" TurnInName="Airae Starseeker" TurnInId="33654" X="8632.64" Y="652.755" Z="550.343" />
 		</If>
 		<If Condition="((HasQuest(13761)) &amp;&amp; (!IsQuestCompleted(13761)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13761" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13761" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="At The Enemy's Gates" QuestId="13855" TurnInName="Airae Starseeker" TurnInId="33654" X="8632.64" Y="652.755" Z="550.343" />
 		<!-- REVIEW Q13717 The Valiant's Charge: item 44987 Valiant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -158,7 +158,7 @@
 			<TurnIn QuestName="The Valiant's Charge" QuestId="13717" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 		</If>
 		<If Condition="((HasQuest(13717)) &amp;&amp; (!IsQuestCompleted(13717)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13717" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13717" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13717)">
 			<PickUp QuestName="The Valiant's Challenge" QuestId="13725" GiverName="Jaelyne Evensong" GiverId="33592" X="8631.3" Y="656.282" Z="550.356" />
@@ -168,7 +168,7 @@
 			<TurnIn QuestName="The Valiant's Challenge" QuestId="13725" TurnInName="Jaelyne Evensong" TurnInId="33592" X="8631.3" Y="656.282" Z="550.356" />
 		</If>
 		<If Condition="((HasQuest(13725)) &amp;&amp; (!IsQuestCompleted(13725)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13725" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13725" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Crusader Title Guide (Unlocks More Dailies)\Night Elf Champion Rank: done for today" LogColor="Green" />
 	</QuestOrder>

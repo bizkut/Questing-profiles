@@ -352,7 +352,7 @@
 			<TurnIn QuestName="A Tale of Sorrow" QuestId="2801" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
 		</If>
 		<If Condition="((HasQuest(2801)) &amp;&amp; (!IsQuestCompleted(2801)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2801" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2801" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 45) &amp;&amp; IsQuestCompleted(2801)">
 			<PickUp QuestName="The Stones That Bind Us" QuestId="2681" GiverName="Fallen Hero of the Horde" GiverId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
@@ -400,7 +400,7 @@
 		</If>
 		<!-- SKIP turn-in Q2721 Kirith: no turn-in NPC with a spawn in the database -->
 		<If Condition="((HasQuest(2721)) &amp;&amp; (!IsQuestCompleted(2721)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2721" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2721" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP pickup Q2743 The Cover of Darkness: no quest giver with a spawn in the database -->
 		<!-- REVIEW Q2743 The Cover of Darkness: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -408,7 +408,7 @@
 			<TurnIn QuestName="The Cover of Darkness" QuestId="2743" TurnInName="Fallen Hero of the Horde" TurnInId="7572" X="-10632.3" Y="-3009.37" Z="29.2653" />
 		</If>
 		<If Condition="((HasQuest(2743)) &amp;&amp; (!IsQuestCompleted(2743)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2743" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2743" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Mazen's Behest" QuestId="1364" TurnInName="Watcher Mahar Ba" TurnInId="5385" X="-10994.7" Y="-3507.89" Z="103.225" />
 		<Objective QuestName="To Serve Kum'isha" QuestId="2521" Type="CollectItem" ItemId="8244" CollectCount="1" />
@@ -418,7 +418,7 @@
 			<TurnIn QuestName="Everything Counts In Large Amounts" QuestId="3501" TurnInName="Kum'isha the Collector" TurnInId="7363" X="-11362.8" Y="-2982.84" Z="0.7989" />
 		</If>
 		<If Condition="((HasQuest(3501)) &amp;&amp; (!IsQuestCompleted(3501)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3501" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3501" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

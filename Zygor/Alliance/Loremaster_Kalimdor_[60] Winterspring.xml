@@ -307,7 +307,7 @@
 			<TurnIn QuestName="Broodling Essence" QuestId="4726" TurnInName="Tinkee Steamboil" TurnInId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
 		</If>
 		<If Condition="((HasQuest(4726)) &amp;&amp; (!IsQuestCompleted(4726)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4726" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4726" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 50) &amp;&amp; IsQuestCompleted(4726)">
 			<PickUp QuestName="Felnok Steelspring" QuestId="4808" GiverName="Tinkee Steamboil" GiverId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
@@ -340,7 +340,7 @@
 			<TurnIn QuestName="Threat of the Winterfall" QuestId="5082" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		</If>
 		<If Condition="((HasQuest(5082)) &amp;&amp; (!IsQuestCompleted(5082)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5082" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5082" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Winterfall Firewater" QuestId="5083" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(5083)">
@@ -436,7 +436,7 @@
 			<TurnIn QuestName="Cache of Mau'ari" QuestId="975" TurnInName="Witch Doctor Mau'ari" TurnInId="10307" X="6720.53" Y="-4712.91" Z="721.976" />
 		</If>
 		<If Condition="((HasQuest(975)) &amp;&amp; (!IsQuestCompleted(975)))">
-			<CustomBehavior File="AbandonQuest" QuestId="975" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="975" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Are We There, Yeti?" QuestId="3783" TurnInName="Umi Rumplesnicker" TurnInId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
 		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(3783)">
@@ -485,7 +485,7 @@
 			<TurnIn QuestName="Shy-Rotam" QuestId="5056" TurnInName="Storm Shadowhoof" TurnInId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
 		</If>
 		<If Condition="((HasQuest(5056)) &amp;&amp; (!IsQuestCompleted(5056)))">
-			<CustomBehavior File="AbandonQuest" QuestId="5056" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="5056" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 53) &amp;&amp; IsQuestCompleted(5056)">
 			<PickUp QuestName="Past Endeavors" QuestId="5057" GiverName="Storm Shadowhoof" GiverId="10303" X="6716.85" Y="-4713.84" Z="721.702" />
@@ -501,7 +501,7 @@
 			<TurnIn QuestName="Winterfall Activity" QuestId="8464" TurnInName="Salfa" TurnInId="11556" X="6900.44" Y="-2285.77" Z="586.148" />
 		</If>
 		<If Condition="((HasQuest(8464)) &amp;&amp; (!IsQuestCompleted(8464)))">
-			<CustomBehavior File="AbandonQuest" QuestId="8464" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="8464" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Words of the High Chief" QuestId="5128" TurnInName="Kelek Skykeeper" TurnInId="10920" X="3999.43" Y="-1298.66" Z="254.258" />
 		<CustomBehavior File="UseItemOn" QuestId="5163" ItemId="12928" MobId="7583" NumOfTimes="1" Range="5" CollectionDistance="200" X="-7111.11" Y="-3741.78" Z="8.6093" />
@@ -518,7 +518,7 @@
 			<TurnIn QuestName="Guardians of the Altar" QuestId="4901" TurnInName="Erelas Ambersky" TurnInId="7916" X="8707.46" Y="988.88" Z="14.1964" />
 		</If>
 		<If Condition="((HasQuest(4901)) &amp;&amp; (!IsQuestCompleted(4901)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4901" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4901" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 52) &amp;&amp; IsQuestCompleted(4901)">
 			<PickUp QuestName="Wildkin of Elune" QuestId="4902" GiverName="Erelas Ambersky" GiverId="7916" X="8707.46" Y="988.88" Z="14.1964" />

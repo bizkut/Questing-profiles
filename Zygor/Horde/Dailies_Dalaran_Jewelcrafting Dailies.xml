@@ -146,42 +146,42 @@
 			<TurnIn QuestName="Shipment: Blood Jade Amulet " QuestId="12958" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12958)) &amp;&amp; (!IsQuestCompleted(12958)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12958" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12958" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12962 Shipment: Bright Armor Relic: needs profession skill 755 (375); item 43275 Bright Armor Relic has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12962)) &amp;&amp; (IsQuestCompleted(12962)))">
 			<TurnIn QuestName="Shipment: Bright Armor Relic" QuestId="12962" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12962)) &amp;&amp; (!IsQuestCompleted(12962)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12962" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12962" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12959 Shipment: Glowing Ivory Figurine: needs profession skill 755 (375); item 43270 Glowing Ivory Figurine has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12959)) &amp;&amp; (IsQuestCompleted(12959)))">
 			<TurnIn QuestName="Shipment: Glowing Ivory Figurine" QuestId="12959" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12959)) &amp;&amp; (!IsQuestCompleted(12959)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12959" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12959" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12961 Shipment: Intricate Bone Figurine: needs profession skill 755 (375); item 43274 Intricate Bone Figurine has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12961)) &amp;&amp; (IsQuestCompleted(12961)))">
 			<TurnIn QuestName="Shipment: Intricate Bone Figurine" QuestId="12961" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12961)) &amp;&amp; (!IsQuestCompleted(12961)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12961" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12961" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12963 Shipment: Shifting Sun Curio : needs profession skill 755 (375); item 43276 Shifting Sun Curio has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12963)) &amp;&amp; (IsQuestCompleted(12963)))">
 			<TurnIn QuestName="Shipment: Shifting Sun Curio " QuestId="12963" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12963)) &amp;&amp; (!IsQuestCompleted(12963)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12963" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12963" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12960 Shipment: Wicked Sun Brooch: needs profession skill 755 (375); item 43272 Wicked Sun Brooch has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12960)) &amp;&amp; (IsQuestCompleted(12960)))">
 			<TurnIn QuestName="Shipment: Wicked Sun Brooch" QuestId="12960" TurnInName="Timothy Jones" TurnInId="28701" X="5871.05" Y="714.891" Z="643.176" />
 		</If>
 		<If Condition="((HasQuest(12960)) &amp;&amp; (!IsQuestCompleted(12960)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12960" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12960" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Dalaran\Jewelcrafting Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

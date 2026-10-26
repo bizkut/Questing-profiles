@@ -141,7 +141,7 @@
 			<TurnIn QuestName="Kindness" QuestId="10804" TurnInName="Mordenai" TurnInId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
 		</If>
 		<If Condition="((HasQuest(10804)) &amp;&amp; (!IsQuestCompleted(10804)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10804" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10804" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10804)">
 			<PickUp QuestName="Seek Out Neltharaku" QuestId="10811" GiverName="Mordenai" GiverId="22113" X="-4129.33" Y="762.282" Z="2.0381" />
@@ -155,7 +155,7 @@
 			<TurnIn QuestName="Neltharaku's Tale" QuestId="10814" TurnInName="Neltharaku" TurnInId="21657" X="-4147.19" Y="852.921" Z="112.449" />
 		</If>
 		<If Condition="((HasQuest(10814)) &amp;&amp; (!IsQuestCompleted(10814)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10814" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10814" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10814)">
 			<PickUp QuestName="Infiltrating Dragonmaw Fortress" QuestId="10836" GiverName="Neltharaku" GiverId="21657" X="-4147.19" Y="852.921" Z="112.449" />
@@ -165,7 +165,7 @@
 			<TurnIn QuestName="Infiltrating Dragonmaw Fortress" QuestId="10836" TurnInName="Neltharaku" TurnInId="21657" X="-4147.19" Y="852.921" Z="112.449" />
 		</If>
 		<If Condition="((HasQuest(10836)) &amp;&amp; (!IsQuestCompleted(10836)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10836" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10836" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(10836)">
 			<PickUp QuestName="To Netherwing Ledge!" QuestId="10837" GiverName="Neltharaku" GiverId="21657" X="-4147.19" Y="852.921" Z="112.449" />
@@ -180,7 +180,7 @@
 			<TurnIn QuestName="The Force of Neltharaku" QuestId="10854" TurnInName="Neltharaku" TurnInId="21657" X="-4147.19" Y="852.921" Z="112.449" />
 		</If>
 		<If Condition="((HasQuest(10854)) &amp;&amp; (!IsQuestCompleted(10854)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10854" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10854" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP Q10858 Karynaku: group quest (5 players) -->
 		<!-- SKIP Q10866 Zuluhed the Whacked: group quest (5 players) -->
@@ -236,7 +236,7 @@
 			<TurnIn QuestName="Seeker of Truth" QuestId="11082" TurnInName="Mistress of the Mines" TurnInId="23149" X="-5254.18" Y="628.473" Z="48.9907" />
 		</If>
 		<If Condition="((HasQuest(11082)) &amp;&amp; (!IsQuestCompleted(11082)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11082" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11082" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Overseeing and You: Making the Right Choices" QuestId="11054" Type="CollectItem" ItemId="32666" CollectCount="1" />
 		<!-- REVIEW Q11054 Overseeing and You: Making the Right Choices: item 21887 Knothide Leather has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -244,7 +244,7 @@
 			<TurnIn QuestName="Overseeing and You: Making the Right Choices" QuestId="11054" TurnInName="Chief Overseer Mudlump" TurnInId="23291" X="-5105.28" Y="548.874" Z="85.7276" />
 		</If>
 		<If Condition="((HasQuest(11054)) &amp;&amp; (!IsQuestCompleted(11054)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11054" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11054" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11053) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Stand Tall, Captain!" QuestId="11084" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
@@ -261,7 +261,7 @@
 			<TurnIn QuestName="Dragonmaw Race: The Ballad of Oldie McOld" QuestId="11064" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11064)) &amp;&amp; (!IsQuestCompleted(11064)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11064" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11064" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11064) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Dragonmaw Race: Trope the Filth-Belcher" QuestId="11067" GiverName="Trope the Filth-Belcher" GiverId="23342" X="-5081.62" Y="640.932" Z="86.6143" />
@@ -271,7 +271,7 @@
 			<TurnIn QuestName="Dragonmaw Race: Trope the Filth-Belcher" QuestId="11067" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11067)) &amp;&amp; (!IsQuestCompleted(11067)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11067" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11067" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11067) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Dragonmaw Race: Corlok the Vet" QuestId="11068" GiverName="Corlok the Vet" GiverId="23344" X="-5072.99" Y="640.034" Z="86.4893" />
@@ -281,7 +281,7 @@
 			<TurnIn QuestName="Dragonmaw Race: Corlok the Vet" QuestId="11068" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11068)) &amp;&amp; (!IsQuestCompleted(11068)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11068" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11068" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11068) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Dragonmaw Race: Wing Commander Ichman" QuestId="11069" GiverName="Wing Commander Ichman" GiverId="23345" X="-5066.31" Y="640.214" Z="86.4967" />
@@ -291,7 +291,7 @@
 			<TurnIn QuestName="Dragonmaw Race: Wing Commander Ichman" QuestId="11069" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11069)) &amp;&amp; (!IsQuestCompleted(11069)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11069" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11069" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11069) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Dragonmaw Race: Wing Commander Mulverick" QuestId="11070" GiverName="Wing Commander Mulverick" GiverId="23346" X="-5060.33" Y="640.436" Z="86.6616" />
@@ -301,7 +301,7 @@
 			<TurnIn QuestName="Dragonmaw Race: Wing Commander Mulverick" QuestId="11070" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11070)) &amp;&amp; (!IsQuestCompleted(11070)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11070" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11070" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11070) &amp;&amp; (GetFactionReputation(1015) &gt;= 9000)">
 			<PickUp QuestName="Dragonmaw Race: Captain Skyshatter" QuestId="11071" GiverName="Captain Skyshatter" GiverId="23348" X="-5074.88" Y="625.449" Z="85.9117" />
@@ -311,7 +311,7 @@
 			<TurnIn QuestName="Dragonmaw Race: Captain Skyshatter" QuestId="11071" TurnInName="Ja'y Nosliw" TurnInId="22433" X="-5142.74" Y="602.02" Z="83.0435" />
 		</If>
 		<If Condition="((HasQuest(11071)) &amp;&amp; (!IsQuestCompleted(11071)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11071" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11071" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11084) &amp;&amp; (GetFactionReputation(1015) &gt;= 21000)">
 			<PickUp QuestName="Hail, Commander!" QuestId="11092" GiverName="Taskmaster Varkule Dragonbreath" GiverId="23140" X="-5114.44" Y="588.484" Z="85.8724" />
@@ -356,7 +356,7 @@
 			<TurnIn QuestName="Lord Illidan Stormrage" QuestId="11108" TurnInName="Barthamus" TurnInId="23433" X="-1615.71" Y="5265" Z="-40.6624" />
 		</If>
 		<If Condition="((HasQuest(11108)) &amp;&amp; (!IsQuestCompleted(11108)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11108" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11108" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11108) &amp;&amp; !IsQuestCompleted(11109) &amp;&amp; !HasQuest(11109) &amp;&amp; !IsQuestCompleted(11110) &amp;&amp; !HasQuest(11110) &amp;&amp; !IsQuestCompleted(11111) &amp;&amp; !HasQuest(11111) &amp;&amp; !IsQuestCompleted(11112) &amp;&amp; !HasQuest(11112) &amp;&amp; !IsQuestCompleted(11114) &amp;&amp; !HasQuest(11114) &amp;&amp; (GetFactionReputation(1015) &gt;= 42000)">
 			<PickUp QuestName="Voranaku the Violet Netherwing Drake" QuestId="11113" GiverName="Voranaku" GiverId="23466" X="-1623.18" Y="5272.59" Z="-40.898" />

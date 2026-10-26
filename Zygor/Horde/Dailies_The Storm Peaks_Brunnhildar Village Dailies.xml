@@ -85,14 +85,14 @@
 			<TurnIn QuestName="Maintaining Discipline" QuestId="13422" TurnInName="Gretta the Arbiter" TurnInId="29796" X="7088.28" Y="-1777.09" Z="821.37" />
 		</If>
 		<If Condition="((HasQuest(13422)) &amp;&amp; (!IsQuestCompleted(13422)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13422" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13422" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13425 The Aberrations Must Die: object 191840 Plagued Proto-Drake Egg has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13425)) &amp;&amp; (IsQuestCompleted(13425)))">
 			<TurnIn QuestName="The Aberrations Must Die" QuestId="13425" TurnInName="Gretta the Arbiter" TurnInId="29796" X="7088.28" Y="-1777.09" Z="821.37" />
 		</If>
 		<If Condition="((HasQuest(13425)) &amp;&amp; (!IsQuestCompleted(13425)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13425" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13425" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\The Storm Peaks\Brunnhildar Village Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

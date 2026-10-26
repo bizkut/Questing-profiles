@@ -40,7 +40,7 @@
 			<TurnIn QuestName="Blackriver Brawl" QuestId="12170" TurnInName="Raider Captain Kronn" TurnInId="27120" X="3215.31" Y="-2498.81" Z="52.8002" />
 		</If>
 		<If Condition="((HasQuest(12170)) &amp;&amp; (!IsQuestCompleted(12170)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12170" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12170" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Grizzly Hills\Blackriver Logging Camp Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

@@ -44,7 +44,7 @@
 			<TurnIn QuestName="The Caverns of Time" QuestId="10277" TurnInName="Andormu" TurnInId="20130" X="-8371.93" Y="-4250.21" Z="-204.377" />
 		</If>
 		<If Condition="((HasQuest(10277)) &amp;&amp; (!IsQuestCompleted(10277)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10277" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10277" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10277)">
 			<PickUp QuestName="Old Hillsbrad" QuestId="10282" GiverName="Andormu" GiverId="20130" X="-8371.93" Y="-4250.21" Z="-204.377" />
@@ -59,7 +59,7 @@
 			<TurnIn QuestName="Taretha's Diversion" QuestId="10283" TurnInName="Thrall" TurnInId="17876" X="2231.89" Y="119.956" Z="82.2979" />
 		</If>
 		<If Condition="((HasQuest(10283)) &amp;&amp; (!IsQuestCompleted(10283)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10283" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10283" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10283)">
 			<PickUp QuestName="Escape from Durnholde" QuestId="10284" GiverName="Thrall" GiverId="17876" X="2231.89" Y="119.956" Z="82.2979" />
@@ -69,7 +69,7 @@
 			<TurnIn QuestName="Escape from Durnholde" QuestId="10284" TurnInName="Erozion" TurnInId="18723" X="2375.47" Y="1175.48" Z="65.2881" />
 		</If>
 		<If Condition="((HasQuest(10284)) &amp;&amp; (!IsQuestCompleted(10284)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10284" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10284" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10284)">
 			<PickUp QuestName="Return to Andormu" QuestId="10285" GiverName="Erozion" GiverId="18723" X="2375.47" Y="1175.48" Z="65.2881" />
@@ -87,7 +87,7 @@
 			<TurnIn QuestName="The Opening of the Dark Portal" QuestId="10297" TurnInName="Sa'at" TurnInId="20201" X="-1547.06" Y="7113.63" Z="32.8189" />
 		</If>
 		<If Condition="((HasQuest(10297)) &amp;&amp; (!IsQuestCompleted(10297)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10297" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="10297" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 66) &amp;&amp; IsQuestCompleted(10297)">
 			<PickUp QuestName="Hero of the Brood" QuestId="10298" GiverName="Sa'at" GiverId="20201" X="-1547.06" Y="7113.63" Z="32.8189" />

@@ -897,7 +897,7 @@
 				<TurnIn QuestName="The Principal Source" QuestId="6122" TurnInName="Alanndarian Nightsong" TurnInId="3702" X="6557.88" Y="472.97" Z="9.0979" />
 			</If>
 			<If Condition="((HasQuest(6122)) &amp;&amp; (!IsQuestCompleted(6122)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6122" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6122" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -927,7 +927,7 @@
 				<TurnIn QuestName="Curing the Sick" QuestId="6124" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
 			</If>
 			<If Condition="((HasQuest(6124)) &amp;&amp; (!IsQuestCompleted(6124)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6124" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6124" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.NightElf) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -955,7 +955,7 @@
 				<TurnIn QuestName="Surena Caledon" QuestId="1688" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
 			</If>
 			<If Condition="((HasQuest(1688)) &amp;&amp; (!IsQuestCompleted(1688)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1688" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1688" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warlock))">
@@ -969,7 +969,7 @@
 				<TurnIn QuestName="The Binding" QuestId="1689" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
 			</If>
 			<If Condition="((HasQuest(1689)) &amp;&amp; (!IsQuestCompleted(1689)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1689" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1689" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(Me.Level &gt;= 7) &amp;&amp; IsQuestCompleted(39)">
@@ -1182,7 +1182,7 @@
 			<TurnIn QuestName="Resupplying the Excavation" QuestId="273" TurnInName="Huldar" TurnInId="2057" X="-5762.77" Y="-3433.36" Z="305.765" />
 		</If>
 		<If Condition="((HasQuest(273)) &amp;&amp; (!IsQuestCompleted(273)))">
-			<CustomBehavior File="AbandonQuest" QuestId="273" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="273" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 10) &amp;&amp; IsQuestCompleted(273)">
 			<PickUp QuestName="After the Ambush" QuestId="454" GiverName="Huldar" GiverId="2057" X="-5762.77" Y="-3433.36" Z="305.765" />
@@ -1196,7 +1196,7 @@
 			<TurnIn QuestName="Protecting the Shipment" QuestId="309" TurnInName="Prospector Ironband" TurnInId="1344" X="-5694.65" Y="-3812.45" Z="321.7" />
 		</If>
 		<If Condition="((HasQuest(309)) &amp;&amp; (!IsQuestCompleted(309)))">
-			<CustomBehavior File="AbandonQuest" QuestId="309" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="309" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Gathering Idols" QuestId="297" Type="CollectItem" ItemId="2636" CollectCount="8" />
 		<TurnIn QuestName="Gathering Idols" QuestId="297" TurnInName="Magmar Fellhew" TurnInId="1345" X="-5713.75" Y="-3783.78" Z="323.018" />
@@ -1284,7 +1284,7 @@
 			<TurnIn QuestName="The Defias Brotherhood" QuestId="166" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
 		</If>
 		<If Condition="((HasQuest(166)) &amp;&amp; (!IsQuestCompleted(166)))">
-			<CustomBehavior File="AbandonQuest" QuestId="166" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="166" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Red Silk Bandanas" QuestId="214" TurnInName="Scout Riell" TurnInId="820" X="-10504.8" Y="1033.25" Z="95.7958" />
 		<TurnIn QuestName="Collecting Memories" QuestId="168" TurnInName="Wilder Thistlenettle" TurnInId="656" X="-8469" Y="501.28" Z="99.912" />
@@ -1294,7 +1294,7 @@
 			<TurnIn QuestName="Underground Assault" QuestId="2040" TurnInName="Shoni the Shilent" TurnInId="6579" X="-8391" Y="634.764" Z="94.89" />
 		</If>
 		<If Condition="((HasQuest(2040)) &amp;&amp; (!IsQuestCompleted(2040)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2040" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2040" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Unsent Letter" QuestId="373" TurnInName="Baros Alexston" TurnInId="1646" X="-8550.24" Y="719.661" Z="101.802" />
 		<If Condition="(Me.Level &gt;= 16) &amp;&amp; IsQuestCompleted(373)">

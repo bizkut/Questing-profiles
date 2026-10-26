@@ -55,7 +55,7 @@
 			<TurnIn QuestName="Putting the Hertz: The Valley of Lost Hope" QuestId="13382" TurnInName="Kibli Killohertz" TurnInId="32444" X="7623.05" Y="2060.18" Z="600.359" />
 		</If>
 		<If Condition="((HasQuest(13382)) &amp;&amp; (!IsQuestCompleted(13382)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13382" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13382" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13380)">
 			<PickUp QuestName="Static Shock Troops: the Bombardment" QuestId="13404" GiverName="Kibli Killohertz" GiverId="32444" X="7623.05" Y="2060.18" Z="600.359" />
@@ -65,7 +65,7 @@
 			<TurnIn QuestName="Static Shock Troops: the Bombardment" QuestId="13404" TurnInName="Kibli Killohertz" TurnInId="32444" X="7623.05" Y="2060.18" Z="600.359" />
 		</If>
 		<If Condition="((HasQuest(13404)) &amp;&amp; (!IsQuestCompleted(13404)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13404" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13404" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Aldur'thar: The Desolation Gate: done for today" LogColor="Green" />
 	</QuestOrder>

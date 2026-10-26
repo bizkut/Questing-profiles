@@ -81,7 +81,7 @@
 			<TurnIn QuestName="From Their Corpses, Rise!" QuestId="12813" TurnInName="Setaal Darkmender" TurnInId="29396" X="7403.79" Y="4210.33" Z="316.383" />
 		</If>
 		<If Condition="((HasQuest(12813)) &amp;&amp; (!IsQuestCompleted(12813)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12813" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12813" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Intelligence Gathering" QuestId="12838" TurnInName="Aurochs Grimbane" TurnInId="29456" X="7435.78" Y="4200.42" Z="314.32" />
 		<TurnIn QuestName="No Fly Zone" QuestId="12815" TurnInName="Uzo Deathcaller" TurnInId="29405" X="7428.57" Y="4212.2" Z="314.221" />

@@ -128,21 +128,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13603" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 		</If>
 		<If Condition="((HasQuest(13603)) &amp;&amp; (!IsQuestCompleted(13603)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13603" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13603" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13600 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13600)) &amp;&amp; (IsQuestCompleted(13600)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13600" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 		</If>
 		<If Condition="((HasQuest(13600)) &amp;&amp; (!IsQuestCompleted(13600)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13600" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13600" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13616 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13616)) &amp;&amp; (IsQuestCompleted(13616)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13616" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 		</If>
 		<If Condition="((HasQuest(13616)) &amp;&amp; (!IsQuestCompleted(13616)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13616" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13616" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Valiant's Field Training" QuestId="13592" TurnInName="Sir Marcus Barlowe" TurnInId="33222" X="8629.61" Y="644.825" Z="550.254" />
 		<!-- REVIEW Q13665 The Grand Melee: item 45127 Mark of the Valiant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -150,7 +150,7 @@
 			<TurnIn QuestName="The Grand Melee" QuestId="13665" TurnInName="Captain Joseph Holley" TurnInId="33223" X="8623.98" Y="639.313" Z="550.252" />
 		</If>
 		<If Condition="((HasQuest(13665)) &amp;&amp; (!IsQuestCompleted(13665)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13665" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13665" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="At The Enemy's Gates" QuestId="13847" TurnInName="Captain Joseph Holley" TurnInId="33223" X="8623.98" Y="639.313" Z="550.252" />
 		<!-- REVIEW Q13718 The Valiant's Charge: item 44987 Valiant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -158,7 +158,7 @@
 			<TurnIn QuestName="The Valiant's Charge" QuestId="13718" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 		</If>
 		<If Condition="((HasQuest(13718)) &amp;&amp; (!IsQuestCompleted(13718)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13718" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13718" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13718)">
 			<PickUp QuestName="The Valiant's Challenge" QuestId="13699" GiverName="Marshal Jacob Alerius" GiverId="33225" X="8627.64" Y="640.615" Z="550.246" />
@@ -168,7 +168,7 @@
 			<TurnIn QuestName="The Valiant's Challenge" QuestId="13699" TurnInName="Marshal Jacob Alerius" TurnInId="33225" X="8627.64" Y="640.615" Z="550.246" />
 		</If>
 		<If Condition="((HasQuest(13699)) &amp;&amp; (!IsQuestCompleted(13699)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13699" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13699" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Crusader Title Guide (Unlocks More Dailies)\Human Champion Rank: done for today" LogColor="Green" />
 	</QuestOrder>

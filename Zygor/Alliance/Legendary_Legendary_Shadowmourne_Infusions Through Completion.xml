@@ -34,7 +34,7 @@
 			<TurnIn QuestName="A Feast of Souls" QuestId="24547" TurnInName="Highlord Darion Mograine" TurnInId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
 		</If>
 		<If Condition="((HasQuest(24547)) &amp;&amp; (!IsQuestCompleted(24547)))">
-			<CustomBehavior File="AbandonQuest" QuestId="24547" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="24547" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 80) &amp;&amp; IsQuestCompleted(24547)">
 			<PickUp QuestName="Unholy Infusion" QuestId="24749" GiverName="Highlord Darion Mograine" GiverId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
@@ -44,7 +44,7 @@
 			<TurnIn QuestName="Unholy Infusion" QuestId="24749" TurnInName="Highlord Darion Mograine" TurnInId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
 		</If>
 		<If Condition="((HasQuest(24749)) &amp;&amp; (!IsQuestCompleted(24749)))">
-			<CustomBehavior File="AbandonQuest" QuestId="24749" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="24749" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 80) &amp;&amp; IsQuestCompleted(24749)">
 			<PickUp QuestName="Blood Infusion" QuestId="24756" GiverName="Highlord Darion Mograine" GiverId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
@@ -54,7 +54,7 @@
 			<TurnIn QuestName="Blood Infusion" QuestId="24756" TurnInName="Highlord Darion Mograine" TurnInId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
 		</If>
 		<If Condition="((HasQuest(24756)) &amp;&amp; (!IsQuestCompleted(24756)))">
-			<CustomBehavior File="AbandonQuest" QuestId="24756" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="24756" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 80) &amp;&amp; IsQuestCompleted(24756)">
 			<PickUp QuestName="Frost Infusion" QuestId="24757" GiverName="Highlord Darion Mograine" GiverId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
@@ -64,7 +64,7 @@
 			<TurnIn QuestName="Frost Infusion" QuestId="24757" TurnInName="Highlord Darion Mograine" TurnInId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
 		</If>
 		<If Condition="((HasQuest(24757)) &amp;&amp; (!IsQuestCompleted(24757)))">
-			<CustomBehavior File="AbandonQuest" QuestId="24757" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="24757" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 80) &amp;&amp; IsQuestCompleted(24757)">
 			<PickUp QuestName="The Splintered Throne" QuestId="24548" GiverName="Highlord Darion Mograine" GiverId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
@@ -74,7 +74,7 @@
 			<TurnIn QuestName="The Splintered Throne" QuestId="24548" TurnInName="Highlord Darion Mograine" TurnInId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
 		</If>
 		<If Condition="((HasQuest(24548)) &amp;&amp; (!IsQuestCompleted(24548)))">
-			<CustomBehavior File="AbandonQuest" QuestId="24548" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="24548" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 80) &amp;&amp; IsQuestCompleted(24912)">
 			<PickUp QuestName="Shadowmourne..." QuestId="24549" GiverName="Highlord Darion Mograine" GiverId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
@@ -88,7 +88,7 @@
 			<TurnIn QuestName="The Lich King's Last Stand" QuestId="24748" TurnInName="Highlord Darion Mograine" TurnInId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />
 		</If>
 		<If Condition="((HasQuest(24748)) &amp;&amp; (!IsQuestCompleted(24748)))">
-			<CustomBehavior File="AbandonQuest" QuestId="24748" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="24748" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

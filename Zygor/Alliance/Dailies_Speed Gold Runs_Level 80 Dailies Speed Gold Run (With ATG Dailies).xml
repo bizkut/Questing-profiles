@@ -370,7 +370,7 @@
 			<TurnIn QuestName="Assault by Air" QuestId="13309" TurnInName="Ground Commander Koup" TurnInId="31808" X="7280.92" Y="1520.72" Z="319.448" />
 		</If>
 		<If Condition="((HasQuest(13309)) &amp;&amp; (!IsQuestCompleted(13309)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13309" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13309" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13341)">
 			<PickUp QuestName="Assault by Ground" QuestId="13284" GiverName="Skybreaker Squad Leader" GiverId="31737" X="7268.57" Y="1507.12" Z="321.349" />
@@ -384,14 +384,14 @@
 			<TurnIn QuestName="King of the Mountain" QuestId="13280" TurnInName="Frazzle Geargrinder" TurnInId="31776" X="6810.88" Y="1869.7" Z="579.6" />
 		</If>
 		<If Condition="((HasQuest(13280)) &amp;&amp; (!IsQuestCompleted(13280)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13280" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13280" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13284 Assault by Ground: objective 31794 Alliance Ground Force Bunny x4: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13284)) &amp;&amp; (IsQuestCompleted(13284)))">
 			<TurnIn QuestName="Assault by Ground" QuestId="13284" TurnInName="Ground Commander Koup" TurnInId="31808" X="7280.92" Y="1520.72" Z="319.448" />
 		</If>
 		<If Condition="((HasQuest(13284)) &amp;&amp; (!IsQuestCompleted(13284)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13284" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13284" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="HasQuest(13292) &amp;&amp; !IsQuestCompleted(13292) &amp;&amp; GetItemCount(43616) &lt; 3">
 			<CustomBehavior File="InteractWith" QuestId="13292" MobId="193201" ObjectType="GameObject" Loot="True" NumOfTimes="3" CollectionDistance="200" X="6723.57" Y="1041.84" Z="287.952" />
@@ -412,7 +412,7 @@
 			<TurnIn QuestName="Putting the Hertz: The Valley of Lost Hope" QuestId="13382" TurnInName="Kibli Killohertz" TurnInId="32444" X="7623.05" Y="2060.18" Z="600.359" />
 		</If>
 		<If Condition="((HasQuest(13382)) &amp;&amp; (!IsQuestCompleted(13382)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13382" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13382" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13380)">
 			<PickUp QuestName="Static Shock Troops: the Bombardment" QuestId="13404" GiverName="Kibli Killohertz" GiverId="32444" X="7623.05" Y="2060.18" Z="600.359" />
@@ -422,7 +422,7 @@
 			<TurnIn QuestName="Static Shock Troops: the Bombardment" QuestId="13404" TurnInName="Kibli Killohertz" TurnInId="32444" X="7623.05" Y="2060.18" Z="600.359" />
 		</If>
 		<If Condition="((HasQuest(13404)) &amp;&amp; (!IsQuestCompleted(13404)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13404" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13404" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- Q13322: Writhing Mass (44304) is needed but nothing near the guide coordinates drops it -->
 		<!-- Q13344: Dark Matter (44434) is needed but nothing near the guide coordinates drops it -->
@@ -440,7 +440,7 @@
 			<TurnIn QuestName="Leave Our Mark" QuestId="12995" TurnInName="Baron Sliver" TurnInId="29343" X="8385.21" Y="2757.21" Z="656.702" />
 		</If>
 		<If Condition="((HasQuest(12995)) &amp;&amp; (!IsQuestCompleted(12995)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12995" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12995" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Shoot 'Em Up" QuestId="13069" Type="KillMob" MobId="30330" KillCount="15" />
 		<TurnIn QuestName="Shoot 'Em Up" QuestId="13069" TurnInName="The Leaper" TurnInId="30074" X="8380.47" Y="2717.56" Z="655.178" />
@@ -449,7 +449,7 @@
 			<TurnIn QuestName="Vile Like Fire!" QuestId="13071" TurnInName="Vile" TurnInId="30216" X="8374.06" Y="2738.74" Z="655.211" />
 		</If>
 		<If Condition="((HasQuest(13071)) &amp;&amp; (!IsQuestCompleted(13071)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13071" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13071" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.DeathKnight))">
 			<Objective QuestName="Battle Before The Citadel" QuestId="13864" Type="KillMob" MobId="34127" KillCount="3" />
@@ -463,28 +463,28 @@
 			<TurnIn QuestName="That's Abominable!" QuestId="13289" TurnInName="Thassarian" TurnInId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
 		<If Condition="((HasQuest(13289)) &amp;&amp; (!IsQuestCompleted(13289)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13289" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13289" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13323 Drag and Drop: collect 32229 Drag Drop KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13323)) &amp;&amp; (IsQuestCompleted(13323)))">
 			<TurnIn QuestName="Drag and Drop" QuestId="13323" TurnInName="Thassarian" TurnInId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
 		<If Condition="((HasQuest(13323)) &amp;&amp; (!IsQuestCompleted(13323)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13323" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13323" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13344 Not a Bug: helper item 44434 Dark Matter has no creature or object source near the guide coordinates; objective 32314 Dark Messenger KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13344)) &amp;&amp; (IsQuestCompleted(13344)))">
 			<TurnIn QuestName="Not a Bug" QuestId="13344" TurnInName="Thassarian" TurnInId="29799" X="34.5332" Y="-38.5618" Z="25.0323" />
 		</If>
 		<If Condition="((HasQuest(13344)) &amp;&amp; (!IsQuestCompleted(13344)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13344" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13344" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13300 Slaves to Saronite: objective 31866 Slaves to Saronite Kill Credit Bunny x10: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13300)) &amp;&amp; (IsQuestCompleted(13300)))">
 			<TurnIn QuestName="Slaves to Saronite" QuestId="13300" TurnInName="Absalan the Pious" TurnInId="31259" X="16.8761" Y="-17.8635" Z="20.4597" />
 		</If>
 		<If Condition="((HasQuest(13300)) &amp;&amp; (!IsQuestCompleted(13300)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13300" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13300" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Blood of the Chosen" QuestId="13336" TurnInName="Knight-Captain Drosche" TurnInId="32302" X="54.6648" Y="-6.9431" Z="40.0874" />
 		<!-- REVIEW Q13292 The Solution Solution: objective 31364 Frostbrood Skytalon KC Bunny x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -492,14 +492,14 @@
 			<TurnIn QuestName="The Solution Solution" QuestId="13292" TurnInName="Chief Engineer Boltwrench" TurnInId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
 		<If Condition="((HasQuest(13292)) &amp;&amp; (!IsQuestCompleted(13292)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13292" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13292" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13322 Retest Now: helper item 44304 Writhing Mass has no creature or object source near the guide coordinates; objective 32266 Writhing Mass KC Bunny x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13322)) &amp;&amp; (IsQuestCompleted(13322)))">
 			<TurnIn QuestName="Retest Now" QuestId="13322" TurnInName="Chief Engineer Boltwrench" TurnInId="30345" X="-48.0654" Y="-0.1857" Z="-4.989" />
 		</If>
 		<If Condition="((HasQuest(13322)) &amp;&amp; (!IsQuestCompleted(13322)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13322" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13322" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
 			<!-- REVIEW Q13790 Among the Champions: item 45500 Mark of the Champion has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -507,7 +507,7 @@
 				<TurnIn QuestName="Among the Champions" QuestId="13790" TurnInName="Luuri" TurnInId="33771" X="8451.65" Y="1058.68" Z="554.493" />
 			</If>
 			<If Condition="((HasQuest(13790)) &amp;&amp; (!IsQuestCompleted(13790)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13790" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13790" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="!((Me.Class == WoWClass.DeathKnight))">
@@ -528,21 +528,21 @@
 			<TurnIn QuestName="Drottinn Hrothgar" QuestId="14101" TurnInName="High Crusader Adelard" TurnInId="34882" X="8460.23" Y="1087.09" Z="554.492" />
 		</If>
 		<If Condition="((HasQuest(14101)) &amp;&amp; (!IsQuestCompleted(14101)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14101" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14101" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q14102 Mistcaller Yngvar: use item 47009: target 34965 Mistcaller Yngvar has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14102)) &amp;&amp; (IsQuestCompleted(14102)))">
 			<TurnIn QuestName="Mistcaller Yngvar" QuestId="14102" TurnInName="High Crusader Adelard" TurnInId="34882" X="8460.23" Y="1087.09" Z="554.492" />
 		</If>
 		<If Condition="((HasQuest(14102)) &amp;&amp; (!IsQuestCompleted(14102)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14102" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14102" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q14104 Ornolf The Scarred: use item 47029: target 35012 Ornolf the Scarred has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14104)) &amp;&amp; (IsQuestCompleted(14104)))">
 			<TurnIn QuestName="Ornolf The Scarred" QuestId="14104" TurnInName="High Crusader Adelard" TurnInId="34882" X="8460.23" Y="1087.09" Z="554.492" />
 		</If>
 		<If Condition="((HasQuest(14104)) &amp;&amp; (!IsQuestCompleted(14104)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14104" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14104" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Get Kraken!" QuestId="14108" Type="KillMob" MobId="35009" KillCount="6" />
 		<!-- REVIEW Q14108 Get Kraken!: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -557,7 +557,7 @@
 			<TurnIn QuestName="The Fate Of The Fallen" QuestId="14107" TurnInName="Crusader Silverdawn" TurnInId="35094" X="8461.79" Y="1084.64" Z="554.586" />
 		</If>
 		<If Condition="((HasQuest(14107)) &amp;&amp; (!IsQuestCompleted(14107)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14107" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14107" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.DeathKnight))">
 			<!-- REVIEW Q13791 Taking Battle To The Enemy: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -577,7 +577,7 @@
 				<TurnIn QuestName="Among the Champions" QuestId="13793" TurnInName="Illyrie Nightfall" TurnInId="33770" X="8587.27" Y="829.251" Z="547.463" />
 			</If>
 			<If Condition="((HasQuest(13793)) &amp;&amp; (!IsQuestCompleted(13793)))">
-				<CustomBehavior File="AbandonQuest" QuestId="13793" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="13793" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<TurnIn QuestName="A Leg Up" QuestId="14074" TurnInName="Narasi Snowdawn" TurnInId="34880" X="8606.21" Y="661.784" Z="550.329" />
@@ -594,21 +594,21 @@
 			<TurnIn QuestName="Breakfast Of Champions" QuestId="14076" TurnInName="Savinia Loresong" TurnInId="34912" X="8609.2" Y="664.914" Z="550.323" />
 		</If>
 		<If Condition="((HasQuest(14076)) &amp;&amp; (!IsQuestCompleted(14076)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14076" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14076" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q14090 Gormok Wants His Snobolds: objective 34899 Snowblind Follower Proxy x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14090)) &amp;&amp; (IsQuestCompleted(14090)))">
 			<TurnIn QuestName="Gormok Wants His Snobolds" QuestId="14090" TurnInName="Savinia Loresong" TurnInId="34912" X="8609.2" Y="664.914" Z="550.323" />
 		</If>
 		<If Condition="((HasQuest(14090)) &amp;&amp; (!IsQuestCompleted(14090)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14090" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14090" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q14112 What Do You Feed a Yeti, Anyway?: helper item 47036 Fresh Chum has no creature or object source near the guide coordinates; item 47037 North Sea Shark Meat has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(14112)) &amp;&amp; (IsQuestCompleted(14112)))">
 			<TurnIn QuestName="What Do You Feed a Yeti, Anyway?" QuestId="14112" TurnInName="Savinia Loresong" TurnInId="34912" X="8609.2" Y="664.914" Z="550.323" />
 		</If>
 		<If Condition="((HasQuest(14112)) &amp;&amp; (!IsQuestCompleted(14112)))">
-			<CustomBehavior File="AbandonQuest" QuestId="14112" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="14112" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Speed Gold Runs\Level 80 Dailies Speed Gold Run (With ATG Dailies): done for today" LogColor="Green" />
 	</QuestOrder>

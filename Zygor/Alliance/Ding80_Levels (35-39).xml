@@ -757,7 +757,7 @@
 			<TurnIn QuestName="Hints of a New Plague?" QuestId="660" TurnInName="Quae" TurnInId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
 		</If>
 		<If Condition="((HasQuest(660)) &amp;&amp; (!IsQuestCompleted(660)))">
-			<CustomBehavior File="AbandonQuest" QuestId="660" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="660" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(660)">
 			<PickUp QuestName="Hints of a New Plague?" QuestId="661" GiverName="Quae" GiverId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
@@ -831,7 +831,7 @@
 				<TurnIn QuestName="Cyclonian" QuestId="1712" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" X="250.84" Y="-1470.58" Z="55.4491" />
 			</If>
 			<If Condition="((HasQuest(1712)) &amp;&amp; (!IsQuestCompleted(1712)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1712" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1712" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior))">
@@ -845,7 +845,7 @@
 				<TurnIn QuestName="The Summoning" QuestId="1713" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" X="250.84" Y="-1470.58" Z="55.4491" />
 			</If>
 			<If Condition="((HasQuest(1713)) &amp;&amp; (!IsQuestCompleted(1713)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1713" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1713" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior))">
@@ -902,7 +902,7 @@
 			<TurnIn QuestName="Sunken Treasure" QuestId="665" TurnInName="Doctor Draxlegauge" TurnInId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
 		</If>
 		<If Condition="((HasQuest(665)) &amp;&amp; (!IsQuestCompleted(665)))">
-			<CustomBehavior File="AbandonQuest" QuestId="665" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="665" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(665)">
 			<PickUp QuestName="Sunken Treasure" QuestId="666" GiverName="Doctor Draxlegauge" GiverId="2774" X="-2064.04" Y="-2085.47" Z="9.1585" />
@@ -911,8 +911,8 @@
 		<Objective QuestName="Deep Sea Salvage" QuestId="662" Type="CollectItem" ItemId="4487" CollectCount="1" />
 		<Objective QuestName="Deep Sea Salvage" QuestId="662" Type="CollectItem" ItemId="4488" CollectCount="1" />
 		<Objective QuestName="Deep Sea Salvage" QuestId="662" Type="CollectItem" ItemId="4490" CollectCount="1" />
-		<CustomBehavior File="UseItemOn" QuestId="664" ItemId="4491" MobId="2595" NumOfTimes="10" Range="5" CollectionDistance="200" X="-2217.44" Y="-1653.27" Z="-49.5646" />
-		<CustomBehavior File="UseItemOn" QuestId="664" ItemId="4491" MobId="2596" NumOfTimes="3" Range="5" CollectionDistance="200" X="-2288.97" Y="-1652.69" Z="-61.5139" />
+		<CustomBehavior File="UseItem" QuestId="664" ItemId="4491" X="-2217.44" Y="-1653.27" Z="-49.5646" />
+		<CustomBehavior File="UseItem" QuestId="664" ItemId="4491" X="-2288.97" Y="-1652.69" Z="-61.5139" />
 		<Objective QuestName="Sunken Treasure" QuestId="666" Type="CollectItem" ItemId="4492" CollectCount="10" />
 		<TurnIn QuestName="Deep Sea Salvage" QuestId="662" TurnInName="First Mate Nilzlix" TurnInId="2767" X="-2088.96" Y="-2047.39" Z="3.4974" />
 		<!-- REVIEW Q664 Drowned Sorrows: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -944,7 +944,7 @@
 			<TurnIn QuestName="The Missing Diplomat" QuestId="1249" TurnInName="Mikhail" TurnInId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
 		</If>
 		<If Condition="((HasQuest(1249)) &amp;&amp; (!IsQuestCompleted(1249)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1249" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1249" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1250)">
 			<PickUp QuestName="The Missing Diplomat" QuestId="1264" GiverName="Mikhail" GiverId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
@@ -965,7 +965,7 @@
 				<TurnIn QuestName="Tome of the Cabal" QuestId="1804" TurnInName="Strahad Farsan" TurnInId="6251" X="-785.912" Y="-3723.26" Z="40.5152" />
 			</If>
 			<If Condition="((HasQuest(1804)) &amp;&amp; (!IsQuestCompleted(1804)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1804" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1804" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warlock))">
@@ -982,7 +982,7 @@
 				<TurnIn QuestName="The Binding" QuestId="1795" TurnInName="Strahad Farsan" TurnInId="6251" X="-785.912" Y="-3723.26" Z="40.5152" />
 			</If>
 			<If Condition="((HasQuest(1795)) &amp;&amp; (!IsQuestCompleted(1795)))">
-				<CustomBehavior File="AbandonQuest" QuestId="1795" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="1795" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<TurnIn QuestName="James Hyal" QuestId="1302" TurnInName="Clerk Lendry" TurnInId="5083" X="-3721.74" Y="-4538.6" Z="25.917" />
@@ -1005,7 +1005,7 @@
 			<TurnIn QuestName="Traitors Among Us" QuestId="11126" TurnInName="Calia Hastings" TurnInId="23566" X="-3819.74" Y="-4562.35" Z="9.1422" />
 		</If>
 		<If Condition="((HasQuest(11126)) &amp;&amp; (!IsQuestCompleted(11126)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11126" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11126" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 32) &amp;&amp; IsQuestCompleted(11126)">
 			<PickUp QuestName="Propaganda War" QuestId="11128" GiverName="Calia Hastings" GiverId="23566" X="-3819.74" Y="-4562.35" Z="9.1422" />
@@ -1020,7 +1020,7 @@
 			<TurnIn QuestName="Discrediting the Deserters" QuestId="11133" TurnInName="Calia Hastings" TurnInId="23566" X="-3819.74" Y="-4562.35" Z="9.1422" />
 		</If>
 		<If Condition="((HasQuest(11133)) &amp;&amp; (!IsQuestCompleted(11133)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11133" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11133" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 32) &amp;&amp; IsQuestCompleted(11133)">
 			<PickUp QuestName="The End of the Deserters" QuestId="11134" GiverName="Calia Hastings" GiverId="23566" X="-3819.74" Y="-4562.35" Z="9.1422" />
@@ -1044,12 +1044,12 @@
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11194)">
 			<PickUp QuestName="Nat's Bargain" QuestId="11209" GiverName="Nat Pagle" GiverId="12919" X="-4139.29" Y="-4060.02" Z="2.1228" />
 		</If>
-		<!-- REVIEW Q11209 Nat's Bargain: use item 33166: target 23928 Lurking Shark has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11209 Nat's Bargain: use item 33166: 23928 Lurking Shark has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11209)) &amp;&amp; (IsQuestCompleted(11209)))">
 			<TurnIn QuestName="Nat's Bargain" QuestId="11209" TurnInName="Nat Pagle" TurnInId="12919" X="-4139.29" Y="-4060.02" Z="2.1228" />
 		</If>
 		<If Condition="((HasQuest(11209)) &amp;&amp; (!IsQuestCompleted(11209)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11209" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11209" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11209)">
 			<PickUp QuestName="Oh, It's Real" QuestId="11210" GiverName="Nat Pagle" GiverId="12919" X="-4139.29" Y="-4060.02" Z="2.1228" />
@@ -1063,7 +1063,7 @@
 			<TurnIn QuestName="Take Down Tethyr!" QuestId="11198" TurnInName="Major Mills" TurnInId="23905" X="-3826.14" Y="-4634.12" Z="9.3472" />
 		</If>
 		<If Condition="((HasQuest(11198)) &amp;&amp; (!IsQuestCompleted(11198)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11198" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11198" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 34) &amp;&amp; IsQuestCompleted(11134)">
 			<PickUp QuestName="The Hermit of Swamplight Manor" QuestId="11177" GiverName="Sergeant Amelyn" GiverId="23835" X="-3839.59" Y="-4562.36" Z="8.64" />
@@ -1105,7 +1105,7 @@
 			<TurnIn QuestName="What's Haunting Witch Hill?" QuestId="11180" TurnInName="Mordant Grimsby" TurnInId="23843" X="-2948.36" Y="-3893.17" Z="35.0324" />
 		</If>
 		<If Condition="((HasQuest(11180)) &amp;&amp; (!IsQuestCompleted(11180)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11180" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11180" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11180)">
 			<PickUp QuestName="The Witch's Bane" QuestId="11181" GiverName="Mordant Grimsby" GiverId="23843" X="-2948.36" Y="-3893.17" Z="35.0324" />
@@ -1125,7 +1125,7 @@
 			<TurnIn QuestName="Cleansing Witch Hill" QuestId="11183" TurnInName="Mordant Grimsby" TurnInId="23843" X="-2948.36" Y="-3893.17" Z="35.0324" />
 		</If>
 		<If Condition="((HasQuest(11183)) &amp;&amp; (!IsQuestCompleted(11183)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11183" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11183" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Missing Diplomat" QuestId="1266" TurnInName="Private Hendel" TurnInId="4966" X="-2895.49" Y="-3350.66" Z="31.3769" />
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1266)">
@@ -1136,7 +1136,7 @@
 			<TurnIn QuestName="The Missing Diplomat" QuestId="1324" TurnInName="Archmage Tervosh" TurnInId="4967" X="-3757.47" Y="-4462.28" Z="65.1248" />
 		</If>
 		<If Condition="((HasQuest(1324)) &amp;&amp; (!IsQuestCompleted(1324)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1324" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1324" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1324)">
 			<PickUp QuestName="The Missing Diplomat" QuestId="1267" GiverName="Lady Jaina Proudmoore" GiverId="4968" X="-3749.69" Y="-4454.15" Z="64.9879" />
@@ -1206,7 +1206,7 @@
 			<TurnIn QuestName="Recover the Cargo!" QuestId="11140" TurnInName="Renn McGill" TurnInId="23569" X="-2629.72" Y="-4321.5" Z="-1.9987" />
 		</If>
 		<If Condition="((HasQuest(11140)) &amp;&amp; (!IsQuestCompleted(11140)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11140" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11140" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 32) &amp;&amp; IsQuestCompleted(11140)">
 			<PickUp QuestName="Jaina Must Know" QuestId="11141" GiverName="Renn McGill" GiverId="23569" X="-2629.72" Y="-4321.5" Z="-1.9987" />
@@ -1232,7 +1232,7 @@
 			<TurnIn QuestName="Survey Alcaz Island" QuestId="11142" TurnInName="Lady Jaina Proudmoore" TurnInId="4968" X="-3749.69" Y="-4454.15" Z="64.9879" />
 		</If>
 		<If Condition="((HasQuest(11142)) &amp;&amp; (!IsQuestCompleted(11142)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11142" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11142" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 39)">
 			<PickUp QuestName="Mission to Mudsprocket" QuestId="11214" GiverName="Lieutenant Aden" GiverId="23951" X="-3682.86" Y="-4391.41" Z="10.7306" />
@@ -1286,7 +1286,7 @@
 			<TurnIn QuestName="Confirming the Suspicion" QuestId="11144" TurnInName="Captain Darill" TurnInId="23568" X="-2894.49" Y="-3422.32" Z="44.2113" />
 		</If>
 		<If Condition="((HasQuest(11144)) &amp;&amp; (!IsQuestCompleted(11144)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11144" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11144" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Arms of the Grimtotems" QuestId="11148" TurnInName="Captain Darill" TurnInId="23568" X="-2894.49" Y="-3422.32" Z="44.2113" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11144)">

@@ -101,7 +101,7 @@
 			<TurnIn QuestName="Speak with Mog'dorg" QuestId="11022" TurnInName="Mog'dorg the Wizened" TurnInId="22941" X="2785.99" Y="5835.66" Z="36.1526" />
 		</If>
 		<If Condition="((HasQuest(11022)) &amp;&amp; (!IsQuestCompleted(11022)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11022" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11022" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11000)">
 			<PickUp QuestName="Ogre Heaven" QuestId="11009" GiverName="Mog'dorg the Wizened" GiverId="22941" X="2785.99" Y="5835.66" Z="36.1526" />
@@ -135,7 +135,7 @@
 			<TurnIn QuestName="An Apexis Relic" QuestId="11058" TurnInName="Chu'a'lor" TurnInId="23233" X="2335.24" Y="7285.18" Z="365.617" />
 		</If>
 		<If Condition="((HasQuest(11058)) &amp;&amp; (!IsQuestCompleted(11058)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11058" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11058" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="HasQuest(11030) &amp;&amp; !IsQuestCompleted(11030) &amp;&amp; GetItemCount(32569) &lt; 10">
 			<CustomBehavior File="CollectThings" QuestId="11030" CollectItemId="32569" CollectItemCount="10" HuntingGroundRadius="120" MobId="18692" MobId2="19973" MobId3="20557" MobId4="22181" MobId5="22182" MobId6="22195" X="2580.75" Y="7115.81" Z="364.961">
@@ -154,7 +154,7 @@
 			<TurnIn QuestName="Our Boy Wants To Be A Skyguard Ranger" QuestId="11030" TurnInName="Torkus" TurnInId="23316" X="2315.89" Y="7304.39" Z="366.92" />
 		</If>
 		<If Condition="((HasQuest(11030)) &amp;&amp; (!IsQuestCompleted(11030)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11030" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11030" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; IsQuestCompleted(11030)">
 			<PickUp QuestName="A Father's Duty" QuestId="11061" GiverName="Torkus" GiverId="23316" X="2315.89" Y="7304.39" Z="366.92" />
@@ -186,7 +186,7 @@
 			<TurnIn QuestName="Wrangle Some Aether Rays!" QuestId="11065" TurnInName="Skyguard Khatie" TurnInId="23335" X="2547.77" Y="7330.44" Z="373.524" />
 		</If>
 		<If Condition="((HasQuest(11065)) &amp;&amp; (!IsQuestCompleted(11065)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11065" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11065" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP Q11078 To Rule The Skies: group quest (5 players) -->
 		<If Condition="HasQuest(11061) &amp;&amp; !IsQuestCompleted(11061) &amp;&amp; GetItemCount(32569) &lt; 10">
@@ -206,7 +206,7 @@
 			<TurnIn QuestName="A Father's Duty" QuestId="11061" TurnInName="Torkus" TurnInId="23316" X="2315.89" Y="7304.39" Z="366.92" />
 		</If>
 		<If Condition="((HasQuest(11061)) &amp;&amp; (!IsQuestCompleted(11061)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11061" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11061" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP Q11079 A Fel Whip For Gahk: group quest (5 players) -->
 		<If Condition="(Me.Level &gt;= 70) &amp;&amp; (GetFactionReputation(1038) &gt;= 3000)">
@@ -221,7 +221,7 @@
 			<TurnIn QuestName="Banish the Demons" QuestId="11026" TurnInName="Kronk" TurnInId="23253" X="2313.07" Y="7276.83" Z="365.462" />
 		</If>
 		<If Condition="((HasQuest(11026)) &amp;&amp; (!IsQuestCompleted(11026)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11026" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11026" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

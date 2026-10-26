@@ -987,7 +987,7 @@
 			<TurnIn QuestName="Freedom for All Creatures" QuestId="2969" TurnInName="Kindal Moonweaver" TurnInId="7956" X="-4481.82" Y="858.533" Z="74.6309" />
 		</If>
 		<If Condition="((HasQuest(2969)) &amp;&amp; (!IsQuestCompleted(2969)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2969" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2969" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 38) &amp;&amp; IsQuestCompleted(2969)">
 			<PickUp QuestName="Doling Justice" QuestId="2970" GiverName="Jer'kai Moonweaver" GiverId="7957" X="-4479.81" Y="858.481" Z="74.6105" />
@@ -1020,7 +1020,7 @@
 			<TurnIn QuestName="Freed from the Hive" QuestId="4265" TurnInName="Ginro Hearthkindle" TurnInId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
 		</If>
 		<If Condition="((HasQuest(4265)) &amp;&amp; (!IsQuestCompleted(4265)))">
-			<CustomBehavior File="AbandonQuest" QuestId="4265" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="4265" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(4265)">
 			<PickUp QuestName="A Hero's Welcome" QuestId="4266" GiverName="Ginro Hearthkindle" GiverId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
@@ -1115,7 +1115,7 @@
 			<TurnIn QuestName="The Super Snapper FX" QuestId="2944" TurnInName="Daryn Lightwind" TurnInId="7907" X="8701.16" Y="993.116" Z="23.5854" />
 		</If>
 		<If Condition="((HasQuest(2944)) &amp;&amp; (!IsQuestCompleted(2944)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2944" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2944" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 42) &amp;&amp; IsQuestCompleted(2944)">
 			<PickUp QuestName="Return to Troyas" QuestId="2943" GiverName="Daryn Lightwind" GiverId="7907" X="8701.16" Y="993.116" Z="23.5854" />
@@ -1139,7 +1139,7 @@
 			<TurnIn QuestName="Zapped Giants" QuestId="7003" TurnInName="Zorbin Fandazzle" TurnInId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
 		</If>
 		<If Condition="((HasQuest(7003)) &amp;&amp; (!IsQuestCompleted(7003)))">
-			<CustomBehavior File="AbandonQuest" QuestId="7003" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="7003" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Fuel for the Zapping" QuestId="7721" TurnInName="Zorbin Fandazzle" TurnInId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
 		<Objective QuestName="Improved Quality" QuestId="7733" Type="CollectItem" ItemId="18947" CollectCount="10" />
@@ -1163,7 +1163,7 @@
 			<TurnIn QuestName="The Stave of Equinex" QuestId="2879" TurnInName="Equinex Monolith" TurnInId="144063" TurnInType="Object" X="-2976.94" Y="2743.2" Z="53.0054" />
 		</If>
 		<If Condition="((HasQuest(2879)) &amp;&amp; (!IsQuestCompleted(2879)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2879" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2879" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 42) &amp;&amp; IsQuestCompleted(2879)">
 			<PickUp QuestName="The Morrow Stone" QuestId="2942" GiverName="Equinex Monolith" GiverId="144063" GiverType="Object" X="-2976.94" Y="2743.2" Z="53.0054" />
@@ -1178,7 +1178,7 @@
 			<TurnIn QuestName="Wandering Shay" QuestId="2845" TurnInName="Rockbiter" TurnInId="7765" X="-3385.91" Y="2495.84" Z="23.5588" />
 		</If>
 		<If Condition="((HasQuest(2845)) &amp;&amp; (!IsQuestCompleted(2845)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2845" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2845" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 38) &amp;&amp; IsQuestCompleted(2972)">
 			<PickUp QuestName="An Orphan Looking For a Home" QuestId="3841" GiverName="Kindal Moonweaver" GiverId="7956" X="-4481.82" Y="858.533" Z="74.6309" />
@@ -1189,7 +1189,7 @@
 			<TurnIn QuestName="The Morrow Stone" QuestId="2942" TurnInName="Troyas Moonbreeze" TurnInId="7764" X="-4474.9" Y="3232.88" Z="13.8295" />
 		</If>
 		<If Condition="((HasQuest(2942)) &amp;&amp; (!IsQuestCompleted(2942)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2942" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="2942" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 44)">
 			<PickUp QuestName="The Thirsty Goblin" QuestId="2605" GiverName="Marin Noggenfogger" GiverId="7564" X="-7193.42" Y="-3793.48" Z="9.7621" />
@@ -1208,7 +1208,7 @@
 			<TurnIn QuestName="Gadgetzan Water Survey" QuestId="992" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
 		</If>
 		<If Condition="((HasQuest(992)) &amp;&amp; (!IsQuestCompleted(992)))">
-			<CustomBehavior File="AbandonQuest" QuestId="992" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="992" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 39) &amp;&amp; IsQuestCompleted(992)">
 			<PickUp QuestName="Noxious Lair Investigation" QuestId="82" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
@@ -1237,7 +1237,7 @@
 			<TurnIn QuestName="Screecher Spirits" QuestId="3520" TurnInName="Yeh'kinya" TurnInId="8579" X="-6903.4" Y="-4840.94" Z="8.4641" />
 		</If>
 		<If Condition="((HasQuest(3520)) &amp;&amp; (!IsQuestCompleted(3520)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3520" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3520" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Thirsty Goblin" QuestId="2605" TurnInName="Marin Noggenfogger" TurnInId="7564" X="-7193.42" Y="-3793.48" Z="9.7621" />
 		<If Condition="(Me.Level &gt;= 44) &amp;&amp; IsQuestCompleted(2605)">
@@ -1275,7 +1275,7 @@
 			<TurnIn QuestName="A Short Incubation" QuestId="3842" TurnInName="Quentin" TurnInId="9238" X="-6158.57" Y="-3880.56" Z="-58.8291" />
 		</If>
 		<If Condition="((HasQuest(3842)) &amp;&amp; (!IsQuestCompleted(3842)))">
-			<CustomBehavior File="AbandonQuest" QuestId="3842" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="3842" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 38) &amp;&amp; IsQuestCompleted(3842)">
 			<PickUp QuestName="The Newest Member of the Family" QuestId="3843" GiverName="Quentin" GiverId="9238" X="-6158.57" Y="-3880.56" Z="-58.8291" />
@@ -1334,7 +1334,7 @@
 			<TurnIn QuestName="Stranglethorn Fever" QuestId="348" TurnInName="Fin Fizracket" TurnInId="2486" X="-14433.2" Y="458.988" Z="15.5349" />
 		</If>
 		<If Condition="((HasQuest(348)) &amp;&amp; (!IsQuestCompleted(348)))">
-			<CustomBehavior File="AbandonQuest" QuestId="348" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="348" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Message in a Bottle" QuestId="594" TurnInName="Princess Poobah" TurnInId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
 		<If Condition="(Me.Level &gt;= 42) &amp;&amp; IsQuestCompleted(594)">

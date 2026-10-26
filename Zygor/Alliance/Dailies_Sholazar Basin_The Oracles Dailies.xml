@@ -90,7 +90,7 @@
 			<TurnIn QuestName="Return of the Friendly Dryskin" QuestId="12695" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
 		<If Condition="((HasQuest(12695)) &amp;&amp; (!IsQuestCompleted(12695)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12695" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12695" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 76) &amp;&amp; IsQuestCompleted(12695)">
 			<PickUp QuestName="Appeasing the Great Rain Stone" QuestId="12704" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
@@ -147,7 +147,7 @@
 			<TurnIn QuestName="Power of the Great Ones" QuestId="12762" TurnInName="Lightningcaller Soo-met" TurnInId="28107" X="5040.47" Y="5502.82" Z="-88.3044" />
 		</If>
 		<If Condition="((HasQuest(12762)) &amp;&amp; (!IsQuestCompleted(12762)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12762" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12762" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Will of the Titans" QuestId="12705" TurnInName="Lightningcaller Soo-met" TurnInId="28107" X="5040.47" Y="5502.82" Z="-88.3044" />
 		<!-- REVIEW Q12735 A Cleansing Song: use item 39572: target 29033 Spirit of Atha has no spawn (kill credit or scripted event); use item 39572: target 29018 Spirit of Ha-Khalan has no spawn (kill credit or scripted event); use item 39572: target 29034 Spirit of Koosu has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -155,35 +155,35 @@
 			<TurnIn QuestName="A Cleansing Song" QuestId="12735" TurnInName="Oracle Soo-nee" TurnInId="29006" X="5648.67" Y="4605.62" Z="-132.056" />
 		</If>
 		<If Condition="((HasQuest(12735)) &amp;&amp; (!IsQuestCompleted(12735)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12735" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12735" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12737 Song of Fecundity: objective 29055 Horn of Fecundity Credit x8: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12737)) &amp;&amp; (IsQuestCompleted(12737)))">
 			<TurnIn QuestName="Song of Fecundity" QuestId="12737" TurnInName="Oracle Soo-nee" TurnInId="29006" X="5648.67" Y="4605.62" Z="-132.056" />
 		</If>
 		<If Condition="((HasQuest(12737)) &amp;&amp; (!IsQuestCompleted(12737)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12737" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12737" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12736 Song of Reflection: objective 29056 Glimmering Pillar Credit x1: not attackable; objective 29057 Mosslight Pillar Credit x1: not attackable; objective 29069 Skyreach Pillar Credit x1: not attackable; objective 29058 Suntouched Pillar Credit x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12736)) &amp;&amp; (IsQuestCompleted(12736)))">
 			<TurnIn QuestName="Song of Reflection" QuestId="12736" TurnInName="Oracle Soo-nee" TurnInId="29006" X="5648.67" Y="4605.62" Z="-132.056" />
 		</If>
 		<If Condition="((HasQuest(12736)) &amp;&amp; (!IsQuestCompleted(12736)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12736" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12736" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12726 Song of Wind and Water: objective 29008 Monsoon Revenant Credit x3: kill credit or scripted event; objective 29009 Storm Revenant Credit x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12726)) &amp;&amp; (IsQuestCompleted(12726)))">
 			<TurnIn QuestName="Song of Wind and Water" QuestId="12726" TurnInName="Oracle Soo-nee" TurnInId="29006" X="5648.67" Y="4605.62" Z="-132.056" />
 		</If>
 		<If Condition="((HasQuest(12726)) &amp;&amp; (!IsQuestCompleted(12726)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12726" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12726" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12704 Appeasing the Great Rain Stone: helper item 38622 Lafoo's Bug Bag has no creature or object source near the guide coordinates; item 38575 Shiny Treasures has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12704)) &amp;&amp; (IsQuestCompleted(12704)))">
 			<TurnIn QuestName="Appeasing the Great Rain Stone" QuestId="12704" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
 		</If>
 		<If Condition="((HasQuest(12704)) &amp;&amp; (!IsQuestCompleted(12704)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12704" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12704" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Sholazar Basin\The Oracles Dailies: done for today" LogColor="Green" />
 	</QuestOrder>

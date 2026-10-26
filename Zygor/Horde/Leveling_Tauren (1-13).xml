@@ -842,7 +842,7 @@
 				<TurnIn QuestName="Winterhoof Cleansing" QuestId="754" TurnInName="Mull Thunderhorn" TurnInId="2948" X="-2341.4" Y="-445.449" Z="-6.4173" />
 			</If>
 			<If Condition="((HasQuest(754)) &amp;&amp; (!IsQuestCompleted(754)))">
-				<CustomBehavior File="AbandonQuest" QuestId="754" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="754" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Tauren))">
@@ -877,7 +877,7 @@
 			<TurnIn QuestName="Dwarven Digging" QuestId="746" TurnInName="Baine Bloodhoof" TurnInId="2993" X="-2333.54" Y="-393.073" Z="-7.9293" />
 		</If>
 		<If Condition="((HasQuest(746)) &amp;&amp; (!IsQuestCompleted(746)))">
-			<CustomBehavior File="AbandonQuest" QuestId="746" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="746" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Race == WoWRace.Tauren))">
 			<TurnIn QuestName="Thunderhorn Totem" QuestId="756" TurnInName="Mull Thunderhorn" TurnInId="2948" X="-2341.4" Y="-445.449" Z="-6.4173" />
@@ -908,7 +908,7 @@
 				<TurnIn QuestName="Thunderhorn Cleansing" QuestId="758" TurnInName="Mull Thunderhorn" TurnInId="2948" X="-2341.4" Y="-445.449" Z="-6.4173" />
 			</If>
 			<If Condition="((HasQuest(758)) &amp;&amp; (!IsQuestCompleted(758)))">
-				<CustomBehavior File="AbandonQuest" QuestId="758" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="758" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Tauren))">
@@ -1017,7 +1017,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6061" TurnInName="Yaw Sharpmane" TurnInId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			</If>
 			<If Condition="((HasQuest(6061)) &amp;&amp; (!IsQuestCompleted(6061)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6061" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6061" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Tauren) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -1031,7 +1031,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6087" TurnInName="Yaw Sharpmane" TurnInId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			</If>
 			<If Condition="((HasQuest(6087)) &amp;&amp; (!IsQuestCompleted(6087)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6087" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6087" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Tauren) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -1045,7 +1045,7 @@
 				<TurnIn QuestName="Taming the Beast" QuestId="6088" TurnInName="Yaw Sharpmane" TurnInId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			</If>
 			<If Condition="((HasQuest(6088)) &amp;&amp; (!IsQuestCompleted(6088)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6088" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6088" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Tauren) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
@@ -1083,7 +1083,7 @@
 				<TurnIn QuestName="Great Bear Spirit" QuestId="5930" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
 			</If>
 			<If Condition="((HasQuest(5930)) &amp;&amp; (!IsQuestCompleted(5930)))">
-				<CustomBehavior File="AbandonQuest" QuestId="5930" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="5930" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="(((Me.Race == WoWRace.Tauren) &amp;&amp; (Me.Class == WoWClass.Druid)))">
@@ -1105,7 +1105,7 @@
 				<TurnIn QuestName="Body and Heart" QuestId="6002" TurnInName="Turak Runetotem" TurnInId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
 			</If>
 			<If Condition="((HasQuest(6002)) &amp;&amp; (!IsQuestCompleted(6002)))">
-				<CustomBehavior File="AbandonQuest" QuestId="6002" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="6002" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Tauren))">
@@ -1163,7 +1163,7 @@
 				<TurnIn QuestName="Wildmane Cleansing" QuestId="760" TurnInName="Mull Thunderhorn" TurnInId="2948" X="-2341.4" Y="-445.449" Z="-6.4173" />
 			</If>
 			<If Condition="((HasQuest(760)) &amp;&amp; (!IsQuestCompleted(760)))">
-				<CustomBehavior File="AbandonQuest" QuestId="760" Type="Incomplete" />
+				<CustomBehavior File="AbandonQuest" QuestId="760" Type="Incomplete" Remember="True" />
 			</If>
 		</If>
 		<If Condition="((Me.Race == WoWRace.Tauren))">

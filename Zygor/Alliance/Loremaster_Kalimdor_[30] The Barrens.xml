@@ -250,7 +250,7 @@
 			<TurnIn QuestName="The Escape" QuestId="863" TurnInName="Sputtervalve" TurnInId="3442" X="-902.036" Y="-3759.4" Z="11.6138" />
 		</If>
 		<If Condition="((HasQuest(863)) &amp;&amp; (!IsQuestCompleted(863)))">
-			<CustomBehavior File="AbandonQuest" QuestId="863" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="863" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Samophlange" QuestId="902" TurnInName="Sputtervalve" TurnInId="3442" X="-902.036" Y="-3759.4" Z="11.6138" />
 		<TurnIn QuestName="Miner's Fortune" QuestId="896" TurnInName="Wharfmaster Dizzywig" TurnInId="3453" X="-985.599" Y="-3796.71" Z="5.2093" />

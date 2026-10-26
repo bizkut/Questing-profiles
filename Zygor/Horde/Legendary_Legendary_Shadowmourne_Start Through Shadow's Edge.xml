@@ -36,7 +36,7 @@
 			<TurnIn QuestName="The Sacred and the Corrupt" QuestId="24545" TurnInName="Runeforge" TurnInId="201742" TurnInType="Object" X="-59.4583" Y="2157.47" Z="30.6542" />
 		</If>
 		<If Condition="((HasQuest(24545)) &amp;&amp; (!IsQuestCompleted(24545)))">
-			<CustomBehavior File="AbandonQuest" QuestId="24545" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="24545" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="((Me.Class == WoWClass.Warrior) || (Me.Class == WoWClass.Paladin) || (Me.Class == WoWClass.DeathKnight)) &amp;&amp; (Me.Level &gt;= 80) &amp;&amp; IsQuestCompleted(24545)">
 			<PickUp QuestName="Shadow's Edge" QuestId="24743" GiverName="Highlord Darion Mograine" GiverId="37120" X="-69.6892" Y="2155.64" Z="30.7375" />

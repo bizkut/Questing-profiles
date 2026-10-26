@@ -54,21 +54,21 @@
 			<TurnIn QuestName="Mastery Of Melee" QuestId="13828" TurnInName="Arcanist Taelis" TurnInId="33625" X="8615.71" Y="648.842" Z="550.35" />
 		</If>
 		<If Condition="((HasQuest(13828)) &amp;&amp; (!IsQuestCompleted(13828)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13828" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13828" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13837 Mastery Of The Charge: objective 33972 Rugan Steelbelly x1: not attackable; objective 33340 [DND] Tournament - Mounted Melee - Target Dummy - Charge Bunny x2: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13837)) &amp;&amp; (IsQuestCompleted(13837)))">
 			<TurnIn QuestName="Mastery Of The Charge" QuestId="13837" TurnInName="Avareth Swiftstrike" TurnInId="33646" X="8617.87" Y="649.783" Z="550.35" />
 		</If>
 		<If Condition="((HasQuest(13837)) &amp;&amp; (!IsQuestCompleted(13837)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13837" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13837" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13835 Mastery Of The Shield-Breaker: objective 33974 Valis Windchaser x1: not attackable; objective 33339 [DND] Tournament - Ranged Target Dummy - Bunny x2: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13835)) &amp;&amp; (IsQuestCompleted(13835)))">
 			<TurnIn QuestName="Mastery Of The Shield-Breaker" QuestId="13835" TurnInName="Scout Shalyndria" TurnInId="33647" X="8613.52" Y="648.405" Z="550.35" />
 		</If>
 		<If Condition="((HasQuest(13835)) &amp;&amp; (!IsQuestCompleted(13835)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13835" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13835" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Argent Tournament Grounds Pre-Quests: done for today" LogColor="Green" />
 	</QuestOrder>

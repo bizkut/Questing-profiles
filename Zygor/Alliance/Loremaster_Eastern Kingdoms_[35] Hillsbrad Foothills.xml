@@ -440,7 +440,7 @@
 			<TurnIn QuestName="Bartolo's Yeti Fur Cloak" QuestId="565" TurnInName="Bartolo Ginsetti" TurnInId="2438" X="-784.662" Y="-515.103" Z="17.7243" />
 		</If>
 		<If Condition="((HasQuest(565)) &amp;&amp; (!IsQuestCompleted(565)))">
-			<CustomBehavior File="AbandonQuest" QuestId="565" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="565" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Encrypted Letter" QuestId="511" TurnInName="Loremaster Dibbs" TurnInId="2277" X="-817.945" Y="-551.606" Z="15.4026" />
 		<TurnIn QuestName="Preserving Knowledge" QuestId="540" TurnInName="Loremaster Dibbs" TurnInId="2277" X="-817.945" Y="-551.606" Z="15.4026" />

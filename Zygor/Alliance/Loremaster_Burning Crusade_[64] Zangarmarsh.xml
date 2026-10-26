@@ -789,7 +789,7 @@
 			<TurnIn QuestName="As the Crow Flies" QuestId="9718" TurnInName="Ysiel Windsinger" TurnInId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
 		</If>
 		<If Condition="((HasQuest(9718)) &amp;&amp; (!IsQuestCompleted(9718)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9718" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9718" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 61) &amp;&amp; IsQuestCompleted(9718)">
 			<PickUp QuestName="Balance Must Be Preserved" QuestId="9720" GiverName="Ysiel Windsinger" GiverId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
@@ -809,7 +809,7 @@
 			<TurnIn QuestName="Blessings of the Ancients" QuestId="9785" TurnInName="Windcaller Blackhoof" TurnInId="18070" X="-234.269" Y="5434.77" Z="22.521" />
 		</If>
 		<If Condition="((HasQuest(9785)) &amp;&amp; (!IsQuestCompleted(9785)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9785" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9785" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 60)">
 			<PickUp QuestName="The Dead Mire" QuestId="9782" GiverName="Vindicator Idaar" GiverId="18004" X="256.774" Y="6039.52" Z="131.693" />
@@ -1022,14 +1022,14 @@
 			<TurnIn QuestName="Messenger to the Feralfen" QuestId="9803" TurnInName="Anchorite Ahuurn" TurnInId="18003" X="280.43" Y="6046.59" Z="130.391" />
 		</If>
 		<If Condition="((HasQuest(9803)) &amp;&amp; (!IsQuestCompleted(9803)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9803" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9803" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q9720 Balance Must Be Preserved: objective 17998 Umbrafen Steam Pump Credit Marker x1: not attackable; objective 18002 Marshlight Steam Pump Credit Marker x1: kill credit or scripted event; objective 18000 Serpent Steam Pump Credit Marker x1: not attackable; objective 17999 Lagoon Steam Pump Credit Marker x1: not attackable. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9720)) &amp;&amp; (IsQuestCompleted(9720)))">
 			<TurnIn QuestName="Balance Must Be Preserved" QuestId="9720" TurnInName="Ysiel Windsinger" TurnInId="17841" X="-143.452" Y="5533.82" Z="31.1488" />
 		</If>
 		<If Condition="((HasQuest(9720)) &amp;&amp; (!IsQuestCompleted(9720)))">
-			<CustomBehavior File="AbandonQuest" QuestId="9720" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="9720" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q9731 Drain Schematics: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9731)) &amp;&amp; (IsQuestCompleted(9731)))">

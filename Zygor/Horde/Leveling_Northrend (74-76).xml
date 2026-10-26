@@ -832,7 +832,7 @@
 			<TurnIn QuestName="Message from the West" QuestId="12033" TurnInName="Messenger Torvus" TurnInId="26649" X="3825.22" Y="1533.92" Z="89.8078" />
 		</If>
 		<If Condition="((HasQuest(12033)) &amp;&amp; (!IsQuestCompleted(12033)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12033" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12033" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Your Presence is Required at Agmar's Hammer" QuestId="11996" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(11996)">
@@ -858,7 +858,7 @@
 			<TurnIn QuestName="Rifle the Bodies" QuestId="11999" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		</If>
 		<If Condition="((HasQuest(11999)) &amp;&amp; (!IsQuestCompleted(11999)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11999" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11999" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(11999)">
 			<PickUp QuestName="Prevent the Accord" QuestId="12005" GiverName="Image of Archmage Aethas Sunreaver" GiverId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
@@ -899,7 +899,7 @@
 			<TurnIn QuestName="The Focus on the Beach" QuestId="12066" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		</If>
 		<If Condition="((HasQuest(12066)) &amp;&amp; (!IsQuestCompleted(12066)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12066" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12066" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12066)">
 			<PickUp QuestName="Atop the Woodlands" QuestId="12084" GiverName="Image of Archmage Aethas Sunreaver" GiverId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
@@ -952,7 +952,7 @@
 			<TurnIn QuestName="The End of the Line" QuestId="12110" TurnInName="Image of Archmage Aethas Sunreaver" TurnInId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
 		</If>
 		<If Condition="((HasQuest(12110)) &amp;&amp; (!IsQuestCompleted(12110)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12110" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12110" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12110)">
 			<PickUp QuestName="Gaining an Audience" QuestId="12122" GiverName="Image of Archmage Aethas Sunreaver" GiverId="26471" X="3846.75" Y="1492.92" Z="92.5503" />
@@ -976,7 +976,7 @@
 			<TurnIn QuestName="Blood Oath of the Horde" QuestId="11983" TurnInName="Emissary Brighthoof" TurnInId="26181" X="3752.59" Y="2864.9" Z="93.0518" />
 		</If>
 		<If Condition="((HasQuest(11983)) &amp;&amp; (!IsQuestCompleted(11983)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11983" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11983" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(11983)">
 			<PickUp QuestName="Agmar's Hammer" QuestId="12008" GiverName="Emissary Brighthoof" GiverId="26181" X="3752.59" Y="2864.9" Z="93.0518" />
@@ -1010,7 +1010,7 @@
 			<TurnIn QuestName="Containing the Rot" QuestId="12100" TurnInName="Soar Hawkfury" TurnInId="26504" X="3759.47" Y="1547.64" Z="87.1148" />
 		</If>
 		<If Condition="((HasQuest(12100)) &amp;&amp; (!IsQuestCompleted(12100)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12100" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12100" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12100)">
 			<PickUp QuestName="The Good Doctor..." QuestId="12101" GiverName="Soar Hawkfury" GiverId="26504" X="3759.47" Y="1547.64" Z="87.1148" />
@@ -1056,7 +1056,7 @@
 			<TurnIn QuestName="Return of the High Chief" QuestId="12069" TurnInName="Overlord Agmar" TurnInId="26379" X="3842.39" Y="1486.62" Z="92.0606" />
 		</If>
 		<If Condition="((HasQuest(12069)) &amp;&amp; (!IsQuestCompleted(12069)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12069" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12069" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12069)">
 			<PickUp QuestName="All Hail Roanauk!" QuestId="12140" GiverName="Overlord Agmar" GiverId="26379" X="3842.39" Y="1486.62" Z="92.0606" />
@@ -1066,7 +1066,7 @@
 			<TurnIn QuestName="The Might of the Horde" QuestId="12053" TurnInName="Senior Sergeant Juktok" TurnInId="26415" X="3833.26" Y="1573.53" Z="86.7818" />
 		</If>
 		<If Condition="((HasQuest(12053)) &amp;&amp; (!IsQuestCompleted(12053)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12053" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12053" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12053)">
 			<PickUp QuestName="Attack by Air! " QuestId="12071" GiverName="Senior Sergeant Juktok" GiverId="26415" X="3833.26" Y="1573.53" Z="86.7818" />
@@ -1095,7 +1095,7 @@
 			<TurnIn QuestName="All Hail Roanauk!" QuestId="12140" TurnInName="Overlord Agmar" TurnInId="26379" X="3842.39" Y="1486.62" Z="92.0606" />
 		</If>
 		<If Condition="((HasQuest(12140)) &amp;&amp; (!IsQuestCompleted(12140)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12140" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12140" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Blightbeasts be Damned!" QuestId="12072" Type="KillMob" MobId="26607" KillCount="25" />
 		<!-- REVIEW Q12125 In Service of Blood: item 36828 Filled Blood Gem has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -1103,7 +1103,7 @@
 			<TurnIn QuestName="In Service of Blood" QuestId="12125" TurnInName="Koltira Deathweaver" TurnInId="26581" X="3798.49" Y="1601.21" Z="89.7437" />
 		</If>
 		<If Condition="((HasQuest(12125)) &amp;&amp; (!IsQuestCompleted(12125)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12125" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12125" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Blightbeasts be Damned!" QuestId="12072" TurnInName="Valnok Windrager" TurnInId="26574" X="3865.59" Y="1540.07" Z="89.9852" />
 		<If Condition="HasItem(37833) &amp;&amp; !HasQuest(12419) &amp;&amp; !IsQuestCompleted(12419) &amp;&amp; (Me.Level &gt;= 71)">
@@ -1133,14 +1133,14 @@
 			<TurnIn QuestName="In Service of the Unholy" QuestId="12126" TurnInName="Koltira Deathweaver" TurnInId="26581" X="3798.49" Y="1601.21" Z="89.7437" />
 		</If>
 		<If Condition="((HasQuest(12126)) &amp;&amp; (!IsQuestCompleted(12126)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12126" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12126" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12127 In Service of Frost: item 36846 Filled Frost Gem has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12127)) &amp;&amp; (IsQuestCompleted(12127)))">
 			<TurnIn QuestName="In Service of Frost" QuestId="12127" TurnInName="Koltira Deathweaver" TurnInId="26581" X="3798.49" Y="1601.21" Z="89.7437" />
 		</If>
 		<If Condition="((HasQuest(12127)) &amp;&amp; (!IsQuestCompleted(12127)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12127" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12127" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; (IsQuestCompleted(12125) || IsQuestCompleted(12126) || IsQuestCompleted(12127))">
 			<PickUp QuestName="The Power to Destroy" QuestId="12132" GiverName="Koltira Deathweaver" GiverId="26581" X="3798.49" Y="1601.21" Z="89.7437" />
@@ -1164,7 +1164,7 @@
 			<TurnIn QuestName="Where the Wild Things Roam" QuestId="12111" TurnInName="Soar Hawkfury" TurnInId="26504" X="3759.47" Y="1547.64" Z="87.1148" />
 		</If>
 		<If Condition="((HasQuest(12111)) &amp;&amp; (!IsQuestCompleted(12111)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12111" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12111" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Report to the Ruby Dragonshrine" QuestId="12461" TurnInName="Vargastrasz" TurnInId="27763" X="3671.93" Y="1216.94" Z="142.939" />
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12461)">
@@ -1177,7 +1177,7 @@
 			<TurnIn QuestName="Heated Battle" QuestId="12448" TurnInName="Vargastrasz" TurnInId="27763" X="3671.93" Y="1216.94" Z="142.939" />
 		</If>
 		<If Condition="((HasQuest(12448)) &amp;&amp; (!IsQuestCompleted(12448)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12448" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12448" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12448)">
 			<PickUp QuestName="Return to the Earth" QuestId="12449" GiverName="Vargastrasz" GiverId="27763" X="3671.93" Y="1216.94" Z="142.939" />
@@ -1218,7 +1218,7 @@
 			<TurnIn QuestName="Defending Wyrmrest Temple" QuestId="12372" TurnInName="Lord Afrasastrasz" TurnInId="27575" X="3543.63" Y="304.604" Z="117.083" />
 		</If>
 		<If Condition="((HasQuest(12372)) &amp;&amp; (!IsQuestCompleted(12372)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12372" Type="Incomplete" Remember="True" />
 		</If>
 		<Objective QuestName="Seeds of the Lashers" QuestId="12458" Type="CollectItem" ItemId="37882" CollectCount="3" />
 		<TurnIn QuestName="Seeds of the Lashers" QuestId="12458" TurnInName="Lord Itharius" TurnInId="27785" X="3539.55" Y="285.5" Z="342.804" />
@@ -1237,7 +1237,7 @@
 			<TurnIn QuestName="The Cleansing Of Jintha'kalar" QuestId="12545" TurnInName="Crusader Valus" TurnInId="28228" X="4599.03" Y="-1082.73" Z="165.566" />
 		</If>
 		<If Condition="((HasQuest(12545)) &amp;&amp; (!IsQuestCompleted(12545)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12545" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12545" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 74) &amp;&amp; IsQuestCompleted(12545) &amp;&amp; !IsQuestCompleted(12763) &amp;&amp; !HasQuest(12763) &amp;&amp; !IsQuestCompleted(12792) &amp;&amp; !HasQuest(12792) &amp;&amp; !IsQuestCompleted(12793) &amp;&amp; !HasQuest(12793)">
 			<PickUp QuestName="Into the Breach!" QuestId="12789" GiverName="Crusader Valus" GiverId="28228" X="4599.03" Y="-1082.73" Z="165.566" />
@@ -1247,14 +1247,14 @@
 			<TurnIn QuestName="That Which Creates Can Also Destroy" QuestId="12459" TurnInName="Lord Itharius" TurnInId="27785" X="3539.55" Y="285.5" Z="342.804" />
 		</If>
 		<If Condition="((HasQuest(12459)) &amp;&amp; (!IsQuestCompleted(12459)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12459" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12459" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q12470 Mystery of the Infinite: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(12470)) &amp;&amp; (IsQuestCompleted(12470)))">
 			<TurnIn QuestName="Mystery of the Infinite" QuestId="12470" TurnInName="Chromie" TurnInId="27856" X="3536.69" Y="261.915" Z="342.804" />
 		</If>
 		<If Condition="((HasQuest(12470)) &amp;&amp; (!IsQuestCompleted(12470)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12470" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12470" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 72)">
 			<PickUp QuestName="Pest Control" QuestId="12144" GiverName="Kontokanis" GiverId="26979" X="4322.3" Y="1009.02" Z="95.6906" />
@@ -1274,7 +1274,7 @@
 			<TurnIn QuestName="No Place to Run" QuestId="12261" TurnInName="Serinar" TurnInId="26593" X="4451.42" Y="1652.29" Z="133.828" />
 		</If>
 		<If Condition="((HasQuest(12261)) &amp;&amp; (!IsQuestCompleted(12261)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12261" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12261" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 72) &amp;&amp; IsQuestCompleted(12261)">
 			<PickUp QuestName="The Best of Intentions" QuestId="12263" GiverName="Serinar" GiverId="26593" X="4451.42" Y="1652.29" Z="133.828" />
@@ -1310,7 +1310,7 @@
 			<TurnIn QuestName="Neltharion's Flame" QuestId="12267" TurnInName="Serinar" TurnInId="26593" X="4451.42" Y="1652.29" Z="133.828" />
 		</If>
 		<If Condition="((HasQuest(12267)) &amp;&amp; (!IsQuestCompleted(12267)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12267" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12267" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 72) &amp;&amp; IsQuestCompleted(12267)">
 			<PickUp QuestName="Tales of Destruction" QuestId="12266" GiverName="Serinar" GiverId="26593" X="4451.42" Y="1652.29" Z="133.828" />
@@ -1377,7 +1377,7 @@
 			<TurnIn QuestName="Lumber Hack" QuestId="12050" TurnInName="Xink" TurnInId="26660" X="4699.06" Y="541.116" Z="120.504" />
 		</If>
 		<If Condition="((HasQuest(12050)) &amp;&amp; (!IsQuestCompleted(12050)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12050" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12050" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 72)">
 			<PickUp QuestName="Stiff Negotiations" QuestId="12112" GiverName="Narf" GiverId="26647" X="4691.45" Y="571.628" Z="119.784" />
@@ -1396,7 +1396,7 @@
 			<TurnIn QuestName="Slim Pickings" QuestId="12075" TurnInName="Zort" TurnInId="26659" X="4895.23" Y="295.912" Z="131.721" />
 		</If>
 		<If Condition="((HasQuest(12075)) &amp;&amp; (!IsQuestCompleted(12075)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12075" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12075" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 72) &amp;&amp; IsQuestCompleted(12075)">
 			<PickUp QuestName="Messy Business" QuestId="12076" GiverName="Zort" GiverId="26659" X="4895.23" Y="295.912" Z="131.721" />
@@ -1410,7 +1410,7 @@
 			<TurnIn QuestName="Messy Business" QuestId="12076" TurnInName="Zort" TurnInId="26659" X="4895.23" Y="295.912" Z="131.721" />
 		</If>
 		<If Condition="((HasQuest(12076)) &amp;&amp; (!IsQuestCompleted(12076)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12076" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12076" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 72) &amp;&amp; IsQuestCompleted(12076)">
 			<PickUp QuestName="Apply This Twice A Day" QuestId="12077" GiverName="Zort" GiverId="26659" X="4895.23" Y="295.912" Z="131.721" />
@@ -1431,7 +1431,7 @@
 			<TurnIn QuestName="Worm Wrangler" QuestId="12078" TurnInName="Zort" TurnInId="26659" X="4895.23" Y="295.912" Z="131.721" />
 		</If>
 		<If Condition="((HasQuest(12078)) &amp;&amp; (!IsQuestCompleted(12078)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12078" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12078" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Disturbing Implications" QuestId="12147" TurnInName="Aurastrasza" TurnInId="26983" X="3510.93" Y="260.856" Z="47.3996" />
 		<If Condition="(Me.Level &gt;= 71)">
@@ -1455,7 +1455,7 @@
 			<TurnIn QuestName="On Ruby Wings" QuestId="12498" TurnInName="Alexstrasza the Life-Binder" TurnInId="26917" X="3531.02" Y="271.403" Z="342.804" />
 		</If>
 		<If Condition="((HasQuest(12498)) &amp;&amp; (!IsQuestCompleted(12498)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12498" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12498" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 71) &amp;&amp; IsQuestCompleted(12498)">
 			<PickUp QuestName="Return To Angrathar" QuestId="12500" GiverName="Alexstrasza the Life-Binder" GiverId="26917" X="3531.02" Y="271.403" Z="342.804" />
@@ -1482,7 +1482,7 @@
 			<TurnIn QuestName="The Battle For The Undercity" QuestId="13267" TurnInName="Thrall" TurnInId="32518" X="1945.72" Y="234.06" Z="43.911" />
 		</If>
 		<If Condition="((HasQuest(13267)) &amp;&amp; (!IsQuestCompleted(13267)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13267" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13267" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="The Magical Kingdom of Dalaran" QuestId="12791" TurnInName="Archmage Celindra" TurnInId="29156" X="5808.13" Y="585.193" Z="652.463" />
 		<If Condition="(Me.Level &gt;= 68)">
@@ -1494,7 +1494,7 @@
 			<TurnIn QuestName="Learning to Leave and Return: the Magical Way" QuestId="12790" TurnInName="Archmage Celindra" TurnInId="29156" X="5808.13" Y="585.193" Z="652.463" />
 		</If>
 		<If Condition="((HasQuest(12790)) &amp;&amp; (!IsQuestCompleted(12790)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12790" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12790" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- SKIP Q12974 The Champion's Call!: group quest (5 players) -->
 		<If Condition="(Me.Level &gt;= 75)">
@@ -1535,7 +1535,7 @@
 			<TurnIn QuestName="Jun'ik's Coverup" QuestId="12177" TurnInName="Hidetrader Jun'ik" TurnInId="27037" X="3237.74" Y="-2267.83" Z="115.855" />
 		</If>
 		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12177" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12177" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12177)">
 			<PickUp QuestName="Delivery to Krenna" QuestId="12178" GiverName="Hidetrader Jun'ik" GiverId="27037" X="3237.74" Y="-2267.83" Z="115.855" />
@@ -1594,7 +1594,7 @@
 			<TurnIn QuestName="Filling the Cages" QuestId="11984" TurnInName="Samir" TurnInId="26424" X="3850.49" Y="-1960.48" Z="208.511" />
 		</If>
 		<If Condition="((HasQuest(11984)) &amp;&amp; (!IsQuestCompleted(11984)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11984" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11984" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11984)">
 			<PickUp QuestName="Truce?" QuestId="11989" GiverName="Drakuru" GiverId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
@@ -1602,12 +1602,12 @@
 		<If Condition="HasQuest(11989) &amp;&amp; !IsQuestCompleted(11989) &amp;&amp; GetItemCount(38083) &lt; 1">
 			<CustomBehavior File="InteractWith" QuestId="11989" MobId="190208" ObjectType="GameObject" Loot="True" NumOfTimes="1" CollectionDistance="200" X="3843.83" Y="-1978.63" Z="210.318" />
 		</If>
-		<!-- REVIEW Q11989 Truce?: use item 38083: target 27921 Drakuru Handshake KC Bunny has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<!-- REVIEW Q11989 Truce?: use item 38083: 27921 Drakuru Handshake KC Bunny has no spawn near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(11989)) &amp;&amp; (IsQuestCompleted(11989)))">
 			<TurnIn QuestName="Truce?" QuestId="11989" TurnInName="Drakuru" TurnInId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
 		<If Condition="((HasQuest(11989)) &amp;&amp; (!IsQuestCompleted(11989)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11989" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11989" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11989)">
 			<PickUp QuestName="Vial of Visions" QuestId="11990" GiverName="Drakuru" GiverId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
@@ -1619,7 +1619,7 @@
 			<TurnIn QuestName="Vial of Visions" QuestId="11990" TurnInName="Drakuru" TurnInId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
 		</If>
 		<If Condition="((HasQuest(11990)) &amp;&amp; (!IsQuestCompleted(11990)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11990" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11990" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11990)">
 			<PickUp QuestName="Subject to Interpretation" QuestId="11991" GiverName="Drakuru" GiverId="26423" X="3844.59" Y="-1973.08" Z="208.515" />
@@ -1635,7 +1635,7 @@
 			<TurnIn QuestName="Scourgekabob" QuestId="12484" TurnInName="Mack Fearsen" TurnInId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
 		</If>
 		<If Condition="((HasQuest(12484)) &amp;&amp; (!IsQuestCompleted(12484)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12484" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12484" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12484)">
 			<PickUp QuestName="Seared Scourge" QuestId="12029" GiverName="Mack Fearsen" GiverId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
@@ -1662,7 +1662,7 @@
 			<TurnIn QuestName="Subject to Interpretation" QuestId="11991" TurnInName="Image of Drakuru" TurnInId="26500" X="3386.21" Y="-1805.46" Z="115.058" />
 		</If>
 		<If Condition="((HasQuest(11991)) &amp;&amp; (!IsQuestCompleted(11991)))">
-			<CustomBehavior File="AbandonQuest" QuestId="11991" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="11991" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(11991)">
 			<PickUp QuestName="Sacrifices Must be Made" QuestId="12007" GiverName="Image of Drakuru" GiverId="26500" X="3386.21" Y="-1805.46" Z="115.058" />
@@ -1678,7 +1678,7 @@
 			<TurnIn QuestName="Sacrifices Must be Made" QuestId="12007" TurnInName="Image of Drakuru" TurnInId="26543" X="4244.1" Y="-2025" Z="238.25" />
 		</If>
 		<If Condition="((HasQuest(12007)) &amp;&amp; (!IsQuestCompleted(12007)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12007" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12007" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12007)">
 			<PickUp QuestName="Heart of the Ancients" QuestId="12042" GiverName="Image of Drakuru" GiverId="26543" X="4244.1" Y="-2025" Z="238.25" />
@@ -1706,7 +1706,7 @@
 			<TurnIn QuestName="My Heart is in Your Hands" QuestId="12802" TurnInName="Image of Drakuru" TurnInId="26701" X="4524.31" Y="-3472.71" Z="228.132" />
 		</If>
 		<If Condition="((HasQuest(12802)) &amp;&amp; (!IsQuestCompleted(12802)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12802" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12802" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12802)">
 			<PickUp QuestName="Voices From the Dust" QuestId="12068" GiverName="Image of Drakuru" GiverId="26701" X="4524.31" Y="-3472.71" Z="228.132" />
@@ -1723,7 +1723,7 @@
 			<TurnIn QuestName="Seared Scourge" QuestId="12029" TurnInName="Mack Fearsen" TurnInId="26604" X="3826.5" Y="-1985.58" Z="208.376" />
 		</If>
 		<If Condition="((HasQuest(12029)) &amp;&amp; (!IsQuestCompleted(12029)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12029" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12029" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="Shimmercap Stew" QuestId="12483" TurnInName="Prigmon" TurnInId="26519" X="3882.44" Y="-1936.45" Z="209.169" />
 		<If Condition="(Me.Level &gt;= 73) &amp;&amp; IsQuestCompleted(12483)">
@@ -1759,7 +1759,7 @@
 			<TurnIn QuestName="Eyes Above" QuestId="12453" TurnInName="Windseer Grayhorn" TurnInId="27262" X="3316.83" Y="-2291.84" Z="110.191" />
 		</If>
 		<If Condition="((HasQuest(12453)) &amp;&amp; (!IsQuestCompleted(12453)))">
-			<CustomBehavior File="AbandonQuest" QuestId="12453" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="12453" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 72)">
 			<PickUp QuestName="A Possible Link" QuestId="12229" GiverName="Windseer Grayhorn" GiverId="27262" X="3316.83" Y="-2291.84" Z="110.191" />

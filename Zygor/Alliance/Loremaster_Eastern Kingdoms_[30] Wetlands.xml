@@ -485,7 +485,7 @@
 			<TurnIn QuestName="The Missing Diplomat" QuestId="1249" TurnInName="Mikhail" TurnInId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
 		</If>
 		<If Condition="((HasQuest(1249)) &amp;&amp; (!IsQuestCompleted(1249)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1249" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="1249" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1249)">
 			<PickUp QuestName="The Missing Diplomat" QuestId="1250" GiverName='Tapoke "Slim" Jahn' GiverId="4962" X="-3808.82" Y="-825.612" Z="10.3019" />
@@ -496,7 +496,7 @@
 			<TurnIn QuestName="The Third Fleet" QuestId="288" TurnInName="First Mate Fitzsimmons" TurnInId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
 		</If>
 		<If Condition="((HasQuest(288)) &amp;&amp; (!IsQuestCompleted(288)))">
-			<CustomBehavior File="AbandonQuest" QuestId="288" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="288" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 22) &amp;&amp; IsQuestCompleted(288)">
 			<PickUp QuestName="The Cursed Crew" QuestId="289" GiverName="First Mate Fitzsimmons" GiverId="1239" X="-3792.5" Y="-840.038" Z="9.9044" />
@@ -675,7 +675,7 @@
 			<TurnIn QuestName="Morbent Fel" QuestId="55" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
 		</If>
 		<If Condition="((HasQuest(55)) &amp;&amp; (!IsQuestCompleted(55)))">
-			<CustomBehavior File="AbandonQuest" QuestId="55" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="55" Type="Incomplete" Remember="True" />
 		</If>
 	</QuestOrder>
 </HBProfile>

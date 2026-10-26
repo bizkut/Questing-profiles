@@ -127,21 +127,21 @@
 			<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13778" TurnInName="Deathstalker Visceri" TurnInId="33373" X="8415.04" Y="644.571" Z="550.434" />
 		</If>
 		<If Condition="((HasQuest(13778)) &amp;&amp; (!IsQuestCompleted(13778)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13778" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13778" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13779 A Worthy Weapon: item 44978 Blade of Drak'Mar has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13779)) &amp;&amp; (IsQuestCompleted(13779)))">
 			<TurnIn QuestName="A Worthy Weapon" QuestId="13779" TurnInName="Deathstalker Visceri" TurnInId="33373" X="8415.04" Y="644.571" Z="550.434" />
 		</If>
 		<If Condition="((HasQuest(13779)) &amp;&amp; (!IsQuestCompleted(13779)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13779" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13779" Type="Incomplete" Remember="True" />
 		</If>
 		<!-- REVIEW Q13780 The Edge Of Winter: item 45003 Winter's Edge has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(13780)) &amp;&amp; (IsQuestCompleted(13780)))">
 			<TurnIn QuestName="The Edge Of Winter" QuestId="13780" TurnInName="Deathstalker Visceri" TurnInId="33373" X="8415.04" Y="644.571" Z="550.434" />
 		</If>
 		<If Condition="((HasQuest(13780)) &amp;&amp; (!IsQuestCompleted(13780)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13780" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13780" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="A Valiant's Field Training" QuestId="13781" TurnInName="Sarah Chalke" TurnInId="33541" X="8418.94" Y="642.504" Z="550.34" />
 		<!-- REVIEW Q13782 The Grand Melee: item 45127 Mark of the Valiant has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -149,7 +149,7 @@
 			<TurnIn QuestName="The Grand Melee" QuestId="13782" TurnInName="Handler Dretch" TurnInId="33547" X="8410.02" Y="643.455" Z="550.342" />
 		</If>
 		<If Condition="((HasQuest(13782)) &amp;&amp; (!IsQuestCompleted(13782)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13782" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13782" Type="Incomplete" Remember="True" />
 		</If>
 		<TurnIn QuestName="At The Enemy's Gates" QuestId="13860" TurnInName="Handler Dretch" TurnInId="33547" X="8410.02" Y="643.455" Z="550.342" />
 		<!-- REVIEW Q13721 The Valiant's Charge: item 44987 Valiant's Seal has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -157,7 +157,7 @@
 			<TurnIn QuestName="The Valiant's Charge" QuestId="13721" TurnInName="Deathstalker Visceri" TurnInId="33373" X="8415.04" Y="644.571" Z="550.434" />
 		</If>
 		<If Condition="((HasQuest(13721)) &amp;&amp; (!IsQuestCompleted(13721)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13721" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13721" Type="Incomplete" Remember="True" />
 		</If>
 		<If Condition="(Me.Level &gt;= 77) &amp;&amp; IsQuestCompleted(13721)">
 			<PickUp QuestName="The Valiant's Challenge" QuestId="13729" GiverName="Deathstalker Visceri" GiverId="33373" X="8415.04" Y="644.571" Z="550.434" />
@@ -167,7 +167,7 @@
 			<TurnIn QuestName="The Valiant's Challenge" QuestId="13729" TurnInName="Deathstalker Visceri" TurnInId="33373" X="8415.04" Y="644.571" Z="550.434" />
 		</If>
 		<If Condition="((HasQuest(13729)) &amp;&amp; (!IsQuestCompleted(13729)))">
-			<CustomBehavior File="AbandonQuest" QuestId="13729" Type="Incomplete" />
+			<CustomBehavior File="AbandonQuest" QuestId="13729" Type="Incomplete" Remember="True" />
 		</If>
 		<CustomBehavior File="Message" Text="Zygor Dailies\Icecrown\Crusader Title Guide (Unlocks More Dailies)\Undead Champion Rank: done for today" LogColor="Green" />
 	</QuestOrder>
