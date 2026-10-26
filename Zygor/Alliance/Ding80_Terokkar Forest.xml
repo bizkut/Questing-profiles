@@ -20,12 +20,12 @@
 		<Vendor Name="Innkeeper Biribi" Entry="19296" Type="Food" X="-2917.88" Y="4021.48" Z="0.5108" />
 		<Vendor Name='"Slim"' Entry="19679" Type="Food" X="-3117.44" Y="4964.86" Z="-99.8068" />
 		<Vendor Name="Oloraak" Entry="19045" Type="Food" X="-1605.95" Y="5377.85" Z="-40.1258" />
-		<Vendor Name="Vinemaster Alamaro" Entry="19245" Type="Food" X="-2320.6" Y="5574.1" Z="64.1556" />
+		<Vendor Name="Shaarubo" Entry="19182" Type="Food" X="-1769.02" Y="5152.54" Z="-37.1216" />
 		<Vendor Name="Siflaed Coldhammer" Entry="20890" Type="Repair" X="-2844.34" Y="5050.81" Z="-17.9867" />
 		<Vendor Name="Aundro" Entry="22476" Type="Repair" X="-3753.33" Y="5410.81" Z="-3.2322" />
-		<Vendor Name="Arodis Sunblade" Entry="20613" Type="Repair" X="-2264.65" Y="5566.87" Z="67.092" />
 		<Vendor Name="Asuur" Entry="20616" Type="Repair" X="-1760.24" Y="5826.55" Z="150.053" />
 		<Vendor Name="Horvon the Armorer" Entry="19879" Type="Repair" X="-3376.35" Y="5216.41" Z="-100.948" />
+		<Vendor Name="Lissaf" Entry="19047" Type="Repair" X="-1625.36" Y="5460.03" Z="-13.0173" />
 	</Vendors>
 
 	<AvoidMobs />
@@ -235,19 +235,20 @@
 			<CollectFrom>
 				<Mob Name="Shienor Talonite" Id="18449" />
 				<Mob Name="Shienor Sorcerer" Id="18450" />
-				<Mob Name="Shalassi Talonguard" Id="18454" />
-				<Mob Name="Shalassi Oracle" Id="18455" />
-				<Mob Name="Okrek" Id="18685" />
+				<Mob Name="Shienor Wing Guard" Id="18451" />
+				<Mob Name="Skithian Dreadhawk" Id="18452" />
+				<Mob Name="Skithian Windripper" Id="18453" />
+				<Mob Name="Ashkaz" Id="18539" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-3426.06" Y="4102.31" Z="74.8272" />
-				<Hotspot X="-3383.74" Y="4096.36" Z="9.1197" />
-				<Hotspot X="-3344.06" Y="4020.71" Z="60.8753" />
-				<Hotspot X="-3386.45" Y="4008.29" Z="87.2932" />
-				<Hotspot X="-3431.08" Y="4012.95" Z="62.091" />
-				<Hotspot X="-3479.08" Y="4046.91" Z="53.7745" />
-				<Hotspot X="-3507.05" Y="4075.9" Z="93.0094" />
-				<Hotspot X="-3517.53" Y="4010.59" Z="112.993" />
+				<Hotspot X="-2512.17" Y="5352.53" Z="0.9232" />
+				<Hotspot X="-2533.29" Y="5387.57" Z="27.2865" />
+				<Hotspot X="-2507.37" Y="5421.63" Z="0.2319" />
+				<Hotspot X="-2482.96" Y="5385.98" Z="0.4617" />
+				<Hotspot X="-2445.63" Y="5345.55" Z="1.4803" />
+				<Hotspot X="-2481.35" Y="5322.64" Z="1.3441" />
+				<Hotspot X="-2418.74" Y="5388.6" Z="1.9707" />
+				<Hotspot X="-2564.99" Y="5437.01" Z="28.0524" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -278,24 +279,6 @@
 			</CollectFrom>
 			<Hotspots>
 				<Hotspot X="-1996.77" Y="3691.44" Z="-55.336" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="10017" Name="Strained Supplies">
-		<Objective Type="CollectItem" ItemId="25802" CollectCount="8">
-			<CollectFrom>
-				<Mob Name="Dreadfang Lurker" Id="18466" />
-				<Mob Name="Dreadfang Widow" Id="18467" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-3169.28" Y="4056.22" Z="3.1412" />
-				<Hotspot X="-3183.55" Y="4012.63" Z="0.3278" />
-				<Hotspot X="-3222.64" Y="3990.52" Z="1.2565" />
-				<Hotspot X="-3227.13" Y="4052.91" Z="2.3728" />
-				<Hotspot X="-3222.48" Y="4118.36" Z="2.1713" />
-				<Hotspot X="-3180.47" Y="4105.48" Z="0.7456" />
-				<Hotspot X="-3118.57" Y="4080.64" Z="4.707" />
-				<Hotspot X="-3116.98" Y="4016.97" Z="0.2676" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -369,6 +352,16 @@
 				<Hotspot X="-2950.7" Y="4583.66" Z="-20.5774" />
 				<Hotspot X="-3046.47" Y="4506.84" Z="-42.8623" />
 				<Hotspot X="-2982.67" Y="4395.81" Z="-49.1447" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10842" Name="Vengeful Souls">
+		<Objective Type="KillMob" MobId="21636" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-3013.52" Y="4510.81" Z="-42.8637" />
+				<Hotspot X="-2974.29" Y="4441.98" Z="-47.2117" />
+				<Hotspot X="-2981.75" Y="4378.62" Z="-49.227" />
+				<Hotspot X="-2898.17" Y="4497.22" Z="-42.8615" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -600,38 +593,9 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="10921" Name="Terokkarantula">
-		<Objective Type="KillMob" MobId="20682" KillCount="1">
-			<Hotspots>
-				<Hotspot X="-3945.56" Y="4152.5" Z="3.57" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="10874" Name="Veil Shalas: Signal Fires">
-		<Objective Type="UseObject" ObjectId="185219" UseCount="1">
-			<Hotspots>
-				<Hotspot X="-3609.84" Y="4051.85" Z="111.999" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="UseObject" ObjectId="185218" UseCount="1">
-			<Hotspots>
-				<Hotspot X="-3491.6" Y="4025.17" Z="113.117" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="UseObject" ObjectId="185217" UseCount="1">
-			<Hotspots>
-				<Hotspot X="-3511.7" Y="4088.58" Z="92.8825" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="UseObject" ObjectId="185216" UseCount="1">
-			<Hotspots>
-				<Hotspot X="-3419.71" Y="4103.8" Z="62.6395" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
-		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Leveling/Ding80GuidesAllianceTBCduo.lua: Ding80's Alliance Leveling Guides TBC duo\Terokkar Forest -->
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Leveling/Ding80GuidesAlliance.lua: Ding80's Alliance Leveling Guides\Terokkar Forest -->
 		<If Condition="Me.MapId != 530">
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Ding80_Terokkar Forest");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Outland" />
@@ -712,24 +676,15 @@
 		<If Condition="((HasQuest(10211)) &amp;&amp; (!IsQuestCompleted(10211)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10211" Type="Incomplete" />
 		</If>
+		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(10211) &amp;&amp; !IsQuestCompleted(10552) &amp;&amp; !HasQuest(10552)">
+			<PickUp QuestName="Allegiance to the Aldor" QuestId="10551" GiverName="Khadgar" GiverId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
+		</If>
 		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(10551) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="Ishanah" QuestId="10554" GiverName="Khadgar" GiverId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
 		</If>
 		<TurnIn QuestName="Ishanah" QuestId="10554" TurnInName="Ishanah" TurnInId="18538" X="-1732.82" Y="5822.21" Z="148.741" />
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="Restoring the Light" QuestId="10021" GiverName="Ishanah" GiverId="18538" X="-1732.82" Y="5822.21" Z="148.741" />
-		</If>
-		<If Condition="(Me.Level &gt;= 60) &amp;&amp; IsQuestCompleted(10552) &amp;&amp; (GetFactionReputation(934) &gt;= 3000)">
-			<PickUp QuestName="Voren'thal the Seer" QuestId="10553" GiverName="Khadgar" GiverId="18166" X="-1859.87" Y="5420.07" Z="-10.3805" />
-		</If>
-		<!-- SKIP pickup Q10169 Losing Gracefully: no quest giver with a spawn in the database -->
-		<TurnIn QuestName="Voren'thal the Seer" QuestId="10553" TurnInName="Voren'thal the Seer" TurnInId="18530" X="-2272.61" Y="5576.36" Z="80.0374" />
-		<!-- REVIEW Q10169 Losing Gracefully: no quest giver in the database. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10169)) &amp;&amp; (IsQuestCompleted(10169)))">
-			<TurnIn QuestName="Losing Gracefully" QuestId="10169" TurnInName="Marksman Regiment's Cooking Pot" TurnInId="183435" TurnInType="Object" X="-1918.86" Y="5332.32" Z="-12.4281" />
-		</If>
-		<If Condition="((HasQuest(10169)) &amp;&amp; (!IsQuestCompleted(10169)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10169" Type="Incomplete" />
 		</If>
 		<If Condition="(Me.Level &gt;= 62)">
 			<PickUp QuestName="The Outcast's Plight" QuestId="10917" GiverName="Vekax" GiverId="22429" X="-1668.65" Y="5531.65" Z="2.3351" />
@@ -739,9 +694,6 @@
 		</If>
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; (GetFactionReputation(932) &gt;= 3000)">
 			<PickUp QuestName="A Cure for Zahlia" QuestId="10020" GiverName="Sha'nir" GiverId="18597" X="-1606.39" Y="5292.01" Z="-38.5767" />
-		</If>
-		<If Condition="(Me.Level &gt;= 62)">
-			<PickUp QuestName="Strained Supplies" QuestId="10017" GiverName="Sha'nir" GiverId="18597" X="-1606.39" Y="5292.01" Z="-38.5767" />
 		</If>
 		<TurnIn QuestName="Wind Trader Lathrai" QuestId="9979" TurnInName="Wind Trader Lathrai" TurnInId="18484" X="-1741.71" Y="5191.84" Z="-40.1258" />
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(9979)">
@@ -801,6 +753,7 @@
 		</If>
 		<Objective QuestName="Stymying the Arakkoa" QuestId="9986" Type="KillMob" MobId="18541" KillCount="1" />
 		<Objective QuestName="A Personal Favor" QuestId="10112" Type="CollectItem" ItemId="27861" CollectCount="5" />
+		<Objective QuestName="The Outcast's Plight" QuestId="10917" Type="CollectItem" ItemId="25719" CollectCount="30" />
 		<!-- REVIEW Q10839 Veil Skith: Darkstone of Terokk: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10839)) &amp;&amp; (IsQuestCompleted(10839)))">
 			<TurnIn QuestName="Veil Skith: Darkstone of Terokk" QuestId="10839" TurnInName="Kirrik the Awakened" TurnInId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
@@ -837,16 +790,9 @@
 		<If Condition="HasItem(31707) &amp;&amp; !HasQuest(10880) &amp;&amp; !IsQuestCompleted(10880) &amp;&amp; (Me.Level &gt;= 62)">
 			<PickUp QuestName="Cabal Orders" QuestId="10880" GiverName="Cabal Orders" GiverId="31707" GiverType="Item" />
 		</If>
-		<CustomBehavior File="UseItemOn" QuestId="10842" ItemId="30527" MobId="21636" NumOfTimes="5" Range="5" CollectionDistance="200" X="-2980.05" Y="4363.27" Z="-49.227" />
-		<!-- REVIEW Q10842 Vengeful Souls: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10842)) &amp;&amp; (IsQuestCompleted(10842)))">
-			<TurnIn QuestName="Vengeful Souls" QuestId="10842" TurnInName="High Priest Orglum" TurnInId="22278" X="-2827.24" Y="5060.84" Z="-15.4348" />
-		</If>
-		<If Condition="((HasQuest(10842)) &amp;&amp; (!IsQuestCompleted(10842)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10842" Type="Incomplete" />
-		</If>
 		<Objective QuestName="The Tomb of Lights" QuestId="10840" Type="KillMob" MobId="21370" KillCount="10" />
 		<Objective QuestName="The Tomb of Lights" QuestId="10840" Type="KillMob" MobId="21368" KillCount="10" />
+		<Objective QuestName="Vengeful Souls" QuestId="10842" Type="KillMob" MobId="21636" KillCount="5" />
 		<Objective QuestName="Wanted: Bonelashers Dead!" QuestId="10033" Type="KillMob" MobId="18470" KillCount="20" />
 		<TurnIn QuestName="Cabal Orders" QuestId="10880" TurnInName="Mekeda" TurnInId="22370" X="-2866.16" Y="5039.95" Z="-20.2197" />
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10880)">
@@ -860,9 +806,11 @@
 			<CustomBehavior File="AbandonQuest" QuestId="10878" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="The Tomb of Lights" QuestId="10840" TurnInName="High Priest Orglum" TurnInId="22278" X="-2827.24" Y="5060.84" Z="-15.4348" />
+		<TurnIn QuestName="Vengeful Souls" QuestId="10842" TurnInName="High Priest Orglum" TurnInId="22278" X="-2827.24" Y="5060.84" Z="-15.4348" />
 		<If Condition="(Me.Level &gt;= 63) &amp;&amp; IsQuestCompleted(10840)">
 			<PickUp QuestName="Recover the Bones" QuestId="10030" GiverName="Soolaveen" GiverId="18675" X="-2783.1" Y="5082.39" Z="-8.1838" />
 		</If>
+		<TurnIn QuestName="The Outcast's Plight" QuestId="10917" TurnInName="Vekax" TurnInId="22429" X="-1668.65" Y="5531.65" Z="2.3351" />
 		<TurnIn QuestName="A Personal Favor" QuestId="10112" TurnInName="Wind Trader Lathrai" TurnInId="18484" X="-1741.71" Y="5191.84" Z="-40.1258" />
 		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10112)">
 			<PickUp QuestName="Investigate Tuurem" QuestId="9990" GiverName="Wind Trader Lathrai" GiverId="18484" X="-1741.71" Y="5191.84" Z="-40.1258" />
@@ -1028,31 +976,10 @@
 			<PickUp QuestName="For the Fallen" QuestId="10920" GiverName="Vindicator Haylen" GiverId="22462" X="-3742.69" Y="4398.95" Z="-0.2951" />
 		</If>
 		<Objective QuestName="For the Fallen" QuestId="10920" Type="KillMob" MobId="18467" KillCount="20" />
-		<Objective QuestName="Strained Supplies" QuestId="10017" Type="CollectItem" ItemId="25802" CollectCount="8" />
 		<TurnIn QuestName="For the Fallen" QuestId="10920" TurnInName="Vindicator Haylen" TurnInId="22462" X="-3742.69" Y="4398.95" Z="-0.2951" />
-		<!-- SKIP Q10921 Terokkarantula: group quest (3 players) -->
-		<Objective QuestName="Terokkarantula" QuestId="10921" Type="KillMob" MobId="20682" KillCount="1" />
-		<!-- REVIEW Q10921 Terokkarantula: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10921)) &amp;&amp; (IsQuestCompleted(10921)))">
-			<TurnIn QuestName="Terokkarantula" QuestId="10921" TurnInName="Vindicator Haylen" TurnInId="22462" X="-3742.69" Y="4398.95" Z="-0.2951" />
-		</If>
-		<If Condition="((HasQuest(10921)) &amp;&amp; (!IsQuestCompleted(10921)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10921" Type="Incomplete" />
-		</If>
-		<If Condition="(Me.Level &gt;= 63) &amp;&amp; IsQuestCompleted(10921)">
-			<PickUp QuestName="Return to Sha'tari Base Camp" QuestId="10926" GiverName="Vindicator Haylen" GiverId="22462" X="-3742.69" Y="4398.95" Z="-0.2951" />
-		</If>
 		<Objective QuestName="Helping the Lost Find Their Way" QuestId="10031" Type="KillMob" MobId="18460" KillCount="10" />
 		<Objective QuestName="Helping the Lost Find Their Way" QuestId="10031" Type="KillMob" MobId="16805" KillCount="10" />
-		<!-- REVIEW Q10930 The Big Bone Worm: group quest (3 players); item 31826 Enormous Bone Worm Organs has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10930)) &amp;&amp; (IsQuestCompleted(10930)))">
-			<TurnIn QuestName="The Big Bone Worm" QuestId="10930" TurnInName="Dwarfowitz" TurnInId="22481" X="-3742.71" Y="5410.3" Z="-3.2512" />
-		</If>
-		<If Condition="((HasQuest(10930)) &amp;&amp; (!IsQuestCompleted(10930)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10930" Type="Incomplete" />
-		</If>
 		<TurnIn QuestName="The Dread Relic" QuestId="10877" TurnInName="Oakun" TurnInId="22456" X="-3755.23" Y="5405.95" Z="-3.3149" />
-		<!-- SKIP Q10923 Evil Draws Near: group quest (3 players) -->
 		<TurnIn QuestName="A Hero Is Needed" QuestId="10914" TurnInName="Commander Ra'vaj" TurnInId="22446" X="-3740.01" Y="5409.07" Z="-3.2495" />
 		<If Condition="(Me.Level &gt;= 63) &amp;&amp; IsQuestCompleted(10914)">
 			<PickUp QuestName="The Fallen Exarch" QuestId="10915" GiverName="Commander Ra'vaj" GiverId="22446" X="-3740.01" Y="5409.07" Z="-3.2495" />
@@ -1064,27 +991,6 @@
 		<If Condition="((HasQuest(10873)) &amp;&amp; (!IsQuestCompleted(10873)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10873" Type="Incomplete" />
 		</If>
-		<TurnIn QuestName="Return to Sha'tari Base Camp" QuestId="10926" TurnInName="Scout Navrin" TurnInId="22364" X="-3723.72" Y="5385.68" Z="-2.5349" />
-		<!-- REVIEW Q10861 Veil Lithic: Preemptive Strike: kill 22337 Malevolent Hatchling x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10861)) &amp;&amp; (IsQuestCompleted(10861)))">
-			<TurnIn QuestName="Veil Lithic: Preemptive Strike" QuestId="10861" TurnInName="Kirrik the Awakened" TurnInId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
-		</If>
-		<If Condition="((HasQuest(10861)) &amp;&amp; (!IsQuestCompleted(10861)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10861" Type="Incomplete" />
-		</If>
-		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10861)">
-			<PickUp QuestName="Veil Shalas: Signal Fires" QuestId="10874" GiverName="Kirrik the Awakened" GiverId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
-		</If>
-		<TurnIn QuestName="Helping the Lost Find Their Way" QuestId="10031" TurnInName="Soolaveen" TurnInId="18675" X="-2783.1" Y="5082.39" Z="-8.1838" />
-		<If Condition="(Me.Level &gt;= 63)">
-			<PickUp QuestName="Skywing" QuestId="10898" GiverName="Skywing" GiverId="22424" X="-3605.72" Y="4175.58" Z="-0.0318" />
-		</If>
-		<Objective QuestName="Veil Shalas: Signal Fires" QuestId="10874" Type="UseObject" ObjectId="185219" UseCount="1" />
-		<Objective QuestName="Veil Shalas: Signal Fires" QuestId="10874" Type="UseObject" ObjectId="185218" UseCount="1" />
-		<Objective QuestName="Veil Shalas: Signal Fires" QuestId="10874" Type="UseObject" ObjectId="185217" UseCount="1" />
-		<Objective QuestName="Veil Shalas: Signal Fires" QuestId="10874" Type="UseObject" ObjectId="185216" UseCount="1" />
-		<Objective QuestName="The Outcast's Plight" QuestId="10917" Type="CollectItem" ItemId="25719" CollectCount="30" />
-		<CustomBehavior File="UseItemOn" QuestId="10923" ItemId="31811" MobId="22441" NumOfTimes="1" Range="5" CollectionDistance="200" X="-3400.86" Y="4665.3" Z="99.6544" />
 		<!-- REVIEW Q10915 The Fallen Exarch: goal 22452 Reanimated Exarch x1: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(10915)) &amp;&amp; (IsQuestCompleted(10915)))">
 			<TurnIn QuestName="The Fallen Exarch" QuestId="10915" TurnInName="Commander Ra'vaj" TurnInId="22446" X="-3740.01" Y="5409.07" Z="-3.2495" />
@@ -1092,17 +998,14 @@
 		<If Condition="((HasQuest(10915)) &amp;&amp; (!IsQuestCompleted(10915)))">
 			<CustomBehavior File="AbandonQuest" QuestId="10915" Type="Incomplete" />
 		</If>
-		<!-- REVIEW Q10923 Evil Draws Near: group quest (3 players). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10923)) &amp;&amp; (IsQuestCompleted(10923)))">
-			<TurnIn QuestName="Evil Draws Near" QuestId="10923" TurnInName="Oakun" TurnInId="22456" X="-3755.23" Y="5405.95" Z="-3.3149" />
+		<!-- REVIEW Q10861 Veil Lithic: Preemptive Strike: kill 22337 Malevolent Hatchling x3: kill credit or scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10861)) &amp;&amp; (IsQuestCompleted(10861)))">
+			<TurnIn QuestName="Veil Lithic: Preemptive Strike" QuestId="10861" TurnInName="Kirrik the Awakened" TurnInId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
 		</If>
-		<If Condition="((HasQuest(10923)) &amp;&amp; (!IsQuestCompleted(10923)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10923" Type="Incomplete" />
+		<If Condition="((HasQuest(10861)) &amp;&amp; (!IsQuestCompleted(10861)))">
+			<CustomBehavior File="AbandonQuest" QuestId="10861" Type="Incomplete" />
 		</If>
-		<TurnIn QuestName="Veil Shalas: Signal Fires" QuestId="10874" TurnInName="Kirrik the Awakened" TurnInId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
-		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10874)">
-			<PickUp QuestName="Return to Shattrath" QuestId="10889" GiverName="Kirrik the Awakened" GiverId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
-		</If>
+		<TurnIn QuestName="Helping the Lost Find Their Way" QuestId="10031" TurnInName="Soolaveen" TurnInId="18675" X="-2783.1" Y="5082.39" Z="-8.1838" />
 		<TurnIn QuestName="Torgos!" QuestId="10035" TurnInName="Taela Everstride" TurnInId="18704" X="-2923.09" Y="3945.71" Z="0.8529" />
 		<TurnIn QuestName="Ezekiel" QuestId="10228" TurnInName="Ezekiel" TurnInId="19715" X="-1786.58" Y="5493.6" Z="-12.3282" />
 		<!-- SKIP Q10231 What Book? I Don't See Any Book.: group quest (3 players) -->
@@ -1116,26 +1019,6 @@
 		<If Condition="(Me.Level &gt;= 64) &amp;&amp; IsQuestCompleted(10231)">
 			<PickUp QuestName="The Master's Grand Design?" QuestId="10251" GiverName='"Dirty" Larry' GiverId="19720" X="-1733.15" Y="5565.36" Z="-39.762" />
 		</If>
-		<TurnIn QuestName="Return to Shattrath" QuestId="10889" TurnInName="Rilak the Redeemed" TurnInId="22292" X="-1656.93" Y="5448.97" Z="-40.3227" />
-		<!-- REVIEW Q10898 Skywing: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10898)) &amp;&amp; (IsQuestCompleted(10898)))">
-			<TurnIn QuestName="Skywing" QuestId="10898" TurnInName="Rilak the Redeemed" TurnInId="22292" X="-1656.93" Y="5448.97" Z="-40.3227" />
-		</If>
-		<If Condition="((HasQuest(10898)) &amp;&amp; (!IsQuestCompleted(10898)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10898" Type="Incomplete" />
-		</If>
-		<If Condition="(Me.Level &gt;= 62) &amp;&amp; IsQuestCompleted(10889)">
-			<PickUp QuestName="The Skettis Offensive" QuestId="10879" GiverName="Defender Grashna" GiverId="22373" X="-1655.31" Y="5459.34" Z="-40.3227" />
-		</If>
-		<!-- REVIEW Q10879 The Skettis Offensive: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(10879)) &amp;&amp; (IsQuestCompleted(10879)))">
-			<TurnIn QuestName="The Skettis Offensive" QuestId="10879" TurnInName="Rilak the Redeemed" TurnInId="22292" X="-1656.93" Y="5448.97" Z="-40.3227" />
-		</If>
-		<If Condition="((HasQuest(10879)) &amp;&amp; (!IsQuestCompleted(10879)))">
-			<CustomBehavior File="AbandonQuest" QuestId="10879" Type="Incomplete" />
-		</If>
-		<TurnIn QuestName="The Outcast's Plight" QuestId="10917" TurnInName="Vekax" TurnInId="22429" X="-1668.65" Y="5531.65" Z="2.3351" />
-		<TurnIn QuestName="Strained Supplies" QuestId="10017" TurnInName="Sha'nir" TurnInId="18597" X="-1606.39" Y="5292.01" Z="-38.5767" />
 		<CustomBehavior File="LoadProfile" ProfileName="Ding80_Nagrand" />
 	</QuestOrder>
 </HBProfile>

@@ -1637,6 +1637,6 @@
 		<If Condition="((HasQuest(12019)) &amp;&amp; (!IsQuestCompleted(12019)))">
 			<CustomBehavior File="AbandonQuest" QuestId="12019" Type="Incomplete" />
 		</If>
-		<CustomBehavior File="LoadProfile" ProfileName="Ding80_Dragonblight" />
+		<CustomBehavior File="Message" Text="Zygor Ding80\Borean Tundra: done for today" LogColor="Green" />
 	</QuestOrder>
 </HBProfile>

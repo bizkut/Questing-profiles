@@ -16,16 +16,16 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Corporal Bluth" Entry="734" Type="Food" X="-11295.8" Y="-201.343" Z="75.7853" />
 		<Vendor Name="Nixxrax Fillamug" Entry="2832" Type="Food" X="-14451.7" Y="495.417" Z="15.1901" />
 		<Vendor Name="Barkeep Kelly" Entry="2366" Type="Food" X="-849.45" Y="-583.486" Z="11.7881" />
 		<Vendor Name="Innkeeper Skindle" Entry="6807" Type="Food" X="-14457.7" Y="495.348" Z="15.2129" />
 		<Vendor Name="Innkeeper Anderson" Entry="2352" Type="Food" X="-857.096" Y="-570.751" Z="11.1649" />
+		<Vendor Name="Joachim Brenlow" Entry="1311" Type="Food" X="-9086" Y="829.043" Z="108.604" />
 		<Vendor Name="Jaquilina Dramet" Entry="2483" Type="Repair" X="-11622.1" Y="-60.6165" Z="11.038" />
 		<Vendor Name="Jannos Ironwill" Entry="1471" Type="Repair" X="-1278.57" Y="-2522" Z="21.4577" />
-		<Vendor Name="Jutak" Entry="2843" Type="Repair" X="-14467.8" Y="468.374" Z="15.1064" />
 		<Vendor Name="Qixdi Goodstitch" Entry="2849" Type="Repair" X="-14468.3" Y="424.603" Z="25.4592" />
-		<Vendor Name="Ingrys Stonebrow" Entry="5155" Type="Repair" X="-4596.43" Y="-1016.03" Z="512.041" />
+		<Vendor Name="Robert Aebischer" Entry="3543" Type="Repair" X="-815.529" Y="-572.187" Z="15.3116" />
+		<Vendor Name="Tandaan Lightmane" Entry="3953" Type="Repair" X="2754.85" Y="-292.216" Z="111.192" />
 	</Vendors>
 
 	<AvoidMobs />
@@ -34,16 +34,6 @@
 
 	<Mailboxes />
 
-	<Quest Id="2922" Name="Save Techbot's Brain!">
-		<Objective Type="CollectItem" ItemId="9277" CollectCount="1">
-			<CollectFrom>
-				<Mob Name="Techbot" Id="6231" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-4925.46" Y="827.751" Z="247.47" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="689" Name="A King's Tribute">
 		<Objective Type="CollectItem" ItemId="4521" CollectCount="5">
 			<CollectFrom>
@@ -55,57 +45,6 @@
 				<Hotspot X="-196.545" Y="-313.81" Z="74.0239" />
 				<Hotspot X="-203.451" Y="-378.424" Z="48.6637" />
 				<Hotspot X="-137.529" Y="-379.939" Z="53.2472" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="2928" Name="Gyrodrillmatic Excavationators">
-		<Objective Type="CollectItem" ItemId="9309" CollectCount="24">
-			<CollectFrom>
-				<Mob Name="Caverndeep Invader" Id="6208" />
-				<Mob Name="Irradiated Invader" Id="6213" />
-				<Mob Name="Techbot" Id="6231" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-5165.83" Y="910.628" Z="257.177" />
-				<Hotspot X="-5151.02" Y="850.722" Z="255.216" />
-				<Hotspot X="-5082.4" Y="832.847" Z="257.177" />
-				<Hotspot X="-5059.66" Y="772.96" Z="260.553" />
-				<Hotspot X="-4994.64" Y="731.707" Z="256.496" />
-				<Hotspot X="-4925.46" Y="827.751" Z="247.47" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="2948" Name="Gnome Improvement">
-		<Objective Type="CollectItem" ItemId="2842" CollectCount="1">
-			<CollectFrom>
-				<GameObject Name="Battered Chest" Id="106318" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-5229.76" Y="514.666" Z="387.61" />
-				<Hotspot X="-5070.62" Y="484.583" Z="401.485" />
-				<Hotspot X="-5192.4" Y="23.6719" Z="363.003" />
-				<Hotspot X="-5407.39" Y="-127.371" Z="368.263" />
-				<Hotspot X="-5479.81" Y="-217.343" Z="354.253" />
-				<Hotspot X="-5493.27" Y="-341.81" Z="354.891" />
-				<Hotspot X="-5556.28" Y="520.588" Z="382.427" />
-				<Hotspot X="-5599.9" Y="647.107" Z="384.562" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="CollectItem" ItemId="1206" CollectCount="1">
-			<CollectFrom>
-				<Mob Name="Caverndeep Looter" Id="6209" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-5146.4" Y="880.43" Z="252.803" />
-				<Hotspot X="-5077.93" Y="849.784" Z="253.641" />
-				<Hotspot X="-4912.11" Y="763.749" Z="249.497" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="633" Name="The Thandol Span">
-		<Objective Type="UseObject" ObjectId="2704" UseCount="1">
-			<Hotspots>
-				<Hotspot X="-2246.43" Y="-2623.17" Z="77.6971" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -225,61 +164,6 @@
 				<Hotspot X="2690.66" Y="-2984.4" Z="142.799" />
 				<Hotspot X="2742.63" Y="-2915.09" Z="145.202" />
 				<Hotspot X="2852.79" Y="-2872.29" Z="198.688" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="1012" Name="Insane Druids">
-		<Objective Type="KillMob" MobId="3940" KillCount="1">
-			<Hotspots>
-				<Hotspot X="1829" Y="-2750.57" Z="83.1342" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="3942" KillCount="1">
-			<Hotspots>
-				<Hotspot X="1820.95" Y="-2628.07" Z="61.2105" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="3941" KillCount="1">
-			<Hotspots>
-				<Hotspot X="1877.13" Y="-2795.66" Z="37.6753" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="9522" Name="Never Again!">
-		<Objective Type="KillMob" MobId="17300" KillCount="1">
-			<Hotspots>
-				<Hotspot X="1723.76" Y="-3478.09" Z="144.405" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="6072" KillCount="1">
-			<Hotspots>
-				<Hotspot X="1418.35" Y="-2853" Z="133.351" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="1221" Name="Blueleaf Tubers">
-		<Objective Type="CollectItem" ItemId="5880" CollectCount="1">
-			<CollectFrom>
-				<GameObject Name="Crate with Holes" Id="21277" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-930.227" Y="-3693.21" Z="7.7695" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="CollectItem" ItemId="5897" CollectCount="1">
-			<CollectFrom>
-				<GameObject Name="Snufflenose Owner's Manual" Id="21530" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-929.441" Y="-3693.2" Z="8.7088" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="CollectItem" ItemId="6684" CollectCount="1">
-			<CollectFrom>
-				<GameObject Name="Snufflenose Command Sticks" Id="68865" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-928.168" Y="-3694.26" Z="7.475" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -499,18 +383,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="555" Name="Soothing Turtle Bisque">
-		<Objective Type="CollectItem" ItemId="3712" CollectCount="10">
-			<CollectFrom>
-				<Mob Name="Snapjaw" Id="2408" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-750.862" Y="-723.454" Z="6.515" />
-				<Hotspot X="-817.78" Y="-722.526" Z="5.9899" />
-				<Hotspot X="-679.263" Y="-737.658" Z="4.9945" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="500" Name="Crushridge Bounty">
 		<Objective Type="CollectItem" ItemId="2843" CollectCount="9">
 			<CollectFrom>
@@ -580,6 +452,20 @@
 				<Hotspot X="-1064.58" Y="-339.584" Z="-1" />
 				<Hotspot X="-1076.52" Y="-300.709" Z="0.7986" />
 				<Hotspot X="-1116.96" Y="-346.26" Z="-7.8898" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="555" Name="Soothing Turtle Bisque">
+		<Objective Type="CollectItem" ItemId="3712" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Snapjaw" Id="2408" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-817.78" Y="-722.526" Z="5.9899" />
+				<Hotspot X="-750.862" Y="-723.454" Z="6.515" />
+				<Hotspot X="-679.263" Y="-737.658" Z="4.9945" />
+				<Hotspot X="-607.361" Y="-751.986" Z="9.9872" />
+				<Hotspot X="-561.357" Y="-828.215" Z="5.543" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -790,7 +676,7 @@
 	</Quest>
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
-		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Leveling/Ding80GuidesAllianceTBCduo.lua: Ding80's Alliance Leveling Guides TBC duo\Levels (30-34) -->
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Leveling/Ding80GuidesAlliance.lua: Ding80's Alliance Leveling Guides\Levels (30-34) -->
 		<If Condition="Me.MapId != 0">
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Ding80_Levels (30-34)");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
@@ -799,24 +685,13 @@
 		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(637)">
 			<PickUp QuestName="Sara Balloo's Plea" QuestId="683" GiverName="Sara Balloo" GiverId="2695" X="-4924.32" Y="-1215.65" Z="502.594" />
 		</If>
-		<TurnIn QuestName="Tinkmaster Overspark" QuestId="2923" TurnInName="Tinkmaster Overspark" TurnInId="7944" X="-4834.77" Y="-1263.45" Z="501.951" />
-		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(2923)">
-			<PickUp QuestName="Save Techbot's Brain!" QuestId="2922" GiverName="Tinkmaster Overspark" GiverId="7944" X="-4834.77" Y="-1263.45" Z="501.951" />
-		</If>
-		<If Condition="(Me.Level &gt;= 20)">
-			<PickUp QuestName="The Day After" QuestId="2927" GiverName="Gnoarn" GiverId="6569" X="-4835.97" Y="-1260.58" Z="501.951" />
-		</If>
-		<If Condition="(Me.Level &gt;= 25)">
-			<PickUp QuestName="The Grand Betrayal" QuestId="2929" GiverName="High Tinker Mekkatorque" GiverId="7937" X="-4827.63" Y="-1257.16" Z="506.119" />
-		</If>
-		<If Condition="(Me.Level &gt;= 25)">
-			<PickUp QuestName="Data Rescue" QuestId="2930" GiverName="Master Mechanic Castpipe" GiverId="7950" X="-4823.04" Y="-1265.7" Z="501.951" />
-		</If>
-		<If Condition="(Me.Level &gt;= 24)">
-			<PickUp QuestName="Essential Artificials" QuestId="2924" GiverName="Klockmort Spannerspan" GiverId="6169" X="-4812.48" Y="-1250.62" Z="502.014" />
-		</If>
 		<If Condition="(Me.Level &gt;= 28)">
 			<PickUp QuestName="The Brassbolts Brothers" QuestId="1179" GiverName="Pilot Longbeard" GiverId="2092" X="-5065.23" Y="-1288.6" Z="502.047" />
+		</If>
+		<If Condition="((Me.Class == WoWClass.Warrior))">
+			<If Condition="((Me.Class == WoWClass.Warrior)) &amp;&amp; (Me.Level &gt;= 30)">
+				<PickUp QuestName="The Islander" QuestId="1718" GiverName="Kelv Sternhammer" GiverId="5113" X="-5047.54" Y="-1269.69" Z="510.408" />
+			</If>
 		</If>
 		<TurnIn QuestName="Sara Balloo's Plea" QuestId="683" TurnInName="King Magni Bronzebeard" TurnInId="2784" X="-4865.73" Y="-1022.67" Z="505.798" />
 		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(683)">
@@ -826,97 +701,26 @@
 		<If Condition="(Me.Level &gt;= 25) &amp;&amp; IsQuestCompleted(686)">
 			<PickUp QuestName="A King's Tribute" QuestId="689" GiverName="Grand Mason Marblesten" GiverId="2790" X="-5033.81" Y="-1022.23" Z="508.977" />
 		</If>
-		<TurnIn QuestName="The Day After" QuestId="2927" TurnInName="Ozzie Togglevolt" TurnInId="1268" X="-5498.29" Y="-457.874" Z="395.644" />
-		<If Condition="(Me.Level &gt;= 20) &amp;&amp; IsQuestCompleted(2927)">
-			<PickUp QuestName="Gnogaine" QuestId="2926" GiverName="Ozzie Togglevolt" GiverId="1268" X="-5498.29" Y="-457.874" Z="395.644" />
-		</If>
-		<Objective QuestName="Save Techbot's Brain!" QuestId="2922" Type="CollectItem" ItemId="9277" CollectCount="1" />
-		<Objective QuestName="Gyrodrillmatic Excavationators" QuestId="2928" Type="CollectItem" ItemId="9309" CollectCount="24" />
-		<If Condition="(Me.Level &gt;= 20)">
-			<PickUp QuestName="A Fine Mess" QuestId="2904" GiverName="Kernobee" GiverId="7850" X="-639.869" Y="71.6499" Z="-183.184" />
-		</If>
-		<If Condition="HasItem(9326) &amp;&amp; !HasQuest(2945) &amp;&amp; !IsQuestCompleted(2945) &amp;&amp; (Me.Level &gt;= 28)">
-			<PickUp QuestName="Grime-Encrusted Ring" QuestId="2945" GiverName="Grime-Encrusted Ring" GiverId="9326" GiverType="Item" />
-		</If>
-		<TurnIn QuestName="Grime-Encrusted Ring" QuestId="2945" TurnInName="The Sparklematic 5200" TurnInId="142487" TurnInType="Object" X="-519.316" Y="163.12" Z="-193.73" />
-		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(2945)">
-			<PickUp QuestName="Return of the Ring" QuestId="2947" GiverName="The Sparklematic 5200" GiverId="142487" GiverType="Object" X="-519.316" Y="163.12" Z="-193.73" />
-		</If>
-		<Objective QuestName="Gnome Improvement" QuestId="2948" Type="CollectItem" ItemId="2842" CollectCount="1" />
-		<Objective QuestName="Gnome Improvement" QuestId="2948" Type="CollectItem" ItemId="1206" CollectCount="1" />
-		<TurnIn QuestName="Return of the Ring" QuestId="2947" TurnInName="Talvash del Kissel" TurnInId="6826" X="-4588.3" Y="-1001.21" Z="503.657" />
-		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(2947)">
-			<PickUp QuestName="Gnome Improvement" QuestId="2948" GiverName="Talvash del Kissel" GiverId="6826" X="-4588.3" Y="-1001.21" Z="503.657" />
-		</If>
-		<TurnIn QuestName="Gnome Improvement" QuestId="2948" TurnInName="Talvash del Kissel" TurnInId="6826" X="-4588.3" Y="-1001.21" Z="503.657" />
 		<If Condition="((Me.Class == WoWClass.Warlock))">
 			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 30)">
 				<PickUp QuestName="Seeking Strahad" QuestId="1798" GiverName="Lago Blackwrench" GiverId="6120" X="-4618.12" Y="-1090.13" Z="501.452" />
 			</If>
-		</If>
-		<!-- REVIEW Q2924 Essential Artificials: item 9278 Essential Artificial has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(2924)) &amp;&amp; (IsQuestCompleted(2924)))">
-			<TurnIn QuestName="Essential Artificials" QuestId="2924" TurnInName="Klockmort Spannerspan" TurnInId="6169" X="-4812.48" Y="-1250.62" Z="502.014" />
-		</If>
-		<If Condition="((HasQuest(2924)) &amp;&amp; (!IsQuestCompleted(2924)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2924" Type="Incomplete" />
-		</If>
-		<!-- REVIEW Q2930 Data Rescue: item 9316 Prismatic Punch Card has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(2930)) &amp;&amp; (IsQuestCompleted(2930)))">
-			<TurnIn QuestName="Data Rescue" QuestId="2930" TurnInName="Master Mechanic Castpipe" TurnInId="7950" X="-4823.04" Y="-1265.7" Z="501.951" />
-		</If>
-		<If Condition="((HasQuest(2930)) &amp;&amp; (!IsQuestCompleted(2930)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2930" Type="Incomplete" />
-		</If>
-		<!-- REVIEW Q2929 The Grand Betrayal: use item 9326: target 7800 Mekgineer Thermaplugg has no spawn (kill credit or scripted event). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(2929)) &amp;&amp; (IsQuestCompleted(2929)))">
-			<TurnIn QuestName="The Grand Betrayal" QuestId="2929" TurnInName="High Tinker Mekkatorque" TurnInId="7937" X="-4827.63" Y="-1257.16" Z="506.119" />
-		</If>
-		<If Condition="((HasQuest(2929)) &amp;&amp; (!IsQuestCompleted(2929)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2929" Type="Incomplete" />
-		</If>
-		<TurnIn QuestName="Save Techbot's Brain!" QuestId="2922" TurnInName="Tinkmaster Overspark" TurnInId="7944" X="-4834.77" Y="-1263.45" Z="501.951" />
-		<If Condition="((Me.Class == WoWClass.Warrior))">
-			<If Condition="((Me.Class == WoWClass.Warrior)) &amp;&amp; (Me.Level &gt;= 30)">
-				<PickUp QuestName="The Islander" QuestId="1718" GiverName="Kelv Sternhammer" GiverId="5113" X="-5047.54" Y="-1269.69" Z="510.408" />
+			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 20)">
+				<PickUp QuestName="Gakin's Summons" QuestId="1717" GiverName="Lago Blackwrench" GiverId="6120" X="-4618.12" Y="-1090.13" Z="501.452" />
 			</If>
-		</If>
-		<!-- REVIEW Q2926 Gnogaine: item 9284 Full Leaden Collection Phial has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(2926)) &amp;&amp; (IsQuestCompleted(2926)))">
-			<TurnIn QuestName="Gnogaine" QuestId="2926" TurnInName="Ozzie Togglevolt" TurnInId="1268" X="-5498.29" Y="-457.874" Z="395.644" />
-		</If>
-		<If Condition="((HasQuest(2926)) &amp;&amp; (!IsQuestCompleted(2926)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2926" Type="Incomplete" />
-		</If>
-		<!-- REVIEW Q378 The Fury Runs Deep: item 3640 Head of Deepfury has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(378)) &amp;&amp; (IsQuestCompleted(378)))">
-			<TurnIn QuestName="The Fury Runs Deep" QuestId="378" TurnInName="Motley Garmason" TurnInId="1074" X="-2650.41" Y="-2443.47" Z="80.1627" />
-		</If>
-		<If Condition="((HasQuest(378)) &amp;&amp; (!IsQuestCompleted(378)))">
-			<CustomBehavior File="AbandonQuest" QuestId="378" Type="Incomplete" />
-		</If>
-		<If Condition="(Me.Level &gt;= 28)">
-			<PickUp QuestName="The Thandol Span" QuestId="631" GiverName="Rhag Garmason" GiverId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
-		</If>
-		<TurnIn QuestName="The Thandol Span" QuestId="631" TurnInName="Ebenezer Rustlocke's Corpse" TurnInId="2652" TurnInType="Object" X="-2367.14" Y="-2510.34" Z="75.344" />
-		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(631)">
-			<PickUp QuestName="The Thandol Span" QuestId="632" GiverName="Ebenezer Rustlocke's Corpse" GiverId="2652" GiverType="Object" X="-2367.14" Y="-2510.34" Z="75.344" />
-		</If>
-		<TurnIn QuestName="The Thandol Span" QuestId="632" TurnInName="Rhag Garmason" TurnInId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
-		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(632)">
-			<PickUp QuestName="The Thandol Span" QuestId="633" GiverName="Rhag Garmason" GiverId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28)">
 			<PickUp QuestName="MacKreel's Moonshine" QuestId="647" GiverName="Foggy MacKreel" GiverId="2696" X="-2356.74" Y="-2423.36" Z="74.8731" />
 		</If>
-		<Objective QuestName="The Thandol Span" QuestId="633" Type="UseObject" ObjectId="2704" UseCount="1" />
-		<TurnIn QuestName="The Thandol Span" QuestId="633" TurnInName="Rhag Garmason" TurnInId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
-		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(633)">
-			<PickUp QuestName="Plea To The Alliance" QuestId="634" GiverName="Rhag Garmason" GiverId="1075" X="-2650.06" Y="-2453.92" Z="80.2021" />
-		</If>
 		<TurnIn QuestName="Plea To The Alliance" QuestId="634" TurnInName="Captain Nials" TurnInId="2700" X="-1274.69" Y="-2516.63" Z="21.4792" />
 		<TurnIn QuestName="MacKreel's Moonshine" QuestId="647" TurnInName="Brewmeister Bilger" TurnInId="2705" X="-853.016" Y="-601.581" Z="4.5201" />
 		<TurnIn QuestName="Southshore" QuestId="538" TurnInName="Loremaster Dibbs" TurnInId="2277" X="-817.945" Y="-551.606" Z="15.4026" />
+		<If Condition="((Me.Class == WoWClass.Warlock))">
+			<TurnIn QuestName="Gakin's Summons" QuestId="1717" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
+			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 20)">
+				<PickUp QuestName="Devourer of Souls" QuestId="1716" GiverName="Gakin the Darkbinder" GiverId="6122" X="-8983" Y="1041.52" Z="101.487" />
+			</If>
+		</If>
 		<If Condition="(Me.Level &gt;= 24)">
 			<PickUp QuestName="Kayneth Stillwind" QuestId="4581" GiverName="Shindrell Swiftfire" GiverId="3845" X="2795.75" Y="-299.374" Z="107.183" />
 		</If>
@@ -981,9 +785,6 @@
 		</If>
 		<TurnIn QuestName="The Lost Chalice" QuestId="9519" TurnInName="Kayneth Stillwind" TurnInId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
 		<TurnIn QuestName="Forsaken Diseases" QuestId="1011" TurnInName="Kayneth Stillwind" TurnInId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
-		<If Condition="(Me.Level &gt;= 24) &amp;&amp; IsQuestCompleted(1011)">
-			<PickUp QuestName="Insane Druids" QuestId="1012" GiverName="Kayneth Stillwind" GiverId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
-		</If>
 		<TurnIn QuestName="Agents of Destruction" QuestId="9518" TurnInName="Sentinel Luciel Starwhisper" TurnInId="17287" X="2967.73" Y="-3259.6" Z="160.411" />
 		<!-- REVIEW Q9516 Destroy the Legion: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(9516)) &amp;&amp; (IsQuestCompleted(9516)))">
@@ -993,29 +794,13 @@
 			<CustomBehavior File="AbandonQuest" QuestId="9516" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="Diabolical Plans" QuestId="9520" TurnInName="Vindicator Vedaar" TurnInId="17303" X="2975.16" Y="-3287.29" Z="155.447" />
-		<If Condition="(Me.Level &gt;= 27) &amp;&amp; IsQuestCompleted(9520)">
-			<PickUp QuestName="Never Again!" QuestId="9522" GiverName="Vindicator Vedaar" GiverId="17303" X="2975.16" Y="-3287.29" Z="155.447" />
-		</If>
 		<TurnIn QuestName="Satyr Slaying!" QuestId="1032" TurnInName="Illiyana" TurnInId="3901" X="3001.16" Y="-3322.58" Z="152.267" />
-		<Objective QuestName="Never Again!" QuestId="9522" Type="KillMob" MobId="17300" KillCount="1" />
-		<Objective QuestName="Never Again!" QuestId="9522" Type="KillMob" MobId="6072" KillCount="1" />
-		<Objective QuestName="Insane Druids" QuestId="1012" Type="KillMob" MobId="3940" KillCount="1" />
-		<Objective QuestName="Insane Druids" QuestId="1012" Type="KillMob" MobId="3942" KillCount="1" />
-		<Objective QuestName="Insane Druids" QuestId="1012" Type="KillMob" MobId="3941" KillCount="1" />
-		<TurnIn QuestName="Insane Druids" QuestId="1012" TurnInName="Kayneth Stillwind" TurnInId="3848" X="2954.25" Y="-3215.41" Z="169.305" />
-		<TurnIn QuestName="Never Again!" QuestId="9522" TurnInName="Vindicator Vedaar" TurnInId="17303" X="2975.16" Y="-3287.29" Z="155.447" />
 		<If Condition="((Me.Class == WoWClass.Warlock))">
 			<TurnIn QuestName="Seeking Strahad" QuestId="1798" TurnInName="Strahad Farsan" TurnInId="6251" X="-785.912" Y="-3723.26" Z="40.5152" />
 			<If Condition="((Me.Class == WoWClass.Warlock)) &amp;&amp; (Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1798)">
 				<PickUp QuestName="Tome of the Cabal" QuestId="1758" GiverName="Strahad Farsan" GiverId="6251" X="-785.912" Y="-3723.26" Z="40.5152" />
 			</If>
 		</If>
-		<If Condition="(Me.Level &gt;= 20)">
-			<PickUp QuestName="Blueleaf Tubers" QuestId="1221" GiverName="Mebok Mizzyrix" GiverId="3446" X="-928.982" Y="-3697.23" Z="8.0664" />
-		</If>
-		<Objective QuestName="Blueleaf Tubers" QuestId="1221" Type="CollectItem" ItemId="5880" CollectCount="1" />
-		<Objective QuestName="Blueleaf Tubers" QuestId="1221" Type="CollectItem" ItemId="5897" CollectCount="1" />
-		<Objective QuestName="Blueleaf Tubers" QuestId="1221" Type="CollectItem" ItemId="6684" CollectCount="1" />
 		<If Condition="((Me.Class == WoWClass.Warrior))">
 			<TurnIn QuestName="The Islander" QuestId="1718" TurnInName="Klannoc Macleod" TurnInId="6236" X="-1709.14" Y="-4330.07" Z="4.3339" />
 			<If Condition="((Me.Class == WoWClass.Warrior)) &amp;&amp; (Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(1718)">
@@ -1058,26 +843,6 @@
 			<PickUp QuestName="Lonebrow's Journal" QuestId="1100" GiverName="Henrig Lonebrow's Journal" GiverId="5791" GiverType="Item" />
 		</If>
 		<TurnIn QuestName="Lonebrow's Journal" QuestId="1100" TurnInName="Falfindel Waywarder" TurnInId="4048" X="-4524.14" Y="-787.884" Z="-41.5917" />
-		<If Condition="(Me.Level &gt;= 23) &amp;&amp; IsQuestCompleted(1100)">
-			<PickUp QuestName="The Crone of the Kraul" QuestId="1101" GiverName="Falfindel Waywarder" GiverId="4048" X="-4524.14" Y="-787.884" Z="-41.5917" />
-		</If>
-		<If Condition="(Me.Level &gt;= 22)">
-			<PickUp QuestName="Willix the Importer" QuestId="1144" GiverName="Willix the Importer" GiverId="4508" X="2194.38" Y="1791.69" Z="65.5727" />
-		</If>
-		<!-- REVIEW Q1144 Willix the Importer: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(1144)) &amp;&amp; (IsQuestCompleted(1144)))">
-			<TurnIn QuestName="Willix the Importer" QuestId="1144" TurnInName="Willix the Importer" TurnInId="4508" X="2194.38" Y="1791.69" Z="65.5727" />
-		</If>
-		<If Condition="((HasQuest(1144)) &amp;&amp; (!IsQuestCompleted(1144)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1144" Type="Incomplete" />
-		</If>
-		<!-- REVIEW Q1101 The Crone of the Kraul: item 5792 Razorflank's Medallion has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(1101)) &amp;&amp; (IsQuestCompleted(1101)))">
-			<TurnIn QuestName="The Crone of the Kraul" QuestId="1101" TurnInName="Falfindel Waywarder" TurnInId="4048" X="-4524.14" Y="-787.884" Z="-41.5917" />
-		</If>
-		<If Condition="((HasQuest(1101)) &amp;&amp; (!IsQuestCompleted(1101)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1101" Type="Incomplete" />
-		</If>
 		<If Condition="((Me.Class == WoWClass.Warlock))">
 			<Objective QuestName="Tome of the Cabal" QuestId="1802" Type="CollectItem" ItemId="6997" CollectCount="1" />
 		</If>
@@ -1121,13 +886,6 @@
 			<PickUp QuestName="Goblin Sponsorship" QuestId="1178" GiverName="Pozzik" GiverId="4630" X="-6192.6" Y="-3961.18" Z="-58.6667" />
 		</If>
 		<TurnIn QuestName="A Bump in the Road" QuestId="1175" TurnInName="Trackmaster Zherin" TurnInId="4629" X="-6253.28" Y="-4025.25" Z="-58.6667" />
-		<!-- REVIEW Q1221 Blueleaf Tubers: item 5876 Blueleaf Tuber has no drop or chest near the guide coordinates. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(1221)) &amp;&amp; (IsQuestCompleted(1221)))">
-			<TurnIn QuestName="Blueleaf Tubers" QuestId="1221" TurnInName="Mebok Mizzyrix" TurnInId="3446" X="-928.982" Y="-3697.23" Z="8.0664" />
-		</If>
-		<If Condition="((HasQuest(1221)) &amp;&amp; (!IsQuestCompleted(1221)))">
-			<CustomBehavior File="AbandonQuest" QuestId="1221" Type="Incomplete" />
-		</If>
 		<TurnIn QuestName="Goblin Sponsorship" QuestId="1178" TurnInName="Gazlowe" TurnInId="3391" X="-835.563" Y="-3728.66" Z="26.3746" />
 		<If Condition="(Me.Level &gt;= 29) &amp;&amp; IsQuestCompleted(1178)">
 			<PickUp QuestName="Goblin Sponsorship" QuestId="1180" GiverName="Gazlowe" GiverId="3391" X="-835.563" Y="-3728.66" Z="26.3746" />
@@ -1136,13 +894,6 @@
 		<TurnIn QuestName="Goblin Sponsorship" QuestId="1180" TurnInName="Wharfmaster Lozgil" TurnInId="4631" X="-14298.2" Y="539.636" Z="8.9337" />
 		<If Condition="(Me.Level &gt;= 29) &amp;&amp; IsQuestCompleted(1180)">
 			<PickUp QuestName="Goblin Sponsorship" QuestId="1181" GiverName="Wharfmaster Lozgil" GiverId="4631" X="-14298.2" Y="539.636" Z="8.9337" />
-		</If>
-		<!-- REVIEW Q2904 A Fine Mess: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(2904)) &amp;&amp; (IsQuestCompleted(2904)))">
-			<TurnIn QuestName="A Fine Mess" QuestId="2904" TurnInName="Scooty" TurnInId="7853" X="-14464.9" Y="459.585" Z="15.2488" />
-		</If>
-		<If Condition="((HasQuest(2904)) &amp;&amp; (!IsQuestCompleted(2904)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2904" Type="Incomplete" />
 		</If>
 		<If Condition="(Me.Level &gt;= 30)">
 			<PickUp QuestName="Singing Blue Shards" QuestId="605" GiverName="Crank Fizzlebub" GiverId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
@@ -1170,13 +921,15 @@
 		<If Condition="(Me.Level &gt;= 29) &amp;&amp; IsQuestCompleted(1181)">
 			<PickUp QuestName="Goblin Sponsorship" QuestId="1182" GiverName="Baron Revilgaz" GiverId="2496" X="-14439" Y="483.483" Z="28.9285" />
 		</If>
+		<If Condition="(Me.Level &gt;= 30)">
+			<PickUp QuestName="Scaring Shaky" QuestId="606" GiverName='"Sea Wolf" MacKinley' GiverId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
+		</If>
 		<If Condition="(Me.Level &gt;= 26)">
 			<PickUp QuestName="Supply and Demand" QuestId="575" GiverName="Drizzlik" GiverId="2495" X="-14469.6" Y="415.382" Z="25.452" />
 		</If>
 		<If Condition="(Me.Level &gt;= 29)">
 			<PickUp QuestName="Bartolo's Yeti Fur Cloak" QuestId="565" GiverName="Bartolo Ginsetti" GiverId="2438" X="-784.662" Y="-515.103" Z="17.7243" />
 		</If>
-		<Objective QuestName="Soothing Turtle Bisque" QuestId="555" Type="CollectItem" ItemId="3712" CollectCount="10" />
 		<If Condition="(Me.Level &gt;= 30)">
 			<PickUp QuestName="Crushridge Bounty" QuestId="500" GiverName="Marshal Redpath" GiverId="2263" X="-852.928" Y="-516.48" Z="12.185" />
 		</If>
@@ -1219,6 +972,7 @@
 		</If>
 		<Objective QuestName="Stormwind Ho!" QuestId="562" Type="KillMob" MobId="2369" KillCount="10" />
 		<Objective QuestName="Stormwind Ho!" QuestId="562" Type="KillMob" MobId="2371" KillCount="10" />
+		<Objective QuestName="Soothing Turtle Bisque" QuestId="555" Type="CollectItem" ItemId="3712" CollectCount="10" />
 		<Objective QuestName="Missing Crystals" QuestId="9435" Type="CollectItem" ItemId="23646" CollectCount="1" />
 		<Objective QuestName="A King's Tribute" QuestId="689" Type="CollectItem" ItemId="4521" CollectCount="5" />
 		<Objective QuestName="Bartolo's Yeti Fur Cloak" QuestId="565" Type="CollectItem" ItemId="3720" CollectCount="10" />
@@ -1278,7 +1032,6 @@
 				<PickUp QuestName="Tome of the Cabal" QuestId="1804" GiverName="Krom Stoutarm" GiverId="6294" X="-4618.8" Y="-1300.12" Z="503.465" />
 			</If>
 		</If>
-		<TurnIn QuestName="Gyrodrillmatic Excavationators" QuestId="2928" TurnInName="Shoni the Shilent" TurnInId="6579" X="-8391" Y="634.764" Z="94.89" />
 		<TurnIn QuestName="Reassignment" QuestId="563" TurnInName="Major Samuelson" TurnInId="2439" X="-8421" Y="404.987" Z="120.886" />
 		<If Condition="(Me.Level &gt;= 30)">
 			<PickUp QuestName="The Perenolde Tiara" QuestId="543" GiverName="Count Remington Ridgewell" GiverId="2285" X="-8549.9" Y="386.121" Z="108.469" />
@@ -1314,15 +1067,8 @@
 			<PickUp QuestName="Bad Medicine" QuestId="204" GiverName="Sergeant Yohwa" GiverId="733" X="-11310.4" Y="-205.115" Z="75.3625" />
 		</If>
 		<TurnIn QuestName="Supplies to Private Thorsen" QuestId="198" TurnInName="Private Thorsen" TurnInId="738" X="-11313.9" Y="-202.766" Z="75.576" />
-		<If Condition="(Me.Level &gt;= 30)">
-			<PickUp QuestName="Jungle Secrets" QuestId="215" GiverName="Private Thorsen" GiverId="738" X="-11313.9" Y="-202.766" Z="75.576" />
-		</If>
 		<If Condition="(Me.Level &gt;= 32)">
 			<PickUp QuestName="Krazek's Cookery" QuestId="210" GiverName="Corporal Kaleb" GiverId="770" X="-11309.1" Y="-187.431" Z="75.6492" />
-		</If>
-		<TurnIn QuestName="Jungle Secrets" QuestId="215" TurnInName="Lieutenant Doren" TurnInId="469" X="-11296.9" Y="-206.689" Z="76.0002" />
-		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(215)">
-			<PickUp QuestName="Bookie Herod" QuestId="200" GiverName="Lieutenant Doren" GiverId="469" X="-11296.9" Y="-206.689" Z="76.0002" />
 		</If>
 		<If Condition="(Me.Level &gt;= 28)">
 			<PickUp QuestName="Welcome to the Jungle" QuestId="583" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
@@ -1342,10 +1088,6 @@
 		<Objective QuestName="Supply and Demand" QuestId="575" Type="CollectItem" ItemId="4053" CollectCount="2" />
 		<Objective QuestName="Panther Mastery" QuestId="190" Type="KillMob" MobId="683" KillCount="10" />
 		<Objective QuestName="Bad Medicine" QuestId="204" Type="CollectItem" ItemId="2634" CollectCount="1" />
-		<TurnIn QuestName="Bookie Herod" QuestId="200" TurnInName="Bookie Herod's Records" TurnInId="287" TurnInType="Object" X="-11567.5" Y="-565.939" Z="33.7841" />
-		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(200)">
-			<PickUp QuestName="The Hidden Key" QuestId="328" GiverName="Bookie Herod's Records" GiverId="287" GiverType="Object" X="-11567.5" Y="-565.939" Z="33.7841" />
-		</If>
 		<Objective QuestName="The Second Rebellion" QuestId="203" Type="KillMob" MobId="937" KillCount="15" />
 		<Objective QuestName="Bad Medicine" QuestId="204" Type="CollectItem" ItemId="2633" CollectCount="7" />
 		<TurnIn QuestName="Panther Mastery" QuestId="190" TurnInName="Sir S. J. Erlgadin" TurnInId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />

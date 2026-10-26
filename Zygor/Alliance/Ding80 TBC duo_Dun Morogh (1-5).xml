@@ -1,0 +1,284 @@
+<HBProfile>
+	<Name>Zygor Ding80 TBC duo\Dun Morogh (1-5)</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Adlin Pridedrift" Entry="829" Type="Food" X="-6225.24" Y="320.372" Z="383.3" />
+		<Vendor Name="Kreg Bilmn" Entry="1691" Type="Food" X="-5597.66" Y="-521.852" Z="399.738" />
+		<Vendor Name="Innkeeper Belm" Entry="1247" Type="Food" X="-5601.6" Y="-531.203" Z="399.737" />
+		<Vendor Name="Durnan Furcutter" Entry="836" Type="Repair" X="-6056.38" Y="385.213" Z="392.845" />
+		<Vendor Name="Rybrad Coldbank" Entry="945" Type="Repair" X="-6101.1" Y="390.569" Z="395.626" />
+		<Vendor Name="[DND] TAR Pedestal - Gems" Entry="26740" Type="Repair" X="-5643.59" Y="-488.297" Z="396.646" />
+		<Vendor Name="Grundel Harkin" Entry="1104" Type="Repair" X="-6104.5" Y="384.03" Z="395.626" />
+		<Vendor Name="Weapons Vendor" Entry="26309" Type="Repair" X="-5657.15" Y="-487.392" Z="400.061" />
+	</Vendors>
+
+	<AvoidMobs />
+
+	<Blackspots />
+
+	<Mailboxes />
+
+	<Quest Id="179" Name="Dwarven Outfitters">
+		<Objective Type="CollectItem" ItemId="750" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Ragged Timber Wolf" Id="704" />
+				<Mob Name="Ragged Young Wolf" Id="705" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6300.6" Y="381.503" Z="380.328" />
+				<Hotspot X="-6315.59" Y="341.114" Z="376.661" />
+				<Hotspot X="-6340.77" Y="308.916" Z="380.04" />
+				<Hotspot X="-6298.13" Y="301.962" Z="376.715" />
+				<Hotspot X="-6368.8" Y="362.586" Z="382.422" />
+				<Hotspot X="-6341.68" Y="399.397" Z="378.111" />
+				<Hotspot X="-6281.97" Y="424.786" Z="384.282" />
+				<Hotspot X="-6252.84" Y="387.126" Z="383.278" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="170" Name="A New Threat">
+		<Objective Type="KillMob" MobId="707" KillCount="6">
+			<Hotspots>
+				<Hotspot X="-6332.22" Y="269.696" Z="380.793" />
+				<Hotspot X="-6364.17" Y="235.656" Z="393.626" />
+				<Hotspot X="-6322.07" Y="208.885" Z="395.879" />
+				<Hotspot X="-6424.57" Y="242.535" Z="410.675" />
+				<Hotspot X="-6405.95" Y="289.275" Z="397.389" />
+				<Hotspot X="-6427.08" Y="335.416" Z="393.992" />
+				<Hotspot X="-6381.1" Y="342.258" Z="386.207" />
+				<Hotspot X="-6322.9" Y="320.929" Z="378.445" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="724" KillCount="6">
+			<Hotspots>
+				<Hotspot X="-6343.94" Y="290.787" Z="380.511" />
+				<Hotspot X="-6381.34" Y="310.343" Z="385.717" />
+				<Hotspot X="-6419.02" Y="326.417" Z="393.527" />
+				<Hotspot X="-6438.87" Y="395.094" Z="391.584" />
+				<Hotspot X="-6389.16" Y="438.166" Z="379.265" />
+				<Hotspot X="-6339.62" Y="361.6" Z="378.311" />
+				<Hotspot X="-6371.76" Y="242.244" Z="392.42" />
+				<Hotspot X="-6296.63" Y="244.471" Z="390.969" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="183" Name="The Boar Hunter">
+		<Objective Type="KillMob" MobId="708" KillCount="12">
+			<Hotspots>
+				<Hotspot X="-6179.47" Y="722.66" Z="386.236" />
+				<Hotspot X="-6153.28" Y="689.262" Z="391.38" />
+				<Hotspot X="-6147.43" Y="649.309" Z="388.417" />
+				<Hotspot X="-6147" Y="753.035" Z="392.022" />
+				<Hotspot X="-6184.77" Y="782.418" Z="391.434" />
+				<Hotspot X="-6211.01" Y="812.888" Z="418.312" />
+				<Hotspot X="-6222.85" Y="727.866" Z="386.919" />
+				<Hotspot X="-6254.81" Y="681.934" Z="386.439" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="182" Name="The Troll Cave">
+		<Objective Type="KillMob" MobId="706" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-6482.98" Y="501.095" Z="386.145" />
+				<Hotspot X="-6446.56" Y="528.505" Z="385.727" />
+				<Hotspot X="-6452.47" Y="464.686" Z="392.318" />
+				<Hotspot X="-6518.71" Y="466.018" Z="387.621" />
+				<Hotspot X="-6511.86" Y="418.936" Z="386.521" />
+				<Hotspot X="-6477.3" Y="389.722" Z="383.13" />
+				<Hotspot X="-6574.32" Y="409.03" Z="387.516" />
+				<Hotspot X="-6514.57" Y="631.529" Z="398.911" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3361" Name="A Refugee's Quandary">
+		<Objective Type="CollectItem" ItemId="10438" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Felix's Box" Id="148499" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6374.81" Y="773.704" Z="386.213" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="16313" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Felix's Chest" Id="178084" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6503.89" Y="680.367" Z="387.274" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="16314" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Felix's Bucket of Bolts" Id="178085" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6480.01" Y="505.256" Z="385.988" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1599" Name="Beginnings">
+		<Objective Type="CollectItem" ItemId="6753" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Frostmane Novice" Id="946" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6512.54" Y="313.134" Z="373.042" />
+				<Hotspot X="-6538.62" Y="354.985" Z="371.876" />
+				<Hotspot X="-6588.03" Y="374.293" Z="389.947" />
+				<Hotspot X="-6581.86" Y="319.805" Z="386.869" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="218" Name="The Stolen Journal">
+		<Objective Type="CollectItem" ItemId="2004" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Grik'nir the Cold" Id="808" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6508.82" Y="300.758" Z="370.446" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Leveling/Ding80GuidesAllianceTBCduo.lua: Ding80's Alliance Leveling Guides TBC duo\Dun Morogh (1-5) -->
+		<If Condition="Me.MapId != 0">
+			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Ding80 TBC duo_Dun Morogh (1-5)");' />
+			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Eastern Kingdoms" />
+		</If>
+		<PickUp QuestName="Dwarven Outfitters" QuestId="179" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		<Objective QuestName="Dwarven Outfitters" QuestId="179" Type="CollectItem" ItemId="750" CollectCount="8" />
+		<TurnIn QuestName="Dwarven Outfitters" QuestId="179" TurnInName="Sten Stoutarm" TurnInId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		<If Condition="IsQuestCompleted(179)">
+			<PickUp QuestName="Coldridge Valley Mail Delivery" QuestId="233" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome)) &amp;&amp; ((Me.Class == WoWClass.Mage)) &amp;&amp; IsQuestCompleted(179)">
+			<PickUp QuestName="Glyphic Memorandum" QuestId="3114" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome)) &amp;&amp; ((Me.Class == WoWClass.Warrior)) &amp;&amp; IsQuestCompleted(179)">
+			<PickUp QuestName="Simple Memorandum" QuestId="3112" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome)) &amp;&amp; ((Me.Class == WoWClass.Warlock)) &amp;&amp; IsQuestCompleted(179)">
+			<PickUp QuestName="Tainted Memorandum" QuestId="3115" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Gnome)) &amp;&amp; ((Me.Class == WoWClass.Rogue)) &amp;&amp; IsQuestCompleted(179)">
+			<PickUp QuestName="Encrypted Memorandum" QuestId="3113" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf)) &amp;&amp; ((Me.Class == WoWClass.Warrior)) &amp;&amp; IsQuestCompleted(179)">
+			<PickUp QuestName="Simple Rune" QuestId="3106" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf)) &amp;&amp; ((Me.Class == WoWClass.Rogue)) &amp;&amp; IsQuestCompleted(179)">
+			<PickUp QuestName="Encrypted Rune" QuestId="3109" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf)) &amp;&amp; ((Me.Class == WoWClass.Priest)) &amp;&amp; IsQuestCompleted(179)">
+			<PickUp QuestName="Hallowed Rune" QuestId="3110" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf)) &amp;&amp; ((Me.Class == WoWClass.Paladin)) &amp;&amp; IsQuestCompleted(179)">
+			<PickUp QuestName="Consecrated Rune" QuestId="3107" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		</If>
+		<If Condition="((Me.Race == WoWRace.Dwarf)) &amp;&amp; ((Me.Class == WoWClass.Hunter)) &amp;&amp; IsQuestCompleted(179)">
+			<PickUp QuestName="Etched Rune" QuestId="3108" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		</If>
+		<If Condition="IsQuestCompleted(179)">
+			<PickUp QuestName="A New Threat" QuestId="170" GiverName="Balir Frosthammer" GiverId="713" X="-6216.53" Y="339.002" Z="383.454" />
+		</If>
+		<Objective QuestName="A New Threat" QuestId="170" Type="KillMob" MobId="707" KillCount="6" />
+		<Objective QuestName="A New Threat" QuestId="170" Type="KillMob" MobId="724" KillCount="6" />
+		<TurnIn QuestName="A New Threat" QuestId="170" TurnInName="Balir Frosthammer" TurnInId="713" X="-6216.53" Y="339.002" Z="383.454" />
+		<TurnIn QuestName="Coldridge Valley Mail Delivery" QuestId="233" TurnInName="Talin Keeneye" TurnInId="714" X="-6222.47" Y="688.973" Z="385.002" />
+		<If Condition="IsQuestCompleted(233)">
+			<PickUp QuestName="Coldridge Valley Mail Delivery" QuestId="234" GiverName="Talin Keeneye" GiverId="714" X="-6222.47" Y="688.973" Z="385.002" />
+		</If>
+		<PickUp QuestName="The Boar Hunter" QuestId="183" GiverName="Talin Keeneye" GiverId="714" X="-6222.47" Y="688.973" Z="385.002" />
+		<Objective QuestName="The Boar Hunter" QuestId="183" Type="KillMob" MobId="708" KillCount="12" />
+		<TurnIn QuestName="The Boar Hunter" QuestId="183" TurnInName="Talin Keeneye" TurnInId="714" X="-6222.47" Y="688.973" Z="385.002" />
+		<TurnIn QuestName="Coldridge Valley Mail Delivery" QuestId="234" TurnInName="Grelin Whitebeard" TurnInId="786" X="-6363" Y="567.085" Z="385.851" />
+		<PickUp QuestName="The Troll Cave" QuestId="182" GiverName="Grelin Whitebeard" GiverId="786" X="-6363" Y="567.085" Z="385.851" />
+		<If Condition="(Me.Level &gt;= 4)">
+			<PickUp QuestName="Scalding Mornbrew Delivery" QuestId="3364" GiverName="Nori Pridedrift" GiverId="12738" X="-6371.13" Y="571.816" Z="385.827" />
+		</If>
+		<If Condition="(Me.Level &gt;= 3)">
+			<PickUp QuestName="A Refugee's Quandary" QuestId="3361" GiverName="Felix Whindlebolt" GiverId="8416" X="-6098.09" Y="396.074" Z="395.64" />
+		</If>
+		<TurnIn QuestName="Scalding Mornbrew Delivery" QuestId="3364" TurnInName="Durnan Furcutter" TurnInId="836" X="-6056.38" Y="385.213" Z="392.845" />
+		<If Condition="(Me.Level &gt;= 4) &amp;&amp; IsQuestCompleted(3364)">
+			<PickUp QuestName="Bring Back the Mug" QuestId="3365" GiverName="Durnan Furcutter" GiverId="836" X="-6056.38" Y="385.213" Z="392.845" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Gnome) &amp;&amp; (Me.Class == WoWClass.Mage)))">
+			<TurnIn QuestName="Glyphic Memorandum" QuestId="3114" TurnInName="Marryk Nurribit" TurnInId="944" X="-6056.09" Y="388.175" Z="392.944" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Gnome) &amp;&amp; (Me.Class == WoWClass.Warrior)))">
+			<TurnIn QuestName="Simple Memorandum" QuestId="3112" TurnInName="Thran Khorman" TurnInId="912" X="-6084.77" Y="382.141" Z="395.626" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Gnome) &amp;&amp; (Me.Class == WoWClass.Warlock)))">
+			<TurnIn QuestName="Tainted Memorandum" QuestId="3115" TurnInName="Alamar Grimm" TurnInId="460" X="-6048.79" Y="391.078" Z="399.202" />
+			<!-- SKIP pickup Q1599 Beginnings: no quest giver with a spawn in the database -->
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Gnome) &amp;&amp; (Me.Class == WoWClass.Rogue)))">
+			<TurnIn QuestName="Encrypted Memorandum" QuestId="3113" TurnInName="Solm Hargrin" TurnInId="916" X="-6093.75" Y="404.918" Z="395.62" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Dwarf) &amp;&amp; (Me.Class == WoWClass.Warrior)))">
+			<TurnIn QuestName="Simple Rune" QuestId="3106" TurnInName="Thran Khorman" TurnInId="912" X="-6084.77" Y="382.141" Z="395.626" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Dwarf) &amp;&amp; (Me.Class == WoWClass.Rogue)))">
+			<TurnIn QuestName="Encrypted Rune" QuestId="3109" TurnInName="Solm Hargrin" TurnInId="916" X="-6093.75" Y="404.918" Z="395.62" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Dwarf) &amp;&amp; (Me.Class == WoWClass.Priest)))">
+			<TurnIn QuestName="Hallowed Rune" QuestId="3110" TurnInName="Branstock Khalder" TurnInId="837" X="-6056.74" Y="393.548" Z="392.843" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Dwarf) &amp;&amp; (Me.Class == WoWClass.Paladin)))">
+			<TurnIn QuestName="Consecrated Rune" QuestId="3107" TurnInName="Bromos Grummner" TurnInId="926" X="-6120.68" Y="382.089" Z="395.626" />
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Dwarf) &amp;&amp; (Me.Class == WoWClass.Hunter)))">
+			<TurnIn QuestName="Etched Rune" QuestId="3108" TurnInName="Thorgas Grimson" TurnInId="895" X="-6091.79" Y="365.141" Z="395.623" />
+		</If>
+		<Objective QuestName="A Refugee's Quandary" QuestId="3361" Type="CollectItem" ItemId="10438" CollectCount="1" />
+		<Objective QuestName="A Refugee's Quandary" QuestId="3361" Type="CollectItem" ItemId="16313" CollectCount="1" />
+		<Objective QuestName="A Refugee's Quandary" QuestId="3361" Type="CollectItem" ItemId="16314" CollectCount="1" />
+		<Objective QuestName="The Troll Cave" QuestId="182" Type="KillMob" MobId="706" KillCount="10" />
+		<TurnIn QuestName="Bring Back the Mug" QuestId="3365" TurnInName="Nori Pridedrift" TurnInId="12738" X="-6371.13" Y="571.816" Z="385.827" />
+		<TurnIn QuestName="The Troll Cave" QuestId="182" TurnInName="Grelin Whitebeard" TurnInId="786" X="-6363" Y="567.085" Z="385.851" />
+		<If Condition="IsQuestCompleted(182)">
+			<PickUp QuestName="The Stolen Journal" QuestId="218" GiverName="Grelin Whitebeard" GiverId="786" X="-6363" Y="567.085" Z="385.851" />
+		</If>
+		<Objective QuestName="The Stolen Journal" QuestId="218" Type="CollectItem" ItemId="2004" CollectCount="1" />
+		<Objective QuestName="Beginnings" QuestId="1599" Type="CollectItem" ItemId="6753" CollectCount="3" />
+		<TurnIn QuestName="The Stolen Journal" QuestId="218" TurnInName="Grelin Whitebeard" TurnInId="786" X="-6363" Y="567.085" Z="385.851" />
+		<If Condition="IsQuestCompleted(218)">
+			<PickUp QuestName="Senir's Observations" QuestId="282" GiverName="Grelin Whitebeard" GiverId="786" X="-6363" Y="567.085" Z="385.851" />
+		</If>
+		<TurnIn QuestName="A Refugee's Quandary" QuestId="3361" TurnInName="Felix Whindlebolt" TurnInId="8416" X="-6098.09" Y="396.074" Z="395.64" />
+		<If Condition="(((Me.Race == WoWRace.Gnome) &amp;&amp; (Me.Class == WoWClass.Warlock)))">
+			<!-- SKIP turn-in Q1599 Beginnings: no turn-in NPC with a spawn in the database -->
+			<If Condition="((HasQuest(1599)) &amp;&amp; (!IsQuestCompleted(1599)))">
+				<CustomBehavior File="AbandonQuest" QuestId="1599" Type="Incomplete" />
+			</If>
+		</If>
+		<If Condition="(((Me.Race == WoWRace.Dwarf) &amp;&amp; (Me.Class == WoWClass.Priest)))">
+			<If Condition="((Me.Class == WoWClass.Priest)) &amp;&amp; (Me.Level &gt;= 5) &amp;&amp; !IsQuestCompleted(5623) &amp;&amp; !HasQuest(5623) &amp;&amp; !IsQuestCompleted(9586) &amp;&amp; !HasQuest(9586)">
+				<PickUp QuestName="In Favor of the Light" QuestId="5626" GiverName="Branstock Khalder" GiverId="837" X="-6056.74" Y="393.548" Z="392.843" />
+			</If>
+		</If>
+		<TurnIn QuestName="Senir's Observations" QuestId="282" TurnInName="Mountaineer Thalos" TurnInId="1965" X="-6235.87" Y="152.989" Z="428.399" />
+		<If Condition="IsQuestCompleted(282)">
+			<PickUp QuestName="Senir's Observations" QuestId="420" GiverName="Mountaineer Thalos" GiverId="1965" X="-6235.87" Y="152.989" Z="428.399" />
+		</If>
+		<PickUp QuestName="Supplies to Tannok" QuestId="2160" GiverName="Hands Springsprocket" GiverId="6782" X="-6248.84" Y="135.042" Z="431.673" />
+		<TurnIn QuestName="Senir's Observations" QuestId="420" TurnInName="Senir Whitebeard" TurnInId="1252" X="-5644.37" Y="-499.163" Z="396.752" />
+		<CustomBehavior File="LoadProfile" ProfileName="Ding80 TBC duo_Main Guide (5-10)" />
+	</QuestOrder>
+</HBProfile>

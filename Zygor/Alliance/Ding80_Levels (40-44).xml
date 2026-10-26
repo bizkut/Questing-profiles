@@ -25,7 +25,7 @@
 		<Vendor Name="Jazzrik" Entry="9179" Type="Repair" X="-6760.19" Y="-3135.55" Z="241.247" />
 		<Vendor Name="Qixdi Goodstitch" Entry="2849" Type="Repair" X="-14468.3" Y="424.603" Z="25.4592" />
 		<Vendor Name="Jutak" Entry="2843" Type="Repair" X="-14467.8" Y="468.374" Z="15.1064" />
-		<Vendor Name="Raena Flinthammer" Entry="5108" Type="Repair" X="-4872.03" Y="-971.529" Z="505.157" />
+		<Vendor Name="Ardwyn Cailen" Entry="1312" Type="Repair" X="-8863" Y="805.137" Z="97.5224" />
 	</Vendors>
 
 	<AvoidMobs />
@@ -245,21 +245,12 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="1360" Name="Reclaimed Treasures">
-		<Objective Type="CollectItem" ItemId="8027" CollectCount="1">
-			<CollectFrom>
-				<GameObject Name="Krom Stoutarm's Chest" Id="124389" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-6279.4" Y="-2963.6" Z="223.618" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="715" Name="Liquid Stone">
 		<Objective Type="CollectItem" ItemId="929" CollectCount="1">
 			<CollectFrom>
 				<GameObject Name="Battered Chest" Id="106319" />
 				<GameObject Name="Solid Chest" Id="2850" />
+				<GameObject Name="Solid Chest" Id="2852" />
 			</CollectFrom>
 			<Hotspots>
 				<Hotspot X="-9584.66" Y="1508.62" Z="-2.2585" />
@@ -267,8 +258,8 @@
 				<Hotspot X="-9946.81" Y="1477.11" Z="39.8371" />
 				<Hotspot X="-9992.27" Y="1452.8" Z="41.4762" />
 				<Hotspot X="-9872.5" Y="1327.28" Z="43.0347" />
-				<Hotspot X="-10311.4" Y="1228.23" Z="37.501" />
 				<Hotspot X="-10205.6" Y="476.661" Z="27.0559" />
+				<Hotspot X="-10235.8" Y="392.371" Z="10.4135" />
 				<Hotspot X="-10205.7" Y="170.329" Z="27.2421" />
 			</Hotspots>
 		</Objective>
@@ -420,42 +411,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="2418" Name="Power Stones">
-		<Objective Type="CollectItem" ItemId="8009" CollectCount="8">
-			<CollectFrom>
-				<Mob Name="Shadowforge Surveyor" Id="4844" />
-				<Mob Name="Shadowforge Ruffian" Id="4845" />
-				<Mob Name="Shadowforge Digger" Id="4846" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-6083.14" Y="-3042.6" Z="250.989" />
-				<Hotspot X="-6117.44" Y="-3020.04" Z="220.655" />
-				<Hotspot X="-6153.97" Y="-2990.82" Z="216.382" />
-				<Hotspot X="-6105.86" Y="-2974.33" Z="207.25" />
-				<Hotspot X="-6135.16" Y="-2938.23" Z="208.764" />
-				<Hotspot X="-6151.7" Y="-3060.31" Z="225.265" />
-				<Hotspot X="-6112.42" Y="-3082.15" Z="252.204" />
-				<Hotspot X="-6070.42" Y="-3082.97" Z="250.159" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="CollectItem" ItemId="8052" CollectCount="8">
-			<CollectFrom>
-				<Mob Name="Shadowforge Surveyor" Id="4844" />
-				<Mob Name="Shadowforge Ruffian" Id="4845" />
-				<Mob Name="Shadowforge Digger" Id="4846" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-6083.14" Y="-3042.6" Z="250.989" />
-				<Hotspot X="-6117.44" Y="-3020.04" Z="220.655" />
-				<Hotspot X="-6153.97" Y="-2990.82" Z="216.382" />
-				<Hotspot X="-6105.86" Y="-2974.33" Z="207.25" />
-				<Hotspot X="-6135.16" Y="-2938.23" Z="208.764" />
-				<Hotspot X="-6151.7" Y="-3060.31" Z="225.265" />
-				<Hotspot X="-6112.42" Y="-3082.15" Z="252.204" />
-				<Hotspot X="-6070.42" Y="-3082.97" Z="250.159" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="732" Name="Tremors of the Earth">
 		<Objective Type="CollectItem" ItemId="4640" CollectCount="1">
 			<CollectFrom>
@@ -521,16 +476,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="709" Name="Solution to Doom">
-		<Objective Type="CollectItem" ItemId="4631" CollectCount="1">
-			<CollectFrom>
-				<GameObject Name="Ancient Chest" Id="126260" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-6201.66" Y="-3057.53" Z="212.239" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="710" Name="Study of the Elements: Rock">
 		<Objective Type="CollectItem" ItemId="4626" CollectCount="10">
 			<CollectFrom>
@@ -575,69 +520,6 @@
 				<Hotspot X="-7251.15" Y="-2114.87" Z="300.405" />
 				<Hotspot X="-7291.04" Y="-2118.21" Z="297.682" />
 				<Hotspot X="-7194.27" Y="-2102.41" Z="327.469" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="704" Name="Agmond's Fate">
-		<Objective Type="CollectItem" ItemId="4610" CollectCount="4">
-			<CollectFrom>
-				<GameObject Name="Carved Stone Urn" Id="2743" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-6082.54" Y="-2971.77" Z="209.072" />
-				<Hotspot X="-6120.48" Y="-3023.79" Z="220.767" />
-				<Hotspot X="-6090.06" Y="-3089.71" Z="244.347" />
-				<Hotspot X="-6054.63" Y="-3143.96" Z="253.707" />
-				<Hotspot X="-6155.14" Y="-3098.85" Z="223.09" />
-				<Hotspot X="-6195.83" Y="-3063.5" Z="215.167" />
-				<Hotspot X="-6161.03" Y="-2962.88" Z="210.048" />
-				<Hotspot X="-6118.4" Y="-2904.83" Z="211.556" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="17" Name="Uldaman Reagent Run">
-		<Objective Type="CollectItem" ItemId="8047" CollectCount="12">
-			<CollectFrom>
-				<GameObject Name="Magenta Cap Clusters" Id="126049" />
-				<GameObject Name="Magenta Cap Clusters" Id="128293" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-6061.82" Y="-3019.5" Z="230.494" />
-				<Hotspot X="-6096.92" Y="-2979.69" Z="207.402" />
-				<Hotspot X="-6142.52" Y="-3013.78" Z="220.446" />
-				<Hotspot X="-6138.42" Y="-3099.2" Z="223.775" />
-				<Hotspot X="-6064.14" Y="-3091.2" Z="250.611" />
-				<Hotspot X="-6118.81" Y="-2911.51" Z="210.97" />
-				<Hotspot X="-6294.55" Y="-2925.82" Z="232.211" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="722" Name="Amulet of Secrets">
-		<Objective Type="CollectItem" ItemId="4635" CollectCount="1">
-			<CollectFrom>
-				<Mob Name="Magregan Deepshadow" Id="2932" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-6190.17" Y="-3042.32" Z="220.489" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="2199" Name="Lore for a Price">
-		<Objective Type="CollectItem" ItemId="2842" CollectCount="5">
-			<CollectFrom>
-				<GameObject Name="Battered Chest" Id="106318" />
-				<GameObject Name="Battered Chest" Id="106319" />
-				<GameObject Name="Battered Chest" Id="2849" />
-				<GameObject Name="Solid Chest" Id="2850" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-5302.15" Y="-2723.45" Z="343.116" />
-				<Hotspot X="-4988.38" Y="-2944.47" Z="315.875" />
-				<Hotspot X="-4920.42" Y="-2993.18" Z="332.423" />
-				<Hotspot X="-5035.68" Y="-3346.79" Z="299.368" />
-				<Hotspot X="-5117.36" Y="-3315.32" Z="250.467" />
-				<Hotspot X="-5215.64" Y="-3321.71" Z="239.325" />
-				<Hotspot X="-6007.12" Y="-2957.26" Z="399.522" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -695,28 +577,6 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="600" Name="Venture Company Mining">
-		<Objective Type="CollectItem" ItemId="3917" CollectCount="10">
-			<CollectFrom>
-				<Mob Name="Venture Co. Strip Miner" Id="674" />
-				<Mob Name="Venture Co. Foreman" Id="675" />
-				<Mob Name="Venture Co. Surveyor" Id="676" />
-				<Mob Name="Venture Co. Tinkerer" Id="677" />
-				<Mob Name="Foreman Cozzle" Id="4723" />
-				<Mob Name="Verifonix" Id="14492" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-12973.6" Y="-415.973" Z="43.743" />
-				<Hotspot X="-13003" Y="-381.27" Z="30.7281" />
-				<Hotspot X="-13018.5" Y="-430.765" Z="39.8314" />
-				<Hotspot X="-13063" Y="-447.054" Z="45.3497" />
-				<Hotspot X="-13130.5" Y="-463.1" Z="49.7" />
-				<Hotspot X="-12979.7" Y="-462.423" Z="58.2229" />
-				<Hotspot X="-12930.2" Y="-483.789" Z="45.6186" />
-				<Hotspot X="-12930.5" Y="-432.272" Z="31.9485" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="617" Name="Akiris by the Bundle">
 		<Objective Type="CollectItem" ItemId="4029" CollectCount="10">
 			<CollectFrom>
@@ -748,17 +608,6 @@
 				<Hotspot X="-14007.4" Y="250.055" Z="17.3661" />
 				<Hotspot X="-13949.6" Y="215.246" Z="22.6267" />
 				<Hotspot X="-13953.3" Y="140.875" Z="13.7878" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="628" Name="Excelsior">
-		<Objective Type="CollectItem" ItemId="4105" CollectCount="1">
-			<CollectFrom>
-				<Mob Name="Elder Saltwater Crocolisk" Id="2635" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-11986.6" Y="603.381" Z="1.376" />
-				<Hotspot X="-12116.7" Y="349.741" Z="2.262" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -887,6 +736,16 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="630" Name="Message in a Bottle">
+		<Objective Type="CollectItem" ItemId="4103" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="King Mukla" Id="1559" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-14737.8" Y="-392.236" Z="8.2503" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="207" Name="Kurzen's Mystery">
 		<Objective Type="CollectItem" ItemId="2008" CollectCount="1">
 			<CollectFrom>
@@ -918,6 +777,17 @@
 			</CollectFrom>
 			<Hotspots>
 				<Hotspot X="-11983.2" Y="339.585" Z="2.9024" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="628" Name="Excelsior">
+		<Objective Type="CollectItem" ItemId="4105" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Elder Saltwater Crocolisk" Id="2635" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11986.6" Y="603.381" Z="1.376" />
+				<Hotspot X="-12116.7" Y="349.741" Z="2.262" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -972,6 +842,28 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="600" Name="Venture Company Mining">
+		<Objective Type="CollectItem" ItemId="3917" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Venture Co. Strip Miner" Id="674" />
+				<Mob Name="Venture Co. Foreman" Id="675" />
+				<Mob Name="Venture Co. Surveyor" Id="676" />
+				<Mob Name="Venture Co. Tinkerer" Id="677" />
+				<Mob Name="Foreman Cozzle" Id="4723" />
+				<Mob Name="Verifonix" Id="14492" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-12973.6" Y="-415.973" Z="43.743" />
+				<Hotspot X="-13003" Y="-381.27" Z="30.7281" />
+				<Hotspot X="-13018.5" Y="-430.765" Z="39.8314" />
+				<Hotspot X="-13063" Y="-447.054" Z="45.3497" />
+				<Hotspot X="-13130.5" Y="-463.1" Z="49.7" />
+				<Hotspot X="-12979.7" Y="-462.423" Z="58.2229" />
+				<Hotspot X="-12930.2" Y="-483.789" Z="45.6186" />
+				<Hotspot X="-12930.5" Y="-432.272" Z="31.9485" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="613" Name="Cracking Maury's Foot">
 		<Objective Type="CollectItem" ItemId="3930" CollectCount="1">
 			<CollectFrom>
@@ -990,22 +882,6 @@
 				<Hotspot X="-12357.4" Y="-978.743" Z="13.9662" />
 				<Hotspot X="-12382.8" Y="-1065.56" Z="3.5382" />
 				<Hotspot X="-12462.2" Y="-995.415" Z="50.3674" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="605" Name="Singing Blue Shards">
-		<Objective Type="CollectItem" ItemId="3918" CollectCount="10">
-			<CollectFrom>
-				<Mob Name="Cold Eye Basilisk" Id="690" />
-				<Mob Name="Thrashtail Basilisk" Id="1550" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-13381.9" Y="-272.963" Z="13.9835" />
-				<Hotspot X="-13313.6" Y="-272.939" Z="14.6111" />
-				<Hotspot X="-13317" Y="-220.694" Z="14.1153" />
-				<Hotspot X="-13322.5" Y="-355.86" Z="14.0508" />
-				<Hotspot X="-13352.3" Y="-389.739" Z="18.4238" />
-				<Hotspot X="-13386.7" Y="-359.258" Z="17.5539" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -1031,7 +907,7 @@
 	</Quest>
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
-		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Leveling/Ding80GuidesAllianceTBCduo.lua: Ding80's Alliance Leveling Guides TBC duo\Levels (40-44) -->
+		<!-- Generated by CopilotBuddy Tools/ZygorToHB from Leveling/Ding80GuidesAlliance.lua: Ding80's Alliance Leveling Guides\Levels (40-44) -->
 		<If Condition="Me.MapId != 1">
 			<CustomBehavior File="RunCode" Code='AppDomain.CurrentDomain.SetData("BackToProfile", @"..\Zygor\Alliance\Ding80_Levels (40-44)");' />
 			<CustomBehavior File="LoadProfile" ProfileName="..\..\GoTo\To Kalimdor" />
@@ -1040,9 +916,6 @@
 		<TurnIn QuestName="Tabetha's Assistance" QuestId="11149" TurnInName="Tabetha" TurnInId="6546" X="-4031.56" Y="-3392.97" Z="38.9974" />
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(11149)">
 			<PickUp QuestName="Raze Direhorn Post!" QuestId="11150" GiverName="Tabetha" GiverId="6546" X="-4031.56" Y="-3392.97" Z="38.9974" />
-		</If>
-		<If Condition="(Me.Level &gt;= 38)">
-			<PickUp QuestName="Help for Mudsprocket" QuestId="11211" GiverName="Tabetha" GiverId="6546" X="-4031.56" Y="-3392.97" Z="38.9974" />
 		</If>
 		<If Condition="(Me.Level &gt;= 35)">
 			<PickUp QuestName="The Grimtotem Weapon" QuestId="11169" GiverName="Apprentice Garion" GiverId="23601" X="-4036.64" Y="-3392.86" Z="39.0799" />
@@ -1104,7 +977,7 @@
 			<CustomBehavior File="AbandonQuest" QuestId="11169" Type="Incomplete" />
 		</If>
 		<TurnIn QuestName="The Apothecary's Letter" QuestId="11185" TurnInName="Andello Porter" TurnInId="23942" X="-4055.01" Y="-3362.43" Z="32.9009" />
-		<TurnIn QuestName="Help for Mudsprocket" QuestId="11211" TurnInName="Drazzit Dripvalve" TurnInId="23572" X="-4585.8" Y="-3197.33" Z="35.1265" />
+		<TurnIn QuestName="Mission to Mudsprocket" QuestId="11214" TurnInName="Drazzit Dripvalve" TurnInId="23572" X="-4585.8" Y="-3197.33" Z="35.1265" />
 		<TurnIn QuestName="Delivery for Drazzit" QuestId="11208" TurnInName="Drazzit Dripvalve" TurnInId="23572" X="-4585.8" Y="-3197.33" Z="35.1265" />
 		<If Condition="(Me.Level &gt;= 35)">
 			<PickUp QuestName="WANTED: Goreclaw the Ravenous" QuestId="11184" GiverName="Wanted Poster" GiverId="186426" GiverType="Object" X="-4592.87" Y="-3166.94" Z="34.3157" />
@@ -1232,18 +1105,9 @@
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(652)">
 			<PickUp QuestName="Myzrael's Allies" QuestId="653" GiverName="Keystone" GiverId="2688" GiverType="Object" X="-1527.51" Y="-2165.45" Z="17.1488" />
 		</If>
-		<If Condition="(Me.Level &gt;= 40)">
-			<PickUp QuestName="The Brassbolts Brothers" QuestId="2769" GiverName="Klockmort Spannerspan" GiverId="6169" X="-4812.48" Y="-1250.62" Z="502.014" />
-		</If>
 		<TurnIn QuestName="Stormpike's Deciphering" QuestId="554" TurnInName="Prospector Stormpike" TurnInId="1356" X="-4631.19" Y="-1303.73" Z="503.465" />
 		<If Condition="(Me.Level &gt;= 30)">
 			<PickUp QuestName="Ironband Wants You!" QuestId="707" GiverName="Prospector Stormpike" GiverId="1356" X="-4631.19" Y="-1303.73" Z="503.465" />
-		</If>
-		<If Condition="(Me.Level &gt;= 35)">
-			<PickUp QuestName="The Lost Dwarves" QuestId="2398" GiverName="Prospector Stormpike" GiverId="1356" X="-4631.19" Y="-1303.73" Z="503.465" />
-		</If>
-		<If Condition="(Me.Level &gt;= 33)">
-			<PickUp QuestName="Reclaimed Treasures" QuestId="1360" GiverName="Krom Stoutarm" GiverId="6294" X="-4618.8" Y="-1300.12" Z="503.465" />
 		</If>
 		<TurnIn QuestName="Myzrael's Allies" QuestId="653" TurnInName="Gerrig Bonegrip" TurnInId="2786" X="-4598.87" Y="-1115.45" Z="505.022" />
 		<If Condition="(Me.Level &gt;= 30)">
@@ -1251,6 +1115,20 @@
 		</If>
 		<TurnIn QuestName="The Perenolde Tiara" QuestId="543" TurnInName="Count Remington Ridgewell" TurnInId="2285" X="-8549.9" Y="386.121" Z="108.469" />
 		<TurnIn QuestName="Return to Milton" QuestId="542" TurnInName="Milton Sheaf" TurnInId="1440" X="-8346" Y="383.928" Z="122.374" />
+		<If Condition="(Me.Level &gt;= 38)">
+			<PickUp QuestName="In Search of The Temple" QuestId="1448" GiverName="Brohann Caskbelly" GiverId="5384" X="-8464" Y="516.193" Z="100.639" />
+		</If>
+		<TurnIn QuestName="Malin's Request" QuestId="697" TurnInName="Archmage Malin" TurnInId="2708" X="-9009" Y="846.395" Z="105.942" />
+		<If Condition="(Me.Level &gt;= 40)">
+			<PickUp QuestName="Vital Supplies" QuestId="1477" GiverName="High Sorcerer Andromath" GiverId="5694" X="-9011" Y="876.722" Z="148.718" />
+		</If>
+		<If Condition="(Me.Level &gt;= 37)">
+			<PickUp QuestName="Mazen's Behest" QuestId="1363" GiverName="Mazen Mac'Nadir" GiverId="338" X="-8856" Y="822.813" Z="98.4" />
+		</If>
+		<TurnIn QuestName="Mazen's Behest" QuestId="1363" TurnInName="Acolyte Dellis" TurnInId="5386" X="-8851" Y="830.246" Z="104.796" />
+		<If Condition="(Me.Level &gt;= 37) &amp;&amp; IsQuestCompleted(1363)">
+			<PickUp QuestName="Mazen's Behest" QuestId="1364" GiverName="Acolyte Dellis" GiverId="5386" X="-8851" Y="830.246" Z="104.796" />
+		</If>
 		<Objective QuestName="Liquid Stone" QuestId="715" Type="CollectItem" ItemId="929" CollectCount="1" />
 		<If Condition="(Me.Level &gt;= 36)">
 			<PickUp QuestName="Badlands Reagent Run" QuestId="2500" GiverName="Ghak Healtouch" GiverId="1470" X="-5395.86" Y="-3016.18" Z="327.663" />
@@ -1272,9 +1150,6 @@
 		<Objective QuestName="Mirages" QuestId="718" Type="CollectItem" ItemId="4629" CollectCount="1" />
 		<TurnIn QuestName="A Dwarf and His Tools" QuestId="719" TurnInName="Prospector Ryedol" TurnInId="2910" X="-6609.19" Y="-3408.01" Z="279.195" />
 		<TurnIn QuestName="A Sign of Hope" QuestId="720" TurnInName="Prospector Ryedol" TurnInId="2910" X="-6609.19" Y="-3408.01" Z="279.195" />
-		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(720)">
-			<PickUp QuestName="A Sign of Hope" QuestId="721" GiverName="Prospector Ryedol" GiverId="2910" X="-6609.19" Y="-3408.01" Z="279.195" />
-		</If>
 		<TurnIn QuestName="Mirages" QuestId="718" TurnInName="Sigrun Ironhew" TurnInId="2860" X="-6607.66" Y="-3417.49" Z="279.394" />
 		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(718)">
 			<PickUp QuestName="Scrounging" QuestId="733" GiverName="Sigrun Ironhew" GiverId="2860" X="-6607.66" Y="-3417.49" Z="279.394" />
@@ -1295,9 +1170,6 @@
 		</If>
 		<If Condition="((HasQuest(705)) &amp;&amp; (!IsQuestCompleted(705)))">
 			<CustomBehavior File="AbandonQuest" QuestId="705" Type="Incomplete" />
-		</If>
-		<If Condition="(Me.Level &gt;= 30)">
-			<PickUp QuestName="Power Stones" QuestId="2418" GiverName="Rigglefuzz" GiverId="2817" X="-6767.33" Y="-3133.6" Z="240.675" />
 		</If>
 		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(718)">
 			<PickUp QuestName="Tremors of the Earth" QuestId="732" GiverName="Garek" GiverId="2888" X="-6789.41" Y="-3619.82" Z="244.215" />
@@ -1320,13 +1192,7 @@
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(692)">
 			<PickUp QuestName="Summoning the Princess" QuestId="656" GiverName="Theldurin the Lost" GiverId="2785" X="-7164.42" Y="-3357.41" Z="244.933" />
 		</If>
-		<If Condition="(Me.Level &gt;= 30)">
-			<PickUp QuestName="Solution to Doom" QuestId="709" GiverName="Theldurin the Lost" GiverId="2785" X="-7164.42" Y="-3357.41" Z="244.933" />
-		</If>
 		<TurnIn QuestName="Indurium" QuestId="1108" TurnInName="Martek the Exiled" TurnInId="4618" X="-6763.39" Y="-3129.3" Z="241.384" />
-		<If Condition="(Me.Level &gt;= 28) &amp;&amp; IsQuestCompleted(1108)">
-			<PickUp QuestName="News for Fizzle" QuestId="1137" GiverName="Martek the Exiled" GiverId="4618" X="-6763.39" Y="-3129.3" Z="241.384" />
-		</If>
 		<If Condition="(Me.Level &gt;= 35)">
 			<PickUp QuestName="Study of the Elements: Rock" QuestId="710" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
 		</If>
@@ -1410,107 +1276,7 @@
 		<TurnIn QuestName="Scrounging" QuestId="733" TurnInName="Sigrun Ironhew" TurnInId="2860" X="-6607.66" Y="-3417.49" Z="279.394" />
 		<Objective QuestName="Badlands Reagent Run" QuestId="2500" Type="CollectItem" ItemId="7846" CollectCount="10" />
 		<TurnIn QuestName="Murdaloc" QuestId="739" TurnInName="Prospector Ironband" TurnInId="1344" X="-5694.65" Y="-3812.45" Z="321.7" />
-		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(739)">
-			<PickUp QuestName="Agmond's Fate" QuestId="704" GiverName="Prospector Ironband" GiverId="1344" X="-5694.65" Y="-3812.45" Z="321.7" />
-		</If>
 		<TurnIn QuestName="Badlands Reagent Run" QuestId="2500" TurnInName="Ghak Healtouch" TurnInId="1470" X="-5395.86" Y="-3016.18" Z="327.663" />
-		<If Condition="(Me.Level &gt;= 38) &amp;&amp; IsQuestCompleted(2500)">
-			<PickUp QuestName="Uldaman Reagent Run" QuestId="17" GiverName="Ghak Healtouch" GiverId="1470" X="-5395.86" Y="-3016.18" Z="327.663" />
-		</If>
-		<TurnIn QuestName="A Sign of Hope" QuestId="721" TurnInName="Hammertoe Grez" TurnInId="2909" X="-6065.44" Y="-3022.03" Z="230.348" />
-		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(721)">
-			<PickUp QuestName="Amulet of Secrets" QuestId="722" GiverName="Hammertoe Grez" GiverId="2909" X="-6065.44" Y="-3022.03" Z="230.348" />
-		</If>
-		<Objective QuestName="Amulet of Secrets" QuestId="722" Type="CollectItem" ItemId="4635" CollectCount="1" />
-		<Objective QuestName="Solution to Doom" QuestId="709" Type="CollectItem" ItemId="4631" CollectCount="1" />
-		<Objective QuestName="Reclaimed Treasures" QuestId="1360" Type="CollectItem" ItemId="8027" CollectCount="1" />
-		<TurnIn QuestName="Amulet of Secrets" QuestId="722" TurnInName="Hammertoe Grez" TurnInId="2909" X="-6065.44" Y="-3022.03" Z="230.348" />
-		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(722)">
-			<PickUp QuestName="Prospect of Faith" QuestId="723" GiverName="Hammertoe Grez" GiverId="2909" X="-6065.44" Y="-3022.03" Z="230.348" />
-		</If>
-		<Objective QuestName="Power Stones" QuestId="2418" Type="CollectItem" ItemId="8009" CollectCount="8" />
-		<Objective QuestName="Power Stones" QuestId="2418" Type="CollectItem" ItemId="8052" CollectCount="8" />
-		<If Condition="HasItem(7666) &amp;&amp; !HasQuest(2198) &amp;&amp; !IsQuestCompleted(2198) &amp;&amp; (Me.Level &gt;= 37)">
-			<PickUp QuestName="The Shattered Necklace" QuestId="2198" GiverName="Shattered Necklace" GiverId="7666" GiverType="Item" />
-		</If>
-		<Objective QuestName="Agmond's Fate" QuestId="704" Type="CollectItem" ItemId="4610" CollectCount="4" />
-		<TurnIn QuestName="The Lost Dwarves" QuestId="2398" TurnInName="Baelog" TurnInId="6906" X="-353.007" Y="117.186" Z="-44.3684" />
-		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(2398)">
-			<PickUp QuestName="The Hidden Chamber" QuestId="2240" GiverName="Baelog" GiverId="6906" X="-353.007" Y="117.186" Z="-44.3684" />
-		</If>
-		<If Condition="((HasQuest(2240)) &amp;&amp; (!IsQuestCompleted(2240)))">
-			<RunTo X="-234.444" Y="319.127" Z="-47.5885" />
-		</If>
-		<Objective QuestName="Uldaman Reagent Run" QuestId="17" Type="CollectItem" ItemId="8047" CollectCount="12" />
-		<If Condition="(Me.Level &gt;= 40)">
-			<PickUp QuestName="The Platinum Discs" QuestId="2278" GiverName="The Discs of Norgannon" GiverId="131474" GiverType="Object" X="161.826" Y="298.283" Z="-51.3698" />
-		</If>
-		<!-- REVIEW Q2278 The Platinum Discs: completed by a scripted event. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(2278)) &amp;&amp; (IsQuestCompleted(2278)))">
-			<TurnIn QuestName="The Platinum Discs" QuestId="2278" TurnInName="The Discs of Norgannon" TurnInId="131474" TurnInType="Object" X="161.826" Y="298.283" Z="-51.3698" />
-		</If>
-		<If Condition="((HasQuest(2278)) &amp;&amp; (!IsQuestCompleted(2278)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2278" Type="Incomplete" />
-		</If>
-		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(2278)">
-			<PickUp QuestName="The Platinum Discs" QuestId="2279" GiverName="The Discs of Norgannon" GiverId="131474" GiverType="Object" X="161.826" Y="298.283" Z="-51.3698" />
-		</If>
-		<TurnIn QuestName="Solution to Doom" QuestId="709" TurnInName="Theldurin the Lost" TurnInId="2785" X="-7164.42" Y="-3357.41" Z="244.933" />
-		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(709)">
-			<PickUp QuestName="To Ironforge for Yagyin's Digest" QuestId="727" GiverName="Theldurin the Lost" GiverId="2785" X="-7164.42" Y="-3357.41" Z="244.933" />
-		</If>
-		<TurnIn QuestName="Power Stones" QuestId="2418" TurnInName="Rigglefuzz" TurnInId="2817" X="-6767.33" Y="-3133.6" Z="240.675" />
-		<TurnIn QuestName="Prospect of Faith" QuestId="723" TurnInName="Prospector Ryedol" TurnInId="2910" X="-6609.19" Y="-3408.01" Z="279.195" />
-		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(723)">
-			<PickUp QuestName="Prospect of Faith" QuestId="724" GiverName="Prospector Ryedol" GiverId="2910" X="-6609.19" Y="-3408.01" Z="279.195" />
-		</If>
-		<TurnIn QuestName="Agmond's Fate" QuestId="704" TurnInName="Prospector Ironband" TurnInId="1344" X="-5694.65" Y="-3812.45" Z="321.7" />
-		<TurnIn QuestName="Uldaman Reagent Run" QuestId="17" TurnInName="Ghak Healtouch" TurnInId="1470" X="-5395.86" Y="-3016.18" Z="327.663" />
-		<Objective QuestName="Lore for a Price" QuestId="2199" Type="CollectItem" ItemId="2842" CollectCount="5" />
-		<TurnIn QuestName="The Shattered Necklace" QuestId="2198" TurnInName="Talvash del Kissel" TurnInId="6826" X="-4588.3" Y="-1001.21" Z="503.657" />
-		<If Condition="(Me.Level &gt;= 37) &amp;&amp; IsQuestCompleted(2198)">
-			<PickUp QuestName="Lore for a Price" QuestId="2199" GiverName="Talvash del Kissel" GiverId="6826" X="-4588.3" Y="-1001.21" Z="503.657" />
-		</If>
-		<TurnIn QuestName="Lore for a Price" QuestId="2199" TurnInName="Talvash del Kissel" TurnInId="6826" X="-4588.3" Y="-1001.21" Z="503.657" />
-		<TurnIn QuestName="To Ironforge for Yagyin's Digest" QuestId="727" TurnInName="Gerrig Bonegrip" TurnInId="2786" X="-4598.87" Y="-1115.45" Z="505.022" />
-		<TurnIn QuestName="The Platinum Discs" QuestId="2279" TurnInName="High Explorer Magellas" TurnInId="5387" X="-4667.12" Y="-1266.46" Z="503.465" />
-		<If Condition="(Me.Level &gt;= 40) &amp;&amp; IsQuestCompleted(2279)">
-			<PickUp QuestName="The Platinum Discs" QuestId="2439" GiverName="High Explorer Magellas" GiverId="5387" X="-4667.12" Y="-1266.46" Z="503.465" />
-		</If>
-		<!-- REVIEW Q2240 The Hidden Chamber: objectives done by custom behaviors. Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
-		<If Condition="((HasQuest(2240)) &amp;&amp; (IsQuestCompleted(2240)))">
-			<TurnIn QuestName="The Hidden Chamber" QuestId="2240" TurnInName="Prospector Stormpike" TurnInId="1356" X="-4631.19" Y="-1303.73" Z="503.465" />
-		</If>
-		<If Condition="((HasQuest(2240)) &amp;&amp; (!IsQuestCompleted(2240)))">
-			<CustomBehavior File="AbandonQuest" QuestId="2240" Type="Incomplete" />
-		</If>
-		<TurnIn QuestName="Reclaimed Treasures" QuestId="1360" TurnInName="Krom Stoutarm" TurnInId="6294" X="-4618.8" Y="-1300.12" Z="503.465" />
-		<TurnIn QuestName="Prospect of Faith" QuestId="724" TurnInName="Historian Karnik" TurnInId="2916" X="-4631.63" Y="-1326.66" Z="503.465" />
-		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(724)">
-			<PickUp QuestName="Passing Word of a Threat" QuestId="725" GiverName="Historian Karnik" GiverId="2916" X="-4631.63" Y="-1326.66" Z="503.465" />
-		</If>
-		<TurnIn QuestName="Passing Word of a Threat" QuestId="725" TurnInName="Advisor Belgrum" TurnInId="2918" X="-4620.49" Y="-1325.07" Z="503.465" />
-		<If Condition="(Me.Level &gt;= 35) &amp;&amp; IsQuestCompleted(725)">
-			<PickUp QuestName="Passing Word of a Threat" QuestId="726" GiverName="Advisor Belgrum" GiverId="2918" X="-4620.49" Y="-1325.07" Z="503.465" />
-		</If>
-		<TurnIn QuestName="Passing Word of a Threat" QuestId="726" TurnInName="Historian Karnik" TurnInId="2916" X="-4631.63" Y="-1326.66" Z="503.465" />
-		<TurnIn QuestName="The Platinum Discs" QuestId="2439" TurnInName="Dinita Stonemantle" TurnInId="7292" X="-4881.99" Y="-981.982" Z="503.941" />
-		<If Condition="(Me.Level &gt;= 38)">
-			<PickUp QuestName="In Search of The Temple" QuestId="1448" GiverName="Brohann Caskbelly" GiverId="5384" X="-8464" Y="516.193" Z="100.639" />
-		</If>
-		<If Condition="(Me.Level &gt;= 40)">
-			<PickUp QuestName="Vital Supplies" QuestId="1477" GiverName="High Sorcerer Andromath" GiverId="5694" X="-9011" Y="876.722" Z="148.718" />
-		</If>
-		<If Condition="(Me.Level &gt;= 40)">
-			<PickUp QuestName="Tabetha's Task" QuestId="2861" GiverName="Jennea Cannon" GiverId="5497" X="-8990" Y="862.929" Z="29.621" />
-		</If>
-		<If Condition="(Me.Level &gt;= 37)">
-			<PickUp QuestName="Mazen's Behest" QuestId="1363" GiverName="Mazen Mac'Nadir" GiverId="338" X="-8856" Y="822.813" Z="98.4" />
-		</If>
-		<TurnIn QuestName="Mazen's Behest" QuestId="1363" TurnInName="Acolyte Dellis" TurnInId="5386" X="-8851" Y="830.246" Z="104.796" />
-		<If Condition="(Me.Level &gt;= 37) &amp;&amp; IsQuestCompleted(1363)">
-			<PickUp QuestName="Mazen's Behest" QuestId="1364" GiverName="Acolyte Dellis" GiverId="5386" X="-8851" Y="830.246" Z="104.796" />
-		</If>
 		<If Condition="(Me.Level &gt;= 40)">
 			<PickUp QuestName="Tran'rek" QuestId="2864" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />
 		</If>
@@ -1525,9 +1291,6 @@
 		<If Condition="(Me.Level &gt;= 35)">
 			<PickUp QuestName="Zanzil's Secret" QuestId="621" GiverName="Crank Fizzlebub" GiverId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
 		</If>
-		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(605)">
-			<PickUp QuestName="Venture Company Mining" QuestId="600" GiverName="Crank Fizzlebub" GiverId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
-		</If>
 		<If Condition="(Me.Level &gt;= 40)">
 			<PickUp QuestName="Whiskey Slim's Lost Grog" QuestId="580" GiverName="Whiskey Slim" GiverId="2491" X="-14463.6" Y="489.274" Z="15.205" />
 		</If>
@@ -1537,17 +1300,11 @@
 		<If Condition="(Me.Level &gt;= 40)">
 			<PickUp QuestName="Stoley's Debt" QuestId="2872" GiverName='"Sea Wolf" MacKinley' GiverId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
 		</If>
-		<If Condition="(Me.Level &gt;= 30)">
-			<PickUp QuestName="Scaring Shaky" QuestId="606" GiverName='"Sea Wolf" MacKinley' GiverId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
-		</If>
 		<If Condition="(Me.Level &gt;= 40)">
 			<PickUp QuestName="Stranglethorn Fever" QuestId="348" GiverName="Fin Fizracket" GiverId="2486" X="-14433.2" Y="458.988" Z="15.5349" />
 		</If>
 		<If Condition="(Me.Level &gt;= 37)">
 			<PickUp QuestName="The Bloodsail Buccaneers" QuestId="595" GiverName="First Mate Crazz" GiverId="2490" X="-14411.1" Y="427.967" Z="8.9573" />
-		</If>
-		<If Condition="(Me.Level &gt;= 31) &amp;&amp; IsQuestCompleted(577)">
-			<PickUp QuestName="Excelsior" QuestId="628" GiverName="Drizzlik" GiverId="2495" X="-14469.6" Y="415.382" Z="25.452" />
 		</If>
 		<Objective QuestName='"Pretty Boy" Duncan' QuestId="610" Type="CollectItem" ItemId="4027" CollectCount="1" />
 		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="595" TurnInName="Bloodsail Correspondence" TurnInId="2083" TurnInType="Object" X="-14126.2" Y="480.146" Z="2.4385" />
@@ -1596,6 +1353,9 @@
 		<If Condition="(Me.Level &gt;= 37) &amp;&amp; IsQuestCompleted(595)">
 			<PickUp QuestName="Keep An Eye Out" QuestId="576" GiverName="Dizzy One-Eye" GiverId="2493" X="-14397.6" Y="396.286" Z="22.7223" />
 		</If>
+		<If Condition="HasItem(4098) &amp;&amp; !HasQuest(594) &amp;&amp; !IsQuestCompleted(594) &amp;&amp; (Me.Level &gt;= 42)">
+			<PickUp QuestName="Message in a Bottle" QuestId="594" GiverName="Carefully Folded Note" GiverId="4098" GiverType="Item" />
+		</If>
 		<Objective QuestName="The Bloodsail Buccaneers" QuestId="604" Type="CollectItem" ItemId="3921" CollectCount="1" />
 		<Objective QuestName="The Bloodsail Buccaneers" QuestId="604" Type="CollectItem" ItemId="3920" CollectCount="1" />
 		<Objective QuestName="The Bloodsail Buccaneers" QuestId="604" Type="KillMob" MobId="1563" KillCount="10" />
@@ -1603,6 +1363,12 @@
 		<If Condition="(Me.Level &gt;= 37) &amp;&amp; IsQuestCompleted(604)">
 			<PickUp QuestName="The Bloodsail Buccaneers" QuestId="608" GiverName="Fleet Master Seahorn" GiverId="2487" X="-14444.8" Y="486.81" Z="28.809" />
 		</If>
+		<TurnIn QuestName="Message in a Bottle" QuestId="594" TurnInName="Princess Poobah" TurnInId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
+		<If Condition="(Me.Level &gt;= 42) &amp;&amp; IsQuestCompleted(594)">
+			<PickUp QuestName="Message in a Bottle" QuestId="630" GiverName="Princess Poobah" GiverId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
+		</If>
+		<Objective QuestName="Message in a Bottle" QuestId="630" Type="CollectItem" ItemId="4103" CollectCount="1" />
+		<TurnIn QuestName="Message in a Bottle" QuestId="630" TurnInName="Princess Poobah" TurnInId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
 		<If Condition="HasItem(4056) &amp;&amp; !HasQuest(624) &amp;&amp; !IsQuestCompleted(624) &amp;&amp; (Me.Level &gt;= 35)">
 			<PickUp QuestName="Cortello's Riddle" QuestId="624" GiverName="Cortello's Riddle" GiverId="4056" GiverType="Item" />
 		</If>
@@ -1649,8 +1415,6 @@
 		<If Condition="(Me.Level &gt;= 30) &amp;&amp; IsQuestCompleted(609)">
 			<PickUp QuestName="Cracking Maury's Foot" QuestId="613" GiverName='"Sea Wolf" MacKinley' GiverId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
 		</If>
-		<Objective QuestName="Singing Blue Shards" QuestId="605" Type="CollectItem" ItemId="3918" CollectCount="10" />
-		<TurnIn QuestName="Singing Blue Shards" QuestId="605" TurnInName="Crank Fizzlebub" TurnInId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
 		<TurnIn QuestName="Venture Company Mining" QuestId="600" TurnInName="Crank Fizzlebub" TurnInId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
 		<TurnIn QuestName="Zanzil's Secret" QuestId="621" TurnInName="Crank Fizzlebub" TurnInId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
 		<TurnIn QuestName="Skullsplitter Tusks" QuestId="209" TurnInName="Kebok" TurnInId="737" X="-14449.8" Y="497.925" Z="26.3693" />
